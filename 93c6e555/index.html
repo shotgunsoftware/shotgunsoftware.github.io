@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -8948,7 +8948,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -11579,9 +11579,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -13945,7 +13945,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -15015,7 +15015,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -15106,13 +15106,13 @@
 
 <ul>
   <li>
-    <p>ShotGrid values are enclosed in <code class="highlighter-rouge">{brackets}</code>, for example <code class="highlighter-rouge">&lt;b&gt;Description:&lt;/b&gt; {description}</code>. When this template is rendered, the <code class="highlighter-rouge">{description}</code> part will be replaced with the description field value.</p>
+    <p>Flow Production Tracking values are enclosed in <code class="highlighter-rouge">{brackets}</code>, for example <code class="highlighter-rouge">&lt;b&gt;Description:&lt;/b&gt; {description}</code>. When this template is rendered, the <code class="highlighter-rouge">{description}</code> part will be replaced with the description field value.</p>
   </li>
   <li>
     <p>If you want an optional pre- or post-fix for a value which is only shown if the value is not empty, you can use the syntax <code class="highlighter-rouge">{[Prefix]sg_field[suffix]}</code>. The template <code class="highlighter-rouge">{[Start: ]start_date} {[End: ]end_date}</code> will render <code class="highlighter-rouge">Start: 12 July 2009 End: 14 July 2012</code> if both values are populated but <code class="highlighter-rouge">Start: 12 July 2009</code> if end date isn’t set.</p>
   </li>
   <li>
-    <p>You can define fallbacks in the case some values are not set. For ShotGrid Versions, the <code class="highlighter-rouge">artist</code> fields takes precedence over the <code class="highlighter-rouge">created_by</code> field in order to support a workflow where a producer submits versions on behalf of an artist. In this case, the Version will be created by the producer but the <code class="highlighter-rouge">artist</code> field will be set to the artist. This, however, is not always the case - in some cases, artist is left blank in pipelines where artists submit their own work. When displaying versions, it is therefore useful to be able to check the <code class="highlighter-rouge">artist</code> field first, and in case this isn’t set, fall back on the <code class="highlighter-rouge">created_by</code> field. This is done using the <code class="highlighter-rouge">{field1|field2}</code> syntax, for example: <code class="highlighter-rouge">Created By: {artist|created_by}</code>. You can combine this with optional fields too, e.g. <code class="highlighter-rouge">{[Created By: ]artist|created_by}</code>.</p>
+    <p>You can define fallbacks in the case some values are not set. For Flow Production Tracking Versions, the <code class="highlighter-rouge">artist</code> fields takes precedence over the <code class="highlighter-rouge">created_by</code> field in order to support a workflow where a producer submits versions on behalf of an artist. In this case, the Version will be created by the producer but the <code class="highlighter-rouge">artist</code> field will be set to the artist. This, however, is not always the case - in some cases, artist is left blank in pipelines where artists submit their own work. When displaying versions, it is therefore useful to be able to check the <code class="highlighter-rouge">artist</code> field first, and in case this isn’t set, fall back on the <code class="highlighter-rouge">created_by</code> field. This is done using the <code class="highlighter-rouge">{field1|field2}</code> syntax, for example: <code class="highlighter-rouge">Created By: {artist|created_by}</code>. You can combine this with optional fields too, e.g. <code class="highlighter-rouge">{[Created By: ]artist|created_by}</code>.</p>
   </li>
 </ul>
 
@@ -15120,7 +15120,7 @@
 
 <p><strong>Controlling items appearing in lists</strong></p>
 
-<p>The <code class="highlighter-rouge">get_list_item_definition()</code> method returns a dictionary that controls the appearance of items in the various listings, given a ShotGrid entity type. It returns a dictionary with the keys <code class="highlighter-rouge">top_left</code>, <code class="highlighter-rouge">top_right</code> and <code class="highlighter-rouge">body</code>, for example:</p>
+<p>The <code class="highlighter-rouge">get_list_item_definition()</code> method returns a dictionary that controls the appearance of items in the various listings, given a Flow Production Tracking entity type. It returns a dictionary with the keys <code class="highlighter-rouge">top_left</code>, <code class="highlighter-rouge">top_right</code> and <code class="highlighter-rouge">body</code>, for example:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
  <span class="s">"top_left"</span><span class="p">:</span> <span class="s">"&lt;big&gt;{code}&lt;/big&gt;"</span><span class="p">,</span>
@@ -15131,7 +15131,7 @@
 
 <p><strong>Controlling the top detail area</strong></p>
 
-<p>The <code class="highlighter-rouge">get_main_view_definition()</code> method returns a dictionary with the keys <code class="highlighter-rouge">title</code> and <code class="highlighter-rouge">body</code> given a ShotGrid entity type. These values controls the appearance of an object in the detail area, for example:</p>
+<p>The <code class="highlighter-rouge">get_main_view_definition()</code> method returns a dictionary with the keys <code class="highlighter-rouge">title</code> and <code class="highlighter-rouge">body</code> given a Flow Production Tracking entity type. These values controls the appearance of an object in the detail area, for example:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
  <span class="s">"title"</span><span class="p">:</span> <span class="s">"{type} {code}"</span><span class="p">,</span>
@@ -15145,15 +15145,15 @@
 
 <h3 id="configuring-actions">Configuring Actions</h3>
 
-<p>Actions are little snippets of code that operate on a piece of ShotGrid data. Examples include:</p>
+<p>Actions are little snippets of code that operate on a piece of Flow Production Tracking data. Examples include:</p>
 
 <ul>
-  <li>An action that launches RV for a given ShotGrid Version</li>
+  <li>An action that launches RV for a given Flow Production Tracking Version</li>
   <li>An action that allows a user to assign herself to a given Task</li>
-  <li>An action that loads a ShotGrid publish into Maya as a Maya reference.</li>
+  <li>An action that loads a Flow Production Tracking publish into Maya as a Maya reference.</li>
 </ul>
 
-<p>The actual payload of an action is defined in an  <em>action hook</em>. Once you have defined the action logic, you can then map that action to ShotGrid objects in the app configuration. These action mappings may for example look like this:</p>
+<p>The actual payload of an action is defined in an  <em>action hook</em>. Once you have defined the action logic, you can then map that action to Flow Production Tracking objects in the app configuration. These action mappings may for example look like this:</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">action_mappings</span><span class="pi">:</span>
   <span class="na">PublishedFile</span><span class="pi">:</span>
@@ -15169,9 +15169,9 @@
     <span class="na">filters</span><span class="pi">:</span> <span class="pi">{}</span>
 </code></pre></div></div>
 
-<p>In the above example, we use the actions <code class="highlighter-rouge">reference</code>, <code class="highlighter-rouge">import</code>, <code class="highlighter-rouge">texture_node</code>, <code class="highlighter-rouge">assign_task</code> and <code class="highlighter-rouge">play_in_rv</code>. We then map the actions to various ShotGrid objects and conditions. For example, we are requesting the <code class="highlighter-rouge">import</code> action to appear for all publishes of type Maya Scene.</p>
+<p>In the above example, we use the actions <code class="highlighter-rouge">reference</code>, <code class="highlighter-rouge">import</code>, <code class="highlighter-rouge">texture_node</code>, <code class="highlighter-rouge">assign_task</code> and <code class="highlighter-rouge">play_in_rv</code>. We then map the actions to various Flow Production Tracking objects and conditions. For example, we are requesting the <code class="highlighter-rouge">import</code> action to appear for all publishes of type Maya Scene.</p>
 
-<p>When an object is loaded into the Panel, the action configuration above is read in and analyzed. A list of suitable actions for the current object is determined and the <code class="highlighter-rouge">generate_actions()</code> hook method will be executed. ShotGrid data for the given entity will be passed to the hook at this point so that the hook code can determine if the action can be run for this particular ShotGrid object. This is a way to allow each hook to run a check prior to being displayed. For example, the <code class="highlighter-rouge">play_in_rv</code> hook may only be relevant in the case there is media available locally - the action mappings set up in the configuration tells the panel which actions to enable for a given ShotGrid entity but they may not all be displayed because the <code class="highlighter-rouge">generate_actions()</code> method may determine that they are not suitable for the given object.</p>
+<p>When an object is loaded into the Panel, the action configuration above is read in and analyzed. A list of suitable actions for the current object is determined and the <code class="highlighter-rouge">generate_actions()</code> hook method will be executed. Flow Production Tracking data for the given entity will be passed to the hook at this point so that the hook code can determine if the action can be run for this particular Flow Production Tracking object. This is a way to allow each hook to run a check prior to being displayed. For example, the <code class="highlighter-rouge">play_in_rv</code> hook may only be relevant in the case there is media available locally - the action mappings set up in the configuration tells the panel which actions to enable for a given Flow Production Tracking entity but they may not all be displayed because the <code class="highlighter-rouge">generate_actions()</code> method may determine that they are not suitable for the given object.</p>
 
 <p>The actions returned from the <code class="highlighter-rouge">generate_actions()</code> method will be displayed on the actions menu and when a user clicks on it, the <code class="highlighter-rouge">execute_acton()</code> hook method is called to run the action.</p>
 
@@ -15205,7 +15205,7 @@
  The data returned from this hook will be used to populate the 
  actions menu.
 
- The mapping between ShotGrid objects and actions are kept in a different place
+ The mapping between Flow Production Tracking objects and actions are kept in a different place
  (in the configuration) so at the point when this hook is called, the app
  has already established *which* actions are appropriate for this object.
 
@@ -15220,7 +15220,7 @@
  - If it will be shown in the main browsing area, "main" is passed. 
  - If it will be shown in the details area, "details" is passed.
 
- :param sg_data: ShotGrid data dictionary with all the standard publish fields.
+ :param sg_data: Flow Production Tracking data dictionary with all the standard publish fields.
  :param actions: List of action strings which have been defined in the app configuration.
  :param ui_area: String denoting the UI Area (see above).
  :returns List of dictionaries, each with keys name, params, caption and description
@@ -15244,7 +15244,7 @@
 
  :param name: Action name string representing one of the items returned by generate_actions.
  :param params: Params data, as specified by generate_actions.
- :param sg_data: ShotGrid data dictionary with all the standard publish fields.
+ :param sg_data: Flow Production Tracking data dictionary with all the standard publish fields.
  :returns: No return value expected.
  """</span>
 
@@ -15283,7 +15283,7 @@
 
 <h2 id="advanced-functionality">Advanced functionality</h2>
 
-<h2 id="shotgrid-toolkit-makes-it-easy-to-develop-tools">ShotGrid Toolkit makes it easy to develop tools</h2>
+<h2 id="shotgrid-toolkit-makes-it-easy-to-develop-tools">Flow Production Tracking Toolkit makes it easy to develop tools</h2>
 
 <p>Did we mention that you can write your own Apps? Each Engine exposes a consistent interface based on Python and PySide, so you can write a single App that works in both Nuke, Photoshop and 3dsmax. With the Core API functionality, there is no need to build a big pipeline stack for the studio - instead focus dev resources on solving production problems. Reusing tools between projects is easy with our Toolkit - if file naming conventions or other requirements are changing, simply reconfigure the app. Roll out tools safely via the Toolkit’s built-in Git and Github support and quickly hot-load your code when doing development. Work in your own Dev Sandbox and invite TDs and early adopters to test your code without having to roll it out to everyone on the project.</p>
 

@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -3825,9 +3825,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -7119,7 +7119,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -9750,9 +9750,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -12116,7 +12116,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -13186,7 +13186,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -13265,9 +13265,9 @@
 
 <h2 id="about-the-guide">About the guide</h2>
 
-<p>One of the hardest things about managing a pipeline is keeping track of the myriad files that will be created. Your Toolkit pipeline automates filesystem management: by creating folders based on data in ShotGrid and a configured folder structure, and automatically writing files to the right place and with standardized naming, artists can focus on content creation. Your pipeline configuration comes with a default set of folder and file naming conventions, but productions often customize them. This guide will provide the knowledge necessary to make those customizations.</p>
+<p>One of the hardest things about managing a pipeline is keeping track of the myriad files that will be created. Your Toolkit pipeline automates filesystem management: by creating folders based on data in Flow Production Tracking and a configured folder structure, and automatically writing files to the right place and with standardized naming, artists can focus on content creation. Your pipeline configuration comes with a default set of folder and file naming conventions, but productions often customize them. This guide will provide the knowledge necessary to make those customizations.</p>
 
-<p>In the Default Configuration, assets are managed in a folder structure like <code class="highlighter-rouge">asset_type/asset/pipeline_step</code>. In this guide, we’ll be using a custom entity called “Set” to organize them further by the production set on which each asset is used. We will first set up the custom entity in ShotGrid, then use it to manage the assets created for any given set, so that the folder structure looks like <code class="highlighter-rouge">set/asset_type/asset/pipeline_step</code>.</p>
+<p>In the Default Configuration, assets are managed in a folder structure like <code class="highlighter-rouge">asset_type/asset/pipeline_step</code>. In this guide, we’ll be using a custom entity called “Set” to organize them further by the production set on which each asset is used. We will first set up the custom entity in Flow Production Tracking, then use it to manage the assets created for any given set, so that the folder structure looks like <code class="highlighter-rouge">set/asset_type/asset/pipeline_step</code>.</p>
 
 <p>We can demonstrate the idea behind organizing assets by set with an example: say you have a project where some scenes take place in a garage, while others take place in a dining room. With our setup, files for assets like “wrench”, “oilcan”, or “workbench” would be organized in a “garage” folder, while “plate”, “winebottle”, or “tablecloth” would be organized in a “dining_room” folder. In our example, we’ll be ensuring that a juicy “filet” asset is properly placed in the dining room.</p>
 
@@ -13276,7 +13276,7 @@
 <h3 id="there-are-three-parts-to-this-guide">There are three parts to this guide</h3>
 
 <ul>
-  <li>Creating a <strong>custom entity</strong> in ShotGrid called “Set”, which you will use to associate with the dining room elements the artists are creating.</li>
+  <li>Creating a <strong>custom entity</strong> in Flow Production Tracking called “Set”, which you will use to associate with the dining room elements the artists are creating.</li>
   <li>Editing the folder <strong>schema</strong>, enabling Toolkit to include a dynamically named folder based on the current set in the folder structure.</li>
   <li>Editing the <strong>template</strong> used for naming asset work files, enabling Toolkit to include the name of the associated set in the file name.</li>
 </ul>
@@ -13287,8 +13287,8 @@
 
 <ol>
   <li>An active <a href="https://www.shotgridsoftware.com/signup/">ShotGrid</a> site. You should have a project with at least one Asset created. The asset should have a Model task.</li>
-  <li>A basic understanding of how a ShotGrid site is used to manage assets</li>
-  <li><a href="https://developer.shotgridsoftware.com/d587be80/#installation-of-desktop">ShotGrid Desktop</a> installed on your system.</li>
+  <li>A basic understanding of how a Flow Production Tracking site is used to manage assets</li>
+  <li><a href="https://developer.shotgridsoftware.com/d587be80/#installation-of-desktop">Flow Production Tracking Toolkit</a> installed on your system.</li>
   <li>A cloned pipeline configuration for the identified project, or complete the <a href="/5d83a936/">Getting started with configurations</a> guide and clone the configuration created in that exercise.</li>
   <li>Basic familiarity with YAML.</li>
   <li>Read and write permissions set appropriately for the filesystem where the Pipeline Configuration is stored.</li>
@@ -13300,13 +13300,13 @@
 
 <h3 id="about-file-schemas-and-templates">About file schemas and templates</h3>
 
-<p>The schema and templates in the Toolkit pipeline configuration allow you to take advantage of your ShotGrid data for managing production files on disk. The schema in the Default Configuration includes entities like <strong>Shot</strong>, <strong>Sequence</strong>, <strong>Asset</strong>, <strong>Asset Type</strong>, etc.  Other entities like <strong>Level</strong>, <strong>Episode</strong>, <strong>Season</strong>, or in our case, custom entities like <strong>Set</strong> can be added.</p>
+<p>The schema and templates in the Toolkit pipeline configuration allow you to take advantage of your Flow Production Tracking data for managing production files on disk. The schema in the Default Configuration includes entities like <strong>Shot</strong>, <strong>Sequence</strong>, <strong>Asset</strong>, <strong>Asset Type</strong>, etc.  Other entities like <strong>Level</strong>, <strong>Episode</strong>, <strong>Season</strong>, or in our case, custom entities like <strong>Set</strong> can be added.</p>
 
 <p>The Toolkit platform allows you to build your folder structure dynamically by using a <strong>schema</strong>, a miniature version of a production folder structure that will be used as a template when building out your actual production filesystem. The schema is an explicit guide for the dynamic creation of folders, and uses YAML files to define the rules for dynamically created folders. The Default Configuration includes a pre-configured schema that supports folder creation for both asset and shot pipelines. You will be modifying the portion of the schema that supports creating the asset folder structure, <code class="highlighter-rouge">/assets/&lt;asset_type&gt;/&lt;asset&gt;/&lt;step&gt;</code>, to add support for the new <strong>Set</strong> entity you’re creating.</p>
 
-<p><strong>Templates</strong> allow you to dynamically name and save files as they’re created using ShotGrid data and information from the schema structure. The Default Configuration provides a set of starter templates that you can edit to meet the needs of your pipeline.</p>
+<p><strong>Templates</strong> allow you to dynamically name and save files as they’re created using Flow Production Tracking data and information from the schema structure. The Default Configuration provides a set of starter templates that you can edit to meet the needs of your pipeline.</p>
 
-<p>The Basic setup for ShotGrid integrations doesn’t include filesystem management. In order to configure filesystem management for your project, your project will need an Advanced setup. The first guide, <a href="/5d83a936/">Getting started with configurations</a> goes through the Advanced setup process.</p>
+<p>The Basic setup for Flow Production Tracking integrations doesn’t include filesystem management. In order to configure filesystem management for your project, your project will need an Advanced setup. The first guide, <a href="/5d83a936/">Getting started with configurations</a> goes through the Advanced setup process.</p>
 
 <h2 id="begin-exercise">Begin exercise</h2>
 
@@ -13314,11 +13314,11 @@
 
 <h3 id="enabling-a-custom-entity">Enabling a custom entity</h3>
 
-<p><strong>Step 1:</strong> Open your ShotGrid site in the browser. Click on your avatar and go to ADMIN &gt; Site Preferences. In the resulting page, expand the <strong>Entities</strong> section.</p>
+<p><strong>Step 1:</strong> Open your Flow Production Tracking site in the browser. Click on your avatar and go to ADMIN &gt; Site Preferences. In the resulting page, expand the <strong>Entities</strong> section.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/dynamic_filesystem_configuration/1_site_preferences.png" alt="Python app" /></p>
 
-<p>Displayed is a list of entity types that are available in ShotGrid. At the top of the list in the image below are some entity types that are configured for the current ShotGrid site. Underneath these entity types are several <strong>Custom Entities</strong> that are not configured or enabled.</p>
+<p>Displayed is a list of entity types that are available in Flow Production Tracking. At the top of the list in the image below are some entity types that are configured for the current Flow Production Tracking site. Underneath these entity types are several <strong>Custom Entities</strong> that are not configured or enabled.</p>
 
 <h3 id="choose-one-of-the-custom-entity-types-configure-it-and-enable-it">Choose one of the custom entity types, configure it, and enable it.</h3>
 
@@ -13328,7 +13328,7 @@
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/dynamic_filesystem_configuration/4_enable_entity.png" alt="Python app" /></p>
 
-<p>Doing this makes that custom entity active in ShotGrid and gives it the display name <em>Set</em>. Essentially you are creating an alias for the custom entity because the system name of the entity remains <code class="highlighter-rouge">CustomEntity01</code>. In this example, we’re using <code class="highlighter-rouge">CustomEntity01</code>; you might use a different custom entity.</p>
+<p>Doing this makes that custom entity active in Flow Production Tracking and gives it the display name <em>Set</em>. Essentially you are creating an alias for the custom entity because the system name of the entity remains <code class="highlighter-rouge">CustomEntity01</code>. In this example, we’re using <code class="highlighter-rouge">CustomEntity01</code>; you might use a different custom entity.</p>
 
 <p>Remember the system name of the custom entity you chose.</p>
 
@@ -13356,7 +13356,7 @@
 
 <p>For this guide, apply it to <strong>Only the current project</strong> and select <strong>Create Field</strong>.</p>
 
-<p>ShotGrid will configure the new field.</p>
+<p>Flow Production Tracking will configure the new field.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/dynamic_filesystem_configuration/8_only_current_project.png" alt="Python app" /></p>
 
@@ -13382,7 +13382,7 @@
 
 <h3 id="setting-up-the-schema">Setting up the schema</h3>
 
-<p>You’ve now enabled a Set custom entity, created a Set entity called “Dining Room”, and linked an Asset entity to the Dining Room set. You’ve got all the pieces in place in your ShotGrid site to now modify your folder structure. When an artist starts working on a task, Toolkit uses the associated ShotGrid data to determine what folders to create in the filesystem. New folders are created and named automatically based on the pipeline configuration’s schema.</p>
+<p>You’ve now enabled a Set custom entity, created a Set entity called “Dining Room”, and linked an Asset entity to the Dining Room set. You’ve got all the pieces in place in your Flow Production Tracking site to now modify your folder structure. When an artist starts working on a task, Toolkit uses the associated Flow Production Tracking data to determine what folders to create in the filesystem. New folders are created and named automatically based on the pipeline configuration’s schema.</p>
 
 <p>Now it’s time to define the folder structure you want Toolkit to dynamically generate as artists step through the production pipeline. This is done by editing the schema.</p>
 
@@ -13408,7 +13408,7 @@
 
 <p><code class="highlighter-rouge">&lt;project&gt;/assets/&lt;CustomEntity01&gt;/&lt;asset_type&gt;/&lt;asset&gt;/&lt;step&gt;</code></p>
 
-<p>The Set entity is represented as <code class="highlighter-rouge">CustomEntity01</code>. While we gave CustomEntity01 the <em>display name</em> of Set in ShotGrid, in our configuration, we’ll always refer to it by its system name, <code class="highlighter-rouge">CustomEntity01</code>.</p>
+<p>The Set entity is represented as <code class="highlighter-rouge">CustomEntity01</code>. While we gave CustomEntity01 the <em>display name</em> of Set in Flow Production Tracking, in our configuration, we’ll always refer to it by its system name, <code class="highlighter-rouge">CustomEntity01</code>.</p>
 
 <h3 id="how-the-schema-uses-yaml-files">How the schema uses YAML files</h3>
 
@@ -13416,7 +13416,7 @@
 
 <h3 id="create-the-new-folder-and-yaml-file-for-the-set-entity">Create the new folder and YAML file for the Set entity</h3>
 
-<p>The schema has a <code class="highlighter-rouge">project</code> folder that contains folders relative to the different entities ShotGrid tracks. You are adding the new asset entity, CustomEntity01, to enable ShotGrid to track the items in a Set. These items are assets, so you will edit the folders and YAML files under assets.</p>
+<p>The schema has a <code class="highlighter-rouge">project</code> folder that contains folders relative to the different entities Flow Production Tracking tracks. You are adding the new asset entity, CustomEntity01, to enable Flow Production Tracking to track the items in a Set. These items are assets, so you will edit the folders and YAML files under assets.</p>
 
 <p>Again, our goal is to go from an <code class="highlighter-rouge">asset_type/asset/step</code> folder structure to <code class="highlighter-rouge">set/asset_type/asset/step</code>. So, we’ll want to add a folder to represent set in our schema, with a corresponding YAML file. Since we need to use the system name for custom entities, we’ll be creating the <code class="highlighter-rouge">CustomEntity01/</code> folder and <code class="highlighter-rouge">CustomEntity01.yml</code>.</p>
 
@@ -13436,7 +13436,7 @@
     <span class="pi">-</span> <span class="pi">{</span> <span class="s2">"</span><span class="s">path"</span><span class="pi">:</span> <span class="s2">"</span><span class="s">project"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">relation"</span><span class="pi">:</span> <span class="s2">"</span><span class="s">is"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">values"</span><span class="pi">:</span> <span class="pi">[</span> <span class="s2">"</span><span class="s">$project"</span> <span class="pi">]</span> <span class="pi">}</span>
 </code></pre></div></div>
 
-<p>The YAML file will give the instructions to Toolkit for what to name the <code class="highlighter-rouge">CustomEntity01</code> folder. In this case, we’re making a folder of type <code class="highlighter-rouge">ShotGrid_entity</code>, which means that it corresponds to a ShotGrid query. The <code class="highlighter-rouge">entity_type</code> field tells us to query the <code class="highlighter-rouge">CustomEntity01</code> entity in ShotGrid, and the <code class="highlighter-rouge">name</code> field tells us which <em>field</em> on the entity to query – in this case we’re getting the <code class="highlighter-rouge">code</code> field from <code class="highlighter-rouge">CustomEntity01</code>.</p>
+<p>The YAML file will give the instructions to Toolkit for what to name the <code class="highlighter-rouge">CustomEntity01</code> folder. In this case, we’re making a folder of type <code class="highlighter-rouge">ShotGrid_entity</code>, which means that it corresponds to a Flow Production Tracking query. The <code class="highlighter-rouge">entity_type</code> field tells us to query the <code class="highlighter-rouge">CustomEntity01</code> entity in Flow Production Tracking, and the <code class="highlighter-rouge">name</code> field tells us which <em>field</em> on the entity to query – in this case we’re getting the <code class="highlighter-rouge">code</code> field from <code class="highlighter-rouge">CustomEntity01</code>.</p>
 
 <p>The <code class="highlighter-rouge">filters</code> field limits the cases in which this dynamic folder should be created.</p>
 
@@ -13478,10 +13478,10 @@ assets/Classroom/Prop/spoon
 <p>Folders are created at a few points in Toolkit pipeline workflows:</p>
 
 <ul>
-  <li><strong>Application launchers</strong>: Every time a user launches a DCC for a task, Toolkit will create the directories for that task if they’re not already there. Since launching a DCC tends to be the first thing someone does with Toolkit, this is the usual way directories get created. This can happen via the right-click menus in ShotGrid, or from ShotGrid Desktop or Create apps.</li>
-  <li><strong>ShotGrid menu</strong>: The most direct way to create folders for a task is to right-click on it in ShotGrid and choose the “Create Folders” menu item.</li>
-  <li><strong>Toolkit API</strong>: You can trigger the directory creation logic directly through the Toolkit API. This can be used to plug Toolkit into a custom launcher, or for something like an event trigger for a workflow where you want to automatically create the directories for a Shot as it is created in ShotGrid.</li>
-  <li><strong>tank command</strong>: Analogous to the menu item in ShotGrid, the <code class="highlighter-rouge">tank folders</code> terminal command will also create folders for a task.</li>
+  <li><strong>Application launchers</strong>: Every time a user launches a DCC for a task, Toolkit will create the directories for that task if they’re not already there. Since launching a DCC tends to be the first thing someone does with Toolkit, this is the usual way directories get created. This can happen via the right-click menus in Flow Production Tracking, or from Flow Production Tracking Toolkit or Create apps.</li>
+  <li><strong>Flow Production Tracking menu</strong>: The most direct way to create folders for a task is to right-click on it in Flow Production Tracking and choose the “Create Folders” menu item.</li>
+  <li><strong>Toolkit API</strong>: You can trigger the directory creation logic directly through the Toolkit API. This can be used to plug Toolkit into a custom launcher, or for something like an event trigger for a workflow where you want to automatically create the directories for a Shot as it is created in Flow Production Tracking.</li>
+  <li><strong>tank command</strong>: Analogous to the menu item in Flow Production Tracking, the <code class="highlighter-rouge">tank folders</code> terminal command will also create folders for a task.</li>
 </ul>
 
 <p>We’ll test with the <code class="highlighter-rouge">tank</code> command.</p>
@@ -13525,7 +13525,7 @@ In total, 23 folders were processed.
 
 <h3 id="how-toolkit-apps-use-templates">How Toolkit apps use templates</h3>
 
-<p>You first created a way to associate an asset with a set in ShotGrid by enabling CustomEntity01 to represent sets, then adding a link field to the Asset entity to represent the link between an asset and a set. After establishing the relationship between assets and sets, you set up your folder schema to use that association to place all asset <em>folders</em> within a folder for their associated set. Now you’re going to create a way to dynamically name <em>files</em> and allow Toolkit Apps to manage the files automatically.</p>
+<p>You first created a way to associate an asset with a set in Flow Production Tracking by enabling CustomEntity01 to represent sets, then adding a link field to the Asset entity to represent the link between an asset and a set. After establishing the relationship between assets and sets, you set up your folder schema to use that association to place all asset <em>folders</em> within a folder for their associated set. Now you’re going to create a way to dynamically name <em>files</em> and allow Toolkit Apps to manage the files automatically.</p>
 
 <p>As artists start working on tasks in a project, the necessary folder structure is generated. Then,  when they initiate the Workfiles app’s <strong>File Save</strong> action, the file is named automatically. A template accessed through Toolkit’s Workfiles app is used to name that file. Render apps like Nuke Write node and Houdini Mantra node use templates to name and save rendered files, as does the Publisher app for published files.</p>
 
@@ -13607,17 +13607,17 @@ In total, 23 folders were processed.
 
 <h3 id="test-it">Test it</h3>
 
-<p><strong>Step 18:</strong> Launch Maya from ShotGrid Desktop.</p>
+<p><strong>Step 18:</strong> Launch Maya from Flow Production Tracking Toolkit.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/dynamic_filesystem_configuration/23_test_file_creation.png" alt="Python app" /></p>
 
-<p>In Maya, go to <strong>ShotGrid &gt; File Open</strong>, and in the resulting dialog, select a task on an asset for which you’ve specified a Set in ShotGrid.</p>
+<p>In Maya, go to <strong>Flow Production Tracking &gt; File Open</strong>, and in the resulting dialog, select a task on an asset for which you’ve specified a Set in Flow Production Tracking.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/dynamic_filesystem_configuration/24_test_new_file.png" alt="Python app" /></p>
 
 <p>Select <strong>+New File</strong>.</p>
 
-<p>You can create a simple 3D object or just save the file using the <strong>ShotGrid &gt; Save File</strong>.</p>
+<p>You can create a simple 3D object or just save the file using the <strong>Flow Production Tracking &gt; Save File</strong>.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/dynamic_filesystem_configuration/file_save.png" alt="Python app" /></p>
 
@@ -13631,11 +13631,11 @@ In total, 23 folders were processed.
 
 <h3 id="extending-the-example">Extending the example</h3>
 
-<p>In this example, we modified a single template, but there’s plenty more you can do with your filesystem configuration. In a real world example, you’d likely change <em>all</em> asset-related files to have the same file naming conventions. You can make modifications based on other entities (Season, Episode, Level, etc.), create user folders, name your folders based on ShotGrid data manipulated with regular expressions, and much more. You can learn about all of Toolkit’s folder and schema options in the <a href="https://developer.shotgridsoftware.com/82ff76f7/">Filesystem Configuration Reference</a>.</p>
+<p>In this example, we modified a single template, but there’s plenty more you can do with your filesystem configuration. In a real world example, you’d likely change <em>all</em> asset-related files to have the same file naming conventions. You can make modifications based on other entities (Season, Episode, Level, etc.), create user folders, name your folders based on Flow Production Tracking data manipulated with regular expressions, and much more. You can learn about all of Toolkit’s folder and schema options in the <a href="https://developer.shotgridsoftware.com/82ff76f7/">Filesystem Configuration Reference</a>.</p>
 
 <h3 id="the-path-cache">The Path Cache</h3>
 
-<p>At folder creation time, a mapping is created between a folder on disk and a ShotGrid entity. These mappings are stored as FilesystemLocation entities in ShotGrid, and cached in an SQLite database on user machines. To learn more about how the path cache works and how to work with it, see <a href="/cbbf99a4/">this document</a>.</p>
+<p>At folder creation time, a mapping is created between a folder on disk and a Flow Production Tracking entity. These mappings are stored as FilesystemLocation entities in Flow Production Tracking, and cached in an SQLite database on user machines. To learn more about how the path cache works and how to work with it, see <a href="/cbbf99a4/">this document</a>.</p>
 
 <h3 id="additional-resources">Additional Resources</h3>
 

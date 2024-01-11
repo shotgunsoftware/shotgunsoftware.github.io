@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -8166,7 +8166,7 @@
 
 <ul>
   <li>Could not resolve row id for path!</li>
-  <li>Database concurrency problems: The path <code class="highlighter-rouge">&lt;PATH&gt;</code> is already associated with ShotGrid entity <code class="highlighter-rouge">&lt;ENTITY&gt;</code>.</li>
+  <li>Database concurrency problems: The path <code class="highlighter-rouge">&lt;PATH&gt;</code> is already associated with Flow Production Tracking entity <code class="highlighter-rouge">&lt;ENTITY&gt;</code>.</li>
 </ul>
 
 <h2 id="サンプル">サンプル</h2>
@@ -8197,13 +8197,13 @@ Source data set: [{'path_cache_row_id': 8711, 'path':
 
 <h2 id="エラーの原因">エラーの原因</h2>
 
-<p>このエラーは、ShotGrid ([サイト基本設定] (Site Preferences) -&gt; [ファイル管理] (File Management))とパイプライン設定の c<code class="highlighter-rouge">onfig/core/roots.yml</code> で指定されているストレージ ルート間に不一致があること示しています。</p>
+<p>このエラーは、Flow Production Tracking ([サイト基本設定] (Site Preferences) -&gt; [ファイル管理] (File Management))とパイプライン設定の c<code class="highlighter-rouge">onfig/core/roots.yml</code> で指定されているストレージ ルート間に不一致があること示しています。</p>
 
 <p>Windows を実行しているスタジオでは、大文字と小文字の不一致が原因でこのエラーが発生することがあります。これらのスタジオでパスの大文字と小文字は区別されませんが、オートデスクの設定では大文字と小文字が区別されます。<code class="highlighter-rouge">E:\Projects</code> と <code class="highlighter-rouge">E:\projects</code> のような単純な違いによって、このエラーが発生する可能性があります。</p>
 
 <h2 id="シーンの背後で実行される動作">シーンの背後で実行される動作</h2>
 
-<p>このコードは、ShotGrid によって作成されたパスに FilesystemLocation エンティティを作成し、ShotGrid のストレージ ルートを使用してパスのルートを決定します。次に、ローカル キャッシュ内に同じエントリを作成し、データベース内の配置場所を決定する必要があります。ローカル キャッシュの場合は、<code class="highlighter-rouge">roots.yml</code> を使用してパスのルートを決定します。大文字と小文字が一致しないため、生成されたパスは ShotGrid に入力されたパスと一致しません。この時点で、エラーが発生します。</p>
+<p>このコードは、Flow Production Tracking によって作成されたパスに FilesystemLocation エンティティを作成し、Flow Production Tracking のストレージ ルートを使用してパスのルートを決定します。次に、ローカル キャッシュ内に同じエントリを作成し、データベース内の配置場所を決定する必要があります。ローカル キャッシュの場合は、<code class="highlighter-rouge">roots.yml</code> を使用してパスのルートを決定します。大文字と小文字が一致しないため、生成されたパスは Flow Production Tracking に入力されたパスと一致しません。この時点で、エラーが発生します。</p>
 
 <p>エラーが整然と発生しない場合は、特に不適切な状態になります。フォルダが作成され、FilesystemLocation エントリが作成されても、ローカル パス キャッシュでこれらが同期されることはなく、ストレージ ルートの不一致が原因で同期することもできなくなります。</p>
 
@@ -8215,10 +8215,10 @@ Source data set: [{'path_cache_row_id': 8711, 'path':
 
 <ul>
   <li>FilesystemLocation エンティティをクリアする方法: 理想的なのは、<code class="highlighter-rouge">tank unregister_folders</code> を実行できることです。これらすべてをクリアするには、tank <code class="highlighter-rouge">unregister_folders --all</code> を実行します。(<code class="highlighter-rouge">tank unregister_folders</code> のすべてのオプションでは、引数を指定しないで実行するだけで、使用上の注意事項が出力されます。)</li>
-  <li>ただし、データベースは既に不安定な状態になっているため、この方法が機能しないか、部分的にしか機能しない場合があります。コマンドを実行したら、ShotGrid の FilesystemLocations に戻って、削除予定の内容が実際に削除されていることを確認します。削除されていない場合は、不適切なエンティティを選択し、手動でごみ箱に移動します。</li>
+  <li>ただし、データベースは既に不安定な状態になっているため、この方法が機能しないか、部分的にしか機能しない場合があります。コマンドを実行したら、Flow Production Tracking の FilesystemLocations に戻って、削除予定の内容が実際に削除されていることを確認します。削除されていない場合は、不適切なエンティティを選択し、手動でごみ箱に移動します。</li>
 </ul>
 
-<p>この時点で、ShotGrid の FilesystemLocations はクリーンな状態ですが、アーティストのローカル キャッシュには変更が反映されていない可能性があります。最後の手順では、各ユーザのマシンのローカル キャッシュを実際に同期します。この操作を行うには、tank <code class="highlighter-rouge">synchronize_folders --full</code> を実行する必要があります。</p>
+<p>この時点で、Flow Production Tracking の FilesystemLocations はクリーンな状態ですが、アーティストのローカル キャッシュには変更が反映されていない可能性があります。最後の手順では、各ユーザのマシンのローカル キャッシュを実際に同期します。この操作を行うには、tank <code class="highlighter-rouge">synchronize_folders --full</code> を実行する必要があります。</p>
 
 <p>これらの手順をすべて実行すると、パスのキャッシュは適切な状態になり、エラーは表示されなくなります。</p>
 

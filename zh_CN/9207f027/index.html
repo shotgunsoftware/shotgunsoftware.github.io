@@ -11,12 +11,12 @@
 <link rel="alternate" hreflang="zh_CN" href="/zh_CN/9207f027/"/>
 
 
-  <title>无法在 Linux 上启动 ShotGrid Desktop/浏览器集成 - SG Developer</title>
+  <title>无法在 Linux 上启动 Flow Production Tracking Toolkit/浏览器集成 - SG Developer</title>
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -8160,9 +8160,9 @@
 <div class="article-body markdown" data-swiftype-name="body" data-swiftype-type="text">
   
 
-            <h1 id="无法在-linux-上启动-shotgrid-desktop浏览器集成">无法在 Linux 上启动 ShotGrid Desktop/浏览器集成</h1>
+            <h1 id="无法在-linux-上启动-shotgrid-desktop浏览器集成">无法在 Linux 上启动 Flow Production Tracking Toolkit/浏览器集成</h1>
 
-<p>首次在 Linux 上运行 ShotGrid Desktop 时，可能会出现以下错误消息之一。如果出现这些消息，请按照具体错误下方的步骤进行操作，以确定能否解决问题。
+<p>首次在 Linux 上运行 Flow Production Tracking Toolkit 时，可能会出现以下错误消息之一。如果出现这些消息，请按照具体错误下方的步骤进行操作，以确定能否解决问题。
 如果您仍然遇到困难，请访问我们的<a href="https://knowledge.autodesk.com/zh-hans/contact-support">支持站点</a>以获取帮助。</p>
 
 <h2 id="目录">目录</h2>
@@ -8204,12 +8204,12 @@ libffi.so.5: cannot open shared object file: No such file or directory
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install libffi
 </code></pre></div></div>
 
-<p>如果您已经安装 libffi 但仍无法运行，请尝试创建以下符号链接，然后重新启动 ShotGrid Desktop：</p>
+<p>如果您已经安装 libffi 但仍无法运行，请尝试创建以下符号链接，然后重新启动 Flow Production Tracking Toolkit：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ln -s /usr/lib64/libffi.so.6.0.1 /usr/lib64/libffi.so.5
 </code></pre></div></div>
 
-<p>部分用户报告通过上述操作解决了问题。但其他用户仍存在问题。最新版本的 ShotGrid Desktop 添加了与 WebSocket 服务器之间的一些其他依存关系，这是我们目前正在研究的方面。</p>
+<p>部分用户报告通过上述操作解决了问题。但其他用户仍存在问题。最新版本的 Flow Production Tracking Toolkit 添加了与 WebSocket 服务器之间的一些其他依存关系，这是我们目前正在研究的方面。</p>
 
 <h2 id="与证书验证失败相关的问题">与证书验证失败相关的问题</h2>
 
@@ -8222,7 +8222,7 @@ certutil: function failed: SEC_ERROR_BAD_DATABASE: security library: bad databas
 
 <p><strong>解决方案</strong></p>
 
-<p>如果您的计算机上已经安装 Google Chrome，请启动它，然后重新启动 ShotGrid Desktop。如果仍有此问题，请访问我们的<a href="https://knowledge.autodesk.com/zh-hans/contact-support">支持站点</a>以获取帮助。</p>
+<p>如果您的计算机上已经安装 Google Chrome，请启动它，然后重新启动 Flow Production Tracking Toolkit。如果仍有此问题，请访问我们的<a href="https://knowledge.autodesk.com/zh-hans/contact-support">支持站点</a>以获取帮助。</p>
 
 <p>如果没有安装 Chrome，请打开终端并运行以下命令：</p>
 
@@ -8242,7 +8242,7 @@ $ certutil -N -d "sql:$HOME/.pki/nssdb"
 
 <p>不要输入任何密码。</p>
 
-<p>ShotGrid Desktop 现在应该能够正常启动。</p>
+<p>Flow Production Tracking Toolkit 现在应该能够正常启动。</p>
 
 <h2 id="不兼容的-qt-版本">不兼容的 Qt 版本</h2>
 

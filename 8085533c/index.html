@@ -11,12 +11,12 @@
 <link rel="alternate" hreflang="zh_CN" href="/zh_CN/8085533c/"/>
 
 
-  <title>ShotGrid Integrations Admin Guide - SG Developer</title>
+  <title>Flow Production Tracking Integrations Admin Guide - SG Developer</title>
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -3483,9 +3483,9 @@
                     class="nav-entry-selected"
                 
                 style='margin-left:40px'
-                href="/8085533c/?title=ShotGrid+Integrations+Admin+Guide"
+                href="/8085533c/?title=Flow+Production+Tracking+Integrations+Admin+Guide"
             >
-                ShotGrid Integrations Admin Guide
+                Flow Production Tracking Integrations Admin Guide
             </a>
             </div>
 
@@ -10346,7 +10346,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -12977,9 +12977,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -15343,7 +15343,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -16413,7 +16413,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -16486,11 +16486,11 @@
 <div class="article-body markdown" data-swiftype-name="body" data-swiftype-type="text">
   
 
-            <h1 id="shotgrid-integrations-admin-guide">ShotGrid Integrations Admin Guide</h1>
+            <h1 id="shotgrid-integrations-admin-guide">Flow Production Tracking Integrations Admin Guide</h1>
 
 <h2 id="introduction">Introduction</h2>
 
-<p>This document serves as a guide for administrators of ShotGrid integrations. It’s one of three: user, admin, and developer. Our  <a href="https://developer.shotgridsoftware.com/d587be80/">User Guide</a>  is intended for artists who will be the end users of ShotGrid integrations in their daily workflow, and our  <a href="https://developer.shotgridsoftware.com/93c6e555/">Developer Guide</a>  is technical documentation for those writing Python code to extend the functionality. This document falls between those two: it’s intended for those who are implementing ShotGrid integrations for a studio, managing software versions, and making storage decisions for published files.</p>
+<p>This document serves as a guide for administrators of Flow Production Tracking integrations. It’s one of three: user, admin, and developer. Our  <a href="https://developer.shotgridsoftware.com/d587be80/">User Guide</a>  is intended for artists who will be the end users of Flow Production Tracking integrations in their daily workflow, and our  <a href="https://developer.shotgridsoftware.com/93c6e555/">Developer Guide</a>  is technical documentation for those writing Python code to extend the functionality. This document falls between those two: it’s intended for those who are implementing Flow Production Tracking integrations for a studio, managing software versions, and making storage decisions for published files.</p>
 
 <h2 id="standard-pipeline-configurations">Standard Pipeline Configurations</h2>
 
@@ -16498,7 +16498,7 @@
 
 <h3 id="the-basic-config">The Basic Config</h3>
 
-<p>Our out-of-the-box integrations are designed to run without the need to set up or modify any configuration files. When you use our out-of-the-box integrations, there’s nothing to administer, but Toolkit uses an implied Pipeline Configuration under the hood, and we call this Pipeline Configuration the Basic Config. The Basic Config makes three Toolkit apps – The Panel, Publisher, and Loader – available in all supported software packages, and looks to your Software Entities in ShotGrid to determine which software packages to display in ShotGrid Desktop. The Basic Config does not include filesystem location support. When you use out-of-the-box integrations on a project, your copy of the Basic Config is auto-updated whenever you launch Desktop, so you’ll always have the latest version of our integrations. You can  <a href="https://community.shotgridsoftware.com/tags/c/pipeline/6/release-notes">subscribe to release notes here</a>, and  <a href="https://github.com/shotgunsoftware/tk-config-basic/">see the Basic Config in Github here</a>.</p>
+<p>Our out-of-the-box integrations are designed to run without the need to set up or modify any configuration files. When you use our out-of-the-box integrations, there’s nothing to administer, but Toolkit uses an implied Pipeline Configuration under the hood, and we call this Pipeline Configuration the Basic Config. The Basic Config makes three Toolkit apps – The Panel, Publisher, and Loader – available in all supported software packages, and looks to your Software Entities in Flow Production Tracking to determine which software packages to display in Flow Production Tracking Toolkit. The Basic Config does not include filesystem location support. When you use out-of-the-box integrations on a project, your copy of the Basic Config is auto-updated whenever you launch Desktop, so you’ll always have the latest version of our integrations. You can  <a href="https://community.shotgridsoftware.com/tags/c/pipeline/6/release-notes">subscribe to release notes here</a>, and  <a href="https://github.com/shotgunsoftware/tk-config-basic/">see the Basic Config in Github here</a>.</p>
 
 <h3 id="the-default-config">The Default Config</h3>
 
@@ -16523,9 +16523,9 @@
 
 <h2 id="configuring-software-launches">Configuring software launches</h2>
 
-<p>It’s simple to rely on ShotGrid’s auto-detection of host applications on your system: just launch ShotGrid Desktop, choose a project, and Desktop will display launchers for all supported software packages that it finds in standard application directories. But we also offer robust tools for more fine-grained management of the software in your studio. You can restrict application visibility to specific projects, groups, or even individual users. You can specify Versions, deactivate a given software package across your site, and group software packages together. All of this is managed through Software entities in ShotGrid.</p>
+<p>It’s simple to rely on Flow Production Tracking’s auto-detection of host applications on your system: just launch Flow Production Tracking Toolkit, choose a project, and Desktop will display launchers for all supported software packages that it finds in standard application directories. But we also offer robust tools for more fine-grained management of the software in your studio. You can restrict application visibility to specific projects, groups, or even individual users. You can specify Versions, deactivate a given software package across your site, and group software packages together. All of this is managed through Software entities in Flow Production Tracking.</p>
 
-<p>When you create a new ShotGrid site, it will have a set of default Software entities—one for each supported host application. You can modify these and add your own to manage the software that shows up in Desktop exactly how you want it.</p>
+<p>When you create a new Flow Production Tracking site, it will have a set of default Software entities—one for each supported host application. You can modify these and add your own to manage the software that shows up in Desktop exactly how you want it.</p>
 
 <div class="info-popup">
     <p>
@@ -16536,7 +16536,7 @@
     </p>
 </div>
 
-<p>To see your Software entities in ShotGrid, open the Admin menu by clicking on the profile icon in the upper right corner of the screen, and choose  <code class="highlighter-rouge">Software</code>.</p>
+<p>To see your Software entities in Flow Production Tracking, open the Admin menu by clicking on the profile icon in the upper right corner of the screen, and choose  <code class="highlighter-rouge">Software</code>.</p>
 
 <p>The Software entity has the following fields:</p>
 
@@ -16547,7 +16547,7 @@
   <li><strong>Engine:</strong>  The name of the integration for the content creation tool.</li>
   <li><strong>Products:</strong>  For Software packages that include variants (e.g., Houdini vs. Houdini FX), you can specify a comma separated list here. Valid only in auto-detect mode, not manual mode.</li>
   <li><strong>Versions:</strong>  Specific versions of the software to display. You can specify a comma separated list here. Valid only in auto-detect mode, not manual mode.</li>
-  <li><strong>Group:</strong>  Entities with the same value for the  <code class="highlighter-rouge">Group</code>  field will be grouped under a single icon in Desktop and a single menu in ShotGrid. For example, you could create an FX group that includes Houdini and Nuke.</li>
+  <li><strong>Group:</strong>  Entities with the same value for the  <code class="highlighter-rouge">Group</code>  field will be grouped under a single icon in Desktop and a single menu in Flow Production Tracking. For example, you could create an FX group that includes Houdini and Nuke.</li>
   <li><strong>Group Default</strong>: When one member of a group has  <code class="highlighter-rouge">Group Default</code>  checked, clicking the icon or menu item for the group will launch this software.</li>
   <li><strong>Projects:</strong>  A way to restrict software to certain projects.</li>
   <li><strong>User Restrictions:</strong>  A way to restrict software to certain users or groups.</li>
@@ -16561,14 +16561,14 @@
 
 <p>Say you have three versions of Maya on your filesystem: Maya 2016, Maya 2017, and Maya 2018. You want to make all of these available to your artists, but you want them to be grouped under a single icon in Desktop.</p>
 
-<p>If these three versions of Maya are installed in the standard location on your filesystem, then this will all happen automatically. When you select a project in Desktop, it will scan the standard applications directory on the local machine, and will find the three versions. Since you already have a Maya software entity in ShotGrid, with no specific versions or paths specified, it will display all versions it finds in Desktop.</p>
+<p>If these three versions of Maya are installed in the standard location on your filesystem, then this will all happen automatically. When you select a project in Desktop, it will scan the standard applications directory on the local machine, and will find the three versions. Since you already have a Maya software entity in Flow Production Tracking, with no specific versions or paths specified, it will display all versions it finds in Desktop.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/Integration-admin-guide/maya_software.png" alt="" /></p>
 
 <p>A few things to note here:</p>
 
 <ul>
-  <li>When ShotGrid auto-detects your software, a single Software entity generates the menu items for all versions.</li>
+  <li>When Flow Production Tracking auto-detects your software, a single Software entity generates the menu items for all versions.</li>
   <li>None of the Path fields have values specified. The Software entity is in auto-detect mode, so the App is assumed to be in the standard location.</li>
 </ul>
 
@@ -16576,7 +16576,7 @@
 
 <h3 id="example-grouping-versions-of-the-same-application-manual-mode">Example: Grouping versions of the same application, manual mode</h3>
 
-<p>It’s perfectly fine to store Maya in a non-standard location in your studio. You’ll just need to create your own Software entities, and specify paths to let ShotGrid know where to find your software. Your setup may look like this:</p>
+<p>It’s perfectly fine to store Maya in a non-standard location in your studio. You’ll just need to create your own Software entities, and specify paths to let Flow Production Tracking know where to find your software. Your setup may look like this:</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/Integration-admin-guide/maya_group_software.png" alt="" /></p>
 
@@ -16621,30 +16621,30 @@
 
 <h3 id="example-add-your-own-software">Example: Add your own Software</h3>
 
-<p>There are several reasons you might add a new software entity in addition to those that ShotGrid Desktop has auto-detected on your system:</p>
+<p>There are several reasons you might add a new software entity in addition to those that Flow Production Tracking Toolkit has auto-detected on your system:</p>
 
 <ul>
   <li>You want to make an application for which there is no engine available to your users through Desktop.</li>
   <li>You have in-house software, or third-party software that we don’t have an integration for, for which you’ve written your own engine.</li>
-  <li>Your software doesn’t live in a standard location, so you want to point ShotGrid to it manually. (This case was described in the “Grouping versions of the same Application, Manual mode” example above.)</li>
+  <li>Your software doesn’t live in a standard location, so you want to point Flow Production Tracking to it manually. (This case was described in the “Grouping versions of the same Application, Manual mode” example above.)</li>
 </ul>
 
-<p>In these cases, you can add your own Software entities. You’ll need to have a value for the  <code class="highlighter-rouge">Software Name</code>field. If you’re using an in-house engine for your software, specify the engine name in the  <code class="highlighter-rouge">Engine</code>  field. Some studios may want to include apps in Desktop that don’t have ShotGrid integrations, as a convenience for artists. Your artists can launch the app straight from Desktop. You can even use all of the settings above to manage versions and usage restrictions. In this case, leave the  <code class="highlighter-rouge">Engine</code>  field empty, but you’ll need to specify a value for at least one of  <code class="highlighter-rouge">Mac Path</code>,  <code class="highlighter-rouge">Linux Path</code>, and  <code class="highlighter-rouge">Windows Path</code>.</p>
+<p>In these cases, you can add your own Software entities. You’ll need to have a value for the  <code class="highlighter-rouge">Software Name</code>field. If you’re using an in-house engine for your software, specify the engine name in the  <code class="highlighter-rouge">Engine</code>  field. Some studios may want to include apps in Desktop that don’t have Flow Production Tracking integrations, as a convenience for artists. Your artists can launch the app straight from Desktop. You can even use all of the settings above to manage versions and usage restrictions. In this case, leave the  <code class="highlighter-rouge">Engine</code>  field empty, but you’ll need to specify a value for at least one of  <code class="highlighter-rouge">Mac Path</code>,  <code class="highlighter-rouge">Linux Path</code>, and  <code class="highlighter-rouge">Windows Path</code>.</p>
 
 <h2 id="configuring-published-file-path-resolution">Configuring published file path resolution</h2>
 
-<p>When you publish a file, the Publisher creates a PublishedFile entity in ShotGrid, which includes a  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_field_types_html">File/Link</a>  field called  <code class="highlighter-rouge">Path</code>. Later on, a different user may try to load this file into their own work session using the Loader. The Loader uses complex logic to resolve a valid local path to the PublishedFile across operating systems.</p>
+<p>When you publish a file, the Publisher creates a PublishedFile entity in Flow Production Tracking, which includes a  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_field_types_html">File/Link</a>  field called  <code class="highlighter-rouge">Path</code>. Later on, a different user may try to load this file into their own work session using the Loader. The Loader uses complex logic to resolve a valid local path to the PublishedFile across operating systems.</p>
 
 <p>The way in which the Loader attempts to resolve the publish data into a path depends on whether the the publish is associated with a local file link or a  <code class="highlighter-rouge">file://</code>  URL.</p>
 
 <h3 id="resolving-local-file-links">Resolving local file links</h3>
 
-<p>Local file links are generated automatically at publish time if the path you are publishing matches any local storage defined in the ShotGrid Site Preferences. If the publish is a local file link, its local operating system representation will be used. Read more about local file links  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_linking_local_files_html">here</a>.</p>
+<p>Local file links are generated automatically at publish time if the path you are publishing matches any local storage defined in the Flow Production Tracking Site Preferences. If the publish is a local file link, its local operating system representation will be used. Read more about local file links  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_linking_local_files_html">here</a>.</p>
 
 <p>If a local storage doesn’t define a path for the operating system you are currently using, you can use an environment variable to specify your local storage root. The name of the environment variable should take the form of  <code class="highlighter-rouge">SHOTGUN_PATH_&lt;WINDOWS|MAC|LINUX&gt;_&lt;STORAGENAME&gt;</code>. So, if you wanted to define a path on a Mac for a storage root called “Renders”, you’d create a  <code class="highlighter-rouge">SHOTGUN_PATH_MAC_RENDERS</code>  environment variable. Let’s go deeper with that example:</p>
 
 <ul>
-  <li>Say your ShotGrid site has a storage root called “Renders”, with the following paths specified:</li>
+  <li>Say your Flow Production Tracking site has a storage root called “Renders”, with the following paths specified:</li>
   <li>Linux path:  <code class="highlighter-rouge">/studio/renders/</code></li>
   <li>Windows path:  <code class="highlighter-rouge">S:\renders\</code></li>
   <li>
@@ -16675,17 +16675,17 @@
   <li>Then, if you also have a storage for editorial data, you could define  <code class="highlighter-rouge">SHOTGUN_PATH_LINUX_EDITORIAL</code>,  <code class="highlighter-rouge">SHOTGUN_PATH_MAC_EDITORIAL</code>, and  <code class="highlighter-rouge">SHOTGUN_PATH_WINDOWS_EDITORIAL</code>, in order to provide a translation mechanism for your editorial storage roots.</li>
 </ul>
 
-<p>Once you have standardized on these environment variables, you could consider converting them into a ShotGrid local storage. Once they are defined in the ShotGrid preferences, they will be automatically picked up and no environment variables will be needed.</p>
+<p>Once you have standardized on these environment variables, you could consider converting them into a Flow Production Tracking local storage. Once they are defined in the Flow Production Tracking preferences, they will be automatically picked up and no environment variables will be needed.</p>
 
 <ul>
-  <li>In addition to the above, all local storages defined in the ShotGrid preferences will be handled the same way.</li>
+  <li>In addition to the above, all local storages defined in the Flow Production Tracking preferences will be handled the same way.</li>
   <li>If a local storage has been defined, but an operating system is missing, this can be supplied via an environment variable. For example, if there is a local storage named  <code class="highlighter-rouge">Renders</code>  that is defined on Linux and Windows, you can extend to support mac by creating an environment variable named  <code class="highlighter-rouge">SHOTGUN_PATH_MAC_RENDERS</code>. The general syntax for this is  <code class="highlighter-rouge">SHOTGUN_PATH_&lt;WINDOWS|MAC|LINUX&gt;_&lt;STORAGENAME&gt;</code>.</li>
   <li>If no root matches, the file path will be returned as is.</li>
 </ul>
 
 <p>Here’s an example:</p>
 
-<p>Say you’ve published the file  <code class="highlighter-rouge">/projects/some/file.txt</code>  on Linux, and a ShotGrid publish with the URL  <code class="highlighter-rouge">file:///projects/some/file.txt</code>  was generated. In your studio, the Linux path  <code class="highlighter-rouge">/projects</code>  equates to  <code class="highlighter-rouge">Q:\projects</code>  on Windows, and hence you expect the full path to be translated to  <code class="highlighter-rouge">Q:\projects\some\file.txt</code>.</p>
+<p>Say you’ve published the file  <code class="highlighter-rouge">/projects/some/file.txt</code>  on Linux, and a Flow Production Tracking publish with the URL  <code class="highlighter-rouge">file:///projects/some/file.txt</code>  was generated. In your studio, the Linux path  <code class="highlighter-rouge">/projects</code>  equates to  <code class="highlighter-rouge">Q:\projects</code>  on Windows, and hence you expect the full path to be translated to  <code class="highlighter-rouge">Q:\projects\some\file.txt</code>.</p>
 
 <p>All of the following setups would handle this:</p>
 
@@ -16697,7 +16697,7 @@
     <p><code class="highlighter-rouge">SHOTGUN_PATH_MAC=/projects</code></p>
   </li>
   <li>
-    <p>A ShotGrid local storage called “Projects”, set up with:</p>
+    <p>A Flow Production Tracking local storage called “Projects”, set up with:</p>
   </li>
   <li>Linux Path:  <code class="highlighter-rouge">/projects</code></li>
   <li>Windows Path:  <code class="highlighter-rouge">Q:\projects</code></li>
@@ -16705,7 +16705,7 @@
     <p>Mac Path:  <code class="highlighter-rouge">/projects</code></p>
   </li>
   <li>
-    <p>A ShotGrid local storage called “Projects”, augmented with an environment variable:</p>
+    <p>A Flow Production Tracking local storage called “Projects”, augmented with an environment variable:</p>
   </li>
   <li>Linux Path:  <code class="highlighter-rouge">/projects</code></li>
   <li>Windows Path:</li>
@@ -16713,7 +16713,7 @@
   <li><code class="highlighter-rouge">SHOTGUN_PATH_WINDOWS_PROJECTS=Q:\projects</code></li>
 </ul>
 
-<p><strong>Note:</strong>  If you have a local storage  <code class="highlighter-rouge">Renders</code>  defined in ShotGrid with  <code class="highlighter-rouge">Linux path</code>  set, and also a  <code class="highlighter-rouge">SHOTGUN_PATH_LINUX_RENDERS</code>  environment variable defined, the storage will take precedence, the environment variable will be ignored, and a warning will be logged. Generally speaking, local storage definitions always take precedence over environment variables.</p>
+<p><strong>Note:</strong>  If you have a local storage  <code class="highlighter-rouge">Renders</code>  defined in Flow Production Tracking with  <code class="highlighter-rouge">Linux path</code>  set, and also a  <code class="highlighter-rouge">SHOTGUN_PATH_LINUX_RENDERS</code>  environment variable defined, the storage will take precedence, the environment variable will be ignored, and a warning will be logged. Generally speaking, local storage definitions always take precedence over environment variables.</p>
 
 <h3 id="advanced-configuration">Advanced configuration</h3>
 
@@ -16728,29 +16728,29 @@
 
 <h2 id="browser-integration">Browser Integration</h2>
 
-<p>Browser integration for ShotGrid Toolkit refers to access to Toolkit apps and launchers by way of right-click context menus in the ShotGrid web application. These menus, an example of which is shown above, contain actions configured for various entity types. In the case where you have multiple pipeline configurations for a project, the actions are organized by pipeline configuration. Browser integration allows you to launch content creation software like Maya or Nuke that is aware of your ShotGrid context, right from the browser.</p>
+<p>Browser integration for Flow Production Tracking Toolkit refers to access to Toolkit apps and launchers by way of right-click context menus in the Flow Production Tracking web application. These menus, an example of which is shown above, contain actions configured for various entity types. In the case where you have multiple pipeline configurations for a project, the actions are organized by pipeline configuration. Browser integration allows you to launch content creation software like Maya or Nuke that is aware of your Flow Production Tracking context, right from the browser.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/Integration-admin-guide/browser_integration.jpg" alt="" /></p>
 
 <h3 id="a-brief-history-of-browser-integration">A Brief History of Browser Integration</h3>
 
-<p>Over the years, ShotGrid Toolkit’s browser integration has taken several forms. As technologies and security requirements have progressed, so has the approach to implementing browser integration.</p>
+<p>Over the years, Flow Production Tracking Toolkit’s browser integration has taken several forms. As technologies and security requirements have progressed, so has the approach to implementing browser integration.</p>
 
 <p><strong>Java Applet (deprecated)</strong></p>
 
-<p>The first implementation consisted of a Java applet that provided access to the local desktop from the ShotGrid web application. As Java applets became recognized as an exploitable security risk, they fell out of favor, necessitating its deprecation.</p>
+<p>The first implementation consisted of a Java applet that provided access to the local desktop from the Flow Production Tracking web application. As Java applets became recognized as an exploitable security risk, they fell out of favor, necessitating its deprecation.</p>
 
 <p><strong>Browser Plugin (deprecated)</strong></p>
 
-<p>Replacing the deprecated Java applet was a browser plugin making use of NPAPI to access the local desktop from the ShotGrid web application. As NPAPI also became known as a security risk, the major web browsers began blocking its use. This necessitated deprecating the browser plugin.</p>
+<p>Replacing the deprecated Java applet was a browser plugin making use of NPAPI to access the local desktop from the Flow Production Tracking web application. As NPAPI also became known as a security risk, the major web browsers began blocking its use. This necessitated deprecating the browser plugin.</p>
 
-<p><strong>Websockets v1 via ShotGrid Desktop (legacy)</strong></p>
+<p><strong>Websockets v1 via Flow Production Tracking Toolkit (legacy)</strong></p>
 
-<p>Hosting a websocket server within the ShotGrid Desktop app was, and still is, the approach to communicating with the local desktop from the ShotGrid web application. The first implementation of this websocket server’s RPC API made use of the same underlying technology developed for the Java applet and browser plugin before it. When the server received a request from ShotGrid, the tank command from the associated project’s pipeline configuration was used to get the list of commands to show in the action menu.</p>
+<p>Hosting a websocket server within the Flow Production Tracking Toolkit app was, and still is, the approach to communicating with the local desktop from the Flow Production Tracking web application. The first implementation of this websocket server’s RPC API made use of the same underlying technology developed for the Java applet and browser plugin before it. When the server received a request from Flow Production Tracking, the tank command from the associated project’s pipeline configuration was used to get the list of commands to show in the action menu.</p>
 
-<p><strong>Websockets v2 via ShotGrid Desktop</strong></p>
+<p><strong>Websockets v2 via Flow Production Tracking Toolkit</strong></p>
 
-<p>The second iteration of the websocket server’s RPC API changes the underlying mechanism used to get, cache, and execute Toolkit actions. This implementation addresses a number of performance issues related to the earlier browser integration implementations, improves the visual organization of the action menus, and adds support for  <a href="https://developer.shotgridsoftware.com/d587be80/#getting-started-with-desktop">out-of-the-box ShotGrid Integrations</a>, which work without explicitly configuring Toolkit. This is the current implementation of browser integration.</p>
+<p>The second iteration of the websocket server’s RPC API changes the underlying mechanism used to get, cache, and execute Toolkit actions. This implementation addresses a number of performance issues related to the earlier browser integration implementations, improves the visual organization of the action menus, and adds support for  <a href="https://developer.shotgridsoftware.com/d587be80/#getting-started-with-desktop">out-of-the-box Flow Production Tracking Integrations</a>, which work without explicitly configuring Toolkit. This is the current implementation of browser integration.</p>
 
 <h3 id="configuration">Configuration</h3>
 
@@ -16758,11 +16758,11 @@
 
 <p><strong>Which engine configuration?</strong></p>
 
-<p>The Toolkit engine that manages Toolkit actions within the ShotGrid web app is  <code class="highlighter-rouge">tk-shotgun</code>, so it’s this engine’s configuration that controls what shows up in the action menus.</p>
+<p>The Toolkit engine that manages Toolkit actions within the Flow Production Tracking web app is  <code class="highlighter-rouge">tk-shotgun</code>, so it’s this engine’s configuration that controls what shows up in the action menus.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/Integration-admin-guide/tk-shotgun_config.png" alt="" /></p>
 
-<p>In the above example from  <a href="https://github.com/shotgunsoftware/tk-config-basic/">tk-config-basic</a>, there are two apps configured that will result in a number of engine commands turned into menu actions. Toolkit apps will register commands that are to be included in the action menu, including launcher commands for each software package found on the local system that correspond to the list of  <a href="https://developer.shotgridsoftware.com/8085533c/#configuring-software-launches">Software entities</a>  in the ShotGrid site. The result is the list of menu actions shown here:</p>
+<p>In the above example from  <a href="https://github.com/shotgunsoftware/tk-config-basic/">tk-config-basic</a>, there are two apps configured that will result in a number of engine commands turned into menu actions. Toolkit apps will register commands that are to be included in the action menu, including launcher commands for each software package found on the local system that correspond to the list of  <a href="https://developer.shotgridsoftware.com/8085533c/#configuring-software-launches">Software entities</a>  in the Flow Production Tracking site. The result is the list of menu actions shown here:</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/Integration-admin-guide/action_menu.png" alt="" /></p>
 
@@ -16778,7 +16778,7 @@
 
 <p><strong><em>Tip: Removing Software from the Browser Launchers with tk-config-default2</em></strong></p>
 
-<p>Updating the configuration for launching software from the ShotGrid browser varies from tk-config-default to tk-config-default2.</p>
+<p>Updating the configuration for launching software from the Flow Production Tracking browser varies from tk-config-default to tk-config-default2.</p>
 
 <p>With tk-config-default2, updates should be applied to config/env/includes/settings/<a href="https://github.com/shotgunsoftware/tk-config-default2/blob/v1.1.10/env/includes/settings/tk-shotgun.yml"><code class="highlighter-rouge">tk-shotgun.yml</code></a>, whereas in tk-config-default, they were done in config/env/<code class="highlighter-rouge">shotgun_task.yml</code>.</p>
 
@@ -16816,7 +16816,7 @@ settings.tk-shotgun.asset:
   location: "@engines.tk-shotgun.location"
 </code></pre></div></div>
 
-<p>Then, follow the same instructions for each entity (like Shot) from which you’d like to remove the ability to launch a particular software in the ShotGrid browser. Note that once you save the file, you may need to wait a minute and hard-refresh the browser for it to take effect.</p>
+<p>Then, follow the same instructions for each entity (like Shot) from which you’d like to remove the ability to launch a particular software in the Flow Production Tracking browser. Note that once you save the file, you may need to wait a minute and hard-refresh the browser for it to take effect.</p>
 
 <h3 id="caching">Caching</h3>
 
@@ -16824,7 +16824,7 @@ settings.tk-shotgun.asset:
 
 <p><strong>When is the cache invalidated?</strong></p>
 
-<p>The websocket server’s RPC API looks at two things to determine whether the cached data is still valid: YAML file modification times, and the contents of the site’s Software entities. If one of the environment YAML files in a given config has been modified since the cache data was written, the requisite data is recached and fresh data returned to the ShotGrid web application. Similarly, if any field on any Software entity in ShotGrid has been modified since the data was cached, Toolkit is bootstrapped and new data is cached.</p>
+<p>The websocket server’s RPC API looks at two things to determine whether the cached data is still valid: YAML file modification times, and the contents of the site’s Software entities. If one of the environment YAML files in a given config has been modified since the cache data was written, the requisite data is recached and fresh data returned to the Flow Production Tracking web application. Similarly, if any field on any Software entity in Flow Production Tracking has been modified since the data was cached, Toolkit is bootstrapped and new data is cached.</p>
 
 <p><strong>Where is the cache file on disk?</strong></p>
 
@@ -16841,8 +16841,8 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <ul>
   <li><code class="highlighter-rouge">get_cache_key</code>: This method determines the cache entry’s key for the given configuration URI, project entity, and entity type. The default implementation combines the configuration URI and entity type.</li>
-  <li><code class="highlighter-rouge">get_site_state_data</code>: This method can be used to include additional queried data from ShotGrid into the hash that’s used to test the validity of cached data. By default, the state of all Software entities that exist on the site are used, but if additional data should be included in the hash, that can be implemented in this hook method.</li>
-  <li><code class="highlighter-rouge">process_commands</code>: This method provides a place to customize or alter the commands that are to be returned to the ShotGrid web application. The data structure provided to the method is a list of dictionaries, with each dictionary representing a single menu action. Data can be altered, filtered out, or added into the list as is necessary and will be reflected in the menu requesting Toolkit actions immediately.</li>
+  <li><code class="highlighter-rouge">get_site_state_data</code>: This method can be used to include additional queried data from Flow Production Tracking into the hash that’s used to test the validity of cached data. By default, the state of all Software entities that exist on the site are used, but if additional data should be included in the hash, that can be implemented in this hook method.</li>
+  <li><code class="highlighter-rouge">process_commands</code>: This method provides a place to customize or alter the commands that are to be returned to the Flow Production Tracking web application. The data structure provided to the method is a list of dictionaries, with each dictionary representing a single menu action. Data can be altered, filtered out, or added into the list as is necessary and will be reflected in the menu requesting Toolkit actions immediately.</li>
 </ul>
 
 <h3 id="logs">Logs</h3>
@@ -16853,7 +16853,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <p>The complex nature of communicating from a web application with the local desktop means that there are possible points of failure along the way. Below are a few such situations and some suggestions of first steps to take when you encounter them.</p>
 
-<p><strong>“Open or install ShotGrid Desktop…” shown in the action menu</strong></p>
+<p><strong>“Open or install Flow Production Tracking Toolkit…” shown in the action menu</strong></p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/Integration-admin-guide/install_desktop.png" alt="" /></p>
 
@@ -16861,17 +16861,17 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <ol>
   <li>
-    <p>ShotGrid Desktop is not currently running on the local machine. It seems obvious, but it is definitely worth double checking.</p>
+    <p>Flow Production Tracking Toolkit is not currently running on the local machine. It seems obvious, but it is definitely worth double checking.</p>
   </li>
   <li>
-    <p>Chrome or the Python websocket server has refused the connection, resulting in the ShotGrid web application being unable to communicate with ShotGrid Desktop. This situation is most likely related to the self-signed certificates that allow the connection to proceed when requested. Regenerating these certificates from scratch often resolves the issue, and can be triggered from ShotGrid Desktop, as shown below.</p>
+    <p>Chrome or the Python websocket server has refused the connection, resulting in the Flow Production Tracking web application being unable to communicate with Flow Production Tracking Toolkit. This situation is most likely related to the self-signed certificates that allow the connection to proceed when requested. Regenerating these certificates from scratch often resolves the issue, and can be triggered from Flow Production Tracking Toolkit, as shown below.</p>
   </li>
 </ol>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/Integration-admin-guide/regenerate_certs.png" alt="" /></p>
 
 <ol>
-  <li>ShotGrid Desktop’s websocket server failed to start on launch. This situation is likely limited to situations where a bad release of the websocket server has gone out to the public, which should be exceedingly rare. In this situation, logging will be present in  <a href="https://developer.shotgridsoftware.com/38c5c024/">tk-desktop.log</a>  explaining the error, which can be  <a href="https://knowledge.autodesk.com/contact-support">sent to ShotGrid’s support team</a>.</li>
+  <li>Flow Production Tracking Toolkit’s websocket server failed to start on launch. This situation is likely limited to situations where a bad release of the websocket server has gone out to the public, which should be exceedingly rare. In this situation, logging will be present in  <a href="https://developer.shotgridsoftware.com/38c5c024/">tk-desktop.log</a>  explaining the error, which can be  <a href="https://knowledge.autodesk.com/contact-support">sent to Flow Production Tracking’s support team</a>.</li>
 </ol>
 
 <p><strong>No actions are shown in the action menu</strong></p>
@@ -16894,9 +16894,9 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
     <p>There is an empty list of menu actions cached on disk. To force the cache to be regenerated, there are a few options:</p>
 
     <ul>
-      <li>Update the modification time of a YAML file in your project’s configuration. This will trigger a recache of menu actions when they are next requested by ShotGrid. Worth noting is that this will trigger a recache for  <em>all</em>  users working in the project.</li>
-      <li>Update the value of a field in any of the Software entities on your ShotGrid site. The behavior here is the same as the above option concerning YAML file modification time, but will invalidate cached data for all users in  <em>all</em>  projects on your ShotGrid site. Software entities are non-project entities, which means they’re shared across all projects. If data in any of the Software entities is altered, all projects are impacted.</li>
-      <li>The cache file can be deleted on the host suffering from the problem. It is typically safe to remove the cache, and since it is stored locally on each host, it will only cause data to be recached from scratch on that one system. The cache is stored in the following SQLite file within your ShotGrid cache location:  <code class="highlighter-rouge">&lt;site-name&gt;/site.basic.desktop/tk-desktop/shotgun_engine_commands_v1.sqlite</code></li>
+      <li>Update the modification time of a YAML file in your project’s configuration. This will trigger a recache of menu actions when they are next requested by Flow Production Tracking. Worth noting is that this will trigger a recache for  <em>all</em>  users working in the project.</li>
+      <li>Update the value of a field in any of the Software entities on your Flow Production Tracking site. The behavior here is the same as the above option concerning YAML file modification time, but will invalidate cached data for all users in  <em>all</em>  projects on your Flow Production Tracking site. Software entities are non-project entities, which means they’re shared across all projects. If data in any of the Software entities is altered, all projects are impacted.</li>
+      <li>The cache file can be deleted on the host suffering from the problem. It is typically safe to remove the cache, and since it is stored locally on each host, it will only cause data to be recached from scratch on that one system. The cache is stored in the following SQLite file within your Flow Production Tracking cache location:  <code class="highlighter-rouge">&lt;site-name&gt;/site.basic.desktop/tk-desktop/shotgun_engine_commands_v1.sqlite</code></li>
     </ul>
   </li>
 </ol>
@@ -16912,20 +16912,20 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
     <p>The websocket server has not yet finished caching actions. If this is the first time actions are being retrieved after a significant update to the project’s config, the process can take some time to complete. Wait longer, and observe the contents of  <code class="highlighter-rouge">tk-desktop.log</code>  to see if processing is still occurring.</p>
   </li>
   <li>
-    <p>The websocket server has failed to respond and never will. This situation should be rare, but if it becomes obvious that there is no additional processing occurring as a result of the request for actions, as seen in  <code class="highlighter-rouge">tk-desktop.log</code>,  <a href="https://knowledge.autodesk.com/contact-support">contact ShotGrid support</a>, providing relevant log data.</p>
+    <p>The websocket server has failed to respond and never will. This situation should be rare, but if it becomes obvious that there is no additional processing occurring as a result of the request for actions, as seen in  <code class="highlighter-rouge">tk-desktop.log</code>,  <a href="https://knowledge.autodesk.com/contact-support">contact Flow Production Tracking support</a>, providing relevant log data.</p>
   </li>
   <li>
-    <p>The user is working in more than one ShotGrid site. With ShotGrid Desktop authenticated against a single site, requesting menu actions from a second ShotGrid site results in the user being queried about restarting ShotGrid Desktop and logging into the new site. If that request is ignored, the second site will never receive a list of menu actions.</p>
+    <p>The user is working in more than one Flow Production Tracking site. With Flow Production Tracking Toolkit authenticated against a single site, requesting menu actions from a second Flow Production Tracking site results in the user being queried about restarting Flow Production Tracking Toolkit and logging into the new site. If that request is ignored, the second site will never receive a list of menu actions.</p>
   </li>
 </ol>
 
 <h2 id="toolkit-configuration-file">Toolkit Configuration File</h2>
 
-<p>If your studio is using a proxy server, if you want to pre-populate the initial login screen with some values, or if you want to tweak how the browser-based application launcher integrates with ShotGrid Desktop, there is a special configuration file called  <code class="highlighter-rouge">toolkit.ini</code>. ShotGrid Desktop does not require this file in order to run; it’s only needed if you need to configure its behavior. Toolkit looks for the file in multiple locations, in the following order:</p>
+<p>If your studio is using a proxy server, if you want to pre-populate the initial login screen with some values, or if you want to tweak how the browser-based application launcher integrates with Flow Production Tracking Toolkit, there is a special configuration file called  <code class="highlighter-rouge">toolkit.ini</code>. Flow Production Tracking Toolkit does not require this file in order to run; it’s only needed if you need to configure its behavior. Toolkit looks for the file in multiple locations, in the following order:</p>
 
 <ol>
   <li>An environment variable named  <code class="highlighter-rouge">SGTK_PREFERENCES_LOCATION</code>  that points to a file path.</li>
-  <li>Inside the ShotGrid Toolkit preferences folder: (Note that this file does not exist by default in these locations; you must create it.)
+  <li>Inside the Flow Production Tracking Toolkit preferences folder: (Note that this file does not exist by default in these locations; you must create it.)
     <ul>
       <li>Windows:  <code class="highlighter-rouge">%APPDATA%\Shotgun\Preferences\toolkit.ini</code></li>
       <li>macOS:  <code class="highlighter-rouge">~/Library/Preferences/Shotgun/toolkit.ini</code></li>
@@ -16963,13 +16963,13 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <p><code class="highlighter-rouge">http_proxy: &lt;proxy_server_address&gt;</code></p>
 
-<p><strong>Running ShotGrid Desktop with a locally hosted site</strong></p>
+<p><strong>Running Flow Production Tracking Toolkit with a locally hosted site</strong></p>
 
-<p>If your ShotGrid site URL does not end with  <code class="highlighter-rouge">shotgunstudio.com</code> or <code class="highlighter-rouge">shotgrid.autodesk.com</code>, it means that you are running a local ShotGrid site. In this case, it is possible that your site has not yet been fully prepared for ShotGrid integrations and the ShotGrid team may need to go in and do some small adjustments before you can get going! In this case,  <a href="https://knowledge.autodesk.com/contact-support">please submit a ticket</a>  and we’ll help sort you out.</p>
+<p>If your Flow Production Tracking site URL does not end with  <code class="highlighter-rouge">shotgunstudio.com</code> or <code class="highlighter-rouge">shotgrid.autodesk.com</code>, it means that you are running a local Flow Production Tracking site. In this case, it is possible that your site has not yet been fully prepared for Flow Production Tracking integrations and the Flow Production Tracking team may need to go in and do some small adjustments before you can get going! In this case,  <a href="https://knowledge.autodesk.com/contact-support">please submit a ticket</a>  and we’ll help sort you out.</p>
 
 <p><strong>Connecting to the app store with a locally hosted site</strong></p>
 
-<p>If you are using a local ShotGrid site with access to the Internet through a proxy, you might want to set an HTTP proxy for accessing the app store, but not the local ShotGrid website. To do this, simply add the following line to  <code class="highlighter-rouge">toolkit.ini</code>:</p>
+<p>If you are using a local Flow Production Tracking site with access to the Internet through a proxy, you might want to set an HTTP proxy for accessing the app store, but not the local Flow Production Tracking website. To do this, simply add the following line to  <code class="highlighter-rouge">toolkit.ini</code>:</p>
 
 <p><code class="highlighter-rouge">app_store_http_proxy: &lt;proxy_server_address&gt;</code></p>
 
@@ -16977,9 +16977,9 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <p>If you need to override this setting on a per-project basis, you can do so in  <code class="highlighter-rouge">config/core/shotgun.yml</code>  in your project’s Pipeline Configuration.</p>
 
-<h2 id="configuring-the-thumbnail-display-in-shotgrid-desktop">Configuring the thumbnail display in ShotGrid Desktop</h2>
+<h2 id="configuring-the-thumbnail-display-in-shotgrid-desktop">Configuring the thumbnail display in Flow Production Tracking Toolkit</h2>
 
-<p>ShotGrid Desktop will now resize non-square images used as thumbnails to show the entire image as shown by the <code class="highlighter-rouge">Demo: Automotive</code> project in the image.</p>
+<p>Flow Production Tracking Toolkit will now resize non-square images used as thumbnails to show the entire image as shown by the <code class="highlighter-rouge">Demo: Automotive</code> project in the image.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/Integration-admin-guide/desktop_thumbnail_resizing.png" alt="" /></p>
 
@@ -16987,28 +16987,28 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <h2 id="offline-usage-scenarios">Offline Usage Scenarios</h2>
 
-<p><strong>Important:</strong> These offline usage scenarios only apply to locally installed instances of ShotGrid. Local installations of ShotGrid are no longer offered. This documentation is intended only for those with existing instances of Shotgun Enterprise Docker. <a href="https://www.autodesk.com/products/shotgrid/overview?term=1-YEAR&amp;support=null">Click here</a> for a list of our current offerings.</p>
+<p><strong>Important:</strong> These offline usage scenarios only apply to locally installed instances of Flow Production Tracking. Local installations of Flow Production Tracking are no longer offered. This documentation is intended only for those with existing instances of Shotgun Enterprise Docker. <a href="https://www.autodesk.com/products/shotgrid/overview?term=1-YEAR&amp;support=null">Click here</a> for a list of our current offerings.</p>
 
-<p>In general use, ShotGrid Desktop automatically checks for updates for the Desktop app itself, the tk-desktop engine, and the basic configuration at launch time. However, there are cases where you might want to run integrations while offline or on machines that are completely disconnected from the Internet. The following section describes how to address each of these scenarios.</p>
+<p>In general use, Flow Production Tracking Toolkit automatically checks for updates for the Desktop app itself, the tk-desktop engine, and the basic configuration at launch time. However, there are cases where you might want to run integrations while offline or on machines that are completely disconnected from the Internet. The following section describes how to address each of these scenarios.</p>
 
-<h3 id="shotgrid-create">ShotGrid Create</h3>
+<h3 id="shotgrid-create">Flow Production Tracking Create</h3>
 
-<p>The approaches to resolving offline usage scenarios outlined in this document also apply to the integration features provided by  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Supervisor_Artist_sa_create_sa_intro_create_html">ShotGrid Create</a>. The various environment variables used to tailor the behavior of ShotGrid Toolkit, such as  <code class="highlighter-rouge">SHOTGUN_BUNDLE_CACHE_FALLBACK_PATHS</code>, apply when using ShotGrid Create in the same ways as ShotGrid Desktop.</p>
+<p>The approaches to resolving offline usage scenarios outlined in this document also apply to the integration features provided by  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Supervisor_Artist_sa_create_sa_intro_create_html">Flow Production Tracking Create</a>. The various environment variables used to tailor the behavior of Flow Production Tracking Toolkit, such as  <code class="highlighter-rouge">SHOTGUN_BUNDLE_CACHE_FALLBACK_PATHS</code>, apply when using Flow Production Tracking Create in the same ways as Flow Production Tracking Toolkit.</p>
 
 <h3 id="running-integrations-while-offline">Running integrations while offline</h3>
 
-<p><em>Scenario: I want to run ShotGrid integrations, but I am not connected to the Internet. We have a local ShotGrid install.</em></p>
+<p><em>Scenario: I want to run Flow Production Tracking integrations, but I am not connected to the Internet. We have a local Flow Production Tracking install.</em></p>
 
 <p><strong>Solution</strong></p>
 
 <ul>
-  <li>If you can temporarily connect to the internet, just download ShotGrid Desktop. It comes prepackaged with a set of  <a href="https://developer.shotgridsoftware.com/d587be80/#introduction">integrations</a>, and pre-bundled with all the apps and engines needed for the ShotGrid integrations for all supported DCCs. When you start it up, it will automatically try to look for upgrades, but if it cannot connect to the ShotGrid App Store, it will simply run the most recent version that exists locally.</li>
+  <li>If you can temporarily connect to the internet, just download Flow Production Tracking Toolkit. It comes prepackaged with a set of  <a href="https://developer.shotgridsoftware.com/d587be80/#introduction">integrations</a>, and pre-bundled with all the apps and engines needed for the Flow Production Tracking integrations for all supported DCCs. When you start it up, it will automatically try to look for upgrades, but if it cannot connect to the Flow Production Tracking App Store, it will simply run the most recent version that exists locally.</li>
 </ul>
 
 <p><strong>Good to know</strong></p>
 
 <ul>
-  <li>Some Toolkit operations (such as registering a Publish) require access to your ShotGrid site. So, this solution only works for locally hosted sites.</li>
+  <li>Some Toolkit operations (such as registering a Publish) require access to your Flow Production Tracking site. So, this solution only works for locally hosted sites.</li>
   <li>Updates are downloaded to your local machine.</li>
   <li>If you switch between being connected and disconnected, Desktop, as well as in-app integrations like those inside Maya and Nuke, will download upgrades at startup whenever they are connected.</li>
 </ul>
@@ -17020,7 +17020,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 <p><strong>Solution</strong></p>
 
 <ul>
-  <li>Run ShotGrid Desktop on a workstation connected to the internet. When it starts up, the latest upgrades are automatically downloaded at launch time.</li>
+  <li>Run Flow Production Tracking Toolkit on a workstation connected to the internet. When it starts up, the latest upgrades are automatically downloaded at launch time.</li>
   <li>Option 1: Shared Desktop bundle</li>
   <li>Copy the  <a href="https://developer.shotgridsoftware.com/7c9867c0/">bundle cache</a>  to a shared location where all machines can access it.</li>
   <li>Set the  <code class="highlighter-rouge">SHOTGUN_BUNDLE_CACHE_FALLBACK_PATHS</code>  environment variable on offline machines to point to this location.</li>
@@ -17042,20 +17042,20 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <h3 id="freezing-updates-for-a-single-project">Freezing updates for a single project</h3>
 
-<p><em>Scenario: My project is about to wrap and I would like to freeze it so that no ShotGrid integration updates are automatically downloaded.</em></p>
+<p><em>Scenario: My project is about to wrap and I would like to freeze it so that no Flow Production Tracking integration updates are automatically downloaded.</em></p>
 
 <p><strong>Solution</strong></p>
 
 <ul>
   <li>Determine the version you want to lock your project to.  <a href="https://community.shotgridsoftware.com/tags/c/pipeline/6/release-notes">You can find the integration releases here.</a></li>
-  <li>In ShotGrid, create a Pipeline Configuration entity for the project you want to lock down, with the following fields populated (In this example, we are locking down the config to use v1.0.36 of the integrations):</li>
+  <li>In Flow Production Tracking, create a Pipeline Configuration entity for the project you want to lock down, with the following fields populated (In this example, we are locking down the config to use v1.0.36 of the integrations):</li>
   <li>Name:  <code class="highlighter-rouge">Primary</code></li>
   <li>Project: The project you want to lock down</li>
   <li>Plugin ids:  <code class="highlighter-rouge">basic.*</code></li>
   <li>
     <p>Descriptor:  <code class="highlighter-rouge">sgtk:descriptor:app_store?name=tk-config-basic&amp;version=v1.0.36</code></p>
   </li>
-  <li>Anyone starting ShotGrid Desktop on the project will now always use v1.0.36. Any new users starting to work on the project will also get v1.0.36.</li>
+  <li>Anyone starting Flow Production Tracking Toolkit on the project will now always use v1.0.36. Any new users starting to work on the project will also get v1.0.36.</li>
 </ul>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/Integration-admin-guide/freeze_single_project.png" alt="" /></p>
@@ -17137,7 +17137,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 <p><strong>Solution</strong></p>
 
 <ul>
-  <li>Duplicate the Pipeline Configuration entity in ShotGrid by right-clicking on it and selecting “Duplicate Selected”.</li>
+  <li>Duplicate the Pipeline Configuration entity in Flow Production Tracking by right-clicking on it and selecting “Duplicate Selected”.</li>
   <li>Name the cloned config “update test”, and assign yourself to the User Restrictions field.</li>
   <li>You will now begin to use this Pipeline Configuration.</li>
   <li>Change the descriptor to point to the version you wish to test.</li>
@@ -17148,7 +17148,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <h2 id="taking-over-a-pipeline-configuration">Taking over a Pipeline Configuration</h2>
 
-<p>Without setting up any configurations, you get a basic set of ShotGrid integrations out-of-the-box, and this document covers the kinds of administration you can do with these out-of-the-box integrations. This basic setup is built on top of ShotGrid’s Toolkit platform, which supports much richer customization. Within Desktop, the Toolkit Project Setup Wizard will lead you through the process of creating a full, customizable Pipeline Configuration for your project.</p>
+<p>Without setting up any configurations, you get a basic set of Flow Production Tracking integrations out-of-the-box, and this document covers the kinds of administration you can do with these out-of-the-box integrations. This basic setup is built on top of Flow Production Tracking’s Toolkit platform, which supports much richer customization. Within Desktop, the Toolkit Project Setup Wizard will lead you through the process of creating a full, customizable Pipeline Configuration for your project.</p>
 
 <p>Each section below explains in detail each of the steps of the Wizard with examples and suggestions of sensible default values in case you are not sure how to set things up.</p>
 
@@ -17165,7 +17165,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 <p>When you start configuring a new project, the first thing to decide is  <em>which configuration template to use</em>. A configuration template is essentially the complete project configuration with all settings, file system templates, apps and logic needed to run the project.</p>
 
 <ul>
-  <li>If this is your very first project, head over to the ShotGrid defaults to get you started.</li>
+  <li>If this is your very first project, head over to the Flow Production Tracking defaults to get you started.</li>
   <li>If you already have configured projects and configurations for previous projects, you can easily reuse these by basing your new project on an existing project</li>
   <li>For advanced workflows, you can use external configurations or configs stored in git repositories.</li>
 </ul>
@@ -17184,7 +17184,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <p><strong>File System Overview</strong></p>
 
-<p>The standard config handles Assets and Shots in ShotGrid. It breaks things down per Pipeline Step. A pipeline step is similar to a department. Each pipeline step contains work and publish areas for the various supported applications. The Shot structure looks like this:</p>
+<p>The standard config handles Assets and Shots in Flow Production Tracking. It breaks things down per Pipeline Step. A pipeline step is similar to a department. Each pipeline step contains work and publish areas for the various supported applications. The Shot structure looks like this:</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/Integration-admin-guide/folder_structure.png" alt="" /></p>
 
@@ -17194,10 +17194,10 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <ul>
   <li>Maya, Mari, Nuke, 3dsmax, Flame, Houdini, Photoshop, and Motionbuilder support</li>
-  <li>ShotGrid Application Launchers</li>
+  <li>Flow Production Tracking Application Launchers</li>
   <li>Publishing, Snapshotting, and Version Control</li>
   <li>A Nuke custom Write Node</li>
-  <li>ShotGrid integration</li>
+  <li>Flow Production Tracking integration</li>
   <li>A number of other tools and utilities</li>
 </ul>
 
@@ -17231,13 +17231,13 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <h4 id="setting-up-a-storage">Setting up a storage</h4>
 
-<p>Each Toolkit project writes all its files and data to one or more shared storage locations on disk. For example, a configuration may require one storage where it keeps textures, one where it keeps renders and one where it stores scene files. Normally, these storages are controlled from within the ShotGrid Site Preferences, under the  <em>File Management</em>  tab.</p>
+<p>Each Toolkit project writes all its files and data to one or more shared storage locations on disk. For example, a configuration may require one storage where it keeps textures, one where it keeps renders and one where it stores scene files. Normally, these storages are controlled from within the Flow Production Tracking Site Preferences, under the  <em>File Management</em>  tab.</p>
 
-<p>The Toolkit Setup wizard will ask you to map each storage root required by the configuration to a local storage in ShotGrid.</p>
+<p>The Toolkit Setup wizard will ask you to map each storage root required by the configuration to a local storage in Flow Production Tracking.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/Integration-admin-guide/wizard_storage.png" alt="" /></p>
 
-<p>The required root is listed on the left with its description (as defined in the configuration’s  <code class="highlighter-rouge">roots.yml</code>  file). On the right, a list of existing ShotGrid local storages is listed. You must select a storage for each required root and enter a path for the current OS if one does not already exist in ShotGrid.</p>
+<p>The required root is listed on the left with its description (as defined in the configuration’s  <code class="highlighter-rouge">roots.yml</code>  file). On the right, a list of existing Flow Production Tracking local storages is listed. You must select a storage for each required root and enter a path for the current OS if one does not already exist in Flow Production Tracking.</p>
 
 <p>You can also add paths for other operating systems that have not been defined. Existing paths are locked to ensure you don’t accidentally affect other projects that may be relying on that storage path. The mapping page in the wizard will ensure that you’ve mapped each required root and that each mapping is valid.</p>
 
@@ -17251,7 +17251,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/Integration-admin-guide/wizard_project_name.png" alt="" /></p>
 
-<p>Now it is time to choose a disk name for your project. This folder will be created in all the different storages which are needed by the configuration. You can see a quick preview in the UI - for most configurations this will only preview the primary storage, but if you are using a multi root config, additional storages will show up too. Toolkit will suggest a default project name based on the name in ShotGrid. Feel free to adjust it in order to create what is right for your setup.</p>
+<p>Now it is time to choose a disk name for your project. This folder will be created in all the different storages which are needed by the configuration. You can see a quick preview in the UI - for most configurations this will only preview the primary storage, but if you are using a multi root config, additional storages will show up too. Toolkit will suggest a default project name based on the name in Flow Production Tracking. Feel free to adjust it in order to create what is right for your setup.</p>
 
 <h4 id="selecting-a-configuration-location">Selecting a configuration location</h4>
 
@@ -17279,7 +17279,7 @@ windows: \\prod\software\shotgun\golden_circle
 
 <h3 id="silent-installs">Silent installs</h3>
 
-<p>If you are on a Windows network, you can use the argument “/S” to force the .exe ShotGrid Desktop installer to do a silent install. Then you can push a copy of the shortcut to the executable to the startup folder.</p>
+<p>If you are on a Windows network, you can use the argument “/S” to force the .exe Flow Production Tracking Toolkit installer to do a silent install. Then you can push a copy of the shortcut to the executable to the startup folder.</p>
 
 
             </div>  

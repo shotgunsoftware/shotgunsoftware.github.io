@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ko/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Jira 및 ShotGrid 간 데이터 동기화
+            Jira 및 Flow Production Tracking 간 데이터 동기화
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/ko/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ko/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 설명서
+            Flow Production Tracking 설명서
         </a>
     </div>
 
@@ -8166,7 +8166,7 @@
 
 <ul>
   <li>경로에 대한 행 ID를 확인할 수 없습니다!</li>
-  <li>데이터베이스 동시성 문제: <code class="highlighter-rouge">&lt;PATH&gt;</code> 경로가 ShotGrid 엔티티 <code class="highlighter-rouge">&lt;ENTITY&gt;</code>와 이미 연결되어 있습니다.</li>
+  <li>데이터베이스 동시성 문제: <code class="highlighter-rouge">&lt;PATH&gt;</code> 경로가 Flow Production Tracking 엔티티 <code class="highlighter-rouge">&lt;ENTITY&gt;</code>와 이미 연결되어 있습니다.</li>
 </ul>
 
 <h2 id="예시">예시:</h2>
@@ -8197,13 +8197,13 @@ Source data set: [{'path_cache_row_id': 8711, 'path':
 
 <h2 id="오류의-원인은-무엇입니까">오류의 원인은 무엇입니까?</h2>
 
-<p>이 오류는 ShotGrid(사이트 기본 설정(Site Prefs) -&gt; 파일 관리(File Management))에서 지정된 저장소 루트와 파이프라인 구성의 c<code class="highlighter-rouge">onfig/core/roots.yml</code> 간의 불일치를 가리킵니다.</p>
+<p>이 오류는 Flow Production Tracking(사이트 기본 설정(Site Prefs) -&gt; 파일 관리(File Management))에서 지정된 저장소 루트와 파이프라인 구성의 c<code class="highlighter-rouge">onfig/core/roots.yml</code> 간의 불일치를 가리킵니다.</p>
 
 <p>Windows를 실행하는 스튜디오에서 대소문자 불일치로 인해 종종 발생합니다. 해당 경로는 대소문자를 구분하지 않지만, 구성은 대소문자를 구분합니다. <code class="highlighter-rouge">E:\Projects</code>와 <code class="highlighter-rouge">E:\projects</code>처럼 간단한 차이로도 이 오류가 발생할 수 있습니다.</p>
 
 <h2 id="백그라운드에서-어떤-일이-발생합니까">백그라운드에서 어떤 일이 발생합니까?</h2>
 
-<p>코드는 방금 생성한 경로에 대한 FilesystemLocation 엔티티를 ShotGrid에서 만들고, ShotGrid의 저장소 루트를 사용하여 경로의 루트를 결정합니다. 그런 다음 로컬 캐시에 동일한 항목을 만들고 데이터베이스에서 저장할 위치를 결정해야 합니다. 로컬 캐시의 경우 <code class="highlighter-rouge">roots.yml</code>을 사용하여 경로의 루트를 확인하며, 대소문자가 일치하지 않기 때문에 생성 경로가 ShotGrid에서 입력한 경로와 일치하지 않습니다. 여기서 오류가 발생합니다.</p>
+<p>코드는 방금 생성한 경로에 대한 FilesystemLocation 엔티티를 Flow Production Tracking에서 만들고, Flow Production Tracking의 저장소 루트를 사용하여 경로의 루트를 결정합니다. 그런 다음 로컬 캐시에 동일한 항목을 만들고 데이터베이스에서 저장할 위치를 결정해야 합니다. 로컬 캐시의 경우 <code class="highlighter-rouge">roots.yml</code>을 사용하여 경로의 루트를 확인하며, 대소문자가 일치하지 않기 때문에 생성 경로가 Flow Production Tracking에서 입력한 경로와 일치하지 않습니다. 여기서 오류가 발생합니다.</p>
 
 <p>특히 오류가 명확하게 발생하지 않아 좋지 않은 결과가 발생했습니다. 폴더가 작성되고, FilesystemLocation 항목이 작성되고, 로컬 경로 캐시에서 동기화되지 않았으며, 저장소 루트가 일치하지 않아 동기화할 수도 없습니다.</p>
 
@@ -8215,10 +8215,10 @@ Source data set: [{'path_cache_row_id': 8711, 'path':
 
 <ul>
   <li>FilesystemLocation 엔티티를 지우는 방법: 이상적으로는 <code class="highlighter-rouge">tank unregister_folders</code>를 실행할 수 있습니다. 모든 엔티티를 지우려면 tank <code class="highlighter-rouge">unregister_folders --all</code>을 실행합니다. (<code class="highlighter-rouge">tank unregister_folders</code>의 모든 옵션에 대해 인자 없이 실행하면 사용 정보가 출력됩니다.)</li>
-  <li>그러나 DB가 이미 불안정한 상태이므로 작동하지 않거나 부분적으로만 작동할 수 있습니다. 명령을 실행하고 나면 ShotGrid의 FilesystemLocations로 돌아가서 삭제될 것으로 예상되는 항목이 실제로 사라졌는지 확인합니다. 그렇지 않은 경우 잘못된 엔티티를 선택하고 수동으로 휴지통으로 이동합니다.</li>
+  <li>그러나 DB가 이미 불안정한 상태이므로 작동하지 않거나 부분적으로만 작동할 수 있습니다. 명령을 실행하고 나면 Flow Production Tracking의 FilesystemLocations로 돌아가서 삭제될 것으로 예상되는 항목이 실제로 사라졌는지 확인합니다. 그렇지 않은 경우 잘못된 엔티티를 선택하고 수동으로 휴지통으로 이동합니다.</li>
 </ul>
 
-<p>이때 ShotGrid의 FilesystemLocations는 정리되지만 아티스트의 로컬 캐시에 변경 사항이 반영되지 않을 수 있습니다. 마지막 단계는 각 사용자의 컴퓨터에서 로컬 캐시를 실제로 동기화하는 것입니다. 이렇게 하려면 tank <code class="highlighter-rouge">synchronize_folders --full</code>을 실행해야 합니다.</p>
+<p>이때 Flow Production Tracking의 FilesystemLocations는 정리되지만 아티스트의 로컬 캐시에 변경 사항이 반영되지 않을 수 있습니다. 마지막 단계는 각 사용자의 컴퓨터에서 로컬 캐시를 실제로 동기화하는 것입니다. 이렇게 하려면 tank <code class="highlighter-rouge">synchronize_folders --full</code>을 실행해야 합니다.</p>
 
 <p>이 모든 단계를 수행하고 나면 경로 캐시가 양호한 상태가 되고 해당 오류가 더 이상 나타나지 않아야 합니다.</p>
 

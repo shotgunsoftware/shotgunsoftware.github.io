@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -3825,9 +3825,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/zh_CN/7584b650/?title=Alias+ShotGrid+%E5%B7%A5%E4%BD%9C%E6%B5%81"
+                href="/zh_CN/7584b650/?title=Alias+Flow+Production+Tracking+%E5%B7%A5%E4%BD%9C%E6%B5%81"
             >
-                Alias ShotGrid 工作流
+                Alias Flow Production Tracking 工作流
             </a>
             </div>
 
@@ -7119,7 +7119,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -9750,9 +9750,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -12116,7 +12116,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -13186,7 +13186,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -13272,9 +13272,9 @@
 
 <h2 id="关于本手册">关于本手册</h2>
 
-<p>本手册将演示如何将 ShotGrid Toolkit 应用添加到现有的工作流配置。您将很快熟悉配置管理工具。</p>
+<p>本手册将演示如何将 Flow Production Tracking Toolkit 应用添加到现有的工作流配置。您将很快熟悉配置管理工具。</p>
 
-<p>我们要添加的应用是 ShotGrid Python 控制台应用。Maya 具有其自己的 Python 控制台，但是 Toolkit 应用中有一些功能在 Maya 控制台中不存在。</p>
+<p>我们要添加的应用是 Flow Production Tracking Python 控制台应用。Maya 具有其自己的 Python 控制台，但是 Toolkit 应用中有一些功能在 Maya 控制台中不存在。</p>
 
 <p>本手册利用我们在<a href="/zh_CN/37f575b8/">编辑工作流配置</a>手册中创建的工作流配置。如果您尚未完成此手册，则可以使用现有的工作流配置，并在其中添加该应用。</p>
 
@@ -13286,7 +13286,7 @@
   <li>活动的 <a href="https://www.shotgridsoftware.com/signup/">ShotGrid</a> 站点。</li>
   <li>用于已标识项目的工作流配置，或完成<a href="/zh_CN/5d83a936/">配置快速入门</a>手册，并使用在该练习中创建的配置。</li>
   <li>为存储工作流配置的 Shotgun 管理的文件系统设置适当的读取和写入权限。</li>
-  <li>在系统上安装 ShotGrid Desktop。</li>
+  <li>在系统上安装 Flow Production Tracking Toolkit。</li>
   <li>Maya 的有效固定期限的使用许可。在<a href="https://www.autodesk.com.cn/products/maya/free-trial">此处</a> 获取 Maya 的 30 天试用版。</li>
 </ol>
 
@@ -13299,15 +13299,15 @@
     </p>
 </div>
 
-<h2 id="关于-shotgrid-toolkit-应用">关于 ShotGrid Toolkit 应用</h2>
+<h2 id="关于-shotgrid-toolkit-应用">关于 Flow Production Tracking Toolkit 应用</h2>
 
 <h3 id="toolkit-应用工作方式">Toolkit 应用工作方式</h3>
 
-<p>工作流配置中引用的应用可以来自不同的位置。默认配置中的标准应用来自 ShotGrid 应用商店。工作流配置中的文件指定 ShotGrid 集成如何访问应用，有点像询问 Toolkit，“您能在小黑本中查找 Python 控制台应用的地址吗？”工作流配置文件告知 Toolkit 在何处可以找到用于特定应用的代码包。</p>
+<p>工作流配置中引用的应用可以来自不同的位置。默认配置中的标准应用来自 Flow Production Tracking 应用商店。工作流配置中的文件指定 Flow Production Tracking 集成如何访问应用，有点像询问 Toolkit，“您能在小黑本中查找 Python 控制台应用的地址吗？”工作流配置文件告知 Toolkit 在何处可以找到用于特定应用的代码包。</p>
 
-<p>Toolkit 应用的“地址”列在默认配置的 <code class="highlighter-rouge">config/env/includes/app_locations.yml</code> 文件中，并指定如何查找代码。这些“地址”称为<a href="https://developer.shotgridsoftware.com/tk-core/descriptor.html">描述符</a>。不仅需要告诉 ShotGrid 集成如何查找应用的代码包，还需要告诉它在哪些环境中使用该应用。</p>
+<p>Toolkit 应用的“地址”列在默认配置的 <code class="highlighter-rouge">config/env/includes/app_locations.yml</code> 文件中，并指定如何查找代码。这些“地址”称为<a href="https://developer.shotgridsoftware.com/tk-core/descriptor.html">描述符</a>。不仅需要告诉 Flow Production Tracking 集成如何查找应用的代码包，还需要告诉它在哪些环境中使用该应用。</p>
 
-<p>下面概念性概述了如何安装应用以及如何告知 ShotGrid 集成在何处使用它。 它概述了扩展配置的步骤，要求 Toolkit 查找描述符，并告知 ShotGrid 在何处使用该应用。 本手册详细介绍了这些步骤：</p>
+<p>下面概念性概述了如何安装应用以及如何告知 Flow Production Tracking 集成在何处使用它。 它概述了扩展配置的步骤，要求 Toolkit 查找描述符，并告知 Flow Production Tracking 在何处使用该应用。 本手册详细介绍了这些步骤：</p>
 
 <ol>
   <li>确定要添加的应用的描述符。</li>
@@ -13315,14 +13315,14 @@
   <li>确定该应用的描述符在配置中是否存在，如果不存在，则添加它。</li>
   <li>使用空格而不是制表符进行缩进，从而正确设置 YAML 文件的格式。</li>
   <li>确定要在哪些环境中使用该应用。</li>
-  <li>在这些环境中，添加允许 ShotGrid 使用该应用的设置。</li>
+  <li>在这些环境中，添加允许 Flow Production Tracking 使用该应用的设置。</li>
   <li>测试新配置。</li>
   <li>使扩展配置生效。</li>
 </ol>
 
 <h3 id="查找-python-控制台应用的位置描述符">查找 Python 控制台应用的位置描述符</h3>
 
-<p><strong>步骤 1：</strong>打开<a href="https://developer.shotgridsoftware.com/zh_CN/9e62da4a/">应用和插件页面</a>，并在 Maya 下查找 ShotGrid Python 控制台的信息。选择标题。</p>
+<p><strong>步骤 1：</strong>打开<a href="https://developer.shotgridsoftware.com/zh_CN/9e62da4a/">应用和插件页面</a>，并在 Maya 下查找 Flow Production Tracking Python 控制台的信息。选择标题。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/installing_app/1_python_app.png" alt="Python 应用" /></p>
 
@@ -13334,7 +13334,7 @@
 
 <h3 id="确认在-maya-的项目环境中没有-python-控制台应用">确认在 Maya 的项目环境中没有 Python 控制台应用</h3>
 
-<p><strong>步骤 2：</strong>启动 Maya 并选择 ShotGrid 菜单<strong>“ShotGrid &gt; 项目 the_other_side”(ShotGrid &gt; Project the_other_side)</strong>，您会看到可用于项目环境中该项目的应用列表。</p>
+<p><strong>步骤 2：</strong>启动 Maya 并选择 Flow Production Tracking 菜单<strong>“Flow Production Tracking &gt; 项目 the_other_side”(Flow Production Tracking &gt; Project the_other_side)</strong>，您会看到可用于项目环境中该项目的应用列表。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/installing_app/3_list_of_apps.png" alt="应用列表" /></p>
 
@@ -13348,11 +13348,11 @@
 
 <h3 id="转到工作流配置列表">转到工作流配置列表。</h3>
 
-<p><strong>步骤 3：</strong>打开 ShotGrid，在右上角选择<strong>“管理”(Admin)菜单（您的头像）&gt;“默认布局 &gt; 工作流配置 &gt; 工作流配置列表”(Default Layouts &gt; Pipeline Configuration &gt; Pipeline Configuration List)</strong>。</p>
+<p><strong>步骤 3：</strong>打开 Flow Production Tracking，在右上角选择<strong>“管理”(Admin)菜单（您的头像）&gt;“默认布局 &gt; 工作流配置 &gt; 工作流配置列表”(Default Layouts &gt; Pipeline Configuration &gt; Pipeline Configuration List)</strong>。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/installing_app/4_REPLACE_pipeline_configuration_list.png" alt="工作流配置列表" /></p>
 
-<p>此动作将显示 ShotGrid 站点的所有工作流配置的详细列表。</p>
+<p>此动作将显示 Flow Production Tracking 站点的所有工作流配置的详细列表。</p>
 
 <p><strong>步骤 4：</strong>显示“工作流配置列表”(Pipeline Configuration List)后，选择列标题最右侧的 <strong>+</strong> 号，然后添加<strong>“项目”(Projects)</strong>列。</p>
 
@@ -13376,7 +13376,7 @@
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/installing_app/9_name_clone.png" alt="命名克隆" /></p>
 
-<p>等待 ShotGrid 复制配置中的所有文件和文件夹，并为应用创建缓存。 现在就可以使用应用，让您可以一边喝着香浓咖啡，一边享用羊角面包。</p>
+<p>等待 Flow Production Tracking 复制配置中的所有文件和文件夹，并为应用创建缓存。 现在就可以使用应用，让您可以一边喝着香浓咖啡，一边享用羊角面包。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/installing_app/10_clone_complete.png" alt="克隆完成" /></p>
 
@@ -13386,18 +13386,18 @@
     <p>
         <i class="fa fa-info-circle"></i>
         <b>注意
-:</b> 在<strong>“用户限制”(User Restrictions)</strong>下，添加了您的用户名。ShotGrid 自动将对新配置的访问权限限制为仅创建配置的人员。 您可以添加要编辑、测试并最终使用此配置的人员。另一方面，ShotGrid 可实现灵活性和可控性。
+:</b> 在<strong>“用户限制”(User Restrictions)</strong>下，添加了您的用户名。Flow Production Tracking 自动将对新配置的访问权限限制为仅创建配置的人员。 您可以添加要编辑、测试并最终使用此配置的人员。另一方面，Flow Production Tracking 可实现灵活性和可控性。
 
     </p>
 </div>
 
 <h2 id="将克隆的配置与项目相关联">将克隆的配置与项目相关联</h2>
 
-<p><strong>步骤 8：</strong>打开 ShotGrid Desktop，并选择您为其创建克隆配置的项目。 选择右上角的<strong>向下箭头</strong>以显示与此项目关联的配置，然后选择刚创建的 <strong>Primary Clone Config 2</strong>。</p>
+<p><strong>步骤 8：</strong>打开 Flow Production Tracking Toolkit，并选择您为其创建克隆配置的项目。 选择右上角的<strong>向下箭头</strong>以显示与此项目关联的配置，然后选择刚创建的 <strong>Primary Clone Config 2</strong>。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/installing_app/11_select_clone.png" alt="选择克隆" /></p>
 
-<p>ShotGrid Desktop 现在正在使用此项目的克隆配置。</p>
+<p>Flow Production Tracking Toolkit 现在正在使用此项目的克隆配置。</p>
 
 <h2 id="编辑工作流配置">编辑工作流配置</h2>
 
@@ -13460,7 +13460,7 @@
 
 <h3 id="yaml-文件">YAML 文件</h3>
 
-<p>ShotGrid Toolkit 工作流配置使用 <a href="https://yaml.org/spec/1.2/spec.html">YAML</a> 文件中的简单术语来标识应用和插件的位置及其设置。</p>
+<p>Flow Production Tracking Toolkit 工作流配置使用 <a href="https://yaml.org/spec/1.2/spec.html">YAML</a> 文件中的简单术语来标识应用和插件的位置及其设置。</p>
 
 <p>对于此特定块：</p>
 
@@ -13471,11 +13471,11 @@
   <li><code class="highlighter-rouge">@</code> 是 Toolkit 术语，用于表示设置值来自包含文件</li>
 </ul>
 
-<p>YAML 文件是 ShotGrid 集成的窗口，可以更轻松地配置满足您的工作流需求的工作环境。</p>
+<p>YAML 文件是 Flow Production Tracking 集成的窗口，可以更轻松地配置满足您的工作流需求的工作环境。</p>
 
 <h3 id="配置如何引用-toolkit-包">配置如何引用 Toolkit 包</h3>
 
-<p>ShotGrid 集成的代码被组织成应用、插件和框架的包。 在 Toolkit 的 YAML 文件中使用 <code class="highlighter-rouge">tk-maya</code>、<code class="highlighter-rouge">tk-multi-pythonconsole</code> 等标识符对这些包进行引用。每个包的相应 YAML 块都包含用于控制如何访问和使用所标识包的设置。</p>
+<p>Flow Production Tracking 集成的代码被组织成应用、插件和框架的包。 在 Toolkit 的 YAML 文件中使用 <code class="highlighter-rouge">tk-maya</code>、<code class="highlighter-rouge">tk-multi-pythonconsole</code> 等标识符对这些包进行引用。每个包的相应 YAML 块都包含用于控制如何访问和使用所标识包的设置。</p>
 
 <h2 id="在何处放置-python-控制台的设置">在何处放置 Python 控制台的设置</h2>
 
@@ -13518,7 +13518,7 @@
     <span class="na">tk-multi-workfiles2</span><span class="pi">:</span> <span class="s2">"</span><span class="s">@settings.tk-multi-workfiles2.launch_at_startup"</span>
 </code></pre></div></div>
 
-<p>您会注意到，<strong>审片室、ShotGrid 面板和 Workfiles 2</strong> 应用的位置标识符列在不同的包含文件中，并且以不同于<strong>关于</strong>应用的方式进行访问。 为了保持整洁，这些应用被拆分到包含的 settings 文件夹，因为它们具有其他设置。</p>
+<p>您会注意到，<strong>审片室、Flow Production Tracking 面板和 Workfiles 2</strong> 应用的位置标识符列在不同的包含文件中，并且以不同于<strong>关于</strong>应用的方式进行访问。 为了保持整洁，这些应用被拆分到包含的 settings 文件夹，因为它们具有其他设置。</p>
 
 <div class="info-popup">
     <p>
@@ -13543,7 +13543,7 @@
 
 <h2 id="查看-maya-中的更改">查看 Maya 中的更改</h2>
 
-<p><strong>步骤 16：</strong>打开 ShotGrid Desktop，选择正在处理的项目，并确认您使用的是克隆配置。</p>
+<p><strong>步骤 16：</strong>打开 Flow Production Tracking Toolkit，选择正在处理的项目，并确认您使用的是克隆配置。</p>
 
 <p>在项目名称下，将出现一个蓝色条，其中包含您创建的克隆的名称。</p>
 
@@ -13558,7 +13558,7 @@
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/installing_app/14_maya_cloned_config.png" alt="Maya 克隆配置" /></p>
 
-<p><strong>步骤 17：</strong>从 Desktop 启动 Maya，然后选择菜单<strong>“ShotGrid &gt; 项目 &gt; …”(ShotGrid &gt; Project &gt; …)</strong></p>
+<p><strong>步骤 17：</strong>从 Desktop 启动 Maya，然后选择菜单<strong>“Flow Production Tracking &gt; 项目 &gt; …”(Flow Production Tracking &gt; Project &gt; …)</strong></p>
 
 <p>如果：</p>
 
@@ -13567,7 +13567,7 @@
   <li>克隆配置已正确扩展</li>
   <li>您保存了扩展文件</li>
   <li>您选择将项目与克隆配置相关联</li>
-  <li>您从 ShotGrid Desktop 重新启动了 Maya</li>
+  <li>您从 Flow Production Tracking Toolkit 重新启动了 Maya</li>
 </ul>
 
 <p>Python 控制台应用将在 Maya 中可用。</p>
@@ -13595,7 +13595,7 @@ $ ls
 cache		config		install		tank		tank.bat
 $ ./tank push_configuration
 
-Welcome to the Shotgun Pipeline Toolkit!
+Welcome to the Flow Production Tracking Toolkit!
 For documentation, see https://developer.shotgridsoftware.com
 Starting Toolkit for your current path
 '/Users/michelle/Documents/Shotgun/configs/the_other_side_clone2'
@@ -13631,14 +13631,14 @@ Please type in the id of the configuration to push to (ENTER to exit):
     <p>
         <i class="fa fa-info-circle"></i>
         <b>注意
-:</b> 您也可以在本手册的<strong>“步骤 3”</strong>中查看的 ShotGrid 中的“工作流配置”(Pipeline Configuration)页面上找到工作流配置的 ID。 要查找项目 ID，请转到“配置列表”(Configuration List)，并添加“ID”列。
+:</b> 您也可以在本手册的<strong>“步骤 3”</strong>中查看的 Flow Production Tracking 中的“工作流配置”(Pipeline Configuration)页面上找到工作流配置的 ID。 要查找项目 ID，请转到“配置列表”(Configuration List)，并添加“ID”列。
 
     </p>
 </div>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/installing_app/17_id_column.png" alt="ID 列" /></p>
 
-<p>输入 ID 后，ShotGrid 将：</p>
+<p>输入 ID 后，Flow Production Tracking 将：</p>
 
 <ul>
   <li>备份主要配置</li>
@@ -13659,11 +13659,11 @@ Push Complete!
 
 <h2 id="查看在主要配置中所做的更改">查看在主要配置中所做的更改</h2>
 
-<p><strong>步骤 19：</strong>在 ShotGrid Desktop 中，单击右上角的箭头，并在<strong>“配置”(CONFIGURATION)</strong>列表中选择<strong>“主要”(Primary)</strong>。</p>
+<p><strong>步骤 19：</strong>在 Flow Production Tracking Toolkit 中，单击右上角的箭头，并在<strong>“配置”(CONFIGURATION)</strong>列表中选择<strong>“主要”(Primary)</strong>。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/installing_app/18_change_config_maya.png" alt="更改配置 maya" /></p>
 
-<p><strong>步骤 20：</strong>从 Desktop 启动 Maya，并查看菜单<strong>“ShotGrid &gt; 项目 &gt; …”(ShotGrid &gt; Project &gt; …)</strong>以查找“ShotGrid Python 控制台…”(ShotGrid Python Console…)</p>
+<p><strong>步骤 20：</strong>从 Desktop 启动 Maya，并查看菜单<strong>“Flow Production Tracking &gt; 项目 &gt; …”(Flow Production Tracking &gt; Project &gt; …)</strong>以查找“Flow Production Tracking Python 控制台…”(Flow Production Tracking Python Console…)</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/installing_app/19_app_in_maya.png" alt="Maya 中的应用" /></p>
 
@@ -13671,15 +13671,15 @@ Push Complete!
 
 <h2 id="高级主题">高级主题</h2>
 
-<h3 id="shotgrid-开发人员社区">ShotGrid 开发人员社区</h3>
+<h3 id="shotgrid-开发人员社区">Flow Production Tracking 开发人员社区</h3>
 
-<p>Toolkit 的一个奇妙之处在于，任何人都可以创建 Toolkit 应用。应用可以保持专有，也可以在 <a href="https://community.shotgridsoftware.com/c/pipeline/6">ShotGrid 社区</a>中分享，并添加到 ShotGrid 库。如果您已经在 ShotGrid 区页面上创建了真正想要共享的主要应用，请访问<a href="https://knowledge.autodesk.com/contact-support">支持站点</a>以获取帮助。</p>
+<p>Toolkit 的一个奇妙之处在于，任何人都可以创建 Toolkit 应用。应用可以保持专有，也可以在 <a href="https://community.shotgridsoftware.com/c/pipeline/6">Flow Production Tracking 社区</a>中分享，并添加到 Flow Production Tracking 库。如果您已经在 Flow Production Tracking 区页面上创建了真正想要共享的主要应用，请访问<a href="https://knowledge.autodesk.com/contact-support">支持站点</a>以获取帮助。</p>
 
-<p>在 <strong><a href="https://groups.google.com/a/shotgunsoftware.com/forum/?fromgroups#!forum/shotgun-dev">ShotGrid-dev Google 组</a></strong>中对标准 Toolkit 应用和由充满爱心的 ShotGrid 社区创建的应用进行了热烈的讨论。随着 ShotGrid 社区内容日益丰富，知识和工具库将不断壮大。</p>
+<p>在 <strong><a href="https://groups.google.com/a/shotgunsoftware.com/forum/?fromgroups#!forum/shotgun-dev">ShotGrid-dev Google 组</a></strong>中对标准 Toolkit 应用和由充满爱心的 Flow Production Tracking 社区创建的应用进行了热烈的讨论。随着 Flow Production Tracking 社区内容日益丰富，知识和工具库将不断壮大。</p>
 
 <h3 id="研究如何扩展配置">研究如何扩展配置</h3>
 
-<p>您可能已经注意到，当我们选择要用于项目的配置时，ShotGrid Desktop 下拉菜单中提供了 Python 控制台应用。</p>
+<p>您可能已经注意到，当我们选择要用于项目的配置时，Flow Production Tracking Toolkit 下拉菜单中提供了 Python 控制台应用。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/installing_app/20_desktop_python_console.png" alt="Desktop Python 控制台" /></p>
 
@@ -13718,9 +13718,9 @@ Push Complete!
 
 <p>每个应用、插件和框架都有位置描述符，用于告知 Toolkit 在何处访问特定的包。许多应用描述符都位于 <code class="highlighter-rouge">app_locations.yml</code> 文件中，但可能无法在所需的位置引用它们，正如我们在 Python 控制台应用中看到的那样。所有标准应用和插件都列在<a href="https://developer.shotgridsoftware.com/zh_CN/162eaa4b/">应用和插件页面</a> 中。</p>
 
-<p>您可以将任何应用添加到 ShotGrid 支持的任何适当的软件集成中，也可以将您自己的专有应用添加到 Toolkit 库中。所有受支持的软件应用程序也列在集成<a href="https://developer.shotgridsoftware.com/zh_CN/162eaa4b/">应用和插件页面</a>中。</p>
+<p>您可以将任何应用添加到 Flow Production Tracking 支持的任何适当的软件集成中，也可以将您自己的专有应用添加到 Toolkit 库中。所有受支持的软件应用程序也列在集成<a href="https://developer.shotgridsoftware.com/zh_CN/162eaa4b/">应用和插件页面</a>中。</p>
 
-<p>如果找不到您要查找的确切应用，则可以创建一个。其他 ShotGrid 用户很有可能需要同样的功能，因此分享新应用是回馈 ShotGrid 社区的一种方式。</p>
+<p>如果找不到您要查找的确切应用，则可以创建一个。其他 Flow Production Tracking 用户很有可能需要同样的功能，因此分享新应用是回馈 Flow Production Tracking 社区的一种方式。</p>
 
 <p>在<a href="https://developer.shotgridsoftware.com/zh_CN/56b441c6/">下一个手册</a>中，您将了解如何自定义 production 文件夹结构，以呈现您的设施的构造方式。</p>
 

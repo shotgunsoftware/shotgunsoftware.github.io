@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -10465,9 +10465,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/c0b0ce05/?title=ShotGrid+Panel"
+                href="/c0b0ce05/?title=Flow+Production+Tracking+Panel"
             >
-                ShotGrid Panel
+                Flow Production Tracking Panel
             </a>
             </div>
 
@@ -11812,7 +11812,7 @@
                 style='margin-left:40px'
                 href="/88ae1c1d/?title=Hiero%2FNuke+Studio+Open+in+ShotGrid"
             >
-                Hiero/Nuke Studio Open in ShotGrid
+                Hiero/Nuke Studio Open in Flow Production Tracking
             </a>
             </div>
 
@@ -14169,9 +14169,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/134adb0e/?title=ShotGrid+Folders"
+                href="/134adb0e/?title=Flow+Production+Tracking+Folders"
             >
-                ShotGrid Folders
+                Flow Production Tracking Folders
             </a>
             </div>
 
@@ -14632,9 +14632,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/0c3049eb/?title=ShotGrid+Launch+Folder"
+                href="/0c3049eb/?title=Flow+Production+Tracking+Launch+Folder"
             >
-                ShotGrid Launch Folder
+                Flow Production Tracking Launch Folder
             </a>
             </div>
 
@@ -15095,9 +15095,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/a01dbeb7/?title=ShotGrid+Launch+Publish"
+                href="/a01dbeb7/?title=Flow+Production+Tracking+Launch+Publish"
             >
-                ShotGrid Launch Publish
+                Flow Production Tracking Launch Publish
             </a>
             </div>
 
@@ -19431,9 +19431,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -21797,7 +21797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -22867,7 +22867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -22948,9 +22948,9 @@
 
 <p><img src="/en/reference/pipeline-integrations/images/apps/multi-workfiles2-tasks.png" alt="task" /></p>
 
-<p>The main dialog is split in two halves. On the left hand side, there is a series of tabs. The first tab is called “My Tasks” and will display all the tasks that are assigned to the current user. It is very reminiscent of the “My Tasks” page on the ShotGrid website.</p>
+<p>The main dialog is split in two halves. On the left hand side, there is a series of tabs. The first tab is called “My Tasks” and will display all the tasks that are assigned to the current user. It is very reminiscent of the “My Tasks” page on the Flow Production Tracking website.</p>
 
-<p>Alternatively, the user can also browse for a ShotGrid entity using the entities tabs. By default, the workfiles application allows to browse for any tasks associated on shots or assets by looking at the respective tab.</p>
+<p>Alternatively, the user can also browse for a Flow Production Tracking entity using the entities tabs. By default, the workfiles application allows to browse for any tasks associated on shots or assets by looking at the respective tab.</p>
 
 <p>The set of tabs is entirely configurable through the <code class="highlighter-rouge">entities</code> settings in the environment files.</p>
 
@@ -23026,7 +23026,7 @@
 
 <h2 id="step-filtering">Step filtering</h2>
 
-<p>When retrieving Tasks, and if <code class="highlighter-rouge">step</code> is included in the hierarchy, the amount of data retrieved from ShotGrid can be reduced with Pipeline Step filtering: only Tasks linked to the selected list of Steps will be retrieved.</p>
+<p>When retrieving Tasks, and if <code class="highlighter-rouge">step</code> is included in the hierarchy, the amount of data retrieved from Flow Production Tracking can be reduced with Pipeline Step filtering: only Tasks linked to the selected list of Steps will be retrieved.</p>
 
 <p>The list of Steps displayed in a tab is controlled with the <code class="highlighter-rouge">step_filter_on</code> setting. If not set, all existing Pipeline Steps are displayed.</p>
 
@@ -23052,11 +23052,11 @@
 
 <p>For better performances, building the Entities tree can be broken into two step queries:</p>
 <ul>
-  <li>A first query is used to retrieve records from ShotGrid and populate the top of the tree.</li>
+  <li>A first query is used to retrieve records from Flow Production Tracking and populate the top of the tree.</li>
   <li>A second query is used to retrieve children as the user expand the tree.</li>
 </ul>
 
-<p>With the following settings, Assets and Shots would be retrieved from ShotGrid when the app is started. And then Tasks linked to a particular Asset or Shot would only be retrieved when this Asset or Shot is selected or expanded in the tree view.</p>
+<p>With the following settings, Assets and Shots would be retrieved from Flow Production Tracking when the app is started. And then Tasks linked to a particular Asset or Shot would only be retrieved when this Asset or Shot is selected or expanded in the tree view.</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">entities</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="na">caption</span><span class="pi">:</span> <span class="s">Assets</span>

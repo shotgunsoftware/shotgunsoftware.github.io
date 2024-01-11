@@ -11,12 +11,12 @@
 <link rel="alternate" hreflang="zh_CN" href="/zh_CN/eecfb05b/"/>
 
 
-  <title>Houdini ShotGrid 통합이 시작되지 않는 이유는 무엇일까요? - SG Developer</title>
+  <title>Houdini Flow Production Tracking 통합이 시작되지 않는 이유는 무엇일까요? - SG Developer</title>
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ko/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Jira 및 ShotGrid 간 데이터 동기화
+            Jira 및 Flow Production Tracking 간 데이터 동기화
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/ko/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ko/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 설명서
+            Flow Production Tracking 설명서
         </a>
     </div>
 
@@ -8160,13 +8160,13 @@
 <div class="article-body markdown" data-swiftype-name="body" data-swiftype-type="text">
   
 
-            <h1 id="houdini-shotgrid-통합이-시작되지-않는-이유는-무엇일까요">Houdini ShotGrid 통합이 시작되지 않는 이유는 무엇일까요?</h1>
+            <h1 id="houdini-shotgrid-통합이-시작되지-않는-이유는-무엇일까요">Houdini Flow Production Tracking 통합이 시작되지 않는 이유는 무엇일까요?</h1>
 
-<p>여기서는 Houdini에서 ShotGrid 통합을 시작할 수 없는 가장 일반적인 원인을 살펴봅니다. 이 경우, Houdini는 ShotGrid 데스크톱, ShotGrid 웹 사이트 또는 tank 명령으로 오류 없이 시작됩니다. 하지만 Houdini가 시작된 후에 ShotGrid 메뉴 또는 쉘프가 나타나지 않습니다.</p>
+<p>여기서는 Houdini에서 Flow Production Tracking 통합을 시작할 수 없는 가장 일반적인 원인을 살펴봅니다. 이 경우, Houdini는 Flow Production Tracking 데스크톱, Flow Production Tracking 웹 사이트 또는 tank 명령으로 오류 없이 시작됩니다. 하지만 Houdini가 시작된 후에 Flow Production Tracking 메뉴 또는 쉘프가 나타나지 않습니다.</p>
 
-<p>원인은 ShotGrid가 재정의된 <code class="highlighter-rouge">HOUDINI_PATH</code> 환경 변수를 사용하여 시작 스크립트 경로를 전달하기 때문인 경우가 많습니다.</p>
+<p>원인은 Flow Production Tracking가 재정의된 <code class="highlighter-rouge">HOUDINI_PATH</code> 환경 변수를 사용하여 시작 스크립트 경로를 전달하기 때문인 경우가 많습니다.</p>
 
-<p>ShotGrid에서 Houdini가 시작되면 시작 앱 로직에서는 ShotGrid 부트스트랩(Bootstrap) 스크립트 경로를 <code class="highlighter-rouge">HOUDINI_PATH</code> 환경 변수에 추가합니다. 그러나 Houdini에 <a href="https://www.sidefx.com/docs/houdini/basics/config_env.html#setting-environment-variables">houdini.env 파일</a>이 있는 경우 문제가 발생할 수 있습니다. 이 파일을 통해 사용자는 Houdini가 로드될 때 제공되는 환경 변수를 설정할 수 있지만 파일에 정의된 모든 값이 현재 세션의 기존 환경 변수를 덮어씁니다.</p>
+<p>ShotGrid에서 Houdini가 시작되면 시작 앱 로직에서는 Flow Production Tracking 부트스트랩(Bootstrap) 스크립트 경로를 <code class="highlighter-rouge">HOUDINI_PATH</code> 환경 변수에 추가합니다. 그러나 Houdini에 <a href="https://www.sidefx.com/docs/houdini/basics/config_env.html#setting-environment-variables">houdini.env 파일</a>이 있는 경우 문제가 발생할 수 있습니다. 이 파일을 통해 사용자는 Houdini가 로드될 때 제공되는 환경 변수를 설정할 수 있지만 파일에 정의된 모든 값이 현재 세션의 기존 환경 변수를 덮어씁니다.</p>
 
 <p>이 문제를 해결하려면 기존의 <code class="highlighter-rouge">HOUDINI_PATH</code> 환경 변수를 해당 변수에 대한 새 정의에 포함해야 합니다.</p>
 
@@ -8180,13 +8180,13 @@
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HOUDINI_PATH = /example/of/an/existing/path;$HOUDINI_PATH;&amp;
 </code></pre></div></div>
 
-<p>그러면 Houdini가 시작될 때 ShotGrid 설정 값을 유지할 수 있습니다.</p>
+<p>그러면 Houdini가 시작될 때 Flow Production Tracking 설정 값을 유지할 수 있습니다.</p>
 
 <div class="warning-popup">
     <p>
         <i class="fa fa-exclamation-circle"></i>
         <b>주의
-:</b> Windows에서 <code class="highlighter-rouge">$HOUDINI_PATH</code>에 문제가 발생하는 경우가 있습니다. 간혹 ShotGrid 통합을 여러 번 부트스트랩(Bootstrap)하며 다음과 같은 오류가 발생합니다.
+:</b> Windows에서 <code class="highlighter-rouge">$HOUDINI_PATH</code>에 문제가 발생하는 경우가 있습니다. 간혹 Flow Production Tracking 통합을 여러 번 부트스트랩(Bootstrap)하며 다음과 같은 오류가 발생합니다.
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Toolkit bootstrap is missing a required variable : TANK_CONTEXT
 </code></pre></div></div>

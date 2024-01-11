@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -3825,9 +3825,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -7119,7 +7119,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -9750,9 +9750,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -12116,7 +12116,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -13186,7 +13186,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -13272,9 +13272,9 @@
 
 <h2 id="about-the-guide">About the guide</h2>
 
-<p>This guide will demonstrate how to add a ShotGrid Toolkit app to an existing pipeline configuration. You will quickly become acquainted with the configuration management tools.</p>
+<p>This guide will demonstrate how to add a Flow Production Tracking Toolkit app to an existing pipeline configuration. You will quickly become acquainted with the configuration management tools.</p>
 
-<p>The app we will be adding is the ShotGrid Python Console app. Maya has its own Python console, but there are some features in the Toolkit app that don’t exist in the Maya console.</p>
+<p>The app we will be adding is the Flow Production Tracking Python Console app. Maya has its own Python console, but there are some features in the Toolkit app that don’t exist in the Maya console.</p>
 
 <p>This guide utilizes the pipeline configuration we created in the <a href="/37f575b8/">Editing a Pipeline Configuration</a> guide. If you haven’t completed this guide, you can use an existing pipeline configuration and add the app there.</p>
 
@@ -13286,7 +13286,7 @@
   <li>An active <a href="https://www.shotgridsoftware.com/signup/">ShotGrid</a> site.</li>
   <li>A pipeline configuration for the identified project, or complete the <a href="/5d83a936/">Getting Started with Configurations guide</a> and use the configuration created in that exercise.</li>
   <li>Read and write permissions set appropriately for the filesystem where the pipeline configuration is stored.</li>
-  <li>ShotGrid Desktop installed on your system.</li>
+  <li>Flow Production Tracking Toolkit installed on your system.</li>
   <li>An active subscription for Maya. Get a 30 day trial of Maya <a href="https://www.autodesk.com/products/maya/free-trial-dts">here</a>.</li>
 </ol>
 
@@ -13299,15 +13299,15 @@
     </p>
 </div>
 
-<h2 id="about-shotgrid-toolkit-apps">About ShotGrid Toolkit apps</h2>
+<h2 id="about-shotgrid-toolkit-apps">About Flow Production Tracking Toolkit apps</h2>
 
 <h3 id="how-toolkit-apps-work">How Toolkit apps work</h3>
 
-<p>Apps that are referenced in pipeline configurations can be sourced from various locations. The apps that are standard in the Default Configuration are sourced from the ShotGrid App Store. The files in a pipeline configuration specify how ShotGrid integrations access an app, kind of like asking Toolkit, “Can you look in your little black book for the address of the Python Console App?” The pipeline configuration files tell Toolkit where to find the bundles of code that are utilized for a specific app.</p>
+<p>Apps that are referenced in pipeline configurations can be sourced from various locations. The apps that are standard in the Default Configuration are sourced from the Flow Production Tracking App Store. The files in a pipeline configuration specify how Flow Production Tracking integrations access an app, kind of like asking Toolkit, “Can you look in your little black book for the address of the Python Console App?” The pipeline configuration files tell Toolkit where to find the bundles of code that are utilized for a specific app.</p>
 
-<p>The “addresses” for Toolkit Apps are listed in the <code class="highlighter-rouge">config/env/includes/app_locations.yml</code> file in the Default Configuration and specify how to find the code. These “addresses” are called <a href="https://developer.shotgridsoftware.com/tk-core/descriptor.html">descriptors</a>. The ShotGrid integrations need to be told not only how to find the code bundles for the app, but also in what environment(s) to use the app.</p>
+<p>The “addresses” for Toolkit Apps are listed in the <code class="highlighter-rouge">config/env/includes/app_locations.yml</code> file in the Default Configuration and specify how to find the code. These “addresses” are called <a href="https://developer.shotgridsoftware.com/tk-core/descriptor.html">descriptors</a>. The Flow Production Tracking integrations need to be told not only how to find the code bundles for the app, but also in what environment(s) to use the app.</p>
 
-<p>Below is a conceptual overview of how to install an app and how to tell a ShotGrid integration where to use it. It outlines the steps for extending the configuration, asking Toolkit to look up a descriptor, and telling ShotGrid where to use the app. These steps are detailed in this guide:</p>
+<p>Below is a conceptual overview of how to install an app and how to tell a Flow Production Tracking integration where to use it. It outlines the steps for extending the configuration, asking Toolkit to look up a descriptor, and telling Flow Production Tracking where to use the app. These steps are detailed in this guide:</p>
 
 <ol>
   <li>Determine the descriptor for the app you want to add.</li>
@@ -13315,14 +13315,14 @@
   <li>See if the app’s descriptor exists in the configuration and if not, add it.</li>
   <li>Format the YAML file correctly using spaces and not tabs for indents.</li>
   <li>Determine in what environment(s) the app is to be used.</li>
-  <li>Within those environment(s), add the setting that will allow ShotGrid to use the app.</li>
+  <li>Within those environment(s), add the setting that will allow Flow Production Tracking to use the app.</li>
   <li>Test the new configuration.</li>
   <li>Push the extended configuration live.</li>
 </ol>
 
 <h3 id="find-the-location-descriptor-for-the-python-console-app">Find the location descriptor for the Python Console App</h3>
 
-<p><strong>Step 1:</strong> Open the <a href="https://developer.shotgridsoftware.com/9e62da4a/">Apps and Engines page</a> and find the information for the ShotGrid Python Console under Maya. Select the title.</p>
+<p><strong>Step 1:</strong> Open the <a href="https://developer.shotgridsoftware.com/9e62da4a/">Apps and Engines page</a> and find the information for the Flow Production Tracking Python Console under Maya. Select the title.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/installing_app/1_python_app.png" alt="Python app" /></p>
 
@@ -13334,7 +13334,7 @@
 
 <h3 id="confirm-that-theres-no-python-console-app-in-the-project-environment-in-maya">Confirm that there’s no Python Console app in the Project environment in Maya</h3>
 
-<p><strong>Step 2:</strong> Launch Maya and select the ShotGrid Menu, <strong>ShotGrid &gt; Project the_other_side</strong> and you will see the list of apps that are available for that project in the Project environment.</p>
+<p><strong>Step 2:</strong> Launch Maya and select the Flow Production Tracking Menu, <strong>Flow Production Tracking &gt; Project the_other_side</strong> and you will see the list of apps that are available for that project in the Project environment.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/installing_app/3_list_of_apps.png" alt="List of apps" /></p>
 
@@ -13348,11 +13348,11 @@
 
 <h3 id="go-to-the-pipeline-configuration-list">Go to the Pipeline Configuration list.</h3>
 
-<p><strong>Step 3:</strong> Open ShotGrid and in the upper right, select the <strong>Admin Menu (your avatar) &gt; Default Layouts &gt; Pipeline Configuration &gt; Pipeline Configuration List</strong>.</p>
+<p><strong>Step 3:</strong> Open Flow Production Tracking and in the upper right, select the <strong>Admin Menu (your avatar) &gt; Default Layouts &gt; Pipeline Configuration &gt; Pipeline Configuration List</strong>.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/installing_app/4_REPLACE_pipeline_configuration_list.png" alt="Pipeline configuration list" /></p>
 
-<p>This action displays a detailed list of all of your ShotGrid site’s pipeline configurations.</p>
+<p>This action displays a detailed list of all of your Flow Production Tracking site’s pipeline configurations.</p>
 
 <p><strong>Step 4:</strong> Once the Pipeline Configuration List is displayed, select the <strong>+</strong> sign on the far right of the column headers, and add the column <strong>Projects</strong>.</p>
 
@@ -13376,7 +13376,7 @@
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/installing_app/9_name_clone.png" alt="Name clone" /></p>
 
-<p>Wait while ShotGrid copies all of the files and folders in the configuration and creates a cache for the apps. Now would be an opportune time to use an app that makes you a light, fluffy, melt in your mouth croissant to go with that perfect shot of espresso.</p>
+<p>Wait while Flow Production Tracking copies all of the files and folders in the configuration and creates a cache for the apps. Now would be an opportune time to use an app that makes you a light, fluffy, melt in your mouth croissant to go with that perfect shot of espresso.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/installing_app/10_clone_complete.png" alt="Clone Complete" /></p>
 
@@ -13386,18 +13386,18 @@
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Note
-:</b> Under <strong>User Restrictions</strong> your user name was added. ShotGrid automatically restricts access to the new configuration to only the person who created the configuration. You can add people you want to edit, test, and eventually use this configuration. Yet another way ShotGrid allows for flexibility and control.
+:</b> Under <strong>User Restrictions</strong> your user name was added. Flow Production Tracking automatically restricts access to the new configuration to only the person who created the configuration. You can add people you want to edit, test, and eventually use this configuration. Yet another way Flow Production Tracking allows for flexibility and control.
 
     </p>
 </div>
 
 <h2 id="associate-the-cloned-configuration-with-the-project">Associate the cloned configuration with the project</h2>
 
-<p><strong>Step 8:</strong> Open ShotGrid Desktop and select the project you created the cloned configuration for. Select the <strong>down arrow</strong> in the upper right to display the configurations associated with this project and select the <strong>Primary Clone Config 2</strong> that you just created.</p>
+<p><strong>Step 8:</strong> Open Flow Production Tracking Toolkit and select the project you created the cloned configuration for. Select the <strong>down arrow</strong> in the upper right to display the configurations associated with this project and select the <strong>Primary Clone Config 2</strong> that you just created.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/installing_app/11_select_clone.png" alt="Select clone" /></p>
 
-<p>ShotGrid Desktop is now using the cloned config for this project.</p>
+<p>Flow Production Tracking Toolkit is now using the cloned config for this project.</p>
 
 <h2 id="edit-the-pipeline-configuration">Edit the Pipeline Configuration</h2>
 
@@ -13460,7 +13460,7 @@
 
 <h3 id="yaml-files">YAML files</h3>
 
-<p>The ShotGrid Toolkit pipeline configuration uses simple terms in <a href="https://yaml.org/spec/1.2/spec.html">YAML</a> files to identify the location of apps and engines, as well as their settings.</p>
+<p>The Flow Production Tracking Toolkit pipeline configuration uses simple terms in <a href="https://yaml.org/spec/1.2/spec.html">YAML</a> files to identify the location of apps and engines, as well as their settings.</p>
 
 <p>For this specific block:</p>
 
@@ -13471,11 +13471,11 @@
   <li><code class="highlighter-rouge">@</code> is a Toolkit term used to denote that a setting value is coming from an included file</li>
 </ul>
 
-<p>The YAML files are the windows into ShotGrid’s integrations and make it easier to configure working environments that meet the needs of your pipeline.</p>
+<p>The YAML files are the windows into Flow Production Tracking’s integrations and make it easier to configure working environments that meet the needs of your pipeline.</p>
 
 <h3 id="how-the-configuration-references-toolkit-bundles">How the configuration references Toolkit bundles</h3>
 
-<p>The code for ShotGrid’s integrations is organized into bundles for apps, engines, and frameworks. The bundles are referenced in Toolkit’s YAML files using identifiers like <code class="highlighter-rouge">tk-maya</code>, <code class="highlighter-rouge">tk-multi-pythonconsole</code>, etc. Each bundle’s corresponding block of YAML contains settings that control how the identified bundle is accessed and utilized.</p>
+<p>The code for Flow Production Tracking’s integrations is organized into bundles for apps, engines, and frameworks. The bundles are referenced in Toolkit’s YAML files using identifiers like <code class="highlighter-rouge">tk-maya</code>, <code class="highlighter-rouge">tk-multi-pythonconsole</code>, etc. Each bundle’s corresponding block of YAML contains settings that control how the identified bundle is accessed and utilized.</p>
 
 <h2 id="where-to-put-settings-for-the-python-console">Where to put settings for the Python Console</h2>
 
@@ -13518,7 +13518,7 @@
     <span class="na">tk-multi-workfiles2</span><span class="pi">:</span> <span class="s2">"</span><span class="s">@settings.tk-multi-workfiles2.launch_at_startup"</span>
 </code></pre></div></div>
 
-<p>You will notice the <strong>Screening Room, ShotGrid Panel, and Workfiles2</strong> app’s location identifiers are listed in a different included file and accessed differently than the <strong>About</strong> app. To keep things tidy, these apps were split off to the included settings folder because they have additional settings.</p>
+<p>You will notice the <strong>Screening Room, Flow Production Tracking Panel, and Workfiles2</strong> app’s location identifiers are listed in a different included file and accessed differently than the <strong>About</strong> app. To keep things tidy, these apps were split off to the included settings folder because they have additional settings.</p>
 
 <div class="info-popup">
     <p>
@@ -13543,7 +13543,7 @@ This will scan your configuration for apps, engines and frameworks and ensure th
 
 <h2 id="view-the-changes-in-maya">View the changes in Maya</h2>
 
-<p><strong>Step 16:</strong> Open ShotGrid Desktop, select the project you were working with, and confirm you are using the cloned configuration.</p>
+<p><strong>Step 16:</strong> Open Flow Production Tracking Toolkit, select the project you were working with, and confirm you are using the cloned configuration.</p>
 
 <p>There will be a blue bar with the name of the clone that you created under the name of the project.</p>
 
@@ -13558,7 +13558,7 @@ This will scan your configuration for apps, engines and frameworks and ensure th
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/installing_app/14_maya_cloned_config.png" alt="Maya cloned config" /></p>
 
-<p><strong>Step 17:</strong> Launch Maya from Desktop and select the menu <strong>ShotGrid &gt; Project &gt; …</strong></p>
+<p><strong>Step 17:</strong> Launch Maya from Desktop and select the menu <strong>Flow Production Tracking &gt; Project &gt; …</strong></p>
 
 <p>If:</p>
 
@@ -13567,7 +13567,7 @@ This will scan your configuration for apps, engines and frameworks and ensure th
   <li>The cloned configuration was extended correctly</li>
   <li>You saved the extended files</li>
   <li>You chose to associate the project with the cloned configuration</li>
-  <li>You relaunched Maya from ShotGrid Desktop</li>
+  <li>You relaunched Maya from Flow Production Tracking Toolkit</li>
 </ul>
 
 <p>The Python Console app will be available in Maya.</p>
@@ -13595,7 +13595,7 @@ $ ls
 cache		config		install		tank		tank.bat
 $ ./tank push_configuration
 
-Welcome to the Shotgun Pipeline Toolkit!
+Welcome to the Flow Production Tracking Toolkit!
 For documentation, see https://developer.shotgridsoftware.com
 Starting Toolkit for your current path
 '/Users/michelle/Documents/Shotgun/configs/the_other_side_clone2'
@@ -13631,14 +13631,14 @@ Please type in the id of the configuration to push to (ENTER to exit):
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Note
-:</b> You can also find the id for your Pipeline Configuration on the Pipeline Configuration page in ShotGrid that we viewed in <strong>Step 3</strong> of this guide. To find the project ID, go to the Configuration List and add the ID column.
+:</b> You can also find the id for your Pipeline Configuration on the Pipeline Configuration page in Flow Production Tracking that we viewed in <strong>Step 3</strong> of this guide. To find the project ID, go to the Configuration List and add the ID column.
 
     </p>
 </div>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/installing_app/17_id_column.png" alt="ID column" /></p>
 
-<p>After you enter the ID, ShotGrid will:</p>
+<p>After you enter the ID, Flow Production Tracking will:</p>
 
 <ul>
   <li>Backup the Primary configuration</li>
@@ -13659,11 +13659,11 @@ Push Complete!
 
 <h2 id="view-the-changes-you-made-in-the-primary-configuration">View the changes you made in the primary configuration</h2>
 
-<p><strong>Step 19:</strong> In ShotGrid Desktop, click on the arrow in the upper right and choose <strong>Primary</strong> in the <strong>CONFIGURATION</strong> list.</p>
+<p><strong>Step 19:</strong> In Flow Production Tracking Toolkit, click on the arrow in the upper right and choose <strong>Primary</strong> in the <strong>CONFIGURATION</strong> list.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/installing_app/18_change_config_maya.png" alt="Change config maya" /></p>
 
-<p><strong>Step 20:</strong> Launch Maya from Desktop and look in the menu <strong>ShotGrid &gt; Project &gt; …</strong> to find the ShotGrid Python Console…</p>
+<p><strong>Step 20:</strong> Launch Maya from Desktop and look in the menu <strong>Flow Production Tracking &gt; Project &gt; …</strong> to find the Flow Production Tracking Python Console…</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/installing_app/19_app_in_maya.png" alt="App in Maya" /></p>
 
@@ -13671,15 +13671,15 @@ Push Complete!
 
 <h2 id="advanced-topics">Advanced topics</h2>
 
-<h3 id="the-shotgrid-developer-community">The ShotGrid developer community</h3>
+<h3 id="the-shotgrid-developer-community">The Flow Production Tracking developer community</h3>
 
-<p>One of the wonderful things about Toolkit is that anyone can create a Toolkit app. Apps can be kept proprietary, or they can be shared within the <a href="https://community.shotgridsoftware.com/c/pipeline/6">ShotGrid community</a>, adding to the ShotGrid arsenal. If you’ve created a really stellar app you want share on the ShotGrid community page, please visit our <a href="https://knowledge.autodesk.com/contact-support">support site</a> for help.</p>
+<p>One of the wonderful things about Toolkit is that anyone can create a Toolkit app. Apps can be kept proprietary, or they can be shared within the <a href="https://community.shotgridsoftware.com/c/pipeline/6">Flow Production Tracking community</a>, adding to the Flow Production Tracking arsenal. If you’ve created a really stellar app you want share on the Flow Production Tracking community page, please visit our <a href="https://knowledge.autodesk.com/contact-support">support site</a> for help.</p>
 
-<p>Standard Toolkit apps and apps created by the loving ShotGrid community are actively discussed in the <strong><a href="https://groups.google.com/a/shotgunsoftware.com/forum/?fromgroups#!forum/shotgun-dev">ShotGrid-dev Google group</a></strong>. The knowledge and tool base continues to grow as the ShotGrid community adds their contributions.</p>
+<p>Standard Toolkit apps and apps created by the loving Flow Production Tracking community are actively discussed in the <strong><a href="https://groups.google.com/a/shotgunsoftware.com/forum/?fromgroups#!forum/shotgun-dev">ShotGrid-dev Google group</a></strong>. The knowledge and tool base continues to grow as the Flow Production Tracking community adds their contributions.</p>
 
 <h3 id="investigate-how-to-extend-a-configuration">Investigate how to extend a configuration</h3>
 
-<p>You may have noticed when we were selecting which configuration to use for the project, the Python Console App was available in the ShotGrid Desktop dropdown.</p>
+<p>You may have noticed when we were selecting which configuration to use for the project, the Python Console App was available in the Flow Production Tracking Toolkit dropdown.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/installing_app/20_desktop_python_console.png" alt="Desktop python console" /></p>
 
@@ -13718,9 +13718,9 @@ Push Complete!
 
 <p>Every app, engine, and framework has a location descriptor that is used to tell Toolkit where to access the specific bundle. Many app descriptors exist in the <code class="highlighter-rouge">app_locations.yml</code> file, but may not be referenced where you want them, as we saw with the Python Console app. All the standard Apps and Engines are listed on the <a href="https://developer.shotgridsoftware.com/162eaa4b/">Apps and Engines page</a>.</p>
 
-<p>You can add any app to any appropriate software integration that ShotGrid supports, or add your own proprietary application to your Toolkit arsenal. All the supported software applications are also listed on the Integrations <a href="https://developer.shotgridsoftware.com/162eaa4b/">Apps and Engines page</a> page.</p>
+<p>You can add any app to any appropriate software integration that Flow Production Tracking supports, or add your own proprietary application to your Toolkit arsenal. All the supported software applications are also listed on the Integrations <a href="https://developer.shotgridsoftware.com/162eaa4b/">Apps and Engines page</a> page.</p>
 
-<p>If you can’t find the exact app you are looking for, you can create one. There’s a good chance that other ShotGrid users will need the same function and sharing new apps is one way to give back to the ShotGrid community.</p>
+<p>If you can’t find the exact app you are looking for, you can create one. There’s a good chance that other Flow Production Tracking users will need the same function and sharing new apps is one way to give back to the Flow Production Tracking community.</p>
 
 <p>In the <a href="https://developer.shotgridsoftware.com/56b441c6/">next guide</a>, you will learn how to customize your production folder structure to reflect how your facility is structured.</p>
 

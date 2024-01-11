@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ko/site-metadata/apple-touch-icon.png">
@@ -4800,7 +4800,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Jira 및 ShotGrid 간 데이터 동기화
+            Jira 및 Flow Production Tracking 간 데이터 동기화
         </a>
     </div>
 
@@ -7431,9 +7431,9 @@
                     class="nav-entry"
                 
                 
-                href="/ko/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ko/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -9797,7 +9797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -10867,7 +10867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 설명서
+            Flow Production Tracking 설명서
         </a>
     </div>
 
@@ -10944,13 +10944,13 @@
 
 <p>플러그인 파일은 구성 파일에 지정된 플러그인 경로의 <em>.py</em> 파일입니다.</p>
 
-<p>코드 다운로드 시 <code class="highlighter-rouge">src/examplePlugins</code> 폴더에 몇 가지 예시 플러그인이 제공됩니다. 이러한 플러그인은 생성된 특정 이벤트를 찾기 위해 자체 플러그인을 빌드하고 해당 이벤트에 작동하여 ShotGrid 인스턴스에서 다른 값을 변경하는 방법에 대한 간단한 예제를 제공합니다.</p>
+<p>코드 다운로드 시 <code class="highlighter-rouge">src/examplePlugins</code> 폴더에 몇 가지 예시 플러그인이 제공됩니다. 이러한 플러그인은 생성된 특정 이벤트를 찾기 위해 자체 플러그인을 빌드하고 해당 이벤트에 작동하여 Flow Production Tracking 인스턴스에서 다른 값을 변경하는 방법에 대한 간단한 예제를 제공합니다.</p>
 
 <p>플러그인을 업데이트할 때마다 데몬을 다시 시작할 필요가 없으며 데몬이 플러그인이 업데이트되었음을 감지하고 자동으로 다시 로드합니다.</p>
 
 <p>플러그인에서 오류가 발생할 경우 데몬이 충돌하지 않습니다. 플러그인은 다시 업데이트(수정)될 때까지 비활성화됩니다. 다른 모든 플러그인은 계속 실행되고, 이벤트는 계속 처리됩니다. 데몬은 오류가 발생한 플러그인이 성공적으로 처리된 마지막 이벤트 ID를 계속해서 트래킹합니다. 플러그인이 업데이트(수정)되면 데몬이 이를 다시 로드하고 해당 플러그인이 중단된 위치부터 이벤트를 처리하려고 시도합니다. 다시 모든 것이 정상이라고 가정하면 데몬은 현재 이벤트까지 플러그인을 포착한 다음 정상적으로 모든 플러그인을 사용하여 이벤트를 계속 처리합니다.</p>
 
-<p>ShotGrid 이벤트 처리 플러그인에는 두 가지 주요 부분이 있습니다. 콜백 등록 함수와 콜백 수입니다.</p>
+<p>Flow Production Tracking 이벤트 처리 플러그인에는 두 가지 주요 부분이 있습니다. 콜백 등록 함수와 콜백 수입니다.</p>
 
 <p><a id="registerCallbacks_function"></a></p>
 <h2 id="registercallbacks-함수">registerCallbacks 함수</h2>
@@ -10967,7 +10967,7 @@
 
 <p><a href="/ko/b04a53ae/#Registrar"><code class="highlighter-rouge">Registrar</code></a>는 아주 중요한 한 가지 메서드를 사용합니다(<a href="/ko/b04a53ae/#registercallback"><code class="highlighter-rouge">Registrar.registerCallback</code></a>).</p>
 
-<p>ShotGrid 이벤트를 처리해야 하는 각 함수에 대해 <a href="/ko/b04a53ae/#registerCallback"><code class="highlighter-rouge">Registrar.registerCallback</code></a>을 적절한 인수와 함께 한 번 호출합니다.</p>
+<p>Flow Production Tracking 이벤트를 처리해야 하는 각 함수에 대해 <a href="/ko/b04a53ae/#registerCallback"><code class="highlighter-rouge">Registrar.registerCallback</code></a>을 적절한 인수와 함께 한 번 호출합니다.</p>
 
 <p>원하는 수만큼 함수를 등록할 수 있으며, 파일의 모든 함수를 이벤트 처리 콜백으로 등록해야 하는 것은 아닙니다.</p>
 
@@ -10977,9 +10977,9 @@
 <p>시스템에 등록할 콜백은 다음 4개의 인수를 사용해야 합니다.</p>
 
 <ul>
-  <li>추가 정보를 위해 ShotGrid를 쿼리해야 하는 경우 ShotGrid 연결 인스턴스</li>
+  <li>추가 정보를 위해 Flow Production Tracking를 쿼리해야 하는 경우 Flow Production Tracking 연결 인스턴스</li>
   <li>보고에 사용해야 하는 Python Logger 객체. 오류 및 중요 메시지는 구성된 모든 사용자에게 이메일을 통해 전송됩니다.</li>
-  <li>처리할 ShotGrid 이벤트</li>
+  <li>처리할 Flow Production Tracking 이벤트</li>
   <li>콜백 등록 시 전달되는 <code class="highlighter-rouge">args</code> 값. (참조 항목: <a href="/ko/b04a53ae/#wiki-registerCallback"><code class="highlighter-rouge">Registrar.registerCallback</code></a>)</li>
 </ul>
 
@@ -11014,13 +11014,13 @@
 <p><a id="Robust"></a></p>
 <h2 id="강력한-플러그인-빌드">강력한 플러그인 빌드</h2>
 
-<p>데몬은 ShotGrid에 대해 쿼리를 실행하지만 실패할 경우 find() 명령을 재시도하는 기본 기능이 포함되어 있어 데몬 자체에 특정한 수준의 안전성을 제공합니다.</p>
+<p>데몬은 Flow Production Tracking에 대해 쿼리를 실행하지만 실패할 경우 find() 명령을 재시도하는 기본 기능이 포함되어 있어 데몬 자체에 특정한 수준의 안전성을 제공합니다.</p>
 
 <p><a href="https://github.com/shotgunsoftware/shotgunEvents/blob/master/src/shotgunEventDaemon.py#L456">https://github.com/shotgunsoftware/shotgunEvents/blob/master/src/shotgunEventDaemon.py#L456</a></p>
 
-<p>플러그인에 네트워크 리소스(즉, ShotGrid 또는 다른 리소스)가 필요한 경우 자체 재시도 메커니즘/안전성을 제공해야 합니다. ShotGrid 액세스의 경우 데몬의 항목을 제거하고 해당 기능을 플러그인에 제공할 수 있는 도우미 함수 또는 클래스를 만들 수 있습니다.</p>
+<p>플러그인에 네트워크 리소스(즉, Flow Production Tracking 또는 다른 리소스)가 필요한 경우 자체 재시도 메커니즘/안전성을 제공해야 합니다. Flow Production Tracking 액세스의 경우 데몬의 항목을 제거하고 해당 기능을 플러그인에 제공할 수 있는 도우미 함수 또는 클래스를 만들 수 있습니다.</p>
 
-<p>ShotGrid Python API가 이미 네트워크 문제에 대해 어느 정도 재시도하지만 몇 분 동안 실행할 수 있는 ShotGrid 유지보수 기간에 도달하거나 네트워크 문제가 발생하면 충분하지 않을 수 있습니다.</p>
+<p>Flow Production Tracking Python API가 이미 네트워크 문제에 대해 어느 정도 재시도하지만 몇 분 동안 실행할 수 있는 Flow Production Tracking 유지보수 기간에 도달하거나 네트워크 문제가 발생하면 충분하지 않을 수 있습니다.</p>
 
 <p><a href="https://github.com/shotgunsoftware/python-api/blob/master/shotgun_api3/shotgun.py#L1554">https://github.com/shotgunsoftware/python-api/blob/master/shotgun_api3/shotgun.py#L1554</a></p>
 

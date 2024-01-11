@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -4800,7 +4800,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -7431,9 +7431,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -9797,7 +9797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -10867,7 +10867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -10942,40 +10942,40 @@
 
             <h1 id="インストール">インストール</h1>
 
-<p>以下のガイドは、スタジオの ShotGridEvents をセットアップする場合に役に立ちます。</p>
+<p>以下のガイドは、スタジオの Flow Production TrackingEvents をセットアップする場合に役に立ちます。</p>
 
 <p><a id="System_Requirements"></a></p>
 <h2 id="動作環境">動作環境</h2>
 
-<p>デーモンは、Python がインストールされ、ShotGrid サーバにネットワーク アクセスできる任意のマシン上で実行できます。ShotGrid サーバ上で実行する必要は ** ありません** 。実際、ホストされているバージョンの ShotGrid を使用している場合、これはオプションではありません。ただし、必要に応じて ShotGrid サーバ上で実行することもできます。そうでなければ、任意のサーバで実行できます。</p>
+<p>デーモンは、Python がインストールされ、Flow Production Tracking サーバにネットワーク アクセスできる任意のマシン上で実行できます。Flow Production Tracking サーバ上で実行する必要は ** ありません** 。実際、ホストされているバージョンの Flow Production Tracking を使用している場合、これはオプションではありません。ただし、必要に応じて Flow Production Tracking サーバ上で実行することもできます。そうでなければ、任意のサーバで実行できます。</p>
 
 <ul>
   <li>Python v2.6、v2.7 または 3.7</li>
-  <li><a href="https://github.com/shotgunsoftware/python-api">ShotGrid Python API</a>
+  <li><a href="https://github.com/shotgunsoftware/python-api">Flow Production Tracking Python API</a>
     <ul>
       <li>Python 3.7 以降には v3.1.0 以降を使用します(<em>注: Python 2 はサポートされなくなりました</em>)。</li>
       <li>いずれの場合も、<a href="https://github.com/shotgunsoftware/python-api/releases">最新の Python API バージョン</a>を使用し、この依存関係を継続して更新することを強くお勧めします。</li>
     </ul>
   </li>
-  <li>ShotGrid サーバへのネットワーク アクセス</li>
+  <li>Flow Production Tracking サーバへのネットワーク アクセス</li>
 </ul>
 
 <p><a id="Installing_Shotgun_API"></a></p>
-<h2 id="shotgrid-api-のインストール">ShotGrid API のインストール</h2>
+<h2 id="shotgrid-api-のインストール">Flow Production Tracking API のインストール</h2>
 
-<p>Python が既にマシンにインストールされている場合は、ShotGrid Python API をインストールして、ShotGrid イベント デーモンが ShotGrid サーバに接続するために使用できるようにする必要があります。これを実行するにはいくつかの方法があります。</p>
+<p>Python が既にマシンにインストールされている場合は、Flow Production Tracking Python API をインストールして、Flow Production Tracking イベント デーモンが Flow Production Tracking サーバに接続するために使用できるようにする必要があります。これを実行するにはいくつかの方法があります。</p>
 
 <ul>
-  <li>ShotGrid イベント デーモンと同じディレクトリに配置する</li>
+  <li>Flow Production Tracking イベント デーモンと同じディレクトリに配置する</li>
   <li><a href="https://docs.python.org/tutorial/modules.html"><code class="highlighter-rouge">PYTHONPATH</code> 環境変数</a>によって指定されたフォルダのいずれかに配置する</li>
 </ul>
 
-<p>ShotGrid API が正しくインストールされているかをテストするには、ターミナル ウィンドウで以下を確認します。</p>
+<p>Flow Production Tracking API が正しくインストールされているかをテストするには、ターミナル ウィンドウで以下を確認します。</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python -c "import shotgun_api3"
 </code></pre></div></div>
 
-<p>出力は表示されません。次のような出力が表示される場合は、<code class="highlighter-rouge">PYTHONPATH</code> が正しく設定されているか、ShotGrid API が現在のディレクトリに配置されていることを確認する必要があります。</p>
+<p>出力は表示されません。次のような出力が表示される場合は、<code class="highlighter-rouge">PYTHONPATH</code> が正しく設定されているか、Flow Production Tracking API が現在のディレクトリに配置されていることを確認する必要があります。</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python -c "import shotgun_api3"
 Traceback (most recent call last):
@@ -10986,7 +10986,7 @@ ImportError: No module named shotgun_api3
 <p><a id="Installing_shotgunEvents"></a></p>
 <h2 id="shotgridevents-のインストール">ShotGridEvents のインストール</h2>
 
-<p>ShotGridEvents のインストール先は、ユーザが自由に選択できます。ここでも、Python と ShotGrid API がコンピュータにインストールされ、ShotGrid サーバへのネットワーク アクセス権がある限り、任意の場所から実行することができます。ただし、スタジオにとって論理的な場所にインストールすることが自然です。<code class="highlighter-rouge">/usr/local/shotgun/shotgunEvents</code> などは論理的であるため、ここからは、これを例として使用します。</p>
+<p>ShotGridEvents のインストール先は、ユーザが自由に選択できます。ここでも、Python と Flow Production Tracking API がコンピュータにインストールされ、Flow Production Tracking サーバへのネットワーク アクセス権がある限り、任意の場所から実行することができます。ただし、スタジオにとって論理的な場所にインストールすることが自然です。<code class="highlighter-rouge">/usr/local/shotgun/shotgunEvents</code> などは論理的であるため、ここからは、これを例として使用します。</p>
 
 <p>ソースとアーカイブは、<a href="https://github.com/shotgunsoftware/shotgunEvents">https://github.com/shotgunsoftware/shotgunEvents</a> の GitHub で入手できます。</p>
 
@@ -11075,7 +11075,7 @@ drwxr-xr-x  6 kp  wheel   204 Sep  1 17:46 src
   <li><a href="https://www.activestate.com/activepython">アクティブな Python</a></li>
 </ul>
 
-<p>Active Python には ShotGrid イベント デーモンと Windows のサービス アーキテクチャを統合するために必要な PyWin32 モジュールが付属しています。</p>
+<p>Active Python には Flow Production Tracking イベント デーモンと Windows のサービス アーキテクチャを統合するために必要な PyWin32 モジュールが付属しています。</p>
 
 <p>次のコマンドを実行して、デーモンをサービスとしてインストールすることができます(<code class="highlighter-rouge">C:\Python27_32\python.exe</code> は Python 実行可能ファイルへのパスですが、必要に応じて調整が必要です)。</p>
 

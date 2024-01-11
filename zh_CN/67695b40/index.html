@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -2948,7 +2948,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -5579,9 +5579,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7945,7 +7945,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -9015,7 +9015,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -9127,9 +9127,9 @@
 
 <p><strong>7. 文件夹(Folder) (folder)：</strong>允许您在上下文菜单中将 AMI 组织到文件夹中（当前仅支持单个级别的文件夹）。<img src="/zh_CN/action-menu-items/images/ami-create-folder.png" alt="文件夹" /></p>
 
-<p><strong>8. 以模态叠加方式打开(Open in Modal Overlay)：</strong>允许 AMI 在 iframe 窗口中打开，而不是在新选项卡中打开。请注意，如果 ShotGrid 运行的是 HTTPS，那么所有 iframe 也需要是 HTTPS。</p>
+<p><strong>8. 以模态叠加方式打开(Open in Modal Overlay)：</strong>允许 AMI 在 iframe 窗口中打开，而不是在新选项卡中打开。请注意，如果 Flow Production Tracking 运行的是 HTTPS，那么所有 iframe 也需要是 HTTPS。</p>
 
-<p><strong>9. 轮询数据更新(Poll for Data Updates) (poll_for_data_updates)：</strong>开始轮询循环来查询事件日志条目。此项适用于以下情况：动作菜单项另一端的代码通过 API 将触发动作菜单项的页面上可见的实体的更改改回到 ShotGrid。</p>
+<p><strong>9. 轮询数据更新(Poll for Data Updates) (poll_for_data_updates)：</strong>开始轮询循环来查询事件日志条目。此项适用于以下情况：动作菜单项另一端的代码通过 API 将触发动作菜单项的页面上可见的实体的更改改回到 Flow Production Tracking。</p>
 
 <p><strong>10. 限制到权限组(Restrict to Permission Groups) (permissions_groups)：</strong>允许您将对 AMI 的访问权限仅限制于指定的权限组。如果保留为空，则 AMI 可供所有用户使用。</p>
 
@@ -9145,7 +9145,7 @@
 
 <h2 id="http-url-示例">HTTP URL 示例</h2>
 
-<p>例如，您可以创建名为“Build PDF Report”的自定义菜单项。 这将允许用户转到任何“版本”(Versions)页面，选择一个或多个版本，单击鼠标右键，然后从 ShotGrid 菜单中选择“Build PDF Report”。执行此操作将启动（您必须创建的）脚本，以获取一个格式完善的报告并发送回其浏览器。工作方式如下：</p>
+<p>例如，您可以创建名为“Build PDF Report”的自定义菜单项。 这将允许用户转到任何“版本”(Versions)页面，选择一个或多个版本，单击鼠标右键，然后从 Flow Production Tracking 菜单中选择“Build PDF Report”。执行此操作将启动（您必须创建的）脚本，以获取一个格式完善的报告并发送回其浏览器。工作方式如下：</p>
 
 <h3 id="通过-ui-创建菜单项">通过 UI 创建菜单项</h3>
 
@@ -9159,26 +9159,26 @@
 
 <h3 id="用户单击-ami-会发生什么情况">用户单击 AMI 会发生什么情况？</h3>
 
-<p>ShotGrid 将在新窗口或模态对话框（如果选择了该选项）中分派 POST 请求，然后将相关数据从当前页面（作为 POST 请求的一部分）发送到接收 URL。下面是一个工作流示例。</p>
+<p>Flow Production Tracking 将在新窗口或模态对话框（如果选择了该选项）中分派 POST 请求，然后将相关数据从当前页面（作为 POST 请求的一部分）发送到接收 URL。下面是一个工作流示例。</p>
 
 <ul>
   <li>用户导航到“版本”(Versions)页面</li>
   <li>用户选择一个或多个版本</li>
   <li>用户打开上下文菜单（右键单击或单击工具栏中的配置菜单）</li>
   <li>用户单击“Build PDF Report”</li>
-  <li>ShotGrid 在新窗口中将 POST 请求分派到 AMI 的 URL（如果 ShotGrid 服务器使用的是 HTTPS，URL 使用的是 HTTP，将会显示浏览器警告）</li>
+  <li>Flow Production Tracking 在新窗口中将 POST 请求分派到 AMI 的 URL（如果 Flow Production Tracking 服务器使用的是 HTTPS，URL 使用的是 HTTP，将会显示浏览器警告）</li>
   <li>您的脚本（位于指定的 URL）处理 POST 数据，并生成一个 PDF 文档</li>
   <li>向用户发送回一个格式完善的 PDF 报告以进行查看或下载</li>
 </ul>
 
 <h2 id="自定义协议处理程序示例">自定义协议处理程序示例</h2>
 
-<p>更高级的自定义 AMI 执行涉及设置自定义协议处理程序（例如 ShotGrid://process_version）。这样，您可以通过本地计算机上的脚本将 ShotGrid 与应用程序（如 Maya、RV 或 Cinesync）桥接起来。如果您指定非 HTTP(S) 协议，则将通过 GET 而不是 POST 将数据发送到您的 URL。您可能希望使用此项来启动内部工具以分派不同的请求。</p>
+<p>更高级的自定义 AMI 执行涉及设置自定义协议处理程序（例如 Flow Production Tracking://process_version）。这样，您可以通过本地计算机上的脚本将 Flow Production Tracking 与应用程序（如 Maya、RV 或 Cinesync）桥接起来。如果您指定非 HTTP(S) 协议，则将通过 GET 而不是 POST 将数据发送到您的 URL。您可能希望使用此项来启动内部工具以分派不同的请求。</p>
 
 <p>有关自定义协议的详细信息，请参见<a href="https://developer.shotgridsoftware.com/zh_CN/67695b40/">使用自定义浏览器协议启动应用程序</a>。</p>
 
 <blockquote>
-  <p><strong>注意：</strong>我们还通过 <a href="https://developer.shotgridsoftware.com/zh_CN/d587be80/">ShotGrid 集成</a>内置了与 Maya 和其他软件包的集成。</p>
+  <p><strong>注意：</strong>我们还通过 <a href="https://developer.shotgridsoftware.com/zh_CN/d587be80/">Flow Production Tracking 集成</a>内置了与 Maya 和其他软件包的集成。</p>
   <h3 id="轻量化负载">轻量化负载</h3>
 </blockquote>
 

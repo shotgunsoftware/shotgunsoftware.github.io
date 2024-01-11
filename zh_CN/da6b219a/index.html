@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -8166,7 +8166,7 @@
 
 <ul>
   <li>无法解析路径的行 ID！</li>
-  <li>数据库并发问题: 路径 <code class="highlighter-rouge">&lt;PATH&gt;</code> 已与 ShotGrid 实体 <code class="highlighter-rouge">&lt;ENTITY&gt;</code> 关联。</li>
+  <li>数据库并发问题: 路径 <code class="highlighter-rouge">&lt;PATH&gt;</code> 已与 Flow Production Tracking 实体 <code class="highlighter-rouge">&lt;ENTITY&gt;</code> 关联。</li>
 </ul>
 
 <h2 id="示例">示例：</h2>
@@ -8197,13 +8197,13 @@ Source data set: [{'path_cache_row_id': 8711, 'path':
 
 <h2 id="导致错误的原因是什么">导致错误的原因是什么？</h2>
 
-<p>此错误指出，工作流配置中的 ShotGrid（“站点偏好设置 -&gt; 文件管理”(Site Preferences -&gt; File Management)）和 c<code class="highlighter-rouge">onfig/core/roots.yml</code> 中指定的存储根之间不匹配。</p>
+<p>此错误指出，工作流配置中的 Flow Production Tracking（“站点偏好设置 -&gt; 文件管理”(Site Preferences -&gt; File Management)）和 c<code class="highlighter-rouge">onfig/core/roots.yml</code> 中指定的存储根之间不匹配。</p>
 
 <p>这通常是由于运行 Windows 的工作室中的大小写不匹配而导致的。它们的路径不区分大小写，但我们的配置区分大小写。像 <code class="highlighter-rouge">E:\Projects</code> 与 <code class="highlighter-rouge">E:\projects</code> 这样简单的差异都可能会导致此错误。</p>
 
 <h2 id="在后台发生了什么">在后台发生了什么？</h2>
 
-<p>代码在 ShotGrid 中为刚创建的路径创建了 FilesystemLocation 实体，使用 ShotGrid 的存储根来确定路径的根。然后，它在本地缓存中创建相同的条目，并且必须确定将其放置在数据库中的哪个位置。对于本地缓存，它使用 <code class="highlighter-rouge">roots.yml</code> 确定路径的根，并且由于大小写不匹配，它生成的路径与刚在 ShotGrid 中输入的路径不匹配。此时，它将引发错误。</p>
+<p>代码在 Flow Production Tracking 中为刚创建的路径创建了 FilesystemLocation 实体，使用 Flow Production Tracking 的存储根来确定路径的根。然后，它在本地缓存中创建相同的条目，并且必须确定将其放置在数据库中的哪个位置。对于本地缓存，它使用 <code class="highlighter-rouge">roots.yml</code> 确定路径的根，并且由于大小写不匹配，它生成的路径与刚在 Flow Production Tracking 中输入的路径不匹配。此时，它将引发错误。</p>
 
 <p>这尤其糟糕，因为错误不清晰：创建了文件夹，创建了 FilesystemLocation 条目，它们没有在本地缓存路径中同步，由于存储根不匹配，它们也无法同步。</p>
 
@@ -8215,10 +8215,10 @@ Source data set: [{'path_cache_row_id': 8711, 'path':
 
 <ul>
   <li>如何清除 FilesystemLocation 实体：理想情况下，您可以运行 <code class="highlighter-rouge">tank unregister_folders</code>。要清除所有这些，请运行 tank <code class="highlighter-rouge">unregister_folders --all</code>。（对于 <code class="highlighter-rouge">tank unregister_folders</code> 的所有选项，只需运行它而不使用任何参数，它将输出用法说明。）</li>
-  <li>但是，由于数据库已处于不稳定状态，因此这可能不起作用，或者可能仅部分起作用。运行该命令后，返回到 ShotGrid 中的 FilesystemLocations，确认您预期删除的内容已消失。如果没有，请选择坏实体，然后手动将其移动到垃圾桶。</li>
+  <li>但是，由于数据库已处于不稳定状态，因此这可能不起作用，或者可能仅部分起作用。运行该命令后，返回到 Flow Production Tracking 中的 FilesystemLocations，确认您预期删除的内容已消失。如果没有，请选择坏实体，然后手动将其移动到垃圾桶。</li>
 </ul>
 
-<p>此时，ShotGrid 中的 FilesystemLocations 是干净的，但艺术家的本地缓存可能不反映您所做的更改。最后一步是实际同步每个用户计算机上的本地缓存。为此，应运行 tank <code class="highlighter-rouge">synchronize_folders --full</code>。</p>
+<p>此时，Flow Production Tracking 中的 FilesystemLocations 是干净的，但艺术家的本地缓存可能不反映您所做的更改。最后一步是实际同步每个用户计算机上的本地缓存。为此，应运行 tank <code class="highlighter-rouge">synchronize_folders --full</code>。</p>
 
 <p>执行所有这些步骤后，缓存路径应处于良好状态，并且不再显示错误。</p>
 

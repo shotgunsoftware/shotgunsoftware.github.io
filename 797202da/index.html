@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -12796,9 +12796,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/02c2d8aa/?title=ShotGrid"
+                href="/02c2d8aa/?title=Flow+Production+Tracking"
             >
-                ShotGrid
+                Flow Production Tracking
             </a>
             </div>
 
@@ -15282,9 +15282,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -17648,7 +17648,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -18718,7 +18718,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -18793,15 +18793,15 @@
 
             <h1 id="houdini">Houdini</h1>
 
-<p>The ShotGrid Engine for Houdini contains a standard platform for integrating ShotGrid Apps into Houdini.</p>
+<p>The Flow Production Tracking Engine for Houdini contains a standard platform for integrating Flow Production Tracking Apps into Houdini.</p>
 
-<p><img src="/en/reference/pipeline-integrations/images/engines/houdini_engine.png" alt="ShotGrid Engine for Houdini" /></p>
+<p><img src="/en/reference/pipeline-integrations/images/engines/houdini_engine.png" alt="Flow Production Tracking Engine for Houdini" /></p>
 
 <h1 id="information-for-app-developers">Information for App Developers</h1>
 
 <h2 id="supported-platforms">Supported Platforms</h2>
 
-<p>The ShotGrid Engine for Houdini is currently supported on Windows, Linux, and OSX</p>
+<p>The Flow Production Tracking Engine for Houdini is currently supported on Windows, Linux, and OSX</p>
 
 <h2 id="supported-application-versions">Supported Application Versions</h2>
 
@@ -18815,23 +18815,23 @@
 
 <h2 id="menu-loading">Menu loading</h2>
 
-<p><img src="/en/reference/pipeline-integrations/images/engines/houdini_menu.png" alt="ShotGrid menu" /></p>
+<p><img src="/en/reference/pipeline-integrations/images/engines/houdini_menu.png" alt="Flow Production Tracking menu" /></p>
 
-<p>A dynamic menu system was introduced by Side Effects as of Houdini 15, so the engine now supports rebuilding of the ShotGrid menu on context switches.</p>
+<p>A dynamic menu system was introduced by Side Effects as of Houdini 15, so the engine now supports rebuilding of the Flow Production Tracking menu on context switches.</p>
 
-<p>In Houdini 14 and older, the ShotGrid menu in Houdini is generated before Houdini starts and is static throughout the session. Due to this, the toolkit commands registered in the menu will not update on context changes.</p>
+<p>In Houdini 14 and older, the Flow Production Tracking menu in Houdini is generated before Houdini starts and is static throughout the session. Due to this, the toolkit commands registered in the menu will not update on context changes.</p>
 
-<h2 id="shotgrid-shelf">ShotGrid shelf</h2>
+<h2 id="shotgrid-shelf">Flow Production Tracking shelf</h2>
 
-<p><img src="/en/reference/pipeline-integrations/images/engines/houdini_shelf.png" alt="ShotGrid shelf" /></p>
+<p><img src="/en/reference/pipeline-integrations/images/engines/houdini_shelf.png" alt="Flow Production Tracking shelf" /></p>
 
-<p>Release <strong>v0.2.4</strong> introduced a dynamic ShotGrid shelf to the engine. The shelf displays any registered app commands as tool buttons. The buttons will be displayed in roughly the same order as the menu commands.</p>
+<p>Release <strong>v0.2.4</strong> introduced a dynamic Flow Production Tracking shelf to the engine. The shelf displays any registered app commands as tool buttons. The buttons will be displayed in roughly the same order as the menu commands.</p>
 
-<p>Use the <code class="highlighter-rouge">enable_sg_shelf</code> setting to turn on the shelf within an environment. If using a version of Houdini (14 or older) that does not support dynamic menus, you may also want to turn off the ShotGrid menu when using the shelf. This can be done by setting the <code class="highlighter-rouge">enable_sg_menu</code> setting to <code class="highlighter-rouge">false</code>.</p>
+<p>Use the <code class="highlighter-rouge">enable_sg_shelf</code> setting to turn on the shelf within an environment. If using a version of Houdini (14 or older) that does not support dynamic menus, you may also want to turn off the Flow Production Tracking menu when using the shelf. This can be done by setting the <code class="highlighter-rouge">enable_sg_menu</code> setting to <code class="highlighter-rouge">false</code>.</p>
 
 <p>To enable context switching via the shelf, you’ll also need to add entity types to the <code class="highlighter-rouge">sg_entity_types</code> setting of the <code class="highlighter-rouge">tk-multi-workfiles</code> app in your engine configuration.</p>
 
-<p>Here’s a look at the settings related to the ShotGrid shelf:</p>
+<p>Here’s a look at the settings related to the Flow Production Tracking shelf:</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">tk-houdini</span><span class="pi">:</span>
   <span class="na">apps</span><span class="pi">:</span>
@@ -18845,11 +18845,11 @@
   <span class="c1"># ... other engine settings</span>
 </code></pre></div></div>
 
-<p>Once you’ve enabled the ShotGrid shelf, you need to manually add it to a shelf set inside houdini.</p>
+<p>Once you’ve enabled the Flow Production Tracking shelf, you need to manually add it to a shelf set inside houdini.</p>
 
-<p><img src="/en/reference/pipeline-integrations/images/engines/add_shelf.png" alt="Add the ShotGrid shelf" /></p>
+<p><img src="/en/reference/pipeline-integrations/images/engines/add_shelf.png" alt="Add the Flow Production Tracking shelf" /></p>
 
-<p>Once added to a shelf set the ShotGrid shelf will remain there between houdini sessions and will update dynamically as your ShotGrid context changes.</p>
+<p>Once added to a shelf set the Flow Production Tracking shelf will remain there between houdini sessions and will update dynamically as your Flow Production Tracking context changes.</p>
 
 <h2 id="panels">Panels</h2>
 
@@ -18861,13 +18861,13 @@
 
 <h2 id="apps-with-otls">Apps with OTLs</h2>
 
-<p>The ShotGrid Engine for Houdini makes it easy to load application supplied OTLs. If you are writing an app which uses OTLs, you can just drop them into a folder called <strong>otls</strong> and the engine will automatically load them into your session:</p>
+<p>The Flow Production Tracking Engine for Houdini makes it easy to load application supplied OTLs. If you are writing an app which uses OTLs, you can just drop them into a folder called <strong>otls</strong> and the engine will automatically load them into your session:</p>
 
 <p><img src="/en/reference/pipeline-integrations/images/engines/otls_path.png" alt="Houdini OTLs" /></p>
 
 <p>You can then easily access your nodes via the usual Houdini methods.</p>
 
-<p><strong>Warning!!</strong> Please note that while the use of OTLs may be convenient, it is typically NOT the right solution if you want to create nodes that persist in a scene. The reason for this is because as soon as you have put an OTL in the scene, you have introduced a dependency between that scene and the OTL code. Not only will you need to load the ShotGrid Toolkit every time you load the scene, but you also need to carefully manage your code so that any updates to the code does not break old OTLs being used in scenes.</p>
+<p><strong>Warning!!</strong> Please note that while the use of OTLs may be convenient, it is typically NOT the right solution if you want to create nodes that persist in a scene. The reason for this is because as soon as you have put an OTL in the scene, you have introduced a dependency between that scene and the OTL code. Not only will you need to load the Flow Production Tracking Toolkit every time you load the scene, but you also need to carefully manage your code so that any updates to the code does not break old OTLs being used in scenes.</p>
 
 <h2 id="startup-debugging-via-terminal-on-osx">Startup Debugging via Terminal on OSX</h2>
 

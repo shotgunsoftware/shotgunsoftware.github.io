@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -4800,7 +4800,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -7431,9 +7431,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -9797,7 +9797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -10867,7 +10867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -10942,9 +10942,9 @@
 
             <h1 id="configuration">Configuration</h1>
 
-<p>The following guide will help you configure ShotGridEvents for your studio.</p>
+<p>The following guide will help you configure Flow Production TrackingEvents for your studio.</p>
 
-<p>Most of the configuration for ShotGridEvents is controlled by the <code class="highlighter-rouge">shotgunEventDaemon.conf</code> file. In this file, you’ll find several settings you can modify to match your needs. Most of them have defaults that will work fine for most studios, however, there are some settings that must be configured (specifically, your ShotGrid server URL, script name, and application key so the ShotGridEventDaemon can connect to your ShotGrid server).</p>
+<p>Most of the configuration for Flow Production TrackingEvents is controlled by the <code class="highlighter-rouge">shotgunEventDaemon.conf</code> file. In this file, you’ll find several settings you can modify to match your needs. Most of them have defaults that will work fine for most studios, however, there are some settings that must be configured (specifically, your Flow Production Tracking server URL, script name, and application key so the Flow Production TrackingEventDaemon can connect to your Flow Production Tracking server).</p>
 
 <div class="info-popup">
     <p>
@@ -10958,14 +10958,14 @@
 <p><a id="Edit_shotgunEventDaemon_conf"></a></p>
 <h2 id="edit-shotguneventdaemonconf">Edit shotgunEventDaemon.conf</h2>
 
-<p>Once you have installed ShotGridEvents, the next step is to open the <code class="highlighter-rouge">shotgunEventDaemon.conf</code> file in a text editor and modify the settings to match your studio’s needs. The defaults will be fine for most studios, however, there are some settings that have no defaults that will need to be provided by you before you can run the daemon.</p>
+<p>Once you have installed Flow Production TrackingEvents, the next step is to open the <code class="highlighter-rouge">shotgunEventDaemon.conf</code> file in a text editor and modify the settings to match your studio’s needs. The defaults will be fine for most studios, however, there are some settings that have no defaults that will need to be provided by you before you can run the daemon.</p>
 
 <p>The items you <em>must</em> provide are:</p>
 
 <ul>
-  <li>your ShotGrid server URL</li>
-  <li>the Script name and Application key for connecting to ShotGrid</li>
-  <li>the full path to your plugins for the ShotGridEventDaemon to run</li>
+  <li>your Flow Production Tracking server URL</li>
+  <li>the Script name and Application key for connecting to Flow Production Tracking</li>
+  <li>the full path to your plugins for the Flow Production TrackingEventDaemon to run</li>
 </ul>
 
 <p>Optionally, you can also specify an SMTP server and email-specific settings in order to setup email notification for errors. While this is optional, if you choose to set this up, you must provide all of the configuration values in the email section.</p>
@@ -10973,21 +10973,21 @@
 <p>There is also a section for an optional timing log which can help with troubleshooting if you ever encounter performance issues with your daemon. Enabling timing logging will populate its own separate log file with the timing information.</p>
 
 <p><a id="Shotgun_Settings"></a></p>
-<h3 id="shotgrid-settings">ShotGrid Settings</h3>
+<h3 id="shotgrid-settings">Flow Production Tracking Settings</h3>
 
-<p>Underneath the <code class="highlighter-rouge">[ShotGrid]</code> section, replace the default tokens with the correct values for <code class="highlighter-rouge">server</code>, <code class="highlighter-rouge">name</code>, and <code class="highlighter-rouge">key</code>. These should be the same values you’d provide to a standard API script connecting to ShotGrid.</p>
+<p>Underneath the <code class="highlighter-rouge">[ShotGrid]</code> section, replace the default tokens with the correct values for <code class="highlighter-rouge">server</code>, <code class="highlighter-rouge">name</code>, and <code class="highlighter-rouge">key</code>. These should be the same values you’d provide to a standard API script connecting to Flow Production Tracking.</p>
 
 <p>Example</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server: https://awesome.shotgunstudio.com
-name: ShotGridEventDaemon
+name: Flow Production TrackingEventDaemon
 key: e37d855e4824216573472846e0cb3e49c7f6f7b1
 </code></pre></div></div>
 
 <p><a id="Plugin_Settings"></a></p>
 <h3 id="plugin-settings">Plugin Settings</h3>
 
-<p>You will need to tell the ShotGridEventDaemon where to look for plugins to run. Under the <code class="highlighter-rouge">[plugins]</code> section replace the default token with the correct  value for <code class="highlighter-rouge">paths</code>.</p>
+<p>You will need to tell the Flow Production TrackingEventDaemon where to look for plugins to run. Under the <code class="highlighter-rouge">[plugins]</code> section replace the default token with the correct  value for <code class="highlighter-rouge">paths</code>.</p>
 
 <p>You can specify multiple locations (which may be useful if you have multiple departments or repositories using the daemon). The value here must be a full path to a readable existing directory.</p>
 
@@ -11001,7 +11001,7 @@ key: e37d855e4824216573472846e0cb3e49c7f6f7b1
 <p><a id="Location_of_shotgunEventDaemon_conf"></a></p>
 <h3 id="location-of-shotguneventdaemonconf">Location of shotgunEventDaemon.conf</h3>
 
-<p>By default, the daemon will look for the shotgunEventDaemon.conf file in the same directory that ShotGridEventDaemon.py is in, and in the <code class="highlighter-rouge">/etc</code> directory. If you need to put the conf file in another directory, it’s recommended you create a symlink to it from the current directory.</p>
+<p>By default, the daemon will look for the shotgunEventDaemon.conf file in the same directory that Flow Production TrackingEventDaemon.py is in, and in the <code class="highlighter-rouge">/etc</code> directory. If you need to put the conf file in another directory, it’s recommended you create a symlink to it from the current directory.</p>
 
 <div class="info-popup">
     <p>
@@ -11024,7 +11024,7 @@ key: e37d855e4824216573472846e0cb3e49c7f6f7b1
 <p><a id="Testing_the_Daemon"></a></p>
 <h2 id="testing-the-daemon">Testing the Daemon</h2>
 
-<p>Daemons can be difficult to test since they run in the background. There isn’t always an obvious way to see what they’re doing. Lucky for us, the ShotGridEventDaemon has an option to run it as a foreground process. Now that we have done the minimum required setup, let’s go ahead and test the daemon and see how things go.</p>
+<p>Daemons can be difficult to test since they run in the background. There isn’t always an obvious way to see what they’re doing. Lucky for us, the Flow Production TrackingEventDaemon has an option to run it as a foreground process. Now that we have done the minimum required setup, let’s go ahead and test the daemon and see how things go.</p>
 
 <div class="info-popup">
     <p>
@@ -11036,14 +11036,14 @@ key: e37d855e4824216573472846e0cb3e49c7f6f7b1
 </div>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo ./ShotGridEventDaemon.py foreground
-INFO:engine:Using ShotGrid version 3.0.8
+INFO:engine:Using Flow Production Tracking version 3.0.8
 INFO:engine:Loading plugin at /usr/local/shotgun/ShotGridEvents/src/examplePlugins/logArgs.py
-INFO:engine:Last event id (248429) from the ShotGrid database.
+INFO:engine:Last event id (248429) from the Flow Production Tracking database.
 </code></pre></div></div>
 
 <p>You should see the lines above when you start the script (some of the details may differ obviously). If you get any errors, the script will terminate since we opted to run it in the foreground we’ll see that happen. Some common errors are displayed below if you get stuck.</p>
 
-<p>The <code class="highlighter-rouge">logArgs.py</code> plugin simply takes the event that occurred in ShotGrid and passes it to the logger. Not very exciting but it’s a simple way to ensure that the script is running and the plugin is working. If you’re at a busy studio, you may have already noticed a rapid stream of messages flowing by. If not, login to your ShotGrid server in your web browser and change some values or create something. You should see log statements printed out to your terminal window corresponding to the type of event you generated with your changes.</p>
+<p>The <code class="highlighter-rouge">logArgs.py</code> plugin simply takes the event that occurred in Flow Production Tracking and passes it to the logger. Not very exciting but it’s a simple way to ensure that the script is running and the plugin is working. If you’re at a busy studio, you may have already noticed a rapid stream of messages flowing by. If not, login to your Flow Production Tracking server in your web browser and change some values or create something. You should see log statements printed out to your terminal window corresponding to the type of event you generated with your changes.</p>
 
 <div class="info-popup">
     <p>
@@ -11054,7 +11054,7 @@ INFO:engine:Last event id (248429) from the ShotGrid database.
     </p>
 </div>
 
-<p>If you don’t see anything logged to the log file, check your log-related settings in ShotGridEventDaemon.conf to ensure that the <code class="highlighter-rouge">logging</code> value is set to log INFO level messages</p>
+<p>If you don’t see anything logged to the log file, check your log-related settings in Flow Production TrackingEventDaemon.conf to ensure that the <code class="highlighter-rouge">logging</code> value is set to log INFO level messages</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>logging: 20
 </code></pre></div></div>
@@ -11064,7 +11064,7 @@ INFO:engine:Last event id (248429) from the ShotGrid database.
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">reg</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>Assuming all looks good, to stop the ShotGridEventDaemon process, simply type <code class="highlighter-rouge">&lt;ctrl&gt;-c</code> in the terminal and you should see the script terminate.</p>
+<p>Assuming all looks good, to stop the Flow Production TrackingEventDaemon process, simply type <code class="highlighter-rouge">&lt;ctrl&gt;-c</code> in the terminal and you should see the script terminate.</p>
 
 <p><a id="Running_the_Daemon"></a></p>
 <h2 id="running-the-daemon">Running the daemon</h2>
@@ -11084,25 +11084,25 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 <p>We can see by the second line returned that the daemon is running. The first line is matching the command we just ran. So we know it’s running, but to ensure that it’s <em>working</em> and the plugins are doing what they’re supposed to, we can look at the log files and see if there’s any output there.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo tail -f /var/log/shotgunEventDaemon/shotgunEventDaemon
-2011-09-09 09:42:44,003 - engine - INFO - Using ShotGrid version 3.0.8
+2011-09-09 09:42:44,003 - engine - INFO - Using Flow Production Tracking version 3.0.8
 2011-09-09 09:42:44,006 - engine - INFO - Loading plugin at /usr/local/shotgun/ShotGrid/src/plugins/logArgs.py
 2011-09-09 09:42:44,199 - engine - DEBUG - Starting the event processing loop.
 </code></pre></div></div>
 
 <p>Go back to your web browser and make some changes to an entity. Then head back to the terminal and look for output. You should see something like the following</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2011-09-09 09:42:44,003 - engine - INFO - Using ShotGrid version 3.0.8
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2011-09-09 09:42:44,003 - engine - INFO - Using Flow Production Tracking version 3.0.8
 2011-09-09 09:42:44,006 - engine - INFO - Loading plugin at /usr/local/shotgun/ShotGrid/src/plugins/logArgs.py
 2011-09-09 09:42:44,199 - engine - DEBUG - Starting the event processing loop.
 2011-09-09 09:45:31,228 - plugin.logArgs.logArgs - INFO - {'attribute_name': 'sg_status_list', 'event_type': 'Shotgun_Shot_Change', 'entity': {'type': 'Shot', 'name': 'bunny_010_0010', 'id': 860}, 'project': {'type': 'Project', 'name': 'Big Buck Bunny', 'id': 65}, 'meta': {'entity_id': 860, 'attribute_name': 'sg_status_list', 'entity_type': 'Shot', 'old_value': 'omt', 'new_value': 'ip', 'type': 'attribute_change'}, 'user': {'type': 'HumanUser', 'name': 'Kevin Porterfield', 'id': 35}, 'session_uuid': '450e4da2-dafa-11e0-9ba7-0023dffffeab', 'type': 'EventLogEntry', 'id': 276560}
 </code></pre></div></div>
 
-<p>The exact details of your output will differ, but what you should see is that the plugin has done what it is supposed to do, that is, log the event to the logfile. Again, if you don’t see anything logged to the log file, check your log-related settings in ShotGridEventDaemon.conf to ensure that the <code class="highlighter-rouge">logging</code>value is set to log INFO level messages and your logArgs plugin is also configured to show INFO level messages.</p>
+<p>The exact details of your output will differ, but what you should see is that the plugin has done what it is supposed to do, that is, log the event to the logfile. Again, if you don’t see anything logged to the log file, check your log-related settings in Flow Production TrackingEventDaemon.conf to ensure that the <code class="highlighter-rouge">logging</code>value is set to log INFO level messages and your logArgs plugin is also configured to show INFO level messages.</p>
 
 <p><a id="A_Note_About_Logging"></a></p>
 <h3 id="a-note-about-logging">A Note About Logging</h3>
 
-<p>It should be noted that log rotation is a feature of the ShotGrid daemon. Logs are rotated at midnight every night and ten daily files are kept per plugin.</p>
+<p>It should be noted that log rotation is a feature of the Flow Production Tracking daemon. Logs are rotated at midnight every night and ten daily files are kept per plugin.</p>
 
 <p><a id="Common_Errors"></a></p>
 <h2 id="common-errors">Common Errors</h2>
@@ -11121,7 +11121,7 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 
 <h3 id="importerror-no-module-named-shotgun_api3">ImportError: No module named shotgun_api3</h3>
 
-<p>The ShotGrid API is not installed. Make sure it is either located in the current directory or it is in a directory in your <code class="highlighter-rouge">PYTHONPATH</code>.</p>
+<p>The Flow Production Tracking API is not installed. Make sure it is either located in the current directory or it is in a directory in your <code class="highlighter-rouge">PYTHONPATH</code>.</p>
 
 <p>If you have to run as sudo and you think you have the <code class="highlighter-rouge">PYTHONPATH</code> setup correctly, remember that sudo resets the environment variables. You can edit the sudoers  file to preserve the <code class="highlighter-rouge">PYTHONPATH</code> or run sudo -e(?)</p>
 
@@ -11144,7 +11144,7 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 
 <p><strong>eventIdFile</strong></p>
 
-<p>The eventIdFile points to the location where the daemon will store the id of the last processed ShotGrid event. This will allow the daemon to pick up where it left off when it was last shutdown, thus it won’t miss any events. If you want to ignore any events since the last daemon shutdown, remove this file before starting up the daemon and the daemon will process only new events created after startup.</p>
+<p>The eventIdFile points to the location where the daemon will store the id of the last processed Flow Production Tracking event. This will allow the daemon to pick up where it left off when it was last shutdown, thus it won’t miss any events. If you want to ignore any events since the last daemon shutdown, remove this file before starting up the daemon and the daemon will process only new events created after startup.</p>
 
 <p>This file keeps track of the last event id for <em>each</em> plugin and stores this information in pickle format.</p>
 
@@ -11210,7 +11210,7 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 
 <ul>
   <li><strong>event_id</strong> The id of the event that triggered the callback</li>
-  <li><strong>created_at</strong> The timestamp in ISO format when the event was created in ShotGrid</li>
+  <li><strong>created_at</strong> The timestamp in ISO format when the event was created in Flow Production Tracking</li>
   <li><strong>callback</strong> The name of the invoked callback in <code class="highlighter-rouge">plugin.callback</code> format</li>
   <li><strong>start</strong> The timestamp in ISO format of the start of callback processing</li>
   <li><strong>end</strong> The timestamp in ISO format of the end of callback processing</li>
@@ -11221,7 +11221,7 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 
 <p><strong>conn_retry_sleep</strong></p>
 
-<p>If the connection to ShotGrid fails, this is the number of seconds to wait until the connection is re-attempted. This allows for occasional network hiccups, server restarts, application maintenance, etc.</p>
+<p>If the connection to Flow Production Tracking fails, this is the number of seconds to wait until the connection is re-attempted. This allows for occasional network hiccups, server restarts, application maintenance, etc.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conn_retry_sleep = 60
 </code></pre></div></div>
@@ -11241,13 +11241,13 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 </code></pre></div></div>
 
 <p><a id="Shotgun_Settings"></a></p>
-<h3 id="shotgrid-settings-1">ShotGrid Settings</h3>
+<h3 id="shotgrid-settings-1">Flow Production Tracking Settings</h3>
 
-<p>The following are settings related to your ShotGrid instance.</p>
+<p>The following are settings related to your Flow Production Tracking instance.</p>
 
 <p><strong>server</strong></p>
 
-<p>The URL for the ShotGrid server to connect to.</p>
+<p>The URL for the Flow Production Tracking server to connect to.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server: %(SG_ED_SITE_URL)s
 </code></pre></div></div>
@@ -11256,14 +11256,14 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Note
-:</b> There is no default value here. Set the <code class="highlighter-rouge">SG_ED_SITE_URL</code> environment variable to the URL for your ShotGrid server (ie. https://awesome.shotgunstudio.com)
+:</b> There is no default value here. Set the <code class="highlighter-rouge">SG_ED_SITE_URL</code> environment variable to the URL for your Flow Production Tracking server (ie. https://awesome.shotgunstudio.com)
 
     </p>
 </div>
 
 <p><strong>name</strong></p>
 
-<p>The ShotGrid Script name the ShotGridEventDaemon should connect with.</p>
+<p>The Flow Production Tracking Script name the Flow Production TrackingEventDaemon should connect with.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: %(SG_ED_SCRIPT_NAME)s
 </code></pre></div></div>
@@ -11272,14 +11272,14 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Note
-:</b> There is no default value here. Set the <code class="highlighter-rouge">SG_ED_SCRIPT_NAME</code> environment variable to the Script name for your ShotGrid server (ie. <code class="highlighter-rouge">shotgunEventDaemon</code>)
+:</b> There is no default value here. Set the <code class="highlighter-rouge">SG_ED_SCRIPT_NAME</code> environment variable to the Script name for your Flow Production Tracking server (ie. <code class="highlighter-rouge">shotgunEventDaemon</code>)
 
     </p>
 </div>
 
 <p><strong>key</strong></p>
 
-<p>The ShotGrid Application Key for the Script name specified above.</p>
+<p>The Flow Production Tracking Application Key for the Script name specified above.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>key: %(SG_ED_API_KEY)s
 </code></pre></div></div>
@@ -11295,21 +11295,21 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 
 <p><strong>use_session_uuid</strong></p>
 
-<p>Sets the session_uuid from every event in the ShotGrid instance to propagate in any events generated by plugins. This will allow the ShotGrid UI to display updates that occur as a result of a plugin.</p>
+<p>Sets the session_uuid from every event in the Flow Production Tracking instance to propagate in any events generated by plugins. This will allow the Flow Production Tracking UI to display updates that occur as a result of a plugin.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>use_session_uuid: True
 </code></pre></div></div>
 
 <ul>
-  <li>ShotGrid server v2.3+ is required for this feature.</li>
-  <li>ShotGrid API v3.0.5+ is required for this feature.</li>
+  <li>Flow Production Tracking server v2.3+ is required for this feature.</li>
+  <li>Flow Production Tracking API v3.0.5+ is required for this feature.</li>
 </ul>
 
 <div class="info-popup">
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Note
-:</b> The ShotGrid UI will <em>only</em> show updates live for the browser session that spawned the original event. Other browser windows with the same page open will not see updates live.
+:</b> The Flow Production Tracking UI will <em>only</em> show updates live for the browser session that spawned the original event. Other browser windows with the same page open will not see updates live.
 
     </p>
 </div>
@@ -11406,7 +11406,7 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 
 <p><strong>subject</strong></p>
 
-<p>An email subject prefix that can be used by mail clients to help sort out alerts sent by the ShotGrid event framework.</p>
+<p>An email subject prefix that can be used by mail clients to help sort out alerts sent by the Flow Production Tracking event framework.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>subject: [SG]
 </code></pre></div></div>

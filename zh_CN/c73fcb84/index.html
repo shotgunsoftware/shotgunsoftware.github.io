@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -8384,9 +8384,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -10750,7 +10750,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -11820,7 +11820,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -11910,7 +11910,7 @@
 
 <h2 id="什么是环境">什么是环境？</h2>
 
-<p>ShotGrid Toolkit 平台为常用内容创建软件提供了一组完全可自定义的集成，您可以通过其构建工作室工作流。在项目的配置中，您可以指定哪些软件包具有集成，在每个软件包中哪些特定 Toolkit 应用可用，以及针对每个应用所做的选择 - 构建符合工作室需求的美工人员工作流。</p>
+<p>Flow Production Tracking Toolkit 平台为常用内容创建软件提供了一组完全可自定义的集成，您可以通过其构建工作室工作流。在项目的配置中，您可以指定哪些软件包具有集成，在每个软件包中哪些特定 Toolkit 应用可用，以及针对每个应用所做的选择 - 构建符合工作室需求的美工人员工作流。</p>
 
 <p>但在工作室工作流中，通常情况下，不同类型的美工人员一般会采用不同的工作流。举一个简单的示例，对于处理资产的美工人员，您可能希望提供纹理绘制软件（如 Mari），而对于处理镜头的美工人员，您可能希望提供合成软件（如 Nuke）。</p>
 
@@ -11998,7 +11998,7 @@ shot_step.yml
 
 <h3 id="位置描述符">位置描述符</h3>
 
-<p>每个 Toolkit 包都有一个 <code class="highlighter-rouge">location</code> 设置，我们将其称为包的<em>描述符</em>。描述符告知 Toolkit 在何处查找给定包，以及根据其类型，是直接访问它还是在本地缓存它。Toolkit 包可以来自多个位置，例如，ShotGrid 应用商店、git 库、磁盘上的路径或上传到 ShotGrid 站点的 zip 文件。其中每个位置都有一个对应的描述符类型，相应类型具有特定设置。下面是上述示例中 <code class="highlighter-rouge">tk-maya</code> 插件的描述符：</p>
+<p>每个 Toolkit 包都有一个 <code class="highlighter-rouge">location</code> 设置，我们将其称为包的<em>描述符</em>。描述符告知 Toolkit 在何处查找给定包，以及根据其类型，是直接访问它还是在本地缓存它。Toolkit 包可以来自多个位置，例如，Flow Production Tracking 应用商店、git 库、磁盘上的路径或上传到 Flow Production Tracking 站点的 zip 文件。其中每个位置都有一个对应的描述符类型，相应类型具有特定设置。下面是上述示例中 <code class="highlighter-rouge">tk-maya</code> 插件的描述符：</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="na">location</span><span class="pi">:</span>
         <span class="na">type</span><span class="pi">:</span> <span class="s">app_store</span>
@@ -12006,7 +12006,7 @@ shot_step.yml
         <span class="na">version</span><span class="pi">:</span> <span class="s">v0.9.4</span>
 </code></pre></div></div>
 
-<p>这是类型为 <code class="highlighter-rouge">app_store</code> 的描述符，此描述符告知 Toolkit 从 ShotGrid 应用商店获取给定包。类型为 <code class="highlighter-rouge">app_store</code> 的描述符具有设置 <code class="highlighter-rouge">name</code> 和 <code class="highlighter-rouge">version</code>。</p>
+<p>这是类型为 <code class="highlighter-rouge">app_store</code> 的描述符，此描述符告知 Toolkit 从 Flow Production Tracking 应用商店获取给定包。类型为 <code class="highlighter-rouge">app_store</code> 的描述符具有设置 <code class="highlighter-rouge">name</code> 和 <code class="highlighter-rouge">version</code>。</p>
 
 <p>相反，如果您正在开发自定义包 - 即您正在为工作室中的一个特定工作流编写一个 Toolkit 应用，您可能希望直接从磁盘上的路径获取它。在此示例中，将使用类型为 <code class="highlighter-rouge">dev</code> 的描述符，它可能如下所示：</p>
 

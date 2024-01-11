@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -3483,9 +3483,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/8085533c/?title=ShotGrid+Integrations+Admin+Guide"
+                href="/8085533c/?title=Flow+Production+Tracking+Integrations+Admin+Guide"
             >
-                ShotGrid Integrations Admin Guide
+                Flow Production Tracking Integrations Admin Guide
             </a>
             </div>
 
@@ -10346,7 +10346,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -12977,9 +12977,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -15343,7 +15343,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -16413,7 +16413,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -16490,7 +16490,7 @@
 
 <p>This document explains best practices for how to safely roll out changes to your production pipeline. It explains how you can create a staging sandbox, which is a copy of your production configuration, update this sandbox and do testing and then finally push your changes to the production config.</p>
 
-<p><em>Please note that this document describes functionality only available if you have taken control over a Toolkit configuration. For the default setup, please see  <a href="https://developer.shotgridsoftware.com/8085533c/">ShotGrid Integrations Admin Guide</a>.</em></p>
+<p><em>Please note that this document describes functionality only available if you have taken control over a Toolkit configuration. For the default setup, please see  <a href="https://developer.shotgridsoftware.com/8085533c/">Flow Production Tracking Integrations Admin Guide</a>.</em></p>
 
 <h1 id="introduction">Introduction</h1>
 
@@ -16512,7 +16512,7 @@
 
 <p>If you are working with a large number of projects, this may become cumbersome and we offer several ways to make this process easy, safe and streamlined.</p>
 
-<p>In ShotGrid, each project has a number of  <strong>Pipeline Configurations</strong>. When a project is first set up with Toolkit, a Pipeline Configuration called  <code class="highlighter-rouge">primary</code>  is created. The pipeline configuration entity in ShotGrid points at a location on disk where the Toolkit configuration can be found.</p>
+<p>In Flow Production Tracking, each project has a number of  <strong>Pipeline Configurations</strong>. When a project is first set up with Toolkit, a Pipeline Configuration called  <code class="highlighter-rouge">primary</code>  is created. The pipeline configuration entity in Flow Production Tracking points at a location on disk where the Toolkit configuration can be found.</p>
 
 <p>During the course of a project, you often need to make changes to the configuration. This can be tweaks to the configuration, or perhaps you need to add additional apps or engines. We also release new app versions frequently and we recommend that you use the latest versions if possible.</p>
 
@@ -16526,7 +16526,7 @@
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/config-staging-and-rollout/config_overview.png" alt="" /></p>
 
-<p>There is a  <em>studio</em>  install which holds the Core API for all projects. This  <em>studio</em>  location also contains a  <code class="highlighter-rouge">tank</code> command and a Toolkit Python API you can use to access any of your Toolkit-enabled ShotGrid projects.</p>
+<p>There is a  <em>studio</em>  install which holds the Core API for all projects. This  <em>studio</em>  location also contains a  <code class="highlighter-rouge">tank</code> command and a Toolkit Python API you can use to access any of your Toolkit-enabled Flow Production Tracking projects.</p>
 
 <p>In addition to this, there is a configuration folder for each project. This folder contains all the settings for that project. It also contains a  <code class="highlighter-rouge">tank</code>  command (and a Python API) which specifically operates on this configuration. When you are using this <code class="highlighter-rouge">tank</code> command or API code, you can strictly only operate on this configuration.</p>
 
@@ -16536,15 +16536,15 @@
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/config-staging-and-rollout/pc_overview.png" alt="" /></p>
 
-<p>In addition to the studio level  <code class="highlighter-rouge">tank</code>  command and your primary project configuration  <code class="highlighter-rouge">tank</code>  command, you now have a new pipeline configuration which has its own  <code class="highlighter-rouge">tank</code>  command. If you run this  <code class="highlighter-rouge">tank</code>  command, you will operate exclusively on the configuration located in the staging sandbox. So if you want to test out some new things in Maya, you can simply navigate to your cloned sandbox, run  <code class="highlighter-rouge">./tank Shot xyz launch_maya</code>  and the ShotGrid menu which appears in Maya will reflect the configuration inside of your staging sandbox rather than your Primary configuration.</p>
+<p>In addition to the studio level  <code class="highlighter-rouge">tank</code>  command and your primary project configuration  <code class="highlighter-rouge">tank</code>  command, you now have a new pipeline configuration which has its own  <code class="highlighter-rouge">tank</code>  command. If you run this  <code class="highlighter-rouge">tank</code>  command, you will operate exclusively on the configuration located in the staging sandbox. So if you want to test out some new things in Maya, you can simply navigate to your cloned sandbox, run  <code class="highlighter-rouge">./tank Shot xyz launch_maya</code>  and the Flow Production Tracking menu which appears in Maya will reflect the configuration inside of your staging sandbox rather than your Primary configuration.</p>
 
-<p>Note that the studio level  <code class="highlighter-rouge">tank</code>  command always uses the Primary config, so the only way to access a cloned configuration is by navigating to its location and using the  <code class="highlighter-rouge">tank</code>  command that is located in that folder. In ShotGrid, you can assign a specific set of users to a pipeline configuration entry, and any users that are associated with a configuration will now see menu entries appear in addition to those coming from the Primary config:</p>
+<p>Note that the studio level  <code class="highlighter-rouge">tank</code>  command always uses the Primary config, so the only way to access a cloned configuration is by navigating to its location and using the  <code class="highlighter-rouge">tank</code>  command that is located in that folder. In Flow Production Tracking, you can assign a specific set of users to a pipeline configuration entry, and any users that are associated with a configuration will now see menu entries appear in addition to those coming from the Primary config:</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/config-staging-and-rollout/pc_shotgun.png" alt="" /></p>
 
 <h3 id="creating-a-cloned-configuration">Creating a Cloned Configuration</h3>
 
-<p>In order to create a staging sandbox where you can safely test your upgrades, navigate to the pipeline configurations for your project in ShotGrid and right click on the Primary configuration. An option to clone your configuration will appear:</p>
+<p>In order to create a staging sandbox where you can safely test your upgrades, navigate to the pipeline configurations for your project in Flow Production Tracking and right click on the Primary configuration. An option to clone your configuration will appear:</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/config-staging-and-rollout/clone_menu.png" alt="" /></p>
 
@@ -16552,7 +16552,7 @@
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/config-staging-and-rollout/clone_dialog.png" alt="" /></p>
 
-<p>When you press ok, Toolkit will copy the configuration across and set up the clone. It will also associate your ShotGrid user with this configuration, so as soon as you have created your clone, you will see new menu items appearing inside ShotGrid.</p>
+<p>When you press ok, Toolkit will copy the configuration across and set up the clone. It will also associate your Flow Production Tracking user with this configuration, so as soon as you have created your clone, you will see new menu items appearing inside Flow Production Tracking.</p>
 
 <h3 id="pushing-changes-from-your-staging-sandbox-to-primary">Pushing changes from your staging sandbox to Primary</h3>
 
@@ -16567,7 +16567,7 @@
 <p>If you have a old dev or staging sandbox set up, but it is out of date and you need to sync its contents with the latest production configuration, you do this by running the  <code class="highlighter-rouge">push_configuration</code>  command for the primary configuration:</p>
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tank push_configuration
 
-Welcome to the ShotGrid Pipeline Toolkit!
+Welcome to the Flow Production Tracking Toolkit!
 For documentation, see https://developer.shotgridsoftware.com
 Starting Toolkit <span class="k">for </span>your current directory <span class="s1">'/tmp'</span>
 - Using configuration <span class="s1">'Primary'</span> and Core v0.14.52
@@ -16598,7 +16598,7 @@ Your old configuration has been backed up into the following folder:
 
 <h3 id="deleting-a-cloned-configuration">Deleting a cloned configuration</h3>
 
-<p>If you want to delete a cloned configuration, simply delete the entry in ShotGrid and remove the folder from disk.</p>
+<p>If you want to delete a cloned configuration, simply delete the entry in Flow Production Tracking and remove the folder from disk.</p>
 
 <h2 id="getting-latest-apps-and-engines">Getting latest apps and engines</h2>
 
@@ -16652,7 +16652,7 @@ Make sure the loader app is up to <span class="nb">date </span><span class="k">i
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /my/staging/sandbox
 ./tank localize
 
-Welcome to the ShotGrid Pipeline Toolkit!
+Welcome to the Flow Production Tracking Toolkit!
 For documentation, see https://developer.shotgridsoftware.com
 Starting Toolkit <span class="k">for </span>your current directory <span class="s1">'/my/staging/sandbox'</span>
 - Using configuration <span class="s1">'Staging Sandbox'</span> and Core v0.14.52
@@ -16685,7 +16685,7 @@ no other configurations or projects will be affected.
 </code></pre></div></div>
 <p>Toolkit will check if there is a new version available and offer you to download and install it.</p>
 
-<p>Once you have updated the Core API, make sure to test the installation. Launch some apps, either using the <code class="highlighter-rouge">tank</code> command in the sandbox or using the special menu entries in ShotGrid. Do a basic run-through of your pipeline and perform the tests you deem necessary.</p>
+<p>Once you have updated the Core API, make sure to test the installation. Launch some apps, either using the <code class="highlighter-rouge">tank</code> command in the sandbox or using the special menu entries in Flow Production Tracking. Do a basic run-through of your pipeline and perform the tests you deem necessary.</p>
 
 <p>Finally, once you are happy, it is time to go ahead and update the studio version of the Core API. Note that in the typical Toolkit setup, the Core API is shared between all projects, so by running the <code class="highlighter-rouge">tank core</code> command from your studio location  <code class="highlighter-rouge">tank</code>  command, you are updating the Core API for all projects.</p>
 
@@ -16714,7 +16714,7 @@ no other configurations or projects will be affected.
 <p>This is a very simple way to gradually evolve the configuration over time. Changes and improvements will flow from project to project in an ad hoc fashion. The first time you run the <code class="highlighter-rouge">setup_project</code> command, just hit enter when the setup process prompts for the configuration to use. This will download and install the default configuration.</p>
 
 <p>For your second project, you will be presented with a list of paths to configurations for previous projects. Choose one of these paths and enter that when the setup process prompts for a config. This will copy that configuration to the new project:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Welcome to the ShotGrid Pipeline Toolkit!
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Welcome to the Flow Production Tracking Toolkit!
 For documentation, see https://developer.shotgridsoftware.com
 - Running command setup_project...
 
@@ -16722,9 +16722,9 @@ For documentation, see https://developer.shotgridsoftware.com
 Command: Setup project
 ----------------------------------------------------------------------
 
-Welcome to the ShotGrid Pipeline Toolkit Project Setup!
+Welcome to the Flow Production Tracking Toolkit Project Setup!
 
-Connecting to ShotGrid...
+Connecting to Flow Production Tracking...
 Connecting to the App Store...
 
 ------------------------------------------------------------------
@@ -16741,7 +16741,7 @@ type in its path when prompted below.
 
 You can use the Default Configuration for your new project.  The default
 configuration is a good sample config, demonstrating a typical basic setup of
-the ShotGrid Pipeline Toolkit using the latest apps and engines. This will be
+the Flow Production Tracking Toolkit using the latest apps and engines. This will be
 used by default if you just hit enter below.
 
 If you have a configuration stored somewhere on disk, you can enter the path
@@ -16808,7 +16808,7 @@ git push
 
 <h3 id="advanced-git-usage-batch-deployment">Advanced git usage: Batch deployment</h3>
 
-<p>Since Toolkit keeps a list of all the different configurations for a ShotGrid site via its pipeline configuration entity, it is possible to iterate over this list and execute a <code class="highlighter-rouge">git pull</code> command for each of the items, effectively running a batch update on all projects. This functionality is not currently part of Toolkit out of the box, but can be scripted using Python and the ShotGrid Python API.</p>
+<p>Since Toolkit keeps a list of all the different configurations for a Flow Production Tracking site via its pipeline configuration entity, it is possible to iterate over this list and execute a <code class="highlighter-rouge">git pull</code> command for each of the items, effectively running a batch update on all projects. This functionality is not currently part of Toolkit out of the box, but can be scripted using Python and the Flow Production Tracking Python API.</p>
 
 <h2 id="a-global-configuration-using-includes">A global configuration using includes</h2>
 
@@ -16869,7 +16869,7 @@ engines:
     # and after the apps section follows specific configuration options for the engine
     location: {name: tk-maya, type: app_store, version: v0.4.1}
     menu_favourites:
-    - {app_instance: tk-multi-workfiles, name: ShotGrid File Manager...}
+    - {app_instance: tk-multi-workfiles, name: Flow Production Tracking File Manager...}
     template_project: null
     use_sgtk_as_menu_name: false
 </code></pre></div></div>
@@ -16928,9 +16928,9 @@ engines:
     <span class="na">debug_logging</span><span class="pi">:</span> <span class="no">true</span>
     <span class="na">location</span><span class="pi">:</span> <span class="pi">{</span><span class="nv">name</span><span class="pi">:</span> <span class="nv">tk-maya</span><span class="pi">,</span> <span class="nv">type</span><span class="pi">:</span> <span class="nv">app_store</span><span class="pi">,</span> <span class="nv">version</span><span class="pi">:</span> <span class="nv">v0.3.10</span><span class="pi">}</span>
     <span class="na">menu_favourites</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="pi">{</span><span class="nv">app_instance</span><span class="pi">:</span> <span class="nv">tk-multi-workfiles</span><span class="pi">,</span> <span class="nv">name</span><span class="pi">:</span> <span class="nv">ShotGrid File Manager...</span><span class="pi">}</span>
+    <span class="pi">-</span> <span class="pi">{</span><span class="nv">app_instance</span><span class="pi">:</span> <span class="nv">tk-multi-workfiles</span><span class="pi">,</span> <span class="nv">name</span><span class="pi">:</span> <span class="nv">Flow Production Tracking File Manager...</span><span class="pi">}</span>
     <span class="pi">-</span> <span class="pi">{</span><span class="nv">app_instance</span><span class="pi">:</span> <span class="nv">tk-multi-snapshot</span><span class="pi">,</span> <span class="nv">name</span><span class="pi">:</span> <span class="nv">Snapshot...</span><span class="pi">}</span>
-    <span class="pi">-</span> <span class="pi">{</span><span class="nv">app_instance</span><span class="pi">:</span> <span class="nv">tk-multi-workfiles</span><span class="pi">,</span> <span class="nv">name</span><span class="pi">:</span> <span class="nv">ShotGrid Save As...</span><span class="pi">}</span>
+    <span class="pi">-</span> <span class="pi">{</span><span class="nv">app_instance</span><span class="pi">:</span> <span class="nv">tk-multi-workfiles</span><span class="pi">,</span> <span class="nv">name</span><span class="pi">:</span> <span class="nv">Flow Production Tracking Save As...</span><span class="pi">}</span>
     <span class="pi">-</span> <span class="pi">{</span><span class="nv">app_instance</span><span class="pi">:</span> <span class="nv">tk-multi-publish</span><span class="pi">,</span> <span class="nv">name</span><span class="pi">:</span> <span class="nv">Publish...</span><span class="pi">}</span>
     <span class="na">template_project</span><span class="pi">:</span> <span class="s">shot_work_area_maya</span>
     <span class="na">use_sgtk_as_menu_name</span><span class="pi">:</span> <span class="no">false</span>

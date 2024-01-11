@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -8165,21 +8165,21 @@
 <p>既定の設定では、単一のローカル ストレージのルートが使用されます(つまり、すべてのプロジェクト ファイルは <code class="highlighter-rouge">/sgtk/projects</code> のような単一のルート ポイントに保存されます)。プロジェクト ファイルの一部を保存する新しいストレージ ルートを追加することができます。これは、ディスク スペースが不足した場合やストレージ メディアを高速化する場合に一般的な方法です。
 「secondary」という名前の別のルートを追加する場合があるとします。必要な手順は次のとおりです。</p>
 
-<h2 id="shotgrid-でローカル-ストレージを追加する">ShotGrid でローカル ストレージを追加する</h2>
+<h2 id="shotgrid-でローカル-ストレージを追加する">Flow Production Tracking でローカル ストレージを追加する</h2>
 
 <ul>
-  <li>ShotGrid で、[管理者] (Admin)&gt; [サイト基本設定] (Site Preferences)<strong>ページに移動します</strong></li>
+  <li>Flow Production Tracking で、[管理者] (Admin)&gt; [サイト基本設定] (Site Preferences)<strong>ページに移動します</strong></li>
   <li><strong>[ファイル管理] (File Management)</strong>セクションを開きます</li>
   <li><strong>[[+] ローカル ファイル ストレージを追加] ([+] Add Local File Storage)</strong>をクリックします</li>
   <li>名前(「secondary」)と関連するすべてのプラットフォーム上のストレージ ルートへのパスを入力します。<em>特定のプラットフォームを使用していない場合は、空白のままにすることができます。</em></li>
   <li>ページの上部または下部にある<strong>[ページを保存] (Save Page)</strong>ボタンをクリックします</li>
 </ul>
 
-<p><img src="/ja/quick-answers/administering/images/shotgun-pref-file-management.png" alt="ShotGrid ファイル管理の基本設定" /></p>
+<p><img src="/ja/quick-answers/administering/images/shotgun-pref-file-management.png" alt="Flow Production Tracking ファイル管理の基本設定" /></p>
 
 <h2 id="新しいルートをパイプライン設定に追加する">新しいルートをパイプライン設定に追加する</h2>
 
-<p>Toolkit は、<code class="highlighter-rouge">config/core/roots.yml</code> ファイルのパイプライン設定で使用されるローカル ストレージに関する情報をキャッシュします。ShotGrid で作成したばかりの新しい <strong>secondary</strong> ストレージ ルートを追加するには、このファイルを次のように編集します。</p>
+<p>Toolkit は、<code class="highlighter-rouge">config/core/roots.yml</code> ファイルのパイプライン設定で使用されるローカル ストレージに関する情報をキャッシュします。Flow Production Tracking で作成したばかりの新しい <strong>secondary</strong> ストレージ ルートを追加するには、このファイルを次のように編集します。</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>primary: {
     linux_path: /mnt/hgfs/sgtk/projects,
@@ -8265,7 +8265,7 @@ root_name: "secondary"
     </p>
 </div>
 
-<p><sup>1</sup> <em>新しい値が設定されると、以前の値を使用して作成された古いファイルに Toolkit からアクセスできなくなるため、パスの更新が最適な方法ではない場合があります(テンプレート パスの変更後は Toolkit で古い作業ファイルは表示されません)。これが問題になる場合は、新しい場所を設定した新しいテンプレート(houdini_shot_publish_v2 など)を作成し、この新しいバージョンを使用するようにアプリをアップグレードすることができます。すべてのアプリがこのようなフォールバックの考え方に対応しているわけではありませんが、古いファイルを認識できるアプリもあります。アプリは ShotGrid 内のパブリッシュと常にリンクされているため、これはパブリッシュに影響しません。</em></p>
+<p><sup>1</sup> <em>新しい値が設定されると、以前の値を使用して作成された古いファイルに Toolkit からアクセスできなくなるため、パスの更新が最適な方法ではない場合があります(テンプレート パスの変更後は Toolkit で古い作業ファイルは表示されません)。これが問題になる場合は、新しい場所を設定した新しいテンプレート(houdini_shot_publish_v2 など)を作成し、この新しいバージョンを使用するようにアプリをアップグレードすることができます。すべてのアプリがこのようなフォールバックの考え方に対応しているわけではありませんが、古いファイルを認識できるアプリもあります。アプリは Flow Production Tracking 内のパブリッシュと常にリンクされているため、これはパブリッシュに影響しません。</em></p>
 
 
             </div>  

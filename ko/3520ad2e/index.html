@@ -11,12 +11,12 @@
 <link rel="alternate" hreflang="zh_CN" href="/zh_CN/3520ad2e/"/>
 
 
-  <title>어떻게 하면 ShotGrid 이벤트 데몬을 사용하여 다른 Toolkit Core 모듈을 로드할 수 있습니까? - SG Developer</title>
+  <title>어떻게 하면 Flow Production Tracking 이벤트 데몬을 사용하여 다른 Toolkit Core 모듈을 로드할 수 있습니까? - SG Developer</title>
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ko/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Jira 및 ShotGrid 간 데이터 동기화
+            Jira 및 Flow Production Tracking 간 데이터 동기화
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/ko/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ko/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 설명서
+            Flow Production Tracking 설명서
         </a>
     </div>
 
@@ -8168,7 +8168,7 @@
 
 <p>툴킷의 sgtk API는 프로젝트 중심입니다. 즉, 사용할 프로젝트에서 특별히 가져와야 합니다. 이는 단일 Python 세션에서 다중 프로젝트에 대해 sgtk API 작업을 사용하는 경우 Python은 이름이 동일한 모듈을 한 번만 가져올 수 있기 때문에 문제가 발생할 수 있음을 의미합니다.</p>
 
-<p><a href="https://github.com/shotgunsoftware/shotgunEvents">ShotGrid 이벤트 데몬</a>을 사용 중인 경우 특정 이벤트에 대해서는 플러그인 내에서 툴킷 액션을 수행하고 싶을 수 있습니다. 하지만 Python은 모듈을 한 번만 가져오기 때문에 이렇게 하는 것은 위험할 수 있습니다. 따라서 프로젝트 A용 Toolkit Core API를 플러그인을 처음 실행할 때 가져오면 그 버전이 데몬의 사용 기간 동안 가져온 채로 유지되는 버전이 됩니다. 즉, 플러그인으로 발송된 다음 이벤트가 프로젝트 B의 이벤트인 경우 프로젝트 A용 Core API를 사용하여 프로젝트 B를 위한 새 툴킷 객체의 인스턴스화를 시도하면 툴킷에서 오류가 발생할 수 있습니다.</p>
+<p><a href="https://github.com/shotgunsoftware/shotgunEvents">Flow Production Tracking 이벤트 데몬</a>을 사용 중인 경우 특정 이벤트에 대해서는 플러그인 내에서 툴킷 액션을 수행하고 싶을 수 있습니다. 하지만 Python은 모듈을 한 번만 가져오기 때문에 이렇게 하는 것은 위험할 수 있습니다. 따라서 프로젝트 A용 Toolkit Core API를 플러그인을 처음 실행할 때 가져오면 그 버전이 데몬의 사용 기간 동안 가져온 채로 유지되는 버전이 됩니다. 즉, 플러그인으로 발송된 다음 이벤트가 프로젝트 B의 이벤트인 경우 프로젝트 A용 Core API를 사용하여 프로젝트 B를 위한 새 툴킷 객체의 인스턴스화를 시도하면 툴킷에서 오류가 발생할 수 있습니다.</p>
 
 <p><strong>중앙 집중식 구성을 사용하는 경우의 문제 예시:</strong></p>
 

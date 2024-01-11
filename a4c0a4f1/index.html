@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -10465,9 +10465,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/c0b0ce05/?title=ShotGrid+Panel"
+                href="/c0b0ce05/?title=Flow+Production+Tracking+Panel"
             >
-                ShotGrid Panel
+                Flow Production Tracking Panel
             </a>
             </div>
 
@@ -11812,7 +11812,7 @@
                 style='margin-left:40px'
                 href="/88ae1c1d/?title=Hiero%2FNuke+Studio+Open+in+ShotGrid"
             >
-                Hiero/Nuke Studio Open in ShotGrid
+                Hiero/Nuke Studio Open in Flow Production Tracking
             </a>
             </div>
 
@@ -14169,9 +14169,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/134adb0e/?title=ShotGrid+Folders"
+                href="/134adb0e/?title=Flow+Production+Tracking+Folders"
             >
-                ShotGrid Folders
+                Flow Production Tracking Folders
             </a>
             </div>
 
@@ -14632,9 +14632,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/0c3049eb/?title=ShotGrid+Launch+Folder"
+                href="/0c3049eb/?title=Flow+Production+Tracking+Launch+Folder"
             >
-                ShotGrid Launch Folder
+                Flow Production Tracking Launch Folder
             </a>
             </div>
 
@@ -15095,9 +15095,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/a01dbeb7/?title=ShotGrid+Launch+Publish"
+                href="/a01dbeb7/?title=Flow+Production+Tracking+Launch+Publish"
             >
-                ShotGrid Launch Publish
+                Flow Production Tracking Launch Publish
             </a>
             </div>
 
@@ -19431,9 +19431,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -21797,7 +21797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -22867,7 +22867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -22942,7 +22942,7 @@
 
             <h1 id="loader">Loader</h1>
 
-<p>This document describes functionality only available if you have taken control over a Toolkit configuration. Please refer to the <a href="https://developer.shotgridsoftware.com/d587be80/">ShotGrid Integrations User Guide</a> for details.</p>
+<p>This document describes functionality only available if you have taken control over a Toolkit configuration. Please refer to the <a href="https://developer.shotgridsoftware.com/d587be80/">Flow Production Tracking Integrations User Guide</a> for details.</p>
 
 <h2 id="configuration">Configuration</h2>
 
@@ -22958,12 +22958,12 @@ For technical minutiae relating to the configuration, please see the separate se
 
 <h3 id="the-tree-view">The tree view</h3>
 
-<p>The tree view is highly configurable and you can control the content of the various tabs using standard ShotGrid filter syntax. Each tab consists of a single ShotGrid API query which is grouped into a hierarchy. You can add arbitrary filters to control which items are being shown, and you can use the special keywords <code class="highlighter-rouge">{context.entity}</code>, <code class="highlighter-rouge">{context.project}</code>, <code class="highlighter-rouge">{context.project.id}</code>, <code class="highlighter-rouge">{context.step}</code>, <code class="highlighter-rouge">{context.task}</code> and <code class="highlighter-rouge">{context.user}</code> to scope a query based on the current context. Each of these keywords will be replaced with the relevant context information, either <code class="highlighter-rouge">None</code>, if that part of the context is not populated or a standard ShotGrid link dictionary containing the keys id, type and name.</p>
+<p>The tree view is highly configurable and you can control the content of the various tabs using standard Flow Production Tracking filter syntax. Each tab consists of a single Flow Production Tracking API query which is grouped into a hierarchy. You can add arbitrary filters to control which items are being shown, and you can use the special keywords <code class="highlighter-rouge">{context.entity}</code>, <code class="highlighter-rouge">{context.project}</code>, <code class="highlighter-rouge">{context.project.id}</code>, <code class="highlighter-rouge">{context.step}</code>, <code class="highlighter-rouge">{context.task}</code> and <code class="highlighter-rouge">{context.user}</code> to scope a query based on the current context. Each of these keywords will be replaced with the relevant context information, either <code class="highlighter-rouge">None</code>, if that part of the context is not populated or a standard Flow Production Tracking link dictionary containing the keys id, type and name.</p>
 
-<p>By default, the loader will show assets and shots belonging to the current project. By reconfiguring, this could easily be extended to for example show items from other projects (or a specific asset library project for example). You could also for example use filters to only show items with certain approval status or group items by status or by other ShotGrid fields. Below are some sample configuration settings illustrating how you could set up your tree view tabs:</p>
+<p>By default, the loader will show assets and shots belonging to the current project. By reconfiguring, this could easily be extended to for example show items from other projects (or a specific asset library project for example). You could also for example use filters to only show items with certain approval status or group items by status or by other Flow Production Tracking fields. Below are some sample configuration settings illustrating how you could set up your tree view tabs:</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># An asset library tab which shows assets from a specific</span>
-<span class="c1"># ShotGrid project</span>
+<span class="c1"># Flow Production Tracking project</span>
 <span class="na">caption</span><span class="pi">:</span> <span class="s">Asset Library</span>
 <span class="na">entity_type</span><span class="pi">:</span> <span class="s">Asset</span>
 <span class="na">hierarchy</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">sg_asset_type</span><span class="pi">,</span> <span class="nv">code</span><span class="pi">]</span>
@@ -22991,7 +22991,7 @@ For technical minutiae relating to the configuration, please see the separate se
 
 <h3 id="filtering-publishes">Filtering publishes</h3>
 
-<p>It is possible to apply a ShotGrid filter to the publish query that the loader carries out when it loads publish data from ShotGrid. This is controlled via the <code class="highlighter-rouge">publish_filters</code> parameter and can be used for example to hide publishes that have not been approved or where their associated review version has not been approved.</p>
+<p>It is possible to apply a Flow Production Tracking filter to the publish query that the loader carries out when it loads publish data from Flow Production Tracking. This is controlled via the <code class="highlighter-rouge">publish_filters</code> parameter and can be used for example to hide publishes that have not been approved or where their associated review version has not been approved.</p>
 
 <h3 id="help-no-actions-are-showing-up">Help, no actions are showing up!</h3>
 
@@ -23075,7 +23075,7 @@ this:</p>
         one object is returned for an action, use the params key to pass additional
         data into the run_action hook.
 
-        :param sg_publish_data: ShotGrid data dictionary with all the standard publish fields.
+        :param sg_publish_data: Flow Production Tracking data dictionary with all the standard publish fields.
         :param actions: List of action strings which have been defined in the app configuration.
         :param ui_area: String denoting the UI Area (see above).
         :returns List of dictionaries, each with keys name, params, caption and description
@@ -23100,7 +23100,7 @@ this:</p>
 
         :param name: Action name string representing one of the items returned by generate_actions.
         :param params: Params data, as specified by generate_actions.
-        :param sg_publish_data: ShotGrid data dictionary with all the standard publish fields.
+        :param sg_publish_data: Flow Production Tracking data dictionary with all the standard publish fields.
         :returns: No return value expected.
         """</span>
 
@@ -23139,7 +23139,7 @@ this:</p>
   <li><code class="highlighter-rouge">str</code> <strong>title</strong> - The title to be displayed in the open publish dialog.</li>
   <li><code class="highlighter-rouge">str</code> <strong>action</strong> - The name of the action to be used for the ‘open’ button.</li>
   <li><code class="highlighter-rouge">list</code> <strong>publish_types</strong> - A list of publish types to use to filter the available list of publishes.  If this is empty/None then all publishes will be shown.</li>
-  <li><strong>Returns:</strong> A list of ShotGrid entity dictionaries that were selected by the user.</li>
+  <li><strong>Returns:</strong> A list of Flow Production Tracking entity dictionaries that were selected by the user.</li>
 </ul>
 
 <p><strong>Example</strong></p>

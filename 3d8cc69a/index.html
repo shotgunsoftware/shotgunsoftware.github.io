@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -8948,7 +8948,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -11579,9 +11579,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -13945,7 +13945,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -15015,7 +15015,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -15171,8 +15171,8 @@ Logging can have an impact on performance, so you should only enable debug loggi
 
 <h2 id="part-3-authentication">Part 3: Authentication</h2>
 
-<p>When running a script that uses the Toolkit API outside of an environment where ShotGrid Toolkit has already been started, you will always need to authenticate.
-So before you can perform the bootstrapping, you need to authenticate the Toolkit API with your ShotGrid site.</p>
+<p>When running a script that uses the Toolkit API outside of an environment where Flow Production Tracking Toolkit has already been started, you will always need to authenticate.
+So before you can perform the bootstrapping, you need to authenticate the Toolkit API with your Flow Production Tracking site.</p>
 
 <p>You can authenticate with user credentials or with script credentials.</p>
 
@@ -15203,7 +15203,7 @@ Here is an example of both user and script authentication.</p>
 # information.
 </span><span class="n">user</span> <span class="o">=</span> <span class="n">authenticator</span><span class="o">.</span><span class="n">get_user</span><span class="p">()</span>
 
-<span class="c1"># Tells Toolkit which user to use for connecting to ShotGrid. Note that this should
+<span class="c1"># Tells Toolkit which user to use for connecting to Flow Production Tracking. Note that this should
 # always take place before creating an `Sgtk` instance.
 </span><span class="n">sgtk</span><span class="o">.</span><span class="n">set_authenticated_user</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
 </code></pre></div></div>
@@ -15219,11 +15219,11 @@ Here is an example of both user and script authentication.</p>
 <span class="c1"># Create a user programmatically using the script's key.
 </span><span class="n">user</span> <span class="o">=</span> <span class="n">authenticator</span><span class="o">.</span><span class="n">create_script_user</span><span class="p">(</span>
  <span class="n">api_script</span><span class="o">=</span><span class="s">"Script Name"</span><span class="p">,</span>
- <span class="n">api_key</span><span class="o">=</span><span class="s">"4e48f....&lt;use the key from your ShotGrid site&gt;"</span><span class="p">,</span>
+ <span class="n">api_key</span><span class="o">=</span><span class="s">"4e48f....&lt;use the key from your Flow Production Tracking site&gt;"</span><span class="p">,</span>
  <span class="n">host</span><span class="o">=</span><span class="s">"https://yoursite.shotgunstudio.com"</span>
 <span class="p">)</span>
 
-<span class="c1"># Tells Toolkit which user to use for connecting to ShotGrid.
+<span class="c1"># Tells Toolkit which user to use for connecting to Flow Production Tracking.
 </span><span class="n">sgtk</span><span class="o">.</span><span class="n">set_authenticated_user</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
 </code></pre></div></div>
 
@@ -15259,7 +15259,7 @@ However, in some situations, the engine may have specific setup requirements tha
 </code></pre></div></div>
 
 <blockquote>
-  <p>If a <code class="highlighter-rouge">user</code> is not passed into the <code class="highlighter-rouge">ToolkitManager</code>’s initializer, <code class="highlighter-rouge">ShotgunAuthenticator().get_user()</code> is called internally, which will return the currently authenticated ShotGrid user. To bootstrap using any other <code class="highlighter-rouge">HumanUser</code> or <code class="highlighter-rouge">ScriptUser</code>, pass in a user created via <a href="https://developer.shotgridsoftware.com/tk-core/authentication.html#sgtk.authentication.ShotgunAuthenticator.create_session_user">ShotgunAuthenticator.create_session_user</a> or <a href="https://developer.shotgridsoftware.com/tk-core/authentication.html#sgtk.authentication.ShotgunAuthenticator.create_script_user">ShotgunAuthenticator.create_script_user</a>.</p>
+  <p>If a <code class="highlighter-rouge">user</code> is not passed into the <code class="highlighter-rouge">ToolkitManager</code>’s initializer, <code class="highlighter-rouge">ShotgunAuthenticator().get_user()</code> is called internally, which will return the currently authenticated Flow Production Tracking user. To bootstrap using any other <code class="highlighter-rouge">HumanUser</code> or <code class="highlighter-rouge">ScriptUser</code>, pass in a user created via <a href="https://developer.shotgridsoftware.com/tk-core/authentication.html#sgtk.authentication.ShotgunAuthenticator.create_session_user">ShotgunAuthenticator.create_session_user</a> or <a href="https://developer.shotgridsoftware.com/tk-core/authentication.html#sgtk.authentication.ShotgunAuthenticator.create_script_user">ShotgunAuthenticator.create_script_user</a>.</p>
 </blockquote>
 
 <p>For Toolkit to bootstrap, it needs to know at least the entity, plugin id, and engine.
@@ -15285,7 +15285,7 @@ For example, if you provide a <code class="highlighter-rouge">Project</code> ent
 Likewise, you could provide a <code class="highlighter-rouge">Task</code> entity (where the task is linked to an <code class="highlighter-rouge">Asset</code>), and it will start up using the <code class="highlighter-rouge">asset_step.yml</code> environment.
 This is based on the default configuration behavior, <a href="https://developer.shotgridsoftware.com/c73fcb84/#how-toolkit-determines-the-current-environment">the environment that is chosen</a> is controlled via the core hook, <a href="https://github.com/shotgunsoftware/tk-config-default2/blob/v1.2.11/core/hooks/pick_environment.py"><code class="highlighter-rouge">pick_environment.py</code></a>, and so could be changed to pick a different environment based on the context or other parameters.</p>
 
-<p>You need to provide the entity in the format of a ShotGrid entity dictionary which must contain at least the type and id:</p>
+<p>You need to provide the entity in the format of a Flow Production Tracking entity dictionary which must contain at least the type and id:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">task</span> <span class="o">=</span> <span class="p">{</span><span class="s">"type"</span><span class="p">:</span> <span class="s">"Task"</span><span class="p">,</span> <span class="s">"id"</span><span class="p">:</span> <span class="mi">17264</span><span class="p">}</span>
 <span class="n">engine</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">bootstrap_engine</span><span class="p">(</span><span class="s">"tk-shell"</span><span class="p">,</span> <span class="n">entity</span><span class="o">=</span><span class="n">task</span><span class="p">)</span>
@@ -15338,11 +15338,11 @@ In this guide, we assume that your project has a configuration already setup and
 <span class="c1"># Create a user programmatically using the script's key.
 </span><span class="n">user</span> <span class="o">=</span> <span class="n">authenticator</span><span class="o">.</span><span class="n">create_script_user</span><span class="p">(</span>
  <span class="n">api_script</span><span class="o">=</span><span class="s">"Script Name"</span><span class="p">,</span>
- <span class="n">api_key</span><span class="o">=</span><span class="s">"4e48f....&lt;use the key from your ShotGrid site&gt;"</span><span class="p">,</span>
+ <span class="n">api_key</span><span class="o">=</span><span class="s">"4e48f....&lt;use the key from your Flow Production Tracking site&gt;"</span><span class="p">,</span>
  <span class="n">host</span><span class="o">=</span><span class="s">"https://yoursite.shotgunstudio.com"</span>
 <span class="p">)</span>
 
-<span class="c1"># Tells Toolkit which user to use for connecting to ShotGrid.
+<span class="c1"># Tells Toolkit which user to use for connecting to Flow Production Tracking.
 # This is actually not necessary when using the ToolkitManager. The authenticated user will be set
 # before launching the engine.
 # sgtk.set_authenticated_user(user)
@@ -15363,7 +15363,7 @@ In this guide, we assume that your project has a configuration already setup and
 
 <p>Now that you have an engine instance, you’re ready to start using the Toolkit API.</p>
 
-<p>Before covering how to launch the app, it’s worth pointing out you can get hold of the <a href="https://developer.shotgridsoftware.com/tk-core/platform.html#sgtk.platform.Engine.context">current context</a>, <a href="https://developer.shotgridsoftware.com/tk-core/platform.html#sgtk.platform.Engine.sgtk">Sgtk instance</a>, and <a href="https://developer.shotgridsoftware.com/tk-core/platform.html#sgtk.platform.Engine.shotgun">ShotGrid API instance</a> via the engine.</p>
+<p>Before covering how to launch the app, it’s worth pointing out you can get hold of the <a href="https://developer.shotgridsoftware.com/tk-core/platform.html#sgtk.platform.Engine.context">current context</a>, <a href="https://developer.shotgridsoftware.com/tk-core/platform.html#sgtk.platform.Engine.sgtk">Sgtk instance</a>, and <a href="https://developer.shotgridsoftware.com/tk-core/platform.html#sgtk.platform.Engine.shotgun">Flow Production Tracking API instance</a> via the engine.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">engine</span><span class="o">.</span><span class="n">context</span>
 <span class="n">engine</span><span class="o">.</span><span class="n">sgtk</span>
@@ -15438,11 +15438,11 @@ It expects a command string name, which we listed out earlier, and a list of par
 <span class="c1"># Create a user programmatically using the script's key.
 </span><span class="n">user</span> <span class="o">=</span> <span class="n">authenticator</span><span class="o">.</span><span class="n">create_script_user</span><span class="p">(</span>
  <span class="n">api_script</span><span class="o">=</span><span class="s">"Script Name"</span><span class="p">,</span>
- <span class="n">api_key</span><span class="o">=</span><span class="s">"4e48f....&lt;use the key from your ShotGrid site&gt;"</span><span class="p">,</span>
+ <span class="n">api_key</span><span class="o">=</span><span class="s">"4e48f....&lt;use the key from your Flow Production Tracking site&gt;"</span><span class="p">,</span>
  <span class="n">host</span><span class="o">=</span><span class="s">"https://yoursite.shotgunstudio.com"</span>
 <span class="p">)</span>
 
-<span class="c1"># Tells Toolkit which user to use for connecting to ShotGrid.
+<span class="c1"># Tells Toolkit which user to use for connecting to Flow Production Tracking.
 # This is actually not necessary when using the ToolkitManager. The authenticated user will be set
 # before launching the engine.
 # sgtk.set_authenticated_user(user)

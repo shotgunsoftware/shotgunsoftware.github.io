@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ko/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Jira 및 ShotGrid 간 데이터 동기화
+            Jira 및 Flow Production Tracking 간 데이터 동기화
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/ko/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ko/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 설명서
+            Flow Production Tracking 설명서
         </a>
     </div>
 
@@ -8160,22 +8160,22 @@
 <div class="article-body markdown" data-swiftype-name="body" data-swiftype-type="text">
   
 
-            <h1 id="로컬-shotgrid-사이트에서-shotgrid-데스크톱을-사용할-때-certificate_verify_failed-오류-발생">로컬 ShotGrid 사이트에서 ShotGrid 데스크톱을 사용할 때 CERTIFICATE_VERIFY_FAILED 오류 발생</h1>
+            <h1 id="로컬-shotgrid-사이트에서-shotgrid-데스크톱을-사용할-때-certificate_verify_failed-오류-발생">로컬 Flow Production Tracking 사이트에서 Flow Production Tracking 데스크톱을 사용할 때 CERTIFICATE_VERIFY_FAILED 오류 발생</h1>
 
 <h2 id="활용-사례">활용 사례:</h2>
 
 <p>ShotGrid의 로컬 설치를 사용하는 경우 다음 두 가지 시나리오에서 이 오류가 발생할 수 있습니다.</p>
 
 <ul>
-  <li>ShotGrid 데스크톱 로그인 시</li>
+  <li>Flow Production Tracking 데스크톱 로그인 시</li>
   <li>툴킷 AppStore에서 미디어 다운로드 시</li>
 </ul>
 
 <h2 id="해결-방법">해결 방법:</h2>
 
-<p>이 문제를 해결하려면 사용자의 CA를 포함하여 유효한 모든 CA 목록이 포함된 파일을 ShotGrid API에 제공해야 합니다. 일반적으로 Python의 <code class="highlighter-rouge">certifi</code> 패키지에서 <a href="https://github.com/certifi/python-certifi/blob/master/certifi/cacert.pem">이 파일</a>의 새 사본을 다운로드한 후 파일 끝에 자체 CA를 추가하는 것이 좋습니다. 그런 다음 모든 사용자가 액세스할 수 있는 위치에 해당 파일을 저장합니다. 마지막으로 각 컴퓨터에서 <code class="highlighter-rouge">SHOTGUN_API_CACERTS</code> 환경 변수를 해당 파일에 대한 전체 경로(예: <code class="highlighter-rouge">/path/to/my/ca/file.pem</code>)로 설정합니다.</p>
+<p>이 문제를 해결하려면 사용자의 CA를 포함하여 유효한 모든 CA 목록이 포함된 파일을 Flow Production Tracking API에 제공해야 합니다. 일반적으로 Python의 <code class="highlighter-rouge">certifi</code> 패키지에서 <a href="https://github.com/certifi/python-certifi/blob/master/certifi/cacert.pem">이 파일</a>의 새 사본을 다운로드한 후 파일 끝에 자체 CA를 추가하는 것이 좋습니다. 그런 다음 모든 사용자가 액세스할 수 있는 위치에 해당 파일을 저장합니다. 마지막으로 각 컴퓨터에서 <code class="highlighter-rouge">SHOTGUN_API_CACERTS</code> 환경 변수를 해당 파일에 대한 전체 경로(예: <code class="highlighter-rouge">/path/to/my/ca/file.pem</code>)로 설정합니다.</p>
 
-<p>이렇게 하면 로컬 사이트에서 발생하는 <code class="highlighter-rouge">CERTIFICATE_VERIFY_FAILED</code> 오류가 모두 해결됩니다. ShotGrid 사이트에 연결할 수는 있지만 툴킷 AppStore에서 업데이트를 다운로드할 수 없는 경우에는 <code class="highlighter-rouge">.pem</code> 파일에 Amazon CA가 없기 때문에 발생한 문제일 수 있습니다. 이 문제는 일반적으로 위에서 링크한 것과 같은 파일로 시작하지 않고 빈 파일로 시작한 후 커스텀 CA만 추가한 경우에 발생합니다.</p>
+<p>이렇게 하면 로컬 사이트에서 발생하는 <code class="highlighter-rouge">CERTIFICATE_VERIFY_FAILED</code> 오류가 모두 해결됩니다. Flow Production Tracking 사이트에 연결할 수는 있지만 툴킷 AppStore에서 업데이트를 다운로드할 수 없는 경우에는 <code class="highlighter-rouge">.pem</code> 파일에 Amazon CA가 없기 때문에 발생한 문제일 수 있습니다. 이 문제는 일반적으로 위에서 링크한 것과 같은 파일로 시작하지 않고 빈 파일로 시작한 후 커스텀 CA만 추가한 경우에 발생합니다.</p>
 
 <p>이 정보는 <em>로컬 설치에만</em> 적용됩니다. 호스트된 사이트가 있고 이 오류가 발생한다면 Windows의 경우 <a href="https://community.shotgridsoftware.com/t/certificate-verify-failed-error-on-windows/8860">이 포럼 게시물</a>을 살펴보십시오. 다른 OS에서 이 문제가 발생하는 경우 <a href="https://developer.shotgridsoftware.com/ko/c593f0aa/">이 문서</a>를 살펴보십시오.</p>
 

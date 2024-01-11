@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -5116,9 +5116,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7482,7 +7482,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8552,7 +8552,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -8627,7 +8627,7 @@
 
             <h1 id="webhooks">Webhooks</h1>
 
-<p>Webhooks allow a service you control to be notified of events that occur in ShotGrid. When you create a webhook, you specify the type of event you are interested in and tell ShotGrid what URL to send data to when it is triggered. Once the relevant event happens in ShotGrid, a payload of data describing the event will be sent to the webhook’s URL. This allows you to build tight integrations with ShotGrid and automate portions of your workflow.</p>
+<p>Webhooks allow a service you control to be notified of events that occur in Flow Production Tracking. When you create a webhook, you specify the type of event you are interested in and tell Flow Production Tracking what URL to send data to when it is triggered. Once the relevant event happens in Flow Production Tracking, a payload of data describing the event will be sent to the webhook’s URL. This allows you to build tight integrations with Flow Production Tracking and automate portions of your workflow.</p>
 
 <h2 id="in-this-topic">In this topic:</h2>
 
@@ -8638,7 +8638,7 @@
       <li><a href="#automation-of-status-management">Automation of status management</a></li>
     </ul>
   </li>
-  <li><a href="#when-should-webhooks-be-used-instead-of-the-shotgrid-event-daemon">When should Webhooks be used instead of the ShotGrid event daemon?</a></li>
+  <li><a href="#when-should-webhooks-be-used-instead-of-the-shotgrid-event-daemon">When should Webhooks be used instead of the Flow Production Tracking event daemon?</a></li>
   <li><a href="#which-events-are-available-for-webhook-subscriptions">Which events are available for Webhook subscriptions?</a>
     <ul>
       <li><a href="#custom-events-available-for-webhook-subscriptions">Custom events available for Webhook subscriptions</a></li>
@@ -8721,7 +8721,7 @@
 
 <h3 id="create-a-directory-structure-on-disk-when-an-entity-is-created">Create a directory structure on disk when an entity is created</h3>
 
-<p>One workflow that we have seen repeated many times over is the need to create a directory structure on disk when a new entity is created in ShotGrid. Why not go ahead and make sure that a new shot is ready for artist work automatically once it is created in ShotGrid?</p>
+<p>One workflow that we have seen repeated many times over is the need to create a directory structure on disk when a new entity is created in Flow Production Tracking. Why not go ahead and make sure that a new shot is ready for artist work automatically once it is created in Flow Production Tracking?</p>
 
 <h3 id="automation-of-status-management">Automation of status management</h3>
 
@@ -8729,13 +8729,13 @@
 
 <p>Another great example of how to automate status management would be to trigger a status change on a <code class="highlighter-rouge">Task</code> entity when a new <code class="highlighter-rouge">Note</code> is created. This is a good way to indicate to the artist and production teams that a supervisor has requested changes or fixes to the current work after a review session.</p>
 
-<h2 id="when-should-webhooks-be-used-instead-of-the-shotgrid-event-daemon">When should Webhooks be used instead of the ShotGrid event daemon?</h2>
+<h2 id="when-should-webhooks-be-used-instead-of-the-shotgrid-event-daemon">When should Webhooks be used instead of the Flow Production Tracking event daemon?</h2>
 
-<p>Webhooks and the <a href="https://github.com/shotgunsoftware/shotgunEvents/wiki">ShotGrid event daemon</a> offer similar features, but with a few key differences. The event daemon requires that you run, monitor, and maintain your own service. All of your code must be written in Python, and it allows you to initiate your own connections to ShotGrid. Webhooks, in contrast, answer connections and can be written in any programming language. They can be hosted in a serverless environment, such as <a href="https://aws.amazon.com/lambda/">AWS Lambda</a>, or can trigger any of the automation platforms available online, such as <a href="https://zapier.com">Zapier</a> and <a href="https://ifttt.com">IFTTT</a>. If your use case works with Webhooks, it should be the preferred solution.</p>
+<p>Webhooks and the <a href="https://github.com/shotgunsoftware/shotgunEvents/wiki">Flow Production Tracking event daemon</a> offer similar features, but with a few key differences. The event daemon requires that you run, monitor, and maintain your own service. All of your code must be written in Python, and it allows you to initiate your own connections to Flow Production Tracking. Webhooks, in contrast, answer connections and can be written in any programming language. They can be hosted in a serverless environment, such as <a href="https://aws.amazon.com/lambda/">AWS Lambda</a>, or can trigger any of the automation platforms available online, such as <a href="https://zapier.com">Zapier</a> and <a href="https://ifttt.com">IFTTT</a>. If your use case works with Webhooks, it should be the preferred solution.</p>
 
 <h2 id="which-events-are-available-for-webhook-subscriptions">Which events are available for Webhook subscriptions?</h2>
 
-<p>Webhooks may be created for Entities that are <em>in use</em> for the SG site. ShotGrid supports Webhooks for two broad event groups:</p>
+<p>Webhooks may be created for Entities that are <em>in use</em> for the SG site. Flow Production Tracking supports Webhooks for two broad event groups:</p>
 
 <p><strong>1. Entity type lifecycle events</strong></p>
 <ul>
@@ -8745,11 +8745,11 @@
 
 <p><strong>2. Custom events</strong></p>
 <ul>
-  <li>Events that are typically not related to the lifecycle of an entity, but which are created when an event occurs in the ShotGrid system.</li>
+  <li>Events that are typically not related to the lifecycle of an entity, but which are created when an event occurs in the Flow Production Tracking system.</li>
   <li><em>Example: when a user logs in, logs out, or a user performs a data Import or triggers an Action Menu Item.</em></li>
 </ul>
 
-<p>You may retrieve the full list of the Entities available for API access using either the ShotGrid <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.schema_entity_read">Python API</a> or <a href="https://developer.shotgridsoftware.com/rest-api/#shotgrid-rest-api-Access-Schema-data">Rest API</a>.</p>
+<p>You may retrieve the full list of the Entities available for API access using either the Flow Production Tracking <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.schema_entity_read">Python API</a> or <a href="https://developer.shotgridsoftware.com/rest-api/#shotgrid-rest-api-Access-Schema-data">Rest API</a>.</p>
 
 <h3 id="custom-events-available-for-webhook-subscriptions">Custom events available for Webhook subscriptions</h3>
 
@@ -8802,12 +8802,12 @@
 <ul>
   <li>API Users</li>
   <li><a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_event_logs_html">Event Log Entries</a></li>
-  <li><a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_connection_entities_html">Connection entities</a> (entities that are used by ShotGrid internally to create relationships between entities). Connection Entities typically include <code class="highlighter-rouge">Connection</code> in their name.</li>
+  <li><a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_connection_entities_html">Connection entities</a> (entities that are used by Flow Production Tracking internally to create relationships between entities). Connection Entities typically include <code class="highlighter-rouge">Connection</code> in their name.</li>
 </ul>
 
 <h2 id="when-do-entity-lifecycle-events-occur">When do entity lifecycle events occur?</h2>
 
-<p>ShotGrid supports subscriptions to Entity lifecycle events when <em>Created, Updated, Deleted and Revived.</em></p>
+<p>Flow Production Tracking supports subscriptions to Entity lifecycle events when <em>Created, Updated, Deleted and Revived.</em></p>
 
 <ul>
   <li><strong>Create events:</strong> generates when a new entity has been created from the Web U, or from an API request</li>
@@ -8879,7 +8879,7 @@
 
 <h3 id="validate-ssl-certificate">Validate SSL certificate</h3>
 
-<p>Validation of SSL certificates is an optional feature that will help ensure the security of any connections made to the webhook’s consumer URL. If turned on, when a delivery is made to the webhook’s URL, ShotGrid will use OpenSSL’s certificate validation routine to verify the certificate.</p>
+<p>Validation of SSL certificates is an optional feature that will help ensure the security of any connections made to the webhook’s consumer URL. If turned on, when a delivery is made to the webhook’s URL, Flow Production Tracking will use OpenSSL’s certificate validation routine to verify the certificate.</p>
 
 <p><img src="/en/guides/images/webhooks/webhooks_validate_ssl_certificate_v2.png" alt="Validate SSL certificate" /></p>
 
@@ -8951,7 +8951,7 @@
     <tr>
       <td>Unstable</td>
       <td style="text-align: center"><img src="/en/guides/images/webhooks/webhook_status_unstable.png" alt="Unstable" /></td>
-      <td style="text-align: center">The webhook is operating in an unstable fashion. Some deliveries have failed to reach their destination in the past 24 hours, but not enough to cause ShotGrid to consider the webhook to be dead.</td>
+      <td style="text-align: center">The webhook is operating in an unstable fashion. Some deliveries have failed to reach their destination in the past 24 hours, but not enough to cause Flow Production Tracking to consider the webhook to be dead.</td>
     </tr>
     <tr>
       <td>Failed</td>
@@ -8993,13 +8993,13 @@
 
 <h4 id="request-payload">Request Payload</h4>
 
-<p>The payload sent to the webhook’s URL contains information describing the event that occurred in ShotGrid and who triggered it. It is provided in JSON format.</p>
+<p>The payload sent to the webhook’s URL contains information describing the event that occurred in Flow Production Tracking and who triggered it. It is provided in JSON format.</p>
 
 <div class="warning-popup">
     <p>
         <i class="fa fa-exclamation-circle"></i>
         <b>Payload size
-:</b> The maximum size of a delivery’s payload is 1 megabyte. Any event triggered in ShotGrid that would result in a payload size larger than 1 megabyte will have its <code class="highlighter-rouge">new_value</code> and <code class="highlighter-rouge">old_value</code> keys removed, and a <code class="highlighter-rouge">warning</code> key added that contains a message explaining what happened, why, and how to retrieve the entire event log entry from ShotGrid.
+:</b> The maximum size of a delivery’s payload is 1 megabyte. Any event triggered in Flow Production Tracking that would result in a payload size larger than 1 megabyte will have its <code class="highlighter-rouge">new_value</code> and <code class="highlighter-rouge">old_value</code> keys removed, and a <code class="highlighter-rouge">warning</code> key added that contains a message explaining what happened, why, and how to retrieve the entire event log entry from Flow Production Tracking.
 
     </p>
 </div>
@@ -9044,7 +9044,7 @@
 
 <h5 id="session-uuid">Session UUID</h5>
 
-<p>Provided as part of the event payload is the <code class="highlighter-rouge">session_uuid</code> that triggered the event in ShotGrid. This value can be provided to <a href="https://developer.shotgridsoftware.com/python-api/reference.html?highlight=session_uuid#shotgun_api3.shotgun.Shotgun.set_session_uuid">ShotGrid’s Python API</a>, which will cause any open browser session with that session_uuid to display updates for events generated by the API.</p>
+<p>Provided as part of the event payload is the <code class="highlighter-rouge">session_uuid</code> that triggered the event in Flow Production Tracking. This value can be provided to <a href="https://developer.shotgridsoftware.com/python-api/reference.html?highlight=session_uuid#shotgun_api3.shotgun.Shotgun.set_session_uuid">ShotGrid’s Python API</a>, which will cause any open browser session with that session_uuid to display updates for events generated by the API.</p>
 
 <h4 id="response-from-the-webhook">Response from the Webhook</h4>
 
@@ -9103,11 +9103,11 @@
 
 <h4 id="bursts">Bursts</h4>
 
-<p>If your ShotGrid site is being throttled as a result of short bursts of heavy activity, it will return to normal throughput once the burst of event activity has subsided. The <a href="#performance">performance indicators</a> will provide insight into which of your configured endpoints are not performing well.</p>
+<p>If your Flow Production Tracking site is being throttled as a result of short bursts of heavy activity, it will return to normal throughput once the burst of event activity has subsided. The <a href="#performance">performance indicators</a> will provide insight into which of your configured endpoints are not performing well.</p>
 
 <h4 id="webhooks-and-geographic-considerations">Webhooks and geographic considerations</h4>
 
-<p>The ShotGrid Webhook delivery infrastructure is hosted in the AWS US-East-1 (N. Virginia) region. Optimization for delivery times may be possible by hosting your webhook endpint in that general location.</p>
+<p>The Flow Production Tracking Webhook delivery infrastructure is hosted in the AWS US-East-1 (N. Virginia) region. Optimization for delivery times may be possible by hosting your webhook endpint in that general location.</p>
 
 <h4 id="status-codes">Status codes</h4>
 
@@ -9201,7 +9201,7 @@
 
 <h2 id="acknowledgements">Acknowledgements</h2>
 
-<p>A delivery can be updated to include an acknowledgement. When a delivery is made, headers are provided as part of the request. Included in those headers is the ID of the delivery record, stored in the <code class="highlighter-rouge">x-sg-delivery-id</code> key. This ID can be used to update the delivery record to include an acknowledgement using <a href="https://developer.shotgridsoftware.com/rest-api">the ShotGrid REST API</a>.</p>
+<p>A delivery can be updated to include an acknowledgement. When a delivery is made, headers are provided as part of the request. Included in those headers is the ID of the delivery record, stored in the <code class="highlighter-rouge">x-sg-delivery-id</code> key. This ID can be used to update the delivery record to include an acknowledgement using <a href="https://developer.shotgridsoftware.com/rest-api">the Flow Production Tracking REST API</a>.</p>
 
 <div class="warning-popup">
     <p>
@@ -9228,7 +9228,7 @@
 
 <h3 id="what-are-acknowledgements-used-for">What are acknowledgements used for?</h3>
 
-<p>Acknowledgements allow for out of band, detailed reporting of success or failure to process a delivery that was successfully received by your webhook’s URL. This creates a separation between the status of receiving the delivery from ShotGrid and the success or failure to process the event associated with that delivery. As a result, successfully-delivered events can contain additional information useful for debugging purposes.</p>
+<p>Acknowledgements allow for out of band, detailed reporting of success or failure to process a delivery that was successfully received by your webhook’s URL. This creates a separation between the status of receiving the delivery from Flow Production Tracking and the success or failure to process the event associated with that delivery. As a result, successfully-delivered events can contain additional information useful for debugging purposes.</p>
 
 <p>A good example would be a webhook triggered on the creation of an <code class="highlighter-rouge">Asset</code> entity. If that webhook’s responsibility is to create a directory structure on disk for each new <code class="highlighter-rouge">Asset</code>, the webhook’s URL can successfully receive a delivery, but be unable to create the associated directories due to a disk or network outage. Then, it can update the delivery record with a detailed error message stating that the directory structure was not created, and why.</p>
 

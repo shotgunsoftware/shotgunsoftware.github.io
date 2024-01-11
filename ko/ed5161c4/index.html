@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ko/site-metadata/apple-touch-icon.png">
@@ -4800,7 +4800,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Jira 및 ShotGrid 간 데이터 동기화
+            Jira 및 Flow Production Tracking 간 데이터 동기화
         </a>
     </div>
 
@@ -7431,9 +7431,9 @@
                     class="nav-entry"
                 
                 
-                href="/ko/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ko/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -9797,7 +9797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -10867,7 +10867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 설명서
+            Flow Production Tracking 설명서
         </a>
     </div>
 
@@ -10942,9 +10942,9 @@
 
             <h1 id="구성">구성</h1>
 
-<p>다음 안내서는 스튜디오에 대한 ShotGridEvents 구성을 지원합니다.</p>
+<p>다음 안내서는 스튜디오에 대한 Flow Production TrackingEvents 구성을 지원합니다.</p>
 
-<p>ShotGridEvents에 대한 대부분의 구성은 <code class="highlighter-rouge">shotgunEventDaemon.conf</code> 파일에 의해 제어됩니다. 이 파일에는 요구사항에 따라 변경할 수 있는 여러 가지 설정이 있습니다. 대부분의 기본값은 대부분의 스튜디오에서 올바르게 작동하지만, 몇몇 설정은 반드시 구성해야 합니다(특히 ShotGridEventDaemon이 ShotGrid 서버에 연결할 수 있도록 ShotGrid 서버 URL, 스크립트 이름, 응용 프로그램 키 등).</p>
+<p>ShotGridEvents에 대한 대부분의 구성은 <code class="highlighter-rouge">shotgunEventDaemon.conf</code> 파일에 의해 제어됩니다. 이 파일에는 요구사항에 따라 변경할 수 있는 여러 가지 설정이 있습니다. 대부분의 기본값은 대부분의 스튜디오에서 올바르게 작동하지만, 몇몇 설정은 반드시 구성해야 합니다(특히 Flow Production TrackingEventDaemon이 Flow Production Tracking 서버에 연결할 수 있도록 Flow Production Tracking 서버 URL, 스크립트 이름, 응용 프로그램 키 등).</p>
 
 <div class="info-popup">
     <p>
@@ -10963,9 +10963,9 @@
 <p><em>반드시</em> 제공해야 하는 항목은 다음과 같습니다.</p>
 
 <ul>
-  <li>ShotGrid 서버 URL</li>
+  <li>Flow Production Tracking 서버 URL</li>
   <li>ShotGrid에 연결하기 위한 스크립트 이름 및 응용프로그램 키</li>
-  <li>실행할 ShotGridEventDaemon 플러그인에 대한 전체 경로</li>
+  <li>실행할 Flow Production TrackingEventDaemon 플러그인에 대한 전체 경로</li>
 </ul>
 
 <p>선택적으로, SMTP 서버 및 이메일 관련 설정을 지정하여 오류 이메일 알림을 설정할 수도 있습니다. 이 작업은 선택 사항이지만 이 값을 설정하도록 선택하면 이메일 섹션의 모든 구성 값을 입력해야 합니다.</p>
@@ -10973,21 +10973,21 @@
 <p>데몬에서 성능 문제가 발생한 경우 문제 해결에 도움이 될 수 있는 선택적 타이밍 로그에 대한 섹션도 있습니다. 타이밍 로깅을 활성화하면 자체 개별 로그 파일에 타이밍 정보가 입력됩니다.</p>
 
 <p><a id="Shotgun_Settings"></a></p>
-<h3 id="shotgrid-설정">ShotGrid 설정</h3>
+<h3 id="shotgrid-설정">Flow Production Tracking 설정</h3>
 
-<p><code class="highlighter-rouge">[ShotGrid]</code> 섹션 아래에서 기본 토큰을 <code class="highlighter-rouge">server</code>, <code class="highlighter-rouge">name</code> 및 <code class="highlighter-rouge">key</code>에 대한 올바른 값으로 변경합니다. 이러한 값은 ShotGrid에 연결하는 표준 API 스크립트에 제공한 값과 같아야 합니다.</p>
+<p><code class="highlighter-rouge">[ShotGrid]</code> 섹션 아래에서 기본 토큰을 <code class="highlighter-rouge">server</code>, <code class="highlighter-rouge">name</code> 및 <code class="highlighter-rouge">key</code>에 대한 올바른 값으로 변경합니다. 이러한 값은 Flow Production Tracking에 연결하는 표준 API 스크립트에 제공한 값과 같아야 합니다.</p>
 
 <p>예</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server: https://awesome.shotgunstudio.com
-name: ShotGridEventDaemon
+name: Flow Production TrackingEventDaemon
 key: e37d855e4824216573472846e0cb3e49c7f6f7b1
 </code></pre></div></div>
 
 <p><a id="Plugin_Settings"></a></p>
 <h3 id="플러그인-설정">플러그인 설정</h3>
 
-<p>실행할 플러그인을 찾을 위치를 ShotGridEventDaemon에 알려야 합니다. <code class="highlighter-rouge">[plugins]</code> 섹션 아래에서 기본 토큰을 <code class="highlighter-rouge">paths</code>에 대한 올바른 값으로 변경합니다.</p>
+<p>실행할 플러그인을 찾을 위치를 Flow Production TrackingEventDaemon에 알려야 합니다. <code class="highlighter-rouge">[plugins]</code> 섹션 아래에서 기본 토큰을 <code class="highlighter-rouge">paths</code>에 대한 올바른 값으로 변경합니다.</p>
 
 <p>여러 위치를 지정할 수 있습니다(데몬을 사용하는 부서나 리포지토리가 여러 개인 경우 유용할 수 있음). 이 값은 읽을 수 있는 기존 디렉토리에 대한 전체 경로여야 합니다.</p>
 
@@ -11001,7 +11001,7 @@ key: e37d855e4824216573472846e0cb3e49c7f6f7b1
 <p><a id="Location_of_shotgunEventDaemon_conf"></a></p>
 <h3 id="shotguneventdaemonconf의-위치">shotgunEventDaemon.conf의 위치</h3>
 
-<p>기본적으로 데몬은 ShotGridEventDaemon.py가 있는 디렉토리와 <code class="highlighter-rouge">/etc</code> 디렉토리에서 shotgunEventDaemon.conf 파일을 찾습니다. conf 파일을 다른 디렉토리에 저장해야 하는 경우 현재 디렉토리에서 해당 위치에 대한 심볼릭 링크를 생성하는 것이 좋습니다.</p>
+<p>기본적으로 데몬은 Flow Production TrackingEventDaemon.py가 있는 디렉토리와 <code class="highlighter-rouge">/etc</code> 디렉토리에서 shotgunEventDaemon.conf 파일을 찾습니다. conf 파일을 다른 디렉토리에 저장해야 하는 경우 현재 디렉토리에서 해당 위치에 대한 심볼릭 링크를 생성하는 것이 좋습니다.</p>
 
 <div class="info-popup">
     <p>
@@ -11024,7 +11024,7 @@ key: e37d855e4824216573472846e0cb3e49c7f6f7b1
 <p><a id="Testing_the_Daemon"></a></p>
 <h2 id="데몬-테스트">데몬 테스트</h2>
 
-<p>데몬은 백그라운드에서 실행되기 때문에 테스트하기가 어려울 수 있습니다. 항상 어떻게 작동하고 있는지 확인할 수 있는 명확한 방법이 없습니다. 다행스럽게도 ShotGridEventDaemon에는 이를 포그라운드 프로세스로 실행할 수 있는 옵션이 있습니다. 이제 최소 필수 설정을 완료했으므로 데몬을 테스트하고 어떻게 되는지 확인해 보겠습니다.</p>
+<p>데몬은 백그라운드에서 실행되기 때문에 테스트하기가 어려울 수 있습니다. 항상 어떻게 작동하고 있는지 확인할 수 있는 명확한 방법이 없습니다. 다행스럽게도 Flow Production TrackingEventDaemon에는 이를 포그라운드 프로세스로 실행할 수 있는 옵션이 있습니다. 이제 최소 필수 설정을 완료했으므로 데몬을 테스트하고 어떻게 되는지 확인해 보겠습니다.</p>
 
 <div class="info-popup">
     <p>
@@ -11036,14 +11036,14 @@ key: e37d855e4824216573472846e0cb3e49c7f6f7b1
 </div>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo ./ShotGridEventDaemon.py foreground
-INFO:engine:Using ShotGrid version 3.0.8
+INFO:engine:Using Flow Production Tracking version 3.0.8
 INFO:engine:Loading plugin at /usr/local/shotgun/ShotGridEvents/src/examplePlugins/logArgs.py
-INFO:engine:Last event id (248429) from the ShotGrid database.
+INFO:engine:Last event id (248429) from the Flow Production Tracking database.
 </code></pre></div></div>
 
 <p>스크립트를 시작할 때 위의 행이 표시됩니다(일부 세부 사항은 다를 수 있음). 스크립트를 포그라운드에서 실행하기로 선택했기 때문에 오류가 발생하면 스크립트가 종료됩니다. 중단되면 몇몇 일반적인 오류가 아래에 표시됩니다.</p>
 
-<p><code class="highlighter-rouge">logArgs.py</code> 플러그인은 ShotGrid에서 발생한 이벤트를 찾아 로거로 전달합니다. 아주 흥미진진하지는 않지만 스크립트가 실행되고 플러그인이 작동하게 하는 간단한 방법입니다. 분주한 스튜디오에 있다면 이미 빠르게 진행되는 메시지의 흐름을 알아차리셨을 것입니다. 그렇지 않은 경우 웹 브라우저에서 ShotGrid 서버에 로그인하여 값을 변경하거나 값을 생성합니다. 터미널 창에 변경 사항으로 생성된 이벤트 유형에 해당하는 로그 구문이 출력됩니다.</p>
+<p><code class="highlighter-rouge">logArgs.py</code> 플러그인은 Flow Production Tracking에서 발생한 이벤트를 찾아 로거로 전달합니다. 아주 흥미진진하지는 않지만 스크립트가 실행되고 플러그인이 작동하게 하는 간단한 방법입니다. 분주한 스튜디오에 있다면 이미 빠르게 진행되는 메시지의 흐름을 알아차리셨을 것입니다. 그렇지 않은 경우 웹 브라우저에서 Flow Production Tracking 서버에 로그인하여 값을 변경하거나 값을 생성합니다. 터미널 창에 변경 사항으로 생성된 이벤트 유형에 해당하는 로그 구문이 출력됩니다.</p>
 
 <div class="info-popup">
     <p>
@@ -11054,7 +11054,7 @@ INFO:engine:Last event id (248429) from the ShotGrid database.
     </p>
 </div>
 
-<p>로그 파일에 로깅된 내용이 보이지 않는 경우 ShotGridEventDaemon.conf에서 로그 관련 설정을 확인하여 <code class="highlighter-rouge">logging</code> 값이 로그 INFO 수준 메시지로 설정되어 있고</p>
+<p>로그 파일에 로깅된 내용이 보이지 않는 경우 Flow Production TrackingEventDaemon.conf에서 로그 관련 설정을 확인하여 <code class="highlighter-rouge">logging</code> 값이 로그 INFO 수준 메시지로 설정되어 있고</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>logging: 20
 </code></pre></div></div>
@@ -11064,7 +11064,7 @@ INFO:engine:Last event id (248429) from the ShotGrid database.
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">reg</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>모두 올바르게 표시된다고 가정하면, ShotGridEventDaemon 프로세스를 중지하려는 경우 터미널에 <code class="highlighter-rouge">&lt;ctrl&gt;-c</code>을 입력하면 스크립트가 종료되는 것을 확인할 수 있습니다.</p>
+<p>모두 올바르게 표시된다고 가정하면, Flow Production TrackingEventDaemon 프로세스를 중지하려는 경우 터미널에 <code class="highlighter-rouge">&lt;ctrl&gt;-c</code>을 입력하면 스크립트가 종료되는 것을 확인할 수 있습니다.</p>
 
 <p><a id="Running_the_Daemon"></a></p>
 <h2 id="데몬-실행">데몬 실행</h2>
@@ -11084,25 +11084,25 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 <p>반환된 두 번째 행에서 데몬이 실행 중임을 알 수 있습니다. 첫 번째 행은 방금 실행한 명령과 일치합니다. 따라서 실행되고 있음을 알 수는 있지만 플러그인이 <em>제대로</em> 작동하고 있으며 의도된 역할을 수행하고 있는지 확인하기 위해 로그 파일을 확인해 출력된 내용이 있는지 알아볼 수 있습니다.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo tail -f /var/log/shotgunEventDaemon/shotgunEventDaemon
-2011-09-09 09:42:44,003 - engine - INFO - Using ShotGrid version 3.0.8
+2011-09-09 09:42:44,003 - engine - INFO - Using Flow Production Tracking version 3.0.8
 2011-09-09 09:42:44,006 - engine - INFO - Loading plugin at /usr/local/shotgun/ShotGrid/src/plugins/logArgs.py
 2011-09-09 09:42:44,199 - engine - DEBUG - Starting the event processing loop.
 </code></pre></div></div>
 
 <p>웹 브라우저로 돌아가서 엔티티를 약간 변경합니다. 그런 다음 터미널로 다시 돌아가 출력된 내용이 있는지 확인합니다. 다음과 같이 표시되어야 합니다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2011-09-09 09:42:44,003 - engine - INFO - Using ShotGrid version 3.0.8
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2011-09-09 09:42:44,003 - engine - INFO - Using Flow Production Tracking version 3.0.8
 2011-09-09 09:42:44,006 - engine - INFO - Loading plugin at /usr/local/shotgun/ShotGrid/src/plugins/logArgs.py
 2011-09-09 09:42:44,199 - engine - DEBUG - Starting the event processing loop.
 2011-09-09 09:45:31,228 - plugin.logArgs.logArgs - INFO - {'attribute_name': 'sg_status_list', 'event_type': 'Shotgun_Shot_Change', 'entity': {'type': 'Shot', 'name': 'bunny_010_0010', 'id': 860}, 'project': {'type': 'Project', 'name': 'Big Buck Bunny', 'id': 65}, 'meta': {'entity_id': 860, 'attribute_name': 'sg_status_list', 'entity_type': 'Shot', 'old_value': 'omt', 'new_value': 'ip', 'type': 'attribute_change'}, 'user': {'type': 'HumanUser', 'name': 'Kevin Porterfield', 'id': 35}, 'session_uuid': '450e4da2-dafa-11e0-9ba7-0023dffffeab', 'type': 'EventLogEntry', 'id': 276560}
 </code></pre></div></div>
 
-<p>출력의 정확한 세부 정보는 다를 수 있지만, 플러그인이 의도된 작업을 수행해 이벤트가 로그 파일에 로깅된 것이 확인되어야 합니다. 로그 파일에 로깅된 내역이 보이지 않을 경우, <code class="highlighter-rouge">logging</code> 값이 INFO 수준 메시지를 로깅하도록 설정되어 있고 logArgs 플러그인도 INFO 수준 메시지를 표시하도록 구성되어 있는지 확인하기 위해 ShotGridEventDaemon.conf에서 로그 관련 설정을 확인하십시오.</p>
+<p>출력의 정확한 세부 정보는 다를 수 있지만, 플러그인이 의도된 작업을 수행해 이벤트가 로그 파일에 로깅된 것이 확인되어야 합니다. 로그 파일에 로깅된 내역이 보이지 않을 경우, <code class="highlighter-rouge">logging</code> 값이 INFO 수준 메시지를 로깅하도록 설정되어 있고 logArgs 플러그인도 INFO 수준 메시지를 표시하도록 구성되어 있는지 확인하기 위해 Flow Production TrackingEventDaemon.conf에서 로그 관련 설정을 확인하십시오.</p>
 
 <p><a id="A_Note_About_Logging"></a></p>
 <h3 id="로깅에-대한-참고-사항">로깅에 대한 참고 사항</h3>
 
-<p>로그 회전은 ShotGrid 데몬의 기능이라는 점에 유의하십시오. 로그는 매일 밤 자정에 회전되며 플러그인당 10개의 일일 파일이 보관됩니다.</p>
+<p>로그 회전은 Flow Production Tracking 데몬의 기능이라는 점에 유의하십시오. 로그는 매일 밤 자정에 회전되며 플러그인당 10개의 일일 파일이 보관됩니다.</p>
 
 <p><a id="Common_Errors"></a></p>
 <h2 id="일반적인-오류">일반적인 오류</h2>
@@ -11121,7 +11121,7 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 
 <h3 id="importerror-이름이-shotgun_api3인-모듈-없음">ImportError: 이름이 shotgun_api3인 모듈 없음</h3>
 
-<p>ShotGrid API가 설치되어 있지 않습니다. 현재 디렉토리에 있거나 <code class="highlighter-rouge">PYTHONPATH</code>의 디렉토리에 있어야 합니다.</p>
+<p>Flow Production Tracking API가 설치되어 있지 않습니다. 현재 디렉토리에 있거나 <code class="highlighter-rouge">PYTHONPATH</code>의 디렉토리에 있어야 합니다.</p>
 
 <p>sudo로 실행해야 하는데 <code class="highlighter-rouge">PYTHONPATH</code>가 올바르게 설정되어 있는 경우, sudo가 환경 변수를 재설정한다는 점을 기억하십시오. <code class="highlighter-rouge">PYTHONPATH</code>를 유지하거나 sudo -e(?)를 실행하도록 sudoers 파일을 편집할 수 있습니다.</p>
 
@@ -11144,7 +11144,7 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 
 <p><strong>eventIdFile</strong></p>
 
-<p>eventIdFile은 데몬이 마지막으로 처리된 ShotGrid 이벤트의 ID를 저장할 위치를 나타냅니다. 이를 통해 데몬은 마지막 종료 시 중지된 지점으로 복귀할 수 있으므로 이벤트가 누락되지 않습니다. 데몬이 마지막으로 종료된 이후의 이벤트를 무시하려면 데몬을 시작하기 전에 이 파일을 제거해 시작된 후 새로 생성된 이벤트만 데몬이 처리하게 합니다.</p>
+<p>eventIdFile은 데몬이 마지막으로 처리된 Flow Production Tracking 이벤트의 ID를 저장할 위치를 나타냅니다. 이를 통해 데몬은 마지막 종료 시 중지된 지점으로 복귀할 수 있으므로 이벤트가 누락되지 않습니다. 데몬이 마지막으로 종료된 이후의 이벤트를 무시하려면 데몬을 시작하기 전에 이 파일을 제거해 시작된 후 새로 생성된 이벤트만 데몬이 처리하게 합니다.</p>
 
 <p>이 파일은 <em>각</em> 플러그인에 대한 마지막 이벤트 ID를 추적하여 이 정보를 pickle 형식으로 저장합니다.</p>
 
@@ -11210,7 +11210,7 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 
 <ul>
   <li><strong>event_id</strong> 콜백을 트리거한 이벤트의 ID</li>
-  <li><strong>created_at</strong> 이벤트가 ShotGrid에서 생성된 시점의 ISO 형식 타임스탬프</li>
+  <li><strong>created_at</strong> 이벤트가 Flow Production Tracking에서 생성된 시점의 ISO 형식 타임스탬프</li>
   <li><strong>callback</strong> <code class="highlighter-rouge">plugin.callback</code> 형식으로 호출된 콜백의 이름</li>
   <li><strong>start</strong> 콜백 처리 시작 시점의 ISO 형식 타임스탬프</li>
   <li><strong>end</strong> 콜백 처리 종료 시점의 ISO 형식 타임스탬프</li>
@@ -11241,13 +11241,13 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 </code></pre></div></div>
 
 <p><a id="Shotgun_Settings"></a></p>
-<h3 id="shotgrid-설정-1">ShotGrid 설정</h3>
+<h3 id="shotgrid-설정-1">Flow Production Tracking 설정</h3>
 
-<p>다음은 ShotGrid 인스턴스와 관련된 설정입니다.</p>
+<p>다음은 Flow Production Tracking 인스턴스와 관련된 설정입니다.</p>
 
 <p><strong>server</strong></p>
 
-<p>연결할 ShotGrid 서버의 URL입니다.</p>
+<p>연결할 Flow Production Tracking 서버의 URL입니다.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server: %(SG_ED_SITE_URL)s
 </code></pre></div></div>
@@ -11256,14 +11256,14 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
     <p>
         <i class="fa fa-info-circle"></i>
         <b>참고
-:</b> 여기에는 기본값이 없습니다. <code class="highlighter-rouge">SG_ED_SITE_URL</code> 환경 변수를 ShotGrid 서버의 URL(예: https://awesome.shotgunstudio.com)로 설정하십시오.
+:</b> 여기에는 기본값이 없습니다. <code class="highlighter-rouge">SG_ED_SITE_URL</code> 환경 변수를 Flow Production Tracking 서버의 URL(예: https://awesome.shotgunstudio.com)로 설정하십시오.
 
     </p>
 </div>
 
 <p><strong>name</strong></p>
 
-<p>ShotGridEventDaemon이 연결해야 하는 ShotGrid 스크립트 이름입니다.</p>
+<p>ShotGridEventDaemon이 연결해야 하는 Flow Production Tracking 스크립트 이름입니다.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: %(SG_ED_SCRIPT_NAME)s
 </code></pre></div></div>
@@ -11272,14 +11272,14 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
     <p>
         <i class="fa fa-info-circle"></i>
         <b>참고
-:</b> 여기에는 기본값이 없습니다. <code class="highlighter-rouge">SG_ED_SCRIPT_NAME</code> 환경 변수를 ShotGrid 서버의 스크립트 이름(예: <code class="highlighter-rouge">shotgunEventDaemon</code>)
+:</b> 여기에는 기본값이 없습니다. <code class="highlighter-rouge">SG_ED_SCRIPT_NAME</code> 환경 변수를 Flow Production Tracking 서버의 스크립트 이름(예: <code class="highlighter-rouge">shotgunEventDaemon</code>)
 
     </p>
 </div>
 
 <p><strong>key</strong></p>
 
-<p>위에 지정된 스크립트 이름에 대한 ShotGrid 응용프로그램 키입니다.</p>
+<p>위에 지정된 스크립트 이름에 대한 Flow Production Tracking 응용프로그램 키입니다.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>key: %(SG_ED_API_KEY)s
 </code></pre></div></div>
@@ -11295,21 +11295,21 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 
 <p><strong>use_session_uuid</strong></p>
 
-<p>ShotGrid 인스턴스의 모든 이벤트에서 session_uuid를 설정해 플러그인이 생성한 모든 이벤트에 전파합니다. 이렇게 하면 ShotGrid UI가 플러그인의 결과로 발생하는 업데이트를 표시할 수 있습니다.</p>
+<p>Flow Production Tracking 인스턴스의 모든 이벤트에서 session_uuid를 설정해 플러그인이 생성한 모든 이벤트에 전파합니다. 이렇게 하면 Flow Production Tracking UI가 플러그인의 결과로 발생하는 업데이트를 표시할 수 있습니다.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>use_session_uuid: True
 </code></pre></div></div>
 
 <ul>
-  <li>이 기능을 사용하려면 ShotGrid server v2.3 이상이 필요합니다.</li>
-  <li>이 기능을 사용하려면 ShotGrid API v3.0.5 이상이 필요합니다.</li>
+  <li>이 기능을 사용하려면 Flow Production Tracking server v2.3 이상이 필요합니다.</li>
+  <li>이 기능을 사용하려면 Flow Production Tracking API v3.0.5 이상이 필요합니다.</li>
 </ul>
 
 <div class="info-popup">
     <p>
         <i class="fa fa-info-circle"></i>
         <b>참고
-:</b> ShotGrid UI는 원래 이벤트를 생성한 브라우저 세션에 <em>대해서만</em> 업데이트를 실시간으로 표시합니다. 동일한 페이지가 열려 있는 다른 브라우저 창에는 실시간 업데이트가 표시되지 않습니다.
+:</b> Flow Production Tracking UI는 원래 이벤트를 생성한 브라우저 세션에 <em>대해서만</em> 업데이트를 실시간으로 표시합니다. 동일한 페이지가 열려 있는 다른 브라우저 창에는 실시간 업데이트가 표시되지 않습니다.
 
     </p>
 </div>
@@ -11406,7 +11406,7 @@ root            4020   0.0  0.1  2443824   4876   ??  S     9:36AM   0:00.02 /us
 
 <p><strong>subject</strong></p>
 
-<p>ShotGrid 이벤트 프레임워크에서 보낸 알림을 정렬할 수 있도록 메일 클라이언트가 사용할 수 있는 이메일 제목 접두어입니다.</p>
+<p>Flow Production Tracking 이벤트 프레임워크에서 보낸 알림을 정렬할 수 있도록 메일 클라이언트가 사용할 수 있는 이메일 제목 접두어입니다.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>subject: [SG]
 </code></pre></div></div>

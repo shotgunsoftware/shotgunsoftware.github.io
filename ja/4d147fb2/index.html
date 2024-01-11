@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -3825,9 +3825,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/ja/7584b650/?title=Alias+ShotGrid+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
+                href="/ja/7584b650/?title=Alias+Flow+Production+Tracking+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
             >
-                Alias ShotGrid ワークフロー
+                Alias Flow Production Tracking ワークフロー
             </a>
             </div>
 
@@ -7119,7 +7119,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -9750,9 +9750,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -12116,7 +12116,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -13186,7 +13186,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -13272,9 +13272,9 @@
 
 <h2 id="このガイドについて">このガイドについて</h2>
 
-<p>このガイドでは、既存のパイプライン設定に ShotGrid Toolkit アプリを追加する方法について説明します。設定管理ツールに関する知識を短時間で得ることができます。</p>
+<p>このガイドでは、既存のパイプライン設定に Flow Production Tracking Toolkit アプリを追加する方法について説明します。設定管理ツールに関する知識を短時間で得ることができます。</p>
 
-<p>ここで追加するアプリは、ShotGrid Python コンソール アプリです。Maya には独自の Python コンソールがありますが、Toolkit アプリには Maya コンソールにない機能がいくつか用意されています。</p>
+<p>ここで追加するアプリは、Flow Production Tracking Python コンソール アプリです。Maya には独自の Python コンソールがありますが、Toolkit アプリには Maya コンソールにない機能がいくつか用意されています。</p>
 
 <p>このガイドでは、「<a href="/ja/37f575b8/">パイプライン設定を編集する</a>」ガイドで作成したパイプライン設定を利用します。このガイドをまだ完了していない場合は、既存のパイプライン設定を使用してアプリを追加してください。</p>
 
@@ -13286,7 +13286,7 @@
   <li>アクティブな <a href="https://www.shotgridsoftware.com/signup/">ShotGrid</a> サイト。</li>
   <li>指定したプロジェクトのパイプライン設定、または「<a href="/ja/5d83a936/">設定の基本操作</a>」ガイドを参照して、この演習で作成された設定を使用します。</li>
   <li>パイプライン設定の保存先のファイルシステムに最適になるように設定された読み取りおよび書き込み権限。</li>
-  <li>システムにインストールされた ShotGrid Desktop。</li>
+  <li>システムにインストールされた Flow Production Tracking Toolkit。</li>
   <li>Maya の有効なサブスクリプション。Maya の 30 日間無償体験版は<a href="https://www.autodesk.co.jp/products/maya/free-trial">こちら</a>から取得してください。</li>
 </ol>
 
@@ -13299,15 +13299,15 @@
     </p>
 </div>
 
-<h2 id="shotgrid-toolkit-アプリについて">ShotGrid Toolkit アプリについて</h2>
+<h2 id="shotgrid-toolkit-アプリについて">Flow Production Tracking Toolkit アプリについて</h2>
 
 <h3 id="toolkit-アプリの仕組み">Toolkit アプリの仕組み</h3>
 
-<p>パイプライン設定で参照されているアプリは、さまざまな場所から取得できます。既定の設定の標準アプリは、ShotGrid アプリ ストアから取得されています。パイプライン設定内のファイルを使って、ShotGrid 統合からアプリにアクセスする方法を指定します。これはたとえば Toolkit に、「アドレス帳にある Python コンソール アプリのアドレスを調べることはできますか」と尋ねるようなものです。パイプライン設定ファイルは Toolkit に、特定のアプリで利用されているコードのバンドルの検索場所を指示します。</p>
+<p>パイプライン設定で参照されているアプリは、さまざまな場所から取得できます。既定の設定の標準アプリは、Flow Production Tracking アプリ ストアから取得されています。パイプライン設定内のファイルを使って、Flow Production Tracking 統合からアプリにアクセスする方法を指定します。これはたとえば Toolkit に、「アドレス帳にある Python コンソール アプリのアドレスを調べることはできますか」と尋ねるようなものです。パイプライン設定ファイルは Toolkit に、特定のアプリで利用されているコードのバンドルの検索場所を指示します。</p>
 
-<p>Toolkit アプリの「アドレス」は既定の設定の <code class="highlighter-rouge">config/env/includes/app_locations.yml</code> ファイルにリストされていて、コードの検索方法を指定します。これらの「アドレス」は<a href="https://developer.shotgridsoftware.com/tk-core/descriptor.html">記述子</a>といいます。ShotGrid の統合には、アプリのコード バンドルの検索方法だけでなく、アプリの使用環境も指示する必要があります。</p>
+<p>Toolkit アプリの「アドレス」は既定の設定の <code class="highlighter-rouge">config/env/includes/app_locations.yml</code> ファイルにリストされていて、コードの検索方法を指定します。これらの「アドレス」は<a href="https://developer.shotgridsoftware.com/tk-core/descriptor.html">記述子</a>といいます。Flow Production Tracking の統合には、アプリのコード バンドルの検索方法だけでなく、アプリの使用環境も指示する必要があります。</p>
 
-<p>以下に、アプリのインストール方法と、ShotGrid の統合にアプリの使用場所を指示する方法について、概念を示します。また、設定を拡張し、記述子を検索するよう Toolkit に要求して、アプリの使用場所を ShotGrid に指示する手順についても説明します。このガイドでは、次の手順について詳細に説明します。</p>
+<p>以下に、アプリのインストール方法と、Flow Production Tracking の統合にアプリの使用場所を指示する方法について、概念を示します。また、設定を拡張し、記述子を検索するよう Toolkit に要求して、アプリの使用場所を Flow Production Tracking に指示する手順についても説明します。このガイドでは、次の手順について詳細に説明します。</p>
 
 <ol>
   <li>追加するアプリの記述子を判別します。</li>
@@ -13315,14 +13315,14 @@
   <li>アプリの記述子が設定に含まれているかどうかを確認して、含まれていない場合は追加します。</li>
   <li>YAML ファイルを正しくフォーマットします(インデントにはタブでなく、スペースを使用します)。</li>
   <li>アプリの使用環境を判別します。</li>
-  <li>これらの環境内で、ShotGrid にアプリの使用を許可する設定を追加します。</li>
+  <li>これらの環境内で、Flow Production Tracking にアプリの使用を許可する設定を追加します。</li>
   <li>新しい設定をテストします。</li>
   <li>拡張した設定を有効にします。</li>
 </ol>
 
 <h3 id="python-コンソール-アプリの場所の記述子を見つける">Python コンソール アプリの場所の記述子を見つける</h3>
 
-<p><strong>手順 1:</strong> 「<a href="https://developer.shotgridsoftware.com/ja/9e62da4a/">アプリとエンジンの概要</a>」ページを開いて、Maya の ShotGrid Python コンソールの情報を検索します。タイトルを選択します。</p>
+<p><strong>手順 1:</strong> 「<a href="https://developer.shotgridsoftware.com/ja/9e62da4a/">アプリとエンジンの概要</a>」ページを開いて、Maya の Flow Production Tracking Python コンソールの情報を検索します。タイトルを選択します。</p>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/installing_app/1_python_app.png" alt="Python アプリ" /></p>
 
@@ -13334,7 +13334,7 @@
 
 <h3 id="maya-のプロジェクト環境内に-python-コンソール-アプリが含まれていないことを確認する">Maya のプロジェクト環境内に Python コンソール アプリが含まれていないことを確認する</h3>
 
-<p><strong>手順 2:</strong> Maya を起動し、ShotGrid メニューから、<strong>[ShotGrid] &gt; [プロジェクト the_other_side] (Project the_other_side)</strong>を選択して、プロジェクト環境内にある、このプロジェクトで使用可能なアプリのリストを表示します。</p>
+<p><strong>手順 2:</strong> Maya を起動し、Flow Production Tracking メニューから、<strong>[ShotGrid] &gt; [プロジェクト the_other_side] (Project the_other_side)</strong>を選択して、プロジェクト環境内にある、このプロジェクトで使用可能なアプリのリストを表示します。</p>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/installing_app/3_list_of_apps.png" alt="アプリのリスト" /></p>
 
@@ -13348,11 +13348,11 @@
 
 <h3 id="パイプラインの設定-pipeline-configurationリストに移動します">[パイプラインの設定] (Pipeline Configuration)リストに移動します。</h3>
 
-<p><strong>手順 3</strong>: ShotGrid を開き、右上にある<strong>[管理者] (Admin)メニュー(アバター) &gt; [既定のレイアウト] (Default Layouts) &gt; [パイプラインの設定] (Pipeline Configuration) &gt; [パイプライン設定リスト] (Pipeline Configuration List)</strong>を選択します。</p>
+<p><strong>手順 3</strong>: Flow Production Tracking を開き、右上にある<strong>[管理者] (Admin)メニュー(アバター) &gt; [既定のレイアウト] (Default Layouts) &gt; [パイプラインの設定] (Pipeline Configuration) &gt; [パイプライン設定リスト] (Pipeline Configuration List)</strong>を選択します。</p>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/installing_app/4_REPLACE_pipeline_configuration_list.png" alt="パイプライン設定リスト" /></p>
 
-<p>この操作を行うと、ShotGrid サイトのすべてのパイプライン設定の詳細なリストが表示されます。</p>
+<p>この操作を行うと、Flow Production Tracking サイトのすべてのパイプライン設定の詳細なリストが表示されます。</p>
 
 <p><strong>手順 4:</strong> [パイプライン設定リスト] (Pipeline Configuration List)が表示されたら、列見出しの右端にある<strong>[+]</strong>記号を選択して、<strong>[プロジェクト] (Projects)</strong>列を追加します。</p>
 
@@ -13376,7 +13376,7 @@
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/installing_app/9_name_clone.png" alt="クローンに名前を付ける" /></p>
 
-<p>ShotGrid によって設定内のすべてのファイルおよびフォルダがコピーされ、アプリのキャッシュが作成されるまで待ちます。この時間を利用して、エスプレッソの完璧なショットと一緒に、軽く、ふわっとした、口の中でとろけるクロワッサンを作成するアプリを使用しましょう。</p>
+<p>Flow Production Tracking によって設定内のすべてのファイルおよびフォルダがコピーされ、アプリのキャッシュが作成されるまで待ちます。この時間を利用して、エスプレッソの完璧なショットと一緒に、軽く、ふわっとした、口の中でとろけるクロワッサンを作成するアプリを使用しましょう。</p>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/installing_app/10_clone_complete.png" alt="クローン作成完了" /></p>
 
@@ -13386,18 +13386,18 @@
     <p>
         <i class="fa fa-info-circle"></i>
         <b>注
-:</b> <strong>[ユーザ制限] (User Restrictions)</strong>の下にユーザ名が追加されています。ShotGrid は、この設定を作成したユーザのみが新しい設定にアクセスできるよう、自動的に制限します。この設定を編集し、テストして、最終的に使用するユーザを追加することができます。ただし、ShotGrid の柔軟性を高めて、詳細なコントロールを可能にする方法がもう 1 つあります。
+:</b> <strong>[ユーザ制限] (User Restrictions)</strong>の下にユーザ名が追加されています。Flow Production Tracking は、この設定を作成したユーザのみが新しい設定にアクセスできるよう、自動的に制限します。この設定を編集し、テストして、最終的に使用するユーザを追加することができます。ただし、Flow Production Tracking の柔軟性を高めて、詳細なコントロールを可能にする方法がもう 1 つあります。
 
     </p>
 </div>
 
 <h2 id="クローン作成された設定にプロジェクトを関連付ける">クローン作成された設定にプロジェクトを関連付ける</h2>
 
-<p><strong>手順 8:</strong> ShotGrid Desktop を開いて、クローン作成した設定を作成する対象となったプロジェクトを選択します。右上にある<strong>下矢印</strong>を選択して、このプロジェクトに関連付けられた設定を表示し、直前に作成した<strong>[Primary Clone Config 2]</strong>を選択します。</p>
+<p><strong>手順 8:</strong> Flow Production Tracking Toolkit を開いて、クローン作成した設定を作成する対象となったプロジェクトを選択します。右上にある<strong>下矢印</strong>を選択して、このプロジェクトに関連付けられた設定を表示し、直前に作成した<strong>[Primary Clone Config 2]</strong>を選択します。</p>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/installing_app/11_select_clone.png" alt="クローンを選択" /></p>
 
-<p>これで、ShotGrid Desktop がこのプロジェクトでクローン作成した設定を使用するようになりました。</p>
+<p>これで、Flow Production Tracking Toolkit がこのプロジェクトでクローン作成した設定を使用するようになりました。</p>
 
 <h2 id="パイプライン設定を編集する">パイプライン設定を編集する</h2>
 
@@ -13460,7 +13460,7 @@
 
 <h3 id="yaml-ファイル">YAML ファイル</h3>
 
-<p>ShotGrid Toolkit パイプライン設定は <a href="https://yaml.org/spec/1.2/spec.html">YAML</a> ファイル内で単純な用語を使用して、アプリやエンジンの場所、およびこれらの設定を識別します。</p>
+<p>Flow Production Tracking Toolkit パイプライン設定は <a href="https://yaml.org/spec/1.2/spec.html">YAML</a> ファイル内で単純な用語を使用して、アプリやエンジンの場所、およびこれらの設定を識別します。</p>
 
 <p>この特定のブロックの各要素は、次のとおりです。</p>
 
@@ -13471,11 +13471,11 @@
   <li><code class="highlighter-rouge">@</code> は、設定値がインクルードされたファイルから取得されたことを示すために使用される Toolkit 用語です。</li>
 </ul>
 
-<p>YAML ファイルは ShotGrid の統合の窓口であり、パイプラインの要求を満たす作業環境を簡単に設定できるようにします。</p>
+<p>YAML ファイルは Flow Production Tracking の統合の窓口であり、パイプラインの要求を満たす作業環境を簡単に設定できるようにします。</p>
 
 <h3 id="設定における-toolkit-バンドルの参照方法">設定における Toolkit バンドルの参照方法</h3>
 
-<p>ShotGrid の統合のコードは、アプリ、エンジン、およびフレームワークのバンドルに整理されています。これらのバンドルは、<code class="highlighter-rouge">tk-maya</code>、<code class="highlighter-rouge">tk-multi-pythonconsole</code> のような記述子を使用して、Toolkit の YAML ファイル内で参照されています。YAML の各バンドルに対応するブロックには、識別されたバンドルへのアクセス方法や利用方法をコントロールする設定が含まれています。</p>
+<p>Flow Production Tracking の統合のコードは、アプリ、エンジン、およびフレームワークのバンドルに整理されています。これらのバンドルは、<code class="highlighter-rouge">tk-maya</code>、<code class="highlighter-rouge">tk-multi-pythonconsole</code> のような記述子を使用して、Toolkit の YAML ファイル内で参照されています。YAML の各バンドルに対応するブロックには、識別されたバンドルへのアクセス方法や利用方法をコントロールする設定が含まれています。</p>
 
 <h2 id="python-コンソールの設定の配置場所">Python コンソールの設定の配置場所</h2>
 
@@ -13518,7 +13518,7 @@
     <span class="na">tk-multi-workfiles2</span><span class="pi">:</span> <span class="s2">"</span><span class="s">@settings.tk-multi-workfiles2.launch_at_startup"</span>
 </code></pre></div></div>
 
-<p><strong>Screening Room、ShotGrid Panel、および Workfiles2</strong> アプリの場所識別子は別のインクルードされたファイルにリストされていて、<strong>About</strong> アプリとアクセス方法が異なります。これらのアプリには追加設定があるため、情報整理しておくために、これらのアプリはインクルードされた設定フォルダに分割して配置されています。</p>
+<p><strong>Screening Room、Flow Production Tracking Panel、および Workfiles2</strong> アプリの場所識別子は別のインクルードされたファイルにリストされていて、<strong>About</strong> アプリとアクセス方法が異なります。これらのアプリには追加設定があるため、情報整理しておくために、これらのアプリはインクルードされた設定フォルダに分割して配置されています。</p>
 
 <div class="info-popup">
     <p>
@@ -13543,7 +13543,7 @@ Windows の場合:
 
 <h2 id="maya-で変更内容を表示する">Maya で変更内容を表示する</h2>
 
-<p><strong>手順 16:</strong> ShotGrid Desktop を開いて、作業しているプロジェクトを選択し、クローン作成された設定を使用していることを確認します。</p>
+<p><strong>手順 16:</strong> Flow Production Tracking Toolkit を開いて、作業しているプロジェクトを選択し、クローン作成された設定を使用していることを確認します。</p>
 
 <p>青いバーが表示され、プロジェクトの名前の下に、作成したクローンの名前が示されます。</p>
 
@@ -13567,7 +13567,7 @@ Windows の場合:
   <li>クローン作成した設定が正しく拡張された場合</li>
   <li>拡張したファイルを保存した場合</li>
   <li>プロジェクトにクローン作成した設定を関連付けるよう選択した場合</li>
-  <li>ShotGrid Desktop から Maya を再起動した場合</li>
+  <li>Flow Production Tracking Toolkit から Maya を再起動した場合</li>
 </ul>
 
 <p>Maya で Python コンソール アプリを使用できるようになります。</p>
@@ -13595,7 +13595,7 @@ $ ls
 cache		config		install		tank		tank.bat
 $ ./tank push_configuration
 
-Welcome to the Shotgun Pipeline Toolkit!
+Welcome to the Flow Production Tracking Toolkit!
 For documentation, see https://developer.shotgridsoftware.com
 Starting Toolkit for your current path
 '/Users/michelle/Documents/Shotgun/configs/the_other_side_clone2'
@@ -13631,14 +13631,14 @@ Please type in the id of the configuration to push to (ENTER to exit):
     <p>
         <i class="fa fa-info-circle"></i>
         <b>注
-:</b> このガイドの「<strong>手順 3</strong>」に示した ShotGrid の[パイプラインの設定] (Pipeline Configuration)ページにも、パイプライン設定の ID が表示されています。プロジェクト ID を検索するには、設定リストに移動して、ID 列を追加します。
+:</b> このガイドの「<strong>手順 3</strong>」に示した Flow Production Tracking の[パイプラインの設定] (Pipeline Configuration)ページにも、パイプライン設定の ID が表示されています。プロジェクト ID を検索するには、設定リストに移動して、ID 列を追加します。
 
     </p>
 </div>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/installing_app/17_id_column.png" alt="ID 列" /></p>
 
-<p>ID を入力した後、ShotGrid は以下の処理を行います。</p>
+<p>ID を入力した後、Flow Production Tracking は以下の処理を行います。</p>
 
 <ul>
   <li>プライマリ設定をバックアップする</li>
@@ -13659,11 +13659,11 @@ Push Complete!
 
 <h2 id="プライマリ設定で行った変更を表示する">プライマリ設定で行った変更を表示する</h2>
 
-<p><strong>手順 19:</strong> ShotGrid Desktop の右上にある矢印をクリックして、<strong>[CONFIGURATION]</strong>リスト内の<strong>[Primary]</strong>を選択します。</p>
+<p><strong>手順 19:</strong> Flow Production Tracking Toolkit の右上にある矢印をクリックして、<strong>[CONFIGURATION]</strong>リスト内の<strong>[Primary]</strong>を選択します。</p>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/installing_app/18_change_config_maya.png" alt="Maya の設定の変更" /></p>
 
-<p><strong>手順 20:</strong> Desktop から Maya を起動して、メニュー<strong>[ShotGrid] &gt; [プロジェクト] (Project) &gt; […]</strong>を参照して、ShotGrid Python コンソールを検索します。</p>
+<p><strong>手順 20:</strong> Desktop から Maya を起動して、メニュー<strong>[ShotGrid] &gt; [プロジェクト] (Project) &gt; […]</strong>を参照して、Flow Production Tracking Python コンソールを検索します。</p>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/installing_app/19_app_in_maya.png" alt="Maya のアプリ" /></p>
 
@@ -13671,15 +13671,15 @@ Push Complete!
 
 <h2 id="高度なトピック">高度なトピック</h2>
 
-<h3 id="shotgrid-開発者のコミュニティ">ShotGrid 開発者のコミュニティ</h3>
+<h3 id="shotgrid-開発者のコミュニティ">Flow Production Tracking 開発者のコミュニティ</h3>
 
-<p>Toolkit の素晴らしい点の 1 つに、Toolkit アプリを誰でも作成できることがあります。また、アプリの所有権を維持したり、<a href="https://community.shotgridsoftware.com/c/pipeline/6">ShotGrid コミュニティ</a>内でアプリを共有して ShotGrid ツールに追加したりできます。ShotGrid コミュニティ ページで共有可能な便利なアプリを作成した場合は、<a href="https://knowledge.autodesk.com/ja/contact-support">サポート サイト</a>にアクセスしてサポートを依頼してください。</p>
+<p>Toolkit の素晴らしい点の 1 つに、Toolkit アプリを誰でも作成できることがあります。また、アプリの所有権を維持したり、<a href="https://community.shotgridsoftware.com/c/pipeline/6">Flow Production Tracking コミュニティ</a>内でアプリを共有して Flow Production Tracking ツールに追加したりできます。Flow Production Tracking コミュニティ ページで共有可能な便利なアプリを作成した場合は、<a href="https://knowledge.autodesk.com/ja/contact-support">サポート サイト</a>にアクセスしてサポートを依頼してください。</p>
 
-<p>標準的な Toolkit アプリや、愛情のこもった ShotGrid コミュニティで作成されたアプリについては、<strong><a href="https://groups.google.com/a/shotgunsoftware.com/forum/?fromgroups#!forum/shotgun-dev">ShotGrid-dev Google グループ</a></strong>で活発に議論されています。ShotGrid コミュニティの貢献度が高まるにつれて、知識やツールの基盤も拡大しています。</p>
+<p>標準的な Toolkit アプリや、愛情のこもった Flow Production Tracking コミュニティで作成されたアプリについては、<strong><a href="https://groups.google.com/a/shotgunsoftware.com/forum/?fromgroups#!forum/shotgun-dev">ShotGrid-dev Google グループ</a></strong>で活発に議論されています。Flow Production Tracking コミュニティの貢献度が高まるにつれて、知識やツールの基盤も拡大しています。</p>
 
 <h3 id="設定の拡張方法を調べる">設定の拡張方法を調べる</h3>
 
-<p>プロジェクトで使用する設定を選択するときにおわかりになったように、Python コンソール アプリは ShotGrid Desktop のドロップダウンから使用できます。</p>
+<p>プロジェクトで使用する設定を選択するときにおわかりになったように、Python コンソール アプリは Flow Production Tracking Toolkit のドロップダウンから使用できます。</p>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/installing_app/20_desktop_python_console.png" alt="Desktop の Python コンソール" /></p>
 
@@ -13718,9 +13718,9 @@ Push Complete!
 
 <p>すべてのアプリ、エンジン、およびフレームワークに、特定のバンドルのアクセス場所を Toolkit に指示するための場所の記述子が設定されています。多くのアプリ記述子が <code class="highlighter-rouge">app_locations.yml</code> ファイルに含まれていますが、Python コンソール アプリで確認したように、これらの記述子が必要な場所で参照されていない可能性があります。すべての標準アプリおよびエンジンは、「<a href="https://developer.shotgridsoftware.com/ja/162eaa4b/">アプリとエンジンの概要</a>」ページにリストされています。</p>
 
-<p>任意のアプリを ShotGrid でサポートされている適切なソフトウェア統合に追加したり、独自のアプリケーションを Toolkit ツールに追加したりできます。サポートされているすべてのソフトウェア アプリケーションは、統合の「<a href="https://developer.shotgridsoftware.com/ja/162eaa4b/">アプリとエンジンの概要</a>」ページにもリストされています。</p>
+<p>任意のアプリを Flow Production Tracking でサポートされている適切なソフトウェア統合に追加したり、独自のアプリケーションを Toolkit ツールに追加したりできます。サポートされているすべてのソフトウェア アプリケーションは、統合の「<a href="https://developer.shotgridsoftware.com/ja/162eaa4b/">アプリとエンジンの概要</a>」ページにもリストされています。</p>
 
-<p>探しているアプリが見つからない場合は、自分で作成できます。これを機会に、他の ShotGrid ユーザにこの機能の必要性が広まる可能性があります。また、新しいアプリを共有することで、ShotGrid コミュニティに恩返しができます。</p>
+<p>探しているアプリが見つからない場合は、自分で作成できます。これを機会に、他の Flow Production Tracking ユーザにこの機能の必要性が広まる可能性があります。また、新しいアプリを共有することで、Flow Production Tracking コミュニティに恩返しができます。</p>
 
 <p><a href="https://developer.shotgridsoftware.com/ja/56b441c6/">次のガイド</a>では、会社の構成方法に合わせて制作用フォルダの構成をカスタマイズする方法について学習します。</p>
 

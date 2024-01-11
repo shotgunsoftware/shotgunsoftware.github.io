@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -3364,9 +3364,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/ja/7584b650/?title=Alias+ShotGrid+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
+                href="/ja/7584b650/?title=Alias+Flow+Production+Tracking+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
             >
-                Alias ShotGrid ワークフロー
+                Alias Flow Production Tracking ワークフロー
             </a>
             </div>
 
@@ -6658,7 +6658,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -9289,9 +9289,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -11655,7 +11655,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -12725,7 +12725,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -12813,10 +12813,10 @@
   <li>Toolkit プロジェクトの<a href="https://github.com/shotgunsoftware/tk-config-default2">既定の設定</a>から開始します。</li>
 </ul>
 
-<p>開始する前に決定しなければならないことがもう 1 つあります。それは、<code class="highlighter-rouge">Episode</code> の解決方法です。すぐに使える ShotGrid Hiero/Nuke Studio の書き出しプロセスにより、Nuke Studio プロジェクトの内容に基づいて、ShotGrid サイトに <code class="highlighter-rouge">Sequence</code> および <code class="highlighter-rouge">Shot</code> エンティティが作成されます。Toolkit を使用して Maya で作業する場合のように、アセットやタスクが既に作成されていると想定される場合と異なり、Nuke Studio では <code class="highlighter-rouge">Episodes</code> <code class="highlighter-rouge">Sequences</code> または <code class="highlighter-rouge">Shots</code> が既に作成されていると想定されません。そのため、Nuke Studio では <code class="highlighter-rouge">Episode</code> の定義方法をユーザが決定する必要があります。ここで使用できるオプションはいくつかあります。</p>
+<p>開始する前に決定しなければならないことがもう 1 つあります。それは、<code class="highlighter-rouge">Episode</code> の解決方法です。すぐに使える Flow Production Tracking Hiero/Nuke Studio の書き出しプロセスにより、Nuke Studio プロジェクトの内容に基づいて、Flow Production Tracking サイトに <code class="highlighter-rouge">Sequence</code> および <code class="highlighter-rouge">Shot</code> エンティティが作成されます。Toolkit を使用して Maya で作業する場合のように、アセットやタスクが既に作成されていると想定される場合と異なり、Nuke Studio では <code class="highlighter-rouge">Episodes</code> <code class="highlighter-rouge">Sequences</code> または <code class="highlighter-rouge">Shots</code> が既に作成されていると想定されません。そのため、Nuke Studio では <code class="highlighter-rouge">Episode</code> の定義方法をユーザが決定する必要があります。ここで使用できるオプションはいくつかあります。</p>
 
 <ul>
-  <li>ShotGrid でエピソードをあらかじめ作成し、エピソードのコンテキストで機能するように Nuke Studio Toolkit の統合を設定します。こうすることで、書き出すときに、現在のシーンのコンテキストから <code class="highlighter-rouge">Episode</code> エンティティを取得することができます。</li>
+  <li>Flow Production Tracking でエピソードをあらかじめ作成し、エピソードのコンテキストで機能するように Nuke Studio Toolkit の統合を設定します。こうすることで、書き出すときに、現在のシーンのコンテキストから <code class="highlighter-rouge">Episode</code> エンティティを取得することができます。</li>
   <li><code class="highlighter-rouge">Episode</code> エンティティがまだ作成されていないと想定して、Nuke Studio のタグ付け機能を利用してシーケンスにエピソード名をタグ付けし、書き出すときに <code class="highlighter-rouge">Episode</code> を解決します。</li>
 </ul>
 
@@ -12832,7 +12832,7 @@
 
 <h2 id="フックと設定">フックと設定</h2>
 
-<p>ShotGrid 書き出しプロセスを取得して <code class="highlighter-rouge">Episode</code> を正しく処理するには、書き出しフックの一部を変更する必要があります。この記事では、ユーザが<a href="https://developer.shotgridsoftware.com/ja/312b792f/#using-frameworks-from-hooks">フック</a>の概要について理解していて、基本的な実装のオーバーライドに慣れていると想定しています。</p>
+<p>Flow Production Tracking 書き出しプロセスを取得して <code class="highlighter-rouge">Episode</code> を正しく処理するには、書き出しフックの一部を変更する必要があります。この記事では、ユーザが<a href="https://developer.shotgridsoftware.com/ja/312b792f/#using-frameworks-from-hooks">フック</a>の概要について理解していて、基本的な実装のオーバーライドに慣れていると想定しています。</p>
 
 <p>エピソードを有効にするのに役立つ書き出しフックは 2 つあります。</p>
 
@@ -12843,7 +12843,7 @@
 
 <p>注: <code class="highlighter-rouge">hiero_translate_template.py</code> という 3 番目のフックがあります。この例ではこのフックを使用しませんが、シーケンスをエピソードで置き換えて、2 つのレイヤからなる階層を維持することのみを行う場合は、このフックが必要になります。これについては、記事の最後で少し詳しく説明します。</p>
 
-<p>エピソードを検索して、ShotGrid でこれに該当するエントリを作成できるように、<code class="highlighter-rouge">hiero_get_shot.py</code> を変更します。また、Nuke Studio がパス内の {Episode} キーに指定する値を取得できるように、<code class="highlighter-rouge">hiero_resolve_custom_strings.py</code> を変更します。次に、このステップの詳細を示します。</p>
+<p>エピソードを検索して、Flow Production Tracking でこれに該当するエントリを作成できるように、<code class="highlighter-rouge">hiero_get_shot.py</code> を変更します。また、Nuke Studio がパス内の {Episode} キーに指定する値を取得できるように、<code class="highlighter-rouge">hiero_resolve_custom_strings.py</code> を変更します。次に、このステップの詳細を示します。</p>
 
 <h3 id="1エピソード-フィールドの追加">1.エピソード フィールドの追加</h3>
 
@@ -12858,9 +12858,9 @@
 
 <h3 id="2-hiero_get_shot-フック">2. hiero_get_shot フック</h3>
 
-<p><code class="highlighter-rouge">hiero_get_shot.py</code> フックを使用して、書き出しプロセスにエピソード名を検索し、ShotGrid で <code class="highlighter-rouge">Episode</code> を作成する方法を指定する必要があります。</p>
+<p><code class="highlighter-rouge">hiero_get_shot.py</code> フックを使用して、書き出しプロセスにエピソード名を検索し、Flow Production Tracking で <code class="highlighter-rouge">Episode</code> を作成する方法を指定する必要があります。</p>
 
-<p><a href="https://areadownloads.autodesk.com/wdm/shotgrid/tu-episodic-nuke.zip">既定バージョンのフック(hiero_get_shot.py)</a>は、ShotGrid から TrackItem と同じ名前を持つ <code class="highlighter-rouge">Shot</code> を返します。Nuke Studio シーケンス項目と同じ名前を持つ <code class="highlighter-rouge">Sequence</code> に <code class="highlighter-rouge">Shot</code> をリンクする必要もあります。<code class="highlighter-rouge">Sequence</code> または <code class="highlighter-rouge">Shot</code> が ShotGrid 内になければ、フックによって作成されます。別の階層レベルが追加されるため、<code class="highlighter-rouge">Episode</code> が存在しなければこれも作成するようにフックに指示する必要があります。</p>
+<p><a href="https://areadownloads.autodesk.com/wdm/shotgrid/tu-episodic-nuke.zip">既定バージョンのフック(hiero_get_shot.py)</a>は、Flow Production Tracking から TrackItem と同じ名前を持つ <code class="highlighter-rouge">Shot</code> を返します。Nuke Studio シーケンス項目と同じ名前を持つ <code class="highlighter-rouge">Sequence</code> に <code class="highlighter-rouge">Shot</code> をリンクする必要もあります。<code class="highlighter-rouge">Sequence</code> または <code class="highlighter-rouge">Shot</code> が Flow Production Tracking 内になければ、フックによって作成されます。別の階層レベルが追加されるため、<code class="highlighter-rouge">Episode</code> が存在しなければこれも作成するようにフックに指示する必要があります。</p>
 
 <p>また、<code class="highlighter-rouge">Sequence</code> は <code class="highlighter-rouge">Episode</code> にリンクされているため、<code class="highlighter-rouge">Sequence</code> を検索するコード(<code class="highlighter-rouge">get_shot_parent()</code> メソッド)にこれを関連付ける必要があります。</p>
 
@@ -12877,7 +12877,7 @@
 
 class HieroGetShot(Hook):
     """
-    Return a  ShotGrid  Shot dictionary for the given Hiero items
+    Return a  Flow Production Tracking  Shot dictionary for the given Hiero items
     """
 
     def execute(self, task, item, data, **kwargs):
@@ -12892,7 +12892,7 @@ class HieroGetShot(Hook):
        # shot parent field
        parent_field = "sg_sequence"
 
-       # grab shot from  ShotGrid 
+       # grab shot from  Flow Production Tracking
        sg = self.parent.shotgun
        filter = [
            ["project", "is", self.parent.context.project],
@@ -12914,7 +12914,7 @@ class HieroGetShot(Hook):
                "project": self.parent.context.project,
            }
            shot = sg.create("Shot", shot_data, return_fields=fields)
-           self.parent.log_info("Created Shot in  ShotGrid : %s" % shot_data)
+           self.parent.log_info("Created Shot in  Flow Production Tracking : %s" % shot_data)
        else:
            shot = shots[0]
 
@@ -12962,7 +12962,7 @@ class HieroGetShot(Hook):
        if nuke_studio_episode.guid() in data["epi_cache"]:
            return data["epi_cache"][nuke_studio_episode.guid()]
 
-       # episode not found in cache, grab it from  ShotGrid 
+       # episode not found in cache, grab it from  Flow Production Tracking
        sg = self.parent.shotgun
        filters = [
            ["project", "is", self.parent.context.project],
@@ -12981,7 +12981,7 @@ class HieroGetShot(Hook):
                "project": self.parent.context.project,
            }
            episode = sg.create("Episode", epi_data)
-           self.parent.log_info("Created Episode in  ShotGrid : %s" % epi_data)
+           self.parent.log_info("Created Episode in  Flow Production Tracking : %s" % epi_data)
        else:
            # we found one episode matching this name in , so we will resuse it, instead of creating a new one
            episode = episodes[0]
@@ -12994,7 +12994,7 @@ class HieroGetShot(Hook):
     def get_shot_parent(self, hiero_sequence, data, **kwargs):
         """
         Given a Hiero sequence and data cache, return the corresponding entity
-        in  ShotGrid  to serve as the parent for contained Shots.
+        in  Flow Production Tracking  to serve as the parent for contained Shots.
 
         :param hiero_sequence: A Hiero sequence object
         :param data: A dictionary with cached parent data.
@@ -13011,7 +13011,7 @@ class HieroGetShot(Hook):
         
         episode = self.get_episode(data, hiero_sequence) 
         
-        # parent not found in cache, grab it from  ShotGrid  
+        # parent not found in cache, grab it from  Flow Production Tracking
         
         sg = self.parent.shotgun filter = [ 
             ["project", "is", self.parent.context.project], 
@@ -13039,7 +13039,7 @@ class HieroGetShot(Hook):
             
             parent = sg.create(par_entity_type, par_data) 
             self.parent.log_info( 
-                "Created %s in  ShotGrid : %s" % (par_entity_type, par_data)
+                "Created %s in  Flow Production Tracking : %s" % (par_entity_type, par_data)
                 )
         else: 
             parent = parents[0] 
@@ -13059,7 +13059,7 @@ class HieroGetShot(Hook):
 
 <h4 id="シーケンスを取得する">シーケンスを取得する</h4>
 
-<p>上記のコードを使用して、<code class="highlighter-rouge">get_shot_parent()</code> メソッドを変更しました。<code class="highlighter-rouge">Sequence</code> を検索して作成するときに、新しい <code class="highlighter-rouge">get_episode()</code> メソッドから <code class="highlighter-rouge">Episode</code> が返されるようになりました。ShotGrid データベース内に既存の <code class="highlighter-rouge">Sequence</code> があることを確認するときに、<code class="highlighter-rouge">episode&lt;/code&lt; field</code> でフィルタされるようになりました。<code class="highlighter-rouge">Sequence</code> を作成すると、シーケンスの <code class="highlighter-rouge">episode</code> フィールドに <code class="highlighter-rouge">get_episode()</code> から返された <code class="highlighter-rouge">Episode</code> が入力されます。</p>
+<p>上記のコードを使用して、<code class="highlighter-rouge">get_shot_parent()</code> メソッドを変更しました。<code class="highlighter-rouge">Sequence</code> を検索して作成するときに、新しい <code class="highlighter-rouge">get_episode()</code> メソッドから <code class="highlighter-rouge">Episode</code> が返されるようになりました。Flow Production Tracking データベース内に既存の <code class="highlighter-rouge">Sequence</code> があることを確認するときに、<code class="highlighter-rouge">episode&lt;/code&lt; field</code> でフィルタされるようになりました。<code class="highlighter-rouge">Sequence</code> を作成すると、シーケンスの <code class="highlighter-rouge">episode</code> フィールドに <code class="highlighter-rouge">get_episode()</code> から返された <code class="highlighter-rouge">Episode</code> が入力されます。</p>
 
 <h4 id="エピソードを取得する">エピソードを取得する</h4>
 
@@ -13067,13 +13067,13 @@ class HieroGetShot(Hook):
 
 <p>このガイドでは、タグを使用して Nuke Studio でエピソードを割り当てています。たとえば、Nuke Studio で「Ep01」というタグを作成できます。作成したら、Nuke Studio でこのタグをシーケンスに適用します。</p>
 
-<p>高度な <code class="highlighter-rouge">get_episode()</code> メソッドは、Nuke Studio 内のシーケンス項目に適用されるすべてのタグを参照します。先頭に文字列「Ep」が付いているタグが見つかった場合は、これがエピソード名を定義するタグと見なされます。このメソッドを実行すると、ShotGrid 内で一致する <code class="highlighter-rouge">Episode</code> が検索されて、返されます。まだ存在しない場合は、作成されます。この情報もキャッシュされるため、コストのかかる検索呼び出しを再実行する必要はありません。</p>
+<p>高度な <code class="highlighter-rouge">get_episode()</code> メソッドは、Nuke Studio 内のシーケンス項目に適用されるすべてのタグを参照します。先頭に文字列「Ep」が付いているタグが見つかった場合は、これがエピソード名を定義するタグと見なされます。このメソッドを実行すると、Flow Production Tracking 内で一致する <code class="highlighter-rouge">Episode</code> が検索されて、返されます。まだ存在しない場合は、作成されます。この情報もキャッシュされるため、コストのかかる検索呼び出しを再実行する必要はありません。</p>
 
 <p><em>エピソードを別の方法(コンテキストから取得する、またはシーケンス名やショット名の最初のセクションを取得するなど)で取得する場合は、この方法のロジックを使用します。</em></p>
 
 <h4 id="ショットを取得する">ショットを取得する</h4>
 
-<p>hiero_get_shot フックの主な目的は、ShotGrid のショット データを返すことです。実際は、ショットを取得するためのロジックを変更する必要はありません。変更する必要があるのは、<code class="highlighter-rouge">Sequence</code> で親を取得する方法のみです。カスタム フィールドを使用して <code class="highlighter-rouge">Shot</code> と <code class="highlighter-rouge">Episode</code> のリンクも行う場合は、その実行メソッド内のコードを変更する必要があります。<code class="highlighter-rouge">parent[“episode”]</code> のように <code class="highlighter-rouge">Sequence</code> から <code class="highlighter-rouge">Episode</code> にアクセスし、作成呼び出し内でこれをショットにリンクします。</p>
+<p>hiero_get_shot フックの主な目的は、Flow Production Tracking のショット データを返すことです。実際は、ショットを取得するためのロジックを変更する必要はありません。変更する必要があるのは、<code class="highlighter-rouge">Sequence</code> で親を取得する方法のみです。カスタム フィールドを使用して <code class="highlighter-rouge">Shot</code> と <code class="highlighter-rouge">Episode</code> のリンクも行う場合は、その実行メソッド内のコードを変更する必要があります。<code class="highlighter-rouge">parent[“episode”]</code> のように <code class="highlighter-rouge">Sequence</code> から <code class="highlighter-rouge">Episode</code> にアクセスし、作成呼び出し内でこれをショットにリンクします。</p>
 
 <h3 id="3hiero_resolve_custom_stringspy">3.Hiero_resolve_custom_strings.py</h3>
 
@@ -13175,7 +13175,7 @@ return fields["Episode"]
 
 <p><img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/tu-episodic-nuke-mceclip3-05.png" alt="構造階層を書き出す" /></p>
 
-<p>[書き出し] (export)をクリックすると、ShotGrid サイト内にエピソード、シーケンス、およびショットが作成され、ディスク上にフォルダ構造が作成されます。この方法で問題が生じた場合は、Nuke Studio スクリプト エディタまたは <a href="https://developer.shotgridsoftware.com/ja/38c5c024/">ShotGrid のログ(tk-nukestudio.log)</a>で、発生した可能性のあるエラーがないか確認してください。</p>
+<p>[書き出し] (export)をクリックすると、Flow Production Tracking サイト内にエピソード、シーケンス、およびショットが作成され、ディスク上にフォルダ構造が作成されます。この方法で問題が生じた場合は、Nuke Studio スクリプト エディタまたは <a href="https://developer.shotgridsoftware.com/ja/38c5c024/">Flow Production Tracking のログ(tk-nukestudio.log)</a>で、発生した可能性のあるエラーがないか確認してください。</p>
 
 <p>これでこのガイドは完了です。もちろん、これはエピソードを処理する複数の方法の中の 1 つにすぎません。ご使用のスタジオに最適な方法および構造を特定するのは、ユーザの役割です。</p>
 

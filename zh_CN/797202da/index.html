@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -12796,9 +12796,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/zh_CN/02c2d8aa/?title=ShotGrid"
+                href="/zh_CN/02c2d8aa/?title=Flow+Production+Tracking"
             >
-                ShotGrid
+                Flow Production Tracking
             </a>
             </div>
 
@@ -15282,9 +15282,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -17648,7 +17648,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -18718,7 +18718,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -18793,7 +18793,7 @@
 
             <h1 id="houdini">Houdini</h1>
 
-<p>ShotGrid Houdini 插件包含一个用于在 Houdini 中集成 ShotGrid 应用的标准平台。</p>
+<p>Flow Production Tracking Houdini 插件包含一个用于在 Houdini 中集成 Flow Production Tracking 应用的标准平台。</p>
 
 <p><img src="/zh_CN/reference/pipeline-integrations/images/engines/houdini_engine.png" alt="ShotGridHoudini 插件" /></p>
 
@@ -18801,7 +18801,7 @@
 
 <h2 id="支持的平台">支持的平台</h2>
 
-<p>ShotGrid Houdini 插件目前支持在 Windows、Linux 和 OS X 平台运行</p>
+<p>Flow Production Tracking Houdini 插件目前支持在 Windows、Linux 和 OS X 平台运行</p>
 
 <h2 id="支持的应用程序版本">支持的应用程序版本</h2>
 
@@ -18815,23 +18815,23 @@
 
 <h2 id="菜单加载">菜单加载</h2>
 
-<p><img src="/zh_CN/reference/pipeline-integrations/images/engines/houdini_menu.png" alt="ShotGrid 菜单" /></p>
+<p><img src="/zh_CN/reference/pipeline-integrations/images/engines/houdini_menu.png" alt="Flow Production Tracking 菜单" /></p>
 
-<p>自 Houdini 15 起，Side Effects 引入了一个动态菜单系统，因此插件现在支持在上下文切换时重建 ShotGrid 菜单。</p>
+<p>自 Houdini 15 起，Side Effects 引入了一个动态菜单系统，因此插件现在支持在上下文切换时重建 Flow Production Tracking 菜单。</p>
 
-<p>在 Houdini 14 及更早的版本中，ShotGrid 菜单在 Houdini 启动前生成，并且在整个会话期间是静态的。因此，菜单中注册的 Toolkit 命令不会随上下文变化而更新。</p>
+<p>在 Houdini 14 及更早的版本中，Flow Production Tracking 菜单在 Houdini 启动前生成，并且在整个会话期间是静态的。因此，菜单中注册的 Toolkit 命令不会随上下文变化而更新。</p>
 
-<h2 id="shotgrid-工具架">ShotGrid 工具架</h2>
+<h2 id="shotgrid-工具架">Flow Production Tracking 工具架</h2>
 
-<p><img src="/zh_CN/reference/pipeline-integrations/images/engines/houdini_shelf.png" alt="ShotGrid 工具架" /></p>
+<p><img src="/zh_CN/reference/pipeline-integrations/images/engines/houdini_shelf.png" alt="Flow Production Tracking 工具架" /></p>
 
-<p>发布版本 <strong>v0.2.4</strong> 为插件引入了一个动态的 ShotGrid 工具架。此工具架将所有注册的应用命令显示为工具按钮。按钮将按照与菜单命令大致相同的顺序显示。</p>
+<p>发布版本 <strong>v0.2.4</strong> 为插件引入了一个动态的 Flow Production Tracking 工具架。此工具架将所有注册的应用命令显示为工具按钮。按钮将按照与菜单命令大致相同的顺序显示。</p>
 
-<p>使用 <code class="highlighter-rouge">enable_sg_shelf</code> 设置可在环境内开启此工具架。如果使用不支持动态菜单的 Houdini 版本（14 或更早的版本），使用工具架时可能还要关闭 ShotGrid 菜单。通过将 <code class="highlighter-rouge">enable_sg_menu</code> 设置设定为 <code class="highlighter-rouge">false</code>，可以做到这一点。</p>
+<p>使用 <code class="highlighter-rouge">enable_sg_shelf</code> 设置可在环境内开启此工具架。如果使用不支持动态菜单的 Houdini 版本（14 或更早的版本），使用工具架时可能还要关闭 Flow Production Tracking 菜单。通过将 <code class="highlighter-rouge">enable_sg_menu</code> 设置设定为 <code class="highlighter-rouge">false</code>，可以做到这一点。</p>
 
 <p>要启用通过工具架切换上下文的功能，您还需要在插件配置中向 <code class="highlighter-rouge">tk-multi-workfiles</code> 应用的 <code class="highlighter-rouge">sg_entity_types</code> 设置添加实体类型。</p>
 
-<p>ShotGrid 工具架的相关设置看起来如下所示：</p>
+<p>Flow Production Tracking 工具架的相关设置看起来如下所示：</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">tk-houdini</span><span class="pi">:</span>
   <span class="na">apps</span><span class="pi">:</span>
@@ -18845,11 +18845,11 @@
   <span class="c1"># ... other engine settings</span>
 </code></pre></div></div>
 
-<p>启用 ShotGrid 工具架后，您需要手动将它添加到 Houdini 内部的一个工具架集。</p>
+<p>启用 Flow Production Tracking 工具架后，您需要手动将它添加到 Houdini 内部的一个工具架集。</p>
 
-<p><img src="/zh_CN/reference/pipeline-integrations/images/engines/add_shelf.png" alt="添加 ShotGrid 工具架" /></p>
+<p><img src="/zh_CN/reference/pipeline-integrations/images/engines/add_shelf.png" alt="添加 Flow Production Tracking 工具架" /></p>
 
-<p>ShotGrid 工具架添加到工具架集后，在两次 Houdini 会话之间将留在该工具架集中，并会随 ShotGrid 上下文的变化动态更新。</p>
+<p>Flow Production Tracking 工具架添加到工具架集后，在两次 Houdini 会话之间将留在该工具架集中，并会随 Flow Production Tracking 上下文的变化动态更新。</p>
 
 <h2 id="面板">面板</h2>
 
@@ -18861,13 +18861,13 @@
 
 <h2 id="具有-otl-的应用">具有 OTL 的应用</h2>
 
-<p>ShotGrid Houdini 插件让您可轻松加载应用程序随附的 OTL。如果您编写的应用使用 OTL，只需将这些 OTL 放入名为 <strong>otls</strong> 的文件夹，插件便会自动将它们加载到会话中：</p>
+<p>Flow Production Tracking Houdini 插件让您可轻松加载应用程序随附的 OTL。如果您编写的应用使用 OTL，只需将这些 OTL 放入名为 <strong>otls</strong> 的文件夹，插件便会自动将它们加载到会话中：</p>
 
 <p><img src="/zh_CN/reference/pipeline-integrations/images/engines/otls_path.png" alt="Houdini OTL" /></p>
 
 <p>然后，您可以通过常用的 Houdini 方法轻松访问您的节点。</p>
 
-<p><strong>警告！！</strong>请注意，虽然 OTL 用起来可能很方便，但如果您想在场景中创建持久性节点，使用 OTL 往往并不合适。这是因为一旦将 OTL 放入场景，就在该场景与 OTL 代码之间建立了依赖关系。这样，不仅需要在每次加载场景时都加载 ShotGrid Toolkit，还需要小心管理代码，确保代码的任何更新都不会影响场景中使用的旧 OTL。</p>
+<p><strong>警告！！</strong>请注意，虽然 OTL 用起来可能很方便，但如果您想在场景中创建持久性节点，使用 OTL 往往并不合适。这是因为一旦将 OTL 放入场景，就在该场景与 OTL 代码之间建立了依赖关系。这样，不仅需要在每次加载场景时都加载 Flow Production Tracking Toolkit，还需要小心管理代码，确保代码的任何更新都不会影响场景中使用的旧 OTL。</p>
 
 <h2 id="在-os-x-上通过终端进行启动调试">在 OS X 上通过终端进行启动调试</h2>
 

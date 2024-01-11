@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ko/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Jira 및 ShotGrid 간 데이터 동기화
+            Jira 및 Flow Production Tracking 간 데이터 동기화
         </a>
     </div>
 
@@ -10465,9 +10465,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/ko/c0b0ce05/?title=ShotGrid+Panel"
+                href="/ko/c0b0ce05/?title=Flow+Production+Tracking+Panel"
             >
-                ShotGrid Panel
+                Flow Production Tracking Panel
             </a>
             </div>
 
@@ -11812,7 +11812,7 @@
                 style='margin-left:40px'
                 href="/ko/88ae1c1d/?title=ShotGrid%EC%97%90%EC%84%9C+Hiero%2FNuke+Studio+%EC%97%B4%EA%B8%B0"
             >
-                ShotGrid에서 Hiero/Nuke Studio 열기
+                Flow Production Tracking에서 Hiero/Nuke Studio 열기
             </a>
             </div>
 
@@ -14169,9 +14169,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/ko/134adb0e/?title=ShotGrid+Folders"
+                href="/ko/134adb0e/?title=Flow+Production+Tracking+Folders"
             >
-                ShotGrid Folders
+                Flow Production Tracking Folders
             </a>
             </div>
 
@@ -14632,9 +14632,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/ko/0c3049eb/?title=ShotGrid+Launch+Folder"
+                href="/ko/0c3049eb/?title=Flow+Production+Tracking+Launch+Folder"
             >
-                ShotGrid Launch Folder
+                Flow Production Tracking Launch Folder
             </a>
             </div>
 
@@ -15095,9 +15095,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/ko/a01dbeb7/?title=ShotGrid+Launch+Publish"
+                href="/ko/a01dbeb7/?title=Flow+Production+Tracking+Launch+Publish"
             >
-                ShotGrid Launch Publish
+                Flow Production Tracking Launch Publish
             </a>
             </div>
 
@@ -19431,9 +19431,9 @@
                     class="nav-entry"
                 
                 
-                href="/ko/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ko/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -21797,7 +21797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -22867,7 +22867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 설명서
+            Flow Production Tracking 설명서
         </a>
     </div>
 
@@ -22942,7 +22942,7 @@
 
             <h1 id="loader">Loader</h1>
 
-<p>이 문서에서는 툴킷 구성에 대한 제어 권한이 있는 경우에만 사용할 수 있는 기능에 대해 설명합니다. 자세한 내용은 <a href="https://developer.shotgridsoftware.com/ko/d587be80/">ShotGrid 통합 사용자 안내서</a>를 참조하십시오.</p>
+<p>이 문서에서는 툴킷 구성에 대한 제어 권한이 있는 경우에만 사용할 수 있는 기능에 대해 설명합니다. 자세한 내용은 <a href="https://developer.shotgridsoftware.com/ko/d587be80/">Flow Production Tracking 통합 사용자 안내서</a>를 참조하십시오.</p>
 
 <h2 id="구성">구성</h2>
 
@@ -22957,12 +22957,12 @@
 
 <h3 id="트리-뷰">트리 뷰</h3>
 
-<p>트리 뷰는 상세하게 구성할 수 있으며 표준 ShotGrid 필터 구문을 사용하여 다양한 탭의 컨텐츠를 제어할 수 있습니다. 각 탭은 계층으로 그룹 지정된 단일 ShotGrid API 쿼리로 구성됩니다. 임의의 필터를 추가하여 표시할 항목을 제어할 수 있으며 특수 키워드 <code class="highlighter-rouge">{context.entity}</code>, <code class="highlighter-rouge">{context.project}</code>, <code class="highlighter-rouge">{context.project.id}</code>, <code class="highlighter-rouge">{context.step}</code>, <code class="highlighter-rouge">{context.task}</code> 및 <code class="highlighter-rouge">{context.user}</code>를 사용하여 현재 컨텍스트를 기반으로 쿼리의 범위를 지정할 수 있습니다. 이러한 각 키워드는 관련 컨텍스트 정보로 대체되거나 컨텍스트의 해당 부분이 입력되지 않은 경우 또는 id, type 및 name 키가 포함된 표준 ShotGrid 링크 사전인 경우에는 <code class="highlighter-rouge">None</code>으로 대체됩니다.</p>
+<p>트리 뷰는 상세하게 구성할 수 있으며 표준 Flow Production Tracking 필터 구문을 사용하여 다양한 탭의 컨텐츠를 제어할 수 있습니다. 각 탭은 계층으로 그룹 지정된 단일 Flow Production Tracking API 쿼리로 구성됩니다. 임의의 필터를 추가하여 표시할 항목을 제어할 수 있으며 특수 키워드 <code class="highlighter-rouge">{context.entity}</code>, <code class="highlighter-rouge">{context.project}</code>, <code class="highlighter-rouge">{context.project.id}</code>, <code class="highlighter-rouge">{context.step}</code>, <code class="highlighter-rouge">{context.task}</code> 및 <code class="highlighter-rouge">{context.user}</code>를 사용하여 현재 컨텍스트를 기반으로 쿼리의 범위를 지정할 수 있습니다. 이러한 각 키워드는 관련 컨텍스트 정보로 대체되거나 컨텍스트의 해당 부분이 입력되지 않은 경우 또는 id, type 및 name 키가 포함된 표준 Flow Production Tracking 링크 사전인 경우에는 <code class="highlighter-rouge">None</code>으로 대체됩니다.</p>
 
-<p>기본적으로 Loader는 현재 프로젝트에 속한 에셋 및 샷을 표시합니다. 다시 구성하면 다른 프로젝트 또는 특정 에셋 라이브러리 프로젝트 등의 항목을 표시하는 등 쉽게 확장할 수 있습니다. 예를 들어 필터를 사용하여 특정 승인 상태의 항목만 표시하거나 상태별 또는 다른 ShotGrid 필드별로 그룹 항목을 표시할 수도 있습니다. 다음은 트리 뷰 탭을 설정할 수 있는 방법을 보여 주는 몇 가지 샘플 구성 설정입니다.</p>
+<p>기본적으로 Loader는 현재 프로젝트에 속한 에셋 및 샷을 표시합니다. 다시 구성하면 다른 프로젝트 또는 특정 에셋 라이브러리 프로젝트 등의 항목을 표시하는 등 쉽게 확장할 수 있습니다. 예를 들어 필터를 사용하여 특정 승인 상태의 항목만 표시하거나 상태별 또는 다른 Flow Production Tracking 필드별로 그룹 항목을 표시할 수도 있습니다. 다음은 트리 뷰 탭을 설정할 수 있는 방법을 보여 주는 몇 가지 샘플 구성 설정입니다.</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># An asset library tab which shows assets from a specific</span>
-<span class="c1"># ShotGrid project</span>
+<span class="c1"># Flow Production Tracking project</span>
 <span class="na">caption</span><span class="pi">:</span> <span class="s">Asset Library</span>
 <span class="na">entity_type</span><span class="pi">:</span> <span class="s">Asset</span>
 <span class="na">hierarchy</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">sg_asset_type</span><span class="pi">,</span> <span class="nv">code</span><span class="pi">]</span>
@@ -22990,7 +22990,7 @@
 
 <h3 id="게시-필터링">게시 필터링</h3>
 
-<p>ShotGrid에서 게시 데이터를 로드할 때 Loader가 수행하는 게시 쿼리에 ShotGrid 필터를 적용할 수 있습니다. 이 필터는 <code class="highlighter-rouge">publish_filters</code> 매개변수를 통해 제어되며 승인되지 않은 게시 또는 연결된 리뷰 버전이 승인되지 않은 게시를 숨기는 작업 등에 사용할 수 있습니다.</p>
+<p>ShotGrid에서 게시 데이터를 로드할 때 Loader가 수행하는 게시 쿼리에 Flow Production Tracking 필터를 적용할 수 있습니다. 이 필터는 <code class="highlighter-rouge">publish_filters</code> 매개변수를 통해 제어되며 승인되지 않은 게시 또는 연결된 리뷰 버전이 승인되지 않은 게시를 숨기는 작업 등에 사용할 수 있습니다.</p>
 
 <h3 id="액션이-표시되지-않을-경우">액션이 표시되지 않을 경우</h3>
 
@@ -23073,7 +23073,7 @@ def execute_multiple_actions(self, actions)
         one object is returned for an action, use the params key to pass additional
         data into the run_action hook.
 
-        :param sg_publish_data: ShotGrid data dictionary with all the standard publish fields.
+        :param sg_publish_data: Flow Production Tracking data dictionary with all the standard publish fields.
         :param actions: List of action strings which have been defined in the app configuration.
         :param ui_area: String denoting the UI Area (see above).
         :returns List of dictionaries, each with keys name, params, caption and description
@@ -23098,7 +23098,7 @@ def execute_multiple_actions(self, actions)
 
         :param name: Action name string representing one of the items returned by generate_actions.
         :param params: Params data, as specified by generate_actions.
-        :param sg_publish_data: ShotGrid data dictionary with all the standard publish fields.
+        :param sg_publish_data: Flow Production Tracking data dictionary with all the standard publish fields.
         :returns: No return value expected.
         """</span>
 
@@ -23137,7 +23137,7 @@ def execute_multiple_actions(self, actions)
   <li><code class="highlighter-rouge">str</code> <strong>title</strong> - 게시 열기 대화상자에 표시할 제목입니다.</li>
   <li><code class="highlighter-rouge">str</code> <strong>action</strong> - ‘열기’ 버튼에 사용할 액션 이름입니다.</li>
   <li><code class="highlighter-rouge">list</code> <strong>publish_types</strong> - 사용 가능한 게시 목록을 필터링하는 데 사용할 게시 유형 목록입니다. 이 값이 비어 있거나 None인 경우 모든 게시가 표시됩니다.</li>
-  <li><strong>반환값:</strong> 사용자가 선택한 ShotGrid 엔티티 사전 목록을 반환합니다.</li>
+  <li><strong>반환값:</strong> 사용자가 선택한 Flow Production Tracking 엔티티 사전 목록을 반환합니다.</li>
 </ul>
 
 <p><strong>예</strong></p>

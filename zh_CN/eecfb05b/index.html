@@ -11,12 +11,12 @@
 <link rel="alternate" hreflang="zh_CN" href="/zh_CN/eecfb05b/"/>
 
 
-  <title>为什么我的 Houdini ShotGrid 集成没有启动？ - SG Developer</title>
+  <title>为什么我的 Houdini Flow Production Tracking 集成没有启动？ - SG Developer</title>
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -8160,13 +8160,13 @@
 <div class="article-body markdown" data-swiftype-name="body" data-swiftype-type="text">
   
 
-            <h1 id="为什么我的-houdini-shotgrid-集成没有启动">为什么我的 Houdini ShotGrid 集成没有启动？</h1>
+            <h1 id="为什么我的-houdini-shotgrid-集成没有启动">为什么我的 Houdini Flow Production Tracking 集成没有启动？</h1>
 
-<p>本文介绍了 ShotGrid 集成在 Houdini 中无法启动的常见原因。在这种情况下，Houdini 从 ShotGrid Desktop、ShotGrid 网站或 tank 令启动且无错误。但是，Houdini 启动后，ShotGrid 菜单或工具架将不会出现。</p>
+<p>本文介绍了 Flow Production Tracking 集成在 Houdini 中无法启动的常见原因。在这种情况下，Houdini 从 Flow Production Tracking Toolkit、Flow Production Tracking 网站或 tank 令启动且无错误。但是，Houdini 启动后，Flow Production Tracking 菜单或工具架将不会出现。</p>
 
-<p>通常导致这种情况的原因是，<code class="highlighter-rouge">HOUDINI_PATH</code> 环境变量已被覆盖，而 ShotGrid 依赖于该变量来传递启动脚本路径。</p>
+<p>通常导致这种情况的原因是，<code class="highlighter-rouge">HOUDINI_PATH</code> 环境变量已被覆盖，而 Flow Production Tracking 依赖于该变量来传递启动脚本路径。</p>
 
-<p>Houdini 从 ShotGrid 启动时，启动应用逻辑会将 ShotGrid 引导脚本路径添加到 <code class="highlighter-rouge">HOUDINI_PATH</code> 环境变量。但是，如果 Houdini 具有 <a href="https://www.sidefx.com/docs/houdini/basics/config_env.html#setting-environment-variables">houdini.env 文件</a>，可能会出现问题。此文件允许用户设置加载 Houdini 时将显示的环境变量，但是此文件中定义的任何值都将覆盖当前会话中已存在的环境变量。</p>
+<p>Houdini 从 Flow Production Tracking 启动时，启动应用逻辑会将 Flow Production Tracking 引导脚本路径添加到 <code class="highlighter-rouge">HOUDINI_PATH</code> 环境变量。但是，如果 Houdini 具有 <a href="https://www.sidefx.com/docs/houdini/basics/config_env.html#setting-environment-variables">houdini.env 文件</a>，可能会出现问题。此文件允许用户设置加载 Houdini 时将显示的环境变量，但是此文件中定义的任何值都将覆盖当前会话中已存在的环境变量。</p>
 
 <p>解决此问题的方法是确保在 <code class="highlighter-rouge">HOUDINI_PATH</code> 环境变量的新定义中包含先前存在的该变量。</p>
 
@@ -8180,13 +8180,13 @@
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HOUDINI_PATH = /example/of/an/existing/path;$HOUDINI_PATH;&amp;
 </code></pre></div></div>
 
-<p>这允许 ShotGrid 将值设置为在 Houdini 启动时继续存在。</p>
+<p>这允许 Flow Production Tracking 将值设置为在 Houdini 启动时继续存在。</p>
 
 <div class="warning-popup">
     <p>
         <i class="fa fa-exclamation-circle"></i>
         <b>注意
-:</b> 我们注意到，<code class="highlighter-rouge">$HOUDINI_PATH</code> 在 Windows 上会导致问题。有时会尝试引导 ShotGrid 集成多次，导致生成如下所示的错误：
+:</b> 我们注意到，<code class="highlighter-rouge">$HOUDINI_PATH</code> 在 Windows 上会导致问题。有时会尝试引导 Flow Production Tracking 集成多次，导致生成如下所示的错误：
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Toolkit bootstrap is missing a required variable : TANK_CONTEXT
 </code></pre></div></div>

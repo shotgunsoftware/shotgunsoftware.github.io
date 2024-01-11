@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ko/site-metadata/apple-touch-icon.png">
@@ -4800,7 +4800,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Jira 및 ShotGrid 간 데이터 동기화
+            Jira 및 Flow Production Tracking 간 데이터 동기화
         </a>
     </div>
 
@@ -7431,9 +7431,9 @@
                     class="nav-entry"
                 
                 
-                href="/ko/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ko/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -9797,7 +9797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -10867,7 +10867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 설명서
+            Flow Production Tracking 설명서
         </a>
     </div>
 
@@ -11002,17 +11002,17 @@
 <p>이 플러그인에 대해 엔진에 콜백을 등록합니다.</p>
 
 <ul>
-  <li><code class="highlighter-rouge">sgScriptName</code>: ShotGrid 스크립트 페이지에서 가져온 스크립트의 이름입니다.</li>
-  <li><code class="highlighter-rouge">sgScriptKey</code>: ShotGrid 스크립트 페이지에서 가져온 스크립트의 응용프로그램 키입니다.</li>
+  <li><code class="highlighter-rouge">sgScriptName</code>: Flow Production Tracking 스크립트 페이지에서 가져온 스크립트의 이름입니다.</li>
+  <li><code class="highlighter-rouge">sgScriptKey</code>: Flow Production Tracking 스크립트 페이지에서 가져온 스크립트의 응용프로그램 키입니다.</li>
   <li><code class="highlighter-rouge">callback</code>: <code class="highlighter-rouge">__call__</code> 메서드가 있는 함수 또는 객체입니다. <a href="#exampleCallback"><code class="highlighter-rouge">exampleCallback</code></a>을 참조하십시오.</li>
   <li><code class="highlighter-rouge">matchEvents</code>: 콜백에 전달하려는 이벤트 필터입니다.</li>
   <li><code class="highlighter-rouge">args</code>: 프레임워크가 콜백으로 다시 전달되게 하려는 모든 객체입니다.</li>
   <li><code class="highlighter-rouge">stopOnError</code>: 부울이며 이 콜백의 예외가 이 플러그인의 모든 콜백에 의한 이벤트 처리를 중단해야 합니다. 기본값은 <code class="highlighter-rouge">True</code>입니다.</li>
 </ul>
 
-<p><code class="highlighter-rouge">sgScriptName</code>은 ShotGrid에 대한 플러그인을 식별하는 데 사용됩니다. 모든 이름은 여러 콜백에서 공유되거나, 단일 콜백에 대해 고유할 수 있습니다.</p>
+<p><code class="highlighter-rouge">sgScriptName</code>은 Flow Production Tracking에 대한 플러그인을 식별하는 데 사용됩니다. 모든 이름은 여러 콜백에서 공유되거나, 단일 콜백에 대해 고유할 수 있습니다.</p>
 
-<p><code class="highlighter-rouge">sgScriptKey</code>는 ShotGrid에 대한 플러그인을 식별하는 데 사용되며 지정된 <code class="highlighter-rouge">sgScriptName</code>에 적합한 키여야 합니다.</p>
+<p><code class="highlighter-rouge">sgScriptKey</code>는 Flow Production Tracking에 대한 플러그인을 식별하는 데 사용되며 지정된 <code class="highlighter-rouge">sgScriptName</code>에 적합한 키여야 합니다.</p>
 
 <p>필터와 일치하는 이벤트를 처리해야 하는 경우 지정된 콜백 객체가 호출됩니다. 호출 가능한 모든 객체를 실행할 수 있어야 하지만 여기에 클래스를 사용하는 것은 적합하지 않습니다. 함수 또는 <code class="highlighter-rouge">__call__</code> 메서드가 있는 인스턴스를 사용하는 것이 더 적합합니다.</p>
 
@@ -11083,9 +11083,9 @@
 <strong>exampleCallback(sg, logger, event, args)</strong></p>
 
 <ul>
-  <li><code class="highlighter-rouge">sg</code>: ShotGrid 연결 인스턴스</li>
+  <li><code class="highlighter-rouge">sg</code>: Flow Production Tracking 연결 인스턴스</li>
   <li><code class="highlighter-rouge">logger</code>: 사용자를 위해 미리 구성된 Python logging.Logger 객체</li>
-  <li><code class="highlighter-rouge">event</code>: 처리할 ShotGrid 이벤트</li>
+  <li><code class="highlighter-rouge">event</code>: 처리할 Flow Production Tracking 이벤트</li>
   <li><code class="highlighter-rouge">args</code>: 콜백 등록 시간에 지정된 args 인수</li>
 </ul>
 

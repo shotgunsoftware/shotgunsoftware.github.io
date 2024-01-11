@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -5116,9 +5116,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7482,7 +7482,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8552,7 +8552,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -8627,7 +8627,7 @@
 
             <h1 id="webhook">Webhook</h1>
 
-<p>Webhook を使用すると、ユーザがコントロールしているサービスに ShotGrid で発生したイベントを通知することができます。Webhook を作成する場合は、対象となるイベントのタイプを指定し、このイベントがトリガされたときにデータを送信する URL を ShotGrid に指示します。ShotGrid で関連イベントが発生すると、そのイベントを示すデータのペイロードが Webhook の URL に送信されます。これにより、ShotGrid との統合が緊密化され、ワークフローの一部を自動化することができます。</p>
+<p>Webhook を使用すると、ユーザがコントロールしているサービスに Flow Production Tracking で発生したイベントを通知することができます。Webhook を作成する場合は、対象となるイベントのタイプを指定し、このイベントがトリガされたときにデータを送信する URL を Flow Production Tracking に指示します。Flow Production Tracking で関連イベントが発生すると、そのイベントを示すデータのペイロードが Webhook の URL に送信されます。これにより、Flow Production Tracking との統合が緊密化され、ワークフローの一部を自動化することができます。</p>
 
 <h2 id="webhook-を使用する例">Webhook を使用する例</h2>
 
@@ -8635,7 +8635,7 @@
 
 <h3 id="エンティティを作成するときにディスク上にディレクトリ構造を作成する">エンティティを作成するときにディスク上にディレクトリ構造を作成する</h3>
 
-<p>ShotGrid で新しいエンティティを作成するときに何度も繰り返されてきたワークフローの 1 つとして、ディスク上にディレクトリ構造を作成することが挙げられます。ShotGrid で新しいショットを作成したら、作業を進めて、アーティストの作業準備が整っていることを自動的に確認できると便利です。</p>
+<p>Flow Production Tracking で新しいエンティティを作成するときに何度も繰り返されてきたワークフローの 1 つとして、ディスク上にディレクトリ構造を作成することが挙げられます。Flow Production Tracking で新しいショットを作成したら、作業を進めて、アーティストの作業準備が整っていることを自動的に確認できると便利です。</p>
 
 <h3 id="ステータス管理の自動化">ステータス管理の自動化</h3>
 
@@ -8643,9 +8643,9 @@
 
 <p>ステータス管理の自動化が役立つもう 1 つの例は、新しい <code class="highlighter-rouge">Note</code> を作成するときに、<code class="highlighter-rouge">Task</code> エンティティのステータス変更をトリガすることです。この方法は、アーティスト チームとプロダクション チームに、レビュー セッション後にスーパーバイザーから現在の作品を変更または修正するよう要求されたことを知らせる場合に便利です。</p>
 
-<h2 id="shotgrid-のイベント-デーモンではなくwebhook-を使用する場合">ShotGrid のイベント デーモンではなく、Webhook を使用する場合</h2>
+<h2 id="shotgrid-のイベント-デーモンではなくwebhook-を使用する場合">Flow Production Tracking のイベント デーモンではなく、Webhook を使用する場合</h2>
 
-<p>Webhook と <a href="https://github.com/shotgunsoftware/shotgunEvents/wiki">ShotGrid のイベント デーモン</a>の機能は似ていますが、重要な違いがいくつかあります。イベント デーモンは、ユーザ独自のサービスを実行、監視、メンテナンスする必要があります。すべてのコードを Python で記述する必要があり、これによって ShotGrid との独自の接続を開始することが可能となります。対照的に、Webhook は複数の接続に対応し、任意のプログラム言語で記述することができます。これらは、<a href="https://aws.amazon.com/lambda/">AWS Lambda</a> などのサーバレス環境でホストしたり、<a href="https://zapier.com">Zapier</a> や <a href="https://ifttt.com">IFTTT</a> などのオンラインで使用可能な任意の自動化プラットフォームをトリガしたりできます。Webhook を使用できるのであれば、Webhook がお勧めのソリューションです。</p>
+<p>Webhook と <a href="https://github.com/shotgunsoftware/shotgunEvents/wiki">Flow Production Tracking のイベント デーモン</a>の機能は似ていますが、重要な違いがいくつかあります。イベント デーモンは、ユーザ独自のサービスを実行、監視、メンテナンスする必要があります。すべてのコードを Python で記述する必要があり、これによって Flow Production Tracking との独自の接続を開始することが可能となります。対照的に、Webhook は複数の接続に対応し、任意のプログラム言語で記述することができます。これらは、<a href="https://aws.amazon.com/lambda/">AWS Lambda</a> などのサーバレス環境でホストしたり、<a href="https://zapier.com">Zapier</a> や <a href="https://ifttt.com">IFTTT</a> などのオンラインで使用可能な任意の自動化プラットフォームをトリガしたりできます。Webhook を使用できるのであれば、Webhook がお勧めのソリューションです。</p>
 
 <h2 id="webhook-を作成する">Webhook を作成する</h2>
 
@@ -8698,7 +8698,7 @@
 
 <h3 id="ssl-証明書を検証する">SSL 証明書を検証する</h3>
 
-<p>SSL 証明書の検証機能はオプションです。Webhook の使用者 URL に対する接続のセキュリティを確保する際に役立ちます。この機能を有効にすると、Webhook の URL に配信された場合、ShotGrid は OpenSSL の証明書検証ルーチンを使用して証明書を検証します。</p>
+<p>SSL 証明書の検証機能はオプションです。Webhook の使用者 URL に対する接続のセキュリティを確保する際に役立ちます。この機能を有効にすると、Webhook の URL に配信された場合、Flow Production Tracking は OpenSSL の証明書検証ルーチンを使用して証明書を検証します。</p>
 
 <p><img src="/ja/guides/images/webhooks/webhooks_validate_ssl_certificate_v2.png" alt="SSL 証明書を検証する" /></p>
 
@@ -8758,7 +8758,7 @@
     <tr>
       <td>不安定</td>
       <td style="text-align: center"><img src="/ja/guides/images/webhooks/webhook_status_unstable.png" alt="不安定" /></td>
-      <td style="text-align: center">Webhook の動作は不安定です。過去 24 時間以内に、一部の配信が宛先に到達しませんでしたが、Webhook が停止していると ShotGrid が判断するには不十分です。</td>
+      <td style="text-align: center">Webhook の動作は不安定です。過去 24 時間以内に、一部の配信が宛先に到達しませんでしたが、Webhook が停止していると Flow Production Tracking が判断するには不十分です。</td>
     </tr>
     <tr>
       <td>失敗</td>
@@ -8800,13 +8800,13 @@
 
 <h4 id="ペイロードの要求">ペイロードの要求</h4>
 
-<p>Webhook の URL に送信されるペイロードには、ShotGrid で発生したイベントと、それをトリガしたユーザを示す情報が格納されています。この情報は、JSON 形式で提供されます。</p>
+<p>Webhook の URL に送信されるペイロードには、Flow Production Tracking で発生したイベントと、それをトリガしたユーザを示す情報が格納されています。この情報は、JSON 形式で提供されます。</p>
 
 <div class="warning-popup">
     <p>
         <i class="fa fa-exclamation-circle"></i>
         <b>ペイロード サイズ
-:</b> 配信のペイロードの最大サイズは 1 MB です。ShotGrid でトリガされたイベントのうち、ペイロード サイズが 1 MB を超えるものは、<code class="highlighter-rouge">new_value</code> および <code class="highlighter-rouge">old_value</code> キーが削除され、発生したイベントの内容と、ShotGrid からイベント ログ エントリ全体を取得する理由および方法を示すメッセージが含まれている <code class="highlighter-rouge">warning</code> キーが追加されます。
+:</b> 配信のペイロードの最大サイズは 1 MB です。Flow Production Tracking でトリガされたイベントのうち、ペイロード サイズが 1 MB を超えるものは、<code class="highlighter-rouge">new_value</code> および <code class="highlighter-rouge">old_value</code> キーが削除され、発生したイベントの内容と、Flow Production Tracking からイベント ログ エントリ全体を取得する理由および方法を示すメッセージが含まれている <code class="highlighter-rouge">warning</code> キーが追加されます。
 
     </p>
 </div>
@@ -8851,7 +8851,7 @@
 
 <h5 id="セッション-uuid">セッション UUID</h5>
 
-<p>ShotGrid でイベントをトリガした <code class="highlighter-rouge">session_uuid</code> が、イベント ペイロードの一部として提供されます。この値は、<a href="https://developer.shotgridsoftware.com/python-api/reference.html?highlight=session_uuid#shotgun_api3.shotgun.Shotgun.set_session_uuid">ShotGrid の Python API</a> に指定できます。この値を指定すると、session_uuid を持つ任意の開いているブラウザ セッションに、API によって生成されたイベントの更新が表示されます。</p>
+<p>Flow Production Tracking でイベントをトリガした <code class="highlighter-rouge">session_uuid</code> が、イベント ペイロードの一部として提供されます。この値は、<a href="https://developer.shotgridsoftware.com/python-api/reference.html?highlight=session_uuid#shotgun_api3.shotgun.Shotgun.set_session_uuid">Flow Production Tracking の Python API</a> に指定できます。この値を指定すると、session_uuid を持つ任意の開いているブラウザ セッションに、API によって生成されたイベントの更新が表示されます。</p>
 
 <h4 id="webhook-からの応答">Webhook からの応答</h4>
 
@@ -8931,7 +8931,7 @@
 
 <h3 id="確認応答">確認応答</h3>
 
-<p>配信を更新して確認応答を含めることができます。配信時に、要求の一部としてヘッダが提供されます。これらのヘッダには、<code class="highlighter-rouge">x-sg-delivery-id</code> キーに格納されている配信レコードの ID が含まれます。この ID を使用して、<a href="https://developer.shotgridsoftware.com/rest-api">ShotGrid REST API</a> を用いて配信レコードを更新し、確認応答を含めることができます。</p>
+<p>配信を更新して確認応答を含めることができます。配信時に、要求の一部としてヘッダが提供されます。これらのヘッダには、<code class="highlighter-rouge">x-sg-delivery-id</code> キーに格納されている配信レコードの ID が含まれます。この ID を使用して、<a href="https://developer.shotgridsoftware.com/rest-api">Flow Production Tracking REST API</a> を用いて配信レコードを更新し、確認応答を含めることができます。</p>
 
 <div class="warning-popup">
     <p>
@@ -8958,7 +8958,7 @@
 
 <h4 id="確認応答の用途">確認応答の用途</h4>
 
-<p>確認応答を使用すると、成功または失敗を示す詳細レポートを帯域外で送信し、Webhook の URL で正常に受信された配信を処理することができます。これにより、ShotGrid からの配信に関する受信ステータスを成功または失敗から切り離し、この配信に関連付けられているイベントを処理できるようになります。その結果、正常に配信されたイベントにデバッグに役立つ追加情報を含めることができます。</p>
+<p>確認応答を使用すると、成功または失敗を示す詳細レポートを帯域外で送信し、Webhook の URL で正常に受信された配信を処理することができます。これにより、Flow Production Tracking からの配信に関する受信ステータスを成功または失敗から切り離し、この配信に関連付けられているイベントを処理できるようになります。その結果、正常に配信されたイベントにデバッグに役立つ追加情報を含めることができます。</p>
 
 <p>適切な例として、<code class="highlighter-rouge">Asset</code> エンティティの作成時にトリガされる Webhook があります。新しい <code class="highlighter-rouge">Asset</code> ごとにディスク上にディレクトリ構造を 1 つ作成する作業を Webhook で行う場合、Webhook の URL は配信を正常に受信できますが、ディスクまたはネットワークが停止しているため、関連ディレクトリを作成することはできません。配信を受信した後、Webhook は、ディレクトリ構造が作成されなかったこと、およびその理由を示す詳細なエラー メッセージを使用して、配信記録を更新することができます。</p>
 

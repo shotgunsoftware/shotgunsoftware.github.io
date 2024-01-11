@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -8166,7 +8166,7 @@
 
 <ul>
   <li>Could not resolve row id for path!</li>
-  <li>Database concurrency problems: The path <code class="highlighter-rouge">&lt;PATH&gt;</code> is already associated with ShotGrid entity <code class="highlighter-rouge">&lt;ENTITY&gt;</code>.</li>
+  <li>Database concurrency problems: The path <code class="highlighter-rouge">&lt;PATH&gt;</code> is already associated with Flow Production Tracking entity <code class="highlighter-rouge">&lt;ENTITY&gt;</code>.</li>
 </ul>
 
 <h2 id="example">Example:</h2>
@@ -8197,13 +8197,13 @@ Source data set: [{'path_cache_row_id': 8711, 'path':
 
 <h2 id="whats-causing-the-error">What’s causing the error?</h2>
 
-<p>This error is pointing to a mismatch between the storage roots as specified in ShotGrid (Site Prefs -&gt; File Management) and c<code class="highlighter-rouge">onfig/core/roots.yml</code> in the Pipeline Configuration.</p>
+<p>This error is pointing to a mismatch between the storage roots as specified in Flow Production Tracking (Site Prefs -&gt; File Management) and c<code class="highlighter-rouge">onfig/core/roots.yml</code> in the Pipeline Configuration.</p>
 
 <p>It often comes up because of a case mismatch in studios running Windows. Their paths are case-insensitive, but our configs are case-sensitive. A difference as simple as <code class="highlighter-rouge">E:\Projects</code> vs <code class="highlighter-rouge">E:\projects</code> can cause this error.</p>
 
 <h2 id="whats-happening-behind-the-scenes">What’s happening behind the scenes?</h2>
 
-<p>The code creates the FilesystemLocation entity in ShotGrid for the path it just created, using ShotGrid’s storage roots to determine the root for the path. Then, it goes to create the same entry in the local cache, and has to determine where to put it in the database. For the local cache, it uses <code class="highlighter-rouge">roots.yml</code> to determine the root for the path, and because of the case mismatch, the path it generates doesn’t match what was just entered in ShotGrid. At this point, it throws the error.</p>
+<p>The code creates the FilesystemLocation entity in Flow Production Tracking for the path it just created, using Flow Production Tracking’s storage roots to determine the root for the path. Then, it goes to create the same entry in the local cache, and has to determine where to put it in the database. For the local cache, it uses <code class="highlighter-rouge">roots.yml</code> to determine the root for the path, and because of the case mismatch, the path it generates doesn’t match what was just entered in Flow Production Tracking. At this point, it throws the error.</p>
 
 <p>It’s especially bad because it doesn’t error cleanly: the folders are created, the FilesystemLocation entries are created, they are not synced in the local path cache, nor will they ever be able to be synced because of the storage root mismatch.</p>
 
@@ -8215,10 +8215,10 @@ Source data set: [{'path_cache_row_id': 8711, 'path':
 
 <ul>
   <li>How to clear the FilesystemLocation entities: ideally you can run <code class="highlighter-rouge">tank unregister_folders</code>. To clear all of them, run tank <code class="highlighter-rouge">unregister_folders --all</code>. (For all the options for <code class="highlighter-rouge">tank unregister_folders</code>, just run it with no arguments and it will output usage notes.)</li>
-  <li>However, because the db is already in a wonky state, this may not work, or may only partially work. Once you’ve run the command, go back to FilesystemLocations in ShotGrid, and confirm that what you expected to be deleted is actually gone. If not, select the bad entities, and move them to trash manually.</li>
+  <li>However, because the db is already in a wonky state, this may not work, or may only partially work. Once you’ve run the command, go back to FilesystemLocations in Flow Production Tracking, and confirm that what you expected to be deleted is actually gone. If not, select the bad entities, and move them to trash manually.</li>
 </ul>
 
-<p>At this point, the FilesystemLocations in ShotGrid are clean, but artists’ local caches may not reflect your changes. The last step is to actually sync the local cache on each user’s machine. To do this, they should run tank <code class="highlighter-rouge">synchronize_folders --full</code>.</p>
+<p>At this point, the FilesystemLocations in Flow Production Tracking are clean, but artists’ local caches may not reflect your changes. The last step is to actually sync the local cache on each user’s machine. To do this, they should run tank <code class="highlighter-rouge">synchronize_folders --full</code>.</p>
 
 <p>Once all those steps are taken, the path cache should be in a good state, and that errors shouldn’t appear anymore.</p>
 

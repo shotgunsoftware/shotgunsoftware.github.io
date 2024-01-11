@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -3364,9 +3364,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -6658,7 +6658,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -9289,9 +9289,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -11655,7 +11655,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -12725,7 +12725,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -12813,10 +12813,10 @@
   <li>You will be starting with <a href="https://github.com/shotgunsoftware/tk-config-default2">a default configuration</a> for your Toolkit project.</li>
 </ul>
 
-<p>There is one more decision to make before you get started, and that is how to resolve the <code class="highlighter-rouge">Episode</code> . The out-of-the-box ShotGrid Hiero/Nuke Studio export process creates <code class="highlighter-rouge">Sequence</code> and <code class="highlighter-rouge">Shot</code> entities on your ShotGrid site based upon the contents of your Nuke Studio project. So, unlike working in Maya with Toolkit where we expect you to have already created the Assets and Tasks, in Nuke Studio we don’t expect your <code class="highlighter-rouge">Episodes</code> <code class="highlighter-rouge">Sequences</code> or <code class="highlighter-rouge">Shots</code> to already be created. With that said, you need to decide how to define the <code class="highlighter-rouge">Episode</code> in Nuke Studio. There are a few possible options here:</p>
+<p>There is one more decision to make before you get started, and that is how to resolve the <code class="highlighter-rouge">Episode</code> . The out-of-the-box Flow Production Tracking Hiero/Nuke Studio export process creates <code class="highlighter-rouge">Sequence</code> and <code class="highlighter-rouge">Shot</code> entities on your Flow Production Tracking site based upon the contents of your Nuke Studio project. So, unlike working in Maya with Toolkit where we expect you to have already created the Assets and Tasks, in Nuke Studio we don’t expect your <code class="highlighter-rouge">Episodes</code> <code class="highlighter-rouge">Sequences</code> or <code class="highlighter-rouge">Shots</code> to already be created. With that said, you need to decide how to define the <code class="highlighter-rouge">Episode</code> in Nuke Studio. There are a few possible options here:</p>
 
 <ul>
-  <li>Create the Episodes up front in ShotGrid and configure the Nuke Studio Toolkit integrations to work in the context of an Episode, so that at export time you can get the <code class="highlighter-rouge">Episode</code> entity from the current scene context.</li>
+  <li>Create the Episodes up front in Flow Production Tracking and configure the Nuke Studio Toolkit integrations to work in the context of an Episode, so that at export time you can get the <code class="highlighter-rouge">Episode</code> entity from the current scene context.</li>
   <li>Assume <code class="highlighter-rouge">Episode</code> entities haven’t already been created and make use of the Nuke Studio’s tagging feature to tag the Sequence with the Episode name and use that to resolve our <code class="highlighter-rouge">Episode</code> at export time.</li>
 </ul>
 
@@ -12832,7 +12832,7 @@
 
 <h2 id="hooks-and-settings">Hooks and settings</h2>
 
-<p>In order to get the ShotGrid Export process to handle our <code class="highlighter-rouge">Episode</code> correctly, you will need to modify some of the export hooks. In this article we’ll assume you know what <a href="https://developer.shotgridsoftware.com/312b792f/#using-frameworks-from-hooks">hooks</a> are, and are comfortable with overriding the base implementations.</p>
+<p>In order to get the Flow Production Tracking Export process to handle our <code class="highlighter-rouge">Episode</code> correctly, you will need to modify some of the export hooks. In this article we’ll assume you know what <a href="https://developer.shotgridsoftware.com/312b792f/#using-frameworks-from-hooks">hooks</a> are, and are comfortable with overriding the base implementations.</p>
 
 <p>There are two export hooks that will help you enable episodes.</p>
 
@@ -12843,7 +12843,7 @@
 
 <p>NOTE: There is a third hook called <code class="highlighter-rouge">hiero_translate_template.py</code> . We are not going to use it in this example, however, you will need it if you only wanted to replace Sequences with Episodes and maintain a two layer hierarchy. We’ll cover this a bit more at the end of the article.</p>
 
-<p>Modify the <code class="highlighter-rouge">hiero_get_shot.py</code> so you can find the Episode, and create an entity for it in ShotGrid , and modify the <code class="highlighter-rouge">hiero_resolve_custom_strings.py</code> so that Nuke Studio knows what value to give to the {Episode} key in the path. Here are the steps in more detail:</p>
+<p>Modify the <code class="highlighter-rouge">hiero_get_shot.py</code> so you can find the Episode, and create an entity for it in Flow Production Tracking , and modify the <code class="highlighter-rouge">hiero_resolve_custom_strings.py</code> so that Nuke Studio knows what value to give to the {Episode} key in the path. Here are the steps in more detail:</p>
 
 <h3 id="1-add-episode-field">1. Add Episode Field</h3>
 
@@ -12858,9 +12858,9 @@
 
 <h3 id="2-hiero_get_shot-hook">2. hiero_get_shot hook</h3>
 
-<p>Now you need to tell the export process how to find the Episode name and create the <code class="highlighter-rouge">Episode</code> in ShotGrid , using the <code class="highlighter-rouge">hiero_get_shot.py</code> hook.</p>
+<p>Now you need to tell the export process how to find the Episode name and create the <code class="highlighter-rouge">Episode</code> in Flow Production Tracking , using the <code class="highlighter-rouge">hiero_get_shot.py</code> hook.</p>
 
-<p>The <a href="https://areadownloads.autodesk.com/wdm/shotgrid/tu-episodic-nuke.zip">default version of the hook (hiero_get_shot.py)</a> will return the <code class="highlighter-rouge">Shot</code> from ShotGrid with the same name as the TrackItem. The <code class="highlighter-rouge">Shot</code> must also be linked to a <code class="highlighter-rouge">Sequence</code> with the same name as the Nuke Studio sequence item. If the <code class="highlighter-rouge">Sequence</code> or <code class="highlighter-rouge">Shot</code> doesn’t exist in ShotGrid , the hook will create them. You’re adding another level of hierarchy so you need to tell the hook to also create the <code class="highlighter-rouge">Episode</code> if it doesn’t exist.</p>
+<p>The <a href="https://areadownloads.autodesk.com/wdm/shotgrid/tu-episodic-nuke.zip">default version of the hook (hiero_get_shot.py)</a> will return the <code class="highlighter-rouge">Shot</code> from Flow Production Tracking with the same name as the TrackItem. The <code class="highlighter-rouge">Shot</code> must also be linked to a <code class="highlighter-rouge">Sequence</code> with the same name as the Nuke Studio sequence item. If the <code class="highlighter-rouge">Sequence</code> or <code class="highlighter-rouge">Shot</code> doesn’t exist in Flow Production Tracking , the hook will create them. You’re adding another level of hierarchy so you need to tell the hook to also create the <code class="highlighter-rouge">Episode</code> if it doesn’t exist.</p>
 
 <p>And, since the <code class="highlighter-rouge">Sequence</code> is linked to the <code class="highlighter-rouge">Episode</code> , you should tie this into the code that looks up the <code class="highlighter-rouge">Sequence</code> , ( <code class="highlighter-rouge">get_shot_parent()</code> method).</p>
 
@@ -12877,7 +12877,7 @@
 
 class HieroGetShot(Hook):
     """
-    Return a  ShotGrid  Shot dictionary for the given Hiero items
+    Return a  Flow Production Tracking  Shot dictionary for the given Hiero items
     """
 
     def execute(self, task, item, data, **kwargs):
@@ -12892,7 +12892,7 @@ class HieroGetShot(Hook):
        # shot parent field
        parent_field = "sg_sequence"
 
-       # grab shot from  ShotGrid 
+       # grab shot from  Flow Production Tracking
        sg = self.parent.shotgun
        filter = [
            ["project", "is", self.parent.context.project],
@@ -12914,7 +12914,7 @@ class HieroGetShot(Hook):
                "project": self.parent.context.project,
            }
            shot = sg.create("Shot", shot_data, return_fields=fields)
-           self.parent.log_info("Created Shot in  ShotGrid : %s" % shot_data)
+           self.parent.log_info("Created Shot in  Flow Production Tracking : %s" % shot_data)
        else:
            shot = shots[0]
 
@@ -12962,7 +12962,7 @@ class HieroGetShot(Hook):
        if nuke_studio_episode.guid() in data["epi_cache"]:
            return data["epi_cache"][nuke_studio_episode.guid()]
 
-       # episode not found in cache, grab it from  ShotGrid 
+       # episode not found in cache, grab it from  Flow Production Tracking
        sg = self.parent.shotgun
        filters = [
            ["project", "is", self.parent.context.project],
@@ -12981,7 +12981,7 @@ class HieroGetShot(Hook):
                "project": self.parent.context.project,
            }
            episode = sg.create("Episode", epi_data)
-           self.parent.log_info("Created Episode in  ShotGrid : %s" % epi_data)
+           self.parent.log_info("Created Episode in  Flow Production Tracking : %s" % epi_data)
        else:
            # we found one episode matching this name in , so we will resuse it, instead of creating a new one
            episode = episodes[0]
@@ -12994,7 +12994,7 @@ class HieroGetShot(Hook):
     def get_shot_parent(self, hiero_sequence, data, **kwargs):
         """
         Given a Hiero sequence and data cache, return the corresponding entity
-        in  ShotGrid  to serve as the parent for contained Shots.
+        in  Flow Production Tracking  to serve as the parent for contained Shots.
 
         :param hiero_sequence: A Hiero sequence object
         :param data: A dictionary with cached parent data.
@@ -13011,7 +13011,7 @@ class HieroGetShot(Hook):
         
         episode = self.get_episode(data, hiero_sequence) 
         
-        # parent not found in cache, grab it from  ShotGrid  
+        # parent not found in cache, grab it from  Flow Production Tracking
         
         sg = self.parent.shotgun filter = [ 
             ["project", "is", self.parent.context.project], 
@@ -13039,7 +13039,7 @@ class HieroGetShot(Hook):
             
             parent = sg.create(par_entity_type, par_data) 
             self.parent.log_info( 
-                "Created %s in  ShotGrid : %s" % (par_entity_type, par_data)
+                "Created %s in  Flow Production Tracking : %s" % (par_entity_type, par_data)
                 )
         else: 
             parent = parents[0] 
@@ -13059,7 +13059,7 @@ class HieroGetShot(Hook):
 
 <h4 id="getting-the-sequence">Getting the Sequence</h4>
 
-<p>With the code above, we’ve modified the <code class="highlighter-rouge">get_shot_parent()</code> method. It now uses the <code class="highlighter-rouge">Episode</code> returned from the new <code class="highlighter-rouge">get_episode()</code> method when finding and creating the <code class="highlighter-rouge">Sequence</code>. When checking for a pre-existing <code class="highlighter-rouge">Sequence</code> in the ShotGrid database it now filters by the <code class="highlighter-rouge">episode&lt;/code&lt; field</code>, and when it creates the <code class="highlighter-rouge">Sequence</code>, it populates the Sequence’s <code class="highlighter-rouge">episode</code> field with the <code class="highlighter-rouge">Episode</code> returned from <code class="highlighter-rouge">get_episode()</code>.</p>
+<p>With the code above, we’ve modified the <code class="highlighter-rouge">get_shot_parent()</code> method. It now uses the <code class="highlighter-rouge">Episode</code> returned from the new <code class="highlighter-rouge">get_episode()</code> method when finding and creating the <code class="highlighter-rouge">Sequence</code>. When checking for a pre-existing <code class="highlighter-rouge">Sequence</code> in the Flow Production Tracking database it now filters by the <code class="highlighter-rouge">episode&lt;/code&lt; field</code>, and when it creates the <code class="highlighter-rouge">Sequence</code>, it populates the Sequence’s <code class="highlighter-rouge">episode</code> field with the <code class="highlighter-rouge">Episode</code> returned from <code class="highlighter-rouge">get_episode()</code>.</p>
 
 <h4 id="getting-the-episode">Getting the Episode</h4>
 
@@ -13067,13 +13067,13 @@ class HieroGetShot(Hook):
 
 <p>In this guide you are assigning the episode in Nuke Studio by using Tags. For example, you could create a Tag in Nuke Studio named “Ep01”. Then you would apply that Tag to the sequence in Nuke Studio.</p>
 
-<p>At a high level the <code class="highlighter-rouge">get_episode()</code> method looks at all of the Tags applied to the sequence item in Nuke Studio, and if it encounters one that starts with the string “Ep”, it assumes that is the tag defining the Episode name. The method then finds and returns the matching <code class="highlighter-rouge">Episode</code> from ShotGrid and creates it if it doesn’t yet exist. It also caches this information so it doesn’t have to perform the costly find call again.</p>
+<p>At a high level the <code class="highlighter-rouge">get_episode()</code> method looks at all of the Tags applied to the sequence item in Nuke Studio, and if it encounters one that starts with the string “Ep”, it assumes that is the tag defining the Episode name. The method then finds and returns the matching <code class="highlighter-rouge">Episode</code> from Flow Production Tracking and creates it if it doesn’t yet exist. It also caches this information so it doesn’t have to perform the costly find call again.</p>
 
 <p><em>If you wanted to get the episode in a different way, for example from context or by taking the first section of the Sequence or Shot name, then use that logic in this method.</em></p>
 
 <h4 id="getting-the-shot">Getting the Shot</h4>
 
-<p>The main purpose of the hiero_get_shot hook is to return the Shot data from ShotGrid. You don’t actually need to touch the logic for getting the shot, as you only need to modify how the <code class="highlighter-rouge">Sequence</code> got its parent. If you want to also link the <code class="highlighter-rouge">Shot</code> with the <code class="highlighter-rouge">Episode</code> through a custom field, then you would need to modify the code in the execute method as well. Access the <code class="highlighter-rouge">Episode</code> from the <code class="highlighter-rouge">Sequence</code> like <code class="highlighter-rouge">parent[“episode”]</code> and then link it up to the Shot in the create call.</p>
+<p>The main purpose of the hiero_get_shot hook is to return the Shot data from Flow Production Tracking. You don’t actually need to touch the logic for getting the shot, as you only need to modify how the <code class="highlighter-rouge">Sequence</code> got its parent. If you want to also link the <code class="highlighter-rouge">Shot</code> with the <code class="highlighter-rouge">Episode</code> through a custom field, then you would need to modify the code in the execute method as well. Access the <code class="highlighter-rouge">Episode</code> from the <code class="highlighter-rouge">Sequence</code> like <code class="highlighter-rouge">parent[“episode”]</code> and then link it up to the Shot in the create call.</p>
 
 <h3 id="3-hiero_resolve_custom_stringspy">3. Hiero_resolve_custom_strings.py</h3>
 
@@ -13175,7 +13175,7 @@ return fields["Episode"]
 
 <p><img src="/en/guides/pipeline-integrations/workflows/images/tutorial/tu-episodic-nuke-mceclip3-05.png" alt="Export Structure hierarchy" /></p>
 
-<p>Once you click export, it should then create your Episodes, Sequences, and Shots in your ShotGrid site, as well as the folder structure on disk. If you run into issues along the way, remember to check the Nuke Studio script editor or <a href="https://developer.shotgridsoftware.com/38c5c024/"> ShotGrid logs (tk-nukestudio.log)</a> for any errors that you might encounter.</p>
+<p>Once you click export, it should then create your Episodes, Sequences, and Shots in your Flow Production Tracking site, as well as the folder structure on disk. If you run into issues along the way, remember to check the Nuke Studio script editor or <a href="https://developer.shotgridsoftware.com/38c5c024/"> Flow Production Tracking logs (tk-nukestudio.log)</a> for any errors that you might encounter.</p>
 
 <p>That completes this guide. Of course this is just one of the many ways to achieve working with episodes, and it’s up to you to figure out which approach and structure works best for your studio.</p>
 

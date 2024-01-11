@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -4800,7 +4800,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -7431,9 +7431,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -9797,7 +9797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -10867,7 +10867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -10944,13 +10944,13 @@
 
 <p>プラグイン ファイルは、環境設定ファイルで指定されたプラグイン パス内の <em>.py</em> ファイルです。</p>
 
-<p>コードのダウンロード先の <code class="highlighter-rouge">src/examplePlugins</code> フォルダには、サンプル プラグインがいくつか用意されています。これらは、生成された特定のイベントを検索して処理し、ShotGrid インスタンスの他の値を変更するための独自のプラグインを構築する方法の簡単な例を示します。</p>
+<p>コードのダウンロード先の <code class="highlighter-rouge">src/examplePlugins</code> フォルダには、サンプル プラグインがいくつか用意されています。これらは、生成された特定のイベントを検索して処理し、Flow Production Tracking インスタンスの他の値を変更するための独自のプラグインを構築する方法の簡単な例を示します。</p>
 
 <p>プラグインを更新するたびにデーモンを再起動する必要はありません。デーモンは、プラグインが更新されたことを検出して自動的に再ロードします。</p>
 
 <p>プラグインがエラーを生成しても、デーモンがクラッシュすることはありません。プラグインは、再度更新されるまで無効になります(修正した場合も同様に動作するようリクエスト中)。その他のプラグインは引き続き実行され、イベントが処理されます。デーモンは、中断されたプラグインが正常に処理された最後のイベント ID を追跡します。プラグインが更新(および修正)されると、デーモンはプラグインを再ロードし、プラグインが終了した時点からイベントを処理しようとします。すべて正常に実行されると、デーモンは現在のイベントまでのプラグインを捕捉し、すべてのプラグインを通常のものとして使用してイベントを処理し続けます。</p>
 
-<p>ShotGrid イベント処理プラグインは、コールバック登録関数と任意の数のコールバックという 2 つの主要な部分で構成されます。</p>
+<p>Flow Production Tracking イベント処理プラグインは、コールバック登録関数と任意の数のコールバックという 2 つの主要な部分で構成されます。</p>
 
 <p><a id="registerCallbacks_function"></a></p>
 <h2 id="registercallbacks-関数">registerCallbacks 関数</h2>
@@ -10967,7 +10967,7 @@
 
 <p><a href="/ja/b04a53ae/#Registrar"><code class="highlighter-rouge">Registrar</code></a> には非常に重要なメソッドが 1 つあります: <a href="/ja/b04a53ae/#registercallback"><code class="highlighter-rouge">Registrar.registerCallback</code></a></p>
 
-<p>ShotGrid イベントを処理する必要がある関数ごとに、<a href="/ja/b04a53ae/#registerCallback"><code class="highlighter-rouge">Registrar.registerCallback</code></a> を、適切な引数で 1 回ずつ呼び出します。</p>
+<p>Flow Production Tracking イベントを処理する必要がある関数ごとに、<a href="/ja/b04a53ae/#registerCallback"><code class="highlighter-rouge">Registrar.registerCallback</code></a> を、適切な引数で 1 回ずつ呼び出します。</p>
 
 <p>関数は必要な数だけ登録できます。また、ファイル内のすべての関数をイベント処理コールバックとして登録する必要はありません。</p>
 
@@ -10977,9 +10977,9 @@
 <p>システムに登録されるコールバックは、次の 4 つの引数を取る必要があります。</p>
 
 <ul>
-  <li>追加情報について ShotGrid にクエリーする必要がある場合の ShotGrid 接続インスタンス。</li>
+  <li>追加情報について Flow Production Tracking にクエリーする必要がある場合の Flow Production Tracking 接続インスタンス。</li>
   <li>レポートに使用する必要がある Python Logger オブジェクト。エラー メッセージと極めて重要なメッセージは、設定された任意のユーザに電子メールで送信されます。</li>
-  <li>処理する ShotGrid イベント。</li>
+  <li>処理する Flow Production Tracking イベント。</li>
   <li>コールバックの登録時に渡される <code class="highlighter-rouge">args</code> 値。(<a href="/ja/b04a53ae/#wiki-registerCallback"><code class="highlighter-rouge">Registrar.registerCallback</code></a> を参照)</li>
 </ul>
 
@@ -11014,13 +11014,13 @@
 <p><a id="Robust"></a></p>
 <h2 id="堅牢なプラグインの構築">堅牢なプラグインの構築</h2>
 
-<p>デーモンは ShotGrid に対してクエリーを実行しますが、find() コマンドが失敗した場合に再試行する機能が組み込まれているため、デーモン自体には一定の堅牢性があります。</p>
+<p>デーモンは Flow Production Tracking に対してクエリーを実行しますが、find() コマンドが失敗した場合に再試行する機能が組み込まれているため、デーモン自体には一定の堅牢性があります。</p>
 
 <p><a href="https://github.com/shotgunsoftware/shotgunEvents/blob/master/src/shotgunEventDaemon.py#L456">https://github.com/shotgunsoftware/shotgunEvents/blob/master/src/shotgunEventDaemon.py#L456</a></p>
 
-<p>プラグインにネットワーク リソース(ShotGrid または他のリソース)が必要な場合は、独自の再試行メカニズムや堅牢性を提供する必要があります。ShotGrid アクセスの場合、デーモンの内容を確認して、プラグインにその機能を提供できるヘルパー関数またはクラスを作成することができます。</p>
+<p>プラグインにネットワーク リソース(Flow Production Tracking または他のリソース)が必要な場合は、独自の再試行メカニズムや堅牢性を提供する必要があります。Flow Production Tracking アクセスの場合、デーモンの内容を確認して、プラグインにその機能を提供できるヘルパー関数またはクラスを作成することができます。</p>
 
-<p>ShotGrid Python API は既にネットワークの問題に対してあるレベルの再試行を実行できますが、数分間実行される ShotGrid のメンテナンス ウィンドウのタイミングにぶつかったり、ネットワーク障害が発生した場合、これでは十分ではない場合があります。</p>
+<p>Flow Production Tracking Python API は既にネットワークの問題に対してあるレベルの再試行を実行できますが、数分間実行される Flow Production Tracking のメンテナンス ウィンドウのタイミングにぶつかったり、ネットワーク障害が発生した場合、これでは十分ではない場合があります。</p>
 
 <p><a href="https://github.com/shotgunsoftware/python-api/blob/master/shotgun_api3/shotgun.py#L1554">https://github.com/shotgunsoftware/python-api/blob/master/shotgun_api3/shotgun.py#L1554</a></p>
 

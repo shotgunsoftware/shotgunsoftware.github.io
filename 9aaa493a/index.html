@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -8166,7 +8166,7 @@
     <p>
         <i class="fa fa-exclamation-circle"></i>
         <b>Caution
-:</b> Moving a project location mid project can have many ramifications even extending beyond ShotGrid Toolkit. It should not be undertaken lightly.
+:</b> Moving a project location mid project can have many ramifications even extending beyond Flow Production Tracking Toolkit. It should not be undertaken lightly.
 
     </p>
 </div>
@@ -8175,11 +8175,11 @@
 
 <ul>
   <li>Copy (or move) your project files from the old location to the new location.</li>
-  <li>In ShotGrid, navigate to the <strong>Admin &gt; Site Preferences</strong> page and open the <strong>File Management</strong> section.
-  <img src="/en/quick-answers/administering/images/shotgun-storage-roots.png" alt="ShotGrid storage roots section in the site preferences." /></li>
+  <li>In Flow Production Tracking, navigate to the <strong>Admin &gt; Site Preferences</strong> page and open the <strong>File Management</strong> section.
+  <img src="/en/quick-answers/administering/images/shotgun-storage-roots.png" alt="Flow Production Tracking storage roots section in the site preferences." /></li>
   <li>Update the Local File Storage named “primary” with the paths for each platform to the new storage for your project files. If you’re not using a specific platform, leave it blank.</li>
   <li>Click on the <strong>“Save Changes”</strong> button on the top or bottom of the page.</li>
-  <li>Update your <code class="highlighter-rouge">config/core/roots.yml</code> file in your project configuration to match the new path values you just saved in ShotGrid.</li>
+  <li>Update your <code class="highlighter-rouge">config/core/roots.yml</code> file in your project configuration to match the new path values you just saved in Flow Production Tracking.</li>
 </ul>
 
 <p>Toolkit stores publish paths as relative paths from a storage root. So with the old storage root the path was expanded like so:</p>
@@ -8192,7 +8192,7 @@
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[asset-storage]/assets/Character/betty =&gt; /mnt/bigdrive/foo/assets/Character/betty
 </code></pre></div></div>
 
-<p>and we don’t need to worry about updating any other publish information in ShotGrid or Toolkit!</p>
+<p>and we don’t need to worry about updating any other publish information in Flow Production Tracking or Toolkit!</p>
 
 <div class="warning-popup">
     <p>
@@ -8209,7 +8209,7 @@
 
 <h2 id="versions">Versions</h2>
 
-<p>If you have Version entities in ShotGrid that store information in the Path to Movie or Path to Frames fields that are affected by this change, these will also have to be updated to point to the new location since these fields are string fields that contain an absolute path to the media.</p>
+<p>If you have Version entities in Flow Production Tracking that store information in the Path to Movie or Path to Frames fields that are affected by this change, these will also have to be updated to point to the new location since these fields are string fields that contain an absolute path to the media.</p>
 
 
             </div>  

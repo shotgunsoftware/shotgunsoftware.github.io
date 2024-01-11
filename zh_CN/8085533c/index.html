@@ -11,12 +11,12 @@
 <link rel="alternate" hreflang="zh_CN" href="/zh_CN/8085533c/"/>
 
 
-  <title>ShotGrid 集成管理员手册 - SG Developer</title>
+  <title>Flow Production Tracking 集成管理员手册 - SG Developer</title>
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/zh_CN/7584b650/?title=Alias+ShotGrid+%E5%B7%A5%E4%BD%9C%E6%B5%81"
+                href="/zh_CN/7584b650/?title=Alias+Flow+Production+Tracking+%E5%B7%A5%E4%BD%9C%E6%B5%81"
             >
-                Alias ShotGrid 工作流
+                Alias Flow Production Tracking 工作流
             </a>
             </div>
 
@@ -3483,9 +3483,9 @@
                     class="nav-entry-selected"
                 
                 style='margin-left:40px'
-                href="/zh_CN/8085533c/?title=ShotGrid+%E9%9B%86%E6%88%90%E7%AE%A1%E7%90%86%E5%91%98%E6%89%8B%E5%86%8C"
+                href="/zh_CN/8085533c/?title=Flow+Production+Tracking+%E9%9B%86%E6%88%90%E7%AE%A1%E7%90%86%E5%91%98%E6%89%8B%E5%86%8C"
             >
-                ShotGrid 集成管理员手册
+                Flow Production Tracking 集成管理员手册
             </a>
             </div>
 
@@ -10346,7 +10346,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -12977,9 +12977,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -15343,7 +15343,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -16413,7 +16413,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -16486,11 +16486,11 @@
 <div class="article-body markdown" data-swiftype-name="body" data-swiftype-type="text">
   
 
-            <h1 id="shotgrid-集成管理员手册">ShotGrid 集成管理员手册</h1>
+            <h1 id="shotgrid-集成管理员手册">Flow Production Tracking 集成管理员手册</h1>
 
 <h2 id="简介">简介</h2>
 
-<p>本文档是面向 ShotGrid 集成管理员的手册。它适用于三个角色：用户、管理员和开发人员。我们的<a href="https://developer.shotgridsoftware.com/zh_CN/d587be80/">用户手册</a>面向将在其日常工作流中使用 ShotGrid 集成的最终用户（也就是艺术家），我们的<a href="https://developer.shotgridsoftware.com/zh_CN/93c6e555/">开发人员手册</a>是面向编写 Python 代码以扩展功能的人员的技术文档。本文档适用于面向在工作室实施 ShotGrid 集成、管理软件版本以及为发布的文件做出存储决策的人员。</p>
+<p>本文档是面向 Flow Production Tracking 集成管理员的手册。它适用于三个角色：用户、管理员和开发人员。我们的<a href="https://developer.shotgridsoftware.com/zh_CN/d587be80/">用户手册</a>面向将在其日常工作流中使用 Flow Production Tracking 集成的最终用户（也就是艺术家），我们的<a href="https://developer.shotgridsoftware.com/zh_CN/93c6e555/">开发人员手册</a>是面向编写 Python 代码以扩展功能的人员的技术文档。本文档适用于面向在工作室实施 Flow Production Tracking 集成、管理软件版本以及为发布的文件做出存储决策的人员。</p>
 
 <h2 id="标准工作流配置">标准工作流配置</h2>
 
@@ -16498,7 +16498,7 @@
 
 <h3 id="基本配置">基本配置</h3>
 
-<p>即时可用的集成设计为在不需要设置或修改任何配置文件的情况下运行。当您使用即时可用的集成时，没有要管理的内容，但 Toolkit 在后台使用隐式工作流配置，我们称此工作流配置为基本配置。基本配置使三个 Toolkit 应用（面板、发布器和加载器）可用于所有受支持的软件包，并根据您在 ShotGrid 中的软件实体来确定在 ShotGrid Desktop 中显示哪些软件包。基本配置不包含文件系统位置支持。当您在项目中使用即时可用的集成时，无论何时启动 Desktop，都会自动更新您的基本配置副本，因此，您始终拥有最新版本的集成。您可以<a href="https://community.shotgridsoftware.com/tags/c/pipeline/6/release-notes">在此处订阅发行说明</a>，并<a href="https://github.com/shotgunsoftware/tk-config-basic/">在此处查看 GitHub 中的基本配置</a>。</p>
+<p>即时可用的集成设计为在不需要设置或修改任何配置文件的情况下运行。当您使用即时可用的集成时，没有要管理的内容，但 Toolkit 在后台使用隐式工作流配置，我们称此工作流配置为基本配置。基本配置使三个 Toolkit 应用（面板、发布器和加载器）可用于所有受支持的软件包，并根据您在 Flow Production Tracking 中的软件实体来确定在 Flow Production Tracking Toolkit 中显示哪些软件包。基本配置不包含文件系统位置支持。当您在项目中使用即时可用的集成时，无论何时启动 Desktop，都会自动更新您的基本配置副本，因此，您始终拥有最新版本的集成。您可以<a href="https://community.shotgridsoftware.com/tags/c/pipeline/6/release-notes">在此处订阅发行说明</a>，并<a href="https://github.com/shotgunsoftware/tk-config-basic/">在此处查看 GitHub 中的基本配置</a>。</p>
 
 <h3 id="默认配置">默认配置</h3>
 
@@ -16523,11 +16523,11 @@
 
 <h2 id="配置软件启动">配置软件启动</h2>
 
-<p>可以使用 ShotGrid 轻松地自动检测系统上的宿主应用程序：只需启动 ShotGrid Desktop，选择一个项目，Desktop 将显示它在标准应用程序目录中找到的所有受支持软件包的启动程序。但我们还提供了强大的工具，用于对您工作室中的软件进行更细致的管理。您可以限制应用程序对特定项目、组甚至单个用户的可见性。您可以指定版本、在您的整个站点内取消激活某个给定软件包以及将软件包分组在一起。所有这些均通过 ShotGrid 中的软件实体进行管理。</p>
+<p>可以使用 Flow Production Tracking 轻松地自动检测系统上的宿主应用程序：只需启动 Flow Production Tracking Toolkit，选择一个项目，Desktop 将显示它在标准应用程序目录中找到的所有受支持软件包的启动程序。但我们还提供了强大的工具，用于对您工作室中的软件进行更细致的管理。您可以限制应用程序对特定项目、组甚至单个用户的可见性。您可以指定版本、在您的整个站点内取消激活某个给定软件包以及将软件包分组在一起。所有这些均通过 Flow Production Tracking 中的软件实体进行管理。</p>
 
-<p>当您创建新 ShotGrid 站点时，该站点将有一组默认的软件实体 - 每个受支持的宿主应用程序一个实体。您可以修改这些实体以及添加自己的实体，从而以您所需的方式管理 Desktop 中显示的软件。</p>
+<p>当您创建新 Flow Production Tracking 站点时，该站点将有一组默认的软件实体 - 每个受支持的宿主应用程序一个实体。您可以修改这些实体以及添加自己的实体，从而以您所需的方式管理 Desktop 中显示的软件。</p>
 
-<p>要在 ShotGrid 中查看您的软件实体，请单击屏幕右上角的配置文件图标打开“管理”(Admin)菜单，然后选择 <code class="highlighter-rouge">Software</code>。</p>
+<p>要在 Flow Production Tracking 中查看您的软件实体，请单击屏幕右上角的配置文件图标打开“管理”(Admin)菜单，然后选择 <code class="highlighter-rouge">Software</code>。</p>
 
 <p>软件实体具有以下字段：</p>
 
@@ -16538,7 +16538,7 @@
   <li><strong>插件(Engine)：</strong>内容创建工具的集成名称。</li>
   <li><strong>产品：</strong>对于包含变体的软件包（例如，Houdini 与 Houdini FX），可以在此处指定以逗号分隔的列表。仅在自动检测模式下有效，在手动模式下无效。</li>
   <li><strong>版本(Versions)：</strong>要显示的软件的具体版本。可以在此处指定以逗号分隔的列表。仅在自动检测模式下有效，在手动模式下无效。</li>
-  <li><strong>组(Group)：</strong><code class="highlighter-rouge">Group</code> 字段值相同的实体将分组在 Desktop 中的单个图标和 ShotGrid 中的单个菜单下。例如，可以创建包含 Houdini 和 Nuke 的特效组。</li>
+  <li><strong>组(Group)：</strong><code class="highlighter-rouge">Group</code> 字段值相同的实体将分组在 Desktop 中的单个图标和 Flow Production Tracking 中的单个菜单下。例如，可以创建包含 Houdini 和 Nuke 的特效组。</li>
   <li><strong>默认组(Group Default)：</strong>如果某个组的一个成员选中了 <code class="highlighter-rouge">Group Default</code>，则单击该组的图标或菜单项将启动该软件。</li>
   <li><strong>项目(Projects)：</strong>将软件限制到特定项目的一种方式。</li>
   <li><strong>用户限制(User Restrictions)：</strong>将软件限制到特定用户或组的一种方式。</li>
@@ -16552,14 +16552,14 @@
 
 <p>假设您的文件系统上有三个版本的 Maya：Maya 2016、Maya 2017 和 Maya 2018。您希望它们均可供您的艺术家使用，但想要将它们分组在 Desktop 中单个图标下。</p>
 
-<p>如果这三个版本的 Maya 安装在您的文件系统上的标准位置，则会自动完成上述操作。当您在 Desktop 中选择一个项目时，它将扫描本地计算机上的标准应用程序目录并找到三个版本。由于您在 ShotGrid 中已有一个 Maya 软件实体，在没有指定特定版本或路径的情况下，它将在 Desktop 中显示其找到的所有版本。</p>
+<p>如果这三个版本的 Maya 安装在您的文件系统上的标准位置，则会自动完成上述操作。当您在 Desktop 中选择一个项目时，它将扫描本地计算机上的标准应用程序目录并找到三个版本。由于您在 Flow Production Tracking 中已有一个 Maya 软件实体，在没有指定特定版本或路径的情况下，它将在 Desktop 中显示其找到的所有版本。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/Integration-admin-guide/maya_software.png" alt="" /></p>
 
 <p>下面是需要注意的一些事项：</p>
 
 <ul>
-  <li>ShotGrid 自动检测您的软件时，单个软件实体会生成所有版本的菜单项。</li>
+  <li>Flow Production Tracking 自动检测您的软件时，单个软件实体会生成所有版本的菜单项。</li>
   <li>任何“路径”(Path)字段均未指定值。软件实体处于自动检测模式，因此假定应用位于标准位置。</li>
 </ul>
 
@@ -16567,7 +16567,7 @@
 
 <h3 id="示例对同一应用程序的多个版本分组手动模式">示例：对同一应用程序的多个版本分组，手动模式</h3>
 
-<p>将 Maya 存储在您工作室中的非标准文件系统位置完全没有问题。您只需要创建自己的软件实体，并指定路径以让 ShotGrid 知道在何处找到您的软件。您的设置可能如下所示：</p>
+<p>将 Maya 存储在您工作室中的非标准文件系统位置完全没有问题。您只需要创建自己的软件实体，并指定路径以让 Flow Production Tracking 知道在何处找到您的软件。您的设置可能如下所示：</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/Integration-admin-guide/maya_group_software.png" alt="" /></p>
 
@@ -16612,30 +16612,30 @@
 
 <h3 id="示例添加自己的软件">示例：添加自己的软件</h3>
 
-<p>出于以下一些原因，除了 ShotGrid Desktop 已在您的系统上自动检测到的软件外，您可能还会添加新的软件实体：</p>
+<p>出于以下一些原因，除了 Flow Production Tracking Toolkit 已在您的系统上自动检测到的软件外，您可能还会添加新的软件实体：</p>
 
 <ul>
   <li>您要通过 Desktop 使没有插件的应用程序可供您的用户使用。</li>
   <li>您有我们没有为其提供集成的内部软件或第三方软件，且您已为其编写自己的插件。</li>
-  <li>您的软件不在标准位置，因此您要手动在 ShotGrid 中指定该软件的路径。（这是在上面的“对同一应用程序的多个版本分组，手动模式”示例中所述的情况。）</li>
+  <li>您的软件不在标准位置，因此您要手动在 Flow Production Tracking 中指定该软件的路径。（这是在上面的“对同一应用程序的多个版本分组，手动模式”示例中所述的情况。）</li>
 </ul>
 
-<p>在这些情况下，您可以添加自己的软件实体。将需要为 <code class="highlighter-rouge">Software Name</code> 字段设置值。如果您的软件使用的是内部插件，请在 <code class="highlighter-rouge">Engine</code> 字段中指定插件名称。某些工作室可能要在 Desktop 中添加没有 ShotGrid 集成的应用，以便为艺术家提供方便。您的艺术家可以直接从 Desktop 启动相应的应用。您甚至可以使用上述所有设置来管理版本和使用限制。在这种情况下，请将 <code class="highlighter-rouge">Engine</code> 字段保留为空，但需要至少为 <code class="highlighter-rouge">Mac Path</code>、<code class="highlighter-rouge">Linux Path</code> 和 <code class="highlighter-rouge">Windows Path</code> 之一指定值。</p>
+<p>在这些情况下，您可以添加自己的软件实体。将需要为 <code class="highlighter-rouge">Software Name</code> 字段设置值。如果您的软件使用的是内部插件，请在 <code class="highlighter-rouge">Engine</code> 字段中指定插件名称。某些工作室可能要在 Desktop 中添加没有 Flow Production Tracking 集成的应用，以便为艺术家提供方便。您的艺术家可以直接从 Desktop 启动相应的应用。您甚至可以使用上述所有设置来管理版本和使用限制。在这种情况下，请将 <code class="highlighter-rouge">Engine</code> 字段保留为空，但需要至少为 <code class="highlighter-rouge">Mac Path</code>、<code class="highlighter-rouge">Linux Path</code> 和 <code class="highlighter-rouge">Windows Path</code> 之一指定值。</p>
 
 <h2 id="配置发布的文件路径解析">配置发布的文件路径解析</h2>
 
-<p>发布文件时，发布器将在 ShotGrid 中创建 PublishedFile 实体，其中包含名为 <code class="highlighter-rouge">Path</code> 的<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_data_management_ar_field_types_html">文件/链接</a>字段。随后，其他用户可能会尝试使用加载器将此文件加载到自己的工作会话中。加载器使用复杂的逻辑来解析多个操作系统中已发布的文件的有效本地路径。</p>
+<p>发布文件时，发布器将在 Flow Production Tracking 中创建 PublishedFile 实体，其中包含名为 <code class="highlighter-rouge">Path</code> 的<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_data_management_ar_field_types_html">文件/链接</a>字段。随后，其他用户可能会尝试使用加载器将此文件加载到自己的工作会话中。加载器使用复杂的逻辑来解析多个操作系统中已发布的文件的有效本地路径。</p>
 
 <p>加载器尝试将发布数据解析为路径的方式取决于发布是与本地文件链接关联还是与 <code class="highlighter-rouge">file://</code> URL 关联。</p>
 
 <h3 id="解析本地文件链接">解析本地文件链接</h3>
 
-<p>如果您发布的路径与 ShotGrid 的“站点偏好设置”(Site Preferences)中定义的任何本地存储相匹配，则在发布时会自动生成本地文件链接。如果发布是本地文件链接，则将会使用其本地操作系统表达方式。要了解有关本地文件链接的详细信息，请单击<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_data_management_ar_linking_local_files_html">此处</a>。</p>
+<p>如果您发布的路径与 Flow Production Tracking 的“站点偏好设置”(Site Preferences)中定义的任何本地存储相匹配，则在发布时会自动生成本地文件链接。如果发布是本地文件链接，则将会使用其本地操作系统表达方式。要了解有关本地文件链接的详细信息，请单击<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_data_management_ar_linking_local_files_html">此处</a>。</p>
 
 <p>如果未针对您当前使用的操作系统定义本地存储的路径，您可以使用环境变量指定本地存储根。环境变量的名称应采用 <code class="highlighter-rouge">SHOTGUN_PATH_&lt;WINDOWS|MAC|LINUX&gt;_&lt;STORAGENAME&gt;</code> 形式。因此，如果您要为名为“Renders”的存储根定义 Mac 上的路径，可以创建 <code class="highlighter-rouge">SHOTGUN_PATH_MAC_RENDERS</code> 环境变量。下面我们使用该示例进行更深入的讨论：</p>
 
 <ul>
-  <li>假设您的 ShotGrid 站点有一个名为“Renders”的存储根，并指定了以下路径：</li>
+  <li>假设您的 Flow Production Tracking 站点有一个名为“Renders”的存储根，并指定了以下路径：</li>
   <li>Linux 路径：<code class="highlighter-rouge">/studio/renders/</code></li>
   <li>Windows 路径：<code class="highlighter-rouge">S:\renders\</code></li>
   <li>
@@ -16666,17 +16666,17 @@
   <li>然后，如果您还有一个用于剪辑数据的存储，则可以定义 <code class="highlighter-rouge">SHOTGUN_PATH_LINUX_EDITORIAL</code>、<code class="highlighter-rouge">SHOTGUN_PATH_MAC_EDITORIAL</code> 和 <code class="highlighter-rouge">SHOTGUN_PATH_WINDOWS_EDITORIAL</code>，以便为剪辑存储根提供转换机制。</li>
 </ul>
 
-<p>一旦标准化了这些环境变量，可以考虑将其转换为 ShotGrid 本地存储。一旦在 ShotGrid 的首选项中定义了它们，系统将会自动提取它们且不需要环境变量。</p>
+<p>一旦标准化了这些环境变量，可以考虑将其转换为 Flow Production Tracking 本地存储。一旦在 Flow Production Tracking 的首选项中定义了它们，系统将会自动提取它们且不需要环境变量。</p>
 
 <ul>
-  <li>除了上述情况外，在 ShotGrid 的首选项中定义的所有本地存储均将以相同方式进行处理。</li>
+  <li>除了上述情况外，在 Flow Production Tracking 的首选项中定义的所有本地存储均将以相同方式进行处理。</li>
   <li>如果定义了本地存储，但缺少操作系统，这可以通过环境变量提供。例如，如果 Linux 和 Windows 上定义了一个名为 <code class="highlighter-rouge">Renders</code> 的本地存储，则可以通过创建名为 <code class="highlighter-rouge">SHOTGUN_PATH_MAC_RENDERS</code> 的环境变量进行扩展以支持 Mac。此项的常规语法为 <code class="highlighter-rouge">SHOTGUN_PATH_&lt;WINDOWS|MAC|LINUX&gt;_&lt;STORAGENAME&gt;</code>。</li>
   <li>如果没有匹配的根，则将原样返回文件路径。</li>
 </ul>
 
 <p>示例如下：</p>
 
-<p>假设您在 Linux 上发布了文件 <code class="highlighter-rouge">/projects/some/file.txt</code>，且生成了使用 URL ShotGrid 的 <code class="highlighter-rouge">file:///projects/some/file.txt</code> 发布。在您的工作室中，Linux 路径 <code class="highlighter-rouge">/projects</code> 相当于 Windows 上的 <code class="highlighter-rouge">Q:\projects</code>，因此您希望将完整路径转换为 <code class="highlighter-rouge">Q:\projects\some\file.txt</code>。</p>
+<p>假设您在 Linux 上发布了文件 <code class="highlighter-rouge">/projects/some/file.txt</code>，且生成了使用 URL Flow Production Tracking 的 <code class="highlighter-rouge">file:///projects/some/file.txt</code> 发布。在您的工作室中，Linux 路径 <code class="highlighter-rouge">/projects</code> 相当于 Windows 上的 <code class="highlighter-rouge">Q:\projects</code>，因此您希望将完整路径转换为 <code class="highlighter-rouge">Q:\projects\some\file.txt</code>。</p>
 
 <p>以下所有设置将对此进行处理：</p>
 
@@ -16688,7 +16688,7 @@
     <p><code class="highlighter-rouge">SHOTGUN_PATH_MAC=/projects</code></p>
   </li>
   <li>
-    <p>一个名为“Projects”的 ShotGrid 本地存储，进行以下设置：</p>
+    <p>一个名为“Projects”的 Flow Production Tracking 本地存储，进行以下设置：</p>
   </li>
   <li>Linux 路径：<code class="highlighter-rouge">/projects</code></li>
   <li>Windows 路径：<code class="highlighter-rouge">Q:\projects</code></li>
@@ -16696,7 +16696,7 @@
     <p>Mac 路径：<code class="highlighter-rouge">/projects</code></p>
   </li>
   <li>
-    <p>一个名为“Projects”的 ShotGrid 本地存储，使用一个环境变量予以增强：</p>
+    <p>一个名为“Projects”的 Flow Production Tracking 本地存储，使用一个环境变量予以增强：</p>
   </li>
   <li>Linux 路径：<code class="highlighter-rouge">/projects</code></li>
   <li>Windows 路径：</li>
@@ -16704,7 +16704,7 @@
   <li><code class="highlighter-rouge">SHOTGUN_PATH_WINDOWS_PROJECTS=Q:\projects</code></li>
 </ul>
 
-<p><strong>注意：</strong>如果在 ShotGrid 中定义了一个本地存储 <code class="highlighter-rouge">Renders</code>，且设置了 <code class="highlighter-rouge">Linux path</code>，另外还定义了 <code class="highlighter-rouge">SHOTGUN_PATH_LINUX_RENDERS</code> 环境变量，则将优先使用该存储，忽略该环境变量，并记录警告。一般而言，本地存储定义始终优先于环境变量。</p>
+<p><strong>注意：</strong>如果在 Flow Production Tracking 中定义了一个本地存储 <code class="highlighter-rouge">Renders</code>，且设置了 <code class="highlighter-rouge">Linux path</code>，另外还定义了 <code class="highlighter-rouge">SHOTGUN_PATH_LINUX_RENDERS</code> 环境变量，则将优先使用该存储，忽略该环境变量，并记录警告。一般而言，本地存储定义始终优先于环境变量。</p>
 
 <h3 id="高级配置">高级配置</h3>
 
@@ -16719,29 +16719,29 @@
 
 <h2 id="浏览器集成">浏览器集成</h2>
 
-<p>ShotGrid Toolkit 的浏览器集成是指通过 ShotGrid Web 应用程序中的右键单击上下文菜单访问 Toolkit 应用和启动器。这些菜单（如上文所示）包含针对各种实体类型配置的动作。如果某个项目有多个工作流配置，则将按工作流配置组织动作。通过浏览器集成，您可以从浏览器中启动识别 ShotGrid 上下文的内容创建软件（如 Maya 或 Nuke）。</p>
+<p>Flow Production Tracking Toolkit 的浏览器集成是指通过 Flow Production Tracking Web 应用程序中的右键单击上下文菜单访问 Toolkit 应用和启动器。这些菜单（如上文所示）包含针对各种实体类型配置的动作。如果某个项目有多个工作流配置，则将按工作流配置组织动作。通过浏览器集成，您可以从浏览器中启动识别 Flow Production Tracking 上下文的内容创建软件（如 Maya 或 Nuke）。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/Integration-admin-guide/browser_integration.jpg" alt="" /></p>
 
 <h3 id="浏览器集成简单回顾">浏览器集成简单回顾</h3>
 
-<p>多年来，ShotGrid Toolkit 的浏览器集成采用了多种形式。随着技术的改进和安全要求的提高，执行浏览器集成的方法也发生了变化。</p>
+<p>多年来，Flow Production Tracking Toolkit 的浏览器集成采用了多种形式。随着技术的改进和安全要求的提高，执行浏览器集成的方法也发生了变化。</p>
 
 <p><strong>Java 小程序（已弃用）</strong></p>
 
-<p>第一种执行方法是使用 Java 小程序，通过它从 ShotGrid Web 应用程序访问本地桌面。由于 Java 小程序被认为是可利用的安全风险，因此不能再使用它们，必须弃用。</p>
+<p>第一种执行方法是使用 Java 小程序，通过它从 Flow Production Tracking Web 应用程序访问本地桌面。由于 Java 小程序被认为是可利用的安全风险，因此不能再使用它们，必须弃用。</p>
 
 <p><strong>浏览器插件（已弃用）</strong></p>
 
-<p>替换已弃用的 Java 小程序的是浏览器插件，它利用 NPAPI 从 ShotGrid Web 应用程序访问本地桌面。由于 NPAPI 也被认为存在安全风险，主要的 Web 浏览器都已开始阻止其使用。因此必须弃用浏览器插件。</p>
+<p>替换已弃用的 Java 小程序的是浏览器插件，它利用 NPAPI 从 Flow Production Tracking Web 应用程序访问本地桌面。由于 NPAPI 也被认为存在安全风险，主要的 Web 浏览器都已开始阻止其使用。因此必须弃用浏览器插件。</p>
 
-<p><strong>通过 ShotGrid Desktop 实现的 websocket v1（旧式）</strong></p>
+<p><strong>通过 Flow Production Tracking Toolkit 实现的 websocket v1（旧式）</strong></p>
 
-<p>在 ShotGrid Desktop 应用中托管 websocket 服务器过去是且现在仍然是从 ShotGrid Web 应用程序与本地桌面通信时所采用的方法。此 websocket 服务器的 RPC API 的第一次执行利用了为之前的 Java 小程序和浏览器插件开发的相同底层技术。当服务器收到来自 ShotGrid 的请求时，使用关联项目的工作流配置中的 tank 命令来获取要显示在动作菜单中的命令列表。</p>
+<p>在 Flow Production Tracking Toolkit 应用中托管 websocket 服务器过去是且现在仍然是从 Flow Production Tracking Web 应用程序与本地桌面通信时所采用的方法。此 websocket 服务器的 RPC API 的第一次执行利用了为之前的 Java 小程序和浏览器插件开发的相同底层技术。当服务器收到来自 Flow Production Tracking 的请求时，使用关联项目的工作流配置中的 tank 命令来获取要显示在动作菜单中的命令列表。</p>
 
-<p><strong>通过 ShotGrid Desktop 实现的 websocket v2</strong></p>
+<p><strong>通过 Flow Production Tracking Toolkit 实现的 websocket v2</strong></p>
 
-<p>websocket 服务器的 RPC API 的第二次迭代更改了用于获取、缓存和执行 Toolkit 动作的基本机制。此执行解决了与早期浏览器集成执行有关的许多性能问题，改进了动作菜单的外观组织，并添加了对<a href="https://developer.shotgridsoftware.com/zh_CN/d587be80/#getting-started-with-desktop">即时可用的 ShotGrid 集成</a>的支持，这些集成无需显式配置 Toolkit 即可使用。这是浏览器集成的当前执行方式。</p>
+<p>websocket 服务器的 RPC API 的第二次迭代更改了用于获取、缓存和执行 Toolkit 动作的基本机制。此执行解决了与早期浏览器集成执行有关的许多性能问题，改进了动作菜单的外观组织，并添加了对<a href="https://developer.shotgridsoftware.com/zh_CN/d587be80/#getting-started-with-desktop">即时可用的 Flow Production Tracking 集成</a>的支持，这些集成无需显式配置 Toolkit 即可使用。这是浏览器集成的当前执行方式。</p>
 
 <h3 id="配置">配置</h3>
 
@@ -16749,11 +16749,11 @@
 
 <p><strong>哪个插件配置？</strong></p>
 
-<p>在 ShotGrid Web 应用中管理 Toolkit 动作的 Toolkit 插件是 <code class="highlighter-rouge">tk-shotgun</code>，因此，此插件的配置控制动作菜单中的显示内容。</p>
+<p>在 Flow Production Tracking Web 应用中管理 Toolkit 动作的 Toolkit 插件是 <code class="highlighter-rouge">tk-shotgun</code>，因此，此插件的配置控制动作菜单中的显示内容。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/Integration-admin-guide/tk-shotgun_config.png" alt="" /></p>
 
-<p>在上面的 <a href="https://github.com/shotgunsoftware/tk-config-basic/">tk-config-basic</a> 示例中，配置了两个应用，它们会使很多插件命令转换为菜单动作。Toolkit 应用将注册要包含在动作菜单中的命令，包括本地系统上发现的每个软件包的启动器命令，这些命令对应于 ShotGrid 站点中的<a href="https://developer.shotgridsoftware.com/zh_CN/8085533c/#configuring-software-launches">软件实体</a>列表。结果是此处所示的菜单动作列表：</p>
+<p>在上面的 <a href="https://github.com/shotgunsoftware/tk-config-basic/">tk-config-basic</a> 示例中，配置了两个应用，它们会使很多插件命令转换为菜单动作。Toolkit 应用将注册要包含在动作菜单中的命令，包括本地系统上发现的每个软件包的启动器命令，这些命令对应于 Flow Production Tracking 站点中的<a href="https://developer.shotgridsoftware.com/zh_CN/8085533c/#configuring-software-launches">软件实体</a>列表。结果是此处所示的菜单动作列表：</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/Integration-admin-guide/action_menu.png" alt="" /></p>
 
@@ -16769,7 +16769,7 @@
 
 <p><strong><em>提示：使用 tk-config-default2 从浏览器启动器中移除软件</em></strong></p>
 
-<p>更新用于从 ShotGrid 浏览器启动软件的配置会有所不同，具体取决于使用的是 tk-config-default 还是 tk-config-default2。</p>
+<p>更新用于从 Flow Production Tracking 浏览器启动软件的配置会有所不同，具体取决于使用的是 tk-config-default 还是 tk-config-default2。</p>
 
 <p>使用 tk-config-default2 时，应将更新应用于config/env/includes/settings/<a href="https://github.com/shotgunsoftware/tk-config-default2/blob/v1.1.10/env/includes/settings/tk-shotgun.yml"><code class="highlighter-rouge">tk-shotgun.yml</code></a>，而在 tk-config-default 中，应将更新应用于 config/env/<code class="highlighter-rouge">shotgun_task.yml</code>。</p>
 
@@ -16807,7 +16807,7 @@ settings.tk-shotgun.asset:
   location: "@engines.tk-shotgun.location"
 </code></pre></div></div>
 
-<p>然后，针对每个实体（例如镜头）按照相同的说明进行操作，从中移除在 ShotGrid 浏览器中启动特定软件的功能。请注意，保存文件后，您可能需要等待一分钟并对浏览器进行硬刷新才能使其生效。</p>
+<p>然后，针对每个实体（例如镜头）按照相同的说明进行操作，从中移除在 Flow Production Tracking 浏览器中启动特定软件的功能。请注意，保存文件后，您可能需要等待一分钟并对浏览器进行硬刷新才能使其生效。</p>
 
 <h3 id="缓存">缓存</h3>
 
@@ -16815,7 +16815,7 @@ settings.tk-shotgun.asset:
 
 <p><strong>缓存何时失效？</strong></p>
 
-<p>websocket 服务器的 RPC API 根据以下两项来确定缓存的数据是否仍有效：YAML 文件修改时间和站点的软件实体的内容。如果自写入缓存数据后对给定配置中的某个环境 YAML 文件进行了修改，则重新缓存必要的数据，并向 ShotGrid Web 应用程序返回最新数据。同样，如果自数据缓存后对 ShotGrid 中任何软件实体的任何字段进行了修改，则引导 Toolkit 并缓存新数据。</p>
+<p>websocket 服务器的 RPC API 根据以下两项来确定缓存的数据是否仍有效：YAML 文件修改时间和站点的软件实体的内容。如果自写入缓存数据后对给定配置中的某个环境 YAML 文件进行了修改，则重新缓存必要的数据，并向 Flow Production Tracking Web 应用程序返回最新数据。同样，如果自数据缓存后对 Flow Production Tracking 中任何软件实体的任何字段进行了修改，则引导 Toolkit 并缓存新数据。</p>
 
 <p><strong>缓存文件位于磁盘上的什么位置？</strong></p>
 
@@ -16832,8 +16832,8 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <ul>
   <li><code class="highlighter-rouge">get_cache_key</code>：此方法确定给定配置 URI、项目实体和实体类型的缓存条目键。默认执行组合了配置 URI 和实体类型。</li>
-  <li><code class="highlighter-rouge">get_site_state_data</code>：此方法可用于将来自 ShotGrid 的其他查询数据包含到用于测试缓存数据有效性的哈希中。默认情况下，使用站点中存在的所有软件实体的状态，但如果应在哈希中包含其他数据，可以在此挂钩方法中执行。</li>
-  <li><code class="highlighter-rouge">process_commands</code>：此方法提供用于自定义或更改要返回到 ShotGrid Web 应用程序的命令的位置。向方法提供的数据结构是词典列表，每个词典代表一个菜单动作。可以根据需要更改、过滤掉数据或将数据添加到列表中，数据将立即反映在请求 Toolkit 动作的菜单中。</li>
+  <li><code class="highlighter-rouge">get_site_state_data</code>：此方法可用于将来自 Flow Production Tracking 的其他查询数据包含到用于测试缓存数据有效性的哈希中。默认情况下，使用站点中存在的所有软件实体的状态，但如果应在哈希中包含其他数据，可以在此挂钩方法中执行。</li>
+  <li><code class="highlighter-rouge">process_commands</code>：此方法提供用于自定义或更改要返回到 Flow Production Tracking Web 应用程序的命令的位置。向方法提供的数据结构是词典列表，每个词典代表一个菜单动作。可以根据需要更改、过滤掉数据或将数据添加到列表中，数据将立即反映在请求 Toolkit 动作的菜单中。</li>
 </ul>
 
 <h3 id="日志">日志</h3>
@@ -16844,7 +16844,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <p>从 Web 应用程序与本地桌面通信的复杂特性意味着中途可能会有故障点。下面介绍了几种此类情况以及在遇到这些情况时首先要采用的一些步骤建议。</p>
 
-<p><strong>动作菜单中显示“打开或安装 ShotGrid Desktop…”(Open or install ShotGrid Desktop…)</strong></p>
+<p><strong>动作菜单中显示“打开或安装 Flow Production Tracking Toolkit…”(Open or install Flow Production Tracking Toolkit…)</strong></p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/Integration-admin-guide/install_desktop.png" alt="" /></p>
 
@@ -16852,17 +16852,17 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <ol>
   <li>
-    <p>本地计算机上当前未运行 ShotGrid Desktop。这似乎很明显，但一定要检查确认。</p>
+    <p>本地计算机上当前未运行 Flow Production Tracking Toolkit。这似乎很明显，但一定要检查确认。</p>
   </li>
   <li>
-    <p>Chrome 或 Python websocket 服务器已拒绝连接，从而导致 ShotGrid Web 应用程序无法与 ShotGrid Desktop 通信。这种情况很可能与用于在请求时允许连接继续的自签名证书有关。从头开始重新生成这些证书通常可以解决该问题，可以从 ShotGrid Desktop 触发此操作，如下所示。</p>
+    <p>Chrome 或 Python websocket 服务器已拒绝连接，从而导致 Flow Production Tracking Web 应用程序无法与 Flow Production Tracking Toolkit 通信。这种情况很可能与用于在请求时允许连接继续的自签名证书有关。从头开始重新生成这些证书通常可以解决该问题，可以从 Flow Production Tracking Toolkit 触发此操作，如下所示。</p>
   </li>
 </ol>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/Integration-admin-guide/regenerate_certs.png" alt="" /></p>
 
 <ol>
-  <li>ShotGrid Desktop 的 websocket 服务器无法在启动时启动。可能仅在公开发布的 websocket 服务器版本错误时出现此情况，这应该极少发生。在这种情况下，<a href="https://developer.shotgridsoftware.com/zh_CN/38c5c024/">tk-desktop.log</a> 中将显示对错误进行解释的日志，可以将该日志<a href="https://knowledge.autodesk.com/zh-hans/contact-support">发送给 ShotGrid 的支持团队</a>。</li>
+  <li>Flow Production Tracking Toolkit 的 websocket 服务器无法在启动时启动。可能仅在公开发布的 websocket 服务器版本错误时出现此情况，这应该极少发生。在这种情况下，<a href="https://developer.shotgridsoftware.com/zh_CN/38c5c024/">tk-desktop.log</a> 中将显示对错误进行解释的日志，可以将该日志<a href="https://knowledge.autodesk.com/zh-hans/contact-support">发送给 Flow Production Tracking 的支持团队</a>。</li>
 </ol>
 
 <p><strong>动作菜单中未显示任何动作</strong></p>
@@ -16885,9 +16885,9 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
     <p>有一个缓存在磁盘上的空菜单动作列表。要强制重新生成缓存，可使用以下几种选项：</p>
 
     <ul>
-      <li>在项目的配置中更新 YAML 文件的修改时间。这样，ShotGrid 下一次请求菜单动作时，将触发重新缓存这些菜单动作。值得注意的是，这将触发参与项目的_所有_用户进行重新缓存。</li>
-      <li>在 ShotGrid 站点中更新任何软件实体中的字段值。该行为与上述涉及 YAML 文件修改时间的选项相同，但将使 ShotGrid 站点上 <em>所有</em> 项目中所有用户的缓存数据无效。软件实体是非项目实体，这意味着它们在所有项目之间共享。如果更改了任何软件实体中的数据，则会影响所有项目。</li>
-      <li>可以在出现问题的主机上删除缓存文件。移除缓存通常没有问题，因为缓存存储在每个主机本地，这仅会导致在相应系统上从头开始重新缓存数据。缓存存储在 ShotGrid 缓存位置中的以下 SQLite 文件中：<code class="highlighter-rouge">&lt;site-name&gt;/site.basic.desktop/tk-desktop/shotgun_engine_commands_v1.sqlite</code></li>
+      <li>在项目的配置中更新 YAML 文件的修改时间。这样，Flow Production Tracking 下一次请求菜单动作时，将触发重新缓存这些菜单动作。值得注意的是，这将触发参与项目的_所有_用户进行重新缓存。</li>
+      <li>在 Flow Production Tracking 站点中更新任何软件实体中的字段值。该行为与上述涉及 YAML 文件修改时间的选项相同，但将使 Flow Production Tracking 站点上 <em>所有</em> 项目中所有用户的缓存数据无效。软件实体是非项目实体，这意味着它们在所有项目之间共享。如果更改了任何软件实体中的数据，则会影响所有项目。</li>
+      <li>可以在出现问题的主机上删除缓存文件。移除缓存通常没有问题，因为缓存存储在每个主机本地，这仅会导致在相应系统上从头开始重新缓存数据。缓存存储在 Flow Production Tracking 缓存位置中的以下 SQLite 文件中：<code class="highlighter-rouge">&lt;site-name&gt;/site.basic.desktop/tk-desktop/shotgun_engine_commands_v1.sqlite</code></li>
     </ul>
   </li>
 </ol>
@@ -16903,20 +16903,20 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
     <p>websocket 服务器尚未完成动作缓存。如果这是对项目的配置进行重大更新后第一次检索动作，该过程可能需要一些时间才能完成。多等待一段时间，然后观察 <code class="highlighter-rouge">tk-desktop.log</code> 的内容看看是否仍在处理。</p>
   </li>
   <li>
-    <p>websocket 服务器无法响应且永远不会响应。这种情况应该很少出现，但如果在请求动作后很明显没有其他处理操作正在进行（如 <code class="highlighter-rouge">tk-desktop.log</code> 中所示），那应该就是出现了这种情况，此时请<a href="https://knowledge.autodesk.com/zh-hans/contact-support">联系 ShotGrid 支持</a>并提供相关日志数据。</p>
+    <p>websocket 服务器无法响应且永远不会响应。这种情况应该很少出现，但如果在请求动作后很明显没有其他处理操作正在进行（如 <code class="highlighter-rouge">tk-desktop.log</code> 中所示），那应该就是出现了这种情况，此时请<a href="https://knowledge.autodesk.com/zh-hans/contact-support">联系 Flow Production Tracking 支持</a>并提供相关日志数据。</p>
   </li>
   <li>
-    <p>用户在多个 ShotGrid 站点上工作。在单个站点上对 ShotGrid Desktop 进行身份认证后，从另一个 ShotGrid 站点请求菜单动作会导致系统询问用户是否重新启动 ShotGrid Desktop 并登录新站点。如果忽略该请求，则另一个站点将永远不会收到菜单动作列表。</p>
+    <p>用户在多个 Flow Production Tracking 站点上工作。在单个站点上对 Flow Production Tracking Toolkit 进行身份认证后，从另一个 Flow Production Tracking 站点请求菜单动作会导致系统询问用户是否重新启动 Flow Production Tracking Toolkit 并登录新站点。如果忽略该请求，则另一个站点将永远不会收到菜单动作列表。</p>
   </li>
 </ol>
 
 <h2 id="toolkit-配置文件">Toolkit 配置文件</h2>
 
-<p>如果您的工作室使用代理服务器，如果您要在初始登录屏幕中预填充某些值，或者如果您要调整基于浏览器的应用程序启动器与 ShotGrid Desktop 的集成方式，有一个名为 <code class="highlighter-rouge">toolkit.ini</code> 的特殊配置文件。ShotGrid Desktop 无需此文件即可运行；仅当您需要配置其行为时才需要它。Toolkit 按以下顺序在多个位置查找该文件：</p>
+<p>如果您的工作室使用代理服务器，如果您要在初始登录屏幕中预填充某些值，或者如果您要调整基于浏览器的应用程序启动器与 Flow Production Tracking Toolkit 的集成方式，有一个名为 <code class="highlighter-rouge">toolkit.ini</code> 的特殊配置文件。Flow Production Tracking Toolkit 无需此文件即可运行；仅当您需要配置其行为时才需要它。Toolkit 按以下顺序在多个位置查找该文件：</p>
 
 <ol>
   <li>指向文件路径的名为 <code class="highlighter-rouge">SGTK_PREFERENCES_LOCATION</code> 的环境变量。</li>
-  <li>在 ShotGrid Toolkit 首选项文件夹中：（请注意，默认情况下这些位置不存在此文件；您必须创建此文件。）
+  <li>在 Flow Production Tracking Toolkit 首选项文件夹中：（请注意，默认情况下这些位置不存在此文件；您必须创建此文件。）
     <ul>
       <li>Windows：<code class="highlighter-rouge">%APPDATA%\Shotgun\Preferences\toolkit.ini</code></li>
       <li>macOS：<code class="highlighter-rouge">~/Library/Preferences/Shotgun/toolkit.ini</code></li>
@@ -16954,13 +16954,13 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <p><code class="highlighter-rouge">http_proxy: &lt;proxy_server_address&gt;</code></p>
 
-<p><strong>使用本地托管站点时运行 ShotGrid Desktop</strong></p>
+<p><strong>使用本地托管站点时运行 Flow Production Tracking Toolkit</strong></p>
 
-<p>如果您的 ShotGrid 站点 URL 不是以 <code class="highlighter-rouge">shotgunstudio.com</code> 或 <code class="highlighter-rouge">shotgrid.autodesk.com</code> 结尾，表示您正在运行本地 ShotGrid 站点。在这种情况下，可能是您的站点尚未完全准备好实施 ShotGrid 集成，ShotGrid 团队可能需要参与进来并进行一些小的调整，然后您才能继续！在这种情况下，<a href="https://knowledge.autodesk.com/zh-hans/contact-support">请提交工单</a>，我们将帮助您解决问题。</p>
+<p>如果您的 Flow Production Tracking 站点 URL 不是以 <code class="highlighter-rouge">shotgunstudio.com</code> 或 <code class="highlighter-rouge">shotgrid.autodesk.com</code> 结尾，表示您正在运行本地 Flow Production Tracking 站点。在这种情况下，可能是您的站点尚未完全准备好实施 Flow Production Tracking 集成，Flow Production Tracking 团队可能需要参与进来并进行一些小的调整，然后您才能继续！在这种情况下，<a href="https://knowledge.autodesk.com/zh-hans/contact-support">请提交工单</a>，我们将帮助您解决问题。</p>
 
 <p><strong>使用本地托管站点时连接到应用商店</strong></p>
 
-<p>如果您要在使用本地 ShotGrid 站点时通过代理访问 Internet，您可能希望设置一个 HTTP 代理用于访问应用商店，但不用于访问本地 ShotGrid 网站。为此，只需将以下行添加到 <code class="highlighter-rouge">toolkit.ini</code>：</p>
+<p>如果您要在使用本地 Flow Production Tracking 站点时通过代理访问 Internet，您可能希望设置一个 HTTP 代理用于访问应用商店，但不用于访问本地 Flow Production Tracking 网站。为此，只需将以下行添加到 <code class="highlighter-rouge">toolkit.ini</code>：</p>
 
 <p><code class="highlighter-rouge">app_store_http_proxy: &lt;proxy_server_address&gt;</code></p>
 
@@ -16970,26 +16970,26 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <h2 id="离线使用情况">离线使用情况</h2>
 
-<p>在常规使用中，ShotGrid Desktop 会在启动时自动检查 Desktop 应用本身、tk-desktop 插件和基本配置是否有更新。但是，在某些情况下，您可能需要在离线时或在与 Internet 完全断开连接的计算机上运行集成。以下部分介绍了如何处理其中每种情况。</p>
+<p>在常规使用中，Flow Production Tracking Toolkit 会在启动时自动检查 Desktop 应用本身、tk-desktop 插件和基本配置是否有更新。但是，在某些情况下，您可能需要在离线时或在与 Internet 完全断开连接的计算机上运行集成。以下部分介绍了如何处理其中每种情况。</p>
 
-<h3 id="shotgrid-create">ShotGrid Create</h3>
+<h3 id="shotgrid-create">Flow Production Tracking Create</h3>
 
-<p>本文档中所述的用于解决离线使用情况的方法也适用于 <a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Supervisor_Artist_sa_create_sa_intro_create_html">ShotGrid Create</a> 中提供的集成功能。当以与 ShotGrid Desktop 相同的方式使用 ShotGrid Create 时，用于定制 ShotGrid Toolkit 行为的各种环境变量（例如 <code class="highlighter-rouge">SHOTGUN_BUNDLE_CACHE_FALLBACK_PATHS</code>）适用。</p>
+<p>本文档中所述的用于解决离线使用情况的方法也适用于 <a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Supervisor_Artist_sa_create_sa_intro_create_html">Flow Production Tracking Create</a> 中提供的集成功能。当以与 Flow Production Tracking Toolkit 相同的方式使用 Flow Production Tracking Create 时，用于定制 Flow Production Tracking Toolkit 行为的各种环境变量（例如 <code class="highlighter-rouge">SHOTGUN_BUNDLE_CACHE_FALLBACK_PATHS</code>）适用。</p>
 
 <h3 id="离线使用集成">离线使用集成</h3>
 
-<p><em>情况：我要运行 ShotGrid 集成，但未连接到 Internet。我们有本地 ShotGrid 安装。</em></p>
+<p><em>情况：我要运行 Flow Production Tracking 集成，但未连接到 Internet。我们有本地 Flow Production Tracking 安装。</em></p>
 
 <p><strong>解决方案</strong></p>
 
 <ul>
-  <li>如果您可以临时连接到 Internet，只需下载 ShotGrid Desktop。它预先打包了一组<a href="https://developer.shotgridsoftware.com/zh_CN/d587be80/#introduction">集成</a>，且预先捆绑了适用于所有受支持 DCC 的 ShotGrid 集成所需的各种应用和插件。启动后，它将自动尝试查找升级，但如果无法连接到 ShotGrid 应用商店，它将仅运行本地的最新版本。</li>
+  <li>如果您可以临时连接到 Internet，只需下载 Flow Production Tracking Toolkit。它预先打包了一组<a href="https://developer.shotgridsoftware.com/zh_CN/d587be80/#introduction">集成</a>，且预先捆绑了适用于所有受支持 DCC 的 Flow Production Tracking 集成所需的各种应用和插件。启动后，它将自动尝试查找升级，但如果无法连接到 Flow Production Tracking 应用商店，它将仅运行本地的最新版本。</li>
 </ul>
 
 <p><strong>补充知识</strong></p>
 
 <ul>
-  <li>某些 Toolkit 操作（例如注册发布）需要访问 ShotGrid 站点。因此，此解决方案仅适用于本地托管的站点。</li>
+  <li>某些 Toolkit 操作（例如注册发布）需要访问 Flow Production Tracking 站点。因此，此解决方案仅适用于本地托管的站点。</li>
   <li>更新下载到本地计算机。</li>
   <li>如果您在连接和断开连接之间切换，Desktop 以及应用内集成（例如 Maya 和 Nuke 内部的集成）只要处于连接状态，就将在启动时下载升级。</li>
 </ul>
@@ -17001,7 +17001,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 <p><strong>解决方案</strong></p>
 
 <ul>
-  <li>在连接到 Internet 的工作站上运行 ShotGrid Desktop。该工作站启动后，在 Desktop 启动时将自动下载最新升级。</li>
+  <li>在连接到 Internet 的工作站上运行 Flow Production Tracking Toolkit。该工作站启动后，在 Desktop 启动时将自动下载最新升级。</li>
   <li>选项 1：共享 Desktop 包</li>
   <li>将<a href="https://developer.shotgridsoftware.com/zh_CN/7c9867c0/">缓存</a>复制到所有计算机都可以访问的共享位置。</li>
   <li>在离线计算机上设置 <code class="highlighter-rouge">SHOTGUN_BUNDLE_CACHE_FALLBACK_PATHS</code> 环境变量以指向此位置。</li>
@@ -17023,20 +17023,20 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <h3 id="针对单个项目禁用更新">针对单个项目禁用更新</h3>
 
-<p><em>情况：我的项目将要打包，我希望将其冻结，以便不会自动下载 ShotGrid 集成更新。</em></p>
+<p><em>情况：我的项目将要打包，我希望将其冻结，以便不会自动下载 Flow Production Tracking 集成更新。</em></p>
 
 <p><strong>解决方案</strong></p>
 
 <ul>
   <li>确定要将项目锁定到的版本。<a href="https://community.shotgridsoftware.com/tags/c/pipeline/6/release-notes">可以在此查找集成版本。</a></li>
-  <li>在 ShotGrid 中，为要锁定的项目创建工作流配置实体，并填充以下字段（在此示例中，我们将配置锁定为使用集成 v1.0.36）：</li>
+  <li>在 Flow Production Tracking 中，为要锁定的项目创建工作流配置实体，并填充以下字段（在此示例中，我们将配置锁定为使用集成 v1.0.36）：</li>
   <li>名称(Name)：<code class="highlighter-rouge">Primary</code></li>
   <li>项目(Project)：要锁定的项目</li>
   <li>插件 ID(Plugin ids)：<code class="highlighter-rouge">basic.*</code></li>
   <li>
     <p>描述符(Descriptor)：<code class="highlighter-rouge">sgtk:descriptor:app_store?name=tk-config-basic&amp;version=v1.0.36</code></p>
   </li>
-  <li>现在，任何在项目中启动 ShotGrid Desktop 的用户始终使用的都将是 v1.0.36。开始处理该项目的任何新用户也将获得 v1.0.36。</li>
+  <li>现在，任何在项目中启动 Flow Production Tracking Toolkit 的用户始终使用的都将是 v1.0.36。开始处理该项目的任何新用户也将获得 v1.0.36。</li>
 </ul>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/Integration-admin-guide/freeze_single_project.png" alt="" /></p>
@@ -17118,7 +17118,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 <p><strong>解决方案</strong></p>
 
 <ul>
-  <li>通过右键单击并选择“复制选定项”(Duplicate Selected)，在 ShotGrid 中复制工作流配置实体。</li>
+  <li>通过右键单击并选择“复制选定项”(Duplicate Selected)，在 Flow Production Tracking 中复制工作流配置实体。</li>
   <li>将克隆的配置命名为“update test”，并在“用户限制”(User Restrictions)字段中指定您自己。</li>
   <li>现在，您将开始使用此工作流配置。</li>
   <li>将“描述符”(Descriptor)更改为指向要测试的版本。</li>
@@ -17129,7 +17129,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <h2 id="接管工作流配置">接管工作流配置</h2>
 
-<p>在没有设置任何配置的情况下，您将获得一组即时可用的基本 ShotGrid 集成，本文档介绍了使用这些即时可用的集成可以完成的各种管理工作。此基本设置建立在 ShotGrid 的 Toolkit 平台上，支持更加丰富的自定义。在 Desktop 中，Toolkit 项目设置向导将引导您完成为项目创建一个完整的可自定义工作流配置的过程。</p>
+<p>在没有设置任何配置的情况下，您将获得一组即时可用的基本 Flow Production Tracking 集成，本文档介绍了使用这些即时可用的集成可以完成的各种管理工作。此基本设置建立在 Flow Production Tracking 的 Toolkit 平台上，支持更加丰富的自定义。在 Desktop 中，Toolkit 项目设置向导将引导您完成为项目创建一个完整的可自定义工作流配置的过程。</p>
 
 <p>以下各部分通过示例和合理默认值建议详细介绍了向导的每个步骤，以防您不确定如何设置内容。</p>
 
@@ -17146,7 +17146,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 <p>开始配置新项目时，首先要确定_使用哪个配置模板_。配置模板基本上是完整的项目配置，包含运行项目所需的所有设置、文件系统模板、应用和逻辑。</p>
 
 <ul>
-  <li>如果这是您的第一个项目，请使用 ShotGrid 默认值以便快速入门。</li>
+  <li>如果这是您的第一个项目，请使用 Flow Production Tracking 默认值以便快速入门。</li>
   <li>如果您已配置过项目且有以前项目的配置，则可以基于现有项目创建新项目来轻松重用这些配置。</li>
   <li>对于高级工作流，您可以使用外部配置或 Git 库中存储的配置。</li>
 </ul>
@@ -17165,7 +17165,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <p><strong>文件系统概述</strong></p>
 
-<p>在 ShotGrid 中，标准配置处理资产和镜头。它按工作流工序划分各项内容。一个工作流工序类似于一个部门。每个工作流工序均包含用于各种受支持应用程序的工作和发布区域。镜头结构如下所示：</p>
+<p>在 Flow Production Tracking 中，标准配置处理资产和镜头。它按工作流工序划分各项内容。一个工作流工序类似于一个部门。每个工作流工序均包含用于各种受支持应用程序的工作和发布区域。镜头结构如下所示：</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/Integration-admin-guide/folder_structure.png" alt="" /></p>
 
@@ -17175,10 +17175,10 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <ul>
   <li>Maya、Mari、Nuke、3ds Max、Flame、Houdini、Photoshop 和 Motionbuilder 支持</li>
-  <li>ShotGrid 应用程序启动器</li>
+  <li>Flow Production Tracking 应用程序启动器</li>
   <li>发布、创建快照和版本控制</li>
   <li>一个 Nuke 自定义写入节点</li>
-  <li>ShotGrid 集成</li>
+  <li>Flow Production Tracking 集成</li>
   <li>多个其他工具和实用程序</li>
 </ul>
 
@@ -17212,13 +17212,13 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <h4 id="设置存储">设置存储</h4>
 
-<p>每个 Toolkit 项目均会将其所有文件和数据写入到磁盘上的一个或多个共享存储位置。例如，某个配置可能需要一个存储用来存放纹理，一个用来存放渲染，以及一个用来存储场景文件。通常，在 ShotGrid 的“站点偏好设置”(Site Preferences)中的 _“文件管理”(File Management)_选项卡下控制这些存储。</p>
+<p>每个 Toolkit 项目均会将其所有文件和数据写入到磁盘上的一个或多个共享存储位置。例如，某个配置可能需要一个存储用来存放纹理，一个用来存放渲染，以及一个用来存储场景文件。通常，在 Flow Production Tracking 的“站点偏好设置”(Site Preferences)中的 _“文件管理”(File Management)_选项卡下控制这些存储。</p>
 
-<p>Toolkit 设置向导将要求您将配置所需的每个存储根映射到 ShotGrid 中的一个本地存储。</p>
+<p>Toolkit 设置向导将要求您将配置所需的每个存储根映射到 Flow Production Tracking 中的一个本地存储。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/Integration-admin-guide/wizard_storage.png" alt="" /></p>
 
-<p>所需根在左侧列出并显示其说明（如配置的 <code class="highlighter-rouge">roots.yml</code> 文件中所定义）。现有的 ShotGrid 本地存储列表在右侧列出。您必须为每个所需根选择一个存储，并输入当前操作系统的路径（如果 ShotGrid 中还不存在）。</p>
+<p>所需根在左侧列出并显示其说明（如配置的 <code class="highlighter-rouge">roots.yml</code> 文件中所定义）。现有的 Flow Production Tracking 本地存储列表在右侧列出。您必须为每个所需根选择一个存储，并输入当前操作系统的路径（如果 Flow Production Tracking 中还不存在）。</p>
 
 <p>您还可以添加其他操作系统的路径（如果未定义）。现有路径会被锁定，以确保您不会意外影响可能依赖相应存储路径的其他项目。向导中的映射页面将确保您已映射每个所需根，并且每个映射都有效。</p>
 
@@ -17232,7 +17232,7 @@ Linux: ~/.shotgun\&lt;site_name&gt;\site.basic.desktop\tk-desktop
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/Integration-admin-guide/wizard_project_name.png" alt="" /></p>
 
-<p>现在要为项目选择磁盘名称。将在配置所需的所有不同存储中创建此文件夹。您可以在 UI 中查看快速预览 - 对于大多数配置，这将仅预览主存储，但如果使用多根配置，其他存储也会显示。Toolkit 将根据 ShotGrid 中的名称建议一个默认项目名称。可以随意调整它以创建适合您的设置的名称。</p>
+<p>现在要为项目选择磁盘名称。将在配置所需的所有不同存储中创建此文件夹。您可以在 UI 中查看快速预览 - 对于大多数配置，这将仅预览主存储，但如果使用多根配置，其他存储也会显示。Toolkit 将根据 Flow Production Tracking 中的名称建议一个默认项目名称。可以随意调整它以创建适合您的设置的名称。</p>
 
 <h4 id="选择配置位置">选择配置位置</h4>
 
@@ -17260,7 +17260,7 @@ windows: \\prod\software\shotgun\golden_circle
 
 <h3 id="静默安装">静默安装</h3>
 
-<p>如果在 Windows 网络中，可以使用参数“/S”强制 .exe ShotGrid Desktop 安装程序执行静默安装。然后，您可以将可执行文件的快捷方式的副本推送至启动文件夹。</p>
+<p>如果在 Windows 网络中，可以使用参数“/S”强制 .exe Flow Production Tracking Toolkit 安装程序执行静默安装。然后，您可以将可执行文件的快捷方式的副本推送至启动文件夹。</p>
 
 
             </div>  

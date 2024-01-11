@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -8162,10 +8162,10 @@
 
             <h1 id="ソフトウェアを起動する前に環境変数を設定するにはどうすればいいですか">ソフトウェアを起動する前に環境変数を設定するにはどうすればいいですか?</h1>
 
-<p>ShotGrid Toolkit では、起動プロセス中にフックを使用して環境を設定し、カスタム コードを実行することができます。</p>
+<p>Flow Production Tracking Toolkit では、起動プロセス中にフックを使用して環境を設定し、カスタム コードを実行することができます。</p>
 
-<p>Nuke や Maya などのソフトウェアを ShotGrid Desktop またはブラウザ統合を使用して起動すると、<code class="highlighter-rouge">tk-multi-launchapp</code> が実行されます。
-このアプリには、ソフトウェアを起動し、ShotGrid 統合が予測どおりに起動したことを確認するという役割があります。このプロセス内にフックを使用して公開されている 2 つのポイントがあり、そこでカスタム コードを実行することができます。</p>
+<p>Nuke や Maya などのソフトウェアを Flow Production Tracking Toolkit またはブラウザ統合を使用して起動すると、<code class="highlighter-rouge">tk-multi-launchapp</code> が実行されます。
+このアプリには、ソフトウェアを起動し、Flow Production Tracking 統合が予測どおりに起動したことを確認するという役割があります。このプロセス内にフックを使用して公開されている 2 つのポイントがあり、そこでカスタム コードを実行することができます。</p>
 
 <h2 id="before_app_launchpy">before_app_launch.py</h2>
 
@@ -8188,7 +8188,7 @@
     <p>
         <i class="fa fa-exclamation-circle"></i>
         <b>警告
-:</b> ShotGrid で設定された環境変数を完全に再定義しないよう注意してください。
+:</b> Flow Production Tracking で設定された環境変数を完全に再定義しないよう注意してください。
 たとえば、<code class="highlighter-rouge">NUKE_PATH</code> (Nuke の場合)、または <code class="highlighter-rouge">PYTHONPATH</code> (Maya の場合)にパスを追加する必要がある場合は、既存の値を置き換えるのではなく、そこにパスを追加するようにしてください。このための便利な方法が提供されています。
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tank</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">append_path_to_env_var</span><span class="p">(</span><span class="s">"NUKE_PATH"</span><span class="p">,</span> <span class="s">"/my/custom/path"</span><span class="p">)</span>
@@ -8205,7 +8205,7 @@
     <p>
         <i class="fa fa-exclamation-circle"></i>
         <b>警告
-:</b> この方法を使用する場合は、ShotGrid で設定された環境変数を保持するよう注意してください。そうしないと、統合が起動しなくなります。
+:</b> この方法を使用する場合は、Flow Production Tracking で設定された環境変数を保持するよう注意してください。そうしないと、統合が起動しなくなります。
 
     </p>
 </div>

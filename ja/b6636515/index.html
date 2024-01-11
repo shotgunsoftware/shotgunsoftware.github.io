@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -6524,9 +6524,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -8890,7 +8890,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -9960,7 +9960,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -10035,11 +10035,11 @@
 
             <h1 id="api-の概要">API の概要</h1>
 
-<p><strong>注:</strong> ShotGrid API の詳細については、<a href="https://developer.shotgridsoftware.com/python-api/">API ドキュメント</a>を参照してください。</p>
+<p><strong>注:</strong> Flow Production Tracking API の詳細については、<a href="https://developer.shotgridsoftware.com/python-api/">API ドキュメント</a>を参照してください。</p>
 
-<p>ShotGrid Python のアプリケーション プログラミング インタフェース(API)を使用すると、ユーザは独自のツールを ShotGrid に簡単に統合することができます。これにより、自動プロセスの作成、数多くのサード パーティ ソフトウェア パッケージとの統合、スタジオ内の既存のツールとの通信が可能になります。スタジオごとにニーズが大きく異なるため、ShotGrid API は最低限の強力な機能のみを提供し、ビジネス ロジックのほとんどはお客様が決定できます。</p>
+<p>Flow Production Tracking Python のアプリケーション プログラミング インタフェース(API)を使用すると、ユーザは独自のツールを Flow Production Tracking に簡単に統合することができます。これにより、自動プロセスの作成、数多くのサード パーティ ソフトウェア パッケージとの統合、スタジオ内の既存のツールとの通信が可能になります。スタジオごとにニーズが大きく異なるため、Flow Production Tracking API は最低限の強力な機能のみを提供し、ビジネス ロジックのほとんどはお客様が決定できます。</p>
 
-<p>API は、メディア＆エンターテインメント業界で広く使用される一般的なプログラミング言語である <a href="https://www.python.org/">Python</a> を使用して作成されています。<a href="https://github.com/shotgunsoftware/python-api">ShotGrid Python API</a> は、ShotGrid サイトで無料で使用できます。</p>
+<p>API は、メディア＆エンターテインメント業界で広く使用される一般的なプログラミング言語である <a href="https://www.python.org/">Python</a> を使用して作成されています。<a href="https://github.com/shotgunsoftware/python-api">Flow Production Tracking Python API</a> は、Flow Production Tracking サイトで無料で使用できます。</p>
 
 <p>API は CRUD パターンに従うため、単一のエンティティ タイプに対して作成、読み取り、更新、および削除の操作をスクリプトで実行することができます。多くの操作には、フィルタ、返される列、およびソート結果を定義する機能が含まれています。</p>
 
@@ -10049,7 +10049,7 @@
 
 <h2 id="スクリプト-キー">スクリプト キー</h2>
 
-<p>API を使用して ShotGrid サーバと通信する場合、ユーザの資格情報を提供するか、スクリプト キーを使用して、スクリプトをサーバで認証できます。新しいスクリプト キーは、[管理者] (Admin)メニューに表示される[スクリプト] (Scripts)ページから生成することができます。</p>
+<p>API を使用して Flow Production Tracking サーバと通信する場合、ユーザの資格情報を提供するか、スクリプト キーを使用して、スクリプトをサーバで認証できます。新しいスクリプト キーは、[管理者] (Admin)メニューに表示される[スクリプト] (Scripts)ページから生成することができます。</p>
 
 <p><img src="/ja/reference/api/images/dv-developers-api-01-scripts-01.png" alt="スクリプト" /></p>
 
@@ -10057,7 +10057,7 @@
 
 <h2 id="個人用アクセス-トークンpat">個人用アクセス トークン(PAT)</h2>
 
-<p>スクリプト キーに加えて、ShotGrid サイトと通信するために個人用アクセス トークン(PAT)も設定する必要があります。設定方法については、次のビデオ解説を参照してください。</p>
+<p>スクリプト キーに加えて、Flow Production Tracking サイトと通信するために個人用アクセス トークン(PAT)も設定する必要があります。設定方法については、次のビデオ解説を参照してください。</p>
 
 <ul>
   <li><a href="https://help.autodesk.com/view/SGSUB/JPN/?guid=SG_Migration_mi_migration_mi_overview_html#configure-your-personal-access-token-pat-">個人用アクセス トークン(PAT)を設定する</a></li>
@@ -10070,7 +10070,7 @@
 <ol>
   <li><a href="https://developer.shotgridsoftware.com/python-api/cookbook/examples/basic_create_version_link_shot.html">バージョンを作成してショットにリンクする</a>。これにより、レビュー用に新しいレンダラの送信を自動化できます。</li>
   <li><a href="https://developer.shotgridsoftware.com/python-api/cookbook/examples/basic_upload_thumbnail_version.html">サムネイルをアップロードする</a>。これにより、サイト上のすべての要素に、手動で追加することなく最新のサムネイルを反映できます。</li>
-  <li><a href="https://developer.shotgridsoftware.com/python-api/cookbook/examples/svn_integration.html">ShotGrid と SVN などのコード リポジトリを統合する</a>。これにより、ShotGrid を利用してソフトウェア開発のプロジェクトを管理できます。</li>
+  <li><a href="https://developer.shotgridsoftware.com/python-api/cookbook/examples/svn_integration.html">Flow Production Tracking と SVN などのコード リポジトリを統合する</a>。これにより、Flow Production Tracking を利用してソフトウェア開発のプロジェクトを管理できます。</li>
 </ol>
 
 <h2 id="api-で実行できない操作">API で実行できない操作</h2>
@@ -10086,13 +10086,13 @@
 
 <h2 id="アクション-メニュー-アイテムami">アクション メニュー アイテム(AMI)</h2>
 
-<p>ShotGrid のインタフェース内から簡単に起動するスクリプトを作成するには、<a href="https://developer.shotgridsoftware.com/ja/67695b40/">AMI</a> を使用します。これらは、データの行を右クリックして表示するコンテキスト メニューに表示される、カスタマイズ可能なオプションです。クリックするとコンテキスト データ ダンプが Web サーバまたはカスタム ブラウザ プロトコル ハンドラに送信されます。ここでカスタム ビジネス ロジックを実行できます。</p>
+<p>Flow Production Tracking のインタフェース内から簡単に起動するスクリプトを作成するには、<a href="https://developer.shotgridsoftware.com/ja/67695b40/">AMI</a> を使用します。これらは、データの行を右クリックして表示するコンテキスト メニューに表示される、カスタマイズ可能なオプションです。クリックするとコンテキスト データ ダンプが Web サーバまたはカスタム ブラウザ プロトコル ハンドラに送信されます。ここでカスタム ビジネス ロジックを実行できます。</p>
 
 <p>エンティティごとに異なる AMI を設定することができ、プロジェクトまたは権限グループ別にそれらの項目へのアクセスを制限することができます。</p>
 
 <h2 id="イベント-トリガ-デーモン">イベント トリガ デーモン</h2>
 
-<p>ShotGrid で(ユーザまたは API スクリプトにより)実行されるあらゆるアクションでイベントが生成されます。<a href="https://github.com/shotgunsoftware/shotgunEvents">イベント デーモン</a>を使用して、イベント ストリームを監視し、定義した条件に基づいて特定の API スクリプトを実行することができます。次に、いくつかの例を示します。</p>
+<p>Flow Production Tracking で(ユーザまたは API スクリプトにより)実行されるあらゆるアクションでイベントが生成されます。<a href="https://github.com/shotgunsoftware/shotgunEvents">イベント デーモン</a>を使用して、イベント ストリームを監視し、定義した条件に基づいて特定の API スクリプトを実行することができます。次に、いくつかの例を示します。</p>
 
 <ul>
   <li>上流工程のタスクのステータスに基づいて、下流工程のタスクのステータスを自動的に変更する</li>
@@ -10102,26 +10102,26 @@
 
 <h2 id="追加情報">追加情報</h2>
 
-<p>ShotGrid API に関する詳細については、次の記事を参照してください。</p>
+<p>Flow Production Tracking API に関する詳細については、次の記事を参照してください。</p>
 
 <ul>
-  <li><a href="https://github.com/shotgunsoftware/python-api/">GitHub から ShotGrid API をダウンロードする</a></li>
-  <li><a href="https://developer.shotgridsoftware.com/python-api/">ShotGrid API ドキュメント</a></li>
+  <li><a href="https://github.com/shotgunsoftware/python-api/">GitHub から Flow Production Tracking API をダウンロードする</a></li>
+  <li><a href="https://developer.shotgridsoftware.com/python-api/">Flow Production Tracking API ドキュメント</a></li>
   <li><a href="https://groups.google.com/a/shotgunsoftware.com/forum/?fromgroups#!forum/shotgun-dev">ShotGrid-dev リスト(公開)</a></li>
-  <li><a href="https://github.com/shotgunsoftware/shotgunEvents">ShotGrid イベント デーモンのサンプル コード</a></li>
+  <li><a href="https://github.com/shotgunsoftware/shotgunEvents">Flow Production Tracking イベント デーモンのサンプル コード</a></li>
   <li><a href="https://developer.shotgridsoftware.com/ja/0d8a11d9/">イベント駆動型トリガを書き込む</a></li>
-  <li><a href="https://help.autodesk.com/view/SGSUB/JPN/?guid=SG_Administrator_ar_get_started_ar_shotgun_schema_html">ShotGrid のスキーマ</a></li>
+  <li><a href="https://help.autodesk.com/view/SGSUB/JPN/?guid=SG_Administrator_ar_get_started_ar_shotgun_schema_html">Flow Production Tracking のスキーマ</a></li>
   <li><a href="https://developer.shotgridsoftware.com/ja/09b77cf4/">API のベスト プラクティス</a></li>
 </ul>
 
 <h2 id="投稿とコラボレーション">投稿とコラボレーション</h2>
 
-<p>世界中の人と共有したいと思うような優れたツールを ShotGrid で作成したことはありませんか。それはすばらしいことです。オートデスクには、情報を共有したり、協力し合うことが大好きな開発者向けの、活発な<a href="https://community.shotgridsoftware.com/">開発者コミュニティ</a>があります。以下のように参加できます。</p>
+<p>世界中の人と共有したいと思うような優れたツールを Flow Production Tracking で作成したことはありませんか。それはすばらしいことです。オートデスクには、情報を共有したり、協力し合うことが大好きな開発者向けの、活発な<a href="https://community.shotgridsoftware.com/">開発者コミュニティ</a>があります。以下のように参加できます。</p>
 
 <ul>
-  <li><a href="https://community.shotgridsoftware.com/">ShotGrid コミュニティ</a>に参加します。</li>
+  <li><a href="https://community.shotgridsoftware.com/">Flow Production Tracking コミュニティ</a>に参加します。</li>
   <li><a href="https://github.com/">GitHub</a> にコードを投稿します(コードはパイプライン固有のものではなく、十分に立証されたものであり、.txt または .mdk 形式の README が必要です)。</li>
-  <li>リンクと説明を dev リストに投稿します。開発者コミュニティと ShotGrid の開発者はその投稿をよく調べて、フィードバックを提供したり、良い点は高く評価します。</li>
+  <li>リンクと説明を dev リストに投稿します。開発者コミュニティと Flow Production Tracking の開発者はその投稿をよく調べて、フィードバックを提供したり、良い点は高く評価します。</li>
 </ul>
 
 <p>当社は、絶えずお客様が提供するさまざまなツールや統合に感動し、刺激を受けています。ぜひお客様の実力をお見せください。</p>

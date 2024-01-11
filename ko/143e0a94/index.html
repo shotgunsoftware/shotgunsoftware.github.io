@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ko/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Jira 및 ShotGrid 간 데이터 동기화
+            Jira 및 Flow Production Tracking 간 데이터 동기화
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/ko/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ko/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 설명서
+            Flow Production Tracking 설명서
         </a>
     </div>
 
@@ -8173,13 +8173,13 @@
     </p>
 </div>
 
-<h2 id="shotgrid-데스크톱을-통해-디버깅-활성화">ShotGrid 데스크톱을 통해 디버깅 활성화</h2>
+<h2 id="shotgrid-데스크톱을-통해-디버깅-활성화">Flow Production Tracking 데스크톱을 통해 디버깅 활성화</h2>
 
-<p>디버깅을 활성화하는 가장 쉬운 방법은 ShotGrid 데스크톱 앱을 통해 켜는 것입니다. ShotGrid 데스크톱에 로그인하고 나면 설정할 수 있습니다. 앱 오른쪽 아래에 있는 프로파일 사진을 클릭하고 <strong>고급(Advanced) -&gt; 디버그 로깅 토글(Toggle Debug Logging)</strong>을 선택합니다. 이 설정은 세션 간에 영속적이기 때문에 작업을 마치면 끄는 것을 잊지 마십시오.</p>
+<p>디버깅을 활성화하는 가장 쉬운 방법은 Flow Production Tracking 데스크톱 앱을 통해 켜는 것입니다. Flow Production Tracking 데스크톱에 로그인하고 나면 설정할 수 있습니다. 앱 오른쪽 아래에 있는 프로파일 사진을 클릭하고 <strong>고급(Advanced) -&gt; 디버그 로깅 토글(Toggle Debug Logging)</strong>을 선택합니다. 이 설정은 세션 간에 영속적이기 때문에 작업을 마치면 끄는 것을 잊지 마십시오.</p>
 
 <p><img src="/ko/quick-answers/troubleshooting/images/desktop-enable-debug-logging.png" alt="SG 데스크톱에서 디버그 로깅 토글" /></p>
 
-<p>이 기능을 켜면 ShotGrid 데스크톱에서 실행한 앱 또는 브라우저 통합을 통한 툴킷 명령도 이 디버그 상태를 상속한다는 점에도 유의하십시오.</p>
+<p>이 기능을 켜면 Flow Production Tracking 데스크톱에서 실행한 앱 또는 브라우저 통합을 통한 툴킷 명령도 이 디버그 상태를 상속한다는 점에도 유의하십시오.</p>
 
 <h2 id="환경-변수-설정">환경 변수 설정</h2>
 
@@ -8245,7 +8245,7 @@
     <p>
         <i class="fa fa-info-circle"></i>
         <b>참고
-:</b> ShotGrid 데스크톱과 터미널을 닫으면 디버그 로깅이 더 이상 켜진 상태로 유지되지 않습니다.
+:</b> Flow Production Tracking 데스크톱과 터미널을 닫으면 디버그 로깅이 더 이상 켜진 상태로 유지되지 않습니다.
 
     </p>
 </div>
@@ -8256,7 +8256,7 @@
 
 <p>모든 엔진은 환경 파일에 <code class="highlighter-rouge">debug_logging</code> 설정이 있습니다. 이 설정을 켜면 추가 디버그 레벨 로그 메시지가 소프트웨어(예: Nuke 또는 Maya의 스크립트 편집기)의 기본 출력으로 전송됩니다. 엔진에서 실행 중인 모든 앱이 이 디버그 레벨 메시지를 전송하기 때문에 엔진에 대해 이 설정을 켜면 결국 모든 앱에 대해서도 켜는 셈입니다.</p>
 
-<p>이렇게 해도 파일로 어떤 로그 메시지를 출력하지는 않습니다. 이를 가능하게 할 추가 표준 로깅 프레임워크를 구현하기 위해 작업 중입니다. 예외는 <a href="https://developer.shotgridsoftware.com/ko/d587be80/#getting-started-with-desktop">ShotGrid 데스크톱</a> 및 <a href="https://developer.shotgridsoftware.com/ko/8d461cbe/">Photoshop 엔진</a>이며 GUI 콘솔과 파일 모두에 출력을 로깅합니다.</p>
+<p>이렇게 해도 파일로 어떤 로그 메시지를 출력하지는 않습니다. 이를 가능하게 할 추가 표준 로깅 프레임워크를 구현하기 위해 작업 중입니다. 예외는 <a href="https://developer.shotgridsoftware.com/ko/d587be80/#getting-started-with-desktop">Flow Production Tracking 데스크톱</a> 및 <a href="https://developer.shotgridsoftware.com/ko/8d461cbe/">Photoshop 엔진</a>이며 GUI 콘솔과 파일 모두에 출력을 로깅합니다.</p>
 
 <h3 id="소프트웨어의-엔진에-대해-디버그-로깅-켜기">소프트웨어의 엔진에 대해 디버그 로깅 켜기</h3>
 
@@ -8285,7 +8285,7 @@
     <p>
         <i class="fa fa-info-circle"></i>
         <b>참고
-:</b> 디버그 로깅이 ShotGrid 데스크톱 체크박스, 환경 변수 또는 엔진 구성 설정 중 하나를 통해 활성화된 경우 디버그 로깅이 출력됩니다. 또한 이러한 세 가지 각각의 설정은 서로 독립적으로 수정됩니다. 체크박스 값은 엔진 설정이나 환경 변수에 전혀 관계없이 영구적인 앱 설정입니다. 즉, 데스크톱 체크박스를 선택 취소해도 다른 방법 중 하나를 통해 디버그 로깅이 계속 활성화되어 있을 수 있다는 의미입니다.
+:</b> 디버그 로깅이 Flow Production Tracking 데스크톱 체크박스, 환경 변수 또는 엔진 구성 설정 중 하나를 통해 활성화된 경우 디버그 로깅이 출력됩니다. 또한 이러한 세 가지 각각의 설정은 서로 독립적으로 수정됩니다. 체크박스 값은 엔진 설정이나 환경 변수에 전혀 관계없이 영구적인 앱 설정입니다. 즉, 데스크톱 체크박스를 선택 취소해도 다른 방법 중 하나를 통해 디버그 로깅이 계속 활성화되어 있을 수 있다는 의미입니다.
 
     </p>
 </div>
@@ -8296,7 +8296,7 @@
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.	/tank --debug core DEBUG [10:11:38 617.835998535]: DEBUG [10:11:38 618.768930435]: Running with debug output enabled.
 DEBUG [10:11:38 618.921995163]: DEBUG [10:11:38 619.092941284]: Core API resides inside a (localized) pipeline configuration.
-DEBUG [10:11:38 619.235992432]: Full command line passed: ['/sgtk/software/shotgun/scarlet/install/core/scripts/tank_cmd.py', '/sgtk/software/shotgun/scarlet', '--debug', 'core'] DEBUG [10:11:38 619.364023209]: DEBUG [10:11:38 619.463920593]: DEBUG [10:11:38 619.575977325]: Code install root: /sgtk/software/shotgun/scarlet DEBUG [10:11:38 619.678020477]: Pipeline Config Root: /sgtk/software/shotgun/scarlet DEBUG [10:11:38 619.756937027]: DEBUG [10:11:38 619.826078415]: DEBUG [10:11:38 619.905948639]: DEBUG [10:11:38 619.978904724]: Context items: ['/sgtk/software/shotgun/scarlet'] DEBUG [10:11:38 620.06688118]: Command: core DEBUG [10:11:38 620.129108429]: Command Arguments: [] DEBUG [10:11:38 620.193004608]: Sgtk Pipeline Config Location: /sgtk/software/shotgun/scarlet DEBUG [10:11:38 620.270967484]: Location of this script (__file__): /sgtk/software/shotgun/scarlet/install/core/scripts/tank_cmd.py Welcome to the Shotgun Pipeline Toolkit!
+DEBUG [10:11:38 619.235992432]: Full command line passed: ['/sgtk/software/shotgun/scarlet/install/core/scripts/tank_cmd.py', '/sgtk/software/shotgun/scarlet', '--debug', 'core'] DEBUG [10:11:38 619.364023209]: DEBUG [10:11:38 619.463920593]: DEBUG [10:11:38 619.575977325]: Code install root: /sgtk/software/shotgun/scarlet DEBUG [10:11:38 619.678020477]: Pipeline Config Root: /sgtk/software/shotgun/scarlet DEBUG [10:11:38 619.756937027]: DEBUG [10:11:38 619.826078415]: DEBUG [10:11:38 619.905948639]: DEBUG [10:11:38 619.978904724]: Context items: ['/sgtk/software/shotgun/scarlet'] DEBUG [10:11:38 620.06688118]: Command: core DEBUG [10:11:38 620.129108429]: Command Arguments: [] DEBUG [10:11:38 620.193004608]: Sgtk Pipeline Config Location: /sgtk/software/shotgun/scarlet DEBUG [10:11:38 620.270967484]: Location of this script (__file__): /sgtk/software/shotgun/scarlet/install/core/scripts/tank_cmd.py Welcome to the Flow Production Tracking Toolkit!
 For documentation, see https://developer.shotgridsoftware.com/d587be80/?title=Integrations+User+Guide
 Starting Toolkit for your current path '/sgtk/software/shotgun/scarlet'
 - The path is not associated with any Shotgun object.
@@ -8304,11 +8304,11 @@ Starting Toolkit for your current path '/sgtk/software/shotgun/scarlet'
 DEBUG [10:11:39 125.463962555]: Sgtk API and Context resolve complete.
 	DEBUG [10:11:39 126.449108124]: Sgtk API: Sgtk Core v0.15.18, config /sgtk/software/shotgun/scarlet DEBUG [10:11:39 126.588106155]: Context: scarlet - Using configuration 'Primary' and Core v0.15.18 - Setting the Context to scarlet.
 DEBUG [10:11:39 129.276990891]: 이 명령의 경우 엔진을 로드할 필요가 없습니다.
-- Running command core... ---------------------------------------------------------------------- Command: Core ---------------------------------------------------------------------- Welcome to the ShotGrid Pipeline Toolkit update checker!
+- Running command core... ---------------------------------------------------------------------- Command: Core ---------------------------------------------------------------------- Welcome to the Flow Production Tracking Toolkit update checker!
 This script will check if the Toolkit Core API installed in /sgtk/software/shotgun/scarlet is up to date.
 
 
-Please note that when you upgrade the core API, you typically affect more than one project. If you want to test a Core API upgrade in isolation prior to rolling it out to multiple projects, we recommend creating a special *localized* pipeline configuration. For more information about this, please see the Toolkit documentation.	You are currently running version v0.15.18 of the Shotgun Pipeline Toolkit No need to update the Toolkit Core API at this time!
+Please note that when you upgrade the core API, you typically affect more than one project. If you want to test a Core API upgrade in isolation prior to rolling it out to multiple projects, we recommend creating a special *localized* pipeline configuration. For more information about this, please see the Toolkit documentation.	You are currently running version v0.15.18 of the Flow Production Tracking Toolkit No need to update the Toolkit Core API at this time!
 DEBUG [10:11:39 981.74405098]: Exiting with exit code None
 </code></pre></div></div>
 

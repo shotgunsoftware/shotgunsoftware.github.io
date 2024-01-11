@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -4800,7 +4800,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -7431,9 +7431,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -9797,7 +9797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -10867,7 +10867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -10940,8 +10940,8 @@
 <div class="article-body markdown" data-swiftype-name="body" data-swiftype-type="text">
   
 
-            <h1 id="shotgrid-事件框架">ShotGrid 事件框架</h1>
-<p>此软件最初由 <a href="https://www.patrickboucher.com">Patrick Boucher</a> 开发，由 <a href="https://rodeofx.com">Rodeo Fx</a> 和 Oblique 提供支持。该软件现已加入 <a href="https://www.shotgridsoftware.com">ShotGrid Software</a> 的<a href="https://github.com/shotgunsoftware">开源计划</a>。</p>
+            <h1 id="shotgrid-事件框架">Flow Production Tracking 事件框架</h1>
+<p>此软件最初由 <a href="https://www.patrickboucher.com">Patrick Boucher</a> 开发，由 <a href="https://rodeofx.com">Rodeo Fx</a> 和 Oblique 提供支持。该软件现已加入 <a href="https://www.shotgridsoftware.com">Flow Production Tracking Software</a> 的<a href="https://github.com/shotgunsoftware">开源计划</a>。</p>
 
 <p>该软件根据 MIT 许可提供：如需获取该许可，请访问 LICENSE 文件或<a href="https://www.opensource.org/licenses/mit-license.php">开源计划</a>网站。</p>
 
@@ -10963,13 +10963,13 @@
 
 <h2 id="概述">概述</h2>
 
-<p>如果要访问 ShotGrid 事件流，首选方法是监视事件表、获取任何新事件并对其进行处理，然后重复上述动作。</p>
+<p>如果要访问 Flow Production Tracking 事件流，首选方法是监视事件表、获取任何新事件并对其进行处理，然后重复上述动作。</p>
 
 <p>需要执行许多工作才可顺利完成此流程，这些工作可能与需要应用的业务规则并无任何直接关系。</p>
 
 <p>框架的作用是使业务逻辑实施者摆脱任何繁琐的监视任务。</p>
 
-<p>该框架是一个守护进程，可在服务器上运行并监视 ShotGrid 事件流。找到事件时，守护进程会将事件分发给一系列注册的插件。每个插件可以根据情况处理事件。</p>
+<p>该框架是一个守护进程，可在服务器上运行并监视 Flow Production Tracking 事件流。找到事件时，守护进程会将事件分发给一系列注册的插件。每个插件可以根据情况处理事件。</p>
 
 <p>进程负责以下工作：</p>
 
@@ -10977,12 +10977,12 @@
   <li>从一个或多个指定路径注册插件。</li>
   <li>取消激活任何崩溃的插件。</li>
   <li>当磁盘上的插件出现变化时重新加载插件。</li>
-  <li>监视 ShotGrid 事件流。</li>
+  <li>监视 Flow Production Tracking 事件流。</li>
   <li>记住最后一次处理的事件 ID 和所有积压工作。</li>
   <li>当进程启动后，从最后一次处理的事件 ID 开始作业。</li>
   <li>捕捉所有连接错误。</li>
   <li>根据需要将信息记录到标准输出、文件或电子邮件。</li>
-  <li>创建与 ShotGrid 的连接，以供回调使用。</li>
+  <li>创建与 Flow Production Tracking 的连接，以供回调使用。</li>
   <li>将事件传递到已注册的回调。</li>
 </ul>
 
@@ -11004,9 +11004,9 @@
 
 <p><strong>注意：</strong>有关事件驱动型触发器的详细信息，请参见我们的文档：<a href="https://github.com/shotgunsoftware/shotgunEvents">https://github.com/shotgunsoftware/shotgunEvents</a>。</p>
 
-<p>ShotGrid 会为在 ShotGrid 中发生的每个动作创建一个<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_data_management_ar_event_logs_html">事件日志条目</a>。您可以在您的 ShotGrid 站点中以及通过 ShotGrid API 查看这些事件。</p>
+<p>Flow Production Tracking 会为在 Flow Production Tracking 中发生的每个动作创建一个<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_data_management_ar_event_logs_html">事件日志条目</a>。您可以在您的 Flow Production Tracking 站点中以及通过 Flow Production Tracking API 查看这些事件。</p>
 
-<p>除了在 ShotGrid 中查看事件的详细历史记录外，您还可以编写自己的事件侦听器脚本来轮询事件日志并对您关注的某些事件执行操作。您的脚本可以执行您的工作流中的其他内部脚本，也可以使用 ShotGrid API 并更新 ShotGrid 中的其他信息，或同时实现两者。</p>
+<p>除了在 Flow Production Tracking 中查看事件的详细历史记录外，您还可以编写自己的事件侦听器脚本来轮询事件日志并对您关注的某些事件执行操作。您的脚本可以执行您的工作流中的其他内部脚本，也可以使用 Flow Production Tracking API 并更新 Flow Production Tracking 中的其他信息，或同时实现两者。</p>
 
 <h2 id="示例用例">示例用例</h2>
 
@@ -11014,32 +11014,32 @@
 
 <ul>
   <li>每当镜头的“布局”(Layout)任务状态标记为“最终”(final)时，自动将“动画”(Animation)任务状态设置为“准备开始”(ready to start)，以便动画设计师知道可以开始处理该镜头。</li>
-  <li>每当在 ShotGrid 中创建了新镜头时，都会在文件系统上创建合适的镜头目录。</li>
+  <li>每当在 Flow Production Tracking 中创建了新镜头时，都会在文件系统上创建合适的镜头目录。</li>
   <li>当某个镜头进入“暂停”(on hold)状态时通知分配给该镜头的美工人员。</li>
   <li>最终确定了某个资产时将目录设为只读。</li>
-  <li>在 ShotGrid 中将版本添加到审核时，将相关版本（或镜头）信息复制到样片系统。</li>
+  <li>在 Flow Production Tracking 中将版本添加到审核时，将相关版本（或镜头）信息复制到样片系统。</li>
   <li>场景增加到 25 个镜头时，通过 Twitter 发布一个以与场景的“说明”(Description)字段中第三个词语相同的字母开头的随机引文。</li>
 </ul>
 
 <h2 id="事件驱动的触发器的工作方式">事件驱动的触发器的工作方式</h2>
 
-<p>下面是 ShotGrid 生成的事件日志条目简单图表。您的脚本将使用 API 获取自上次查询以来发生的事件列表。然后，它将查看每个事件类型（例如 ShotGrid_Task_Change），看看其中是否有您关注的事件类型。</p>
+<p>下面是 Flow Production Tracking 生成的事件日志条目简单图表。您的脚本将使用 API 获取自上次查询以来发生的事件列表。然后，它将查看每个事件类型（例如 Flow Production Tracking_Task_Change），看看其中是否有您关注的事件类型。</p>
 
 <p>一旦找到关注的事件，它将更进一步检查事件的详细信息（例如，更改了哪些字段，值更改为什么等。此时，如果需要，您甚至可以使用 API 请求实体的详细信息）。</p>
 
-<p>如果事件符合要求，脚本将对该事件执行操作，并执行用于确定是使用 ShotGrid API、您的工作流中的内容还是两者时需要执行的任何代码。没有其他事件要查看时，重复该过程，然后使用 API 获取自上次查询以来发生的事件列表。</p>
+<p>如果事件符合要求，脚本将对该事件执行操作，并执行用于确定是使用 Flow Production Tracking API、您的工作流中的内容还是两者时需要执行的任何代码。没有其他事件要查看时，重复该过程，然后使用 API 获取自上次查询以来发生的事件列表。</p>
 
 <p><img src="/zh_CN/event-daemon/images/dv-writing-event-triggers-event-log-polling-01.png" alt="事件日志轮询" /></p>
 
 <h2 id="轮询事件日志与触发器">轮询事件日志与触发器</h2>
 
-<p>ShotGrid 提供持续的事件信息流，您可以侦听所有事件，并只对您关注的事件执行操作。相比于让 ShotGrid 自己控制触发器，这具有以下优势：</p>
+<p>Flow Production Tracking 提供持续的事件信息流，您可以侦听所有事件，并只对您关注的事件执行操作。相比于让 Flow Production Tracking 自己控制触发器，这具有以下优势：</p>
 
 <ul>
-  <li><strong>灵活：</strong>您的触发器脚本可以独立于 ShotGrid 运行。这样，您的脚本可以按照您所需的任何方式与 ShotGrid 和您的工作流交互。您可以根据需要定义规则和动作，不受任何约束。ShotGrid 不需要了解有关您的事件触发器的任何信息。它只需持续生成事件日志条目。您可以控制后续情况的所有其他方面。</li>
-  <li><strong>远程：</strong>您的脚本可以从能通过网络访问 ShotGrid 服务器的任何位置运行。您的脚本只需要 API 访问权限即可运行。</li>
+  <li><strong>灵活：</strong>您的触发器脚本可以独立于 Flow Production Tracking 运行。这样，您的脚本可以按照您所需的任何方式与 Flow Production Tracking 和您的工作流交互。您可以根据需要定义规则和动作，不受任何约束。Flow Production Tracking 不需要了解有关您的事件触发器的任何信息。它只需持续生成事件日志条目。您可以控制后续情况的所有其他方面。</li>
+  <li><strong>远程：</strong>您的脚本可以从能通过网络访问 Flow Production Tracking 服务器的任何位置运行。您的脚本只需要 API 访问权限即可运行。</li>
   <li><strong>多重性：</strong>您可以同时运行多个脚本。不同部门可能有不同的需求，因此侦听不同的事件。可以从同一脚本运行所有触发器，没有任何限制。您可能希望将触发器分解为单独的逻辑脚本。轮询查询占用资源非常少，对性能不会有任何显著影响。</li>
-  <li><strong>责任明确：</strong>如果您的脚本对 ShotGrid 进行更改，它们也会创建自己的事件，从而允许您准确查看哪些脚本进行了更改。</li>
+  <li><strong>责任明确：</strong>如果您的脚本对 Flow Production Tracking 进行更改，它们也会创建自己的事件，从而允许您准确查看哪些脚本进行了更改。</li>
 </ul>
 
 <h2 id="事件类型">事件类型</h2>
@@ -11048,7 +11048,7 @@
 
 <h2 id="事务和可能丢失的事件">事务和可能丢失的事件</h2>
 
-<p>ShotGrid 在事务中执行破坏性数据库查询，且仅当事务完成时向事件日志写入。因此，您在此处使用“最高 ID”方法时可能会丢失事件。但是，<a href="https://github.com/shotgunsoftware/shotgunEvents">GitHub 站点上的事件触发器框架</a>具有应当能处理这些情况的代码。</p>
+<p>Flow Production Tracking 在事务中执行破坏性数据库查询，且仅当事务完成时向事件日志写入。因此，您在此处使用“最高 ID”方法时可能会丢失事件。但是，<a href="https://github.com/shotgunsoftware/shotgunEvents">GitHub 站点上的事件触发器框架</a>具有应当能处理这些情况的代码。</p>
 
 
             </div>  

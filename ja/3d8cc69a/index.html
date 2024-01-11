@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/ja/7584b650/?title=Alias+ShotGrid+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
+                href="/ja/7584b650/?title=Alias+Flow+Production+Tracking+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
             >
-                Alias ShotGrid ワークフロー
+                Alias Flow Production Tracking ワークフロー
             </a>
             </div>
 
@@ -8948,7 +8948,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -11579,9 +11579,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -13945,7 +13945,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -15015,7 +15015,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -15161,8 +15161,8 @@
 
 <h2 id="パート-3-認証">パート 3: 認証</h2>
 
-<p>ShotGrid Toolkit が既に起動されている環境の外部で Toolkit API を使用するスクリプトを実行する場合は、常に認証する必要があります。
-したがって、ブートストラップを実行する前に、ShotGrid サイトで Toolkit API を認証する必要があります。</p>
+<p>Flow Production Tracking Toolkit が既に起動されている環境の外部で Toolkit API を使用するスクリプトを実行する場合は、常に認証する必要があります。
+したがって、ブートストラップを実行する前に、Flow Production Tracking サイトで Toolkit API を認証する必要があります。</p>
 
 <p>認証には、ユーザの資格情報またはスクリプトの資格情報を使用できます。</p>
 
@@ -15192,7 +15192,7 @@
 # information.
 </span><span class="n">user</span> <span class="o">=</span> <span class="n">authenticator</span><span class="o">.</span><span class="n">get_user</span><span class="p">()</span>
 
-<span class="c1"># Tells Toolkit which user to use for connecting to ShotGrid. Note that this should
+<span class="c1"># Tells Toolkit which user to use for connecting to Flow Production Tracking. Note that this should
 # always take place before creating an `Sgtk` instance.
 </span><span class="n">sgtk</span><span class="o">.</span><span class="n">set_authenticated_user</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
 </code></pre></div></div>
@@ -15208,11 +15208,11 @@
 <span class="c1"># Create a user programmatically using the script's key.
 </span><span class="n">user</span> <span class="o">=</span> <span class="n">authenticator</span><span class="o">.</span><span class="n">create_script_user</span><span class="p">(</span>
  <span class="n">api_script</span><span class="o">=</span><span class="s">"Script Name"</span><span class="p">,</span>
- <span class="n">api_key</span><span class="o">=</span><span class="s">"4e48f....&lt;use the key from your ShotGrid site&gt;"</span><span class="p">,</span>
+ <span class="n">api_key</span><span class="o">=</span><span class="s">"4e48f....&lt;use the key from your Flow Production Tracking site&gt;"</span><span class="p">,</span>
  <span class="n">host</span><span class="o">=</span><span class="s">"https://yoursite.shotgunstudio.com"</span>
 <span class="p">)</span>
 
-<span class="c1"># Tells Toolkit which user to use for connecting to ShotGrid.
+<span class="c1"># Tells Toolkit which user to use for connecting to Flow Production Tracking.
 </span><span class="n">sgtk</span><span class="o">.</span><span class="n">set_authenticated_user</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
 </code></pre></div></div>
 
@@ -15246,7 +15246,7 @@
 </code></pre></div></div>
 
 <blockquote>
-  <p><code class="highlighter-rouge">user</code> が <code class="highlighter-rouge">ToolkitManager</code> のイニシャライザに渡されない場合、<code class="highlighter-rouge">ShotgunAuthenticator().get_user()</code> は内部的に呼び出され、現在認証されている ShotGrid ユーザを返します。他の任意の <code class="highlighter-rouge">HumanUser</code> または <code class="highlighter-rouge">ScriptUser</code> を使用してブートストラップするには、<a href="https://developer.shotgridsoftware.com/tk-core/authentication.html#sgtk.authentication.ShotgunAuthenticator.create_session_user">ShotgunAuthenticator.create_session_user</a> または <a href="https://developer.shotgridsoftware.com/tk-core/authentication.html#sgtk.authentication.ShotgunAuthenticator.create_script_user">ShotgunAuthenticator.create_script_user</a> を使用して作成されたユーザを渡します。</p>
+  <p><code class="highlighter-rouge">user</code> が <code class="highlighter-rouge">ToolkitManager</code> のイニシャライザに渡されない場合、<code class="highlighter-rouge">ShotgunAuthenticator().get_user()</code> は内部的に呼び出され、現在認証されている Flow Production Tracking ユーザを返します。他の任意の <code class="highlighter-rouge">HumanUser</code> または <code class="highlighter-rouge">ScriptUser</code> を使用してブートストラップするには、<a href="https://developer.shotgridsoftware.com/tk-core/authentication.html#sgtk.authentication.ShotgunAuthenticator.create_session_user">ShotgunAuthenticator.create_session_user</a> または <a href="https://developer.shotgridsoftware.com/tk-core/authentication.html#sgtk.authentication.ShotgunAuthenticator.create_script_user">ShotgunAuthenticator.create_script_user</a> を使用して作成されたユーザを渡します。</p>
 </blockquote>
 
 <p>Toolkit でブートストラップを行うには、少なくともエンティティ、プラグイン ID、およびエンジンについての情報が必要になります。使用可能なすべてのパラメータとオプションについては、このガイドでは説明しません。<a href="https://developer.shotgridsoftware.com/tk-core/initializing.html#bootstrap-api">リファレンス ドキュメント</a>に記載されています。</p>
@@ -15266,7 +15266,7 @@
 <p><a href="https://developer.shotgridsoftware.com/tk-core/initializing.html#sgtk.bootstrap.ToolkitManager.bootstrap_engine"><code class="highlighter-rouge">ToolkitManager.bootstrap_engine()</code></a> メソッドの <code class="highlighter-rouge">entity</code> パラメータを使用する目的は、<a href="https://developer.shotgridsoftware.com/tk-core/core.html#context">コンテキスト</a>、つまり、起動したエンジンの<a href="https://developer.shotgridsoftware.com/tk-core/core.html?highlight=environment#module-pick_environment">環境</a>を設定することです。
 エンティティには、環境設定が機能する任意のエンティティ タイプを指定できます。たとえば、<code class="highlighter-rouge">Project</code> エンティティを指定した場合、エンジンはプロジェクトの環境設定を使用してプロジェクト コンテキスト内で起動します。同様に、(タスクが <code class="highlighter-rouge">Asset</code> にリンクされている) <code class="highlighter-rouge">Task</code> エンティティを指定して、エンジンが <code class="highlighter-rouge">asset_step.yml</code> 環境を使用して起動するように設定できます。この動作は既定の設定動作に基づいて決まり、<a href="https://developer.shotgridsoftware.com/ja/c73fcb84/#how-toolkit-determines-the-current-environment">選択した環境</a>はコア フック <a href="https://github.com/shotgunsoftware/tk-config-default2/blob/v1.2.11/core/hooks/pick_environment.py"><code class="highlighter-rouge">pick_environment.py</code></a> によってコントロールされます。したがって、コンテキストやその他のパラメータに基づいて異なる環境を選択するよう変更することができます。</p>
 
-<p>エンティティは、タイプと ID が最低限必要となる ShotGrid エンティティ ディクショナリの形式で指定する必要があります。</p>
+<p>エンティティは、タイプと ID が最低限必要となる Flow Production Tracking エンティティ ディクショナリの形式で指定する必要があります。</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">task</span> <span class="o">=</span> <span class="p">{</span><span class="s">"type"</span><span class="p">:</span> <span class="s">"Task"</span><span class="p">,</span> <span class="s">"id"</span><span class="p">:</span> <span class="mi">17264</span><span class="p">}</span>
 <span class="n">engine</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">bootstrap_engine</span><span class="p">(</span><span class="s">"tk-shell"</span><span class="p">,</span> <span class="n">entity</span><span class="o">=</span><span class="n">task</span><span class="p">)</span>
@@ -15317,11 +15317,11 @@
 <span class="c1"># Create a user programmatically using the script's key.
 </span><span class="n">user</span> <span class="o">=</span> <span class="n">authenticator</span><span class="o">.</span><span class="n">create_script_user</span><span class="p">(</span>
  <span class="n">api_script</span><span class="o">=</span><span class="s">"Script Name"</span><span class="p">,</span>
- <span class="n">api_key</span><span class="o">=</span><span class="s">"4e48f....&lt;use the key from your ShotGrid site&gt;"</span><span class="p">,</span>
+ <span class="n">api_key</span><span class="o">=</span><span class="s">"4e48f....&lt;use the key from your Flow Production Tracking site&gt;"</span><span class="p">,</span>
  <span class="n">host</span><span class="o">=</span><span class="s">"https://yoursite.shotgunstudio.com"</span>
 <span class="p">)</span>
 
-<span class="c1"># Tells Toolkit which user to use for connecting to ShotGrid.
+<span class="c1"># Tells Toolkit which user to use for connecting to Flow Production Tracking.
 # This is actually not necessary when using the ToolkitManager. The authenticated user will be set
 # before launching the engine.
 # sgtk.set_authenticated_user(user)
@@ -15342,7 +15342,7 @@
 
 <p>エンジン インスタンスが作成されたので、Toolkit API を使用することができます。</p>
 
-<p>アプリの起動方法について説明する前に、エンジンを介して<a href="https://developer.shotgridsoftware.com/tk-core/platform.html#sgtk.platform.Engine.context">現在のコンテキスト</a>、<a href="https://developer.shotgridsoftware.com/tk-core/platform.html#sgtk.platform.Engine.sgtk">sgtk インスタンス</a>、および <a href="https://developer.shotgridsoftware.com/tk-core/platform.html#sgtk.platform.Engine.shotgun">ShotGrid API インスタンス</a>を管理できることにご注意ください。</p>
+<p>アプリの起動方法について説明する前に、エンジンを介して<a href="https://developer.shotgridsoftware.com/tk-core/platform.html#sgtk.platform.Engine.context">現在のコンテキスト</a>、<a href="https://developer.shotgridsoftware.com/tk-core/platform.html#sgtk.platform.Engine.sgtk">sgtk インスタンス</a>、および <a href="https://developer.shotgridsoftware.com/tk-core/platform.html#sgtk.platform.Engine.shotgun">Flow Production Tracking API インスタンス</a>を管理できることにご注意ください。</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">engine</span><span class="o">.</span><span class="n">context</span>
 <span class="n">engine</span><span class="o">.</span><span class="n">sgtk</span>
@@ -15414,11 +15414,11 @@
 <span class="c1"># Create a user programmatically using the script's key.
 </span><span class="n">user</span> <span class="o">=</span> <span class="n">authenticator</span><span class="o">.</span><span class="n">create_script_user</span><span class="p">(</span>
  <span class="n">api_script</span><span class="o">=</span><span class="s">"Script Name"</span><span class="p">,</span>
- <span class="n">api_key</span><span class="o">=</span><span class="s">"4e48f....&lt;use the key from your ShotGrid site&gt;"</span><span class="p">,</span>
+ <span class="n">api_key</span><span class="o">=</span><span class="s">"4e48f....&lt;use the key from your Flow Production Tracking site&gt;"</span><span class="p">,</span>
  <span class="n">host</span><span class="o">=</span><span class="s">"https://yoursite.shotgunstudio.com"</span>
 <span class="p">)</span>
 
-<span class="c1"># Tells Toolkit which user to use for connecting to ShotGrid.
+<span class="c1"># Tells Toolkit which user to use for connecting to Flow Production Tracking.
 # This is actually not necessary when using the ToolkitManager. The authenticated user will be set
 # before launching the engine.
 # sgtk.set_authenticated_user(user)

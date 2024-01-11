@@ -11,12 +11,12 @@
 <link rel="alternate" hreflang="zh_CN" href="/zh_CN/eecfb05b/"/>
 
 
-  <title>Why are my Houdini ShotGrid integrations not starting? - SG Developer</title>
+  <title>Why are my Houdini Flow Production Tracking integrations not starting? - SG Developer</title>
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -8160,16 +8160,16 @@
 <div class="article-body markdown" data-swiftype-name="body" data-swiftype-type="text">
   
 
-            <h1 id="why-are-my-houdini-shotgrid-integrations-not-starting">Why are my Houdini ShotGrid integrations not starting?</h1>
+            <h1 id="why-are-my-houdini-shotgrid-integrations-not-starting">Why are my Houdini Flow Production Tracking integrations not starting?</h1>
 
-<p>This covers the most common reason we’ve seen for the ShotGrid integrations not starting in Houdini. In this case,
-Houdini launches without error from ShotGrid Desktop, your ShotGrid website, or the tank command. However, once Houdini
-is launched, the ShotGrid menu or shelf does not appear.</p>
+<p>This covers the most common reason we’ve seen for the Flow Production Tracking integrations not starting in Houdini. In this case,
+Houdini launches without error from Flow Production Tracking Toolkit, your Flow Production Tracking website, or the tank command. However, once Houdini
+is launched, the Flow Production Tracking menu or shelf does not appear.</p>
 
-<p>Often the reason for this is that the <code class="highlighter-rouge">HOUDINI_PATH</code> environment variable has been overridden, and ShotGrid relies on that
+<p>Often the reason for this is that the <code class="highlighter-rouge">HOUDINI_PATH</code> environment variable has been overridden, and Flow Production Tracking relies on that
  for passing the startup script path.</p>
 
-<p>When Houdini is launched from ShotGrid, the launch app logic adds the ShotGrid bootstrap script path to the <code class="highlighter-rouge">HOUDINI_PATH</code>
+<p>When Houdini is launched from Flow Production Tracking, the launch app logic adds the Flow Production Tracking bootstrap script path to the <code class="highlighter-rouge">HOUDINI_PATH</code>
 environment variable. However, the problem can arise when Houdini has a
 <a href="https://www.sidefx.com/docs/houdini/basics/config_env.html#setting-environment-variables">houdini.env file</a>.
 This file allows the user to set environment variables that will be present when Houdini is loaded, but any values
@@ -8188,7 +8188,7 @@ for that variable.</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HOUDINI_PATH = /example/of/an/existing/path;$HOUDINI_PATH;&amp;
 </code></pre></div></div>
 
-<p>This will allow the ShotGrid set value to persist when Houdini launches.</p>
+<p>This will allow the Flow Production Tracking set value to persist when Houdini launches.</p>
 
 <div class="warning-popup">
     <p>

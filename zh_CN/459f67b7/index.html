@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -3364,9 +3364,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/zh_CN/7584b650/?title=Alias+ShotGrid+%E5%B7%A5%E4%BD%9C%E6%B5%81"
+                href="/zh_CN/7584b650/?title=Alias+Flow+Production+Tracking+%E5%B7%A5%E4%BD%9C%E6%B5%81"
             >
-                Alias ShotGrid 工作流
+                Alias Flow Production Tracking 工作流
             </a>
             </div>
 
@@ -6658,7 +6658,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -9289,9 +9289,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -11655,7 +11655,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -12725,7 +12725,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -12813,10 +12813,10 @@
   <li>您将从 Toolkit 项目的<a href="https://github.com/shotgunsoftware/tk-config-default2">默认配置</a>开始。</li>
 </ul>
 
-<p>在开始之前，您还要做出一个决定，即如何解析 <code class="highlighter-rouge">Episode</code>。现有的 ShotGrid Hiero/Nuke Studio 导出流程会根据 Nuke Studio 项目内容在 ShotGrid 站点上创建 <code class="highlighter-rouge">Sequence</code> 和 <code class="highlighter-rouge">Shot</code> 实体。因此，与在 Maya 中使用 Toolkit 时的情况（要求您已创建资产和任务）不同，在 Nuke Studio 中，不要求您已创建 <code class="highlighter-rouge">Episodes</code>、<code class="highlighter-rouge">Sequences</code> 或 <code class="highlighter-rouge">Shots</code>。虽然如此，您仍需决定如何在 Nuke Studio 中定义 <code class="highlighter-rouge">Episode</code>。下面是几种可能的方式：</p>
+<p>在开始之前，您还要做出一个决定，即如何解析 <code class="highlighter-rouge">Episode</code>。现有的 Flow Production Tracking Hiero/Nuke Studio 导出流程会根据 Nuke Studio 项目内容在 Flow Production Tracking 站点上创建 <code class="highlighter-rouge">Sequence</code> 和 <code class="highlighter-rouge">Shot</code> 实体。因此，与在 Maya 中使用 Toolkit 时的情况（要求您已创建资产和任务）不同，在 Nuke Studio 中，不要求您已创建 <code class="highlighter-rouge">Episodes</code>、<code class="highlighter-rouge">Sequences</code> 或 <code class="highlighter-rouge">Shots</code>。虽然如此，您仍需决定如何在 Nuke Studio 中定义 <code class="highlighter-rouge">Episode</code>。下面是几种可能的方式：</p>
 
 <ul>
-  <li>提前在 ShotGrid 中创建剧集，并配置 Nuke Studio Toolkit 集成以在剧集上下文中使用，以便在导出时您可以从当前场景上下文中获得 <code class="highlighter-rouge">Episode</code> 实体。</li>
+  <li>提前在 Flow Production Tracking 中创建剧集，并配置 Nuke Studio Toolkit 集成以在剧集上下文中使用，以便在导出时您可以从当前场景上下文中获得 <code class="highlighter-rouge">Episode</code> 实体。</li>
   <li>假定尚未创建 <code class="highlighter-rouge">Episode</code> 实体，并要利用 Nuke Studio 的标记功能以剧集名称标记场，以及在导出时使用相应信息来解析 <code class="highlighter-rouge">Episode</code>。</li>
 </ul>
 
@@ -12832,7 +12832,7 @@
 
 <h2 id="挂钩和设置">挂钩和设置</h2>
 
-<p>为了使 ShotGrid 导出流程正确处理 <code class="highlighter-rouge">Episode</code>，需要修改其中一些导出挂钩。本文假定您了解<a href="https://developer.shotgridsoftware.com/zh_CN/312b792f/#using-frameworks-from-hooks">挂钩</a>的含义，并知晓如何覆盖基本实施。</p>
+<p>为了使 Flow Production Tracking 导出流程正确处理 <code class="highlighter-rouge">Episode</code>，需要修改其中一些导出挂钩。本文假定您了解<a href="https://developer.shotgridsoftware.com/zh_CN/312b792f/#using-frameworks-from-hooks">挂钩</a>的含义，并知晓如何覆盖基本实施。</p>
 
 <p>有两个导出挂钩可帮助您启用剧集。</p>
 
@@ -12843,7 +12843,7 @@
 
 <p>注意：另外有一个名为 <code class="highlighter-rouge">hiero_translate_template.py</code> 的挂钩。此示例中不使用该挂钩，但如果您希望将场替换为剧集并维持一个两层的层次结构，则需要使用该挂钩。在本文结尾处，我们将稍微介绍此内容。</p>
 
-<p>修改 <code class="highlighter-rouge">hiero_get_shot.py</code>，以便查找剧集，并在 ShotGrid 中为其创建一个实体，同时修改 <code class="highlighter-rouge">hiero_resolve_custom_strings.py</code>，以便 Nuke Studio 了解向路径中的 {Episode} 项提供何值。下面是更加详细的步骤：</p>
+<p>修改 <code class="highlighter-rouge">hiero_get_shot.py</code>，以便查找剧集，并在 Flow Production Tracking 中为其创建一个实体，同时修改 <code class="highlighter-rouge">hiero_resolve_custom_strings.py</code>，以便 Nuke Studio 了解向路径中的 {Episode} 项提供何值。下面是更加详细的步骤：</p>
 
 <h3 id="1-添加剧集字段">1. 添加剧集字段</h3>
 
@@ -12858,9 +12858,9 @@
 
 <h3 id="2-hiero_get_shot-挂钩">2. hiero_get_shot 挂钩</h3>
 
-<p>现在，需要使用 <code class="highlighter-rouge">hiero_get_shot.py</code> 挂钩告诉导出流程如何查找剧集名称并在 ShotGrid 中创建 <code class="highlighter-rouge">Episode</code>。</p>
+<p>现在，需要使用 <code class="highlighter-rouge">hiero_get_shot.py</code> 挂钩告诉导出流程如何查找剧集名称并在 Flow Production Tracking 中创建 <code class="highlighter-rouge">Episode</code>。</p>
 
-<p><a href="https://areadownloads.autodesk.com/wdm/shotgrid/tu-episodic-nuke.zip">挂钩的默认版本 (hiero_get_shot.py)</a> 将从 ShotGrid 返回与 TrackItem 同名的 <code class="highlighter-rouge">Shot</code>。还必须将 <code class="highlighter-rouge">Shot</code> 链接到名称与 Nuke Studio 场项相同的 <code class="highlighter-rouge">Sequence</code>。如果 ShotGrid 中不存在 <code class="highlighter-rouge">Sequence</code> 或 <code class="highlighter-rouge">Shot</code>，该挂钩将创建它们。您将为该层次结构添加另一层，因此您需要告诉挂钩，如果 <code class="highlighter-rouge">Episode</code> 不存在，还要创建它。</p>
+<p><a href="https://areadownloads.autodesk.com/wdm/shotgrid/tu-episodic-nuke.zip">挂钩的默认版本 (hiero_get_shot.py)</a> 将从 Flow Production Tracking 返回与 TrackItem 同名的 <code class="highlighter-rouge">Shot</code>。还必须将 <code class="highlighter-rouge">Shot</code> 链接到名称与 Nuke Studio 场项相同的 <code class="highlighter-rouge">Sequence</code>。如果 Flow Production Tracking 中不存在 <code class="highlighter-rouge">Sequence</code> 或 <code class="highlighter-rouge">Shot</code>，该挂钩将创建它们。您将为该层次结构添加另一层，因此您需要告诉挂钩，如果 <code class="highlighter-rouge">Episode</code> 不存在，还要创建它。</p>
 
 <p>由于 <code class="highlighter-rouge">Sequence</code> 已链接到 <code class="highlighter-rouge">Episode</code>，您应将其关联到查找 <code class="highlighter-rouge">Sequence</code> 的代码（<code class="highlighter-rouge">get_shot_parent()</code> 方法）。</p>
 
@@ -12877,7 +12877,7 @@
 
 class HieroGetShot(Hook):
     """
-    Return a  ShotGrid  Shot dictionary for the given Hiero items
+    Return a  Flow Production Tracking  Shot dictionary for the given Hiero items
     """
 
     def execute(self, task, item, data, **kwargs):
@@ -12892,7 +12892,7 @@ class HieroGetShot(Hook):
        # shot parent field
        parent_field = "sg_sequence"
 
-       # grab shot from  ShotGrid 
+       # grab shot from  Flow Production Tracking
        sg = self.parent.shotgun
        filter = [
            ["project", "is", self.parent.context.project],
@@ -12914,7 +12914,7 @@ class HieroGetShot(Hook):
                "project": self.parent.context.project,
            }
            shot = sg.create("Shot", shot_data, return_fields=fields)
-           self.parent.log_info("Created Shot in  ShotGrid : %s" % shot_data)
+           self.parent.log_info("Created Shot in  Flow Production Tracking : %s" % shot_data)
        else:
            shot = shots[0]
 
@@ -12962,7 +12962,7 @@ class HieroGetShot(Hook):
        if nuke_studio_episode.guid() in data["epi_cache"]:
            return data["epi_cache"][nuke_studio_episode.guid()]
 
-       # episode not found in cache, grab it from  ShotGrid 
+       # episode not found in cache, grab it from  Flow Production Tracking
        sg = self.parent.shotgun
        filters = [
            ["project", "is", self.parent.context.project],
@@ -12981,7 +12981,7 @@ class HieroGetShot(Hook):
                "project": self.parent.context.project,
            }
            episode = sg.create("Episode", epi_data)
-           self.parent.log_info("Created Episode in  ShotGrid : %s" % epi_data)
+           self.parent.log_info("Created Episode in  Flow Production Tracking : %s" % epi_data)
        else:
            # we found one episode matching this name in , so we will resuse it, instead of creating a new one
            episode = episodes[0]
@@ -12994,7 +12994,7 @@ class HieroGetShot(Hook):
     def get_shot_parent(self, hiero_sequence, data, **kwargs):
         """
         Given a Hiero sequence and data cache, return the corresponding entity
-        in  ShotGrid  to serve as the parent for contained Shots.
+        in  Flow Production Tracking  to serve as the parent for contained Shots.
 
         :param hiero_sequence: A Hiero sequence object
         :param data: A dictionary with cached parent data.
@@ -13011,7 +13011,7 @@ class HieroGetShot(Hook):
         
         episode = self.get_episode(data, hiero_sequence) 
         
-        # parent not found in cache, grab it from  ShotGrid  
+        # parent not found in cache, grab it from  Flow Production Tracking
         
         sg = self.parent.shotgun filter = [ 
             ["project", "is", self.parent.context.project], 
@@ -13039,7 +13039,7 @@ class HieroGetShot(Hook):
             
             parent = sg.create(par_entity_type, par_data) 
             self.parent.log_info( 
-                "Created %s in  ShotGrid : %s" % (par_entity_type, par_data)
+                "Created %s in  Flow Production Tracking : %s" % (par_entity_type, par_data)
                 )
         else: 
             parent = parents[0] 
@@ -13059,7 +13059,7 @@ class HieroGetShot(Hook):
 
 <h4 id="获取场">获取场</h4>
 
-<p>在上面的代码中，我们修改了 <code class="highlighter-rouge">get_shot_parent()</code> 方法。现在，在查找和创建 <code class="highlighter-rouge">Sequence</code> 时，它使用新 <code class="highlighter-rouge">get_episode()</code> 方法返回的 <code class="highlighter-rouge">Episode</code>。现在，在 ShotGrid 数据库中检查是否存在 <code class="highlighter-rouge">Sequence</code> 时，它会按 <code class="highlighter-rouge">episode&lt;/code&lt; field</code> 进行过滤、创建 <code class="highlighter-rouge">Sequence</code> 以及使用 <code class="highlighter-rouge">get_episode()</code> 返回的 <code class="highlighter-rouge">Episode</code> 填充场的 <code class="highlighter-rouge">episode</code> 字段。</p>
+<p>在上面的代码中，我们修改了 <code class="highlighter-rouge">get_shot_parent()</code> 方法。现在，在查找和创建 <code class="highlighter-rouge">Sequence</code> 时，它使用新 <code class="highlighter-rouge">get_episode()</code> 方法返回的 <code class="highlighter-rouge">Episode</code>。现在，在 Flow Production Tracking 数据库中检查是否存在 <code class="highlighter-rouge">Sequence</code> 时，它会按 <code class="highlighter-rouge">episode&lt;/code&lt; field</code> 进行过滤、创建 <code class="highlighter-rouge">Sequence</code> 以及使用 <code class="highlighter-rouge">get_episode()</code> 返回的 <code class="highlighter-rouge">Episode</code> 填充场的 <code class="highlighter-rouge">episode</code> 字段。</p>
 
 <h4 id="获取剧集">获取剧集</h4>
 
@@ -13067,13 +13067,13 @@ class HieroGetShot(Hook):
 
 <p>在本手册中，您将使用标记在 Nuke Studio 中分配剧集。例如，您可以在 Nuke Studio 中创建一个名为 Ep01 的标记。然后，在 Nuke Studio 中将该标记应用于场。</p>
 
-<p><code class="highlighter-rouge">get_episode()</code> 方法在较高级别查找在 Nuke Studio 中应用于场项的所有标记，如果找到以字符串 Ep 开头的标记，则假定它就是定义剧集名称的标记。随后，该方法将从 ShotGrid 查找并返回匹配的 <code class="highlighter-rouge">Episode</code>，如果尚不存在，则会创建它。该方法还将缓存此信息，因此，无需再次执行成本高昂的查找调用。</p>
+<p><code class="highlighter-rouge">get_episode()</code> 方法在较高级别查找在 Nuke Studio 中应用于场项的所有标记，如果找到以字符串 Ep 开头的标记，则假定它就是定义剧集名称的标记。随后，该方法将从 Flow Production Tracking 查找并返回匹配的 <code class="highlighter-rouge">Episode</code>，如果尚不存在，则会创建它。该方法还将缓存此信息，因此，无需再次执行成本高昂的查找调用。</p>
 
 <p><em>如果您希望以其他方式获取剧集（例如，从上下文中获取，或通过提取场或镜头名称的第一个部分来获取），请使用此方法中的相应逻辑。</em></p>
 
 <h4 id="获取镜头">获取镜头</h4>
 
-<p>hiero_get_shot 挂钩的主要用途是从 ShotGrid 返回镜头数据。实际上，您不需要设置用于获取镜头的逻辑，只需修改 <code class="highlighter-rouge">Sequence</code> 获取父对象的方式。如果您还希望通过一个自定义字段将 <code class="highlighter-rouge">Shot</code> 与 <code class="highlighter-rouge">Episode</code> 链接，则还需要在执行方法中修改相应代码。从 <code class="highlighter-rouge">Sequence</code>（如 <code class="highlighter-rouge">parent[“episode”]</code>）访问 <code class="highlighter-rouge">Episode</code>，然后将其链接到创建调用中的镜头。</p>
+<p>hiero_get_shot 挂钩的主要用途是从 Flow Production Tracking 返回镜头数据。实际上，您不需要设置用于获取镜头的逻辑，只需修改 <code class="highlighter-rouge">Sequence</code> 获取父对象的方式。如果您还希望通过一个自定义字段将 <code class="highlighter-rouge">Shot</code> 与 <code class="highlighter-rouge">Episode</code> 链接，则还需要在执行方法中修改相应代码。从 <code class="highlighter-rouge">Sequence</code>（如 <code class="highlighter-rouge">parent[“episode”]</code>）访问 <code class="highlighter-rouge">Episode</code>，然后将其链接到创建调用中的镜头。</p>
 
 <h3 id="3hiero_resolve_custom_stringspy">3.Hiero_resolve_custom_strings.py</h3>
 
@@ -13175,7 +13175,7 @@ return fields["Episode"]
 
 <p><img src="/zh_CN/guides/pipeline-integrations/workflows/images/tutorial/tu-episodic-nuke-mceclip3-05.png" alt="导出结构层次结构" /></p>
 
-<p>单击“导出”(Export)后，应该会在您的 ShotGrid 站点上创建剧集、场和镜头，以及在磁盘上创建文件夹结构。如果在此过程中遇到问题，请记得检查 Nuke Studio 脚本编辑器或<a href="https://developer.shotgridsoftware.com/zh_CN/38c5c024/">ShotGrid日志 (tk-nukestudio.log)</a> 中是否存在您可能遇到的任何错误。</p>
+<p>单击“导出”(Export)后，应该会在您的 Flow Production Tracking 站点上创建剧集、场和镜头，以及在磁盘上创建文件夹结构。如果在此过程中遇到问题，请记得检查 Nuke Studio 脚本编辑器或<a href="https://developer.shotgridsoftware.com/zh_CN/38c5c024/">ShotGrid日志 (tk-nukestudio.log)</a> 中是否存在您可能遇到的任何错误。</p>
 
 <p>上文就是本手册介绍的方法。当然，这只是用于处理剧集的多种方法之一，您可以自行找到最适合您的工作室的方法和结构。</p>
 

@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -3825,9 +3825,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -7119,7 +7119,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -9750,9 +9750,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -12116,7 +12116,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -13186,7 +13186,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -13272,9 +13272,9 @@
 
 <p>This guide describes how to edit settings within an existing Pipeline Configuration to meet the needs of a project pipeline. The first guide, <strong><a href="/5d83a936/">Getting started with configurations</a></strong>, described how to prepare a pipeline configuration for editing. If you aren’t familiar with how to create an editable configuration for your project, complete <strong>Getting started with configurations</strong> before proceeding.</p>
 
-<p>Through extending the Default Configuration, ShotGrid Toolkit allows for customizing tasks within pipeline workflows. An example of a customization might be as simple as enabling or disabling a button in a Toolkit app within one or more software packages, changing the way users interact with Toolkit’s features. Toolkit allows proprietary configurations that enable you to work smarter and faster by: creating custom workflows, automating repetitive and mundane tasks, modifying hooks, and even adding custom tools built on the Toolkit platform. Unfortunately, it’s only accessible through ShotGrid software integrations, and not yet released for everyday tasks like washing your clothes.</p>
+<p>Through extending the Default Configuration, Flow Production Tracking Toolkit allows for customizing tasks within pipeline workflows. An example of a customization might be as simple as enabling or disabling a button in a Toolkit app within one or more software packages, changing the way users interact with Toolkit’s features. Toolkit allows proprietary configurations that enable you to work smarter and faster by: creating custom workflows, automating repetitive and mundane tasks, modifying hooks, and even adding custom tools built on the Toolkit platform. Unfortunately, it’s only accessible through Flow Production Tracking software integrations, and not yet released for everyday tasks like washing your clothes.</p>
 
-<p>The exercises in this guide will teach you how to find what configuration settings control actions within the ShotGrid software integrations, where the settings live, and how to edit them. Specifically, we will edit a setting in the Workfiles app that manages the behavior of the <strong>+New Task</strong> button, preventing artists from creating a new task when working on a project inside Maya.</p>
+<p>The exercises in this guide will teach you how to find what configuration settings control actions within the Flow Production Tracking software integrations, where the settings live, and how to edit them. Specifically, we will edit a setting in the Workfiles app that manages the behavior of the <strong>+New Task</strong> button, preventing artists from creating a new task when working on a project inside Maya.</p>
 
 <h2 id="using-this-document">Using this document</h2>
 
@@ -13285,7 +13285,7 @@
   <li>A project with at least one asset. You can add an asset to the_other_side project you created in the first guide. You can review how to create an asset for a project in the <a href="/5d83a936/">Getting started with configurations</a> guide.</li>
   <li>A pipeline configuration for the identified project, or complete the <a href="/5d83a936/">Getting started with configurations</a> guide and use the configuration created in that exercise.</li>
   <li>Read and write permissions set appropriately for the filesystem where the Pipeline Configuration is stored.</li>
-  <li>ShotGrid Desktop installed on your system.</li>
+  <li>Flow Production Tracking Toolkit installed on your system.</li>
   <li>An active subscription for Maya. Get a 30 day trial of Maya <a href="https://www.autodesk.com/products/maya/free-trial-dts?adobe_mc_ref=https%3A%2F%2Fwww.google.com%2F&amp;adobe_mc_sdid=SDID%3D577C0A84DDF5D35D-50E96EA2052056FE%7CMCORGID%3D6DC7655351E5696B0A490D44%2540AdobeOrg%7CTS%3D1543444689">here</a></li>
 </ol>
 
@@ -13300,19 +13300,19 @@
 
 <h2 id="about-the-workfiles-app">About the Workfiles app</h2>
 
-<p>The Workfiles app governs file management in a ShotGrid software integration and controls access to functionality for browsing, opening, and saving work files. The <strong>+New Task</strong> button is an action of the Workfiles app that allows a user to add a task without having to go to ShotGrid to do so. The configuration is broken down into per-environment files. This allows you to manage functionality relative to different stages in the pipeline, controlling when a user can create, name and save files, execute tasks, or perform certain functions. This is relevant for all the functions in the Workfiles app and it also applies to modifying settings for any app or engine. Find more details in the <a href="#advanced-topics">Advanced Topics</a> at the end of this document.</p>
+<p>The Workfiles app governs file management in a Flow Production Tracking software integration and controls access to functionality for browsing, opening, and saving work files. The <strong>+New Task</strong> button is an action of the Workfiles app that allows a user to add a task without having to go to Flow Production Tracking to do so. The configuration is broken down into per-environment files. This allows you to manage functionality relative to different stages in the pipeline, controlling when a user can create, name and save files, execute tasks, or perform certain functions. This is relevant for all the functions in the Workfiles app and it also applies to modifying settings for any app or engine. Find more details in the <a href="#advanced-topics">Advanced Topics</a> at the end of this document.</p>
 
 <h2 id="getting-familiar-with-the-configuration-files">Getting familiar with the configuration files</h2>
 
-<p>Use the Pipeline Configuration List in ShotGrid to locate where the pipeline configuration is stored for the project you’re working with. If you know where it’s stored, you can skip to <a href="#finding-the-pipeline-configuration">step 5</a>.</p>
+<p>Use the Pipeline Configuration List in Flow Production Tracking to locate where the pipeline configuration is stored for the project you’re working with. If you know where it’s stored, you can skip to <a href="#finding-the-pipeline-configuration">step 5</a>.</p>
 
 <h2 id="finding-the-pipeline-configuration">Finding the pipeline configuration</h2>
 
-<p><strong>Step 1:</strong> Open the <strong>ShotGrid site</strong> that manages the project you will be using for this exercise.</p>
+<p><strong>Step 1:</strong> Open the <strong>Flow Production Tracking site</strong> that manages the project you will be using for this exercise.</p>
 
-<p><strong>Step 2:</strong> Access the project from the <strong>ShotGrid site</strong> by selecting it from the <strong>Projects page</strong>.</p>
+<p><strong>Step 2:</strong> Access the project from the <strong>Flow Production Tracking site</strong> by selecting it from the <strong>Projects page</strong>.</p>
 
-<p><img src="/en/guides/pipeline-integrations/getting-started/images/editing_app_setting/1_shotgun_project.png" alt="ShotGrid project" /></p>
+<p><img src="/en/guides/pipeline-integrations/getting-started/images/editing_app_setting/1_shotgun_project.png" alt="Flow Production Tracking project" /></p>
 
 <p><strong>Step 3:</strong> Select the <strong>avatar</strong> in the upper right to display the <strong>ADMIN</strong> menu and scroll down to select <strong>Default Layouts &gt; Pipeline Configuration &gt; Pipeline Configuration List</strong>.</p>
 
@@ -13340,23 +13340,23 @@
 
 <h2 id="editing-the-configuration-file">Editing the configuration file</h2>
 
-<p>ShotGrid Toolkit allows alterations to the apps that are integrated within various software packages. One of the functions of the Workfiles app is the <strong>+New Task</strong> button, which allows a user to add a new task in the <strong>File Open</strong> dialog box. By default, this function is enabled for every user at every phase of a project. But a studio might want to restrict this functionality – say, if they have a specific naming convention, or want to limit task creation to a project’s production management team. In this case, they would disable the <strong>+New Task</strong> button for all the points in a pipeline where artists will be working in Maya.</p>
+<p>Flow Production Tracking Toolkit allows alterations to the apps that are integrated within various software packages. One of the functions of the Workfiles app is the <strong>+New Task</strong> button, which allows a user to add a new task in the <strong>File Open</strong> dialog box. By default, this function is enabled for every user at every phase of a project. But a studio might want to restrict this functionality – say, if they have a specific naming convention, or want to limit task creation to a project’s production management team. In this case, they would disable the <strong>+New Task</strong> button for all the points in a pipeline where artists will be working in Maya.</p>
 
 <h2 id="disabling-the-new-task-button-for-projects-in-maya">Disabling the +New Task button for projects in Maya</h2>
 
-<p><strong>Step 7:</strong> Open <strong>ShotGrid Desktop</strong>.</p>
+<p><strong>Step 7:</strong> Open <strong>Flow Production Tracking Toolkit</strong>.</p>
 
 <p><strong>Step 8:</strong> Select the project whose configuration you are going to edit.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/editing_app_setting/6_load_project.png" alt="Load project" /></p>
 
-<p><strong>Step 9:</strong> Launch Maya from ShotGrid Desktop.</p>
+<p><strong>Step 9:</strong> Launch Maya from Flow Production Tracking Toolkit.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/editing_app_setting/7_view_project.png" alt="Load project" /></p>
 
 <p>Wait for the <strong>ShotGrid</strong> menu to fully load. If you have a slow internet connection, this would be the time to run the configuration that makes you that perfect shot of espresso with just the right amount of crema.</p>
 
-<p>Once Maya and ShotGrid are fully loaded, the <strong>File Open</strong> dialog box will open automatically. When you launch Maya from ShotGrid Desktop, you will enter Maya in the <strong>project</strong> environment; the configuration of your Toolkit workflows will be driven by the file <code class="highlighter-rouge">config/env/project.yml</code>. The environments that are identified in the Default Configuration are <code class="highlighter-rouge">project</code>, <code class="highlighter-rouge">sequence</code>, <code class="highlighter-rouge">shot</code>, <code class="highlighter-rouge">shot_step</code>, <code class="highlighter-rouge">asset</code>, <code class="highlighter-rouge">asset_step</code>.</p>
+<p>Once Maya and Flow Production Tracking are fully loaded, the <strong>File Open</strong> dialog box will open automatically. When you launch Maya from Flow Production Tracking Toolkit, you will enter Maya in the <strong>project</strong> environment; the configuration of your Toolkit workflows will be driven by the file <code class="highlighter-rouge">config/env/project.yml</code>. The environments that are identified in the Default Configuration are <code class="highlighter-rouge">project</code>, <code class="highlighter-rouge">sequence</code>, <code class="highlighter-rouge">shot</code>, <code class="highlighter-rouge">shot_step</code>, <code class="highlighter-rouge">asset</code>, <code class="highlighter-rouge">asset_step</code>.</p>
 
 <p><strong>Step 10:</strong> Select the <strong>Assets</strong> tab in the left pane of the <strong>File Open</strong> dialog box. Select any asset inside the folder displayed in the search results.</p>
 
@@ -13366,11 +13366,11 @@
 
 <h2 id="find-what-setting-controls-the-new-task-button">Find what setting controls the +New Task button</h2>
 
-<p>Toolkit pipeline configurations are used to customize environments to meet your pipeline’s needs. A pipeline configuration can override default ShotGrid integration settings, varying as much or as little as necessary to meet the needs of a project’s pipeline. This structure allows configurations to be lightweight, adding only the settings that are different from the default values in the ShotGrid core code. In this exercise, we want to turn off the Workfiles app’s <strong>+New Task</strong> button, but before we can do so, we need to figure out which configuration setting controls it.</p>
+<p>Toolkit pipeline configurations are used to customize environments to meet your pipeline’s needs. A pipeline configuration can override default Flow Production Tracking integration settings, varying as much or as little as necessary to meet the needs of a project’s pipeline. This structure allows configurations to be lightweight, adding only the settings that are different from the default values in the Flow Production Tracking core code. In this exercise, we want to turn off the Workfiles app’s <strong>+New Task</strong> button, but before we can do so, we need to figure out which configuration setting controls it.</p>
 
 <p><strong>Step 11:</strong> Select the <strong>&gt;</strong> at the top right of the <strong>File Open</strong> window next to <strong>Project (name of project)</strong>.</p>
 
-<p>This reference box shows details about the configuration settings that control the functions of the <strong>File Open</strong> window. Some apps in Toolkit have a reference box to show what settings are used for the app and what the default settings are. Notice the <strong>Location:</strong>: identifier is <strong>tk-multi-workfiles2</strong>. This is the identifier for the bundle of code that creates the Workfiles app. When searching a pipeline configuration this name will identify where the settings live for the app. There’s an <a href="https://developer.shotgridsoftware.com/162eaa4b/">Apps and Engines page</a> that lists all the configuration settings, apps, and engines for what’s available in a ShotGrid Integration.</p>
+<p>This reference box shows details about the configuration settings that control the functions of the <strong>File Open</strong> window. Some apps in Toolkit have a reference box to show what settings are used for the app and what the default settings are. Notice the <strong>Location:</strong>: identifier is <strong>tk-multi-workfiles2</strong>. This is the identifier for the bundle of code that creates the Workfiles app. When searching a pipeline configuration this name will identify where the settings live for the app. There’s an <a href="https://developer.shotgridsoftware.com/162eaa4b/">Apps and Engines page</a> that lists all the configuration settings, apps, and engines for what’s available in a Flow Production Tracking Integration.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/editing_app_setting/9_current_work_area.png" alt="Current_work_area" /></p>
 
@@ -13382,7 +13382,7 @@
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Note
-:</b> After the setting <strong>my_tasks_filters</strong> is a setting <strong>launch_at_startup</strong>. This is important to note because it’s the default setting for the <strong>File Open</strong> setting in the project environment. This tells you that when Maya is launched from ShotGrid Desktop, the <strong>File Open</strong> dialog automatically opens.
+:</b> After the setting <strong>my_tasks_filters</strong> is a setting <strong>launch_at_startup</strong>. This is important to note because it’s the default setting for the <strong>File Open</strong> setting in the project environment. This tells you that when Maya is launched from Flow Production Tracking Toolkit, the <strong>File Open</strong> dialog automatically opens.
 
     </p>
 </div>
@@ -13411,11 +13411,11 @@
 
 <p><strong>Step 13:</strong> Find the <strong>ShotGrid</strong> menu item in the upper right of the Maya window.</p>
 
-<p><img src="/en/guides/pipeline-integrations/getting-started/images/editing_app_setting/12_Maya_Shotgun2.png" alt="Maya ShotGrid2" /></p>
+<p><img src="/en/guides/pipeline-integrations/getting-started/images/editing_app_setting/12_Maya_Shotgun2.png" alt="Maya Flow Production Tracking2" /></p>
 
-<p><strong>TIP:</strong> If the menu isn’t visible there will be <strong>»</strong> to show that some menu items are hidden. Select the <strong>»</strong> to display the ShotGrid menu or you can widen the Maya window.</p>
+<p><strong>TIP:</strong> If the menu isn’t visible there will be <strong>»</strong> to show that some menu items are hidden. Select the <strong>»</strong> to display the Flow Production Tracking menu or you can widen the Maya window.</p>
 
-<p><strong>Step 14:</strong> Select <strong>ShotGrid &gt; Project the_other_side &gt; Work Area Info…</strong> on the top right of the menu.</p>
+<p><strong>Step 14:</strong> Select <strong>Flow Production Tracking &gt; Project the_other_side &gt; Work Area Info…</strong> on the top right of the menu.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/editing_app_setting/13_work_area_info.png" alt="Work area info" /></p>
 
@@ -13423,7 +13423,7 @@
 
 <p><strong>Step 15:</strong> In the <strong>Your Current Work Area</strong> dialog box, select the <strong>Environment</strong> tab at the bottom.</p>
 
-<p>The first item identifies the engine being used. The engine is what drives the ability to have the ShotGrid tools integrated within a specific software application. It holds the logic specific to each software integration. The second item displayed in the window shows the path where the current project environment is located.</p>
+<p>The first item identifies the engine being used. The engine is what drives the ability to have the Flow Production Tracking tools integrated within a specific software application. It holds the logic specific to each software integration. The second item displayed in the window shows the path where the current project environment is located.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/editing_app_setting/14_shotgun_work_area_info_Environment.png" alt="Work area info environment" /></p>
 
@@ -13492,7 +13492,7 @@
 
 <p>This complete line tells us to look for the <code class="highlighter-rouge">settings.tk-maya.project</code> block in the included file to find the configuration settings for the Maya engine, <code class="highlighter-rouge">tk-maya</code>.</p>
 
-<p>ShotGrid Toolkit uses simple terms in the YAML files to indicate the names of the settings and what paths will lead you to them. You already know from looking in the Maya <strong>File Open</strong> reference box that the bundle of code which controls how the <strong>+New Task</strong> button performs, is identified by <code class="highlighter-rouge">tk-multi-workfiles2</code>. Toolkit bundles are referenced in the YAML files using these identifiers. ‘tk-multi-workfiles2’ is the identifier for the Workfiles app code bundle, and the <strong>+New Task</strong> button is a function of the Workfiles app.</p>
+<p>Flow Production Tracking Toolkit uses simple terms in the YAML files to indicate the names of the settings and what paths will lead you to them. You already know from looking in the Maya <strong>File Open</strong> reference box that the bundle of code which controls how the <strong>+New Task</strong> button performs, is identified by <code class="highlighter-rouge">tk-multi-workfiles2</code>. Toolkit bundles are referenced in the YAML files using these identifiers. ‘tk-multi-workfiles2’ is the identifier for the Workfiles app code bundle, and the <strong>+New Task</strong> button is a function of the Workfiles app.</p>
 
 <p>Looking for the Workfiles App settings in tk-maya.yml</p>
 
@@ -13603,7 +13603,7 @@
 
 <p>NOTE: Each environment is independent, a project has a dedicated configuration, and the software integrations only read settings for their specific software from the pipeline configuration when a project is loaded.</p>
 
-<p>You’ve now edited your pipeline configuration, making a change to the settings for an app. And now the real fun begins: learning all the things you can do with ShotGrid Toolkit environments. Here are some advanced topics to explore.</p>
+<p>You’ve now edited your pipeline configuration, making a change to the settings for an app. And now the real fun begins: learning all the things you can do with Flow Production Tracking Toolkit environments. Here are some advanced topics to explore.</p>
 
 <h2 id="advanced-topics">Advanced topics</h2>
 

@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -2948,7 +2948,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -5579,9 +5579,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7945,7 +7945,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -9015,7 +9015,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -9145,7 +9145,7 @@
 
 <h2 id="http-url-の例">HTTP URL の例</h2>
 
-<p>たとえば、「Build PDF Report」と呼ばれるカスタム メニュー項目を作成できます。 これにより、ユーザは任意のバージョン ページに移動し、1 つまたは複数のバージョンを選択して右クリックし、ShotGrid メニューから「Build PDF Report」を選択することができます。この操作により、スクリプトが起動し(このスクリプトは作成する必要があります)、適切にフォーマット化されたレポートがブラウザに送られます。次にその方法を説明します。</p>
+<p>たとえば、「Build PDF Report」と呼ばれるカスタム メニュー項目を作成できます。 これにより、ユーザは任意のバージョン ページに移動し、1 つまたは複数のバージョンを選択して右クリックし、Flow Production Tracking メニューから「Build PDF Report」を選択することができます。この操作により、スクリプトが起動し(このスクリプトは作成する必要があります)、適切にフォーマット化されたレポートがブラウザに送られます。次にその方法を説明します。</p>
 
 <h3 id="ui-を使用してメニュー項目を作成する">UI を使用してメニュー項目を作成する</h3>
 
@@ -9159,26 +9159,26 @@
 
 <h3 id="ユーザが-ami-をクリックすると起こること">ユーザが AMI をクリックすると起こること</h3>
 
-<p>ShotGrid が新しいウィンドウ(オプションが選択されている場合はモーダル ダイアログ)で POST 要求を割り当て、現在のページから POST 要求に含まれるデータを受信 URL にデータを送信します。次に、ワークフローの例を示します。</p>
+<p>Flow Production Tracking が新しいウィンドウ(オプションが選択されている場合はモーダル ダイアログ)で POST 要求を割り当て、現在のページから POST 要求に含まれるデータを受信 URL にデータを送信します。次に、ワークフローの例を示します。</p>
 
 <ul>
   <li>[バージョン] (Versions)ページに移動します</li>
   <li>1 つまたは複数のバージョンを選択します</li>
   <li>コンテキスト メニューを表示します(ツールバーの歯車メニューを右クリックまたはクリック)</li>
   <li>ユーザが Build PDF Report をクリックします</li>
-  <li>ShotGrid が新しいウィンドウで POST 要求を AMI の URL に割り当てます(ShotGrid サーバに HTTPS 経由で接続している場合に、URL を HTTP 経由で送受信すると、ブラウザに警告が表示されます)</li>
+  <li>Flow Production Tracking が新しいウィンドウで POST 要求を AMI の URL に割り当てます(Flow Production Tracking サーバに HTTPS 経由で接続している場合に、URL を HTTP 経由で送受信すると、ブラウザに警告が表示されます)</li>
   <li>指定した URL に格納されたスクリプトが POST データを処理し、PDF ドキュメントを生成します</li>
   <li>適切にフォーマット化された PDF レポートが、表示またはダウンロード用にユーザに送り返されます</li>
 </ul>
 
 <h2 id="カスタム-プロトコル-ハンドラの例">カスタム プロトコル ハンドラの例</h2>
 
-<p>カスタム AMI の最新の実装には、カスタム プロトコル ハンドラのセットアップが含まれます(例: ShotGrid://process_version)。これにより、ローカル コンピュータ上のスクリプトを介して Maya、RV、Cinesync などのアプリケーションと ShotGrid を接続できます。HTTP(S)プロトコル以外を指定すると、POST の代わりに GET を使用してデータが URL に送信されます。異なる要求を割り当てる社内ツールを起動するために使用することもできます。</p>
+<p>カスタム AMI の最新の実装には、カスタム プロトコル ハンドラのセットアップが含まれます(例: Flow Production Tracking://process_version)。これにより、ローカル コンピュータ上のスクリプトを介して Maya、RV、Cinesync などのアプリケーションと Flow Production Tracking を接続できます。HTTP(S)プロトコル以外を指定すると、POST の代わりに GET を使用してデータが URL に送信されます。異なる要求を割り当てる社内ツールを起動するために使用することもできます。</p>
 
 <p>カスタム プロトコルの詳細については、「<a href="https://developer.shotgridsoftware.com/ja/67695b40/">カスタム ブラウザ プロトコルを使用してアプリケーションを起動する</a>」を参照してください。</p>
 
 <blockquote>
-  <p><strong>注:</strong> <a href="https://developer.shotgridsoftware.com/ja/d587be80/">ShotGrid の統合</a>により、Maya などのソフトウェア パッケージに組み込んで統合することもできます。</p>
+  <p><strong>注:</strong> <a href="https://developer.shotgridsoftware.com/ja/d587be80/">Flow Production Tracking の統合</a>により、Maya などのソフトウェア パッケージに組み込んで統合することもできます。</p>
   <h3 id="軽量ペイロード">軽量ペイロード</h3>
 </blockquote>
 

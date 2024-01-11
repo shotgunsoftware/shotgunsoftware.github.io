@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -8948,7 +8948,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -11579,9 +11579,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -13945,7 +13945,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -15015,7 +15015,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -15090,7 +15090,7 @@
 
             <h1 id="generating-a-path-and-publishing-it">Generating a path and publishing it</h1>
 
-<p>This guide covers getting started with the ShotGrid Toolkit Python API, which is what our pipeline integrations are built with.</p>
+<p>This guide covers getting started with the Flow Production Tracking Toolkit Python API, which is what our pipeline integrations are built with.</p>
 
 <p>The purpose of this guide is to walk through a basic example of how you can use the API, and by the end, you will be able to import the Toolkit API and generate a path and publish it.</p>
 
@@ -15130,15 +15130,15 @@ To use the API on a project’s configuration, you must import the <code class="
 </div>
 
 <p>To import the API you need to make sure that the path to the <a href="https://github.com/shotgunsoftware/tk-core/tree/v0.18.167/python">core’s python folder</a> exists in the <a href="https://docs.python.org/3/library/sys.html#sys.path"><code class="highlighter-rouge">sys.path</code></a>.
-However, for this example, we recommend that you run this code in the ShotGrid Desktop’s Python console.
+However, for this example, we recommend that you run this code in the Flow Production Tracking Toolkit’s Python console.
 This will mean that the correct <code class="highlighter-rouge">sgtk</code> package path is already added to your <code class="highlighter-rouge">sys.path</code>.
-Equally, you don’t need to add the path if you are running this code within software where the ShotGrid integration is already running.</p>
+Equally, you don’t need to add the path if you are running this code within software where the Flow Production Tracking integration is already running.</p>
 
-<p>When running your code in an environment where ShotGrid is already started you can import the API by simply writing:</p>
+<p>When running your code in an environment where Flow Production Tracking is already started you can import the API by simply writing:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sgtk</span>
 </code></pre></div></div>
-<p>If you want to use the API outside of a ShotGrid integration, for example, if you’re testing it in your favorite IDE, then you will need to set the path to the API first:</p>
+<p>If you want to use the API outside of a Flow Production Tracking integration, for example, if you’re testing it in your favorite IDE, then you will need to set the path to the API first:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">"/shotgun/configs/my_project_config/install/core/python"</span><span class="p">)</span>
@@ -15166,7 +15166,7 @@ Once you create an instance of <code class="highlighter-rouge">Sgtk</code>, you 
 
 <ol>
   <li>
-    <p>You can get an <code class="highlighter-rouge">Sgtk</code> instance from the current engine, if you are running the Python code within an environment where the ShotGrid integrations are already running, (such as the Maya Python console, if Maya was launched from ShotGrid.)
+    <p>You can get an <code class="highlighter-rouge">Sgtk</code> instance from the current engine, if you are running the Python code within an environment where the Flow Production Tracking integrations are already running, (such as the Maya Python console, if Maya was launched from Flow Production Tracking.)
 The <code class="highlighter-rouge">Engine.sgtk</code> property holds the engine’s <code class="highlighter-rouge">Sgtk</code> instance.
 So for example, in Maya, you could run the following:</p>
 
@@ -15196,7 +15196,7 @@ So for example, in Maya, you could run the following:</p>
 
 <p>Throughout this guide we will assume you are running this code in an environment where an engine has already been started, so we’ll use option 1.
 Also you will store the <code class="highlighter-rouge">Sgtk</code> class instance in a variable called <code class="highlighter-rouge">tk</code>.
-If you’re using the ShotGrid Python Console then the <code class="highlighter-rouge">tk</code> variable is already pre-defined as a global variable.</p>
+If you’re using the Flow Production Tracking Python Console then the <code class="highlighter-rouge">tk</code> variable is already pre-defined as a global variable.</p>
 
 <p>You now have an <code class="highlighter-rouge">Sgtk</code> instance and you’re ready to start using the API.
 Your publish script should now look like this:</p>
@@ -15216,7 +15216,7 @@ Your publish script should now look like this:</p>
 
 <p>A lot of what happens in Toolkit revolves around context, in other words knowing what you are working on and being able to act accordingly.
 With the Toolkit API, you will need to be able to store important details about the entities you are working with, and share them with apps or other processes so they can operate in a contextually aware way.
-For example, when Toolkit knows what task you’re working on, it can automatically link your published files to that task in ShotGrid.</p>
+For example, when Toolkit knows what task you’re working on, it can automatically link your published files to that task in Flow Production Tracking.</p>
 
 <p>The <a href="https://developer.shotgridsoftware.com/tk-core/core.html#context"><code class="highlighter-rouge">Context</code> class</a> acts as a container for this information.
 You can store the <code class="highlighter-rouge">Task</code>, <code class="highlighter-rouge">Step</code>, <code class="highlighter-rouge">entity</code> (such as a <code class="highlighter-rouge">Shot</code> or <code class="highlighter-rouge">Asset</code>), <code class="highlighter-rouge">Project</code>, and current <code class="highlighter-rouge">HumanUser</code> within an instance of the class, among a few other things.</p>
@@ -15432,16 +15432,16 @@ However, you can use <a href="https://developer.shotgridsoftware.com/tk-core/uti
 <p>There two methods you could use here.</p>
 
 <ol>
-  <li>Since in this particular example you are resolving a publish file, you could use the <a href="https://developer.shotgridsoftware.com/python-api/">ShotGrid API</a> to query for the next available version number on <code class="highlighter-rouge">PublishedFile</code> entities.</li>
+  <li>Since in this particular example you are resolving a publish file, you could use the <a href="https://developer.shotgridsoftware.com/python-api/">Flow Production Tracking API</a> to query for the next available version number on <code class="highlighter-rouge">PublishedFile</code> entities.</li>
   <li>You can scan the files on disk and work out what versions already exist, and extract the next version number. 
-This is helpful if the files you’re working with aren’t tracked in ShotGrid (such as work files).</li>
+This is helpful if the files you’re working with aren’t tracked in Flow Production Tracking (such as work files).</li>
 </ol>
 
 <p>While the first option would probably be most suitable for the example in this guide, both approaches have their uses so we’ll cover them both.</p>
 
-<h3 id="querying-shotgrid-for-the-next-version-number">Querying ShotGrid for the next version number.</h3>
+<h3 id="querying-shotgrid-for-the-next-version-number">Querying Flow Production Tracking for the next version number.</h3>
 
-<p>Using the ShotGrid API and the <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.summarize"><code class="highlighter-rouge">summarize()</code> method</a> you can get the highest version number amongst the <code class="highlighter-rouge">PublishedFile</code> entities, that share the same name and task, and then add 1.</p>
+<p>Using the Flow Production Tracking API and the <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.summarize"><code class="highlighter-rouge">summarize()</code> method</a> you can get the highest version number amongst the <code class="highlighter-rouge">PublishedFile</code> entities, that share the same name and task, and then add 1.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r</span> <span class="o">=</span> <span class="n">sg</span><span class="o">.</span><span class="n">summarize</span><span class="p">(</span><span class="n">entity_type</span><span class="o">=</span><span class="s">"PublishedFile"</span><span class="p">,</span>
                  <span class="n">filters</span> <span class="o">=</span> <span class="p">[[</span><span class="s">"task"</span><span class="p">,</span> <span class="s">"is"</span><span class="p">,</span> <span class="p">{</span><span class="s">"type"</span><span class="p">:</span><span class="s">"Task"</span><span class="p">,</span> <span class="s">"id"</span><span class="p">:</span> <span class="n">context</span><span class="o">.</span><span class="n">task</span><span class="p">[</span><span class="s">"id"</span><span class="p">]}],</span>
@@ -15496,7 +15496,7 @@ This is method is also useful for scenarios where you want to find and display a
 
 <p>Now that you have a path you’re ready to publish it. To do this you can use the utility method <a href="https://developer.shotgridsoftware.com/tk-core/utils.html?#sgtk.util.register_publish"><code class="highlighter-rouge">sgtk.util.register_publish()</code></a>.</p>
 
-<p>It is possible to use the ShotGrid API’s <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.create"><code class="highlighter-rouge">ShotGrid.create()</code></a> method to create a <code class="highlighter-rouge">PublishedFile</code> entity as well, but we strongly recommend using the Toolkit API for this as it will ensure all the required fields are provided and filled in correctly.</p>
+<p>It is possible to use the Flow Production Tracking API’s <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.create"><code class="highlighter-rouge">ShotGrid.create()</code></a> method to create a <code class="highlighter-rouge">PublishedFile</code> entity as well, but we strongly recommend using the Toolkit API for this as it will ensure all the required fields are provided and filled in correctly.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># So as to match the Publish app's default behavior, we are adding the extension to the end of the publish name.
 # This is optional, however.

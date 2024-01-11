@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -8162,17 +8162,17 @@
 
             <h1 id="how-can-i-create-publishes-via-the-api">How can I create publishes via the API?</h1>
 
-<p>Our sgtk API provides a <a href="https://developer.shotgridsoftware.com/tk-core/utils.html#sgtk.util.register_publish">convenience method</a> for registering <code class="highlighter-rouge">PublishedFiles</code> entities in ShotGrid.</p>
+<p>Our sgtk API provides a <a href="https://developer.shotgridsoftware.com/tk-core/utils.html#sgtk.util.register_publish">convenience method</a> for registering <code class="highlighter-rouge">PublishedFiles</code> entities in Flow Production Tracking.</p>
 
 <p>In addition we also have a Publish app, that comes with <a href="https://developer.shotgridsoftware.com/tk-multi-publish2/">its own API</a>. 
 The Publish API ultimately uses the core sgtk API method to register the PublishedFile, but it also provides a framework around collection, validation, and publishing, which can be customized
 In addition to the the Publish API documentation, we have examples of writing your own publish plugins in our <a href="https://developer.shotgridsoftware.com/cb8926fc/">pipeline tutorial</a>.</p>
 
 <h2 id="using-the-register_publish-api-method">Using the register_publish() API method</h2>
-<p>While it is possible to create publish records in ShotGrid using a raw ShotGrid API call, we would strongly recommend using Toolkit’s convenience method.
+<p>While it is possible to create publish records in Flow Production Tracking using a raw Flow Production Tracking API call, we would strongly recommend using Toolkit’s convenience method.
 All toolkit apps that create publishes are using a API utility method method called <a href="https://developer.shotgridsoftware.com/tk-core/utils.html#sgtk.util.register_publish"><code class="highlighter-rouge">sgtk.util.register_publish()</code></a>.</p>
 
-<p>Basically, this method will create a new PublishedFile entity in ShotGrid and is trying to make that easy by using toolkit concepts. Your code would need to do something along these lines:</p>
+<p>Basically, this method will create a new PublishedFile entity in Flow Production Tracking and is trying to make that easy by using toolkit concepts. Your code would need to do something along these lines:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Get access to the Toolkit API
 </span><span class="kn">import</span> <span class="nn">sgtk</span>
@@ -8190,7 +8190,7 @@ All toolkit apps that create publishes are using a API utility method method cal
 
 <span class="c1"># initialize an API object. If you have used the Toolkit folder creation 
 # to create the folders where the published file resides, you can use this path
-# to construct the API object. Alternatively you can create it from any ShotGrid
+# to construct the API object. Alternatively you can create it from any Flow Production Tracking
 # entity using the sgtk_from_entity() method.
 </span><span class="n">tk</span> <span class="o">=</span> <span class="n">sgtk</span><span class="o">.</span><span class="n">sgtk_from_path</span><span class="p">(</span><span class="n">file_to_publish</span><span class="p">)</span>
 
@@ -8201,13 +8201,13 @@ All toolkit apps that create publishes are using a API utility method method cal
 </span><span class="n">ctx</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">context_from_path</span><span class="p">(</span><span class="n">file_to_publish</span><span class="p">)</span>
 
 <span class="c1"># alternatively, if the file you are trying to publish is not in a location that is
-# recognized by toolkit, you could create a context directly from a ShotGrid entity instead:
+# recognized by toolkit, you could create a context directly from a Flow Production Tracking entity instead:
 </span><span class="n">ctx</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">context_from_entity</span><span class="p">(</span><span class="s">"Shot"</span><span class="p">,</span> <span class="mi">123</span><span class="p">)</span>
 <span class="n">ctx</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">context_from_entity</span><span class="p">(</span><span class="s">"Task"</span><span class="p">,</span> <span class="mi">123</span><span class="p">)</span>
 
 <span class="c1"># Finally, run the publish command.
 # the third parameter (file.nk) is typically the file name, without a version number.
-# this makes grouping inside of ShotGrid easy. The last parameter is the version number.
+# this makes grouping inside of Flow Production Tracking easy. The last parameter is the version number.
 </span><span class="n">sgtk</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">register_publish</span><span class="p">(</span>
   <span class="n">tk</span><span class="p">,</span> 
   <span class="n">ctx</span><span class="p">,</span> 

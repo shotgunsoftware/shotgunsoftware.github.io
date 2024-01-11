@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -12108,7 +12108,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -13178,7 +13178,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -13267,12 +13267,12 @@
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Disclaimer
-:</b> This documentation is provided solely as an example. It explains how to set up your ShotGrid Isolation environment so that it can be connected to ShotGrid cloud infrastructure. Please adapt it to your studio security requirements as needed. As ShotGrid has no visibility on your AWS Account, ensuring that this account is secure is a client responsibility.
+:</b> This documentation is provided solely as an example. It explains how to set up your Flow Production Tracking Isolation environment so that it can be connected to Flow Production Tracking cloud infrastructure. Please adapt it to your studio security requirements as needed. As Flow Production Tracking has no visibility on your AWS Account, ensuring that this account is secure is a client responsibility.
 
     </p>
 </div>
 
-<p>The media traffic isolation feature allows your users to access media in your AWS S3 bucket privately (not transiting over the public Internet). Please note that if you have a multi-region setup and that leverages the ShotGrid Transcoding service there may still be instances where media transits across the public Internet. Reach out to our support team for more details.</p>
+<p>The media traffic isolation feature allows your users to access media in your AWS S3 bucket privately (not transiting over the public Internet). Please note that if you have a multi-region setup and that leverages the Flow Production Tracking Transcoding service there may still be instances where media transits across the public Internet. Reach out to our support team for more details.</p>
 
 <p>Media Isolation activation is a pre-requisite to enable this feature. If you haven’t done so already, see <a href="/zh_CN/439f0627/">Media Isolation</a>.</p>
 
@@ -13388,7 +13388,7 @@ docker push 627791357434.dkr.ecr.us-west-2.amazonaws.com/s3-proxy:1.0.6
 
 <h3 id="configure-https">Configure HTTPS</h3>
 
-<p>ShotGrid requires that the S3 proxy be accessed via HTTPS, therefore the AWS ALB handling requests for your newly created S3 proxy stack must be configured to accept HTTPS requests.</p>
+<p>Flow Production Tracking requires that the S3 proxy be accessed via HTTPS, therefore the AWS ALB handling requests for your newly created S3 proxy stack must be configured to accept HTTPS requests.</p>
 
 <ul>
   <li>Create a DNS entry pointing to your S3 proxy, depending upon whether public or private
@@ -13437,7 +13437,7 @@ Eg. <code class="highlighter-rouge">s3-proxy.mystudio.com. 300 IN CNAME a48a2a8d
 <h3 id="configure-your-test-site-to-use-the-s3-proxy">Configure your test site to use the S3 proxy</h3>
 
 <ul>
-  <li>Navigate to the Site Preferences menu within ShotGrid and expand the Isolation section</li>
+  <li>Navigate to the Site Preferences menu within Flow Production Tracking and expand the Isolation section</li>
   <li>Set S3 Proxy Host Address to the S3 proxy url. Eg. <code class="highlighter-rouge">https://s3-proxy.mystudio.com</code> then click Save changes</li>
   <li>Confirm that you are still able to access existing media</li>
   <li>Attempt to upload new media</li>

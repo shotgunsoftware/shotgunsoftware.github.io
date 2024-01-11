@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -8948,7 +8948,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -11579,9 +11579,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -13945,7 +13945,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -15015,7 +15015,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -15093,7 +15093,7 @@
 <h2 id="introduction">Introduction</h2>
 
 <p>This guide outlines what a Toolkit app is, covers how to create one, and explains some basics around app development.
-ShotGrid Pipeline Toolkit is not only a collection of apps and engines maintained by ShotGrid Software, it is also a development platform that makes it easy to quickly build custom pipeline tools!</p>
+Flow Production Tracking Toolkit is not only a collection of apps and engines maintained by Flow Production Tracking Software, it is also a development platform that makes it easy to quickly build custom pipeline tools!</p>
 
 <ul>
   <li><a href="#what-is-a-toolkit-app">What is a Toolkit app?</a></li>
@@ -15131,8 +15131,8 @@ ShotGrid Pipeline Toolkit is not only a collection of apps and engines maintaine
 <p>A Toolkit app can be defined as follows:</p>
 
 <ul>
-  <li>A tool that is usually run by an end-user, using the ShotGrid integrations.</li>
-  <li>Apps usually have a graphical user interface with which the user can guide the app’s operations, but they don’t have to. An app can also be a command registered with the integrations, triggered by the user from the ShotGrid menu in the host software.</li>
+  <li>A tool that is usually run by an end-user, using the Flow Production Tracking integrations.</li>
+  <li>Apps usually have a graphical user interface with which the user can guide the app’s operations, but they don’t have to. An app can also be a command registered with the integrations, triggered by the user from the Flow Production Tracking menu in the host software.</li>
   <li>They can have an API/public methods in which other processes or apps could interact.</li>
   <li>They can be multi-platform, and software agnostic.</li>
   <li>They can be set up to be configured differently per <a href="https://developer.shotgridsoftware.com/487a9f2c/#what-is-an-environment">environment</a>.</li>
@@ -15144,7 +15144,7 @@ ShotGrid Pipeline Toolkit is not only a collection of apps and engines maintaine
 This means the app only needs to focus on providing the functionality to fulfill its purpose and doesn’t need to, for example, handle window parenting, keeping track of the user’s context, or providing a shortcut for launching itself.</p>
 
 <h2 id="creating-your-own-app">Creating your own app.</h2>
-<p>All apps and engines maintained and released by ShotGrid Software are open source and you can find them in <a href="https://github.com/shotgunsoftware">GitHub</a>.</p>
+<p>All apps and engines maintained and released by Flow Production Tracking Software are open source and you can find them in <a href="https://github.com/shotgunsoftware">GitHub</a>.</p>
 
 <p>This section goes through how to create a new app using our starter template. 
 We assume that you are familiar with GitHub and git workflows, but please note that you can do Toolkit development even if you are not using git as your source control solution.</p>
@@ -15166,7 +15166,7 @@ Either way, the goal is to have a local copy of the starter app code so you can 
 <h2 id="part-3-adding-the-app-to-your-config">Part 3: Adding the app to your config</h2>
 <p>We recommend reading the “<a href="/4d147fb2/">Adding an app</a>” guide, as it explains in more detail how to add an app to your configuration.</p>
 
-<p>When adding the app to your config, you need to consider where your app will be used, i.e. perhaps only in Nuke or in multiple different software, or standalone from ShotGrid Desktop.
+<p>When adding the app to your config, you need to consider where your app will be used, i.e. perhaps only in Nuke or in multiple different software, or standalone from Flow Production Tracking Toolkit.
 You also need to think about the context that your app will depend on.
 For example, can your app only run when you know the task the user is working on, or can it run with just the project known?
 Knowing this will dictate which environment YAMLs and engines you need to add your app settings to.</p>
@@ -15243,7 +15243,7 @@ from the settings defined either by default in the <code class="highlighter-roug
 
 <p>If you know that you will be using frameworks, you can add them to the manifest file.</p>
 
-<p>For example, if you plan to use the Qt Widgets and ShotGrid Utils frameworks for your app, add the following to the <code class="highlighter-rouge">info.yml</code>:</p>
+<p>For example, if you plan to use the Qt Widgets and Flow Production Tracking Utils frameworks for your app, add the following to the <code class="highlighter-rouge">info.yml</code>:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># the frameworks required to run this app
 </span><span class="n">frameworks</span><span class="p">:</span>
@@ -15268,14 +15268,14 @@ When the app is updated using <code class="highlighter-rouge">tank updates</code
 
 <ul>
   <li><a href="https://developer.shotgridsoftware.com/tk-framework-qtwidgets/">The Qt Widgets Framework</a></li>
-  <li><a href="https://developer.shotgridsoftware.com/tk-framework-shotgunutils/">The ShotGrid utils Framework</a></li>
+  <li><a href="https://developer.shotgridsoftware.com/tk-framework-shotgunutils/">The Flow Production Tracking utils Framework</a></li>
 </ul>
 
 <h3 id="reloading-your-changes">Reloading your changes</h3>
 
 <p>If you are testing your app within software such as Maya, then as soon as you have one or more dev items in your configuration, 
-Toolkit will automatically add a <strong>Reload and Restart</strong> option to the ShotGrid menu.
-<img src="/en/guides/pipeline-integrations/development/images/reload-restart.png" alt="ShotGrid menu Reload and Restart option" /></p>
+Toolkit will automatically add a <strong>Reload and Restart</strong> option to the Flow Production Tracking menu.
+<img src="/en/guides/pipeline-integrations/development/images/reload-restart.png" alt="Flow Production Tracking menu Reload and Restart option" /></p>
 
 <p>Clicking this will reload your configuration and code and then restart your engine. 
 This means that you can iterate quickly: start Maya once, and then each time you make code or configuration changes that you want to try out, simply hit the <strong>Reload and Restart</strong> button and your changes will be pulled in.</p>
@@ -15290,10 +15290,10 @@ This means that you can iterate quickly: start Maya once, and then each time you
 </div>
 
 <h2 id="part-5-testing">Part 5: Testing</h2>
-<p>When you want to test your code, you can easily invite other users to your dev sandbox by adding them to the <code class="highlighter-rouge">User Restrictions</code> field on the <code class="highlighter-rouge">PipelineConfiguration</code> entity in ShotGrid. 
-As soon as you have added a user, they will see new entries on their menus inside of ShotGrid Create and the browser actions, as well as an option to pick the configuration inside of ShotGrid Desktop.</p>
+<p>When you want to test your code, you can easily invite other users to your dev sandbox by adding them to the <code class="highlighter-rouge">User Restrictions</code> field on the <code class="highlighter-rouge">PipelineConfiguration</code> entity in Flow Production Tracking.
+As soon as you have added a user, they will see new entries on their menus inside of Flow Production Tracking Create and the browser actions, as well as an option to pick the configuration inside of Flow Production Tracking Toolkit.</p>
 
-<p><img src="/en/guides/pipeline-integrations/development/images/dev-configuration.png" alt="Dev configuration selectable in ShotGrid Desktop" /></p>
+<p><img src="/en/guides/pipeline-integrations/development/images/dev-configuration.png" alt="Dev configuration selectable in Flow Production Tracking Toolkit" /></p>
 
 <div class="info-popup">
     <p>
@@ -15309,7 +15309,7 @@ As soon as you have added a user, they will see new entries on their menus insid
 <p>In <a href="#part-3-adding-the-app-to-your-config">part three</a> you set your configuration to point to your app using a dev descriptor.
 For released software, you will want to ensure that your app can be accessed by all users and that things are versioned so that they can be upgraded safely and easily.</p>
 
-<p>All apps provided by ShotGrid use the Toolkit app store to track updates and releases, and they will have a location tag that looks something like this:</p>
+<p>All apps provided by Flow Production Tracking use the Toolkit app store to track updates and releases, and they will have a location tag that looks something like this:</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">location</span><span class="pi">:</span>
    <span class="na">name</span><span class="pi">:</span> <span class="s">tk-multi-setframerange</span>
@@ -15323,7 +15323,7 @@ Whenever the updates command is run and a new version is available, Toolkit will
 
 <ul>
   <li><a href="https://developer.shotgridsoftware.com/tk-core/descriptor.html#tracking-against-tags-in-git">Git</a> and <a href="https://developer.shotgridsoftware.com/tk-core/descriptor.html#tracking-against-releases-on-github">GitHub</a></li>
-  <li><a href="https://developer.shotgridsoftware.com/tk-core/descriptor.html#pointing-at-a-file-attachment-in-shotgun">ShotGrid Uploads</a></li>
+  <li><a href="https://developer.shotgridsoftware.com/tk-core/descriptor.html#pointing-at-a-file-attachment-in-shotgun">Flow Production Tracking Uploads</a></li>
   <li><a href="https://developer.shotgridsoftware.com/tk-core/descriptor.html#pointing-to-a-path-on-disk">Local paths</a></li>
 </ul>
 
@@ -15358,7 +15358,7 @@ The workflow is now identical to the one which happens with official app store a
 </div>
 
 <h2 id="modifying-an-existing-app">Modifying an existing app</h2>
-<p>Rather than starting from an empty starter template, it is sometimes necessary to add a minor feature to an existing app, for example, one of ShotGrid Software’s standard apps. 
+<p>Rather than starting from an empty starter template, it is sometimes necessary to add a minor feature to an existing app, for example, one of Flow Production Tracking Software’s standard apps.
 When you work with a modified version of an app, you typically want to ‘track’ against the source app and make sure to regularly pull in changes and bug fixes.</p>
 
 <p>When you do this type of development, you pick up the parent code, then apply some of your changes, then release this to your pipeline. 

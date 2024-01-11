@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -3483,9 +3483,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/8085533c/?title=ShotGrid+Integrations+Admin+Guide"
+                href="/8085533c/?title=Flow+Production+Tracking+Integrations+Admin+Guide"
             >
-                ShotGrid Integrations Admin Guide
+                Flow Production Tracking Integrations Admin Guide
             </a>
             </div>
 
@@ -10346,7 +10346,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -12977,9 +12977,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -15343,7 +15343,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -16413,7 +16413,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -16490,11 +16490,11 @@
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/toolkit-overview/icon_256.png" alt="" /></p>
 
-<h1 id="an-overview-of-the-different-concepts-in-the-shotgrid-pipeline-toolkit">An overview of the different concepts in the ShotGrid Pipeline Toolkit.</h1>
+<h1 id="an-overview-of-the-different-concepts-in-the-shotgrid-pipeline-toolkit">An overview of the different concepts in the Flow Production Tracking Toolkit.</h1>
 
 <p>Here, we cover the main concepts in detail: How apps and Engines work, how Toolkit is launched and manages the current context (work area), how folders are created on disk, etc. We recommend that anyone involved in configuration or development start here.</p>
 
-<p><em>Please note that this document describes functionality only available if you have taken control over a Toolkit configuration. For details, see the  <a href="https://developer.shotgridsoftware.com/8085533c/">ShotGrid Integrations Admin Guide</a>.</em></p>
+<p><em>Please note that this document describes functionality only available if you have taken control over a Toolkit configuration. For details, see the  <a href="https://developer.shotgridsoftware.com/8085533c/">Flow Production Tracking Integrations Admin Guide</a>.</em></p>
 
 <h1 id="introduction">Introduction</h1>
 
@@ -16505,23 +16505,23 @@
 <p>Below is a brief description of Toolkit (SGTK):</p>
 
 <ul>
-  <li>Toolkit is a  <em>Pipeline Toolkit</em>  based on the ShotGrid platform - it makes it easier to write and install tools for a studio.</li>
+  <li>Toolkit is a  <em>Pipeline Toolkit</em>  based on the Flow Production Tracking platform - it makes it easier to write and install tools for a studio.</li>
   <li>Toolkit is filesystem based - it helps you organize where things are stored on disk so that what you have on disk is nicely structured.</li>
   <li>Toolkit is an assistant - it does not try to take over or abstract the data in your pipeline, but rather is there to provide artists with compelling tools to make finding information easier and avoid making mistakes.</li>
-  <li>Toolkit is helping you to share work by storing all of its publishes in ShotGrid. Toolkit makes it easy to share updates and work that is going on across a production.</li>
+  <li>Toolkit is helping you to share work by storing all of its publishes in Flow Production Tracking. Toolkit makes it easy to share updates and work that is going on across a production.</li>
 </ul>
 
 <p>In the following sections, we will be looking in depth at the Toolkit and how it works.</p>
 
 <h1 id="projects-and-configurations">Projects and Configurations</h1>
 
-<p>In Toolkit, everything is project centric. A project typically starts its lifecycle inside of ShotGrid, goes through a bidding and a pre-production phase, and then once it is ready for the content-creation phase Toolkit can be set up for that project.</p>
+<p>In Toolkit, everything is project centric. A project typically starts its lifecycle inside of Flow Production Tracking, goes through a bidding and a pre-production phase, and then once it is ready for the content-creation phase Toolkit can be set up for that project.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/toolkit-overview/new_project.png" alt="" /></p>
 
 <p>When you set up a new project, you use a <em>template configuration</em>. This is a predefined config containing engines and apps, filesystem configuration, and other settings. If you are just starting with Toolkit, you can use our example configuration as a starting point for your exploration. If you have already been using Toolkit on another project, we suggest that you take that configuration and use that as the starting point for your new project. That way, you will be evolving a studio configuration and it will be refined with each new project. Of course, you can also maintain a studio configuration separately and use this as a template for all new projects.</p>
 
-<p>Each configuration defines a number of <em>storage points</em>. For the standard sample configuration, <code class="highlighter-rouge">tk-config-default</code>, we define a single storage point called  <em>primary</em>. This means that all your production data will be under a single filesystem project root. You can also set up configs with more than a single file system root. We call these <em>multi-root configurations</em>. Examples of when you might need multi-root configurations include having a separate storage for renders, a separate storage for editorial, etc. Each of these storage points need to exist as a <em>Local File Storage</em> in ShotGrid, which can be set up in the Site Preferences, under the <em>File Management</em> tab.</p>
+<p>Each configuration defines a number of <em>storage points</em>. For the standard sample configuration, <code class="highlighter-rouge">tk-config-default</code>, we define a single storage point called  <em>primary</em>. This means that all your production data will be under a single filesystem project root. You can also set up configs with more than a single file system root. We call these <em>multi-root configurations</em>. Examples of when you might need multi-root configurations include having a separate storage for renders, a separate storage for editorial, etc. Each of these storage points need to exist as a <em>Local File Storage</em> in Flow Production Tracking, which can be set up in the Site Preferences, under the <em>File Management</em> tab.</p>
 
 <p>Toolkit will install the actual project configuration in any location you like. Typically this will go into a  <em>software install</em> area on disk and not into the project data area itself.</p>
 
@@ -16537,11 +16537,11 @@
 
 <h2 id="each-project-has-a-pipeline-configuration">Each Project has a Pipeline Configuration</h2>
 
-<p>Whenever you set up Toolkit for a project, a pipeline configuration is created. This configuration contains all the settings and files needed for the project. The configuration has a dedicated <code class="highlighter-rouge">tank</code> command which you can run in a shell if you want to address the project directly (there is also a global tank command that works with all projects). In ShotGrid, the Pipeline Configuration has been registered as a special Pipeline Configuration Entity to make it easy to keep track of where your project configurations reside on disk.</p>
+<p>Whenever you set up Toolkit for a project, a pipeline configuration is created. This configuration contains all the settings and files needed for the project. The configuration has a dedicated <code class="highlighter-rouge">tank</code> command which you can run in a shell if you want to address the project directly (there is also a global tank command that works with all projects). In Flow Production Tracking, the Pipeline Configuration has been registered as a special Pipeline Configuration Entity to make it easy to keep track of where your project configurations reside on disk.</p>
 
-<p>In addition to the master config that is created when the project is set up, you can create additional configurations for a project. This is often useful if you want to make changes to the configuration without affecting everyone on the project. If you want to do this, you can navigate to a pipeline configuration in ShotGrid, right click it and choose to clone it. This will create a new pipeline configuration for a project, based on another one, and using the new configuration you can safely test out a new app without affecting other users.</p>
+<p>In addition to the master config that is created when the project is set up, you can create additional configurations for a project. This is often useful if you want to make changes to the configuration without affecting everyone on the project. If you want to do this, you can navigate to a pipeline configuration in Flow Production Tracking, right click it and choose to clone it. This will create a new pipeline configuration for a project, based on another one, and using the new configuration you can safely test out a new app without affecting other users.</p>
 
-<p>Please note that the main configuration for a project needs to be named <code class="highlighter-rouge">Primary</code>. If you rename, modify or delete it, things may not work as expected. The Pipeline Configurations stored in ShotGrid are not intended to be manipulated by hand, but rather through various specific <code class="highlighter-rouge">tank</code> administration commands.</p>
+<p>Please note that the main configuration for a project needs to be named <code class="highlighter-rouge">Primary</code>. If you rename, modify or delete it, things may not work as expected. The Pipeline Configurations stored in Flow Production Tracking are not intended to be manipulated by hand, but rather through various specific <code class="highlighter-rouge">tank</code> administration commands.</p>
 
 <p>Example:</p>
 
@@ -16585,25 +16585,25 @@
 
 <h1 id="creating-folders-on-disk">Creating folders on disk</h1>
 
-<p>Once Toolkit has been set up for your project, you can use it to help you create a consistent folder structure. This folder structure is configured by creating a filesystem template as part of the pipeline configuration on disk. In this folder structure, some of the paths will be dynamic - for example, you may have a folder called <code class="highlighter-rouge">asset</code> that represents a ShotGrid Asset entity. These dynamic folders can be connected to ShotGrid queries and many other things.</p>
+<p>Once Toolkit has been set up for your project, you can use it to help you create a consistent folder structure. This folder structure is configured by creating a filesystem template as part of the pipeline configuration on disk. In this folder structure, some of the paths will be dynamic - for example, you may have a folder called <code class="highlighter-rouge">asset</code> that represents a Flow Production Tracking Asset entity. These dynamic folders can be connected to Flow Production Tracking queries and many other things.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/toolkit-overview/folder_creation.png" alt="" /></p>
 
-<p>Toolkit provides a number of different dynamic folder types that handle different setups and scenarios. You can use the standard ShotGrid API query syntax when you set up your folder creation, so you could organize your filesystem so that assets with different types end up in different folders on the filesystem.</p>
+<p>Toolkit provides a number of different dynamic folder types that handle different setups and scenarios. You can use the standard Flow Production Tracking API query syntax when you set up your folder creation, so you could organize your filesystem so that assets with different types end up in different folders on the filesystem.</p>
 
 <p>For a detailed walkthrough of how this works, see the admin guide:</p>
 
-<p><a href="https://developer.shotgridsoftware.com/425b1da4/">Administering the ShotGrid Pipeline Toolkit</a></p>
+<p><a href="https://developer.shotgridsoftware.com/425b1da4/">Administering the Flow Production Tracking Toolkit</a></p>
 
 <p>Toolkit’s folder creation happens in two passes: a direct pass, which can be run by anyone at any time, and a deferred pass, which is typically run by the artist just before application launch. This deferred pass is completely automatic and can be used to set up application-specific folders and user sandboxes.</p>
 
 <h1 id="the-current-context">The Current Context</h1>
 
-<p>Once the filesystem structure has been created, Toolkit knows the relationship between a folder on disk and the ShotGrid object that the folder came from. This is important, because it allows Toolkit to easily associate an object in ShotGrid with a folder or disk, or file, when publishing, loading or resolving paths. It also relates to what we call the <em>context</em> or sometimes <em>the current work area</em>. The context object is part of the Toolkit Core and tracks the current thing that is being worked on. It is a central mechanism when Toolkit resolves filesystem paths.</p>
+<p>Once the filesystem structure has been created, Toolkit knows the relationship between a folder on disk and the Flow Production Tracking object that the folder came from. This is important, because it allows Toolkit to easily associate an object in Flow Production Tracking with a folder or disk, or file, when publishing, loading or resolving paths. It also relates to what we call the <em>context</em> or sometimes <em>the current work area</em>. The context object is part of the Toolkit Core and tracks the current thing that is being worked on. It is a central mechanism when Toolkit resolves filesystem paths.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/toolkit-overview/context.png" alt="" /></p>
 
-<p>The context can be created either from a ShotGrid object, such as a Task, Asset or Shot, or from a path on disk. When apps are running, they can always access the context, and this makes it easy to construct apps that have no knowledge of the filesystem naming conventions or whether the app is used in an Asset or Shot pipeline. This is all handled by the Toolkit Core API and the context.</p>
+<p>The context can be created either from a Flow Production Tracking object, such as a Task, Asset or Shot, or from a path on disk. When apps are running, they can always access the context, and this makes it easy to construct apps that have no knowledge of the filesystem naming conventions or whether the app is used in an Asset or Shot pipeline. This is all handled by the Toolkit Core API and the context.</p>
 
 <h1 id="filesystem-templates">Filesystem Templates</h1>
 
@@ -16636,7 +16636,7 @@
 <span class="s">'/projects/bbb/shots/001_002/comp/pub/main_scene.v003.ma'</span>
 </code></pre></div></div>
 
-<p>Note how the above path and template has two different types of fields. The <code class="highlighter-rouge">Shot</code> and <code class="highlighter-rouge">Step</code> fields are high-level fields with equivalent objects in ShotGrid (a Shot and a Pipeline Step) where the <code class="highlighter-rouge">name</code> and the <code class="highlighter-rouge">version</code> fields are very specific to this particular type of template. If we wanted to describe a publish path for an Asset rather than a Shot, we would still have a <code class="highlighter-rouge">name</code> and a <code class="highlighter-rouge">version</code> field, since this is needed for all publishes, regardless of what type of data it is. However, we would not have a <code class="highlighter-rouge">Shot</code> and a <code class="highlighter-rouge">Step</code> field. Instead, we may have an <code class="highlighter-rouge">Asset</code> and a <code class="highlighter-rouge">Step</code> field, where the asset field would be associated with an asset in ShotGrid.</p>
+<p>Note how the above path and template has two different types of fields. The <code class="highlighter-rouge">Shot</code> and <code class="highlighter-rouge">Step</code> fields are high-level fields with equivalent objects in Flow Production Tracking (a Shot and a Pipeline Step) where the <code class="highlighter-rouge">name</code> and the <code class="highlighter-rouge">version</code> fields are very specific to this particular type of template. If we wanted to describe a publish path for an Asset rather than a Shot, we would still have a <code class="highlighter-rouge">name</code> and a <code class="highlighter-rouge">version</code> field, since this is needed for all publishes, regardless of what type of data it is. However, we would not have a <code class="highlighter-rouge">Shot</code> and a <code class="highlighter-rouge">Step</code> field. Instead, we may have an <code class="highlighter-rouge">Asset</code> and a <code class="highlighter-rouge">Step</code> field, where the asset field would be associated with an asset in Flow Production Tracking.</p>
 
 <p>When we develop an app that does publishing, we obviously don’t want to have a separate app that does Shot publishing and one that does Asset publishing. Instead, we want a single publishing app that can handle any publish scenario, regardless of whether it is a Sequence, Shot, Asset or whatever.</p>
 
@@ -16697,9 +16697,9 @@
 
 <p>In order to use this template, the context needs to contain both an entity and a Pipeline Step. For Shot <code class="highlighter-rouge">1122</code>, parented under Sequence <code class="highlighter-rouge">ABC</code> and pipeline step <code class="highlighter-rouge">Modeling</code>, the above template would resolve to  <code class="highlighter-rouge">sequences/ABC/1122/Modeling/...</code>. This means that a context that contains a Shot but not a Pipeline Step is not enough to populate the above template. You cannot launch Maya for a Shot-only context and use the above template. In order for it to be functional, a Step is required.</p>
 
-<p>This leads us to the environment breakdown shown above. Because the filesystem structure defined in the default configuration is centered around steps, all the main apps need to run in a context which has a step defined. We define two such environments in the default config: the <code class="highlighter-rouge">asset_step.yml</code> file and the <code class="highlighter-rouge">shot_step.yml</code> file. Each of these files contain engines for a number of DCCs, such as Maya, Nuke, 3dsmax, Motionbuilder, and Photoshop to mention a few. When you launch Maya from a Task inside of ShotGrid, the pick environment hook will choose the <code class="highlighter-rouge">shot_step</code> environment, start Maya and load up the Maya app configuration.</p>
+<p>This leads us to the environment breakdown shown above. Because the filesystem structure defined in the default configuration is centered around steps, all the main apps need to run in a context which has a step defined. We define two such environments in the default config: the <code class="highlighter-rouge">asset_step.yml</code> file and the <code class="highlighter-rouge">shot_step.yml</code> file. Each of these files contain engines for a number of DCCs, such as Maya, Nuke, 3dsmax, Motionbuilder, and Photoshop to mention a few. When you launch Maya from a Task inside of Flow Production Tracking, the pick environment hook will choose the <code class="highlighter-rouge">shot_step</code> environment, start Maya and load up the Maya app configuration.</p>
 
-<p>It can also be useful to launch Maya directly from a Shot object inside of ShotGrid. More importantly, it can be really useful to be able to type in a console <code class="highlighter-rouge">tank Shot 1122 launch_maya</code>. This is where the <code class="highlighter-rouge">shot</code> and <code class="highlighter-rouge">asset</code> environments come in. When you load Maya with a context which contains a Shot or Asset but no Pipeline Step, it will load one of these environments. Since the filesystem structure is all organized per Pipeline Step, it is not really possible to do any loading or publishing if we are missing that information in our context. Maya instead launches with a bare configuration, only containing the <em>Workfiles</em> app. This app lets you choose a Task to work on. Once you have picked a Task, Toolkit switches the context and restarts the engine for you and will load up the <code class="highlighter-rouge">shot_step</code> environment with the full range of apps.</p>
+<p>It can also be useful to launch Maya directly from a Shot object inside of Flow Production Tracking. More importantly, it can be really useful to be able to type in a console <code class="highlighter-rouge">tank Shot 1122 launch_maya</code>. This is where the <code class="highlighter-rouge">shot</code> and <code class="highlighter-rouge">asset</code> environments come in. When you load Maya with a context which contains a Shot or Asset but no Pipeline Step, it will load one of these environments. Since the filesystem structure is all organized per Pipeline Step, it is not really possible to do any loading or publishing if we are missing that information in our context. Maya instead launches with a bare configuration, only containing the <em>Workfiles</em> app. This app lets you choose a Task to work on. Once you have picked a Task, Toolkit switches the context and restarts the engine for you and will load up the <code class="highlighter-rouge">shot_step</code> environment with the full range of apps.</p>
 
 <p>Similarly, the <code class="highlighter-rouge">project</code> environment is a catch-all fallback, also just containing the <em>Workfiles</em> app. This makes it possible to launch Maya from pretty much anywhere inside the project and it will initialize Toolkit in a minimal state, allowing you to jump to a valid work area using the <em>Workfiles</em> app.</p>
 
@@ -16731,30 +16731,30 @@
 
 <p><a href="https://developer.shotgridsoftware.com/425b1da4/#hooks">Read more about how to work with hooks in the Admin guide.</a></p>
 
-<h1 id="running-from-shotgrid-and-the-shell">Running from ShotGrid and the Shell</h1>
+<h1 id="running-from-shotgrid-and-the-shell">Running from Flow Production Tracking and the Shell</h1>
 
 <p>Once Toolkit is installed, you can access it from several primary entry points:</p>
 
 <ul>
-  <li>ShotGrid Actions will appear on the right-click menus inside of ShotGrid</li>
-  <li>Launch icons will appear for the project in the ShotGrid Desktop app</li>
+  <li>Flow Production Tracking Actions will appear on the right-click menus inside of Flow Production Tracking</li>
+  <li>Launch icons will appear for the project in the Flow Production Tracking Toolkit app</li>
   <li>You can use the <code class="highlighter-rouge">tank</code> command in a console.</li>
   <li>The Toolkit Python API is available both inside applications and in the shell.</li>
 </ul>
 
-<p>Running the Toolkit from within ShotGrid is a common way of starting applications and carrying out tasks. ShotGrid will use ShotGrid Desktop to communicate with the Toolkit install that is local on your machine and use a local Python to execute a Toolkit command. This means that you can run local operations such as folder creation right from inside of ShotGrid.</p>
+<p>Running the Toolkit from within Flow Production Tracking is a common way of starting applications and carrying out tasks. Flow Production Tracking will use Flow Production Tracking Toolkit to communicate with the Toolkit install that is local on your machine and use a local Python to execute a Toolkit command. This means that you can run local operations such as folder creation right from inside of Flow Production Tracking.</p>
 
 <p>You can also access Toolkit from a shell. Each project configuration comes with its own <code class="highlighter-rouge">tank</code> command. Simply navigate to your project configuration root and execute the <code class="highlighter-rouge">./tank</code> command from there.</p>
 
-<p>Lastly, you can simply add the Toolkit API to the <code class="highlighter-rouge">PYTHONPATH</code> environment variable and import it. Using the API is straightforward and if you want to start up Toolkit inside of Maya manually or as part of an existing studio launch system instead of using ShotGrid Desktop, all you need to execute is a couple of simple commands.</p>
+<p>Lastly, you can simply add the Toolkit API to the <code class="highlighter-rouge">PYTHONPATH</code> environment variable and import it. Using the API is straightforward and if you want to start up Toolkit inside of Maya manually or as part of an existing studio launch system instead of using Flow Production Tracking Toolkit, all you need to execute is a couple of simple commands.</p>
 
 <h1 id="publishing">Publishing</h1>
 
-<p>When you want to share files that you are working on with others, you can publish them. What this means is that a <code class="highlighter-rouge">PublishedFile</code> entity is created in ShotGrid which other users can import using Toolkit’s loader app.</p>
+<p>When you want to share files that you are working on with others, you can publish them. What this means is that a <code class="highlighter-rouge">PublishedFile</code> entity is created in Flow Production Tracking which other users can import using Toolkit’s loader app.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/toolkit-overview/dependencies.png" alt="" /></p>
 
-<p>The details of exactly what this means in terms of the data management (where on disk things are saved, what the file contains, etc) is left to the app doing the actual work. The Toolkit API provides developers with methods to easily create publishes inside of ShotGrid and link these up to the right objects to ensure that ShotGrid can go ahead and push notifications to all the right people. We also provide a default publish app that is meant to be versatile and highly configurable, but this is by no means the only way to implement version control using Toolkit. Because Toolkit is extensible, you could build your own custom version control and publishing system using Toolkit if this is desirable.</p>
+<p>The details of exactly what this means in terms of the data management (where on disk things are saved, what the file contains, etc) is left to the app doing the actual work. The Toolkit API provides developers with methods to easily create publishes inside of Flow Production Tracking and link these up to the right objects to ensure that Flow Production Tracking can go ahead and push notifications to all the right people. We also provide a default publish app that is meant to be versatile and highly configurable, but this is by no means the only way to implement version control using Toolkit. Because Toolkit is extensible, you could build your own custom version control and publishing system using Toolkit if this is desirable.</p>
 
 <p>As a starting point, however, we recommend our Publish App:</p>
 

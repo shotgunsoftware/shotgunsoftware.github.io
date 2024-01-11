@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -3825,9 +3825,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -7119,7 +7119,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -9750,9 +9750,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -12116,7 +12116,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -13186,7 +13186,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -13265,14 +13265,14 @@
 
 <h2 id="about-the-guide">About the guide</h2>
 
-<p>This guide describes how to use the <strong>Advanced Project Setup Wizard</strong> in ShotGrid Desktop to create a configuration for a digital content creation pipeline. You will quickly become acquainted with the configuration tools, learn how to use the Wizard, and be presented with opportunities to learn more. Using the Wizard creates a pipeline configuration for your project and prepares it to be edited and extended to support each step in the pipeline. The configuration controls aspects of the UI, ShotGrid Apps, and various tools necessary to support a production pipeline. Using the Wizard is just one way to extend a configuration. Along with adding specific settings for each step in a pipeline, it will add integrations with software applications. In this guide, we’ll be basing our project’s configuration on Toolkit’s Default Configuration.</p>
+<p>This guide describes how to use the <strong>Advanced Project Setup Wizard</strong> in Flow Production Tracking Toolkit to create a configuration for a digital content creation pipeline. You will quickly become acquainted with the configuration tools, learn how to use the Wizard, and be presented with opportunities to learn more. Using the Wizard creates a pipeline configuration for your project and prepares it to be edited and extended to support each step in the pipeline. The configuration controls aspects of the UI, Flow Production Tracking Apps, and various tools necessary to support a production pipeline. Using the Wizard is just one way to extend a configuration. Along with adding specific settings for each step in a pipeline, it will add integrations with software applications. In this guide, we’ll be basing our project’s configuration on Toolkit’s Default Configuration.</p>
 
 <p>This guide assumes the user:</p>
 
 <ol>
   <li>Has never used the Advanced Project Setup Wizard</li>
-  <li>Has some basic knowledge of how to use ShotGrid</li>
-  <li>Is new to ShotGrid Toolkit</li>
+  <li>Has some basic knowledge of how to use Flow Production Tracking</li>
+  <li>Is new to Flow Production Tracking Toolkit</li>
 </ol>
 
 <h3 id="using-this-document">Using this document</h3>
@@ -13280,26 +13280,26 @@
 <p>To use this guide and create a customizable configuration for your project, the following is required:</p>
 
 <ol>
-  <li>An active ShotGrid site. You can <a href="https://www.shotgridsoftware.com/signup/?utm_source=autodesk.com&amp;utm_medium=referral&amp;utm_campaign=creative-project-management">register for ShotGrid here</a> and get a 30-day trial to begin exploring.</li>
-  <li>ShotGrid Desktop. If Desktop is not installed, you can <a href="https://developer.shotgridsoftware.com/d587be80/#installation-of-desktop">begin by following this link.</a></li>
+  <li>An active Flow Production Tracking site. You can <a href="https://www.shotgridsoftware.com/signup/?utm_source=autodesk.com&amp;utm_medium=referral&amp;utm_campaign=creative-project-management">register for Flow Production Tracking here</a> and get a 30-day trial to begin exploring.</li>
+  <li>Flow Production Tracking Toolkit. If Desktop is not installed, you can <a href="https://developer.shotgridsoftware.com/d587be80/#installation-of-desktop">begin by following this link.</a></li>
   <li>Access to a filesystem where you can store project files and a pipeline configuration. On the filesystem, create a folder called <code class="highlighter-rouge">Shotgun</code>, with two folders, <code class="highlighter-rouge">projects</code> and <code class="highlighter-rouge">configs</code>, within it.</li>
 </ol>
 
 <h2 id="about-the-advanced-project-setup-wizard">About the Advanced Project Setup Wizard</h2>
 
-<p>The Advanced Project Setup Wizard in ShotGrid Desktop generates a pipeline configuration based on the Default Configuration. The Default Configuration provides a solid base to build on, complete with customizable settings, apps, and UI elements that support the pipeline process. It creates a configuration you can edit and extend to meet your project’s pipeline needs.</p>
+<p>The Advanced Project Setup Wizard in Flow Production Tracking Toolkit generates a pipeline configuration based on the Default Configuration. The Default Configuration provides a solid base to build on, complete with customizable settings, apps, and UI elements that support the pipeline process. It creates a configuration you can edit and extend to meet your project’s pipeline needs.</p>
 
 <p>The Default Configuration includes:</p>
 <ul>
   <li>A basic filesystem schema and templates that determine where files live on disk</li>
-  <li>All of the supported <a href="https://developer.shotgridsoftware.com/162eaa4b/">software integrations</a> allowing interaction with ShotGrid and pipeline functions from directly inside the user’s software applications.</li>
+  <li>All of the supported <a href="https://developer.shotgridsoftware.com/162eaa4b/">software integrations</a> allowing interaction with Flow Production Tracking and pipeline functions from directly inside the user’s software applications.</li>
 </ul>
 
-<p>Customizations are only limited by imagination, cleverness, and programming knowledge or the ability to borrow from what others in the ShotGrid community have created.</p>
+<p>Customizations are only limited by imagination, cleverness, and programming knowledge or the ability to borrow from what others in the Flow Production Tracking community have created.</p>
 
 <h3 id="creating-the-configuration">Creating the configuration</h3>
 
-<p>A configuration is required for every project. The first time a project is accessed through ShotGrid Desktop, a Basic Configuration is downloaded and configured. This Basic Configuration automatically detects the supported content creation software a user has on their system and associates the configuration with the project. Settings in the pipeline configuration govern the integrations within the supported software applications. The <a href="https://developer.shotgridsoftware.com/c0b0ce05/">Panel</a> app displays project information from ShotGrid and allows artists to reply to notes and view Versions without leaving their work session. The <a href="https://developer.shotgridsoftware.com/bc718491/">Publisher</a> app allows artists to make their work available for others on their team, and through the <a href="https://developer.shotgridsoftware.com/a4c0a4f1/">Loader</a> app, artists can load their teammates’ published files. The Basic Configuration does not include file system management setup or the development of templates for specifying how files and directories are named on disk. It also doesn’t have the plethora of Apps that are added when a Default Configuration is configured. It is a simple configuration that allows Toolkit to run without any manual editing of configuration files. The Wizard replaces the Basic Configuration with a Default Configuration. It provides more apps and software integrations to support you on your journey. While the Basic Configuration can be edited as well, it’s not until you have an advanced setup that your project will be set up for customization.</p>
+<p>A configuration is required for every project. The first time a project is accessed through Flow Production Tracking Toolkit, a Basic Configuration is downloaded and configured. This Basic Configuration automatically detects the supported content creation software a user has on their system and associates the configuration with the project. Settings in the pipeline configuration govern the integrations within the supported software applications. The <a href="https://developer.shotgridsoftware.com/c0b0ce05/">Panel</a> app displays project information from Flow Production Tracking and allows artists to reply to notes and view Versions without leaving their work session. The <a href="https://developer.shotgridsoftware.com/bc718491/">Publisher</a> app allows artists to make their work available for others on their team, and through the <a href="https://developer.shotgridsoftware.com/a4c0a4f1/">Loader</a> app, artists can load their teammates’ published files. The Basic Configuration does not include file system management setup or the development of templates for specifying how files and directories are named on disk. It also doesn’t have the plethora of Apps that are added when a Default Configuration is configured. It is a simple configuration that allows Toolkit to run without any manual editing of configuration files. The Wizard replaces the Basic Configuration with a Default Configuration. It provides more apps and software integrations to support you on your journey. While the Basic Configuration can be edited as well, it’s not until you have an advanced setup that your project will be set up for customization.</p>
 
 <h3 id="differences-between-the-basic-and-default-configurations">Differences between the Basic and Default Configurations</h3>
 
@@ -13339,23 +13339,23 @@
     </tr>
     <tr>
       <td>Toolkit Apps</td>
-      <td>ShotGrid Panel, Publisher, Loader</td>
+      <td>Flow Production Tracking Panel, Publisher, Loader</td>
       <td>Basic + Workfiles, Snap Shot, Scene breakdown, Nuke write node, Houdini Mantra node, and more</td>
     </tr>
   </tbody>
 </table>
 
-<p>In this guide, you will use the Wizard in ShotGrid Desktop to generate a pipeline configuration for your project based on the Default Configuration. Generating this configuration sets you up to make the customizations necessary to support a proprietary production pipeline.</p>
+<p>In this guide, you will use the Wizard in Flow Production Tracking Toolkit to generate a pipeline configuration for your project based on the Default Configuration. Generating this configuration sets you up to make the customizations necessary to support a proprietary production pipeline.</p>
 
 <h2 id="begin-exercise">Begin Exercise</h2>
 
 <h3 id="prepare-to-use-a-default-configuration">Prepare to use a Default Configuration</h3>
 
-<p><strong>Step 1:</strong> Create a new project in ShotGrid called “the_other_side.”</p>
+<p><strong>Step 1:</strong> Create a new project in Flow Production Tracking called “the_other_side.”</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/advanced_config/2_new_project.png" alt="New project" /></p>
 
-<p><strong>Step 2:</strong> Launch the ShotGrid Desktop app and log in using the username and password from your ShotGrid site.</p>
+<p><strong>Step 2:</strong> Launch the Flow Production Tracking Toolkit app and log in using the username and password from your Flow Production Tracking site.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/advanced_config/3_login.png" alt="Login" /></p>
 
@@ -13376,21 +13376,21 @@
 
 <h3 id="accessing-the-default-configuration">Accessing the Default Configuration</h3>
 
-<p>A Basic Configuration was downloaded and configured when the project was accessed. The Publish app and supported software packages were detected and automatically added to the <strong>Apps</strong> pane in ShotGrid Desktop.</p>
+<p>A Basic Configuration was downloaded and configured when the project was accessed. The Publish app and supported software packages were detected and automatically added to the <strong>Apps</strong> pane in Flow Production Tracking Toolkit.</p>
 
 <p><strong>Step 4:</strong> Once the project is loaded, select your profile <strong>avatar</strong> at the bottom right of the screen. In the popup menu, select <strong>Advanced project setup…</strong> to initiate the Wizard.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/advanced_config/6_advanced_project_setup.png" alt="Advanced project setup" /></p>
 
-<p>A dialog box will be displayed with four options and ShotGrid Default selected. At this point, you can choose to base your project’s pipeline configuration on the configuration of an existing project, on a configuration in a git repository, or on a path on disk.</p>
+<p>A dialog box will be displayed with four options and Flow Production Tracking Default selected. At this point, you can choose to base your project’s pipeline configuration on the configuration of an existing project, on a configuration in a git repository, or on a path on disk.</p>
 
-<p>For this exercise, we’ll choose <strong>ShotGrid Default</strong>. This option will create a pipeline configuration for your project that’s based on ShotGrid’s Default Configuration.</p>
+<p>For this exercise, we’ll choose <strong>Flow Production Tracking Default</strong>. This option will create a pipeline configuration for your project that’s based on Flow Production Tracking’s Default Configuration.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/advanced_config/7_select_config.png" alt="Select config" /></p>
 
 <p><strong>Step 5:</strong> Select <strong>Continue</strong>.</p>
 
-<p>A dialog box will be displayed with two options and <strong>Default</strong> selected. At this point there’s an option to select a Legacy Default Configuration setup. This configuration setup is from an older version of ShotGrid for studios who still use that version. We will use the Default for this exercise.</p>
+<p>A dialog box will be displayed with two options and <strong>Default</strong> selected. At this point there’s an option to select a Legacy Default Configuration setup. This configuration setup is from an older version of Flow Production Tracking for studios who still use that version. We will use the Default for this exercise.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/advanced_config/8_select_config.png" alt="Select config" /></p>
 
@@ -13406,13 +13406,13 @@
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/advanced_config/10_define_storage2.png" alt="Define storage" /></p>
 
-<p>ShotGrid Toolkit supports three operating systems: Linux, Mac, and Windows.</p>
+<p>Flow Production Tracking Toolkit supports three operating systems: Linux, Mac, and Windows.</p>
 
 <p><strong>Step 8:</strong> Select the field next to the operating system utilized for storing project data. Select the folder icon and navigate to the project folder created on the filesystem prior to this exercise.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/advanced_config/11_storage_root_folder.png" alt="Storage root folder" /></p>
 
-<p>This setup allows ShotGrid to have access to only the folder you identify for storing production data. When preparing for this exercise you added a <code class="highlighter-rouge">projects/</code> directory within your ShotGrid root directory. The <code class="highlighter-rouge">projects/</code> directory is where Toolkit will store any local project related information.</p>
+<p>This setup allows Flow Production Tracking to have access to only the folder you identify for storing production data. When preparing for this exercise you added a <code class="highlighter-rouge">projects/</code> directory within your Flow Production Tracking root directory. The <code class="highlighter-rouge">projects/</code> directory is where Toolkit will store any local project related information.</p>
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/advanced_config/12_define_Storage3.png" alt="Define storage" /></p>
 
@@ -13430,7 +13430,7 @@
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/advanced_config/14_project_folder_name.png" alt="Project folder" /></p>
 
-<p>Toolkit can work in either a Distributed Setup, where the pipeline configuration is uploaded to ShotGrid and cached locally for each user, or a Centralized Setup, where users access a single configuration in a shared location on disk. For this exercise we will use a Centralized Setup. You can <a href="https://developer.shotgridsoftware.com/tk-core/initializing.html#distributed-configurations">learn more about Distributed Setups here</a>.</p>
+<p>Toolkit can work in either a Distributed Setup, where the pipeline configuration is uploaded to Flow Production Tracking and cached locally for each user, or a Centralized Setup, where users access a single configuration in a shared location on disk. For this exercise we will use a Centralized Setup. You can <a href="https://developer.shotgridsoftware.com/tk-core/initializing.html#distributed-configurations">learn more about Distributed Setups here</a>.</p>
 
 <p>The final step generates the appropriate folders, files, and data necessary to create the configuration specific to a project.</p>
 
@@ -13444,7 +13444,7 @@
 
 <p><img src="/en/guides/pipeline-integrations/getting-started/images/advanced_config/17_project_setup_complete.png" alt="Setup complete" /></p>
 
-<p><strong>TIP:</strong> Pin the app to the menu bar to allow quick access to ShotGrid Desktop: select your <strong>avatar</strong> and select <strong>Pin to Menu</strong>.</p>
+<p><strong>TIP:</strong> Pin the app to the menu bar to allow quick access to Flow Production Tracking Toolkit: select your <strong>avatar</strong> and select <strong>Pin to Menu</strong>.</p>
 
 <p>You’re done; the project setup is complete. You now have a Toolkit pipeline configuration for your project in the location you specified, based on the Default Configuration, and you’re ready to start customizing.</p>
 
@@ -13456,7 +13456,7 @@
 
 <h2 id="advanced-topics">Advanced topics</h2>
 
-<p>ShotGrid Toolkit provides many convenient ways to edit, clone, or take over a configuration. Extending existing configurations will save time and allow you access to all of the cool stuff that others within your network have created. You can take advantage of the vast ShotGrid <a href="https://groups.google.com/a/shotgunsoftware.com/forum/?fromgroups#!forum/shotgun-dev">community</a> that may have the exact configuration you need. The ShotGrid community is a sharing community, so be kind, say thank you, and recognize the person who created the configuration that helped you get the job done. Oh, and don’t forget to give back, it’s how we help our fellow ShotGrid gurus and what makes it so special to be a part of this community!</p>
+<p>Flow Production Tracking Toolkit provides many convenient ways to edit, clone, or take over a configuration. Extending existing configurations will save time and allow you access to all of the cool stuff that others within your network have created. You can take advantage of the vast Flow Production Tracking <a href="https://groups.google.com/a/shotgunsoftware.com/forum/?fromgroups#!forum/shotgun-dev">community</a> that may have the exact configuration you need. The Flow Production Tracking community is a sharing community, so be kind, say thank you, and recognize the person who created the configuration that helped you get the job done. Oh, and don’t forget to give back, it’s how we help our fellow Flow Production Tracking gurus and what makes it so special to be a part of this community!</p>
 
 <p>Below are some ways you can have fun with configurations.</p>
 
@@ -13466,7 +13466,7 @@
 
 <h3 id="editing-a-configuration-thats-in-production">Editing a configuration that’s in production</h3>
 
-<p>There will be times when you want to modify a configuration that is currently in production, but you won’t want to edit it while artists are using it. With just a few commands, ShotGrid provides a way to copy an existing configuration where you can test your modifications safely before pushing them into production. This process replaces the production configuration with the new one and automatically backs up the old one.</p>
+<p>There will be times when you want to modify a configuration that is currently in production, but you won’t want to edit it while artists are using it. With just a few commands, Flow Production Tracking provides a way to copy an existing configuration where you can test your modifications safely before pushing them into production. This process replaces the production configuration with the new one and automatically backs up the old one.</p>
 
 <p>The reasons you would want work on a copy of a configuration are:</p>
 
@@ -13481,7 +13481,7 @@
 
 <h3 id="cloud-distribution-of-pipeline-configurations">Cloud distribution of pipeline configurations</h3>
 
-<p>This guide walks through creating a <strong>centralized configuration</strong>: a single copy of a pipeline configuration that is located in a shared network location and accessed by all users. But, if your workforce is distributed across locations and networks, it may not be feasible to share a single copy of a pipeline configuration. Toolkit allows for this scenario by providing a <strong>distributed configuration</strong> option where a pipeline configuration is uploaded to ShotGrid and each time a user accesses a project the configuration is downloaded and cached locally. You can learn more about distributed configurations in our <a href="https://developer.shotgridsoftware.com/tk-core/initializing.html#distributed-configurations">Core API developer documentation</a>.</p>
+<p>This guide walks through creating a <strong>centralized configuration</strong>: a single copy of a pipeline configuration that is located in a shared network location and accessed by all users. But, if your workforce is distributed across locations and networks, it may not be feasible to share a single copy of a pipeline configuration. Toolkit allows for this scenario by providing a <strong>distributed configuration</strong> option where a pipeline configuration is uploaded to Flow Production Tracking and each time a user accesses a project the configuration is downloaded and cached locally. You can learn more about distributed configurations in our <a href="https://developer.shotgridsoftware.com/tk-core/initializing.html#distributed-configurations">Core API developer documentation</a>.</p>
 
 <h3 id="working-with-more-than-one-root-folder">Working with more than one root folder</h3>
 

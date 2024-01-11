@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ko/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Jira 및 ShotGrid 간 데이터 동기화
+            Jira 및 Flow Production Tracking 간 데이터 동기화
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/ko/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ko/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -12108,7 +12108,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -13178,7 +13178,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 설명서
+            Flow Production Tracking 설명서
         </a>
     </div>
 
@@ -13285,8 +13285,8 @@ You should also contact your AWS contacts to get help with your AWS account setu
   <li>Select Template is ready</li>
   <li>Set Amazon S3 URL to https://sg-shotgunsoftware.s3-us-west-2.amazonaws.com/tier1/cloudformation_templates/sg-private-s3-bucket.yml</li>
   <li>Next</li>
-  <li>Set a stack name like ShotGrid-s3-bucket</li>
-  <li>Set your S3 bucket name and your ShotGrid site name</li>
+  <li>Set a stack name like Flow Production Tracking-s3-bucket</li>
+  <li>Set your S3 bucket name and your Flow Production Tracking site name</li>
   <li>Next</li>
   <li>Accept <code class="highlighter-rouge">I acknowledge that AWS CloudFormation might create IAM resources</code></li>
   <li>Next</li>
@@ -13301,18 +13301,18 @@ You should also contact your AWS contacts to get help with your AWS account setu
 <p>The template will create an AWS Role with the following permissions on your bucket:</p>
 
 <ul>
-  <li>Allow ShotGrid to access your S3 bucket.</li>
-  <li>Allow the ShotGrid account to assume the role by setting the role Trust Relationship.</li>
+  <li>Allow Flow Production Tracking to access your S3 bucket.</li>
+  <li>Allow the Flow Production Tracking account to assume the role by setting the role Trust Relationship.</li>
 </ul>
 
 <h2 id="media-isolation-activation">Media Isolation Activation</h2>
 
-<p>Please contact ShotGrid support via the dedicated Microsoft Teams channel and provide the following information:</p>
+<p>Please contact Flow Production Tracking support via the dedicated Microsoft Teams channel and provide the following information:</p>
 <ul>
-  <li>ShotGrid IAM Role ARN</li>
+  <li>Flow Production Tracking IAM Role ARN</li>
 </ul>
 
-<p>ShotGrid will allow your site to use your IAM role.</p>
+<p>Flow Production Tracking will allow your site to use your IAM role.</p>
 
 <h2 id="media-configuration-setup">Media Configuration Setup</h2>
 
@@ -13356,7 +13356,7 @@ You should also contact your AWS contacts to get help with your AWS account setu
     </tr>
     <tr>
       <td>ROLE_ARN</td>
-      <td>AWS Role ARN that ShotGrid can use to access the bucket. This must be the same role specified in the Initial Setup</td>
+      <td>AWS Role ARN that Flow Production Tracking can use to access the bucket. This must be the same role specified in the Initial Setup</td>
     </tr>
     <tr>
       <td>S3_INTERFACE_VPC_ENDPOINT</td>
@@ -13367,7 +13367,7 @@ You should also contact your AWS contacts to get help with your AWS account setu
 
 <h2 id="testing-media-configuration">Testing Media Configuration</h2>
 
-<p>After the configuration has been updated on your site, navigate to the /admin/speedtest route of your ShotGrid site. Select the new <strong>S3_CONFIG_NAME</strong> that was just set up previously and start the test to confirm that all the upload/download tests work as intended.</p>
+<p>After the configuration has been updated on your site, navigate to the /admin/speedtest route of your Flow Production Tracking site. Select the new <strong>S3_CONFIG_NAME</strong> that was just set up previously and start the test to confirm that all the upload/download tests work as intended.</p>
 
 <h2 id="next-steps">Next Steps</h2>
 

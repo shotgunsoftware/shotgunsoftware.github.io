@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -3364,9 +3364,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/ja/7584b650/?title=Alias+ShotGrid+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
+                href="/ja/7584b650/?title=Alias+Flow+Production+Tracking+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
             >
-                Alias ShotGrid ワークフロー
+                Alias Flow Production Tracking ワークフロー
             </a>
             </div>
 
@@ -6658,7 +6658,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -9289,9 +9289,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -11655,7 +11655,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -12725,7 +12725,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -12802,7 +12802,7 @@
 
 <h2 id="ベスト-プラクティス">ベスト プラクティス</h2>
 
-<p>ShotGrid のプロジェクト間ワークフローを使用すると、複数のプロジェクトにわたってアセットを再利用、共有、および使用することができます。アセットを再利用する最も一般的な方法は、単一の「アセット ライブラリ」プロジェクトをソース プロジェクトとして使用することです。単一の「ライブラリ」プロジェクトを使用してシンプルに保つことをお勧めしますが、ShotGrid では任意のアクティブなプロジェクト間でアセットをリンクすることもできます。</p>
+<p>Flow Production Tracking のプロジェクト間ワークフローを使用すると、複数のプロジェクトにわたってアセットを再利用、共有、および使用することができます。アセットを再利用する最も一般的な方法は、単一の「アセット ライブラリ」プロジェクトをソース プロジェクトとして使用することです。単一の「ライブラリ」プロジェクトを使用してシンプルに保つことをお勧めしますが、Flow Production Tracking では任意のアクティブなプロジェクト間でアセットをリンクすることもできます。</p>
 
 <p>アセットを再利用するには、主に 2 つの方法があります。より迅速なアプローチは、ソースアセットをそのまま再利用することです(直接参照)。ただし、プロジェクトとパイプラインに基づいて制限事項が適用されるため、ソース アセットをプロジェクトにコピーすることもできます(複製またはフォーク)。</p>
 
@@ -12812,17 +12812,17 @@
 </ul>
 
 <h1 id="プロジェクト間ライブラリ-プロジェクトのワークフロー">プロジェクト間/ライブラリ プロジェクトのワークフロー</h1>
-<p>このチュートリアルでは、ShotGrid Toolkit を使用して複数のプロジェクトでアセットを再利用し、スタジオのアーティストが簡単にアクセスできるアセット ライブラリを構築する方法について説明します。この機能を実行するには、3 つの主要な手順があります。</p>
+<p>このチュートリアルでは、Flow Production Tracking Toolkit を使用して複数のプロジェクトでアセットを再利用し、スタジオのアーティストが簡単にアクセスできるアセット ライブラリを構築する方法について説明します。この機能を実行するには、3 つの主要な手順があります。</p>
 
 <ol>
-  <li><strong>プロジェクト間でリンクされた ShotGrid アセット</strong>: <strong>[リンクされたプロジェクト] (Linked Projects)</strong>フィールドを使用して、アセットとプロジェクト間をリンクします</li>
+  <li><strong>プロジェクト間でリンクされた Flow Production Tracking アセット</strong>: <strong>[リンクされたプロジェクト] (Linked Projects)</strong>フィールドを使用して、アセットとプロジェクト間をリンクします</li>
   <li><strong>アセットをシーンにロード/参照設定する</strong>: ローダーのダイナミック タブを使用します</li>
   <li><strong>アセットを最新に維持する</strong>Scene Breakdown アプリを使用します</li>
 </ol>
 
 <h2 id="手順-1-アセットをリンクする">手順 1: アセットをリンクする</h2>
 
-<p>アセットを再利用するには、まず、ソース アセットを使用する他のプロジェクトを ShotGrid に認識させます。</p>
+<p>アセットを再利用するには、まず、ソース アセットを使用する他のプロジェクトを Flow Production Tracking に認識させます。</p>
 
 <p>再利用している元のアセットを含むソース プロジェクトから、[アセット] (Assets)ページに移動します。<strong>[リンクされたプロジェクト] (Linked Projects)</strong>フィールドを[アセット] (Assets)ページに追加します(まだ表示されていない場合)。次に、アセットを再利用するプロジェクトを指定します。</p>
 
@@ -12837,7 +12837,7 @@
 <ul>
   <li>コンテンツ作成ソフトウェア(Maya、Houdini、Alias など)を起動する</li>
   <li>作業シーンを開くか保存してコンテキストを設定する</li>
-  <li>シーン コンテキストを設定したら、ShotGrid メニューからローダーを起動する</li>
+  <li>シーン コンテキストを設定したら、Flow Production Tracking メニューからローダーを起動する</li>
   <li>これで、<strong>[アセット - リンク済み] (Assets - Linked)</strong>タブが表示され、プロジェクト間でアセットのパブリッシュ ファイルにアクセスできるようになります。</li>
 </ul>
 

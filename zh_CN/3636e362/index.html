@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -8160,12 +8160,12 @@
 <div class="article-body markdown" data-swiftype-name="body" data-swiftype-type="text">
   
 
-            <h1 id="数据库并发问题路径-path-已与-shotgrid-实体-entity-关联">数据库并发问题：路径 <code class="highlighter-rouge">&lt;PATH&gt;</code> 已与 ShotGrid 实体 <code class="highlighter-rouge">&lt;ENTITY&gt;</code> 关联</h1>
+            <h1 id="数据库并发问题路径-path-已与-shotgrid-实体-entity-关联">数据库并发问题：路径 <code class="highlighter-rouge">&lt;PATH&gt;</code> 已与 Flow Production Tracking 实体 <code class="highlighter-rouge">&lt;ENTITY&gt;</code> 关联</h1>
 
 <h2 id="相关的错误消息">相关的错误消息：</h2>
 
 <ul>
-  <li>数据库并发问题: 路径 <code class="highlighter-rouge">&lt;PATH&gt;</code> 已与 ShotGrid 实体 <code class="highlighter-rouge">&lt;ENTITY&gt;</code> 关联。</li>
+  <li>数据库并发问题: 路径 <code class="highlighter-rouge">&lt;PATH&gt;</code> 已与 Flow Production Tracking 实体 <code class="highlighter-rouge">&lt;ENTITY&gt;</code> 关联。</li>
   <li>无法解析路径的行 ID！</li>
 </ul>
 
@@ -8188,10 +8188,10 @@ folder creation to try again.
 
 <ul>
   <li>如何清除 FilesystemLocation 实体：理想情况下，您可以运行 <code class="highlighter-rouge">tank unregister_folders</code>。要清除所有这些，请运行 tank <code class="highlighter-rouge">unregister_folders --all</code>。（对于 <code class="highlighter-rouge">tank unregister_folders</code> 的所有选项，只需运行它而不使用任何参数，它将输出用法说明。）</li>
-  <li>但是，由于数据库已处于不稳定状态，因此这可能不起作用，或者可能仅部分起作用。运行该命令后，返回到 ShotGrid 中的 FilesystemLocations，确认您预期删除的内容已消失。如果没有，请选择坏实体，然后手动将其移动到垃圾桶。</li>
+  <li>但是，由于数据库已处于不稳定状态，因此这可能不起作用，或者可能仅部分起作用。运行该命令后，返回到 Flow Production Tracking 中的 FilesystemLocations，确认您预期删除的内容已消失。如果没有，请选择坏实体，然后手动将其移动到垃圾桶。</li>
 </ul>
 
-<p>此时，ShotGrid 中的 FilesystemLocations 是干净的，但艺术家的本地缓存可能不反映您所做的更改。最后一步是实际同步每个用户计算机上的本地缓存。为此，应运行 tank <code class="highlighter-rouge">synchronize_folders --full</code>。</p>
+<p>此时，Flow Production Tracking 中的 FilesystemLocations 是干净的，但艺术家的本地缓存可能不反映您所做的更改。最后一步是实际同步每个用户计算机上的本地缓存。为此，应运行 tank <code class="highlighter-rouge">synchronize_folders --full</code>。</p>
 
 <p>执行所有这些步骤后，缓存路径应处于良好状态，并且不再显示错误。</p>
 

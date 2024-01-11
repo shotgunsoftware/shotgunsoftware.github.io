@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ko/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Jira 및 ShotGrid 간 데이터 동기화
+            Jira 및 Flow Production Tracking 간 데이터 동기화
         </a>
     </div>
 
@@ -6524,9 +6524,9 @@
                     class="nav-entry"
                 
                 
-                href="/ko/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ko/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -8890,7 +8890,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -9960,7 +9960,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 설명서
+            Flow Production Tracking 설명서
         </a>
     </div>
 
@@ -10035,7 +10035,7 @@
 
             <h1 id="python-api-모범-사례">Python API 모범 사례</h1>
 
-<p>다음은 ShotGrid Python API 사용 시의 모범 사례 목록입니다.</p>
+<p>다음은 Flow Production Tracking Python API 사용 시의 모범 사례 목록입니다.</p>
 
 <h2 id="성능">성능</h2>
 
@@ -10058,9 +10058,9 @@
 <h2 id="디자인">디자인</h2>
 
 <ol>
-  <li>큰 스튜디오의 경우 특히 API 격리 레이어(래퍼)를 사용하는 것이 좋습니다. 이렇게 하면 ShotGrid API가 변경되지 않도록 도구가 격리됩니다. 또한 API 자체를 수정할 필요 없이 API 액세스를 제어하고 디버깅을 관리하고 감사를 추적할 수 있다는 것을 의미합니다.</li>
+  <li>큰 스튜디오의 경우 특히 API 격리 레이어(래퍼)를 사용하는 것이 좋습니다. 이렇게 하면 Flow Production Tracking API가 변경되지 않도록 도구가 격리됩니다. 또한 API 자체를 수정할 필요 없이 API 액세스를 제어하고 디버깅을 관리하고 감사를 추적할 수 있다는 것을 의미합니다.</li>
   <li>최신 버전의 API를 사용합니다. 최신 버전에는 버그 수정 및 성능 향상이 포함됩니다.</li>
-  <li>스크립트가 실행되는 위치를 알고 있어야 합니다. ShotGrid에 동일한 정보를 분당 1000번 호출하는 렌더 팜에서 실행되는 스크립트는 사이트 성능에 영향을 줄 수 있습니다. 이와 같은 경우 불필요하게 반복되는 호출을 줄이기 위해 읽기 전용 캐싱 레이어를 구현하는 것이 좋습니다.</li>
+  <li>스크립트가 실행되는 위치를 알고 있어야 합니다. Flow Production Tracking에 동일한 정보를 분당 1000번 호출하는 렌더 팜에서 실행되는 스크립트는 사이트 성능에 영향을 줄 수 있습니다. 이와 같은 경우 불필요하게 반복되는 호출을 줄이기 위해 읽기 전용 캐싱 레이어를 구현하는 것이 좋습니다.</li>
   <li>스크립트의 이벤트 생성을 해제할 수 있습니다. 이는 나중에 트래킹할 필요가 없는 이벤트를 자주 실행하는 스크립트에 가장 유용합니다. 매우 자주 실행되는 스크립트의 경우 이벤트 로그가 매우 커질 수 있으므로 이 방법을 사용하는 것이 좋습니다.</li>
 </ol>
 

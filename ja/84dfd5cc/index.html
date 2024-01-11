@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -10264,7 +10264,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -11334,7 +11334,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -11409,7 +11409,7 @@
 
             <h1 id="what-is-the-isolation-feature-set">What is the Isolation Feature Set</h1>
 
-<p>The isolation feature set combines our Cloud Hosted Platform with client-managed AWS resources to provide a solution that satisfies the most stringent security and privacy requirements. Clients retain control of their sensitive content without having to host ShotGrid on their infrastructure.</p>
+<p>The isolation feature set combines our Cloud Hosted Platform with client-managed AWS resources to provide a solution that satisfies the most stringent security and privacy requirements. Clients retain control of their sensitive content without having to host Flow Production Tracking on their infrastructure.</p>
 
 <p>Leveraging the isolation feature set has the following advantages over the Standard offering:</p>
 
@@ -11417,60 +11417,60 @@
   <li><strong>Media Isolation</strong> by hosting of assets and attachments in a <strong>client-owned S3 Bucket</strong></li>
   <li><strong>Media Traffic Isolation</strong> from the public internet</li>
   <li><strong>Media Replication</strong> allowing you to replicate media in one additional AWS Region</li>
-  <li>Access to fully managed ShotGrid Cloud Services</li>
+  <li>Access to fully managed Flow Production Tracking Cloud Services</li>
   <li>Automatic and continuous version upgrades</li>
   <li>Ephemeral compute + in-memory segration between clients</li>
 </ul>
 
-<p>In a nutshell, this means that with the isolation features, your ShotGrid site and the data related to it cannot be reached by anyone outside of your studio network.</p>
+<p>In a nutshell, this means that with the isolation features, your Flow Production Tracking site and the data related to it cannot be reached by anyone outside of your studio network.</p>
 
-<p>The isolation feature set is a solution that requires less upkeep, as well as less IT/System Administrator knowledge and skills, than hosting ShotGrid on-premise. The list of advantages compared to on-premise includes, but is not limited to:</p>
+<p>The isolation feature set is a solution that requires less upkeep, as well as less IT/System Administrator knowledge and skills, than hosting Flow Production Tracking on-premise. The list of advantages compared to on-premise includes, but is not limited to:</p>
 
 <ul>
-  <li>No ShotGrid specific knowledge required</li>
-  <li>No manual ShotGrid updates required</li>
+  <li>No Flow Production Tracking specific knowledge required</li>
+  <li>No manual Flow Production Tracking updates required</li>
   <li>Very low level of maintenance required for the AWS components</li>
 </ul>
 
 <h2 id="media-isolation-feature">Media isolation feature</h2>
-<p>Media Isolation allows your studio to keep the ownership and control of the media and attachments that you upload to ShotGrid. With Media Isolation, all the content that you upload to ShotGrid can be store in your studio private S3 bucket. Access to the media is provided to the ShotGrid service only, using AWS AssumeRole keyless Security Token Service. Your studio remains in control of the assets and the access to the assets, access that you can revoke at will.</p>
+<p>Media Isolation allows your studio to keep the ownership and control of the media and attachments that you upload to Flow Production Tracking. With Media Isolation, all the content that you upload to Flow Production Tracking can be store in your studio private S3 bucket. Access to the media is provided to the Flow Production Tracking service only, using AWS AssumeRole keyless Security Token Service. Your studio remains in control of the assets and the access to the assets, access that you can revoke at will.</p>
 
 <h2 id="traffic-isolation-feature">Traffic isolation feature</h2>
-<p>Media traffic isolation feature can be enabled to prevent your media traffic from being routed on the public internet, limiting it to the AWS backbone and your studio network. The traffic between ShotGrid Services and your studio stays in closed network, never going outside AWS or your Studio network.</p>
+<p>Media traffic isolation feature can be enabled to prevent your media traffic from being routed on the public internet, limiting it to the AWS backbone and your studio network. The traffic between Flow Production Tracking Services and your studio stays in closed network, never going outside AWS or your Studio network.</p>
 
 <p>With the Media Traffic Isolation feature activated, the media will only leave your studio infrastructure once to get transcoded.</p>
 
 <h2 id="media-replication">Media Replication</h2>
-<p>ShotGrid is compatible with the S3 Cross-Region replication feature, allowing your users located in different regions to read from the region closer to them in order to reduce latency and increase throughput. Replication to one region is currently supported.</p>
+<p>Flow Production Tracking is compatible with the S3 Cross-Region replication feature, allowing your users located in different regions to read from the region closer to them in order to reduce latency and increase throughput. Replication to one region is currently supported.</p>
 
 <h1 id="eligibility">Eligibility</h1>
 
-<p>The Isolation feature set is available to clients with an active ShotGrid subscription. See <a href="/ja/0f6d8a60/">Getting Started</a> for more details about how to active the different features. The activation of the isolation feature set is not instantaneous, and requires manual setup involving your AWS account.</p>
+<p>The Isolation feature set is available to clients with an active Flow Production Tracking subscription. See <a href="/ja/0f6d8a60/">Getting Started</a> for more details about how to active the different features. The activation of the isolation feature set is not instantaneous, and requires manual setup involving your AWS account.</p>
 
 <h1 id="what-the-isolation-feature-set-is-not">What the Isolation Feature Set is not</h1>
 
-<p>The isolation feature set is not a completely isolated solution. Both the compute services and the database services are shared amongst clients, and managed by ShotGrid. From a hardware standpoint, the isolation features does not guarantee complete physical isolation. However, ShotGrid services are guaranteeing isolation at the memory level. Processes are never reused to answer requests from different clients during their lifetime. Client metadata is stored in different databases. Client media is individually stored on S3.</p>
+<p>The isolation feature set is not a completely isolated solution. Both the compute services and the database services are shared amongst clients, and managed by Flow Production Tracking. From a hardware standpoint, the isolation features does not guarantee complete physical isolation. However, Flow Production Tracking services are guaranteeing isolation at the memory level. Processes are never reused to answer requests from different clients during their lifetime. Client metadata is stored in different databases. Client media is individually stored on S3.</p>
 
 <h1 id="high-level-architecture">High Level Architecture</h1>
 <p><img src="/ja/trusted-solutions/tier1/images/tier1-about-arch.png" alt="tier1-arch" /></p>
 
-<p>The ShotGrid cloud service  can be decoupled at a high level in 3 parts:</p>
+<p>The Flow Production Tracking cloud service  can be decoupled at a high level in 3 parts:</p>
 
-<p><strong>Compute Stack:</strong> The part of the ShotGrid Service that handles client requests and serves data to the client.</p>
+<p><strong>Compute Stack:</strong> The part of the Flow Production Tracking Service that handles client requests and serves data to the client.</p>
 
 <p><strong>Data Stack:</strong> Metadata storage (databases).</p>
 
-<p><strong>Media Storage:</strong> Where the client’s attachments, media, and assets are stored. ShotGrid uses AWS S3 to store client content.</p>
+<p><strong>Media Storage:</strong> Where the client’s attachments, media, and assets are stored. Flow Production Tracking uses AWS S3 to store client content.</p>
 
-<p>Please read <a href="https://aws.amazon.com/blogs/media/securing-studio-ip-in-aws-cloud-based-vfx-project-management-with-autodesk-shotgun/">Securing Studio IP in AWS: Cloud-based VFX Project Management with Autodesk ShotGrid</a> for more details about the architecture.</p>
+<p>Please read <a href="https://aws.amazon.com/blogs/media/securing-studio-ip-in-aws-cloud-based-vfx-project-management-with-autodesk-shotgun/">Securing Studio IP in AWS: Cloud-based VFX Project Management with Autodesk Flow Production Tracking</a> for more details about the architecture.</p>
 
 <h2 id="ephemeral-compute-and-memory-isolation">Ephemeral compute and memory isolation</h2>
-<p>Even if clients share the same infrastructure, ShotGrid guarantees a complete memory isolation, both in transit and at rest, of client data. This makes ShotGrid less prone to data leaking due to architecture flaws or software vulnerabilities exploiting memory, like buffer overflow.</p>
+<p>Even if clients share the same infrastructure, Flow Production Tracking guarantees a complete memory isolation, both in transit and at rest, of client data. This makes Flow Production Tracking less prone to data leaking due to architecture flaws or software vulnerabilities exploiting memory, like buffer overflow.</p>
 
 <h2 id="ephemeral-transcoding">Ephemeral transcoding</h2>
 <p><img src="/ja/trusted-solutions/tier1/images/tier1-about-transcoding.png" alt="tier1-transcoding" /></p>
 
-<p>Everytime media is uploaded to ShotGrid, the transcoding service is invoked to create a web friendly versions of your assets. That process happens only once, after the initial upload. The media is directly uploaded from the client to S3, from where it is fetched by the ShotGrid Transcoding Service. Each transcoding job is handled by a single container, which is killed after that unique job. The only place the media temporarily lives is in the container memory. The ShotGrid Transcoding service doesn’t store permanently a copy of your media.</p>
+<p>Everytime media is uploaded to Flow Production Tracking, the transcoding service is invoked to create a web friendly versions of your assets. That process happens only once, after the initial upload. The media is directly uploaded from the client to S3, from where it is fetched by the Flow Production Tracking Transcoding Service. Each transcoding job is handled by a single container, which is killed after that unique job. The only place the media temporarily lives is in the container memory. The Flow Production Tracking Transcoding service doesn’t store permanently a copy of your media.</p>
 
 
             </div>  

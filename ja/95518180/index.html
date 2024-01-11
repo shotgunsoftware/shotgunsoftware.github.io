@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -8164,8 +8164,8 @@
 
 <h2 id="概要">概要</h2>
 
-<p>ShotGrid のアクション メニューで Toolkit アプリケーションのリストが表示されなかったり、ShotGrid Desktop が動作していてもローカル ファイル リンクを使用するときにエラーが発生したりする場合があります。
- これは Chrome での ShotGrid Desktop のブラウザ統合のトラブルシューティングに関するガイドです。皆さんの役に立つことを願っています。<a href="/ja/d4936105/">Firefox のための個別のガイドがあります</a>。</p>
+<p>Flow Production Tracking のアクション メニューで Toolkit アプリケーションのリストが表示されなかったり、Flow Production Tracking Toolkit が動作していてもローカル ファイル リンクを使用するときにエラーが発生したりする場合があります。
+ これは Chrome での Flow Production Tracking Toolkit のブラウザ統合のトラブルシューティングに関するガイドです。皆さんの役に立つことを願っています。<a href="/ja/d4936105/">Firefox のための個別のガイドがあります</a>。</p>
 
 <ul>
   <li><a href="#diagnosing-the-issue">問題を診断する</a></li>
@@ -8176,13 +8176,13 @@
 
 <h2 id="問題を診断する">問題を診断する</h2>
 
-<h3 id="shotgrid-desktop-は動作していますか">ShotGrid Desktop は動作していますか?</h3>
+<h3 id="shotgrid-desktop-は動作していますか">Flow Production Tracking Toolkit は動作していますか?</h3>
 
 <p>もちろん、そうだと思います。既に確認済みだと思いますが、念のためお尋ねしました。:)</p>
 
-<h3 id="shotgrid-desktop-の起動後に-chrome-を再起動しましたか">ShotGrid Desktop の起動後に Chrome を再起動しましたか?</h3>
+<h3 id="shotgrid-desktop-の起動後に-chrome-を再起動しましたか">Flow Production Tracking Toolkit の起動後に Chrome を再起動しましたか?</h3>
 
-<p>ShotGrid Desktop が証明書を登録する前に Chrome を起動した場合(ShotGrid Desktop を初めて起動した場合にのみ発生し、その後は問題になりません)、Chrome は期限切れの証明書のコピーを使用し、ShotGrid Desktop への接続を拒否します。すべてのタブを閉じても Chrome が終了するとは限らないため、アドレス バーに <a href="chrome://restart">chrome://restart</a> と入力して[Enter]キーを押すことをお勧めします。これにより、Chrome に関連するすべてのプロセスを終了し、Chrome を再起動させます。</p>
+<p>Flow Production Tracking Toolkit が証明書を登録する前に Chrome を起動した場合(Flow Production Tracking Toolkit を初めて起動した場合にのみ発生し、その後は問題になりません)、Chrome は期限切れの証明書のコピーを使用し、Flow Production Tracking Toolkit への接続を拒否します。すべてのタブを閉じても Chrome が終了するとは限らないため、アドレス バーに <a href="chrome://restart">chrome://restart</a> と入力して[Enter]キーを押すことをお勧めします。これにより、Chrome に関連するすべてのプロセスを終了し、Chrome を再起動させます。</p>
 
 <h3 id="ファイアウォール-ソフトウェアを使用していますか">ファイアウォール ソフトウェアを使用していますか?</h3>
 
@@ -8190,7 +8190,7 @@
 
 <h3 id="chrome-が証明書を拒否していますか">Chrome が証明書を拒否していますか?</h3>
 
-<p>Chrome が証明書を受け入れていることを確認するには、https://localhost:9000 を参照します。これは、ローカル ファイル リンクを使用して Toolkit アプリケーションを起動するために ShotGrid Web サイトがアクセスを試みるアドレスです。通常、次のメッセージが表示されます。</p>
+<p>Chrome が証明書を受け入れていることを確認するには、https://localhost:9000 を参照します。これは、ローカル ファイル リンクを使用して Toolkit アプリケーションを起動するために Flow Production Tracking Web サイトがアクセスを試みるアドレスです。通常、次のメッセージが表示されます。</p>
 
 <p><img src="/ja/quick-answers/troubleshooting/images/autobahn-python.png" alt="Autobahn Python メッセージ" /></p>
 
@@ -8202,13 +8202,13 @@
 
 <h2 id="証明書問題をすばやく修正する方法">証明書問題をすばやく修正する方法</h2>
 
-<p>この問題を回避する最も簡単な方法は、<strong>ADVANCED</strong> と <strong>Proceed to localhost (unsafe)</strong> をクリックすることです。これにより、Chrome は証明書を承認していることを把握でき、ShotGrid Web サイトが ShotGrid Desktop と通信できるようになります。</p>
+<p>この問題を回避する最も簡単な方法は、<strong>ADVANCED</strong> と <strong>Proceed to localhost (unsafe)</strong> をクリックすることです。これにより、Chrome は証明書を承認していることを把握でき、Flow Production Tracking Web サイトが Flow Production Tracking Toolkit と通信できるようになります。</p>
 
 <div class="info-popup">
     <p>
         <i class="fa fa-info-circle"></i>
         <b>注
-:</b> このため、Web ブラウザと ShotGrid Desktop 間の接続のみが有効になります。信頼設定は 2 つのアプリケーション間のトラフィック フローを許可しますが、<strong>インターネット上の他のサーバの信頼性を暗示しているわけではありません</strong>。残念なことに、問題を抱えたすべてのコンピュータにこのプロセスを繰り返し適用する必要があります。問題が解決されない場合、またはすべてのユーザに展開するには複雑すぎる場合は、次の手順を試すことをお勧めします。
+:</b> このため、Web ブラウザと Flow Production Tracking Toolkit 間の接続のみが有効になります。信頼設定は 2 つのアプリケーション間のトラフィック フローを許可しますが、<strong>インターネット上の他のサーバの信頼性を暗示しているわけではありません</strong>。残念なことに、問題を抱えたすべてのコンピュータにこのプロセスを繰り返し適用する必要があります。問題が解決されない場合、またはすべてのユーザに展開するには複雑すぎる場合は、次の手順を試すことをお勧めします。
 
     </p>
 </div>
@@ -8226,11 +8226,11 @@
 
 <p>Chrome は自己署名証明書のセキュリティを定期的に更新しますが、ブラウザ統合がこの更新で壊れることがあります。残念ながら、このような問題を解決するには証明書の certificate_path を再生成するしかありません。</p>
 
-<p>証明書を再生成するには、ShotGrid Desktop のユーザ メニューの <strong>[詳細設定] (Advanced)</strong>セクションにある <strong>Regenerate Certificates</strong> オプションを選択します。(このオプションが表示されない場合は、ロック解除のために <code class="highlighter-rouge">tk-desktop</code> エンジンを更新してください。)</p>
+<p>証明書を再生成するには、Flow Production Tracking Toolkit のユーザ メニューの <strong>[詳細設定] (Advanced)</strong>セクションにある <strong>Regenerate Certificates</strong> オプションを選択します。(このオプションが表示されない場合は、ロック解除のために <code class="highlighter-rouge">tk-desktop</code> エンジンを更新してください。)</p>
 
-<p>証明書の再生成を確定すると、証明書を初めて生成したときのように一連のダイアログが表示されます。Windows と macOS で、Windows Certificate Store または macOS キーチェーンの更新を求めるプロンプトが 2 回表示されます。1 回目は古い証明書の削除のときで、2 回目は新しい証明書の登録のときです。Linux では、確認なしで登録されます。登録されると、ShotGrid Desktop が再起動されます。</p>
+<p>証明書の再生成を確定すると、証明書を初めて生成したときのように一連のダイアログが表示されます。Windows と macOS で、Windows Certificate Store または macOS キーチェーンの更新を求めるプロンプトが 2 回表示されます。1 回目は古い証明書の削除のときで、2 回目は新しい証明書の登録のときです。Linux では、確認なしで登録されます。登録されると、Flow Production Tracking Toolkit が再起動されます。</p>
 
-<p>ShotGrid Desktop の準備が完了したら、Chrome が完全にシャットダウンしてその証明書キャッシュがクリアされるように、アドレス バーに <a href="chrome://restart/">chrome://restart</a> と入力して Chrome を再起動することをお勧めします。</p>
+<p>Flow Production Tracking Toolkit の準備が完了したら、Chrome が完全にシャットダウンしてその証明書キャッシュがクリアされるように、アドレス バーに <a href="chrome://restart/">chrome://restart</a> と入力して Chrome を再起動することをお勧めします。</p>
 
 <p>コンピュータがインターネットに接続されておらず、更新をダウンロードできない場合は、<a href="https://knowledge.autodesk.com/ja/contact-support">サポート サイト</a>にアクセスしてサポートを依頼してください。</p>
 
@@ -8270,7 +8270,7 @@
 
 <h2 id="他の-os-でのトラブルシューティング">他の OS でのトラブルシューティング</h2>
 
-<p>他の OS での ShotGrid Desktop 統合に問題がある場合は、この記事を更新してサポートできるように、<a href="https://knowledge.autodesk.com/ja/contact-support">サポート チーム</a>までご連絡ください。</p>
+<p>他の OS での Flow Production Tracking Toolkit 統合に問題がある場合は、この記事を更新してサポートできるように、<a href="https://knowledge.autodesk.com/ja/contact-support">サポート チーム</a>までご連絡ください。</p>
 
 
             </div>  

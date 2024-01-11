@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/zh_CN/7584b650/?title=Alias+ShotGrid+%E5%B7%A5%E4%BD%9C%E6%B5%81"
+                href="/zh_CN/7584b650/?title=Alias+Flow+Production+Tracking+%E5%B7%A5%E4%BD%9C%E6%B5%81"
             >
-                Alias ShotGrid 工作流
+                Alias Flow Production Tracking 工作流
             </a>
             </div>
 
@@ -3483,9 +3483,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/zh_CN/8085533c/?title=ShotGrid+%E9%9B%86%E6%88%90%E7%AE%A1%E7%90%86%E5%91%98%E6%89%8B%E5%86%8C"
+                href="/zh_CN/8085533c/?title=Flow+Production+Tracking+%E9%9B%86%E6%88%90%E7%AE%A1%E7%90%86%E5%91%98%E6%89%8B%E5%86%8C"
             >
-                ShotGrid 集成管理员手册
+                Flow Production Tracking 集成管理员手册
             </a>
             </div>
 
@@ -10346,7 +10346,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -12977,9 +12977,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -15343,7 +15343,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -16413,7 +16413,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -16568,17 +16568,17 @@
   </li>
 </ul>
 
-<p>本文档全面地介绍了 ShotGrid Pipeline Toolkit 中以文件系统为中心的配置，并概述了模板系统的工作方式以及可用的选项。还列出了在文件夹创建配置中可以包含的所有不同参数。<br />
-<em>请注意，本文档介绍仅当您控制了 Toolkit 配置时才可用的功能。有关详细信息，请参见 <a href="https://developer.shotgridsoftware.com/zh_CN/8085533c/">ShotGrid 集成管理员手册</a>。</em></p>
+<p>本文档全面地介绍了 Flow Production Tracking Toolkit 中以文件系统为中心的配置，并概述了模板系统的工作方式以及可用的选项。还列出了在文件夹创建配置中可以包含的所有不同参数。<br />
+<em>请注意，本文档介绍仅当您控制了 Toolkit 配置时才可用的功能。有关详细信息，请参见 <a href="https://developer.shotgridsoftware.com/zh_CN/8085533c/">Flow Production Tracking 集成管理员手册</a>。</em></p>
 
 <h1 id="简介">简介</h1>
 
 <p>本文档介绍如何配置 Toolkit 配置中与您的文件系统相关的部分，包括相关的示例。Toolkit 需要处理大量文件和目录，您可以利用 Toolkit 的配置来表现路径的组合方式和它们代表的意义。通常可以通过两种截然不同且互不相关的方式访问文件系统：</p>
 
-<p><strong>创建文件夹：</strong>在 ShotGrid 中创建对象后，我们需要先在磁盘上创建文件夹，然后才能开始工作。这个过程可以很简单，比如在磁盘上创建一个文件夹来代表镜头；也可以更复杂，比如设置一个特定于用户的工作沙盒，让每个处理镜头的用户在单独的磁盘区域工作。</p>
+<p><strong>创建文件夹：</strong>在 Flow Production Tracking 中创建对象后，我们需要先在磁盘上创建文件夹，然后才能开始工作。这个过程可以很简单，比如在磁盘上创建一个文件夹来代表镜头；也可以更复杂，比如设置一个特定于用户的工作沙盒，让每个处理镜头的用户在单独的磁盘区域工作。</p>
 
 <ul>
-  <li>Toolkit 会在您启动应用程序（例如为镜头 BECH_0010 启动 Maya）时自动创建文件夹，并确保在启动 Maya 前文件夹已存在。如果文件夹不存在，则会即时创建这些文件夹。也可以使用 API 方法、使用 <a href="https://developer.shotgridsoftware.com/zh_CN/425b1da4/#useful-tank-commands">shell 中的 tank 命令</a>以及通过 <a href="https://developer.shotgridsoftware.com/zh_CN/c3b662a6/">ShotGrid 中的“创建文件夹”(Create Folders)菜单</a>来创建文件夹。此文件夹创建过程由一组特殊的配置文件来驱动，以下文档的<a href="#part-1---folder-creation-syntax">第 1 部分</a>对此进行了概述。</li>
+  <li>Toolkit 会在您启动应用程序（例如为镜头 BECH_0010 启动 Maya）时自动创建文件夹，并确保在启动 Maya 前文件夹已存在。如果文件夹不存在，则会即时创建这些文件夹。也可以使用 API 方法、使用 <a href="https://developer.shotgridsoftware.com/zh_CN/425b1da4/#useful-tank-commands">shell 中的 tank 命令</a>以及通过 <a href="https://developer.shotgridsoftware.com/zh_CN/c3b662a6/">Flow Production Tracking 中的“创建文件夹”(Create Folders)菜单</a>来创建文件夹。此文件夹创建过程由一组特殊的配置文件来驱动，以下文档的<a href="#part-1---folder-creation-syntax">第 1 部分</a>对此进行了概述。</li>
 </ul>
 
 <p><strong>打开和保存工作：</strong>在工作时，我们需要在磁盘的标准位置打开和保存文件。这些文件位置通常位于在开始工作之前创建的文件夹结构中。</p>
@@ -16589,11 +16589,11 @@
 
 <h1 id="第-1-部分---文件夹创建语法">第 1 部分 - 文件夹创建语法</h1>
 
-<p>文件夹配置将 ShotGrid 中的实体映射到磁盘上的位置。配置不是使用单个配置文件，而是采用“迷你文件系统”的形式，它充当每个所配置单元的模板 - 这称为<strong>数据结构配置</strong>。当执行 Toolkit 的文件夹创建时，文件夹和文件将从这一“迷你文件系统”复制到它们的目标位置。这样可以实现动态的行为。例如，一个文件夹可以表示 ShotGrid 中的一个镜头，而您可以控制该文件夹的命名。更具体地说，您可以使用几个 ShotGrid 字段来构成该文件夹的名称，然后在创建文件夹前执行字符转换。</p>
+<p>文件夹配置将 Flow Production Tracking 中的实体映射到磁盘上的位置。配置不是使用单个配置文件，而是采用“迷你文件系统”的形式，它充当每个所配置单元的模板 - 这称为<strong>数据结构配置</strong>。当执行 Toolkit 的文件夹创建时，文件夹和文件将从这一“迷你文件系统”复制到它们的目标位置。这样可以实现动态的行为。例如，一个文件夹可以表示 Flow Production Tracking 中的一个镜头，而您可以控制该文件夹的命名。更具体地说，您可以使用几个 Flow Production Tracking 字段来构成该文件夹的名称，然后在创建文件夹前执行字符转换。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/file-system-config-reference/core_config.png" alt="配置" /></p>
 
-<p>上图显示了一个数据结构配置。当您执行 Toolkit 文件夹创建操作时，会在 ShotGrid 中的实体与磁盘上的文件夹之间建立联系。Toolkit 使用此文件夹数据结构配置在磁盘上生成一系列文件夹，而每个文件夹在 ShotGrid 中都注册为一个 <a href="https://developer.shotgridsoftware.com/zh_CN/cbbf99a4/"><code class="highlighter-rouge">Filesystem Location</code></a> 实体。我们可以将这看成是 ShotGrid 数据（例如镜头和资产名称）和配置被“转化”成磁盘上和 ShotGrid 中的实际文件夹。配置总是以一个名为“project”的文件夹开头。此文件夹始终表示 ShotGrid 中连接的项目，并将被替换为项目的 Toolkit 名称。这层下面是静态文件夹。例如，文件夹创建器将自动创建 <strong>sequences</strong> 文件夹。</p>
+<p>上图显示了一个数据结构配置。当您执行 Toolkit 文件夹创建操作时，会在 Flow Production Tracking 中的实体与磁盘上的文件夹之间建立联系。Toolkit 使用此文件夹数据结构配置在磁盘上生成一系列文件夹，而每个文件夹在 Flow Production Tracking 中都注册为一个 <a href="https://developer.shotgridsoftware.com/zh_CN/cbbf99a4/"><code class="highlighter-rouge">Filesystem Location</code></a> 实体。我们可以将这看成是 Flow Production Tracking 数据（例如镜头和资产名称）和配置被“转化”成磁盘上和 Flow Production Tracking 中的实际文件夹。配置总是以一个名为“project”的文件夹开头。此文件夹始终表示 Flow Production Tracking 中连接的项目，并将被替换为项目的 Toolkit 名称。这层下面是静态文件夹。例如，文件夹创建器将自动创建 <strong>sequences</strong> 文件夹。</p>
 
 <p>进一步深入 sequences 文件夹，有一个 <strong>sequence</strong> 文件夹和一个 <strong>sequence.yml</strong> 文件。每当 Toolkit 检测到与文件夹同名的 YAML 文件时，它就会读取 YAML 文件的内容，并添加所需的动态行为。在本例中，<strong>sequence.yml</strong> 文件包含 project 文件夹下的结构，由三种内容组成：</p>
 
@@ -16607,10 +16607,10 @@
 
 <ul>
   <li>
-    <p><strong><a href="#shotgun-query-folders">ShotGrid 查询文件夹：</a></strong>基于 ShotGrid 数据库查询的动态文件夹名称。例如，此模式可用于为项目中的每个镜头创建一个文件夹。</p>
+    <p><strong><a href="#shotgun-query-folders">Flow Production Tracking 查询文件夹：</a></strong>基于 Flow Production Tracking 数据库查询的动态文件夹名称。例如，此模式可用于为项目中的每个镜头创建一个文件夹。</p>
   </li>
   <li>
-    <p><strong><a href="#shotgun-list-field-folders">ShotGrid“列表字段”文件夹：</a></strong>基于 ShotGrid 列表字段的动态文件夹名称。例如，此模式可用于为 ShotGrid 的“资产”(Asset)实体上的 ShotGrid 列表字段“资产类型”(Asset Type)中的每个值创建一个文件夹。</p>
+    <p><strong><a href="#shotgun-list-field-folders">ShotGrid“列表字段”文件夹：</a></strong>基于 Flow Production Tracking 列表字段的动态文件夹名称。例如，此模式可用于为 Flow Production Tracking 的“资产”(Asset)实体上的 Flow Production Tracking 列表字段“资产类型”(Asset Type)中的每个值创建一个文件夹。</p>
   </li>
   <li>
     <p><strong><a href="#workspaces-and-deferred-folder-creation">延迟文件夹：</a></strong>只有在通过 Toolkit API 的创建文件夹方法请求第二个文件夹创建过程时（通常在启动诸如 Maya 等应用程序时），才会创建该文件夹。通常，Toolkit 的各种应用程序启动器会在启动应用程序前执行此方法。</p>
@@ -16624,35 +16624,35 @@
 
 <h2 id="查询文件夹">查询文件夹</h2>
 
-<p>要创建一个与 ShotGrid 查询对应的动态文件夹，请在 YAML 文件中使用以下语法：</p>
+<p>要创建一个与 Flow Production Tracking 查询对应的动态文件夹，请在 YAML 文件中使用以下语法：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: shotgun_entity
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: Asset
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: code
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ] 
 </code></pre></div></div>
 
 <ul>
   <li>将动态内容 <strong>type</strong> 字段的值设置为 <strong>shotgun_entity</strong>。</li>
-  <li><strong>entity_type</strong> 字段应设置为要从中提取数据的 ShotGrid 实体（例如“资产”(Asset)、“镜头”(Shot)、“场”(Sequence)、“自定义实体 02”(CustomEntity02)等）。</li>
+  <li><strong>entity_type</strong> 字段应设置为要从中提取数据的 Flow Production Tracking 实体（例如“资产”(Asset)、“镜头”(Shot)、“场”(Sequence)、“自定义实体 02”(CustomEntity02)等）。</li>
   <li>
-    <p><strong>name</strong> 字段是根据 ShotGrid 中的数据应指定给每个文件夹的名称。</p>
+    <p><strong>name</strong> 字段是根据 Flow Production Tracking 中的数据应指定给每个文件夹的名称。</p>
   </li>
   <li>您可以像上面的示例中那样，只使用一个字段（例如 <code class="highlighter-rouge">name: code</code>）。</li>
   <li>您可以在花括号中使用多个字段（例如 <code class="highlighter-rouge">name:</code> <code class="highlighter-rouge">"{asset_type}_{code}"</code>）。</li>
-  <li>如果想包含来自其他链接实体的字段，可使用标准 ShotGrid 语法（例如 <code class="highlighter-rouge">name: "{sg_sequence.Sequence.code}_{code}"</code>）。</li>
-  <li><strong>filters</strong> 字段是一个 ShotGrid 查询。它相对严格地遵循 <a href="https://developer.shotgridsoftware.com/python-api/reference.html">ShotGrid API 语法</a>。它是一个词典列表，并且每个词典都需要具有 <em>path</em>、<em>relation</em> 和 <em>values</em> 键。$ 语法的有效值是任何包含对应 ShotGrid 实体的根文件夹（例如，对于项目来说是 <code class="highlighter-rouge">"$project"</code>，而如果上层目录层次结构存在 sequence.yml，也可以是 <code class="highlighter-rouge">"$sequence"</code>）。对于 ShotGrid 实体链接，您可以使用 $ 语法（例如 <code class="highlighter-rouge">{ "path": "project", "relation": "is", "values": [ "$project" ] }</code>）指代配置中的父文件夹 - <a href="#examples">下面的示例</a>对此进行了更深入的讲解。</li>
+  <li>如果想包含来自其他链接实体的字段，可使用标准 Flow Production Tracking 语法（例如 <code class="highlighter-rouge">name: "{sg_sequence.Sequence.code}_{code}"</code>）。</li>
+  <li><strong>filters</strong> 字段是一个 Flow Production Tracking 查询。它相对严格地遵循 <a href="https://developer.shotgridsoftware.com/python-api/reference.html">Flow Production Tracking API 语法</a>。它是一个词典列表，并且每个词典都需要具有 <em>path</em>、<em>relation</em> 和 <em>values</em> 键。$ 语法的有效值是任何包含对应 Flow Production Tracking 实体的根文件夹（例如，对于项目来说是 <code class="highlighter-rouge">"$project"</code>，而如果上层目录层次结构存在 sequence.yml，也可以是 <code class="highlighter-rouge">"$sequence"</code>）。对于 Flow Production Tracking 实体链接，您可以使用 $ 语法（例如 <code class="highlighter-rouge">{ "path": "project", "relation": "is", "values": [ "$project" ] }</code>）指代配置中的父文件夹 - <a href="#examples">下面的示例</a>对此进行了更深入的讲解。</li>
 </ul>
 
 <h2 id="多个文件夹">多个文件夹</h2>
@@ -16662,21 +16662,21 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: shotgun_entity
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: Asset
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "{sg_asset_type}/{code}"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ] 
 </code></pre></div></div>
 
-<p>创建适用于这种路径的文件系统模板（有关详细信息，请参见此文档的第 2 部分）时，最后一个文件夹将表示 ShotGrid 实体。例如，可以使用以下模板表示上面的示例</p>
+<p>创建适用于这种路径的文件系统模板（有关详细信息，请参见此文档的第 2 部分）时，最后一个文件夹将表示 Flow Production Tracking 实体。例如，可以使用以下模板表示上面的示例</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>asset_step_folder: assets/{asset_type}/{Asset}/{Step}
 </code></pre></div></div>
@@ -16685,7 +16685,7 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 
 <h2 id="随父文件夹一起创建">随父文件夹一起创建</h2>
 
-<p>在 ShotGrid 中，ShotGrid 的数据结构中存在嵌套。这种嵌套可以称为父子关系。例如，在文件系统中，sequence 通常是 shot 的父文件夹；同样，shot 通常是 sequence 的子文件夹。</p>
+<p>在 Flow Production Tracking 中，Flow Production Tracking 的数据结构中存在嵌套。这种嵌套可以称为父子关系。例如，在文件系统中，sequence 通常是 shot 的父文件夹；同样，shot 通常是 sequence 的子文件夹。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/file-system-config-reference/create_with_parent_folder_02_DS.png" alt="create_with_parent_folder" /></p>
 
@@ -16693,7 +16693,7 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
     <p>
         <i class="fa fa-info-circle"></i>
         <b>注意
-:</b> 这种文件系统嵌套关系独立于 <a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_site_configuration_ar_customizing_hierarchy_html">ShotGrid 层次结构</a>，两者之间没有任何联系。它们的配置是完全独立的。
+:</b> 这种文件系统嵌套关系独立于 <a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_site_configuration_ar_customizing_hierarchy_html">Flow Production Tracking 层次结构</a>，两者之间没有任何联系。它们的配置是完全独立的。
 
     </p>
 </div>
@@ -16717,7 +16717,7 @@ create_with_parent: true
 
 <h2 id="可选字段">可选字段</h2>
 
-<p>通常，当您定义文件夹名称（例如 <code class="highlighter-rouge">{code}_{sg_extra_field}</code>）时，Toolkit 会要求所有字段在 ShotGrid 中都具有值。例如，如果 <code class="highlighter-rouge">sg_extra_field</code> 为空，则会生成一条错误消息。如果某个字段并不总是填充有值，可将它标记为可选字段。可选字段的意思是，Toolkit 会在该字段有值时包含它，在该字段为空时不包含它，而不会生成错误。</p>
+<p>通常，当您定义文件夹名称（例如 <code class="highlighter-rouge">{code}_{sg_extra_field}</code>）时，Toolkit 会要求所有字段在 Flow Production Tracking 中都具有值。例如，如果 <code class="highlighter-rouge">sg_extra_field</code> 为空，则会生成一条错误消息。如果某个字段并不总是填充有值，可将它标记为可选字段。可选字段的意思是，Toolkit 会在该字段有值时包含它，在该字段为空时不包含它，而不会生成错误。</p>
 
 <p>您可以使用方括号定义可选字段，比如：<code class="highlighter-rouge">{code}[_{sg_extra_field}]</code>。这会生成以下文件夹名称：</p>
 
@@ -16744,32 +16744,32 @@ create_with_parent: true
 
 <h2 id="正则表达式代币匹配">正则表达式代币匹配</h2>
 
-<p>Toolkit 支持使用正则表达式提取 ShotGrid 字段名称的部分内容。这样，可以创建简单的表达式，从而可使用 ShotGrid 中的值来驱动文件夹的创建。例如，如果 ShotGrid 中的所有资产都以三个字母为前缀，后跟一个下划线命名（例如 <code class="highlighter-rouge">AAT_Boulder7</code>），这样就可以拆分为两个文件系统文件夹级别（例如 <code class="highlighter-rouge">AAT/Boulder7</code>）：</p>
+<p>Toolkit 支持使用正则表达式提取 Flow Production Tracking 字段名称的部分内容。这样，可以创建简单的表达式，从而可使用 Flow Production Tracking 中的值来驱动文件夹的创建。例如，如果 Flow Production Tracking 中的所有资产都以三个字母为前缀，后跟一个下划线命名（例如 <code class="highlighter-rouge">AAT_Boulder7</code>），这样就可以拆分为两个文件系统文件夹级别（例如 <code class="highlighter-rouge">AAT/Boulder7</code>）：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: shotgun_entity
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: Asset
 
 # Extract parts of the name using regular expressions
 name: "{code:^([^_]+)}/{code^[^_]+_(.*)}"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 </code></pre></div></div>
 
-<p>该语法类似于模板系统中的 <code class="highlighter-rouge">subset</code> 令牌；只需在 ShotGrid 字段名称后面添加一个冒号，后跟一个正则表达式。正则表达式中定义的任何组（例如，<code class="highlighter-rouge">()</code> 括起来的部分）将用于提取值。如果正则表达式中有多个组，它们将会连接在一起。例如，以下表达式将提取创建对象的用户的首字母：<code class="highlighter-rouge">{created_by.HumanUser.code:^([A-Z])[a-z]* ([A-Z])[a-z]*}</code></p>
+<p>该语法类似于模板系统中的 <code class="highlighter-rouge">subset</code> 令牌；只需在 Flow Production Tracking 字段名称后面添加一个冒号，后跟一个正则表达式。正则表达式中定义的任何组（例如，<code class="highlighter-rouge">()</code> 括起来的部分）将用于提取值。如果正则表达式中有多个组，它们将会连接在一起。例如，以下表达式将提取创建对象的用户的首字母：<code class="highlighter-rouge">{created_by.HumanUser.code:^([A-Z])[a-z]* ([A-Z])[a-z]*}</code></p>
 
 <h2 id="示例">示例</h2>
 
 <p>下面一组示例说明了如何使用 filters 语法。</p>
 
-<p>要<strong>查找所有属于当前项目且正在进行的镜头</strong>，可使用下面的语法。请注意，ShotGrid 镜头实体有一个称为“项目”(project)的链接字段，用于将镜头连接到项目。我们要确保只为与当前项目关联的镜头创建文件夹。由于配置文件系统中存在上层项目目录，我们可以通过 $ 语法引用它，Toolkit 会自动根据此 ShotGrid 实体链接引用来创建文件夹。请记住，$ 语法的有效值是任何包含对应 ShotGrid 实体的根文件夹（例如，对于项目来说是 <code class="highlighter-rouge">"$project"</code>，如果上层目录层次结构存在 sequence.yml，也可以是 <code class="highlighter-rouge">"$sequence"</code>）。</p>
+<p>要<strong>查找所有属于当前项目且正在进行的镜头</strong>，可使用下面的语法。请注意，Flow Production Tracking 镜头实体有一个称为“项目”(project)的链接字段，用于将镜头连接到项目。我们要确保只为与当前项目关联的镜头创建文件夹。由于配置文件系统中存在上层项目目录，我们可以通过 $ 语法引用它，Toolkit 会自动根据此 Flow Production Tracking 实体链接引用来创建文件夹。请记住，$ 语法的有效值是任何包含对应 Flow Production Tracking 实体的根文件夹（例如，对于项目来说是 <code class="highlighter-rouge">"$project"</code>，如果上层目录层次结构存在 sequence.yml，也可以是 <code class="highlighter-rouge">"$sequence"</code>）。</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>entity_type: Shot
 filters:
@@ -16793,7 +16793,7 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 
 <h2 id="列表字段文件夹">列表字段文件夹</h2>
 
-<p>例如，如果要为 ShotGrid 中的每种资产类型创建一个文件夹，<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_data_management_ar_field_types_html">ShotGrid 列表字段</a>文件夹很有用。在 ShotGrid 中，资产类型属于列表字段。使用此文件夹配置类型，可以在文件系统中定义一个层来反映这些资产类型列表。</p>
+<p>例如，如果要为 Flow Production Tracking 中的每种资产类型创建一个文件夹，<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_data_management_ar_field_types_html">Flow Production Tracking 列表字段</a>文件夹很有用。在 Flow Production Tracking 中，资产类型属于列表字段。使用此文件夹配置类型，可以在文件系统中定义一个层来反映这些资产类型列表。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/file-system-config-reference/list_field_folders_02_DS.png" alt="list_field_folders" /></p>
 
@@ -16806,12 +16806,12 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
     </p>
 </div>
 
-<p>如果需要一个动态文件夹来对应 ShotGrid 列表字段中的所有项，可在 YAML 文件中使用以下语法：</p>
+<p>如果需要一个动态文件夹来对应 Flow Production Tracking 列表字段中的所有项，可在 YAML 文件中使用以下语法：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_list_field"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "Asset"
 
 # only create for values which are used in this project.
@@ -16823,15 +16823,15 @@ skip_unused: false
 # nodes are always created
 create_with_parent: false
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 field_name: "{sg_asset_type}_type"
 </code></pre></div></div>
 
 <ul>
   <li>将动态内容 <strong>type</strong> 字段的值设置为 <code class="highlighter-rouge">shotgun_list_field</code>。</li>
-  <li><code class="highlighter-rouge">entity_type</code> 字段应设置为想要从中提取数据的 ShotGrid 实体（例如“资产”(Asset)、“场”(Sequence)、“镜头”(Shot)等）。</li>
+  <li><code class="highlighter-rouge">entity_type</code> 字段应设置为想要从中提取数据的 Flow Production Tracking 实体（例如“资产”(Asset)、“场”(Sequence)、“镜头”(Shot)等）。</li>
   <li>
-    <p><code class="highlighter-rouge">field_name</code> 字段应设置为从中提取数据的 ShotGrid 字段，并且必须是<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_data_management_ar_field_types_html">列表类型字段</a>。如果想随动态内容一起添加静态文本，则可以使用表达式。<code class="highlighter-rouge">field_name: "{sg_asset_type}_type"</code>此示例表达式包含文本和一个模板键。</p>
+    <p><code class="highlighter-rouge">field_name</code> 字段应设置为从中提取数据的 Flow Production Tracking 字段，并且必须是<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_data_management_ar_field_types_html">列表类型字段</a>。如果想随动态内容一起添加静态文本，则可以使用表达式。<code class="highlighter-rouge">field_name: "{sg_asset_type}_type"</code>此示例表达式包含文本和一个模板键。</p>
   </li>
   <li>可选参数 <code class="highlighter-rouge">skip_unused</code> 可防止为未使用的列表类型字段值创建目录（如上面的<a href="#optional-fields">可选字段</a>部分所述）。</li>
 </ul>
@@ -16850,24 +16850,24 @@ field_name: "{sg_asset_type}_type"
 
 <h2 id="工作流工序文件夹">工作流工序文件夹</h2>
 
-<p>工作流工序文件夹表示 ShotGrid 中的<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Producer_pr_scheduling_tasks_pr_tasks_pipeline_steps_html">工作流工序</a>。工作流工序也称为“工序”。</p>
+<p>工作流工序文件夹表示 Flow Production Tracking 中的<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Producer_pr_scheduling_tasks_pr_tasks_pipeline_steps_html">工作流工序</a>。工作流工序也称为“工序”。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/file-system-config-reference/pipeline_step_folder_02_DS.png" alt="pipeline_step_folder" /></p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_step"
 
-# the ShotGrid field to use for the folder name. This field needs to come from a step entity.
+# the Flow Production Tracking field to use for the folder name. This field needs to come from a step entity.
 name: "short_name"
 </code></pre></div></div>
 
-<p>您可以在此处使用名称表达式，就像上面介绍的 <a href="#list-field-folders">ShotGrid 实体一样</a>。节点会查找其父节点、祖父节点等，直至找到 ShotGrid 实体文件夹配置。此实体文件夹将与工序关联，并且实体的类型将用来确定要创建哪些工序。</p>
+<p>您可以在此处使用名称表达式，就像上面介绍的 <a href="#list-field-folders">Flow Production Tracking 实体一样</a>。节点会查找其父节点、祖父节点等，直至找到 Flow Production Tracking 实体文件夹配置。此实体文件夹将与工序关联，并且实体的类型将用来确定要创建哪些工序。</p>
 
 <div class="info-popup">
     <p>
         <i class="fa fa-info-circle"></i>
         <b>注意
-:</b> 如果您想使用工作流工序创建顶层文件夹，只需使用 ShotGrid 实体节点并将关联的类型设置为“工序”(Step)即可。
+:</b> 如果您想使用工作流工序创建顶层文件夹，只需使用 Flow Production Tracking 实体节点并将关联的类型设置为“工序”(Step)即可。
 
     </p>
 </div>
@@ -16898,7 +16898,7 @@ create_with_parent: false
 
 <h2 id="高级技巧---指定父文件夹">高级技巧 - 指定父文件夹</h2>
 
-<p>在创建文件夹的过程中，Toolkit 需要将工作流工序与实体（例如“镜头”(Shot)、“资产”(Asset)等）相关联。为实现这一目标，默认情况下，Toolkit 会查找文件夹树，并选取找到的第一个 ShotGrid 实体文件夹。例如，如果您的层次结构为 <code class="highlighter-rouge">Sequence &gt; Shot &gt; Step</code>，工序文件夹会自动与镜头关联，这通常正是您想要的。</p>
+<p>在创建文件夹的过程中，Toolkit 需要将工作流工序与实体（例如“镜头”(Shot)、“资产”(Asset)等）相关联。为实现这一目标，默认情况下，Toolkit 会查找文件夹树，并选取找到的第一个 Flow Production Tracking 实体文件夹。例如，如果您的层次结构为 <code class="highlighter-rouge">Sequence &gt; Shot &gt; Step</code>，工序文件夹会自动与镜头关联，这通常正是您想要的。</p>
 
 <p>但是，如果您的层次结构在主实体下还有实体，例如 <code class="highlighter-rouge">Sequence &gt; Shot &gt; Department &gt; Step</code>，Toolkit 默认会将工序文件夹与部门一级关联，但这并不是您想要的。在这种情况下，我们需要明确指示 Toolkit 要查找哪个位置。通过向工序配置中添加以下内容，可以实现这一点：</p>
 
@@ -16907,14 +16907,14 @@ create_with_parent: false
 
 <h2 id="任务文件夹">任务文件夹</h2>
 
-<p>任务文件夹表示 ShotGrid 中的<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Producer_pr_scheduling_tasks_pr_my_tasks_html">任务</a>。默认情况下，任务文件夹不会随其父文件夹一起创建。例如，如果某个关联了任务节点的镜头触发了文件夹创建操作，将不会自动创建任务文件夹。只有在为任务执行文件夹创建操作时（例如从 ShotGrid 启动某项任务时），才会创建任务文件夹。</p>
+<p>任务文件夹表示 Flow Production Tracking 中的<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Producer_pr_scheduling_tasks_pr_my_tasks_html">任务</a>。默认情况下，任务文件夹不会随其父文件夹一起创建。例如，如果某个关联了任务节点的镜头触发了文件夹创建操作，将不会自动创建任务文件夹。只有在为任务执行文件夹创建操作时（例如从 Flow Production Tracking 启动某项任务时），才会创建任务文件夹。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/file-system-config-reference/task_folder_02_DS.png" alt="task_folder" /></p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_task"
 
-# the ShotGrid field to use for the folder name. This field needs to come from a task entity.
+# the Flow Production Tracking field to use for the folder name. This field needs to come from a task entity.
 name: "content" 
 </code></pre></div></div>
 
@@ -16926,15 +16926,15 @@ create_with_parent: true
 
 <p>与工序类似，如果要过滤出文件夹配置应操作哪些任务，您也可以选择提供 <code class="highlighter-rouge">filter</code> 参数。</p>
 
-<p>同样，您可以使用名称表达式，就像上面介绍的 <a href="#list-field-folders">ShotGrid 实体一样</a>，其中，静态文本可以与动态内容一起使用，以便您可以创建一个兼具动态和静态上下文的名称。</p>
+<p>同样，您可以使用名称表达式，就像上面介绍的 <a href="#list-field-folders">Flow Production Tracking 实体一样</a>，其中，静态文本可以与动态内容一起使用，以便您可以创建一个兼具动态和静态上下文的名称。</p>
 
 <p><code class="highlighter-rouge">name: "task_{content}"</code></p>
 
-<p>节点会查找其父节点、祖父节点等，直至找到 ShotGrid 实体文件夹配置。此实体文件夹将与任务关联，并用来确定要创建哪些任务文件夹。</p>
+<p>节点会查找其父节点、祖父节点等，直至找到 Flow Production Tracking 实体文件夹配置。此实体文件夹将与任务关联，并用来确定要创建哪些任务文件夹。</p>
 
 <h3 id="高级技巧---指定父文件夹-1">高级技巧 - 指定父文件夹</h3>
 
-<p>在创建文件夹的过程中，Toolkit 需要将任务与实体（例如“镜头”(Shot)、“资产”(Asset)等）相关联。为实现这一目标，默认情况下，Toolkit 会查找文件夹树，并选取找到的第一个 ShotGrid 实体文件夹。例如，如果您的层次结构为 <code class="highlighter-rouge">Sequence &gt; Shot &gt; Task</code>，任务文件夹会自动与镜头关联，这通常正是您想要的。</p>
+<p>在创建文件夹的过程中，Toolkit 需要将任务与实体（例如“镜头”(Shot)、“资产”(Asset)等）相关联。为实现这一目标，默认情况下，Toolkit 会查找文件夹树，并选取找到的第一个 Flow Production Tracking 实体文件夹。例如，如果您的层次结构为 <code class="highlighter-rouge">Sequence &gt; Shot &gt; Task</code>，任务文件夹会自动与镜头关联，这通常正是您想要的。</p>
 
 <p>但是，如果您的层次结构在主实体（例如镜头）下还有实体，例如 <code class="highlighter-rouge">Sequence &gt; Shot &gt; Department &gt; Task,</code>，Toolkit 默认会将任务与部门级别关联，但这并不是您想要的。在这种情况下，我们需要明确指示 Toolkit 在何处查找，类似于我们在<a href="#create-with-parent-folder">上一部分</a>中使用工序更新它的方式。通过向任务配置中添加以下内容，可以实现这一点：</p>
 
@@ -16959,7 +16959,7 @@ defer_creation: true
   <li><strong>工作空间：</strong>这是特定于应用程序的文件夹设置。可以在应用程序启动之前创建文件夹。</li>
   <li>这种工作流的一个常见例子是：某个工作流工序可能会根据镜头的需要和艺术家选择的工作方式，决定需要使用 Houdini、Maya 还是其他插件。艺术家可以一开始就为工作流工序创建 maya/、houdini/ 和其他目录，但如果负责给定镜头的艺术家只在 Maya 中工作，那么就没必要为 Houdini 和其他任何插件创建空文件夹。因此，如果您将文件夹创建任务延迟到各个插件启动时再进行，那么如果艺术家从不使用 Houdini，将不会为该镜头创建 houdini/ 文件夹。</li>
   <li><strong>用户文件夹：</strong>用户文件夹是在应用程序启动前才创建的。默认情况下，用户文件夹配置的结构（如上所述）将延迟创建。</li>
-  <li>发生这种情况时，您可以不基于 ShotGrid 中指定的用户来创建用户文件夹，而是在用户启动插件时才为当前用户创建文件夹。例如，当您开始处理镜头并启动 Maya 时，会为您创建一个用户名文件夹（基于您在 ShotGrid 中的用户名），让您与其他人的工作不会互相干扰。</li>
+  <li>发生这种情况时，您可以不基于 Flow Production Tracking 中指定的用户来创建用户文件夹，而是在用户启动插件时才为当前用户创建文件夹。例如，当您开始处理镜头并启动 Maya 时，会为您创建一个用户名文件夹（基于您在 Flow Production Tracking 中的用户名），让您与其他人的工作不会互相干扰。</li>
 </ol>
 
 <p><em>提示：如果您更喜欢应用程序（例如 Maya）启动时创建普通的静态文件夹，只需创建一个与文件夹同名的 YAML 配置文件，并添加以下内容即可：</em></p>
@@ -16990,10 +16990,10 @@ name: "login"
 
 <ul>
   <li>将 <strong>type</strong> 字段的值设置为 <code class="highlighter-rouge">user_workspace</code>。</li>
-  <li><strong>name</strong> 字段是应指定给用户文件夹的名称。此名称必须包含从 ShotGrid 人员（ShotGrid 中的 <code class="highlighter-rouge">HumanUser</code>）那里提取的字段组合。</li>
+  <li><strong>name</strong> 字段是应指定给用户文件夹的名称。此名称必须包含从 Flow Production Tracking 人员（Flow Production Tracking 中的 <code class="highlighter-rouge">HumanUser</code>）那里提取的字段组合。</li>
   <li>您可以像上面的示例中那样，只使用一个字段（例如 <code class="highlighter-rouge">name: login</code>）。</li>
   <li>您可以在花括号中使用多个字段（例如 <code class="highlighter-rouge">name: "{firstname}_{lastname}"</code>）。</li>
-  <li>如果想包含来自其他链接实体的字段，可使用标准 ShotGrid 语法（例如 <code class="highlighter-rouge">name: "{sg_group.Group.code}_{login}"</code>）。</li>
+  <li>如果想包含来自其他链接实体的字段，可使用标准 Flow Production Tracking 语法（例如 <code class="highlighter-rouge">name: "{sg_group.Group.code}_{login}"</code>）。</li>
 </ul>
 
 <p>默认情况下，当前用户文件夹将创建为延迟文件夹，这意味着，只有在通过 Toolkit API 的创建文件夹方法中的可选 <code class="highlighter-rouge">engine</code> 参数再次请求文件夹创建过程时，才会创建该文件夹。</p>
@@ -17007,14 +17007,14 @@ name: "login"
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "static"
 
-# pick one of the ShotGrid folders that are above this folder
+# pick one of the Flow Production Tracking folders that are above this folder
 # in the folder hierarchy. In this case it is a parent folder
 # named step that we want to look at when deciding if this
 # static folder should be created or not.
 constrain_by_entity: "$step"
 
 # we can now define constraints for this step. Constraints are simple
-# ShotGrid queries, following the same syntax as the other ShotGrid filters
+# Flow Production Tracking queries, following the same syntax as the other Flow Production Tracking filters
 # shown in previous sections.
 
 # In our example, if the parent step matches the constraints given
@@ -17175,7 +17175,7 @@ target: "../renders/$Project/$Asset.sg_asset_type/$Asset"
 <p>这些数据是一个词典列表。每个词典有一个称为 <code class="highlighter-rouge">action</code> 的键。这个键表示请求的 I/O 项的类型。如果您要执行文件夹创建挂钩，需要添加对以下不同动作的支持：</p>
 
 <ul>
-  <li><code class="highlighter-rouge">entity_folder</code>：磁盘上与 ShotGrid 实体关联的文件夹。</li>
+  <li><code class="highlighter-rouge">entity_folder</code>：磁盘上与 Flow Production Tracking 实体关联的文件夹。</li>
   <li><code class="highlighter-rouge">folder</code>：磁盘上的文件夹。</li>
   <li><code class="highlighter-rouge">copy</code>：需要从源位置复制到目标位置的文件。</li>
   <li><code class="highlighter-rouge">create_file</code>：需要在磁盘上创建的文件。</li>
@@ -17184,7 +17184,7 @@ target: "../renders/$Project/$Asset.sg_asset_type/$Asset"
 
 <p>每个动作各有一套不同的词典键。例如，<code class="highlighter-rouge">entity_folder</code> 动作有一个 <code class="highlighter-rouge">entity key</code>，其中包含它所连接的实体的详细信息。<code class="highlighter-rouge">create_file</code> 有一个 <code class="highlighter-rouge">source_path</code> 和一个 <code class="highlighter-rouge">target_path</code> 键，用来指示挂钩要复制哪个文件，以及要复制到何处。</p>
 
-<p>所有的 <code class="highlighter-rouge">actions</code> 还有一个名为 <code class="highlighter-rouge">metadata</code> 的键。此键表示数据结构设置中关联的配置文件的 YAML 配置数据。在上面的示例中，可以看到 ShotGrid 文件夹的 <code class="highlighter-rouge">metadata</code> 键怎样包含数据结构配置内设置的所有过滤器和命名信息。例如，以下是上面示例中镜头文件夹的元数据：</p>
+<p>所有的 <code class="highlighter-rouge">actions</code> 还有一个名为 <code class="highlighter-rouge">metadata</code> 的键。此键表示数据结构设置中关联的配置文件的 YAML 配置数据。在上面的示例中，可以看到 Flow Production Tracking 文件夹的 <code class="highlighter-rouge">metadata</code> 键怎样包含数据结构配置内设置的所有过滤器和命名信息。例如，以下是上面示例中镜头文件夹的元数据：</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="p">{</span><span class="s">'action'</span><span class="p">:</span> <span class="s">'entity_folder'</span><span class="p">,</span>
       <span class="s">'entity'</span><span class="p">:</span> <span class="p">{</span><span class="s">'id'</span><span class="p">:</span> <span class="mi">1184</span><span class="p">,</span> <span class="s">'name'</span><span class="p">:</span> <span class="s">'moo87'</span><span class="p">,</span> <span class="s">'type'</span><span class="p">:</span> <span class="s">'Shot'</span><span class="p">},</span>
@@ -17199,29 +17199,29 @@ target: "../renders/$Project/$Asset.sg_asset_type/$Asset"
 
 <p>…它对应于 <code class="highlighter-rouge">shot.yml</code> 数据结构配置文件：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Copyright (c) 2013 ShotGrid Software Inc.
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Copyright (c) 2013 Flow Production Tracking Software Inc.
 #
 # CONFIDENTIAL AND PROPRIETARY
 #
-# This work is provided "AS IS" and subject to the ShotGrid Pipeline Toolkit
+# This work is provided "AS IS" and subject to the Flow Production Tracking Toolkit
 # Source Code License included in this distribution package. See LICENSE.
 # By accessing, using, copying or modifying this work you indicate your
-# agreement to the ShotGrid Pipeline Toolkit Source Code License. All rights
-# not expressly granted therein are reserved by ShotGrid Software Inc.
+# agreement to the Flow Production Tracking Toolkit Source Code License. All rights
+# not expressly granted therein are reserved by Flow Production Tracking Software Inc.
 
 # the type of dynamic content
 type: "shotgun_entity"
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "code"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "Shot"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "sg_sequence", "relation": "is", "values": [ "$sequence" ] } ] 
 </code></pre></div></div>
@@ -17237,13 +17237,13 @@ filters: [ { "path": "sg_sequence", "relation": "is", "values": [ "$sequence" ] 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_entity"
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "code"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "Shot"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 filters: [ { "path": "sg_sequence", "relation": "is", "values": [ "$sequence" ] } ]
 
 # user settings
@@ -17302,7 +17302,7 @@ studio_permissions_level: "admin"
      Standard Folder
      ---------------
      This represents a standard folder in the file system which is not associated
-     with anything in ShotGrid. It contains the following keys:
+     with anything in Flow Production Tracking. It contains the following keys:
     
      * "action": "folder"
      * "metadata": The configuration yaml data for this item
@@ -17311,12 +17311,12 @@ studio_permissions_level: "admin"
      Entity Folder
      -------------
      This represents a folder in the file system which is associated with a
-     ShotGrid entity. It contains the following keys:
+     Flow Production Tracking entity. It contains the following keys:
     
      * "action": "entity_folder"
      * "metadata": The configuration yaml data for this item
      * "path": path on disk to the item
-     * "entity": ShotGrid entity link dict with keys type, id and name.
+     * "entity": Flow Production Tracking entity link dict with keys type, id and name.
     
      File Copy
      ---------
@@ -17460,7 +17460,7 @@ studio_permissions_level: "admin"
     <p><code class="highlighter-rouge">strict_matching: true</code> - 仅适用于 int 类型的键。此设置意味着字段只会匹配格式设置正确的数字。例如，给定值为“003”，strict_matching 设置为 True，我们将匹配“002”、“12345”和“042”，但不匹配“00003”或“2”。如果您需要匹配不那么严格，请将 strict_matching 设置为 False。默认行为是严格匹配。</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">shotgun_entity_type</code> - 与 <code class="highlighter-rouge">shotgun_field_name</code> 选项一起使用时，上下文将直接向 ShotGrid 查询值。这样，将可以在文件名中使用文件夹结构中不可见的字段的值。</p>
+    <p><code class="highlighter-rouge">shotgun_entity_type</code> - 与 <code class="highlighter-rouge">shotgun_field_name</code> 选项一起使用时，上下文将直接向 Flow Production Tracking 查询值。这样，将可以在文件名中使用文件夹结构中不可见的字段的值。</p>
   </li>
   <li>
     <p><code class="highlighter-rouge">shotgun_field_name</code> - 仅与 <code class="highlighter-rouge">shotgun_entity_type</code> 一起使用。</p>
@@ -17579,7 +17579,7 @@ maya_shot_work: sequences/{Sequence}/{Shot}/{Step}/work/maya/{name}.v{maya_versi
 
 <h3 id="示例---映射">示例 - 映射</h3>
 
-<p>当您想在文件名中添加 ShotGrid 字段时，此技巧非常有用。假设我们想在一个文件名中包含用户名 - 我们要使用以下定义：</p>
+<p>当您想在文件名中添加 Flow Production Tracking 字段时，此技巧非常有用。假设我们想在一个文件名中包含用户名 - 我们要使用以下定义：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>current_user_name:
     type: str
@@ -17589,7 +17589,7 @@ maya_shot_work: sequences/{Sequence}/{Shot}/{Step}/work/maya/{name}.v{maya_versi
 nuke_shot_work: sequences/{Sequence}/{Shot}/{Step}/work/nuke/{current_user_name}_{name}.v{version}.nk
 </code></pre></div></div>
 
-<p>Toolkit 应用在填充所有上下文字段时（通过 <code class="highlighter-rouge">context.as_template_fields()</code> 方法），会自动填充较高一级的 <code class="highlighter-rouge">Shot</code>、<code class="highlighter-rouge">Sequence</code> 和 <code class="highlighter-rouge">Step</code> 字段。另外，它还会扫描所有定义了 <code class="highlighter-rouge">shotgun_entity_type</code> 的字段（比如我们上面的 <code class="highlighter-rouge">current_user_name</code> 字段）。如果上下文中定义了 ShotGrid 实体，它将能够自动解析该值。当前用户始终记录在上下文中，并且在上面的示例中，我们还可以从“镜头”(Shot)、“镜头序列”(Sequence)和“工序”(Step)字段提取数据，因为它们被定义为较高一级路径的一部分，因此也属于上下文的一部分。但是，在上面的示例中，尝试在字段中引用资产实体将不起作用，因为 Toolkit 没办法知道要从 ShotGrid 中的哪个资产中提取数据。</p>
+<p>Toolkit 应用在填充所有上下文字段时（通过 <code class="highlighter-rouge">context.as_template_fields()</code> 方法），会自动填充较高一级的 <code class="highlighter-rouge">Shot</code>、<code class="highlighter-rouge">Sequence</code> 和 <code class="highlighter-rouge">Step</code> 字段。另外，它还会扫描所有定义了 <code class="highlighter-rouge">shotgun_entity_type</code> 的字段（比如我们上面的 <code class="highlighter-rouge">current_user_name</code> 字段）。如果上下文中定义了 Flow Production Tracking 实体，它将能够自动解析该值。当前用户始终记录在上下文中，并且在上面的示例中，我们还可以从“镜头”(Shot)、“镜头序列”(Sequence)和“工序”(Step)字段提取数据，因为它们被定义为较高一级路径的一部分，因此也属于上下文的一部分。但是，在上面的示例中，尝试在字段中引用资产实体将不起作用，因为 Toolkit 没办法知道要从 Flow Production Tracking 中的哪个资产中提取数据。</p>
 
 <h3 id="示例---具有两个有效值的字符串字段">示例 - 具有两个有效值的字符串字段</h3>
 
@@ -17674,7 +17674,7 @@ nuke_shot_work: sequences/{Sequence}/{Shot}/{Step}/work/nuke/{user_initials}_{na
     <p>
         <i class="fa fa-info-circle"></i>
         <b>注意
-:</b> 如果一个 string 键的名称与一个关联了 ShotGrid 实体的动态数据结构文件夹的实体类型一致，将使用该文件夹名称来代替令牌。例如，假设您像上面的代码段那样正在使用一个“string”类型的 {Sequence} 模板键，并且在您的数据结构中有一个名为“sequence”的动态文件夹，但在对应的 <code class="highlighter-rouge">sequence.yml</code> 文件中，它被定义为 <code class="highlighter-rouge">shotgun_entity</code> 类型，并且连接到 ShotGrid 中的“场”(Sequence)实体类型。这种情况下，Toolkit 会认为您的模板键对应于这个动态文件夹的实体类型（示例中二者均为“场”(Sequence)）。因此，Toolkit 会提取生成的文件夹名称（即所涉及的具体镜头序列的名称），并使用它替换模板键。
+:</b> 如果一个 string 键的名称与一个关联了 Flow Production Tracking 实体的动态数据结构文件夹的实体类型一致，将使用该文件夹名称来代替令牌。例如，假设您像上面的代码段那样正在使用一个“string”类型的 {Sequence} 模板键，并且在您的数据结构中有一个名为“sequence”的动态文件夹，但在对应的 <code class="highlighter-rouge">sequence.yml</code> 文件中，它被定义为 <code class="highlighter-rouge">shotgun_entity</code> 类型，并且连接到 Flow Production Tracking 中的“场”(Sequence)实体类型。这种情况下，Toolkit 会认为您的模板键对应于这个动态文件夹的实体类型（示例中二者均为“场”(Sequence)）。因此，Toolkit 会提取生成的文件夹名称（即所涉及的具体镜头序列的名称），并使用它替换模板键。
 
     </p>
 </div>
@@ -17699,7 +17699,7 @@ nuke_shot_work: sequences/{Sequence}/{Shot}/{Step}/work/nuke/{user_initials}_{na
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>string_name: string_definition
 </code></pre></div></div>
 
-<p>字符串定义是由键名称和其他值构成的模板，这些名称和值一起解析成一个字符串，而不是一个文件系统路径。ShotGrid 中的发布所使用的名称就是一个例子：</p>
+<p>字符串定义是由键名称和其他值构成的模板，这些名称和值一起解析成一个字符串，而不是一个文件系统路径。Flow Production Tracking 中的发布所使用的名称就是一个例子：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>maya_publish_sg_name: "Maya  publish,  {name},  v{version}"
 </code></pre></div></div>
@@ -17734,7 +17734,7 @@ shot_work: sequences/{Shot}/work/{Shot}.ma
 
 <h2 id="如何向文件结构中添加新的实体类型">如何向文件结构中添加新的实体类型？</h2>
 
-<p>我们假设您之前一直在 ShotGrid 站点上制作专题动画和短片，而现在您接到了剧集工作。下面我们就来一起了解如何向 Toolkit 加入剧集工作流。首先，按照<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_get_started_ar_episode_entity_html">此处</a>的说明在 ShotGrid 中为剧集工作设置层次结构。</p>
+<p>我们假设您之前一直在 Flow Production Tracking 站点上制作专题动画和短片，而现在您接到了剧集工作。下面我们就来一起了解如何向 Toolkit 加入剧集工作流。首先，按照<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_get_started_ar_episode_entity_html">此处</a>的说明在 Flow Production Tracking 中为剧集工作设置层次结构。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/administration/images/file-system-config-reference/episode_hierarchy.jpg" alt="episode_hierarchy" /></p>
 
@@ -17742,7 +17742,7 @@ shot_work: sequences/{Shot}/work/{Shot}.ma
     <p>
         <i class="fa fa-info-circle"></i>
         <b>注意
-:</b> 请参见<a href="#create-with-parent-folder">上面的“随父文件夹一起创建”部分</a>，回顾 Toolkit 中的嵌套关系（它完全独立于 ShotGrid 中的项目层次结构）。
+:</b> 请参见<a href="#create-with-parent-folder">上面的“随父文件夹一起创建”部分</a>，回顾 Toolkit 中的嵌套关系（它完全独立于 Flow Production Tracking 中的项目层次结构）。
 
     </p>
 </div>
@@ -17756,9 +17756,9 @@ shot_work: sequences/{Shot}/work/{Shot}.ma
 
 <h3 id="剧集--场--镜头episode--sequence--shot层次结构需要的字段">“剧集 &gt; 场 &gt; 镜头”(Episode &gt; Sequence &gt; Shot)层次结构需要的字段</h3>
 
-<p><a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_get_started_ar_enabling_custom_entities_html">您可以选择为 <code class="highlighter-rouge">Episode</code> 使用任何自定义实体</a>（“站点偏好设置 &gt; 实体”(Site Preferences &gt; Entities)），也可以使用 ShotGrid 7.0.7.0 中提供的官方“剧集”(Episode)实体。如果您注册使用的是 ShotGrid 7.0.7.0 之前的版本（在 2017 年之前），“TV Show”模板会使用 <code class="highlighter-rouge">CustomEntity02</code> 作为剧集。如果您决定使用 <code class="highlighter-rouge">CustomEntity02</code> 或官方“剧集”(Episode)实体之外的其他实体，没问题，ShotGrid 和 Toolkit 很灵活。下面我们就来介绍这两种情况。</p>
+<p><a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_get_started_ar_enabling_custom_entities_html">您可以选择为 <code class="highlighter-rouge">Episode</code> 使用任何自定义实体</a>（“站点偏好设置 &gt; 实体”(Site Preferences &gt; Entities)），也可以使用 Flow Production Tracking 7.0.7.0 中提供的官方“剧集”(Episode)实体。如果您注册使用的是 Flow Production Tracking 7.0.7.0 之前的版本（在 2017 年之前），“TV Show”模板会使用 <code class="highlighter-rouge">CustomEntity02</code> 作为剧集。如果您决定使用 <code class="highlighter-rouge">CustomEntity02</code> 或官方“剧集”(Episode)实体之外的其他实体，没问题，Flow Production Tracking 和 Toolkit 很灵活。下面我们就来介绍这两种情况。</p>
 
-<p>就本练习而言，我们将使用“剧集”(Episode)(<code class="highlighter-rouge">CustomEntity02</code>) 和官方“剧集”(Episode)实体为例，讲解如何在项目层次结构更新中整合剧集（可以任选其一）。首先，要正确设置项目的<strong>剧集 &gt; 场 &gt; 镜头</strong>层次结构，需要确保 ShotGrid 中存在以下字段：</p>
+<p>就本练习而言，我们将使用“剧集”(Episode)(<code class="highlighter-rouge">CustomEntity02</code>) 和官方“剧集”(Episode)实体为例，讲解如何在项目层次结构更新中整合剧集（可以任选其一）。首先，要正确设置项目的<strong>剧集 &gt; 场 &gt; 镜头</strong>层次结构，需要确保 Flow Production Tracking 中存在以下字段：</p>
 
 <h4 id="剧集">剧集</h4>
 
@@ -17786,7 +17786,7 @@ shot_work: sequences/{Shot}/work/{Shot}.ma
 
 <h4 id="镜头">镜头</h4>
 
-<p>一个称为“镜头序列”(Sequence)的实体字段 (<code class="highlighter-rouge">sg_sequence</code>)，它将链接到“镜头序列”(Sequence)实体。ShotGrid 的“TV Show”项目模板中应该已存在这个字段。</p>
+<p>一个称为“镜头序列”(Sequence)的实体字段 (<code class="highlighter-rouge">sg_sequence</code>)，它将链接到“镜头序列”(Sequence)实体。Flow Production Tracking 的“TV Show”项目模板中应该已存在这个字段。</p>
 
 <p><strong>使用官方 <code class="highlighter-rouge">Episode</code> 实体</strong></p>
 
@@ -17798,7 +17798,7 @@ shot_work: sequences/{Shot}/work/{Shot}.ma
 
 <h3 id="toolkit-数据结构定义">Toolkit 数据结构定义</h3>
 
-<p>我们假设有一个如下所示的层次结构（<code class="highlighter-rouge">{}</code> 中的文件夹将根据它们在 ShotGrid 中的名称动态地进行命名）：</p>
+<p>我们假设有一个如下所示的层次结构（<code class="highlighter-rouge">{}</code> 中的文件夹将根据它们在 Flow Production Tracking 中的名称动态地进行命名）：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- {project_name}
  - shots
@@ -17823,16 +17823,16 @@ shot_work: sequences/{Shot}/work/{Shot}.ma
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_entity"
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "code"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "Episode"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing 
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 </code></pre></div></div>
@@ -17842,16 +17842,16 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_entity"
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "code"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "CustomEntity02"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing 
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ] 
 </code></pre></div></div>
@@ -17865,16 +17865,16 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_entity"
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "code"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "Sequence"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing 
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "sg_episode", "relation": "is", "values": [ "$episode" ] } ]` 
 </code></pre></div></div>
@@ -17888,16 +17888,16 @@ filters: [ { "path": "sg_episode", "relation": "is", "values": [ "$episode" ] } 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_entity"
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "code"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "Shot"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing 
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "sg_sequence", "relation": "is", "values": [ "$sequence" ] } ]` 
 </code></pre></div></div>
@@ -17979,7 +17979,7 @@ filters: [ { "path": "sg_sequence", "relation": "is", "values": [ "$sequence" ] 
 
 <h2 id="如何创建自定义工作流工序">如何创建自定义工作流工序？</h2>
 
-<p>在 ShotGrid 7.0.6.0 中，引入了<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_site_configuration_ar_configure_pipeline_steps_html#managing-pipeline-steps">通过“管理”(Admin)菜单管理工作流工序</a>的功能。使用此功能，您可以轻松向工作流工序中添加自定义字段。<strong>高级技巧：大多数情况下，与创建自定义实体来管理工作流工序相比，在工作流工序中使用自定义字段有助于工作流条理更加清晰。</strong></p>
+<p>在 Flow Production Tracking 7.0.6.0 中，引入了<a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_Administrator_ar_site_configuration_ar_configure_pipeline_steps_html#managing-pipeline-steps">通过“管理”(Admin)菜单管理工作流工序</a>的功能。使用此功能，您可以轻松向工作流工序中添加自定义字段。<strong>高级技巧：大多数情况下，与创建自定义实体来管理工作流工序相比，在工作流工序中使用自定义字段有助于工作流条理更加清晰。</strong></p>
 
 
             </div>  

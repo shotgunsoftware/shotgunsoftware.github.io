@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -7384,7 +7384,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/tk-framework-shotgunutils/" style='margin-left:40px'>
-            ShotGrid Utils
+            Flow Production Tracking Utils
         </a>
     </div>
 
@@ -9323,9 +9323,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -11689,7 +11689,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -12759,7 +12759,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -12834,25 +12834,25 @@
 
             <h1 id="toolkit-desktop-server-framework">Toolkit Desktop Server Framework</h1>
 
-<p>The desktopserver framework provides the functionality behind ShotGrid’s local file linking
+<p>The desktopserver framework provides the functionality behind Flow Production Tracking’s local file linking
 and Toolkit integration.  It provides a local websocket server that securely listens for
-requests from ShotGrid websites for an action that requires desktop access.</p>
+requests from Flow Production Tracking websites for an action that requires desktop access.</p>
 
-<p>For local file linking, these requests allow ShotGrid access to local file paths from the 
-web interface and the ability to open those files directly from ShotGrid pages when requested. 
-For Toolkit, they allow ShotGrid to determine what pipeline actions have been registered for a 
+<p>For local file linking, these requests allow Flow Production Tracking access to local file paths from the
+web interface and the ability to open those files directly from Flow Production Tracking pages when requested.
+For Toolkit, they allow Flow Production Tracking to determine what pipeline actions have been registered for a
 given entity and to execute them.</p>
 
 <h2 id="how-to-get-desktop-integration-running">How to get desktop integration running</h2>
 
-<p>For these ShotGrid features to work, some supported desktop integration must be running.
+<p>For these Flow Production Tracking features to work, some supported desktop integration must be running.
 <a href="https://developer.shotgridsoftware.com/c79f1656/">This page</a> covers the various options for how
-ShotGrid can integrate with your desktop.  The Websocket Server section covers the functionality that this framework provides.</p>
+Flow Production Tracking can integrate with your desktop.  The Websocket Server section covers the functionality that this framework provides.</p>
 
-<h3 id="shotgrid-desktop">ShotGrid Desktop</h3>
+<h3 id="shotgrid-desktop">Flow Production Tracking Toolkit</h3>
 
-<p>This framework is bundled with ShotGrid Desktop, which can be downloaded <a href="https://developer.shotgridsoftware.com/d587be80/#installation-of-desktop">following these steps</a>. When ShotGrid Desktop is run it will automatically start up the websocket server.  If you 
-are already running ShotGrid Desktop then your setup process is complete.</p>
+<p>This framework is bundled with Flow Production Tracking Toolkit, which can be downloaded <a href="https://developer.shotgridsoftware.com/d587be80/#installation-of-desktop">following these steps</a>. When Flow Production Tracking Toolkit is run it will automatically start up the websocket server.  If you
+are already running Flow Production Tracking Toolkit then your setup process is complete.</p>
 
 <h3 id="configuring-the-server">Configuring the server</h3>
 
@@ -12874,7 +12874,7 @@ custom wrapper. If that is set, the wrapper will be called with the path as its 
 <p>The first time you run the server it will generate the certificate required to establish a secure 
 connection. These certificates are stored local to your machine and are never shared with the public.
 They allow the encrypted connection that websockets requires, which is necessary despite all traffic 
-remaining local (from your browser to the server); ShotGrid’s websocket traffic is never made available 
+remaining local (from your browser to the server); Flow Production Tracking’s websocket traffic is never made available
 over the Internet.</p>
 
 <p>When the certificates are registered with the system you will see dialogs appear like the following.
@@ -12884,19 +12884,19 @@ Click “Ok” to allow the registration to proceed.</p>
 <img src="/en/reference/pipeline-integrations/toolkit-frameworks/images/windows_warning_1.jpg" alt="" />
 <img src="/en/reference/pipeline-integrations/toolkit-frameworks/images/windows_warning_2.jpg" alt="" /></p>
 
-<p>When using the ShotGrid Desktop, the generated certificates will be stored in the following locations:</p>
+<p>When using the Flow Production Tracking Toolkit, the generated certificates will be stored in the following locations:</p>
 
 <p><strong>OS X</strong>: ~/Library/Caches/Shotgun/desktop/config/certificates<br />
 <strong>Windows</strong>: %AppData%\Shotgun\desktop\config\certificates<br />
 <strong>Linux</strong>: ~/.shotgun/desktop/config/certificates<br /></p>
 
-<h2 id="security-setup---local-shotgrid-installs">Security Setup - Local ShotGrid Installs</h2>
+<h2 id="security-setup---local-shotgrid-installs">Security Setup - Local Flow Production Tracking Installs</h2>
 
-<p>By default, the websocket server is setup to listen to hosted ShotGrid sites on port 9000.
-If you run a local ShotGrid server, you will need to update the configuration for the ShotGrid server 
+<p>By default, the websocket server is setup to listen to hosted Flow Production Tracking sites on port 9000.
+If you run a local Flow Production Tracking server, you will need to update the configuration for the Flow Production Tracking server
 to allow connections from your websocket server.</p>
 
-<p>When running ShotGrid Desktop, you will need to setup a <code class="highlighter-rouge">config.ini</code> file that lives with the ShotGrid binary.</p>
+<p>When running Flow Production Tracking Toolkit, you will need to setup a <code class="highlighter-rouge">config.ini</code> file that lives with the Flow Production Tracking binary.</p>
 
 <p>Within that file there is a section that controls the functionality of the websocket server.
 A typical configuration would look like this:</p>

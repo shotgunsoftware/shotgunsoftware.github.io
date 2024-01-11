@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -3364,9 +3364,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/ja/7584b650/?title=Alias+ShotGrid+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
+                href="/ja/7584b650/?title=Alias+Flow+Production+Tracking+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
             >
-                Alias ShotGrid ワークフロー
+                Alias Flow Production Tracking ワークフロー
             </a>
             </div>
 
@@ -6658,7 +6658,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -9289,9 +9289,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -11655,7 +11655,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -12725,7 +12725,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -12802,7 +12802,7 @@
 
 <p>このチュートリアルは、アニメーションや視覚効果用のシンプルで一般的なパイプラインの作成について説明します。このチュートリアルに従うと、外観加工を介してモデリングのアセットをプロダクション シーンに転送するのに必要なすべての処理を提供するパイプラインを作成できます。</p>
 
-<p>このパイプラインの対象となるワークフローの大部分は、ShotGrid に組み込まれた統合機能を使用して、設定なしですぐに作業することができます。パイプラインの中の、スタジオがカスタム ソリューションを作成する頻度が高い部分については、このチュートリアルで、Toolkit プラットフォームを使用してアーティスト ワークフローをカスタマイズするプロセスを紹介します。</p>
+<p>このパイプラインの対象となるワークフローの大部分は、Flow Production Tracking に組み込まれた統合機能を使用して、設定なしですぐに作業することができます。パイプラインの中の、スタジオがカスタム ソリューションを作成する頻度が高い部分については、このチュートリアルで、Toolkit プラットフォームを使用してアーティスト ワークフローをカスタマイズするプロセスを紹介します。</p>
 
 <p>次に、このチュートリアルで作成されるパイプラインの概要を示します。</p>
 
@@ -12820,7 +12820,7 @@
     <p>
         <i class="fa fa-info-circle"></i>
         <b>注
-:</b> このチュートリアルで使用される単純なパイプラインはプロダクションのテストを受けていません。ShotGrid ベースのパイプラインの作成例としてのみ使用してください。
+:</b> このチュートリアルで使用される単純なパイプラインはプロダクションのテストを受けていません。Flow Production Tracking ベースのパイプラインの作成例としてのみ使用してください。
 
     </p>
 </div>
@@ -12829,16 +12829,16 @@
 
 <ul>
   <li>
-    <p><strong>作業用の ShotGrid プロジェクト</strong> - このチュートリアルでは、ShotGrid を使用してプロダクション データのトラッキングや管理を行った経験があることが前提となります。</p>
+    <p><strong>作業用の Flow Production Tracking プロジェクト</strong> - このチュートリアルでは、Flow Production Tracking を使用してプロダクション データのトラッキングや管理を行った経験があることが前提となります。</p>
   </li>
   <li>
-    <p><strong>ShotGrid 統合の概要</strong> - ShotGrid には統合機能が付属していて、手動設定が不要な、単純なプロダクション ワークフローがいくつか用意されています。このチュートリアルで説明されている手動設定やカスタマイズについて調べる前に、これらのワークフローの機能や範囲について理解する必要があります。ShotGrid 統合の詳細については、<a href="https://developer.shotgridsoftware.com/ja/d587be80/">こちら</a>を参照してください。</p>
+    <p><strong>Flow Production Tracking 統合の概要</strong> - Flow Production Tracking には統合機能が付属していて、手動設定が不要な、単純なプロダクション ワークフローがいくつか用意されています。このチュートリアルで説明されている手動設定やカスタマイズについて調べる前に、これらのワークフローの機能や範囲について理解する必要があります。Flow Production Tracking 統合の詳細については、<a href="https://developer.shotgridsoftware.com/ja/d587be80/">こちら</a>を参照してください。</p>
   </li>
   <li>
-    <p><strong>Maya と Nuke の経験</strong> - このチュートリアルは、Maya および Nuke を使用して単純なパイプラインを作成することを目的としています。ShotGrid の統合機能をカスタマイズするには、これらのパッケージの基本について理解する必要があります。</p>
+    <p><strong>Maya と Nuke の経験</strong> - このチュートリアルは、Maya および Nuke を使用して単純なパイプラインを作成することを目的としています。Flow Production Tracking の統合機能をカスタマイズするには、これらのパッケージの基本について理解する必要があります。</p>
   </li>
   <li>
-    <p><strong>Python の操作に関する知識</strong> - このチュートリアルでは、Python で記述された「フック」を使用して、ShotGrid 統合の機能を変更する必要があります。</p>
+    <p><strong>Python の操作に関する知識</strong> - このチュートリアルでは、Python で記述された「フック」を使用して、Flow Production Tracking 統合の機能を変更する必要があります。</p>
   </li>
   <li>
     <p><strong>YAML に関する知識</strong> - 作成しているパイプラインの設定のほとんどは、YAML ファイルを変更して処理されます。</p>
@@ -12849,10 +12849,10 @@
 
 <ul>
   <li>
-    <p><a href="https://developer.shotgridsoftware.com/ja/">ShotGrid サポート サイト</a></p>
+    <p><a href="https://developer.shotgridsoftware.com/ja/">Flow Production Tracking サポート サイト</a></p>
   </li>
   <li>
-    <p><a href="https://www.shotgridsoftware.com/integrations/">ShotGrid 統合</a></p>
+    <p><a href="https://www.shotgridsoftware.com/integrations/">Flow Production Tracking 統合</a></p>
 
     <ul>
       <li>
@@ -12870,7 +12870,7 @@
 
 <h1 id="プロジェクトの作成とセットアップ">プロジェクトの作成とセットアップ</h1>
 
-<p>このチュートリアルでは、ShotGrid で新しいプロジェクトを作成して、プロダクション開始の準備に合わせて設定する必要があります。ここで、すべての必要な ShotGrid エンティティが所定の場所にあり、正しくリンクされていることを確認します。このチュートリアルの場合、アセット、シーケンス、ショット、およびタスクの各エンティティが必要で、既定で新しいプロジェクトで使用できる必要があります。作成する項目は次のとおりです。</p>
+<p>このチュートリアルでは、Flow Production Tracking で新しいプロジェクトを作成して、プロダクション開始の準備に合わせて設定する必要があります。ここで、すべての必要な Flow Production Tracking エンティティが所定の場所にあり、正しくリンクされていることを確認します。このチュートリアルの場合、アセット、シーケンス、ショット、およびタスクの各エンティティが必要で、既定で新しいプロジェクトで使用できる必要があります。作成する項目は次のとおりです。</p>
 
 <ul>
   <li>
@@ -12896,7 +12896,7 @@
   </li>
 </ul>
 
-<p>次に、ShotGrid で設定したプロジェクト エンティティのスクリーンショットを示します。</p>
+<p>次に、Flow Production Tracking で設定したプロジェクト エンティティのスクリーンショットを示します。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_1.png" style="" />
@@ -12918,29 +12918,29 @@
 
 <h2 id="ソフトウェア-ランチャー">ソフトウェア ランチャー</h2>
 
-<p>次に、Maya および Nuke を ShotGrid Desktop 内で起動できることを確認する必要があります。Desktop で、これらの各パッケージのアイコンをクリックして起動できることを確認します。各パッケージの適切なバージョンが起動していることを確認します。</p>
+<p>次に、Maya および Nuke を Flow Production Tracking Toolkit 内で起動できることを確認する必要があります。Desktop で、これらの各パッケージのアイコンをクリックして起動できることを確認します。各パッケージの適切なバージョンが起動していることを確認します。</p>
 
-<p>Desktop にアプリケーションが表示されない場合、または予期したバージョンが起動しない場合は、ソフトウェア エンティティを使用して ShotGrid で起動を手動で設定しなければならない可能性があります。</p>
+<p>Desktop にアプリケーションが表示されない場合、または予期したバージョンが起動しない場合は、ソフトウェア エンティティを使用して Flow Production Tracking で起動を手動で設定しなければならない可能性があります。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_4.png" style="" />
-  <figcaption>ShotGrid で定義された規定のソフトウェア エンティティ
+  <figcaption>Flow Production Tracking で定義された規定のソフトウェア エンティティ
 </figcaption>
 </figure>
 
-<p>ソフトウェア エンティティは、プロダクションで使用する DCC パッケージを操作する場合に使用されます。既定では、標準のインストール場所でこれらのパッケージが検索され、Desktop を使用して起動できるようになります。複数のバージョンがインストールされている場合、または標準以外の場所にインストールされている場合は、ShotGrid の対応するソフトウェア エンティティのエントリを更新して、アーティストの起動環境を整理しなければならない可能性があります。</p>
+<p>ソフトウェア エンティティは、プロダクションで使用する DCC パッケージを操作する場合に使用されます。既定では、標準のインストール場所でこれらのパッケージが検索され、Desktop を使用して起動できるようになります。複数のバージョンがインストールされている場合、または標準以外の場所にインストールされている場合は、Flow Production Tracking の対応するソフトウェア エンティティのエントリを更新して、アーティストの起動環境を整理しなければならない可能性があります。</p>
 
 <p>ソフトウェア エンティティの詳細と、適切に設定する方法については、『<a href="https://developer.shotgridsoftware.com/ja/8085533c/">統合管理者ガイド</a>』を参照してください。DCC が予期通りに起動した場合は、次のセクションに進んでください。</p>
 
 <h1 id="環境設定">環境設定</h1>
 
-<p>環境設定(設定)は、プロジェクトに関するアーティスト ワークフローを定義します。このワークフローでは、アーティストが起動している DCC に含める ShotGrid 統合、プロジェクトのフォルダ構造の定義方法、およびアーティストがデータを共有するときに作成されるファイルやフォルダの命名規則を指定します。</p>
+<p>環境設定(設定)は、プロジェクトに関するアーティスト ワークフローを定義します。このワークフローでは、アーティストが起動している DCC に含める Flow Production Tracking 統合、プロジェクトのフォルダ構造の定義方法、およびアーティストがデータを共有するときに作成されるファイルやフォルダの命名規則を指定します。</p>
 
-<p>既定では、すべての新しいプロジェクトは基本的な <a href="https://developer.shotgridsoftware.com/ja/d587be80/">ShotGrid 統合</a>を使用するように設定されています。この統合は、多数の既製のソフトウェア パッケージを使用してアーティスト間でファイルを共有するための、基本的なワークフローを提供します。次のセクションでは、プロジェクトのパイプライン環境設定(設定)を引き継いで、スタジオに合わせてカスタマイズする方法の概要を示します。</p>
+<p>既定では、すべての新しいプロジェクトは基本的な <a href="https://developer.shotgridsoftware.com/ja/d587be80/">Flow Production Tracking 統合</a>を使用するように設定されています。この統合は、多数の既製のソフトウェア パッケージを使用してアーティスト間でファイルを共有するための、基本的なワークフローを提供します。次のセクションでは、プロジェクトのパイプライン環境設定(設定)を引き継いで、スタジオに合わせてカスタマイズする方法の概要を示します。</p>
 
 <h2 id="プロジェクトの設定を引き継ぐ">プロジェクトの設定を引き継ぐ</h2>
 
-<p>ShotGrid Desktop (以下、「Desktop」)を使用して、プロジェクトの設定を引き継ぎます。Desktop 内で右マウス ボタンをクリックするか、または右下のユーザ アイコンをクリックして、ポップアップ メニューを表示します。<strong>[高度なプロジェクト設定…] (Advanced project setup…)</strong>オプションを選択し、ウィザードに従ってプロジェクトの設定をローカルにインストールします。次の図に、必要な手順を示します。また、『統合管理者ガイド』の「<a href="https://developer.shotgridsoftware.com/ja/8085533c/#パイプラインの設定を引き継ぐ">パイプラインの設定を引き継ぐ</a>」に記載されている手順に従うこともできます。</p>
+<p>Flow Production Tracking Toolkit (以下、「Desktop」)を使用して、プロジェクトの設定を引き継ぎます。Desktop 内で右マウス ボタンをクリックするか、または右下のユーザ アイコンをクリックして、ポップアップ メニューを表示します。<strong>[高度なプロジェクト設定…] (Advanced project setup…)</strong>オプションを選択し、ウィザードに従ってプロジェクトの設定をローカルにインストールします。次の図に、必要な手順を示します。また、『統合管理者ガイド』の「<a href="https://developer.shotgridsoftware.com/ja/8085533c/#パイプラインの設定を引き継ぐ">パイプラインの設定を引き継ぐ</a>」に記載されている手順に従うこともできます。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_5.png" style="" />
@@ -12950,11 +12950,11 @@
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/wizard_01.png" style="" />
-  <figcaption><strong>[ShotGrid の既定値] (ShotGrid Default)</strong>設定タイプを選択する
+  <figcaption><strong>[Flow Production Tracking の既定値] (Flow Production Tracking Default)</strong>設定タイプを選択する
 </figcaption>
 </figure>
 
-<p>初めて ShotGrid プロジェクトをセットアップする場合は、プロジェクト データのストレージ場所を定義するためのプロンプトも表示されます。それ以外の場合は、既存の格納場所を選択することができます。</p>
+<p>初めて Flow Production Tracking プロジェクトをセットアップする場合は、プロジェクト データのストレージ場所を定義するためのプロンプトも表示されます。それ以外の場合は、既存の格納場所を選択することができます。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/wizard_03.png" style="" />
@@ -12974,7 +12974,7 @@
 </figcaption>
 </figure>
 
-<p><strong>[サイト基本設定] (Site Preferences)</strong>の<strong>[ファイル管理] (File Management)</strong>セクションで、ShotGrid サイトのストレージを表示および編集できます。これらの設定の詳細については、<a href="https://help.autodesk.com/view/SGSUB/JPN/?guid=SG_Administrator_ar_data_management_ar_linking_local_files_html">こちら</a>を参照してください。</p>
+<p><strong>[サイト基本設定] (Site Preferences)</strong>の<strong>[ファイル管理] (File Management)</strong>セクションで、Flow Production Tracking サイトのストレージを表示および編集できます。これらの設定の詳細については、<a href="https://help.autodesk.com/view/SGSUB/JPN/?guid=SG_Administrator_ar_data_management_ar_linking_local_files_html">こちら</a>を参照してください。</p>
 
 <p>格納場所が選択されたので、その場所にある新しいプロジェクトのディレクトリ名を選択します。</p>
 
@@ -12998,11 +12998,11 @@
 
 <p>上記の画面で<strong>[セットアップを実行] (Run Setup)</strong>をクリックすると、Desktop は設定に必要なすべてのコンポーネントのダウンロードとインストールを開始します。このインストール処理には数分かかる場合があります。完了したら、プロジェクト全体の設定のローカル コピーが作成されます。次の手順では、このローカル コピーを変更します。</p>
 
-<p>Desktop インストールのチュートリアルで指定された設定場所は、ShotGrid のプロジェクトの[パイプラインの設定] (Pipeline Configurations)ページに記録されています。</p>
+<p>Desktop インストールのチュートリアルで指定された設定場所は、Flow Production Tracking のプロジェクトの[パイプラインの設定] (Pipeline Configurations)ページに記録されています。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_10.png" style="" />
-  <figcaption>ShotGrid のパイプラインの設定エンティティ
+  <figcaption>Flow Production Tracking のパイプラインの設定エンティティ
 </figcaption>
 </figure>
 
@@ -13049,9 +13049,9 @@
 
 <h1 id="パイプラインを作成する">パイプラインを作成する</h1>
 
-<p>この時点で、パイプラインの作成を開始する準備ができています。ShotGrid にプロジェクトが設定されていて、Desktop を介して Maya および Nuke を起動することや、プロジェクトの設定をコントロールすることができます。また、設定の構造の基本を理解していて、アーティスト ワークフローを具体的に作成する作業を開始することができます。</p>
+<p>この時点で、パイプラインの作成を開始する準備ができています。Flow Production Tracking にプロジェクトが設定されていて、Desktop を介して Maya および Nuke を起動することや、プロジェクトの設定をコントロールすることができます。また、設定の構造の基本を理解していて、アーティスト ワークフローを具体的に作成する作業を開始することができます。</p>
 
-<p>次のセクションでは、パイプラインの各手順について説明します。すぐに使用できる機能を示し、ShotGrid 統合のカスタマイズ プロセスを紹介します。これらのセクションが終了するころには、単純な、機能をすべて備えた、エンドツーエンドのプロダクション パイプラインが作成されています。また、アーティストがプロダクション作業で行う手順についても理解できるでしょう。</p>
+<p>次のセクションでは、パイプラインの各手順について説明します。すぐに使用できる機能を示し、Flow Production Tracking 統合のカスタマイズ プロセスを紹介します。これらのセクションが終了するころには、単純な、機能をすべて備えた、エンドツーエンドのプロダクション パイプラインが作成されています。また、アーティストがプロダクション作業で行う手順についても理解できるでしょう。</p>
 
 <div class="info-popup">
     <p>
@@ -13066,9 +13066,9 @@
 
 <p>シンプルなパイプラインの最初の手順はモデリングです。このセクションでは、プロジェクト内でティーポット アセットの最初の繰り返しを作成します。作成した繰り返しは、ディスクのプロジェクトのフォルダ構造内に保存してからパブリッシュします。</p>
 
-<p>最初に ShotGrid Desktop から Maya を起動します。</p>
+<p>最初に Flow Production Tracking Toolkit から Maya を起動します。</p>
 
-<p>Maya が完全にロードされると、[ファイルを開く] (File Open)ダイアログ ボックスが表示されます。このダイアログ ボックスで、プロジェクト内にある既存の Maya ファイルを参照できます。また、ShotGrid 統合で認識される新しいファイルを作成することができます。</p>
+<p>Maya が完全にロードされると、[ファイルを開く] (File Open)ダイアログ ボックスが表示されます。このダイアログ ボックスで、プロジェクト内にある既存の Maya ファイルを参照できます。また、Flow Production Tracking 統合で認識される新しいファイルを作成することができます。</p>
 
 <p>[アセット] (Assets)タブを選択して、ティーポットのモデリング タスクにドリル ダウンします。このタスクのアーティスト作業ファイルはまだないため、<strong>[+ New File]</strong>ボタンをクリックします。</p>
 
@@ -13083,7 +13083,7 @@
     <p>
         <i class="fa fa-info-circle"></i>
         <b>注
-:</b> このチュートリアルを使用している場合はいつでも、Maya または Nuke の ShotGrid メニューを介して ShotGrid Panel を起動することができます。このパネルでは、DCC を終了しなくても、プロジェクト データを表示できます。現在の作業コンテキスト、およびこのコンテキスト内の最近のアクティビティが表示されます。フィードバック用のノートをパネルに直接追加することもできます。詳細については、<a href="https://developer.shotgridsoftware.com/ja/c0b0ce05/">ShotGrid パネルのドキュメント</a>を参照してください。
+:</b> このチュートリアルを使用している場合はいつでも、Maya または Nuke の Flow Production Tracking メニューを介して Flow Production Tracking Panel を起動することができます。このパネルでは、DCC を終了しなくても、プロジェクト データを表示できます。現在の作業コンテキスト、およびこのコンテキスト内の最近のアクティビティが表示されます。フィードバック用のノートをパネルに直接追加することもできます。詳細については、<a href="https://developer.shotgridsoftware.com/ja/c0b0ce05/">Flow Production Tracking パネルのドキュメント</a>を参照してください。
 
     </p>
 </div>
@@ -13116,7 +13116,7 @@
 
 <p><strong>[保存] (Save)</strong>ボタンをクリックして、ティーポット モデルを保存します。</p>
 
-<p>この時点において重要なのは、アーティストが作業ファイルを開く手順、および保存する手順は、パイプラインのどの段階においても、ここで完了したのと同じ手順になることです。[File Open]および[File Save]ダイアログ ボックスは、Workfiles アプリに含まれています。この「マルチ」アプリは、ShotGrid 統合でサポートされているすべての DCC で実行され、すべてのアーティストに一貫性のあるワークフローを提供します。</p>
+<p>この時点において重要なのは、アーティストが作業ファイルを開く手順、および保存する手順は、パイプラインのどの段階においても、ここで完了したのと同じ手順になることです。[File Open]および[File Save]ダイアログ ボックスは、Workfiles アプリに含まれています。この「マルチ」アプリは、Flow Production Tracking 統合でサポートされているすべての DCC で実行され、すべてのアーティストに一貫性のあるワークフローを提供します。</p>
 
 <p>次の手順では、ティーポットにいくつかの変更を行います。ふたのジオメトリはモデルの残りの部分から独立しているため、後でリギングすることができます。</p>
 
@@ -13143,7 +13143,7 @@
 
 <p>このダイアログ ボックスには、パブリッシュされる内容を表す項目がツリー表示されます。ツリーには、パブリッシュ対象の項目を表すいくつかのエントリと、パブリッシュ操作中に実行されるアクションを表すいくつかのエントリが含まれています。</p>
 
-<p>ダイアログ ボックスの左側には、現在の Maya セッションを表す項目が表示されます。その下に、<strong>[ShotGrid にパブリッシュ] (Publish to ShotGrid)</strong>子アクションが表示されます。<strong>[すべてのセッション ジオメトリ] (All Session Geometry)</strong>を表す追加項目が、現在のセッションの子項目として表示されます。<strong>[ShotGrid にパブリッシュ] (Publish to ShotGrid)</strong>子アクションも表示されます。</p>
+<p>ダイアログ ボックスの左側には、現在の Maya セッションを表す項目が表示されます。その下に、<strong>[Flow Production Tracking にパブリッシュ] (Publish to Flow Production Tracking)</strong>子アクションが表示されます。<strong>[すべてのセッション ジオメトリ] (All Session Geometry)</strong>を表す追加項目が、現在のセッションの子項目として表示されます。<strong>[Flow Production Tracking にパブリッシュ] (Publish to Flow Production Tracking)</strong>子アクションも表示されます。</p>
 
 <div class="info-popup">
     <p>
@@ -13156,7 +13156,7 @@
 
 <p>ツリーの左側の項目をクリックして、Publish アプリを調べます。操作を行う項目を選択すると、パブリッシュする内容の説明を入力できます。また、右側のカメラ アイコンをクリックして、項目に関連付けられるスクリーンショットを作成することもできます。</p>
 
-<p>準備ができたら、右下の<strong>[パブリッシュ] (Publish)</strong>ボタンをクリックして、現在の作業ファイルとティーポット ジオメトリをパブリッシュします。完了したら、ShotGrid でティーポット アセットを参照し、パブリッシュが正常に完了したことを確認できます。</p>
+<p>準備ができたら、右下の<strong>[パブリッシュ] (Publish)</strong>ボタンをクリックして、現在の作業ファイルとティーポット ジオメトリをパブリッシュします。完了したら、Flow Production Tracking でティーポット アセットを参照し、パブリッシュが正常に完了したことを確認できます。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_19.png" style="" />
@@ -13203,7 +13203,7 @@
   
 </figure>
 
-<p>ティーポットのサーフェス作成タスクの作業が開始しました。右側のプロダクション コンテキスト内で作業していることを確認する最も簡単な方法は、ShotGrid メニューの最初のエントリを調べることです。</p>
+<p>ティーポットのサーフェス作成タスクの作業が開始しました。右側のプロダクション コンテキスト内で作業していることを確認する最も簡単な方法は、Flow Production Tracking メニューの最初のエントリを調べることです。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_22.png" style="" />
@@ -13461,7 +13461,7 @@
     </p>
 </div>
 
-<h5 id="shotgrid-統合を再ロードする">ShotGrid 統合を再ロードする</h5>
+<h5 id="shotgrid-統合を再ロードする">Flow Production Tracking 統合を再ロードする</h5>
 
 <p>カスタマイズを試すには、Maya セッション内で統合を再ロードする必要があります。このためには、<strong>[ShotGrid] &gt; (タスク名) &gt; [作業領域の情報…] (Work Area Info…)</strong>メニュー アクションをクリックします。</p>
 
@@ -13479,16 +13479,16 @@
 
 <h3 id="シェーダ-ネットワークをパブリッシュする">シェーダ ネットワークをパブリッシュする</h3>
 
-<p>これで、プロジェクトの設定を変更した場合の結果を確認できるようになりました。ShotGrid メニューから Publish アプリを起動します。<strong>Publish Shaders</strong> プラグインがアタッチされている、収集されたティーポット メッシュ項目が表示されます。</p>
+<p>これで、プロジェクトの設定を変更した場合の結果を確認できるようになりました。Flow Production Tracking メニューから Publish アプリを起動します。<strong>Publish Shaders</strong> プラグインがアタッチされている、収集されたティーポット メッシュ項目が表示されます。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_32.png" style="" />
   
 </figure>
 
-<p>作業の説明を入力し、サーフェス ティーポットのサムネイルを取り込んで、パブリッシュされたファイルに関連付けます。最後に、パブリッシュをクリックして、ティーポット シェーダをディスクに書き出して、このファイルをパブリッシュとして ShotGrid に登録します。完了すると、セッションのパブリッシュ プラグインによって、作業ファイルが次に使用可能なバージョンに自動的に保存されます。これが、ShotGrid 統合でサポートされているすべての DCC の既定の動作です。</p>
+<p>作業の説明を入力し、サーフェス ティーポットのサムネイルを取り込んで、パブリッシュされたファイルに関連付けます。最後に、パブリッシュをクリックして、ティーポット シェーダをディスクに書き出して、このファイルをパブリッシュとして Flow Production Tracking に登録します。完了すると、セッションのパブリッシュ プラグインによって、作業ファイルが次に使用可能なバージョンに自動的に保存されます。これが、Flow Production Tracking 統合でサポートされているすべての DCC の既定の動作です。</p>
 
-<p>これで、ShotGrid 内のティーポット アセットを参照して、すべてが予測どおりに機能したことを確認できるようになりました。</p>
+<p>これで、Flow Production Tracking 内のティーポット アセットを参照して、すべてが予測どおりに機能したことを確認できるようになりました。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_33.png" style="" />
@@ -13506,11 +13506,11 @@
 
 <h2 id="リギング-ワークフロー">リギング ワークフロー</h2>
 
-<p>現在、ShotGrid に付属している Workfile アプリおよび Publish アプリを使用すると、作業ファイルを開く(または作成する)、保存する、パブリッシュする操作を極めて快適に行うことができます。また、上流工程からパブリッシュをロードする Loader アプリを使用する機会もありました。学習した内容を使用して、次のタスクを完了します。</p>
+<p>現在、Flow Production Tracking に付属している Workfile アプリおよび Publish アプリを使用すると、作業ファイルを開く(または作成する)、保存する、パブリッシュする操作を極めて快適に行うことができます。また、上流工程からパブリッシュをロードする Loader アプリを使用する機会もありました。学習した内容を使用して、次のタスクを完了します。</p>
 
 <ul>
   <li>
-    <p>ShotGrid Desktop から Maya を起動する</p>
+    <p>Flow Production Tracking Toolkit から Maya を起動する</p>
   </li>
   <li>
     <p>ティーポット アセットのリギング ステップで、新しい作業ファイルを作成する</p>
@@ -13526,7 +13526,7 @@
   </li>
 </ul>
 
-<p>最終的には、ShotGrid で次のようになります。</p>
+<p>最終的には、Flow Production Tracking で次のようになります。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_35.png" style="" />
@@ -13570,7 +13570,7 @@
 
 <ul>
   <li>
-    <p>ShotGrid Desktop から Maya を起動する</p>
+    <p>Flow Production Tracking Toolkit から Maya を起動する</p>
   </li>
   <li>
     <p>ショットのレイアウト ステップで新しい作業ファイルを作成する(ヒント: ローダー内の[Shots]タブを使用する)</p>
@@ -13706,7 +13706,7 @@
   
 </figure>
 
-<p>図に示されているように、新しいカメラ項目が収集され、パブリッシュ プラグインがアタッチされます。先に進んで、<strong>[パブリッシュ] (Publish)</strong>をクリックしてディスクにカメラを書き込み、ShotGrid に登録します。</p>
+<p>図に示されているように、新しいカメラ項目が収集され、パブリッシュ プラグインがアタッチされます。先に進んで、<strong>[パブリッシュ] (Publish)</strong>をクリックしてディスクにカメラを書き込み、Flow Production Tracking に登録します。</p>
 
 <div class="info-popup">
     <p>
@@ -13717,7 +13717,7 @@
     </p>
 </div>
 
-<p>ShotGrid では次のように表示されます。</p>
+<p>Flow Production Tracking では次のように表示されます。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_46.png" style="" />
@@ -13734,7 +13734,7 @@
 
 <ul>
   <li>
-    <p>ShotGrid Desktop から Maya を起動する</p>
+    <p>Flow Production Tracking Toolkit から Maya を起動する</p>
   </li>
   <li>
     <p>ショットのアニメーション ステップで新しい作業ファイルを作成する</p>
@@ -13763,7 +13763,7 @@
 
 <p><strong><code class="highlighter-rouge">FBX Camera: [reference, import]</code></strong></p>
 
-<p>カスタム カメラ パブリッシュ プラグインでは、カメラをディスクに書き込む際に Maya の <strong><code class="highlighter-rouge">FBXExport</code></strong> mel コマンドを使用しました。ShotGrid にファイルを登録する際に使用したパブリッシュ タイプは <strong><code class="highlighter-rouge">FBX Camera</code></strong> でした。設定に追加された行は、ローダーに対して、タイプ <strong><code class="highlighter-rouge">FBX Camera</code></strong> の任意のパブリッシュの <strong><code class="highlighter-rouge">reference</code></strong> および <strong><code class="highlighter-rouge">import</code></strong> アクションを表示するように指示します。これらのアクションは、Loader アプリの <a href="https://github.com/shotgunsoftware/tk-multi-loader2/blob/master/hooks/tk-maya_actions.py">tk-maya-actions.py</a> フックで定義されています。これらのアクションは、Maya が参照できる、または読み込むことができる任意のファイル タイプを処理するように実装されています。カスタム プラグインによって生成された <strong><code class="highlighter-rouge">.fbx</code></strong> ファイルはこのカテゴリに分類されるため、これが、パブリッシュされたカメラをロードできるようにするために必要な唯一の変更になります。</p>
+<p>カスタム カメラ パブリッシュ プラグインでは、カメラをディスクに書き込む際に Maya の <strong><code class="highlighter-rouge">FBXExport</code></strong> mel コマンドを使用しました。Flow Production Tracking にファイルを登録する際に使用したパブリッシュ タイプは <strong><code class="highlighter-rouge">FBX Camera</code></strong> でした。設定に追加された行は、ローダーに対して、タイプ <strong><code class="highlighter-rouge">FBX Camera</code></strong> の任意のパブリッシュの <strong><code class="highlighter-rouge">reference</code></strong> および <strong><code class="highlighter-rouge">import</code></strong> アクションを表示するように指示します。これらのアクションは、Loader アプリの <a href="https://github.com/shotgunsoftware/tk-multi-loader2/blob/master/hooks/tk-maya_actions.py">tk-maya-actions.py</a> フックで定義されています。これらのアクションは、Maya が参照できる、または読み込むことができる任意のファイル タイプを処理するように実装されています。カスタム プラグインによって生成された <strong><code class="highlighter-rouge">.fbx</code></strong> ファイルはこのカテゴリに分類されるため、これが、パブリッシュされたカメラをロードできるようにするために必要な唯一の変更になります。</p>
 
 <p>アプリの設定は次のようになります。</p>
 
@@ -13800,7 +13800,7 @@
 
 <ul>
   <li>
-    <p>ShotGrid Desktop から Maya を起動する</p>
+    <p>Flow Production Tracking Toolkit から Maya を起動する</p>
   </li>
   <li>
     <p>ショットの照明ステップで新しい作業ファイルを作成する</p>
@@ -13928,14 +13928,14 @@
     </p>
 </div>
 
-<p>付属の ShotGrid 統合は、ファイル内で定義されたレンダリング レイヤを調べて、イメージ シーケンスを収集します。レンダリングが完了したら、パブリッシャーを起動します。レンダリングされたシーケンスがツリー内の項目として表示されます。</p>
+<p>付属の Flow Production Tracking 統合は、ファイル内で定義されたレンダリング レイヤを調べて、イメージ シーケンスを収集します。レンダリングが完了したら、パブリッシャーを起動します。レンダリングされたシーケンスがツリー内の項目として表示されます。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_55.png" style="" />
   
 </figure>
 
-<p>先に進んで、セッションおよびレンダリングされたイメージ ファイル シーケンスをパブリッシュします。ShotGrid では次のように表示されます。</p>
+<p>先に進んで、セッションおよびレンダリングされたイメージ ファイル シーケンスをパブリッシュします。Flow Production Tracking では次のように表示されます。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_56.png" style="" />
@@ -13946,13 +13946,13 @@
 
 <h2 id="コンポジット-ワークフロー">コンポジット ワークフロー</h2>
 
-<p>チュートリアルのこの最終セクションでは、Nuke が提供する既定の統合をいくつか紹介します。以前のセクションで参照したアプリの他に、ShotGrid 対応書き込みノードや、レビューのためにレンダーを他のユーザにすばやく送信するためのアプリについて学習します。</p>
+<p>チュートリアルのこの最終セクションでは、Nuke が提供する既定の統合をいくつか紹介します。以前のセクションで参照したアプリの他に、Flow Production Tracking 対応書き込みノードや、レビューのためにレンダーを他のユーザにすばやく送信するためのアプリについて学習します。</p>
 
 <p>最初に、次に示す手順を行って作業ファイルを準備します。</p>
 
 <ul>
   <li>
-    <p>ShotGrid Desktop から Nuke を起動する</p>
+    <p>Flow Production Tracking Toolkit から Nuke を起動する</p>
   </li>
   <li>
     <p>Maya と同様に、[ShotGrid] &gt; [File Open]メニュー アクションを使用して、ショットのコンポジット ステップ内で新しい作業ファイルを作成します。</p>
@@ -13977,53 +13977,53 @@
 
 <p>コンポジットに問題がなければ、<strong>[ShotGrid] &gt; [ファイルを保存…] (File Save…)</strong>メニュー アクションを使用して、作業ファイルを保存します。</p>
 
-<p>次に、Nuke の左側メニューで ShotGrid のロゴをクリックします。このメニューの ShotGrid 対応書き込みノードの 1 つをクリックします。</p>
+<p>次に、Nuke の左側メニューで Flow Production Tracking のロゴをクリックします。このメニューの Flow Production Tracking 対応書き込みノードの 1 つをクリックします。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_59.png" style="width: 400px;" />
   
 </figure>
 
-<p>ShotGrid Write Node アプリは、現在の ShotGrid のコンテキストに基づいて出力パスを自動的に評価する組み込みの Nuke 書き込みノードの上に、レイヤを配置します。</p>
+<p>Flow Production Tracking Write Node アプリは、現在の Flow Production Tracking のコンテキストに基づいて出力パスを自動的に評価する組み込みの Nuke 書き込みノードの上に、レイヤを配置します。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_60.png" style="" />
   
 </figure>
 
-<p>ディスクにイメージ フレームをレンダリングします。Nuke セッションをパブリッシュして、レンダリングされたイメージに作業ファイルを関連付けられるようになりました。既定では、パブリッシャーはレンダリングされたフレームを収集し、ShotGrid にフレームを登録するプラグインをアタッチします。2 番目のプラグインは、レビュー提出と呼ばれる、バックグラウンドで実行される統合方法を使用して、フレームをアップロードします。このアプリは Nuke を使用して QuickTime を生成します。生成された QuickTime は、アップロードしたり、レビューしたりできます。</p>
+<p>ディスクにイメージ フレームをレンダリングします。Nuke セッションをパブリッシュして、レンダリングされたイメージに作業ファイルを関連付けられるようになりました。既定では、パブリッシャーはレンダリングされたフレームを収集し、Flow Production Tracking にフレームを登録するプラグインをアタッチします。2 番目のプラグインは、レビュー提出と呼ばれる、バックグラウンドで実行される統合方法を使用して、フレームをアップロードします。このアプリは Nuke を使用して QuickTime を生成します。生成された QuickTime は、アップロードしたり、レビューしたりできます。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_61.png" style="" />
   
 </figure>
 
-<p>もう 1 つの便利な統合は、Quick Review アプリです。これは、QuickTime をすばやく生成して、レビューのために ShotGrid にアップロードする出力ノードです。このアプリは、左側メニュー内の、ShotGrid 書き込みノードの横にあります。</p>
+<p>もう 1 つの便利な統合は、Quick Review アプリです。これは、QuickTime をすばやく生成して、レビューのために Flow Production Tracking にアップロードする出力ノードです。このアプリは、左側メニュー内の、Flow Production Tracking 書き込みノードの横にあります。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_62.png" style="width: 400px;" />
   
 </figure>
 
-<p>Quick Review ノードを作成してから、[Upload]ボタンをクリックして、ディスクへの入力のレンダリング、QuickTime の生成、レビューのための ShotGrid への結果のアップロードを行います。フレームを提出する前に、いくつかの標準オプションが表示されます。</p>
+<p>Quick Review ノードを作成してから、[Upload]ボタンをクリックして、ディスクへの入力のレンダリング、QuickTime の生成、レビューのための Flow Production Tracking への結果のアップロードを行います。フレームを提出する前に、いくつかの標準オプションが表示されます。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_63.png" style="" />
   
 </figure>
 
-<p>ShotGrid の[メディア] (Media)タブを調べて、アップロードされた QuickTime を両方とも確認します。</p>
+<p>Flow Production Tracking の[メディア] (Media)タブを調べて、アップロードされた QuickTime を両方とも確認します。</p>
 
 <figure>
   <img src="/ja/guides/pipeline-integrations/workflows/images/tutorial/image_64.png" style="" />
   
 </figure>
 
-<p>ShotGrid のメディアのレビューの詳細については、<a href="https://help.autodesk.com/view/SGSUB/JPN/?guid=SG_Supervisor_Artist_sa_review_approval_html">公式ドキュメント</a>を参照してください。</p>
+<p>Flow Production Tracking のメディアのレビューの詳細については、<a href="https://help.autodesk.com/view/SGSUB/JPN/?guid=SG_Supervisor_Artist_sa_review_approval_html">公式ドキュメント</a>を参照してください。</p>
 
 <h1 id="まとめ">まとめ</h1>
 
-<p>おめでとうございます。これで完了です。このチュートリアルが、ShotGrid 統合を使用して独自のカスタム パイプラインを作成する際の第一歩になるはずです。スタジオ固有のニーズに合わせて既定の統合を拡張する方法について理解できたことでしょう。</p>
+<p>おめでとうございます。これで完了です。このチュートリアルが、Flow Production Tracking 統合を使用して独自のカスタム パイプラインを作成する際の第一歩になるはずです。スタジオ固有のニーズに合わせて既定の統合を拡張する方法について理解できたことでしょう。</p>
 
 <p>質問したり、他のスタジオが Toolkit をどう使用しているかについて学習するには、<a href="https://groups.google.com/a/shotgunsoftware.com/forum/#!forum/shotgun-dev">shotgun-dev Google グループ</a>を使用してください。常に最新の投稿を読むことができるよう、サブスクライプすることをお勧めします。</p>
 

@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/ja/7584b650/?title=Alias+ShotGrid+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
+                href="/ja/7584b650/?title=Alias+Flow+Production+Tracking+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
             >
-                Alias ShotGrid ワークフロー
+                Alias Flow Production Tracking ワークフロー
             </a>
             </div>
 
@@ -8948,7 +8948,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -11579,9 +11579,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -13945,7 +13945,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -15015,7 +15015,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -15090,7 +15090,7 @@
 
             <h1 id="パスを生成してパブリッシュする">パスを生成してパブリッシュする</h1>
 
-<p>このガイドでは、パイプライン統合を構築する際に使用される ShotGrid Toolkit Python API の使用方法について説明します。</p>
+<p>このガイドでは、パイプライン統合を構築する際に使用される Flow Production Tracking Toolkit Python API の使用方法について説明します。</p>
 
 <p>このガイドの目的は、API の使用方法の基本的な例を紹介することです。このガイドを読み終えると、Toolkit API の読み込みや、パスの生成およびパブリッシュを実行できるようになります。</p>
 
@@ -15128,14 +15128,14 @@
     </p>
 </div>
 
-<p>API を読み込むには、<a href="https://github.com/shotgunsoftware/tk-core/tree/v0.18.167/python">コアの Python フォルダ</a>のパスが <a href="https://docs.python.org/3/library/sys.html#sys.path"><code class="highlighter-rouge">sys.path</code></a> 内に存在することを確認する必要があります。ただし、この例では、ShotGrid Desktop の Python コンソールでこのコードを実行することをお勧めします。
-これは、<code class="highlighter-rouge">sgtk</code> パッケージの正しいパスが <code class="highlighter-rouge">sys.path</code> に既に追加されていることを意味します。同様に、ShotGrid の統合が既に実行されているソフトウェア内でこのコードを実行する場合は、パスを追加する必要はありません。</p>
+<p>API を読み込むには、<a href="https://github.com/shotgunsoftware/tk-core/tree/v0.18.167/python">コアの Python フォルダ</a>のパスが <a href="https://docs.python.org/3/library/sys.html#sys.path"><code class="highlighter-rouge">sys.path</code></a> 内に存在することを確認する必要があります。ただし、この例では、Flow Production Tracking Toolkit の Python コンソールでこのコードを実行することをお勧めします。
+これは、<code class="highlighter-rouge">sgtk</code> パッケージの正しいパスが <code class="highlighter-rouge">sys.path</code> に既に追加されていることを意味します。同様に、Flow Production Tracking の統合が既に実行されているソフトウェア内でこのコードを実行する場合は、パスを追加する必要はありません。</p>
 
-<p>ShotGrid が既に起動されている環境でコードを実行する場合は、次のように記述するだけで API を読み込むことができます。</p>
+<p>Flow Production Tracking が既に起動されている環境でコードを実行する場合は、次のように記述するだけで API を読み込むことができます。</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sgtk</span>
 </code></pre></div></div>
-<p>お気に入りの IDE でテストしている場合のように、ShotGrid の統合の外部で API を使用する場合は、最初に API のパスを設定する必要があります。</p>
+<p>お気に入りの IDE でテストしている場合のように、Flow Production Tracking の統合の外部で API を使用する場合は、最初に API のパスを設定する必要があります。</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">"/shotgun/configs/my_project_config/install/core/python"</span><span class="p">)</span>
@@ -15163,7 +15163,7 @@
 
 <ol>
   <li>
-    <p>ShotGrid 統合が既に実行されている環境内で(ShotGrid から Maya を起動した場合は、Maya Python コンソールなどで) Python コードを実行している場合は、現在のエンジンから <code class="highlighter-rouge">Sgtk</code> インスタンスを取得できます。
+    <p>Flow Production Tracking 統合が既に実行されている環境内で(Flow Production Tracking から Maya を起動した場合は、Maya Python コンソールなどで) Python コードを実行している場合は、現在のエンジンから <code class="highlighter-rouge">Sgtk</code> インスタンスを取得できます。
 <code class="highlighter-rouge">Engine.sgtk</code> プロパティにはエンジンの <code class="highlighter-rouge">Sgtk</code> インスタンスが保持されます。したがって、Maya などで次のコマンドを実行できます。</p>
 
     <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Get the engine that is currently running.
@@ -15187,7 +15187,7 @@
   </li>
 </ol>
 
-<p>このガイドでは、エンジンが既に起動されている環境でこのコードを実行していることが前提となっているため、オプション 1 を使用します。また、<code class="highlighter-rouge">tk</code> という名前の変数に <code class="highlighter-rouge">Sgtk</code> クラス インスタンスを格納します。ShotGrid Python コンソールを使用している場合、<code class="highlighter-rouge">tk</code> 変数はグローバル変数として既に定義されています。</p>
+<p>このガイドでは、エンジンが既に起動されている環境でこのコードを実行していることが前提となっているため、オプション 1 を使用します。また、<code class="highlighter-rouge">tk</code> という名前の変数に <code class="highlighter-rouge">Sgtk</code> クラス インスタンスを格納します。Flow Production Tracking Python コンソールを使用している場合、<code class="highlighter-rouge">tk</code> 変数はグローバル変数として既に定義されています。</p>
 
 <p>これで、<code class="highlighter-rouge">Sgtk</code> インスタンスが作成され、API を使用する準備が整いました。パブリッシュ スクリプトは次のようになります。</p>
 
@@ -15204,7 +15204,7 @@
 
 <h3 id="コンテキストとは何かなぜ必要なのか">コンテキストとは何か、なぜ必要なのか?</h3>
 
-<p>Toolkit の多くの機能は、コンテキストに関するものです。つまり、自分が作業している対象を認識し、それに応じた対応を可能にします。Toolkit API を使用している場合に、コンテキストに対応する動作を実現するには、使用しているエンティティに関する重要な情報を保存する機能や、アプリまたは他のプロセスでこれらの情報を共有する機能が必要になります。たとえば、ユーザが作業しているタスクを Toolkit が認識している場合、Toolkit はユーザがパブリッシュしたファイルを ShotGrid 内のこのタスクに自動的にリンクすることができます。</p>
+<p>Toolkit の多くの機能は、コンテキストに関するものです。つまり、自分が作業している対象を認識し、それに応じた対応を可能にします。Toolkit API を使用している場合に、コンテキストに対応する動作を実現するには、使用しているエンティティに関する重要な情報を保存する機能や、アプリまたは他のプロセスでこれらの情報を共有する機能が必要になります。たとえば、ユーザが作業しているタスクを Toolkit が認識している場合、Toolkit はユーザがパブリッシュしたファイルを Flow Production Tracking 内のこのタスクに自動的にリンクすることができます。</p>
 
 <p><a href="https://developer.shotgridsoftware.com/tk-core/core.html#context"><code class="highlighter-rouge">Context</code> クラス</a>は、この情報のコンテナとして機能します。
 特に、<code class="highlighter-rouge">Task</code>、<code class="highlighter-rouge">Step</code>、<code class="highlighter-rouge">entity</code> (<code class="highlighter-rouge">Shot</code> または <code class="highlighter-rouge">Asset</code> など)、<code class="highlighter-rouge">Project</code>、および現在の <code class="highlighter-rouge">HumanUser</code> をクラスのインスタンス内に保存することができます。</p>
@@ -15405,15 +15405,15 @@
 <p>ここで使用できるメソッドは 2 つあります。</p>
 
 <ol>
-  <li>この特定の例ではパブリッシュ ファイルを解決しているため、<a href="https://developer.shotgridsoftware.com/python-api/">ShotGrid API</a> を使用して、<code class="highlighter-rouge">PublishedFile</code> エンティティで使用可能な次のバージョン番号をクエリーすることができます。</li>
-  <li>ディスク上のファイルをスキャンして、既に存在するバージョンを調べ、次のバージョン番号を抽出することができます。これは、作業しているファイルが ShotGrid でトラックされていない場合(作業ファイルなどの場合)に役立ちます。</li>
+  <li>この特定の例ではパブリッシュ ファイルを解決しているため、<a href="https://developer.shotgridsoftware.com/python-api/">Flow Production Tracking API</a> を使用して、<code class="highlighter-rouge">PublishedFile</code> エンティティで使用可能な次のバージョン番号をクエリーすることができます。</li>
+  <li>ディスク上のファイルをスキャンして、既に存在するバージョンを調べ、次のバージョン番号を抽出することができます。これは、作業しているファイルが Flow Production Tracking でトラックされていない場合(作業ファイルなどの場合)に役立ちます。</li>
 </ol>
 
 <p>最初の方法はこのガイドの例として最適ですが、どちらの方法にも使い道があるため、両方について説明します。</p>
 
-<h3 id="shotgrid-に次のバージョン番号を照会します">ShotGrid に次のバージョン番号を照会します。</h3>
+<h3 id="shotgrid-に次のバージョン番号を照会します">Flow Production Tracking に次のバージョン番号を照会します。</h3>
 
-<p>ShotGrid API と <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.summarize"><code class="highlighter-rouge">summarize()</code> メソッド</a>を使用すると、同じ名前およびタスクを共有する <code class="highlighter-rouge">PublishedFile</code> エンティティの中で最大のバージョン番号を取得して、1 を追加することができます。</p>
+<p>Flow Production Tracking API と <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.summarize"><code class="highlighter-rouge">summarize()</code> メソッド</a>を使用すると、同じ名前およびタスクを共有する <code class="highlighter-rouge">PublishedFile</code> エンティティの中で最大のバージョン番号を取得して、1 を追加することができます。</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r</span> <span class="o">=</span> <span class="n">sg</span><span class="o">.</span><span class="n">summarize</span><span class="p">(</span><span class="n">entity_type</span><span class="o">=</span><span class="s">"PublishedFile"</span><span class="p">,</span>
                  <span class="n">filters</span> <span class="o">=</span> <span class="p">[[</span><span class="s">"task"</span><span class="p">,</span> <span class="s">"is"</span><span class="p">,</span> <span class="p">{</span><span class="s">"type"</span><span class="p">:</span><span class="s">"Task"</span><span class="p">,</span> <span class="s">"id"</span><span class="p">:</span> <span class="n">context</span><span class="o">.</span><span class="n">task</span><span class="p">[</span><span class="s">"id"</span><span class="p">]}],</span>
@@ -15467,7 +15467,7 @@
 
 <p>パスが作成されたので、パブリッシュすることができます。この操作を行うには、ユーティリティ メソッド <a href="https://developer.shotgridsoftware.com/tk-core/utils.html?#sgtk.util.register_publish"><code class="highlighter-rouge">sgtk.util.register_publish()</code></a> を使用します。</p>
 
-<p>ShotGrid API の <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.create"><code class="highlighter-rouge">ShotGrid.create()</code></a> メソッドを使用して <code class="highlighter-rouge">PublishedFile</code> エンティティを作成することもできますが、Toolkit API を使用する方法を強くお勧めします。Toolkit API を使用すると、すべての必須フィールドが正しく指定および入力されていることを確認できます。</p>
+<p>Flow Production Tracking API の <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.create"><code class="highlighter-rouge">ShotGrid.create()</code></a> メソッドを使用して <code class="highlighter-rouge">PublishedFile</code> エンティティを作成することもできますが、Toolkit API を使用する方法を強くお勧めします。Toolkit API を使用すると、すべての必須フィールドが正しく指定および入力されていることを確認できます。</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># So as to match the Publish app's default behavior, we are adding the extension to the end of the publish name.
 # This is optional, however.

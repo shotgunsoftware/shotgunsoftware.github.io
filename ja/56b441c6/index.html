@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -3825,9 +3825,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/ja/7584b650/?title=Alias+ShotGrid+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
+                href="/ja/7584b650/?title=Alias+Flow+Production+Tracking+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC"
             >
-                Alias ShotGrid ワークフロー
+                Alias Flow Production Tracking ワークフロー
             </a>
             </div>
 
@@ -7119,7 +7119,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -9750,9 +9750,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -12116,7 +12116,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -13186,7 +13186,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -13265,9 +13265,9 @@
 
 <h2 id="このガイドについて">このガイドについて</h2>
 
-<p>パイプラインを管理する上で最も難しいことの 1 つは、作成される無数のファイルをトラックすることです。Toolkit のパイプラインはファイルシステム管理を自動化します。すなわち、ShotGrid のデータおよび設定されたフォルダ構造に基づいてフォルダを作成し、標準の命名規則に従って正しい場所に自動的にファイルを書き込みます。そのためアーティストはコンテンツ作成に集中できます。パイプライン設定には、既定のフォルダのセットとファイル命名規則がありますが、プロダクションではそれらをカスタマイズすることがよくあります。このガイドは、それらのカスタマイズに必要な知識を提供します。</p>
+<p>パイプラインを管理する上で最も難しいことの 1 つは、作成される無数のファイルをトラックすることです。Toolkit のパイプラインはファイルシステム管理を自動化します。すなわち、Flow Production Tracking のデータおよび設定されたフォルダ構造に基づいてフォルダを作成し、標準の命名規則に従って正しい場所に自動的にファイルを書き込みます。そのためアーティストはコンテンツ作成に集中できます。パイプライン設定には、既定のフォルダのセットとファイル命名規則がありますが、プロダクションではそれらをカスタマイズすることがよくあります。このガイドは、それらのカスタマイズに必要な知識を提供します。</p>
 
-<p>既定の設定では、アセットは <code class="highlighter-rouge">asset_type/asset/pipeline_step</code> のようなフォルダ構造で管理されます。このガイドでは、「Set」と呼ばれるカスタム エンティティを使用して、各アセットが使用されるプロダクション セット別にアセットを整理します。最初に ShotGrid でカスタム エンティティを設定し、それを使用して特定のセット用に作成されたアセットを管理します。その結果、フォルダ構造は <code class="highlighter-rouge">set/asset_type/asset/pipeline_step</code> のようになります。</p>
+<p>既定の設定では、アセットは <code class="highlighter-rouge">asset_type/asset/pipeline_step</code> のようなフォルダ構造で管理されます。このガイドでは、「Set」と呼ばれるカスタム エンティティを使用して、各アセットが使用されるプロダクション セット別にアセットを整理します。最初に Flow Production Tracking でカスタム エンティティを設定し、それを使用して特定のセット用に作成されたアセットを管理します。その結果、フォルダ構造は <code class="highlighter-rouge">set/asset_type/asset/pipeline_step</code> のようになります。</p>
 
 <p>セットによってアセットを整理することの背景にある考え方を、例を挙げて説明してみましょう。たとえば、いくつかのシーンがガレージで発生し、別のシーンがダイニング ルームで発生するプロジェクトがあるとします。このセットアップでは、「wrench」、「oilcan」、「workbench」などのアセットのファイルは「garage」フォルダに整理され、「plate」、「winebottle」、または「tablecloth」は「dining_room」フォルダに整理されます。この例では、ダイニング ルームに肉汁たっぷりの「filet」アセットが適切に配置されていることを確認します。</p>
 
@@ -13276,7 +13276,7 @@
 <h3 id="このガイドの次の-3-つの手順">このガイドの次の 3 つの手順</h3>
 
 <ul>
-  <li>ShotGrid で、「Set」とよばれる<strong>カスタム エンティティ</strong>を作成します。これは、アーティストが作成しているダイニング ルームの要素と関連付けるために使用します。</li>
+  <li>Flow Production Tracking で、「Set」とよばれる<strong>カスタム エンティティ</strong>を作成します。これは、アーティストが作成しているダイニング ルームの要素と関連付けるために使用します。</li>
   <li>フォルダの<strong>スキーマ</strong>を編集します。これによって、Toolkit はフォルダ構造内の現在のセットに基づいて動的に名前が付けられたフォルダを含めることができます。</li>
   <li>アセット ワーク ファイルの命名に使用される<strong>テンプレート</strong>を編集します。これによって、Toolkit はファイル名に関連付けられたセットの名前を含めることができます。</li>
 </ul>
@@ -13287,8 +13287,8 @@
 
 <ol>
   <li>アクティブな <a href="https://www.shotgridsoftware.com/signup/">ShotGrid</a> サイト。少なくとも 1 つのアセットが作成されたプロジェクトが必要です。アセットにはモデル タスクが必要です。</li>
-  <li>ShotGrid サイトを使用してアセットを管理する方法の基本的な理解。</li>
-  <li><a href="https://developer.shotgridsoftware.com/ja/d587be80/#installation-of-desktop">システムにインストールされた ShotGrid Desktop</a>。</li>
+  <li>Flow Production Tracking サイトを使用してアセットを管理する方法の基本的な理解。</li>
+  <li><a href="https://developer.shotgridsoftware.com/ja/d587be80/#installation-of-desktop">システムにインストールされた Flow Production Tracking Toolkit</a>。</li>
   <li>指定したプロジェクトのクローン作成されたパイプライン設定、または「<a href="/ja/5d83a936/">設定の基本操作</a>」ガイドを参照して、この演習で作成された設定のクローンを作成します。</li>
   <li>YAML の基本的な知識。</li>
   <li>パイプライン設定を保存するファイルシステムに最適になるように設定された読み取りおよび書き込み権限。</li>
@@ -13300,13 +13300,13 @@
 
 <h3 id="ファイル-スキーマとテンプレートについて">ファイル スキーマとテンプレートについて</h3>
 
-<p>Toolkit パイプライン設定のスキーマとテンプレートを使用すると、ShotGrid データを利用してディスク上のプロダクション ファイルを管理できます。既定の設定のスキーマには、<strong>Shot</strong>、<strong>Sequence</strong>、<strong>Asset</strong>、<strong>Asset Type</strong> などのエンティティが含まれています。その他の <strong>Level</strong>、<strong>Episode</strong>、<strong>Season</strong> などのエンティティ、または今回使用する <strong>Set</strong> などのカスタム エンティティを追加できます。</p>
+<p>Toolkit パイプライン設定のスキーマとテンプレートを使用すると、Flow Production Tracking データを利用してディスク上のプロダクション ファイルを管理できます。既定の設定のスキーマには、<strong>Shot</strong>、<strong>Sequence</strong>、<strong>Asset</strong>、<strong>Asset Type</strong> などのエンティティが含まれています。その他の <strong>Level</strong>、<strong>Episode</strong>、<strong>Season</strong> などのエンティティ、または今回使用する <strong>Set</strong> などのカスタム エンティティを追加できます。</p>
 
 <p>Toolkit プラットフォームでは<strong>スキーマ</strong>を使用してフォルダ構造を動的に構築できます。これは、実際のプロダクション ファイルシステムを構築するときのテンプレートとして使用されるプロダクション フォルダ構造のミニチュア バージョンです。スキーマはフォルダの動的作成のための明示的なガイドで、YAML ファイルを使用して動的に作成されるフォルダのルールを定義します。既定の設定には、アセットとショットの両方のパイプラインのフォルダ作成をサポートする事前設定されたスキーマが含まれています。作成している新しい <strong>Set</strong> エンティティのサポートを追加するために、アセット フォルダ構造の作成をサポートするスキーマの部分 <code class="highlighter-rouge">/assets/&lt;asset_type&gt;/&lt;asset&gt;/&lt;step&gt;</code> を変更します。</p>
 
-<p><strong>テンプレート</strong>を使用すると、ShotGrid のデータとスキーマ構造の情報を使用して作成したファイルに動的に名前を付けて保存することができます。既定の設定には、パイプラインのニーズに合わせて編集できる一連のスタータ テンプレートが用意されています。</p>
+<p><strong>テンプレート</strong>を使用すると、Flow Production Tracking のデータとスキーマ構造の情報を使用して作成したファイルに動的に名前を付けて保存することができます。既定の設定には、パイプラインのニーズに合わせて編集できる一連のスタータ テンプレートが用意されています。</p>
 
-<p>ShotGrid 統合の基本設定にファイルシステム管理は含まれません。プロジェクトのファイルシステム管理を設定するには、プロジェクトに高度な設定が必要です。最初のガイドの「<a href="/ja/5d83a936/">設定の基本操作</a>」で、高度なセットアップ プロセスについて説明しています。</p>
+<p>Flow Production Tracking 統合の基本設定にファイルシステム管理は含まれません。プロジェクトのファイルシステム管理を設定するには、プロジェクトに高度な設定が必要です。最初のガイドの「<a href="/ja/5d83a936/">設定の基本操作</a>」で、高度なセットアップ プロセスについて説明しています。</p>
 
 <h2 id="実習を開始">実習を開始</h2>
 
@@ -13314,11 +13314,11 @@
 
 <h3 id="カスタム-エンティティを有効にする">カスタム エンティティを有効にする</h3>
 
-<p><strong>手順 1:</strong> ブラウザで ShotGrid サイトを開きます。アバターをクリックして、[管理者] (ADMIN)&gt; [サイト基本設定] (Site Preferences)の順にクリックします。結果のページで<strong>[エンティティ]（Entities）</strong>セクションを展開します。</p>
+<p><strong>手順 1:</strong> ブラウザで Flow Production Tracking サイトを開きます。アバターをクリックして、[管理者] (ADMIN)&gt; [サイト基本設定] (Site Preferences)の順にクリックします。結果のページで<strong>[エンティティ]（Entities）</strong>セクションを展開します。</p>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/dynamic_filesystem_configuration/1_site_preferences.png" alt="Python アプリ" /></p>
 
-<p>ShotGrid で利用可能なエンティティのタイプのリストが表示されます。下図のリストの一番上には、現在の ShotGrid サイト用に構成されているいくつかのエンティティ タイプが示されています。これらのエンティティ タイプの下には、設定も有効化もされていないいくつかの<strong>カスタム エンティティ</strong>があります。</p>
+<p>Flow Production Tracking で利用可能なエンティティのタイプのリストが表示されます。下図のリストの一番上には、現在の Flow Production Tracking サイト用に構成されているいくつかのエンティティ タイプが示されています。これらのエンティティ タイプの下には、設定も有効化もされていないいくつかの<strong>カスタム エンティティ</strong>があります。</p>
 
 <h3 id="カスタム-エンティティ-タイプをどれか選択して設定し有効にします">カスタム エンティティ タイプをどれか選択して設定し、有効にします。</h3>
 
@@ -13328,7 +13328,7 @@
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/dynamic_filesystem_configuration/4_enable_entity.png" alt="Python アプリ" /></p>
 
-<p>これによって、カスタム エンティティが ShotGrid でアクティブになり、表示名が <em>Set</em> になります。エンティティのシステム名は <code class="highlighter-rouge">CustomEntity01</code> のままなので、基本的にここではカスタム エンティティの別名を作成していることになります。この例では、<code class="highlighter-rouge">CustomEntity01</code> を使用していますが、別のカスタム エンティティを使用することもできます。</p>
+<p>これによって、カスタム エンティティが Flow Production Tracking でアクティブになり、表示名が <em>Set</em> になります。エンティティのシステム名は <code class="highlighter-rouge">CustomEntity01</code> のままなので、基本的にここではカスタム エンティティの別名を作成していることになります。この例では、<code class="highlighter-rouge">CustomEntity01</code> を使用していますが、別のカスタム エンティティを使用することもできます。</p>
 
 <p>選択したカスタム エンティティのシステム名をメモしておいてください。</p>
 
@@ -13356,7 +13356,7 @@
 
 <p>このガイドでは、<strong>[現在のプロジェクトのみ] (Only the current project)</strong>に適用し、<strong>[フィールドを作成] (Create Field)</strong>を選択します。</p>
 
-<p>ShotGrid は新しいフィールドを設定します。</p>
+<p>Flow Production Tracking は新しいフィールドを設定します。</p>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/dynamic_filesystem_configuration/8_only_current_project.png" alt="Python アプリ" /></p>
 
@@ -13382,7 +13382,7 @@
 
 <h3 id="スキーマを設定する">スキーマを設定する</h3>
 
-<p>これで、Set カスタム エンティティが有効になり、「Dining Room」と呼ばれる Set エンティティが作成され、Asset エンティティがダイニング ルームのセットにリンクされました。ShotGrid サイトにすべての要素が配置されたので、フォルダ構造の変更を開始できます。アーティストがタスクでの作業を開始すると、Toolkit は関連付けられた ShotGrid のデータを使用してファイルシステムに作成するフォルダを決定します。パイプライン設定のスキーマに基づいて、新しいフォルダが作成され、自動的に名前が付けられます。</p>
+<p>これで、Set カスタム エンティティが有効になり、「Dining Room」と呼ばれる Set エンティティが作成され、Asset エンティティがダイニング ルームのセットにリンクされました。Flow Production Tracking サイトにすべての要素が配置されたので、フォルダ構造の変更を開始できます。アーティストがタスクでの作業を開始すると、Toolkit は関連付けられた Flow Production Tracking のデータを使用してファイルシステムに作成するフォルダを決定します。パイプライン設定のスキーマに基づいて、新しいフォルダが作成され、自動的に名前が付けられます。</p>
 
 <p>次に、アーティストがプロダクション パイプラインを実行する際に Toolkit が動的に生成するフォルダ構造を定義します。これは、スキーマを編集することで実行されます。</p>
 
@@ -13408,7 +13408,7 @@
 
 <p><code class="highlighter-rouge">&lt;project&gt;/assets/&lt;CustomEntity01&gt;/&lt;asset_type&gt;/&lt;asset&gt;/&lt;step&gt;</code></p>
 
-<p>Set エンティティは <code class="highlighter-rouge">CustomEntity01</code> として表されます。ShotGrid で CustomEntity01 に Set という<em>表示名</em>を付けましたが、この構成では常にそのシステム名 <code class="highlighter-rouge">CustomEntity01</code> でこれを参照します。</p>
+<p>Set エンティティは <code class="highlighter-rouge">CustomEntity01</code> として表されます。Flow Production Tracking で CustomEntity01 に Set という<em>表示名</em>を付けましたが、この構成では常にそのシステム名 <code class="highlighter-rouge">CustomEntity01</code> でこれを参照します。</p>
 
 <h3 id="スキーマが-yaml-ファイルを使用する方法">スキーマが YAML ファイルを使用する方法</h3>
 
@@ -13416,7 +13416,7 @@
 
 <h3 id="set-エンティティの新しいフォルダと-yaml-ファイルを作成します">Set エンティティの新しいフォルダと YAML ファイルを作成します。</h3>
 
-<p>スキーマには、ShotGrid が追跡するさまざまなエンティティに関連するフォルダを含む <code class="highlighter-rouge">project</code> フォルダがあります。ShotGrid が Set 内のアイテムをトラックできるようにするために、新しいアセット エンティティ CustomEntity01 を追加します。これらのアイテムはアセットなので、アセットの下のフォルダと YAML ファイルを編集します。</p>
+<p>スキーマには、Flow Production Tracking が追跡するさまざまなエンティティに関連するフォルダを含む <code class="highlighter-rouge">project</code> フォルダがあります。Flow Production Tracking が Set 内のアイテムをトラックできるようにするために、新しいアセット エンティティ CustomEntity01 を追加します。これらのアイテムはアセットなので、アセットの下のフォルダと YAML ファイルを編集します。</p>
 
 <p>繰り返しますが、目標は <code class="highlighter-rouge">asset_type/asset/step</code> フォルダ構造から <code class="highlighter-rouge">set/asset_type/asset/step</code> に移動することです。そこで、スキーマ内のセットを表すフォルダを、対応する YAML ファイルと共に追加します。カスタム エンティティにはシステム名を使用する必要があるので、<code class="highlighter-rouge">CustomEntity01/</code> フォルダと <code class="highlighter-rouge">CustomEntity01.yml</code> を作成します。</p>
 
@@ -13436,7 +13436,7 @@
     <span class="pi">-</span> <span class="pi">{</span> <span class="s2">"</span><span class="s">path"</span><span class="pi">:</span> <span class="s2">"</span><span class="s">project"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">relation"</span><span class="pi">:</span> <span class="s2">"</span><span class="s">is"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">values"</span><span class="pi">:</span> <span class="pi">[</span> <span class="s2">"</span><span class="s">$project"</span> <span class="pi">]</span> <span class="pi">}</span>
 </code></pre></div></div>
 
-<p>YAML ファイルは、<code class="highlighter-rouge">CustomEntity01</code> フォルダに付ける名前を Toolkit に指示します。この場合は、タイプ <code class="highlighter-rouge">ShotGrid_entity</code> のフォルダを作成しています。これは、ShotGrid クエリに対応していることを意味します。<code class="highlighter-rouge">entity_type</code> フィールドは ShotGrid の <code class="highlighter-rouge">CustomEntity01</code> エンティティをクエリするように指示し、<code class="highlighter-rouge">name</code> フィールドはエンティティのどの<em>フィールド</em>をクエリするのかを指示します。この場合は <code class="highlighter-rouge">CustomEntity01</code> から <code class="highlighter-rouge">code</code> フィールドを取得します。</p>
+<p>YAML ファイルは、<code class="highlighter-rouge">CustomEntity01</code> フォルダに付ける名前を Toolkit に指示します。この場合は、タイプ <code class="highlighter-rouge">ShotGrid_entity</code> のフォルダを作成しています。これは、Flow Production Tracking クエリに対応していることを意味します。<code class="highlighter-rouge">entity_type</code> フィールドは Flow Production Tracking の <code class="highlighter-rouge">CustomEntity01</code> エンティティをクエリするように指示し、<code class="highlighter-rouge">name</code> フィールドはエンティティのどの<em>フィールド</em>をクエリするのかを指示します。この場合は <code class="highlighter-rouge">CustomEntity01</code> から <code class="highlighter-rouge">code</code> フィールドを取得します。</p>
 
 <p><code class="highlighter-rouge">filters</code> フィールドは、この動的フォルダを作成する必要があるケースを制限します。</p>
 
@@ -13478,10 +13478,10 @@ assets/Classroom/Prop/spoon
 <p>フォルダは、Toolkit パイプライン ワークフローのいくつかの時点で作成されます。</p>
 
 <ul>
-  <li><strong>アプリケーション ランチャー</strong>： ユーザがタスクの DCC を起動するたびに、Toolkit はそのタスクのディレクトリを作成します(まだ作成されていない場合)。Toolkit ではまず最初に DCC の起動を行う傾向があるので、通常はこの方法でディレクトリが作成されます。これは、ShotGrid の右クリック メニュー、または ShotGrid Desktop あるいは Create アプリで実行できます。</li>
-  <li><strong>ShotGrid メニュー</strong>: タスク用のフォルダを作成する最も直接的な方法は、ShotGrid で右クリックして[フォルダを作成] (Create Folders)メニュー項目を選択することです。</li>
-  <li><strong>Toolkit API</strong>: Toolkit API を介して直接ディレクトリ作成ロジックを起動できます。この方法によって、Toolkit をカスタム ランチャーにプラグインしたり、ShotGrid で作成される Shot のディレクトリを自動的に作成するためのワークフローのイベント トリガとして使用することができます。</li>
-  <li><strong>tank コマンド</strong>: ShotGrid のメニュー項目と同様、<code class="highlighter-rouge">tank folders</code> ターミナル コマンドからもタスク用のフォルダを作成できます。</li>
+  <li><strong>アプリケーション ランチャー</strong>： ユーザがタスクの DCC を起動するたびに、Toolkit はそのタスクのディレクトリを作成します(まだ作成されていない場合)。Toolkit ではまず最初に DCC の起動を行う傾向があるので、通常はこの方法でディレクトリが作成されます。これは、Flow Production Tracking の右クリック メニュー、または Flow Production Tracking Toolkit あるいは Create アプリで実行できます。</li>
+  <li><strong>Flow Production Tracking メニュー</strong>: タスク用のフォルダを作成する最も直接的な方法は、Flow Production Tracking で右クリックして[フォルダを作成] (Create Folders)メニュー項目を選択することです。</li>
+  <li><strong>Toolkit API</strong>: Toolkit API を介して直接ディレクトリ作成ロジックを起動できます。この方法によって、Toolkit をカスタム ランチャーにプラグインしたり、Flow Production Tracking で作成される Shot のディレクトリを自動的に作成するためのワークフローのイベント トリガとして使用することができます。</li>
+  <li><strong>tank コマンド</strong>: Flow Production Tracking のメニュー項目と同様、<code class="highlighter-rouge">tank folders</code> ターミナル コマンドからもタスク用のフォルダを作成できます。</li>
 </ul>
 
 <p><code class="highlighter-rouge">tank</code> コマンドでテストします。</p>
@@ -13525,7 +13525,7 @@ In total, 23 folders were processed.
 
 <h3 id="toolkit-アプリがテンプレートを使用する方法">Toolkit アプリがテンプレートを使用する方法</h3>
 
-<p>まず、ShotGrid でアセットをセットに関連付ける方法を作成しました。すなわち CustomEntity01 がセットを表すようにして、Asset エンティティにアセットとセットの間のリンクを表すリンク フィールドを追加しました。アセットとセット間の関係を確立したら、その関連付けを使用するようにフォルダ スキーマを設定し、すべてのアセットの<em>フォルダ</em>をその関連付けられたセットのフォルダ内に配置します。次に、<em>ファイル</em>に動的に名前を付ける方法を作成し、Toolkitアプリ でファイルを自動的に管理できるようにします。</p>
+<p>まず、Flow Production Tracking でアセットをセットに関連付ける方法を作成しました。すなわち CustomEntity01 がセットを表すようにして、Asset エンティティにアセットとセットの間のリンクを表すリンク フィールドを追加しました。アセットとセット間の関係を確立したら、その関連付けを使用するようにフォルダ スキーマを設定し、すべてのアセットの<em>フォルダ</em>をその関連付けられたセットのフォルダ内に配置します。次に、<em>ファイル</em>に動的に名前を付ける方法を作成し、Toolkitアプリ でファイルを自動的に管理できるようにします。</p>
 
 <p>アーティストがプロジェクト内のタスクを実行し始めると、必要なフォルダ構造が生成されます。その後、Workfiles アプリの<strong>[File Save]</strong>アクションを開始すると、ファイルに自動的に名前が付けられます。Toolkit の Workfiles アプリを通じてアクセスされるテンプレートは、そのファイルに名前を付けるために使用されます。Nuke Write ノードや Houdini Mantra ノードなどのレンダリング アプリは、パブリッシュ ファイル用のパブリッシャー アプリと同様に、テンプレートを使用してレンダリングされたファイルに名前を付けて保存します。</p>
 
@@ -13607,11 +13607,11 @@ In total, 23 folders were processed.
 
 <h3 id="テストの実行">テストの実行</h3>
 
-<p><strong>手順 18:</strong> ShotGrid Desktop から Maya を起動します。</p>
+<p><strong>手順 18:</strong> Flow Production Tracking Toolkit から Maya を起動します。</p>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/dynamic_filesystem_configuration/23_test_file_creation.png" alt="Python アプリ" /></p>
 
-<p>Maya で、<strong>[ShotGrid] &gt; [ファイルを開く] (File Open)</strong>に移動し、表示されるダイアログで、ShotGrid で Set を指定したアセットのタスクを選択します。</p>
+<p>Maya で、<strong>[ShotGrid] &gt; [ファイルを開く] (File Open)</strong>に移動し、表示されるダイアログで、Flow Production Tracking で Set を指定したアセットのタスクを選択します。</p>
 
 <p><img src="/ja/guides/pipeline-integrations/getting-started/images/dynamic_filesystem_configuration/24_test_new_file.png" alt="Python アプリ" /></p>
 
@@ -13631,11 +13631,11 @@ In total, 23 folders were processed.
 
 <h3 id="例を拡張する">例を拡張する</h3>
 
-<p>この例では 1 つのテンプレートを変更しましたが、ファイルシステムの設定については他にもさまざまな操作を実行できます。現実の例では、<em>すべての</em>アセット関連のファイルを同じファイル命名規則に従うように変更します。他のエンティティ(Season、Episode、Level など)に基づいて変更を加えたり、ユーザ フォルダを作成したり、正規表現で操作した ShotGrid のデータに基づいてフォルダに名前を付けたりすることができます。Toolkit のすべてのフォルダおよびスキーマ オプションについては、『<a href="https://developer.shotgridsoftware.com/ja/82ff76f7/">ファイル システム設定リファレンス</a>』を参照してください。</p>
+<p>この例では 1 つのテンプレートを変更しましたが、ファイルシステムの設定については他にもさまざまな操作を実行できます。現実の例では、<em>すべての</em>アセット関連のファイルを同じファイル命名規則に従うように変更します。他のエンティティ(Season、Episode、Level など)に基づいて変更を加えたり、ユーザ フォルダを作成したり、正規表現で操作した Flow Production Tracking のデータに基づいてフォルダに名前を付けたりすることができます。Toolkit のすべてのフォルダおよびスキーマ オプションについては、『<a href="https://developer.shotgridsoftware.com/ja/82ff76f7/">ファイル システム設定リファレンス</a>』を参照してください。</p>
 
 <h3 id="パス-キャッシュ">パス キャッシュ</h3>
 
-<p>フォルダ作成時に、ディスク上のフォルダと ShotGrid エンティティの間にマッピングが作成されます。これらのマッピングは ShotGrid の FilesystemLocation エンティティとして保存され、ユーザのマシンの SQLite データベースにキャッシュされます。パス キャッシュの機能とその使用方法の詳細については、<a href="/ja/cbbf99a4/">このドキュメント</a>を参照してください。</p>
+<p>フォルダ作成時に、ディスク上のフォルダと Flow Production Tracking エンティティの間にマッピングが作成されます。これらのマッピングは Flow Production Tracking の FilesystemLocation エンティティとして保存され、ユーザのマシンの SQLite データベースにキャッシュされます。パス キャッシュの機能とその使用方法の詳細については、<a href="/ja/cbbf99a4/">このドキュメント</a>を参照してください。</p>
 
 <h3 id="その他のリソース">その他のリソース</h3>
 

@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -3825,9 +3825,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/zh_CN/7584b650/?title=Alias+ShotGrid+%E5%B7%A5%E4%BD%9C%E6%B5%81"
+                href="/zh_CN/7584b650/?title=Alias+Flow+Production+Tracking+%E5%B7%A5%E4%BD%9C%E6%B5%81"
             >
-                Alias ShotGrid 工作流
+                Alias Flow Production Tracking 工作流
             </a>
             </div>
 
@@ -7119,7 +7119,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -9750,9 +9750,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -12116,7 +12116,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -13186,7 +13186,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -13272,9 +13272,9 @@
 
 <p>本手册介绍如何编辑现有工作流配置中的设置，以满足项目工作流的需求。第一个手册<strong><a href="/zh_CN/5d83a936/">配置快速入门</a></strong>介绍了如何准备工作流配置以进行编辑。如果您不熟悉如何为项目创建可编辑的配置，请先完成<strong>配置快速入门</strong>，然后再继续。</p>
 
-<p>通过扩展默认配置，ShotGrid Toolkit 允许自定义工作流中的任务。在一个或多个软件包内的 Toolkit 应用中启用或禁用按钮就是简单的自定义示例，它可以更改用户与 Toolkit 功能进行交互的方式。Toolkit 允许使用专用配置，通过创建自定义工作流、自动执行重复和单调的任务、修改挂钩甚至添加基于 Toolkit 平台的自定义工具，让您可以更智能和更快速地工作。遗憾的是，它只能通过 ShotGrid 软件集成进行访问，还不能用于像洗衣服这样的日常任务。</p>
+<p>通过扩展默认配置，Flow Production Tracking Toolkit 允许自定义工作流中的任务。在一个或多个软件包内的 Toolkit 应用中启用或禁用按钮就是简单的自定义示例，它可以更改用户与 Toolkit 功能进行交互的方式。Toolkit 允许使用专用配置，通过创建自定义工作流、自动执行重复和单调的任务、修改挂钩甚至添加基于 Toolkit 平台的自定义工具，让您可以更智能和更快速地工作。遗憾的是，它只能通过 Flow Production Tracking 软件集成进行访问，还不能用于像洗衣服这样的日常任务。</p>
 
-<p>本手册中的练习将向您讲解如何查找哪些配置设置控制应用软件中 ShotGrid 应用的动作，设置所在的位置以及如何对其进行编辑。举个具体的例子，我们可以通过编辑“Workfiles”应用下的设置，禁止艺术家用 Maya 的<strong>“+New Task”</strong>按钮创建新任务。</p>
+<p>本手册中的练习将向您讲解如何查找哪些配置设置控制应用软件中 Flow Production Tracking 应用的动作，设置所在的位置以及如何对其进行编辑。举个具体的例子，我们可以通过编辑“Workfiles”应用下的设置，禁止艺术家用 Maya 的<strong>“+New Task”</strong>按钮创建新任务。</p>
 
 <h2 id="使用本文档">使用本文档</h2>
 
@@ -13285,7 +13285,7 @@
   <li>包含至少一个资产的项目。您可以将资产添加到在第一个手册中创建的 the_other_side 项目。您可以在<a href="/zh_CN/5d83a936/">配置快速入门</a>手册中查看如何为项目创建资产。</li>
   <li>用于已标识项目的工作流配置，或完成<a href="/zh_CN/5d83a936/">配置快速入门</a>手册，并使用在该练习中创建的配置。</li>
   <li>为存储工作流配置的 Shotgun 管理的文件系统设置适当的读取和写入权限。</li>
-  <li>在系统上安装 ShotGrid Desktop。</li>
+  <li>在系统上安装 Flow Production Tracking Toolkit。</li>
   <li>Maya 的有效固定期限的使用许可。在<a href="https://www.autodesk.com.cn/products/maya/free-trial">此处</a>获取 Maya 的 30 天试用版</li>
 </ol>
 
@@ -13300,19 +13300,19 @@
 
 <h2 id="关于工作文件应用">关于工作文件应用</h2>
 
-<p>Workfiles 应用监管 ShotGrid 软件集成中的文件管理，并控制对浏览、打开和保存工作文件功能的访问。<strong>“+New Task”</strong>按钮是 Workfiles 应用的一个动作，允许用户添加任务，而无需转到 ShotGrid 执行此操作。配置分解为每个环境的文件。这样，您可以管理相对于工作流中不同阶段的功能，从而控制用户何时可以创建、命名和保存文件、执行任务或执行某些功能。这与工作文件应用中的所有功能相关，也适用于修改任何应用或插件的设置。有关更多详细信息，请参见本文档末尾的<a href="#advanced-topics">高级主题</a>。</p>
+<p>Workfiles 应用监管 Flow Production Tracking 软件集成中的文件管理，并控制对浏览、打开和保存工作文件功能的访问。<strong>“+New Task”</strong>按钮是 Workfiles 应用的一个动作，允许用户添加任务，而无需转到 Flow Production Tracking 执行此操作。配置分解为每个环境的文件。这样，您可以管理相对于工作流中不同阶段的功能，从而控制用户何时可以创建、命名和保存文件、执行任务或执行某些功能。这与工作文件应用中的所有功能相关，也适用于修改任何应用或插件的设置。有关更多详细信息，请参见本文档末尾的<a href="#advanced-topics">高级主题</a>。</p>
 
 <h2 id="熟悉配置文件">熟悉配置文件</h2>
 
-<p>使用 ShotGrid 中的“工作流配置列表”(Pipeline Configuration List)查找为您正在处理的项目存储工作流配置的位置。如果您知道其存储位置，可以跳到<a href="#finding-the-pipeline-configuration">步骤 5</a>。</p>
+<p>使用 Flow Production Tracking 中的“工作流配置列表”(Pipeline Configuration List)查找为您正在处理的项目存储工作流配置的位置。如果您知道其存储位置，可以跳到<a href="#finding-the-pipeline-configuration">步骤 5</a>。</p>
 
 <h2 id="查找工作流配置">查找工作流配置</h2>
 
-<p><strong>步骤 1：</strong>打开管理您将用于此练习的项目的 <strong>ShotGrid 站点</strong>。</p>
+<p><strong>步骤 1：</strong>打开管理您将用于此练习的项目的 <strong>Flow Production Tracking 站点</strong>。</p>
 
-<p><strong>步骤 2：</strong>通过从<strong>“项目”(Projects)页面</strong>中选择项目，从 <strong>ShotGrid 站点</strong>访问该项目。</p>
+<p><strong>步骤 2：</strong>通过从<strong>“项目”(Projects)页面</strong>中选择项目，从 <strong>Flow Production Tracking 站点</strong>访问该项目。</p>
 
-<p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/editing_app_setting/1_shotgun_project.png" alt="ShotGrid 项目" /></p>
+<p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/editing_app_setting/1_shotgun_project.png" alt="Flow Production Tracking 项目" /></p>
 
 <p><strong>步骤 3：</strong>选择右上角的<strong>头像</strong>以显示<strong>“管理”(ADMIN)</strong>菜单，并向下滚动以选择<strong>“默认布局 &gt; 工作流配置 &gt; 工作流配置列表”(Default Layouts &gt; Pipeline Configuration &gt; Pipeline Configuration List)</strong>。</p>
 
@@ -13340,23 +13340,23 @@
 
 <h2 id="编辑配置文件">编辑配置文件</h2>
 
-<p>ShotGrid Toolkit 允许对集成在各种软件包中的应用进行更改。工作文件应用的一个功能是<strong>“+New Task”</strong>按钮，该按钮允许用户在<strong>“File Open”</strong>对话框中添加新任务。默认情况下，在项目的每个阶段为每个用户启用此功能。但是工作室可能希望限制此功能，例如，如果他们拥有特定的命名约定，或者想要将任务创建限制到项目的生产管理团队。在这种情况下，他们会为艺术家在 Maya 中工作时使用的工作流中的所有点禁用<strong>“+New Task”</strong>按钮。</p>
+<p>Flow Production Tracking Toolkit 允许对集成在各种软件包中的应用进行更改。工作文件应用的一个功能是<strong>“+New Task”</strong>按钮，该按钮允许用户在<strong>“File Open”</strong>对话框中添加新任务。默认情况下，在项目的每个阶段为每个用户启用此功能。但是工作室可能希望限制此功能，例如，如果他们拥有特定的命名约定，或者想要将任务创建限制到项目的生产管理团队。在这种情况下，他们会为艺术家在 Maya 中工作时使用的工作流中的所有点禁用<strong>“+New Task”</strong>按钮。</p>
 
 <h2 id="为-maya-中的项目禁用new-task按钮">为 Maya 中的项目禁用“+New Task”按钮</h2>
 
-<p><strong>步骤 7：</strong>打开 <strong>ShotGrid Desktop</strong>。</p>
+<p><strong>步骤 7：</strong>打开 <strong>Flow Production Tracking Toolkit</strong>。</p>
 
 <p><strong>步骤 8：</strong>选择您要编辑其配置的项目。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/editing_app_setting/6_load_project.png" alt="加载项目" /></p>
 
-<p><strong>步骤 9：</strong>从 ShotGrid Desktop 启动 Maya。</p>
+<p><strong>步骤 9：</strong>从 Flow Production Tracking Toolkit 启动 Maya。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/editing_app_setting/7_view_project.png" alt="加载项目" /></p>
 
 <p>等待 <strong>ShotGrid</strong> 菜单完全加载。如果您的 Internet 连接速度较慢，可以利用运行配置的时间来享用表面带有适量棕红色泡沫的浓缩咖啡。</p>
 
-<p>一旦完全加载 Maya 和 ShotGrid，就会自动打开<strong>“File Open”</strong>对话框。当从 ShotGrid Desktop 启动 Maya 时，您将在<strong>项目</strong>环境中进入 Maya；Toolkit 工作流的配置将由 <code class="highlighter-rouge">config/env/project.yml</code> 文件驱动。默认配置中标识的环境包括 <code class="highlighter-rouge">project</code>、<code class="highlighter-rouge">sequence</code>、<code class="highlighter-rouge">shot</code>、<code class="highlighter-rouge">shot_step</code>、<code class="highlighter-rouge">asset</code>、<code class="highlighter-rouge">asset_step</code>。</p>
+<p>一旦完全加载 Maya 和 Flow Production Tracking，就会自动打开<strong>“File Open”</strong>对话框。当从 Flow Production Tracking Toolkit 启动 Maya 时，您将在<strong>项目</strong>环境中进入 Maya；Toolkit 工作流的配置将由 <code class="highlighter-rouge">config/env/project.yml</code> 文件驱动。默认配置中标识的环境包括 <code class="highlighter-rouge">project</code>、<code class="highlighter-rouge">sequence</code>、<code class="highlighter-rouge">shot</code>、<code class="highlighter-rouge">shot_step</code>、<code class="highlighter-rouge">asset</code>、<code class="highlighter-rouge">asset_step</code>。</p>
 
 <p><strong>步骤 10：</strong>在<strong>“File Open”</strong>对话框的左窗格中选择<strong>“资产”(Assets)</strong>选项卡。在搜索结果中显示的文件夹内选择任何资产。</p>
 
@@ -13366,11 +13366,11 @@
 
 <h2 id="查找控制new-task按钮的设置">查找控制“+New Task”按钮的设置</h2>
 
-<p>Toolkit 工作流配置用于自定义环境以满足您的工作流需求。工作流配置可以覆盖默认 ShotGrid 集成设置，根据需要或多或少会有所不同，以满足项目工作流的需求。这种结构允许采用轻量级配置，从而仅添加与 ShotGrid 核心代码中的默认值不同的设置。在本练习中，我们希望关闭工作文件应用的<strong>“+New Task”</strong>按钮，但在这样做之前，我们需要确定哪个配置设置控制它。</p>
+<p>Toolkit 工作流配置用于自定义环境以满足您的工作流需求。工作流配置可以覆盖默认 Flow Production Tracking 集成设置，根据需要或多或少会有所不同，以满足项目工作流的需求。这种结构允许采用轻量级配置，从而仅添加与 Flow Production Tracking 核心代码中的默认值不同的设置。在本练习中，我们希望关闭工作文件应用的<strong>“+New Task”</strong>按钮，但在这样做之前，我们需要确定哪个配置设置控制它。</p>
 
 <p><strong>步骤 11：</strong>选择<strong>“File Open”</strong>窗口右上角<strong>“Project (项目名称)”</strong>旁边的 <strong>&gt;</strong>。</p>
 
-<p>此参考框显示有关控制<strong>“File Open”</strong>窗口功能的配置设置的详细信息。Toolkit 中的某些应用具有参考框，以显示该应用使用的设置以及默认设置。请注意，<strong>“Location:”</strong>标识符是 <strong>tk-multi-workfiles2</strong>。这是创建 Workfiles 应用的代码包的标识符。在搜索工作流配置时，此名称将标识应用的设置所在位置。有一个<a href="https://developer.shotgridsoftware.com/zh_CN/162eaa4b/">“应用和插件”页面</a>，其中列出了 ShotGrid 集成中可用的工作流的所有配置设置、应用和插件。</p>
+<p>此参考框显示有关控制<strong>“File Open”</strong>窗口功能的配置设置的详细信息。Toolkit 中的某些应用具有参考框，以显示该应用使用的设置以及默认设置。请注意，<strong>“Location:”</strong>标识符是 <strong>tk-multi-workfiles2</strong>。这是创建 Workfiles 应用的代码包的标识符。在搜索工作流配置时，此名称将标识应用的设置所在位置。有一个<a href="https://developer.shotgridsoftware.com/zh_CN/162eaa4b/">“应用和插件”页面</a>，其中列出了 Flow Production Tracking 集成中可用的工作流的所有配置设置、应用和插件。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/editing_app_setting/9_current_work_area.png" alt="Current_work_area" /></p>
 
@@ -13382,7 +13382,7 @@
     <p>
         <i class="fa fa-info-circle"></i>
         <b>注意
-:</b> 在设置 <strong>my_tasks_filters</strong> 之后是设置 <strong>launch_at_startup</strong>。这一点很重要，因为它是项目环境中<strong>“File Open”</strong>设置的默认设置。这告诉您，当从 ShotGrid Desktop 启动 Maya 时，会自动打开<strong>“File Open”</strong>对话框。
+:</b> 在设置 <strong>my_tasks_filters</strong> 之后是设置 <strong>launch_at_startup</strong>。这一点很重要，因为它是项目环境中<strong>“File Open”</strong>设置的默认设置。这告诉您，当从 Flow Production Tracking Toolkit 启动 Maya 时，会自动打开<strong>“File Open”</strong>对话框。
 
     </p>
 </div>
@@ -13411,11 +13411,11 @@
 
 <p><strong>步骤 13：</strong>在 Maya 窗口的右上角找到<strong>“ShotGrid”</strong>菜单项。</p>
 
-<p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/editing_app_setting/12_Maya_Shotgun2.png" alt="Maya ShotGrid2" /></p>
+<p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/editing_app_setting/12_Maya_Shotgun2.png" alt="Maya Flow Production Tracking2" /></p>
 
 <p><strong>提示：</strong>如果此菜单不可见，则会显示 <strong>»</strong> 以表明某些菜单项处于隐藏状态。选择 <strong>»</strong> 以显示“ShotGrid”菜单，或者您可以加宽 Maya 窗口。</p>
 
-<p><strong>步骤 14：</strong>在菜单右上角选择<strong>“ShotGrid &gt; 项目 the_other_side &gt; 工作区信息…”(ShotGrid &gt; Project the_other_side &gt; Work Area Info…)</strong>。</p>
+<p><strong>步骤 14：</strong>在菜单右上角选择<strong>“Flow Production Tracking &gt; 项目 the_other_side &gt; 工作区信息…”(Flow Production Tracking &gt; Project the_other_side &gt; Work Area Info…)</strong>。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/editing_app_setting/13_work_area_info.png" alt="工作区信息" /></p>
 
@@ -13423,7 +13423,7 @@
 
 <p><strong>步骤 15：</strong>在<strong>“Your Current Work Area”</strong>对话框中，选择底部的<strong>“环境”(Environment)</strong>选项卡。</p>
 
-<p>第一项标识正在使用的插件。插件推动了将 ShotGrid 工具集成在特定软件应用程序中的能力。它包含特定于每个软件集成的逻辑。窗口中显示的第二项显示当前项目环境所在的路径。</p>
+<p>第一项标识正在使用的插件。插件推动了将 Flow Production Tracking 工具集成在特定软件应用程序中的能力。它包含特定于每个软件集成的逻辑。窗口中显示的第二项显示当前项目环境所在的路径。</p>
 
 <p><img src="/zh_CN/guides/pipeline-integrations/getting-started/images/editing_app_setting/14_shotgun_work_area_info_Environment.png" alt="工作区信息环境" /></p>
 
@@ -13492,7 +13492,7 @@
 
 <p>这一整行告诉我们在包含文件中查找 <code class="highlighter-rouge">settings.tk-maya.project</code> 块，以找到 Maya 插件 <code class="highlighter-rouge">tk-maya</code> 的配置设置。</p>
 
-<p>ShotGrid Toolkit 会在 YAML 文件中使用简单的术语，来指示设置的名称以及引导您找到它们的路径。通过在 Maya<strong>“File Open”</strong>参考框中查看，我们已经知道，控制<strong>“+New Task”</strong>按钮执行方式的代码包是由 <code class="highlighter-rouge">tk-multi-workfiles2</code> 标识的。在 YAML 文件中使用这些标识符引用 Toolkit 包。“tk-multi-workfiles2”是 Workfiles 应用代码包的标识符，<strong>“+New Task”</strong>按钮是 Workfiles 应用的一个功能。</p>
+<p>Flow Production Tracking Toolkit 会在 YAML 文件中使用简单的术语，来指示设置的名称以及引导您找到它们的路径。通过在 Maya<strong>“File Open”</strong>参考框中查看，我们已经知道，控制<strong>“+New Task”</strong>按钮执行方式的代码包是由 <code class="highlighter-rouge">tk-multi-workfiles2</code> 标识的。在 YAML 文件中使用这些标识符引用 Toolkit 包。“tk-multi-workfiles2”是 Workfiles 应用代码包的标识符，<strong>“+New Task”</strong>按钮是 Workfiles 应用的一个功能。</p>
 
 <p>在 tk-maya.yml 中查找 Workfiles 应用设置</p>
 
@@ -13603,7 +13603,7 @@
 
 <p>注意：每个环境都是独立的，一个项目具有专用的配置，加载项目时软件集成仅从工作流配置中读取其特定软件的设置。</p>
 
-<p>您现在已经编辑了工作流配置，对应用的设置进行了更改。现在，真正有趣的事情开始了：学习使用 ShotGrid Toolkit 环境可以执行的所有任务。下面是一些要探索的高级主题。</p>
+<p>您现在已经编辑了工作流配置，对应用的设置进行了更改。现在，真正有趣的事情开始了：学习使用 Flow Production Tracking Toolkit 环境可以执行的所有任务。下面是一些要探索的高级主题。</p>
 
 <h2 id="高级主题">高级主题</h2>
 

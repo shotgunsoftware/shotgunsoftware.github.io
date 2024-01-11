@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -8171,7 +8171,7 @@
     </p>
 </div>
 
-<p>要将工作流配置移动到新位置，最简单的方法是使用 <code class="highlighter-rouge">tank move_configuration</code> 命令。该命令将移动文件，更新 ShotGrid，并更新配置文件以指向新位置。</p>
+<p>要将工作流配置移动到新位置，最简单的方法是使用 <code class="highlighter-rouge">tank move_configuration</code> 命令。该命令将移动文件，更新 Flow Production Tracking，并更新配置文件以指向新位置。</p>
 
 <p>以下情况下此命令也非常有用：您仅移动单个操作系统的位置，或者以前未使用某个操作系统，但现在想添加该操作系统。Toolkit 将检测需要移动或添加的内容以及不需要移动或添加的内容，同时还会向您显示即将执行的操作，以便您在继续操作之前进行确认。</p>
 
@@ -8200,10 +8200,10 @@
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ cd /sgtk/software/shotgun/scarlet
     $ ./tank move_configuration
 
-    Welcome to the ShotGrid Pipeline Toolkit!
+    Welcome to the Flow Production Tracking Toolkit!
     For documentation, see https://developer.shotgridsoftware.com/d587be80/?title=Integrations+User+Guide
     Starting Toolkit for your current path '/sgtk/software/shotgun/scarlet'
-    - The path is not associated with any ShotGrid object.
+    - The path is not associated with any Flow Production Tracking object.
     - Falling back on default project settings.
     - Using configuration 'Primary' and Core v0.15.22
     - Setting the Context to Scarlet.
@@ -8244,10 +8244,10 @@
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ cd /sgtk/software/shotgun/scarlet
     $ ./tank move_configuration "/mnt/hgfs/sgtk/software/shotgun/scarlet_new" "z:\sgtk\software\shotgun\scarlet_new" "/sgtk/software/shotgun/scarlet_new"
 
-    Welcome to the ShotGrid Pipeline Toolkit!
+    Welcome to the Flow Production Tracking Toolkit!
     For documentation, see https://developer.shotgridsoftware.com/d587be80/?title=Integrations+User+Guide
     Starting toolkit for path '/sgtk/software/shotgun/scarlet'
-    - The path is not associated with any ShotGrid object.
+    - The path is not associated with any Flow Production Tracking object.
     - Falling back on default project settings.
     - Using configuration 'Primary' and Core v0.15.22
     - Setting the Context to Scarlet.
@@ -8302,7 +8302,7 @@
     Copying /sgtk/software/shotgun/scarlet/install/frameworks...
     Copying /sgtk/software/shotgun/scarlet/install/frameworks/app_store...
     Updating cached locations in /sgtk/software/shotgun/scarlet_new/config/core/install_location.yml...
-    Updating ShotGrid Configuration Record...
+    Updating Flow Production Tracking Configuration Record...
     Deleting original configuration files...
 
     All done! Your configuration has been successfully moved.
@@ -8336,7 +8336,7 @@
 
     <p>更新此文件中的路径，以指向工作流配置在所有适用平台上的新位置。如果您未使用平台，请输入空字符串 <code class="highlighter-rouge">''</code></p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # ShotGrid Pipeline Toolkit configuration file
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # Flow Production Tracking Toolkit configuration file
  # This file was automatically created by setup_project
  # This file reflects the paths in the primary pipeline
 
@@ -8349,11 +8349,11 @@
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>在 ShotGrid 中找到与此项目对应的 PipelineConfiguration 实体，并修改“Linux 路径”(Linux Path)、“Mac 路径”(Mac Path)和“Windows 路径”(Windows Path)字段值，以匹配您在上面所做的更改。</p>
+    <p>在 Flow Production Tracking 中找到与此项目对应的 PipelineConfiguration 实体，并修改“Linux 路径”(Linux Path)、“Mac 路径”(Mac Path)和“Windows 路径”(Windows Path)字段值，以匹配您在上面所做的更改。</p>
   </li>
 </ol>
 
-<p><img src="/zh_CN/quick-answers/administering/images/new-pipeline-configuration-locations.png" alt="ShotGrid 中的工作流配置位置。" /></p>
+<p><img src="/zh_CN/quick-answers/administering/images/new-pipeline-configuration-locations.png" alt="Flow Production Tracking 中的工作流配置位置。" /></p>
 
 <p>现在，您的工作流配置应该会在新位置按预期工作。</p>
 

@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -4800,7 +4800,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -7431,9 +7431,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -9797,7 +9797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -10867,7 +10867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -10942,40 +10942,40 @@
 
             <h1 id="安装">安装</h1>
 
-<p>以下手册将帮助您为您的工作室设置 ShotGridEvents。</p>
+<p>以下手册将帮助您为您的工作室设置 Flow Production TrackingEvents。</p>
 
 <p><a id="System_Requirements"></a></p>
 <h2 id="系统要求">系统要求</h2>
 
-<p>进程可以在已安装 Python 且对 ShotGrid 服务器具有网络访问权限的任何计算机上运行。它<strong>不</strong>需要在 ShotGrid 服务器本身上运行。但是，如果您使用的是 ShotGrid 的托管版本，则无法安装。但是，您可以根据需要在 ShotGrid 服务器上运行它。否则，您可以使用任何服务器。</p>
+<p>进程可以在已安装 Python 且对 Flow Production Tracking 服务器具有网络访问权限的任何计算机上运行。它<strong>不</strong>需要在 Flow Production Tracking 服务器本身上运行。但是，如果您使用的是 Flow Production Tracking 的托管版本，则无法安装。但是，您可以根据需要在 Flow Production Tracking 服务器上运行它。否则，您可以使用任何服务器。</p>
 
 <ul>
   <li>Python v2.6、v2.7 或 3.7</li>
-  <li><a href="https://github.com/shotgunsoftware/python-api">ShotGrid Python API</a>
+  <li><a href="https://github.com/shotgunsoftware/python-api">Flow Production Tracking Python API</a>
     <ul>
       <li>对于 Python 3.7+，使用 v3.1.0+（<em>注意：不再支持 Python 2</em>）。</li>
       <li>无论在哪种情况下，我们都强烈建议使用<a href="https://github.com/shotgunsoftware/python-api/releases">最新版本的 Python API</a>，并随着时间的推移更新此依存关系。</li>
     </ul>
   </li>
-  <li>对 ShotGrid 服务器的网络访问权限</li>
+  <li>对 Flow Production Tracking 服务器的网络访问权限</li>
 </ul>
 
 <p><a id="Installing_Shotgun_API"></a></p>
-<h2 id="安装-shotgrid-api">安装 ShotGrid API</h2>
+<h2 id="安装-shotgrid-api">安装 Flow Production Tracking API</h2>
 
-<p>假设您的计算机上已安装 Python，现在需要安装 ShotGrid Python API，以便 ShotGrid Event 进程可以使用它来连接您的 ShotGrid 服务器。您可以通过多种方式完成此操作：</p>
+<p>假设您的计算机上已安装 Python，现在需要安装 Flow Production Tracking Python API，以便 Flow Production Tracking Event 进程可以使用它来连接您的 Flow Production Tracking 服务器。您可以通过多种方式完成此操作：</p>
 
 <ul>
-  <li>将它与 ShotGrid Event 进程置于同一目录中</li>
+  <li>将它与 Flow Production Tracking Event 进程置于同一目录中</li>
   <li>将它放在 <a href="https://docs.python.org/tutorial/modules.html"><code class="highlighter-rouge">PYTHONPATH</code> 环境变量</a>指定的某个目录中。</li>
 </ul>
 
-<p>要测试 ShotGrid API 是否正确安装，请观察终端窗口：</p>
+<p>要测试 Flow Production Tracking API 是否正确安装，请观察终端窗口：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python -c "import shotgun_api3"
 </code></pre></div></div>
 
-<p>终端窗口不应输出任何内容。如果您看到类似于以下输出的内容，则请检查 <code class="highlighter-rouge">PYTHONPATH</code> 的设置是否正确无误，或 ShotGrid API 是否位于当前目录中。</p>
+<p>终端窗口不应输出任何内容。如果您看到类似于以下输出的内容，则请检查 <code class="highlighter-rouge">PYTHONPATH</code> 的设置是否正确无误，或 Flow Production Tracking API 是否位于当前目录中。</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python -c "import shotgun_api3"
 Traceback (most recent call last):
@@ -10984,9 +10984,9 @@ ImportError: No module named shotgun_api3
 </code></pre></div></div>
 
 <p><a id="Installing_shotgunEvents"></a></p>
-<h2 id="安装-shotgridevents">安装 ShotGridEvents</h2>
+<h2 id="安装-shotgridevents">安装 Flow Production TrackingEvents</h2>
 
-<p>ShotGridEvents 的安装位置完全由您决定。同样，只要计算机上安装了 Python 和 ShotGrid API，并且计算机具有 ShotGrid 服务器的网络访问权限，就可以从任意位置运行。但是，如果安装位置能够为工作室提供方便，那自然是再好不过了，比如说 <code class="highlighter-rouge">/usr/local/shotgun/shotgunEvents</code> 就很方便。因此，下面我们就以此为例进行介绍。</p>
+<p>ShotGridEvents 的安装位置完全由您决定。同样，只要计算机上安装了 Python 和 Flow Production Tracking API，并且计算机具有 Flow Production Tracking 服务器的网络访问权限，就可以从任意位置运行。但是，如果安装位置能够为工作室提供方便，那自然是再好不过了，比如说 <code class="highlighter-rouge">/usr/local/shotgun/shotgunEvents</code> 就很方便。因此，下面我们就以此为例进行介绍。</p>
 
 <p>请访问 GitHub (<a href="https://github.com/shotgunsoftware/shotgunEvents">https://github.com/shotgunsoftware/shotgunEvents</a>) 获取源代码和归档。</p>
 
@@ -11075,7 +11075,7 @@ drwxr-xr-x  6 kp  wheel   204 Sep  1 17:46 src
   <li><a href="https://www.activestate.com/activepython">Active Python</a></li>
 </ul>
 
-<p>Active Python 附带 PyWin32 模块，在集成 ShotGrid Event 进程和 Windows 服务架构时，需要用到此模块。</p>
+<p>Active Python 附带 PyWin32 模块，在集成 Flow Production Tracking Event 进程和 Windows 服务架构时，需要用到此模块。</p>
 
 <p>然后，您可以通过运行以下命令，以服务的形式来安装进程（假设 <code class="highlighter-rouge">C:\Python27_32\python.exe</code> 是 Python 可执行文件的路径，根据具体情况加以调整）：</p>
 

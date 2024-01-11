@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -3483,9 +3483,9 @@
                     class="nav-entry"
                 
                 style='margin-left:40px'
-                href="/8085533c/?title=ShotGrid+Integrations+Admin+Guide"
+                href="/8085533c/?title=Flow+Production+Tracking+Integrations+Admin+Guide"
             >
-                ShotGrid Integrations Admin Guide
+                Flow Production Tracking Integrations Admin Guide
             </a>
             </div>
 
@@ -10346,7 +10346,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -12977,9 +12977,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -15343,7 +15343,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -16413,7 +16413,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -16568,17 +16568,17 @@
   </li>
 </ul>
 
-<p>This document is a complete reference of the file system centric configurations in the ShotGrid Pipeline Toolkit. It outlines how the template system works and which options are available. It also shows all the different parameters you can include in the folder creation configuration.<br />
-<em>Please note that this document describes functionality only available if you have taken control over a Toolkit configuration. For details, see  <a href="https://developer.shotgridsoftware.com/8085533c/">ShotGrid Integrations Admin Guide</a>.</em></p>
+<p>This document is a complete reference of the file system centric configurations in the Flow Production Tracking Toolkit. It outlines how the template system works and which options are available. It also shows all the different parameters you can include in the folder creation configuration.<br />
+<em>Please note that this document describes functionality only available if you have taken control over a Toolkit configuration. For details, see  <a href="https://developer.shotgridsoftware.com/8085533c/">Flow Production Tracking Integrations Admin Guide</a>.</em></p>
 
 <h1 id="introduction">Introduction</h1>
 
 <p>This document explains how to configure the part of Toolkit’s configuration related to your file system, including examples. Toolkit handles a lot of files and directories, and you can leverage Toolkit’s configuration as a way of expressing how paths are put together and what they mean. The file system is typically accessed in two different and completely separate ways:</p>
 
-<p><strong>Folder Creation:</strong> After an object has been created in ShotGrid, folders on disk need to be created before work can begin. This can be as simple as having a folder on disk representing the Shot, or can be more complex-for example setting up a user specific work sandbox so that each user that works on the shot will work in a separate area on disk.</p>
+<p><strong>Folder Creation:</strong> After an object has been created in Flow Production Tracking, folders on disk need to be created before work can begin. This can be as simple as having a folder on disk representing the Shot, or can be more complex-for example setting up a user specific work sandbox so that each user that works on the shot will work in a separate area on disk.</p>
 
 <ul>
-  <li>Toolkit automates folder creation when you launch an application (for example you launch Maya for shot BECH_0010), Toolkit ensures that folders exist prior to launching Maya. If folders do not exist, they are created on the fly. Folders can also be created using API methods, using the  <a href="https://developer.shotgridsoftware.com/425b1da4/#useful-tank-commands">tank command in the shell</a>  and via the  <a href="https://developer.shotgridsoftware.com/c3b662a6/">Create Folders menu in ShotGrid</a>. A special set of configuration files drives this folder creation process and this is outlined in  <a href="#part-1---folder-creation-syntax">Part 1</a>  of the document below.</li>
+  <li>Toolkit automates folder creation when you launch an application (for example you launch Maya for shot BECH_0010), Toolkit ensures that folders exist prior to launching Maya. If folders do not exist, they are created on the fly. Folders can also be created using API methods, using the  <a href="https://developer.shotgridsoftware.com/425b1da4/#useful-tank-commands">tank command in the shell</a>  and via the  <a href="https://developer.shotgridsoftware.com/c3b662a6/">Create Folders menu in Flow Production Tracking</a>. A special set of configuration files drives this folder creation process and this is outlined in  <a href="#part-1---folder-creation-syntax">Part 1</a>  of the document below.</li>
 </ul>
 
 <p><strong>Opening and Saving Work:</strong> While working, files need to be opened from and saved into standardized locations on disk. These file locations typically exist within the folder structure created prior to work beginning.</p>
@@ -16589,11 +16589,11 @@
 
 <h1 id="part-1---folder-creation-syntax">Part 1 - Folder Creation Syntax</h1>
 
-<p>The folder configuration maps entities in ShotGrid to locations on disk. Rather than using a single configuration file, the configuration is in the form of a “mini file system” which acts as a template for each unit that is configured-this is called the <strong>schema configuration</strong>. Folders and files will be copied across from this “mini file system” to their target location when Toolkit’s folder creation executes. It is possible to create dynamic behavior. For example, a folder can represent a Shot in ShotGrid, and you can control the naming of that folder. More specifically, you can pull the name of that folder from several ShotGrid fields and then perform character conversions before the folder is created.</p>
+<p>The folder configuration maps entities in Flow Production Tracking to locations on disk. Rather than using a single configuration file, the configuration is in the form of a “mini file system” which acts as a template for each unit that is configured-this is called the <strong>schema configuration</strong>. Folders and files will be copied across from this “mini file system” to their target location when Toolkit’s folder creation executes. It is possible to create dynamic behavior. For example, a folder can represent a Shot in Flow Production Tracking, and you can control the naming of that folder. More specifically, you can pull the name of that folder from several Flow Production Tracking fields and then perform character conversions before the folder is created.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/file-system-config-reference/core_config.png" alt="configuration" /></p>
 
-<p>The above image shows a schema configuration. When you run the Toolkit folder creation, a connection is established between an entity in ShotGrid and a folder on disk. Toolkit uses this folder schema configuration to generate a series of folders on disk and each of these folders are registered as a  <a href="https://developer.shotgridsoftware.com/cbbf99a4/"><code class="highlighter-rouge">Filesystem Location</code></a>  entity in ShotGrid. One way to think about this is that ShotGrid data (e.g., Shot and Asset names) and the configuration is “baked” out into actual folders on disk and in ShotGrid. Configurations always start with a folder named “project”. This will always represent the connected project in ShotGrid and will be replaced with the Toolkit name for the project. Below this level are static folders. The folder creator will automatically create the <strong>sequences</strong>folder, for example.</p>
+<p>The above image shows a schema configuration. When you run the Toolkit folder creation, a connection is established between an entity in Flow Production Tracking and a folder on disk. Toolkit uses this folder schema configuration to generate a series of folders on disk and each of these folders are registered as a  <a href="https://developer.shotgridsoftware.com/cbbf99a4/"><code class="highlighter-rouge">Filesystem Location</code></a>  entity in Flow Production Tracking. One way to think about this is that Flow Production Tracking data (e.g., Shot and Asset names) and the configuration is “baked” out into actual folders on disk and in Flow Production Tracking. Configurations always start with a folder named “project”. This will always represent the connected project in Flow Production Tracking and will be replaced with the Toolkit name for the project. Below this level are static folders. The folder creator will automatically create the <strong>sequences</strong>folder, for example.</p>
 
 <p>Digging further inside the sequences folder, there is a <strong>sequence</strong> folder and a <strong>sequence.yml</strong> file. Whenever Toolkit detects a YAML file with the same name as a folder, it will read the contents of the YAML file and add the desired dynamic behavior. In this case, the <strong>sequence.yml</strong> file contains the structure underneath the project folder, which consists of three types of items:</p>
 
@@ -16607,10 +16607,10 @@
 
 <ul>
   <li>
-    <p><strong><a href="#query-folders">ShotGrid Query folders:</a></strong> Dynamic folder names based on a ShotGrid Database Query. For example, this mode can be used to create a folder for every Shot in a project.</p>
+    <p><strong><a href="#query-folders">Flow Production Tracking Query folders:</a></strong> Dynamic folder names based on a Flow Production Tracking Database Query. For example, this mode can be used to create a folder for every Shot in a project.</p>
   </li>
   <li>
-    <p><strong><a href="#list-field-folders">ShotGrid List Field folders:</a></strong> Dynamic folder names based on a ShotGrid List Field. For example, this mode can be used to create a folder for every value in the ShotGrid List field “Asset Type”, found on the Asset Entity in ShotGrid.</p>
+    <p><strong><a href="#list-field-folders">Flow Production Tracking List Field folders:</a></strong> Dynamic folder names based on a Flow Production Tracking List Field. For example, this mode can be used to create a folder for every value in the Flow Production Tracking List field “Asset Type”, found on the Asset Entity in Flow Production Tracking.</p>
   </li>
   <li>
     <p><strong><a href="#workspaces-and-deferred-folder-creation">Deferred folders:</a></strong> Only executed when a second folder creation pass is requested via the create folders method of the Toolkit API, usually when an application (such as Maya) is launched. Typically, this method is executed by Toolkit’s various application launchers just prior to starting up an application.</p>
@@ -16624,35 +16624,35 @@
 
 <h2 id="query-folders">Query Folders</h2>
 
-<p>For a dynamic folder which corresponds to a ShotGrid query, use the following syntax in your YAML file:</p>
+<p>For a dynamic folder which corresponds to a Flow Production Tracking query, use the following syntax in your YAML file:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: shotgun_entity
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: Asset
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: code
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ] 
 </code></pre></div></div>
 
 <ul>
   <li>Set the value of dynamic content <strong>type</strong> field to be <strong>shotgun_entity</strong>.</li>
-  <li>The <strong>entity_type</strong> field should be set to the ShotGrid entity from which we want to pull data from (e.g., “Asset”, “Shot”, “Sequence”, “CustomEntity02”, etc).</li>
+  <li>The <strong>entity_type</strong> field should be set to the Flow Production Tracking entity from which we want to pull data from (e.g., “Asset”, “Shot”, “Sequence”, “CustomEntity02”, etc).</li>
   <li>
-    <p>The <strong>name</strong> field is the name that should be given to each folder based on the data in ShotGrid.</p>
+    <p>The <strong>name</strong> field is the name that should be given to each folder based on the data in Flow Production Tracking.</p>
   </li>
   <li>You can use a single field, like in the example above (e.g.,  <code class="highlighter-rouge">name: code</code>).</li>
   <li>You can use multiple fields in brackets (e.g.,  <code class="highlighter-rouge">name:</code>  <code class="highlighter-rouge">"{asset_type}_{code}"</code>).</li>
-  <li>If you want to include fields from other linked entities, you can use the standard ShotGrid dot syntax (e.g.,  <code class="highlighter-rouge">name: "{sg_sequence.Sequence.code}_{code}"</code>).</li>
-  <li>The <strong>filters</strong> field is a ShotGrid Query. It follows the  <a href="https://developer.shotgridsoftware.com/python-api/reference.html">ShotGrid API syntax</a>  relatively closely. It is a list of dictionaries, and each dictionary needs to have the keys  <em>path</em>,  <em>relation</em>, and  <em>values</em>. Valid values for $syntax are any ancestor folder that has a corresponding ShotGrid entity (e.g.,  <code class="highlighter-rouge">"$project"</code>  for the Project and  <code class="highlighter-rouge">"$sequence"</code>  if you have a sequence.yml higher up the directory hierarchy). For ShotGrid entity links, you can use the $syntax (e.g.,  <code class="highlighter-rouge">{ "path": "project", "relation": "is", "values": [ "$project" ] }</code>) to refer to a parent folder in the configuration-this is explained more in depth in the  <a href="#examples">examples below</a>.</li>
+  <li>If you want to include fields from other linked entities, you can use the standard Flow Production Tracking dot syntax (e.g.,  <code class="highlighter-rouge">name: "{sg_sequence.Sequence.code}_{code}"</code>).</li>
+  <li>The <strong>filters</strong> field is a Flow Production Tracking Query. It follows the  <a href="https://developer.shotgridsoftware.com/python-api/reference.html">Flow Production Tracking API syntax</a>  relatively closely. It is a list of dictionaries, and each dictionary needs to have the keys  <em>path</em>,  <em>relation</em>, and  <em>values</em>. Valid values for $syntax are any ancestor folder that has a corresponding Flow Production Tracking entity (e.g.,  <code class="highlighter-rouge">"$project"</code>  for the Project and  <code class="highlighter-rouge">"$sequence"</code>  if you have a sequence.yml higher up the directory hierarchy). For Flow Production Tracking entity links, you can use the $syntax (e.g.,  <code class="highlighter-rouge">{ "path": "project", "relation": "is", "values": [ "$project" ] }</code>) to refer to a parent folder in the configuration-this is explained more in depth in the  <a href="#examples">examples below</a>.</li>
 </ul>
 
 <h2 id="multiple-folders">Multiple folders</h2>
@@ -16662,21 +16662,21 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: shotgun_entity
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: Asset
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "{sg_asset_type}/{code}"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ] 
 </code></pre></div></div>
 
-<p>When creating a file system template (see for a Part 2 of this document for details) for this kind of path, the  _last_folder will represent the ShotGrid entity. The example above could for example be expressed with the following template</p>
+<p>When creating a file system template (see for a Part 2 of this document for details) for this kind of path, the  _last_folder will represent the Flow Production Tracking entity. The example above could for example be expressed with the following template</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>asset_step_folder: assets/{asset_type}/{Asset}/{Step}
 </code></pre></div></div>
@@ -16685,7 +16685,7 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 
 <h2 id="create-with-parent-folder">Create With Parent Folder</h2>
 
-<p>In ShotGrid, there is nesting within ShotGrid data structures. This nesting can be referred to as a Parent to Child relationship, and vice versa. For instance, Sequences are typically parents to Shots in the file system, and likewise, Shots are typically Children to Sequences.</p>
+<p>In Flow Production Tracking, there is nesting within Flow Production Tracking data structures. This nesting can be referred to as a Parent to Child relationship, and vice versa. For instance, Sequences are typically parents to Shots in the file system, and likewise, Shots are typically Children to Sequences.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/file-system-config-reference/create_with_parent_folder_02_DS.png" alt="create_with_parent_folder" /></p>
 
@@ -16693,7 +16693,7 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Note
-:</b> This filesystem nesting relationship is independent from the  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_site_configuration_ar_customizing_hierarchy_html">ShotGrid Hierarchy</a>, and there is no connection between the two. They are configured completely independently.
+:</b> This filesystem nesting relationship is independent from the  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_site_configuration_ar_customizing_hierarchy_html">Flow Production Tracking Hierarchy</a>, and there is no connection between the two. They are configured completely independently.
 
     </p>
 </div>
@@ -16717,7 +16717,7 @@ create_with_parent: true
 
 <h2 id="optional-fields">Optional fields</h2>
 
-<p>Typically, when you define the folder name (e.g.,  <code class="highlighter-rouge">{code}_{sg_extra_field}</code>), Toolkit requires all fields to have values in ShotGrid. For example, if the  <code class="highlighter-rouge">sg_extra_field</code>  is blank, an error message will be generated. If you have a field that is sometimes populated and sometimes not, you can mark it as optional. This means that Toolkit will include the field if it has a value, and exclude it if the value is blank-without error.</p>
+<p>Typically, when you define the folder name (e.g.,  <code class="highlighter-rouge">{code}_{sg_extra_field}</code>), Toolkit requires all fields to have values in Flow Production Tracking. For example, if the  <code class="highlighter-rouge">sg_extra_field</code>  is blank, an error message will be generated. If you have a field that is sometimes populated and sometimes not, you can mark it as optional. This means that Toolkit will include the field if it has a value, and exclude it if the value is blank-without error.</p>
 
 <p>You define optional fields using square brackets, like:  <code class="highlighter-rouge">{code}[_{sg_extra_field}]</code>. This will generate the following folder names:</p>
 
@@ -16744,32 +16744,32 @@ create_with_parent: true
 
 <h2 id="regular-expression-token-matching">Regular expression token matching</h2>
 
-<p>Toolkit supports the extraction of parts of a ShotGrid field name using regular expressions. This makes it possible to create simple expressions where a value in ShotGrid can drive the folder creation. For example, if all assets in ShotGrid are named with a three letter prefix followed by an underscore (e.g  <code class="highlighter-rouge">AAT_Boulder7</code>), this can split into two filesystem folder levels, e.g.  <code class="highlighter-rouge">AAT/Boulder7</code>:</p>
+<p>Toolkit supports the extraction of parts of a Flow Production Tracking field name using regular expressions. This makes it possible to create simple expressions where a value in Flow Production Tracking can drive the folder creation. For example, if all assets in Flow Production Tracking are named with a three letter prefix followed by an underscore (e.g  <code class="highlighter-rouge">AAT_Boulder7</code>), this can split into two filesystem folder levels, e.g.  <code class="highlighter-rouge">AAT/Boulder7</code>:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: shotgun_entity
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: Asset
 
 # Extract parts of the name using regular expressions
 name: "{code:^([^_]+)}/{code^[^_]+_(.*)}"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 </code></pre></div></div>
 
-<p>The syntax is similar to the  <code class="highlighter-rouge">subset</code>  tokens in the Template system; Simply add a colon after the ShotGrid field name, then followed by a regular expression. Any groups (e.g. sections surrounded by  <code class="highlighter-rouge">()</code>s) defined in the regular expression will be used to extract values. If there are multiple groups in the regex, these will be concatenated together. For example, the following expression would extract the intials for the user who created an object:  <code class="highlighter-rouge">{created_by.HumanUser.code:^([A-Z])[a-z]* ([A-Z])[a-z]*}</code></p>
+<p>The syntax is similar to the  <code class="highlighter-rouge">subset</code>  tokens in the Template system; Simply add a colon after the Flow Production Tracking field name, then followed by a regular expression. Any groups (e.g. sections surrounded by  <code class="highlighter-rouge">()</code>s) defined in the regular expression will be used to extract values. If there are multiple groups in the regex, these will be concatenated together. For example, the following expression would extract the intials for the user who created an object:  <code class="highlighter-rouge">{created_by.HumanUser.code:^([A-Z])[a-z]* ([A-Z])[a-z]*}</code></p>
 
 <h2 id="examples">Examples</h2>
 
 <p>Below are a collection of examples showing how to use the filters syntax.</p>
 
-<p>To <strong>find all shots which belong to the current project and are in progress</strong>, use the syntax below. Note that the ShotGrid Shot entity has a link field called project which connects a shot to a project. We want to make sure that we only create folders for the shots that are associated with the current project. Since there is a project level higher up in the configuration file system, we can refer to this via the $syntax and Toolkit will automatically create to this ShotGrid entity link reference. Remember, valid values for $syntax are any ancestor folder that has a corresponding ShotGrid entity (e.g.,  <code class="highlighter-rouge">"$project"</code>  for the Project and  <code class="highlighter-rouge">"$sequence"</code>  if you have a sequence.yml higher up the directory hierarchy).</p>
+<p>To <strong>find all shots which belong to the current project and are in progress</strong>, use the syntax below. Note that the Flow Production Tracking Shot entity has a link field called project which connects a shot to a project. We want to make sure that we only create folders for the shots that are associated with the current project. Since there is a project level higher up in the configuration file system, we can refer to this via the $syntax and Toolkit will automatically create to this Flow Production Tracking entity link reference. Remember, valid values for $syntax are any ancestor folder that has a corresponding Flow Production Tracking entity (e.g.,  <code class="highlighter-rouge">"$project"</code>  for the Project and  <code class="highlighter-rouge">"$sequence"</code>  if you have a sequence.yml higher up the directory hierarchy).</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>entity_type: Shot
 filters:
@@ -16793,7 +16793,7 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 
 <h2 id="list-field-folders">List Field Folders</h2>
 
-<p><a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_field_types_html">ShotGrid list field</a>  folders are useful if you want to create one folder for every asset type in ShotGrid, for instance. Asset types are list fields in ShotGrid, and this folder config type makes it possible to define a layer in the file system that reflects those asset type listings.</p>
+<p><a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_field_types_html">Flow Production Tracking list field</a>  folders are useful if you want to create one folder for every asset type in Flow Production Tracking, for instance. Asset types are list fields in Flow Production Tracking, and this folder config type makes it possible to define a layer in the file system that reflects those asset type listings.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/file-system-config-reference/list_field_folders_02_DS.png" alt="list_field_folders" /></p>
 
@@ -16806,12 +16806,12 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
     </p>
 </div>
 
-<p>When you want a dynamic folder which corresponds to all the items in a ShotGrid list field, use the following syntax in your YAML file:</p>
+<p>When you want a dynamic folder which corresponds to all the items in a Flow Production Tracking list field, use the following syntax in your YAML file:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_list_field"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "Asset"
 
 # only create for values which are used in this project.
@@ -16823,15 +16823,15 @@ skip_unused: false
 # nodes are always created
 create_with_parent: false
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 field_name: "{sg_asset_type}_type"
 </code></pre></div></div>
 
 <ul>
   <li>Set value of dynamic content <strong>type</strong> field to be  <code class="highlighter-rouge">shotgun_list_field</code>.</li>
-  <li>The  <code class="highlighter-rouge">entity_type</code>  field should be set to the ShotGrid entity from which we want to pull data (for instance, “Asset”, “Sequence”, “Shot”, etc.).</li>
+  <li>The  <code class="highlighter-rouge">entity_type</code>  field should be set to the Flow Production Tracking entity from which we want to pull data (for instance, “Asset”, “Sequence”, “Shot”, etc.).</li>
   <li>
-    <p>The  <code class="highlighter-rouge">field_name</code>  field should be set to the ShotGrid field from which the data is pulled from and must be a  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_field_types_html">list type field</a>. You can use expressions if you want to add static text alongside the dynamic content.<code class="highlighter-rouge">field_name: "{sg_asset_type}_type"</code>  This example expression includes text as well as a template key.</p>
+    <p>The  <code class="highlighter-rouge">field_name</code>  field should be set to the Flow Production Tracking field from which the data is pulled from and must be a  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_field_types_html">list type field</a>. You can use expressions if you want to add static text alongside the dynamic content.<code class="highlighter-rouge">field_name: "{sg_asset_type}_type"</code>  This example expression includes text as well as a template key.</p>
   </li>
   <li>The optional  <code class="highlighter-rouge">skip_unused</code>  parameter will prevent the creation of directories for list type field values which are not used (as covered under the  <a href="#optional-fields">Optional Fields</a>  section above).</li>
 </ul>
@@ -16850,24 +16850,24 @@ field_name: "{sg_asset_type}_type"
 
 <h2 id="pipeline-step-folder">Pipeline Step Folder</h2>
 
-<p>The Pipeline Step folder represents a  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Producer_pr_scheduling_tasks_pr_tasks_pipeline_steps_html">Pipeline Step</a>  in ShotGrid. Pipeline Steps are also referred to as Steps.</p>
+<p>The Pipeline Step folder represents a  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Producer_pr_scheduling_tasks_pr_tasks_pipeline_steps_html">Pipeline Step</a>  in Flow Production Tracking. Pipeline Steps are also referred to as Steps.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/file-system-config-reference/pipeline_step_folder_02_DS.png" alt="pipeline_step_folder" /></p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_step"
 
-# the ShotGrid field to use for the folder name. This field needs to come from a step entity.
+# the Flow Production Tracking field to use for the folder name. This field needs to come from a step entity.
 name: "short_name"
 </code></pre></div></div>
 
-<p>You can use name expressions here, just like you can with the  <a href="#list-field-folders">ShotGrid entity described above</a>. The node will look at its parent, grandparent, etc., until a ShotGrid entity folder configuration is found. This entity folder will be associated with the Step and the type of the entity will be used to determine which Steps to create.</p>
+<p>You can use name expressions here, just like you can with the  <a href="#list-field-folders">Flow Production Tracking entity described above</a>. The node will look at its parent, grandparent, etc., until a Flow Production Tracking entity folder configuration is found. This entity folder will be associated with the Step and the type of the entity will be used to determine which Steps to create.</p>
 
 <div class="info-popup">
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Note
-:</b> If you want to create a top level folder with Pipeline Steps, just use the ShotGrid entity node and set the associated type to step.
+:</b> If you want to create a top level folder with Pipeline Steps, just use the Flow Production Tracking entity node and set the associated type to step.
 
     </p>
 </div>
@@ -16898,7 +16898,7 @@ create_with_parent: false
 
 <h2 id="advanced---specifying-a-parent">Advanced - Specifying a parent</h2>
 
-<p>As part of the folder creation, Toolkit needs to associate a Pipeline Step with an entity (e.g., “Shot”, “Asset”, etc). Toolkit does this by default by looking up the folder tree and picking the first ShotGrid entity folder it finds. For example, if you have the hierarchy  <code class="highlighter-rouge">Sequence &gt; Shot &gt; Step</code>, the Step folder will automatically be associated with the Shot, which is typically what you want.</p>
+<p>As part of the folder creation, Toolkit needs to associate a Pipeline Step with an entity (e.g., “Shot”, “Asset”, etc). Toolkit does this by default by looking up the folder tree and picking the first Flow Production Tracking entity folder it finds. For example, if you have the hierarchy  <code class="highlighter-rouge">Sequence &gt; Shot &gt; Step</code>, the Step folder will automatically be associated with the Shot, which is typically what you want.</p>
 
 <p>However, if you have a hierarchy with entities below your primary entity, for example  <code class="highlighter-rouge">Sequence &gt; Shot &gt; Department &gt; Step</code>, Toolkit will, by default, associate the Step with the Department level, which is not desired. In this case, we need to explicitly tell Toolkit where to look. We can do this by adding the following to the Step configuration:</p>
 
@@ -16907,14 +16907,14 @@ create_with_parent: false
 
 <h2 id="task-folder">Task Folder</h2>
 
-<p>The Task folder represents a  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Producer_pr_scheduling_tasks_pr_my_tasks_html">Task</a>  in ShotGrid. By default, the Task folder will not will not be created with its parent. For example, if the folder creation is triggered for a Shot which has a Task node associated, the Task folders will not be created automatically. Instead, Task folders will only be created when the folder creation is executed for the Task (e.g., launching a Task from ShotGrid).</p>
+<p>The Task folder represents a  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Producer_pr_scheduling_tasks_pr_my_tasks_html">Task</a>  in Flow Production Tracking. By default, the Task folder will not will not be created with its parent. For example, if the folder creation is triggered for a Shot which has a Task node associated, the Task folders will not be created automatically. Instead, Task folders will only be created when the folder creation is executed for the Task (e.g., launching a Task from Flow Production Tracking).</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/file-system-config-reference/task_folder_02_DS.png" alt="task_folder" /></p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_task"
 
-# the ShotGrid field to use for the folder name. This field needs to come from a task entity.
+# the Flow Production Tracking field to use for the folder name. This field needs to come from a task entity.
 name: "content" 
 </code></pre></div></div>
 
@@ -16926,15 +16926,15 @@ create_with_parent: true
 
 <p>Similar to a Step, you can also optionally supply a  <code class="highlighter-rouge">filter</code>  parameter if you want to filter which Tasks your folder configuration should operate on.</p>
 
-<p>Once again, you can use name expressions, just like you can with the  <a href="#list-field-folders">ShotGrid entity described above</a>, where static text can be used alongside dynamic content so that you can create a name that has both dynamic and static context.</p>
+<p>Once again, you can use name expressions, just like you can with the  <a href="#list-field-folders">Flow Production Tracking entity described above</a>, where static text can be used alongside dynamic content so that you can create a name that has both dynamic and static context.</p>
 
 <p><code class="highlighter-rouge">name: "task_{content}"</code></p>
 
-<p>The node will look at its parent, grandparent etc., until a ShotGrid entity folder configuration is found. This entity folder will be associated with the task and will be used to determine which task folders to create.</p>
+<p>The node will look at its parent, grandparent etc., until a Flow Production Tracking entity folder configuration is found. This entity folder will be associated with the task and will be used to determine which task folders to create.</p>
 
 <h3 id="advanced---specify-a-parent">Advanced - Specify a parent</h3>
 
-<p>As part of the folder creation, Toolkit needs to associate a Task with an entity (e.g., a Shot, an Asset, etc.). Toolkit does this by default by looking up the folder tree and picking the first ShotGrid entity folder it finds. For example, if you have the hierarchy  <code class="highlighter-rouge">Sequence &gt; Shot &gt; Task</code>, the Task folder will automatically be associated with the Shot, which is typically what you want.</p>
+<p>As part of the folder creation, Toolkit needs to associate a Task with an entity (e.g., a Shot, an Asset, etc.). Toolkit does this by default by looking up the folder tree and picking the first Flow Production Tracking entity folder it finds. For example, if you have the hierarchy  <code class="highlighter-rouge">Sequence &gt; Shot &gt; Task</code>, the Task folder will automatically be associated with the Shot, which is typically what you want.</p>
 
 <p>However, if you have a hierarchy with entities below your primary entity (e.g., below Shot), like  <code class="highlighter-rouge">Sequence &gt; Shot &gt; Department &gt; Task,</code>  Toolkit would by default associate the Task with the department level, which is not desired. In this case, we need to explicitly tell Toolkit where to look, similarly to how we updated this with Steps in the  <a href="#create-with-parent-folder">previous section</a>. We can do this by adding the following to the Task configuration:</p>
 
@@ -16959,7 +16959,7 @@ defer_creation: true
   <li><strong>Workspaces:</strong> Application specific folder setups. Folders can be created just before an application launches.</li>
   <li>A common workflow for this is to have a Pipeline Step that might require Houdini, Maya, and another Engine, depending on what the shot requires and how an Artist chooses to tackle it. The Artist can create maya/, houdini/, and other directories for that Pipeline Step initially, but if the Artist on a given shot only ever works in Maya, empty folders for Houdini and any other Engine are unnecessary. So, if you defer the folder creation to happen at the time of the launch of individual engines, then if an Artist never uses Houdini, the houdini/ folder will not be created for that shot.</li>
   <li><strong>User folders:</strong> A user folder is created just before application launch. The user folder config construct (described above) is deferred by default.</li>
-  <li>This can happen so that instead of basing a user folder on the assigned user in ShotGrid, you can create a folder for the current user whenever they launch an Engine. For instance, if you start working on a shot, and you launch Maya, a username folder will be created for you (based on your username in ShotGrid), and you will not interfere with anyone else’s work.</li>
+  <li>This can happen so that instead of basing a user folder on the assigned user in Flow Production Tracking, you can create a folder for the current user whenever they launch an Engine. For instance, if you start working on a shot, and you launch Maya, a username folder will be created for you (based on your username in Flow Production Tracking), and you will not interfere with anyone else’s work.</li>
 </ol>
 
 <p><em>Tip: If you prefer a normal, static folder to be created when an application (like Maya) launches, just create a config YAML file named the same as the folder and add the following:</em></p>
@@ -16990,10 +16990,10 @@ name: "login"
 
 <ul>
   <li>Set value of <strong>type</strong> field to be  <code class="highlighter-rouge">user_workspace</code>.</li>
-  <li>The <strong>name</strong> field is the name that should be given to a user folder. It must consist of a combination of fields fetched from People in ShotGrid (<code class="highlighter-rouge">HumanUser</code>  in ShotGrid).</li>
+  <li>The <strong>name</strong> field is the name that should be given to a user folder. It must consist of a combination of fields fetched from People in Flow Production Tracking (<code class="highlighter-rouge">HumanUser</code>  in Flow Production Tracking).</li>
   <li>You can use a single field, like in the example above (e.g.,  <code class="highlighter-rouge">name: login</code>).</li>
   <li>You can use multiple fields in brackets (e.g.,  <code class="highlighter-rouge">name: "{firstname}_{lastname}"</code>).</li>
-  <li>If you want to include fields from other linked entities, you can use the standard ShotGrid dot syntax (e.g.,  <code class="highlighter-rouge">name: "{sg_group.Group.code}_{login}"</code>).</li>
+  <li>If you want to include fields from other linked entities, you can use the standard Flow Production Tracking dot syntax (e.g.,  <code class="highlighter-rouge">name: "{sg_group.Group.code}_{login}"</code>).</li>
 </ul>
 
 <p>The current user folder is created as a deferred folder by default, meaning that it will only be executed when a second folder creation pass is requested via the optional  <code class="highlighter-rouge">engine</code>  parameter in the create folders method of the Toolkit API.</p>
@@ -17007,14 +17007,14 @@ name: "login"
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "static"
 
-# pick one of the ShotGrid folders that are above this folder
+# pick one of the Flow Production Tracking folders that are above this folder
 # in the folder hierarchy. In this case it is a parent folder
 # named step that we want to look at when deciding if this
 # static folder should be created or not.
 constrain_by_entity: "$step"
 
 # we can now define constraints for this step. Constraints are simple
-# ShotGrid queries, following the same syntax as the other ShotGrid filters
+# Flow Production Tracking queries, following the same syntax as the other Flow Production Tracking filters
 # shown in previous sections.
 
 # In our example, if the parent step matches the constraints given
@@ -17175,7 +17175,7 @@ target: "../renders/$Project/$Asset.sg_asset_type/$Asset"
 <p>The data is a list of dictionaries. Each dictionary has a key called  <code class="highlighter-rouge">action</code>. This key denotes the type of I/O item that is requested. If you are implementing the folder creation hook, you need to add support for the following different actions:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">entity_folder</code>: A folder on disk which is associated with a ShotGrid entity.</li>
+  <li><code class="highlighter-rouge">entity_folder</code>: A folder on disk which is associated with a Flow Production Tracking entity.</li>
   <li><code class="highlighter-rouge">folder</code>: A folder on disk.</li>
   <li><code class="highlighter-rouge">copy</code>: A file that needs to be copied from a source location to a target location.</li>
   <li><code class="highlighter-rouge">create_file</code>:- A file that needs to be created on disk.</li>
@@ -17184,7 +17184,7 @@ target: "../renders/$Project/$Asset.sg_asset_type/$Asset"
 
 <p>Each of the actions have a different set of dictionary keys. For example, the  <code class="highlighter-rouge">entity_folder</code>  action has an  <code class="highlighter-rouge">entity key</code>  which contains the details of the entity that it is connected to. The  <code class="highlighter-rouge">create_file</code>  has a  <code class="highlighter-rouge">source_path</code>  and a  <code class="highlighter-rouge">target_path</code>  key which inform the hook which file to copy and where.</p>
 
-<p>All  <code class="highlighter-rouge">actions</code>  also have a key called  <code class="highlighter-rouge">metadata</code>. This key represents the YAML configuration data that comes from the associated configuration file in the schema setup. You can see in the example above how the  <code class="highlighter-rouge">metadata</code>  key for a ShotGrid folder contains all the filter and naming information that is set up within the schema configuration. For example, here is the metadata for the Shot folder in the example above:</p>
+<p>All  <code class="highlighter-rouge">actions</code>  also have a key called  <code class="highlighter-rouge">metadata</code>. This key represents the YAML configuration data that comes from the associated configuration file in the schema setup. You can see in the example above how the  <code class="highlighter-rouge">metadata</code>  key for a Flow Production Tracking folder contains all the filter and naming information that is set up within the schema configuration. For example, here is the metadata for the Shot folder in the example above:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="p">{</span><span class="s">'action'</span><span class="p">:</span> <span class="s">'entity_folder'</span><span class="p">,</span>
       <span class="s">'entity'</span><span class="p">:</span> <span class="p">{</span><span class="s">'id'</span><span class="p">:</span> <span class="mi">1184</span><span class="p">,</span> <span class="s">'name'</span><span class="p">:</span> <span class="s">'moo87'</span><span class="p">,</span> <span class="s">'type'</span><span class="p">:</span> <span class="s">'Shot'</span><span class="p">},</span>
@@ -17199,29 +17199,29 @@ target: "../renders/$Project/$Asset.sg_asset_type/$Asset"
 
 <p>…which corresponds to the  <code class="highlighter-rouge">shot.yml</code>  schema configuration file:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Copyright (c) 2013 ShotGrid Software Inc.
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Copyright (c) 2013 Flow Production Tracking Software Inc.
 #
 # CONFIDENTIAL AND PROPRIETARY
 #
-# This work is provided "AS IS" and subject to the ShotGrid Pipeline Toolkit
+# This work is provided "AS IS" and subject to the Flow Production Tracking Toolkit
 # Source Code License included in this distribution package. See LICENSE.
 # By accessing, using, copying or modifying this work you indicate your
-# agreement to the ShotGrid Pipeline Toolkit Source Code License. All rights
-# not expressly granted therein are reserved by ShotGrid Software Inc.
+# agreement to the Flow Production Tracking Toolkit Source Code License. All rights
+# not expressly granted therein are reserved by Flow Production Tracking Software Inc.
 
 # the type of dynamic content
 type: "shotgun_entity"
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "code"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "Shot"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "sg_sequence", "relation": "is", "values": [ "$sequence" ] } ] 
 </code></pre></div></div>
@@ -17237,13 +17237,13 @@ filters: [ { "path": "sg_sequence", "relation": "is", "values": [ "$sequence" ] 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_entity"
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "code"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "Shot"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 filters: [ { "path": "sg_sequence", "relation": "is", "values": [ "$sequence" ] } ]
 
 # user settings
@@ -17302,7 +17302,7 @@ studio_permissions_level: "admin"
      Standard Folder
      ---------------
      This represents a standard folder in the file system which is not associated
-     with anything in ShotGrid. It contains the following keys:
+     with anything in Flow Production Tracking. It contains the following keys:
     
      * "action": "folder"
      * "metadata": The configuration yaml data for this item
@@ -17311,12 +17311,12 @@ studio_permissions_level: "admin"
      Entity Folder
      -------------
      This represents a folder in the file system which is associated with a
-     ShotGrid entity. It contains the following keys:
+     Flow Production Tracking entity. It contains the following keys:
     
      * "action": "entity_folder"
      * "metadata": The configuration yaml data for this item
      * "path": path on disk to the item
-     * "entity": ShotGrid entity link dict with keys type, id and name.
+     * "entity": Flow Production Tracking entity link dict with keys type, id and name.
     
      File Copy
      ---------
@@ -17460,7 +17460,7 @@ studio_permissions_level: "admin"
     <p><code class="highlighter-rouge">strict_matching: true</code>  - Only works for keys of type type int. This settings means that the field will only match numbers that have been properly formatted. For example, given “003” and strict_matching set to true, we would match “002”, “12345” and “042”, but not “00003” or “2”. If you need the matching to be less strict, set strict_matching to false. The default behavior is to strictly match.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">shotgun_entity_type</code>  - When used in conjunction with the  <code class="highlighter-rouge">shotgun_field_name</code>  option, will cause contexts to query ShotGrid directly for values. This allows using values from fields not seen in the folder structure to be used in file names.</p>
+    <p><code class="highlighter-rouge">shotgun_entity_type</code>  - When used in conjunction with the  <code class="highlighter-rouge">shotgun_field_name</code>  option, will cause contexts to query Flow Production Tracking directly for values. This allows using values from fields not seen in the folder structure to be used in file names.</p>
   </li>
   <li>
     <p><code class="highlighter-rouge">shotgun_field_name</code>  - Only used in conjunction with  <code class="highlighter-rouge">shotgun_entity_type</code>.</p>
@@ -17579,7 +17579,7 @@ maya_shot_work: sequences/{Sequence}/{Shot}/{Step}/work/maya/{name}.v{maya_versi
 
 <h3 id="example---mappings">Example - mappings</h3>
 
-<p>This is useful when you would like to to add ShotGrid fields to a file name, for example. Let’s say we would like to include the user name in a file name- we’d use the following definition:</p>
+<p>This is useful when you would like to to add Flow Production Tracking fields to a file name, for example. Let’s say we would like to include the user name in a file name- we’d use the following definition:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>current_user_name:
     type: str
@@ -17589,7 +17589,7 @@ maya_shot_work: sequences/{Sequence}/{Shot}/{Step}/work/maya/{name}.v{maya_versi
 nuke_shot_work: sequences/{Sequence}/{Shot}/{Step}/work/nuke/{current_user_name}_{name}.v{version}.nk
 </code></pre></div></div>
 
-<p>When a Toolkit app populates all the context fields (via the  <code class="highlighter-rouge">context.as_template_fields()</code>  method, it will populate the higher level fields  <code class="highlighter-rouge">Shot</code>,  <code class="highlighter-rouge">Sequence</code>  and  <code class="highlighter-rouge">Step</code>  automatically. It will also scan through all fields which have  <code class="highlighter-rouge">shotgun_entity_type</code>  defined (like our  <code class="highlighter-rouge">current_user_name</code>  field above). If the ShotGrid Entity is defined in the context, it will be able to automatically resolve the value. The current user is always tracked in the context, and in the above example, it would also be possible to pull data from fields on Shot, Sequence and Step since these are defined as part of the higher level path and therefore part of the context. However, trying to refer to an Asset entity in a field wouldn’t work in the above example since Toolkit would have no way of knowing which asset in ShotGrid to pull the data from.</p>
+<p>When a Toolkit app populates all the context fields (via the  <code class="highlighter-rouge">context.as_template_fields()</code>  method, it will populate the higher level fields  <code class="highlighter-rouge">Shot</code>,  <code class="highlighter-rouge">Sequence</code>  and  <code class="highlighter-rouge">Step</code>  automatically. It will also scan through all fields which have  <code class="highlighter-rouge">shotgun_entity_type</code>  defined (like our  <code class="highlighter-rouge">current_user_name</code>  field above). If the Flow Production Tracking Entity is defined in the context, it will be able to automatically resolve the value. The current user is always tracked in the context, and in the above example, it would also be possible to pull data from fields on Shot, Sequence and Step since these are defined as part of the higher level path and therefore part of the context. However, trying to refer to an Asset entity in a field wouldn’t work in the above example since Toolkit would have no way of knowing which asset in Flow Production Tracking to pull the data from.</p>
 
 <h3 id="example---string-field-with-two-valid-values">Example - String field with two valid values</h3>
 
@@ -17674,7 +17674,7 @@ nuke_shot_work: sequences/{Sequence}/{Shot}/{Step}/work/nuke/{user_initials}_{na
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Note
-:</b> If a string key’s name matches the entity type of a dynamic schema folder that has an associated ShotGrid entity, then that folder name will be substituted in for the token. For example, if you are using a {Sequence} template key of type ‘string’ like the above snippet, and in your schema, you have a dynamic folder named ‘sequence’, and in its corresponding  <code class="highlighter-rouge">sequence.yml</code>  file, it’s defined to be of type  <code class="highlighter-rouge">shotgun_entity</code>, and is connected to the ‘Sequence’ entity type in ShotGrid. Toolkit will recognize that your template key corresponds to this dynamic folder’s entity type (in that they are both Sequence). So, Toolkit will take the resulting folder name (i.e., the name of the specific sequence in question), and substitutes that in for the template key.
+:</b> If a string key’s name matches the entity type of a dynamic schema folder that has an associated Flow Production Tracking entity, then that folder name will be substituted in for the token. For example, if you are using a {Sequence} template key of type ‘string’ like the above snippet, and in your schema, you have a dynamic folder named ‘sequence’, and in its corresponding  <code class="highlighter-rouge">sequence.yml</code>  file, it’s defined to be of type  <code class="highlighter-rouge">shotgun_entity</code>, and is connected to the ‘Sequence’ entity type in Flow Production Tracking. Toolkit will recognize that your template key corresponds to this dynamic folder’s entity type (in that they are both Sequence). So, Toolkit will take the resulting folder name (i.e., the name of the specific sequence in question), and substitutes that in for the template key.
 
     </p>
 </div>
@@ -17699,7 +17699,7 @@ nuke_shot_work: sequences/{Sequence}/{Shot}/{Step}/work/nuke/{user_initials}_{na
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>string_name: string_definition
 </code></pre></div></div>
 
-<p>String definitions are templates consisting of key names and other values which together resolve to a string rather than a file system path. An example might the name used in ShotGrid for a publish:</p>
+<p>String definitions are templates consisting of key names and other values which together resolve to a string rather than a file system path. An example might the name used in Flow Production Tracking for a publish:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>maya_publish_sg_name: "Maya  publish,  {name},  v{version}"
 </code></pre></div></div>
@@ -17734,7 +17734,7 @@ shot_work: sequences/{Shot}/work/{Shot}.ma
 
 <h2 id="how-can-i-add-a-new-entity-type-to-my-file-structure">How can I add a new entity type to my file structure?</h2>
 
-<p>Let’s say you have been working on feature animations and shorts on your ShotGrid site, and now you have been awarded episodic work. Let’s walk through how you can incorporate an episodic workflow to Toolkit. The first thing to do is to set up your hierarchy in ShotGrid for episodic work following the instructions  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_get_started_ar_episode_entity_html">here</a>.</p>
+<p>Let’s say you have been working on feature animations and shorts on your Flow Production Tracking site, and now you have been awarded episodic work. Let’s walk through how you can incorporate an episodic workflow to Toolkit. The first thing to do is to set up your hierarchy in Flow Production Tracking for episodic work following the instructions  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_get_started_ar_episode_entity_html">here</a>.</p>
 
 <p><img src="/en/guides/pipeline-integrations/administration/images/file-system-config-reference/episode_hierarchy.jpg" alt="episode_hierarchy" /></p>
 
@@ -17742,7 +17742,7 @@ shot_work: sequences/{Shot}/work/{Shot}.ma
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Note
-:</b> see the  <a href="#create-with-parent-folder">Create with parent folder section above</a>  to revisit nesting relationships in Toolkit (which is completely independent from the project hierarchy in ShotGrid).
+:</b> see the  <a href="#create-with-parent-folder">Create with parent folder section above</a>  to revisit nesting relationships in Toolkit (which is completely independent from the project hierarchy in Flow Production Tracking).
 
     </p>
 </div>
@@ -17756,9 +17756,9 @@ shot_work: sequences/{Shot}/work/{Shot}.ma
 
 <h3 id="fields-required-for-the-episode--sequence--shot-hierarchy">Fields required for the Episode &gt; Sequence &gt; Shot hierarchy</h3>
 
-<p><a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_get_started_ar_enabling_custom_entities_html">You can choose to use any Custom Entity</a> for <code class="highlighter-rouge">Episode</code> (Site Preferences &gt; Entities), or you can use the official Episode entity that was made available in ShotGrid 7.0.7.0. If you signed up for ShotGrid pre-7.0.7.0 (before 2017), the “TV Show” template uses <code class="highlighter-rouge">CustomEntity02</code> for Episodes. If you decide to use another entity that is not <code class="highlighter-rouge">CustomEntity02</code> or the official Episode entity, no worries! ShotGrid and Toolkit are flexible. Let’s walk through both cases.</p>
+<p><a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_get_started_ar_enabling_custom_entities_html">You can choose to use any Custom Entity</a> for <code class="highlighter-rouge">Episode</code> (Site Preferences &gt; Entities), or you can use the official Episode entity that was made available in Flow Production Tracking 7.0.7.0. If you signed up for Flow Production Tracking pre-7.0.7.0 (before 2017), the “TV Show” template uses <code class="highlighter-rouge">CustomEntity02</code> for Episodes. If you decide to use another entity that is not <code class="highlighter-rouge">CustomEntity02</code> or the official Episode entity, no worries! Flow Production Tracking and Toolkit are flexible. Let’s walk through both cases.</p>
 
-<p>For the purpose of this exercise, we will use Episode (<code class="highlighter-rouge">CustomEntity02</code>) and the official Episode entity as examples of how to incorporate Episodes with the project hierarchy update (you can use either/or). First, the way to properly set up our Project’s <strong>Episode &gt; Sequence &gt; Shot</strong> hierarchy is to ensure the following fields are in ShotGrid:</p>
+<p>For the purpose of this exercise, we will use Episode (<code class="highlighter-rouge">CustomEntity02</code>) and the official Episode entity as examples of how to incorporate Episodes with the project hierarchy update (you can use either/or). First, the way to properly set up our Project’s <strong>Episode &gt; Sequence &gt; Shot</strong> hierarchy is to ensure the following fields are in Flow Production Tracking:</p>
 
 <h4 id="episode">Episode</h4>
 
@@ -17786,7 +17786,7 @@ shot_work: sequences/{Shot}/work/{Shot}.ma
 
 <h4 id="shot">Shot</h4>
 
-<p>A single entity field called Sequence (<code class="highlighter-rouge">sg_sequence</code>) that links to the Sequence entity. This should already exist as part of the TV Show Project Template in ShotGrid.</p>
+<p>A single entity field called Sequence (<code class="highlighter-rouge">sg_sequence</code>) that links to the Sequence entity. This should already exist as part of the TV Show Project Template in Flow Production Tracking.</p>
 
 <p><strong>Using the official  <code class="highlighter-rouge">Episode</code>  Entity</strong></p>
 
@@ -17798,7 +17798,7 @@ shot_work: sequences/{Shot}/work/{Shot}.ma
 
 <h3 id="toolkit-schema-definition">Toolkit schema definition</h3>
 
-<p>Let’s assume a hierarchy as follows (where the folders in  <code class="highlighter-rouge">{}</code>s are dynamically named based on their name in ShotGrid):</p>
+<p>Let’s assume a hierarchy as follows (where the folders in  <code class="highlighter-rouge">{}</code>s are dynamically named based on their name in Flow Production Tracking):</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- {project_name}
  - shots
@@ -17823,16 +17823,16 @@ shot_work: sequences/{Shot}/work/{Shot}.ma
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_entity"
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "code"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "Episode"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing 
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 </code></pre></div></div>
@@ -17842,16 +17842,16 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_entity"
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "code"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "CustomEntity02"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing 
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ] 
 </code></pre></div></div>
@@ -17865,16 +17865,16 @@ filters: [ { "path": "project", "relation": "is", "values": [ "$project" ] } ]
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_entity"
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "code"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "Sequence"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing 
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "sg_episode", "relation": "is", "values": [ "$episode" ] } ]` 
 </code></pre></div></div>
@@ -17888,16 +17888,16 @@ filters: [ { "path": "sg_episode", "relation": "is", "values": [ "$episode" ] } 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># the type of dynamic content
 type: "shotgun_entity"
 
-# the ShotGrid field to use for the folder name
+# the Flow Production Tracking field to use for the folder name
 name: "code"
 
-# the ShotGrid entity type to connect to
+# the Flow Production Tracking entity type to connect to
 entity_type: "Shot"
 
-# ShotGrid filters to apply when getting the list of items
+# Flow Production Tracking filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing 
 # three fields: path, relation and values
-# (this is std ShotGrid API syntax)
+# (this is std Flow Production Tracking API syntax)
 # any values starting with $ are resolved into path objects
 filters: [ { "path": "sg_sequence", "relation": "is", "values": [ "$sequence" ] } ]` 
 </code></pre></div></div>
@@ -17979,7 +17979,7 @@ filters: [ { "path": "sg_sequence", "relation": "is", "values": [ "$sequence" ] 
 
 <h2 id="how-can-i-create-a-custom-pipeline-step">How can I create a custom Pipeline Step?</h2>
 
-<p>In ShotGrid 7.0.6.0,  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_site_configuration_ar_configure_pipeline_steps_html#managing-pipeline-steps">managing Pipeline Steps via the Admin menu</a>  was introduced. With this feature, you can easily add custom fields to Pipeline Steps. <strong>Pro Tip: In most cases, utilizing custom fields on Pipeline Steps helps keep your pipeline more organized than creating a custom entity to manage those Pipeline Steps.</strong></p>
+<p>In Flow Production Tracking 7.0.6.0,  <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_site_configuration_ar_configure_pipeline_steps_html#managing-pipeline-steps">managing Pipeline Steps via the Admin menu</a>  was introduced. With this feature, you can easily add custom fields to Pipeline Steps. <strong>Pro Tip: In most cases, utilizing custom fields on Pipeline Steps helps keep your pipeline more organized than creating a custom entity to manage those Pipeline Steps.</strong></p>
 
 
             </div>  

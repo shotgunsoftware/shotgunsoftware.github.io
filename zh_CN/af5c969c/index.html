@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -4800,7 +4800,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -7431,9 +7431,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -9797,7 +9797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -10867,7 +10867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -10973,7 +10973,7 @@ Toolkit_Folders_Create
 Toolkit_Folders_Delete    
 </code></pre></div></div>
 
-<p>此列表并不完整，但是是一个很好的起点。如果您想要了解有关 ShotGrid 站点上的活动和事件类型的详细信息，请参考事件日志条目页面。在此页面上，您可以像任何其他实体类型的任何其他网格页面一样进行过滤和搜索。</p>
+<p>此列表并不完整，但是是一个很好的起点。如果您想要了解有关 Flow Production Tracking 站点上的活动和事件类型的详细信息，请参考事件日志条目页面。在此页面上，您可以像任何其他实体类型的任何其他网格页面一样进行过滤和搜索。</p>
 
 <h3 id="缩略图的事件日志条目">缩略图的事件日志条目</h3>
 <p>每次为实体上传新缩略图时，系统都会使用 <code class="highlighter-rouge">`Type` == `Shotgun_&lt;Entity_Type&gt;_Change`</code>（例如 <code class="highlighter-rouge">Shotgun_Shot_Change</code>）创建事件日志条目。</p>
@@ -11051,7 +11051,7 @@ Toolkit_Folders_Delete
 
 <h3 id="由于事件日志条目序列不连贯导致的积压">由于事件日志条目序列不连贯导致的积压</h3>
 
-<p>对于 ShotGrid 中发生的每个事件（字段更新、实体创建、实体停用等），其事件日志条目都具有唯一的 ID 编号。ID 编号序列有时并不是连贯的。导致这种不连贯的原因有很多，其中一个就是大型数据库事务尚未完成。</p>
+<p>对于 Flow Production Tracking 中发生的每个事件（字段更新、实体创建、实体停用等），其事件日志条目都具有唯一的 ID 编号。ID 编号序列有时并不是连贯的。导致这种不连贯的原因有很多，其中一个就是大型数据库事务尚未完成。</p>
 
 <p>每次事件日志序列出现不连贯现象时，“空缺”的事件 ID 都会被纳入积压工作，以便日后处理。这样，事件进程便可在结束时处理来自长数据库事务的事件。</p>
 

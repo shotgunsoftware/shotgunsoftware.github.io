@@ -11,12 +11,12 @@
 <link rel="alternate" hreflang="zh_CN" href="/zh_CN/3520ad2e/"/>
 
 
-  <title>How can I load different Toolkit Core modules using the ShotGrid Event Daemon? - SG Developer</title>
+  <title>How can I load different Toolkit Core modules using the Flow Production Tracking Event Daemon? - SG Developer</title>
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -4651,9 +4651,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7017,7 +7017,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -8087,7 +8087,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -8169,7 +8169,7 @@
 <p>Toolkit’s sgtk API is project-centric. In other words, you must import it specifically from the project you wish to use it on.
 This means that if you use sgtk API operations for multiple projects in a single Python session, then you will run into a problem, as Python only allows a module with the same name to be imported once.</p>
 
-<p>If you’re using the <a href="https://github.com/shotgunsoftware/shotgunEvents">ShotGrid event daemon</a>, you may want to perform Toolkit actions inside of a plugin for certain events. This can be tricky since Python only imports a module once. So if your Toolkit Core API for Project A is imported the first time the plugin is run, that is the version that will remain imported for the life of the daemon. This means if the next event dispatched to the plugin is for Project B, you may get an error from Toolkit if you try and instantiate a new Toolkit object for Project B using the core API from Project A.</p>
+<p>If you’re using the <a href="https://github.com/shotgunsoftware/shotgunEvents">Flow Production Tracking event daemon</a>, you may want to perform Toolkit actions inside of a plugin for certain events. This can be tricky since Python only imports a module once. So if your Toolkit Core API for Project A is imported the first time the plugin is run, that is the version that will remain imported for the life of the daemon. This means if the next event dispatched to the plugin is for Project B, you may get an error from Toolkit if you try and instantiate a new Toolkit object for Project B using the core API from Project A.</p>
 
 <p><strong>Example of the problem using centralized configs:</strong></p>
 

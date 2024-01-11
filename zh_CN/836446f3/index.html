@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -1979,9 +1979,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/zh_CN/7584b650/?title=Alias+ShotGrid+%E5%B7%A5%E4%BD%9C%E6%B5%81"
+                href="/zh_CN/7584b650/?title=Alias+Flow+Production+Tracking+%E5%B7%A5%E4%BD%9C%E6%B5%81"
             >
-                Alias ShotGrid 工作流
+                Alias Flow Production Tracking 工作流
             </a>
             </div>
 
@@ -8948,7 +8948,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -11579,9 +11579,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -13945,7 +13945,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -15015,7 +15015,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -15090,7 +15090,7 @@
 
             <h1 id="生成路径并发布">生成路径并发布</h1>
 
-<p>本手册介绍了 ShotGrid Toolkit Python API 快速入门相关信息，我们的工作流集成基于此 API 构建而成。</p>
+<p>本手册介绍了 Flow Production Tracking Toolkit Python API 快速入门相关信息，我们的工作流集成基于此 API 构建而成。</p>
 
 <p>本手册旨在介绍如何使用此 API 的基本示例，最后，您将能够导入 Toolkit API 并生成和发布路径。</p>
 
@@ -15130,15 +15130,15 @@
 </div>
 
 <p>要导入 API，您需要确保 <a href="https://docs.python.org/3/library/sys.html#sys.path"><code class="highlighter-rouge">sys.path</code></a> 中存在指向<a href="https://github.com/shotgunsoftware/tk-core/tree/v0.18.167/python">核心 python 文件夹</a>的路径。
-但是，对于此示例，我们建议您在 ShotGrid Desktop 的 Python 控制台中运行此代码。
+但是，对于此示例，我们建议您在 Flow Production Tracking Toolkit 的 Python 控制台中运行此代码。
 这意味着，正确的 <code class="highlighter-rouge">sgtk</code> 软件包路径已添加到 <code class="highlighter-rouge">sys.path</code> 中。
-同样，如果您在已在运行 ShotGrid 集成的软件中运行此代码，则无需添加路径。</p>
+同样，如果您在已在运行 Flow Production Tracking 集成的软件中运行此代码，则无需添加路径。</p>
 
-<p>在 ShotGrid 已启动的环境中运行代码时，只需编写以下内容即可导入 API：</p>
+<p>在 Flow Production Tracking 已启动的环境中运行代码时，只需编写以下内容即可导入 API：</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sgtk</span>
 </code></pre></div></div>
-<p>如果要在 ShotGrid 集成之外使用 API（例如，如果在您常用的 IDE 中对其进行测试），则需要先设置 API 的路径：</p>
+<p>如果要在 Flow Production Tracking 集成之外使用 API（例如，如果在您常用的 IDE 中对其进行测试），则需要先设置 API 的路径：</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">"/shotgun/configs/my_project_config/install/core/python"</span><span class="p">)</span>
@@ -15166,7 +15166,7 @@
 
 <ol>
   <li>
-    <p>如果在已在运行 ShotGrid 集成的环境中运行 Python 代码（例如，已从 ShotGrid 启动 Maya 情况下的 Maya Python 控制台），则可以从当前插件获取 <code class="highlighter-rouge">Sgtk</code> 实例。
+    <p>如果在已在运行 Flow Production Tracking 集成的环境中运行 Python 代码（例如，已从 Flow Production Tracking 启动 Maya 情况下的 Maya Python 控制台），则可以从当前插件获取 <code class="highlighter-rouge">Sgtk</code> 实例。
 <code class="highlighter-rouge">Engine.sgtk</code> 属性保留插件的 <code class="highlighter-rouge">Sgtk</code> 实例。例如，在 Maya 中，可以运行以下命令：</p>
 
     <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Get the engine that is currently running.
@@ -15193,7 +15193,7 @@
 
 <p>在本手册中，我们假定您在插件已启动的环境中运行此代码，因此我们将使用选项 1。
 此外，将 <code class="highlighter-rouge">Sgtk</code> 类实例存储在名为 <code class="highlighter-rouge">tk</code> 的变量中。
-如果您使用的是 ShotGrid Python 控制台，则 <code class="highlighter-rouge">tk</code> 变量已预定义为全局变量。</p>
+如果您使用的是 Flow Production Tracking Python 控制台，则 <code class="highlighter-rouge">tk</code> 变量已预定义为全局变量。</p>
 
 <p>现在，您拥有了一个 <code class="highlighter-rouge">Sgtk</code> 实例，可以开始使用 API。
 现在，发布脚本应如下所示：</p>
@@ -15213,7 +15213,7 @@
 
 <p>Toolkit 中执行的大量操作均围绕上下文展开，也就是说，知道您正在处理什么并能够相应地采取行动。
 对于 Toolkit API，您将需要能够存储有关所处理实体的重要详细信息，并与应用或其他进程共享，以便它们能够以上下文感知的方式进行操作。
-例如，如果 Toolkit 知道您正在处理什么任务，它将可以自动将您发布的文件链接到 ShotGrid 中对应的任务。</p>
+例如，如果 Toolkit 知道您正在处理什么任务，它将可以自动将您发布的文件链接到 Flow Production Tracking 中对应的任务。</p>
 
 <p><a href="https://developer.shotgridsoftware.com/tk-core/core.html#context"><code class="highlighter-rouge">Context</code> 类</a>充当此信息的容器。
 您可以将 <code class="highlighter-rouge">Task</code>、<code class="highlighter-rouge">Step</code>、<code class="highlighter-rouge">entity</code>（如 <code class="highlighter-rouge">Shot</code> 或 <code class="highlighter-rouge">Asset</code>）、<code class="highlighter-rouge">Project</code> 和当前 <code class="highlighter-rouge">HumanUser</code> 等存储在此类的实例中。</p>
@@ -15428,16 +15428,16 @@
 <p>在这里，您可以使用两种方法。</p>
 
 <ol>
-  <li>由于在此特定示例中，您要解析发布文件，因此可以使用 <a href="https://developer.shotgridsoftware.com/python-api/">ShotGrid API</a> 在 <code class="highlighter-rouge">PublishedFile</code> 实体上查询下一个可用版本号。</li>
+  <li>由于在此特定示例中，您要解析发布文件，因此可以使用 <a href="https://developer.shotgridsoftware.com/python-api/">Flow Production Tracking API</a> 在 <code class="highlighter-rouge">PublishedFile</code> 实体上查询下一个可用版本号。</li>
   <li>您可以扫描磁盘上的文件并确定已存在的版本，然后提取下一个版本号。
-如果您使用的文件未在 ShotGrid 中进行跟踪（如工作文件），这将非常有用。</li>
+如果您使用的文件未在 Flow Production Tracking 中进行跟踪（如工作文件），这将非常有用。</li>
 </ol>
 
 <p>尽管第一个选项可能更适合本手册中的示例，但这两种方法均有其各自的用途，因此我们都会进行介绍。</p>
 
-<h3 id="在-shotgrid-中查询下一个版本号">在 ShotGrid 中查询下一个版本号。</h3>
+<h3 id="在-shotgrid-中查询下一个版本号">在 Flow Production Tracking 中查询下一个版本号。</h3>
 
-<p>利用 ShotGrid API 和 <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.summarize"><code class="highlighter-rouge">summarize()</code> 方法</a>，可以在 <code class="highlighter-rouge">PublishedFile</code> 实体（这些实体共享相同的名称和任务）中获取最高版本号，然后加 1。</p>
+<p>利用 Flow Production Tracking API 和 <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.summarize"><code class="highlighter-rouge">summarize()</code> 方法</a>，可以在 <code class="highlighter-rouge">PublishedFile</code> 实体（这些实体共享相同的名称和任务）中获取最高版本号，然后加 1。</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r</span> <span class="o">=</span> <span class="n">sg</span><span class="o">.</span><span class="n">summarize</span><span class="p">(</span><span class="n">entity_type</span><span class="o">=</span><span class="s">"PublishedFile"</span><span class="p">,</span>
                  <span class="n">filters</span> <span class="o">=</span> <span class="p">[[</span><span class="s">"task"</span><span class="p">,</span> <span class="s">"is"</span><span class="p">,</span> <span class="p">{</span><span class="s">"type"</span><span class="p">:</span><span class="s">"Task"</span><span class="p">,</span> <span class="s">"id"</span><span class="p">:</span> <span class="n">context</span><span class="o">.</span><span class="n">task</span><span class="p">[</span><span class="s">"id"</span><span class="p">]}],</span>
@@ -15492,7 +15492,7 @@
 
 <p>现在，您已拥有一个路径，可以进行发布。要执行此操作，可以使用实用程序方法 <a href="https://developer.shotgridsoftware.com/tk-core/utils.html?#sgtk.util.register_publish"><code class="highlighter-rouge">sgtk.util.register_publish()</code></a>。</p>
 
-<p>也可以使用 ShotGrid API 的 <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.create"><code class="highlighter-rouge">ShotGrid.create()</code></a> 方法来创建 <code class="highlighter-rouge">PublishedFile</code> 实体，但我们强烈建议在此处使用 Toolkit API，因为它可确保提供并正确填写所有必填字段。</p>
+<p>也可以使用 Flow Production Tracking API 的 <a href="https://developer.shotgridsoftware.com/python-api/reference.html#shotgun_api3.shotgun.Shotgun.create"><code class="highlighter-rouge">ShotGrid.create()</code></a> 方法来创建 <code class="highlighter-rouge">PublishedFile</code> 实体，但我们强烈建议在此处使用 Toolkit API，因为它可确保提供并正确填写所有必填字段。</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># So as to match the Publish app's default behavior, we are adding the extension to the end of the publish name.
 # This is optional, however.

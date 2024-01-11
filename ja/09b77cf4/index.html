@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ja/site-metadata/apple-touch-icon.png">
@@ -2020,7 +2020,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            JIRA と ShotGrid 間でデータを同期する
+            JIRA と Flow Production Tracking 間でデータを同期する
         </a>
     </div>
 
@@ -6524,9 +6524,9 @@
                     class="nav-entry"
                 
                 
-                href="/ja/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ja/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -8890,7 +8890,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -9960,7 +9960,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid ドキュメント
+            Flow Production Tracking ドキュメント
         </a>
     </div>
 
@@ -10035,7 +10035,7 @@
 
             <h1 id="python-api-のベスト-プラクティス">Python API のベスト プラクティス</h1>
 
-<p>ShotGrid Python API を使用するときのベスト プラクティスのリストを次に示します。</p>
+<p>Flow Production Tracking Python API を使用するときのベスト プラクティスのリストを次に示します。</p>
 
 <h2 id="パフォーマンス">パフォーマンス</h2>
 
@@ -10052,15 +10052,15 @@
   <li>各スクリプトに所有者または管理者が存在すること、および [管理者] (Admin)メニューにある[スクリプト] (Scripts)ページの情報が最新であることを確認します。</li>
   <li><a href="https://developer.shotgridsoftware.com/ja/bbae2ca7/">API ユーザの読み取り専用権限グループ</a>を作成することを検討します。多くのスクリプトには読み取りアクセスのみが必要であるため、これらのグループを作成することで、誤って変更されることを防ぐことができます。</li>
   <li>使用中のキーをトラックして、古いスクリプトが削除できるようにします。この操作を簡単にするために、一部のスタジオでは、API ラッパーで監査情報をスクリプト化しています。</li>
-  <li>エンティティ名とフィールドをチェックしてください。ShotGrid にはフィールドごとに 2 つの名前があります。1 つは UI に使用される表示名(一意とは限らない)で、もう 1 つが API で使用される内部フィールド名です。表示名はいつでも変更することができるため、表示名からフィールド名を確実に予測できるわけではありません。フィールド名を確認するには、[管理者] (Admin)メニューのフィールド オプションに移動するか、<a href="https://developer.shotgridsoftware.com/python-api/reference.html?%20read#working-with-the-shotgun-schema">https://developer.shotgridsoftware.com/python-api/reference.html?%20read#working-with-the-shotgun-schema</a> で説明されている <code class="highlighter-rouge">schema_read(), schema_field_read(), schema_entity_read() methods</code> を使用します。</li>
+  <li>エンティティ名とフィールドをチェックしてください。Flow Production Tracking にはフィールドごとに 2 つの名前があります。1 つは UI に使用される表示名(一意とは限らない)で、もう 1 つが API で使用される内部フィールド名です。表示名はいつでも変更することができるため、表示名からフィールド名を確実に予測できるわけではありません。フィールド名を確認するには、[管理者] (Admin)メニューのフィールド オプションに移動するか、<a href="https://developer.shotgridsoftware.com/python-api/reference.html?%20read#working-with-the-shotgun-schema">https://developer.shotgridsoftware.com/python-api/reference.html?%20read#working-with-the-shotgun-schema</a> で説明されている <code class="highlighter-rouge">schema_read(), schema_field_read(), schema_entity_read() methods</code> を使用します。</li>
 </ol>
 
 <h2 id="デザイン">デザイン</h2>
 
 <ol>
-  <li>特に大きいスタジオでは、API 分離レイヤー(ラッパー)を使用することを検討してください。これにより、ShotGrid API に変更が加えられてもツールに影響はありません。また、API アクセスのコントロール、デバッグの管理、監査のトラックなども実行できます。API 自体の変更は不要です。</li>
+  <li>特に大きいスタジオでは、API 分離レイヤー(ラッパー)を使用することを検討してください。これにより、Flow Production Tracking API に変更が加えられてもツールに影響はありません。また、API アクセスのコントロール、デバッグの管理、監査のトラックなども実行できます。API 自体の変更は不要です。</li>
   <li>最新バージョンの API を使用してください。バグ修正とパフォーマンスの改善が含まれています。</li>
-  <li>スクリプトが実行される場所に注意してください。スクリプトがレンダリング ファームで実行される場合、1 つの情報を要求するために 1 分間に数千回、ShotGrid を呼び出すため、サイトのパフォーマンスに影響を与えることがあります。このようなケースでは、読み取り専用のキャッシング レイヤを導入し、不必要に繰り返される呼び出しを減らすことを検討してください。</li>
+  <li>スクリプトが実行される場所に注意してください。スクリプトがレンダリング ファームで実行される場合、1 つの情報を要求するために 1 分間に数千回、Flow Production Tracking を呼び出すため、サイトのパフォーマンスに影響を与えることがあります。このようなケースでは、読み取り専用のキャッシング レイヤを導入し、不必要に繰り返される呼び出しを減らすことを検討してください。</li>
   <li>スクリプトのイベント生成をオフにすることができます。これは、後でトラックする必要のないイベントを含む、実行頻度が高いスクリプトで最も役に立ちます。頻繁に実行されるスクリプトの場合、イベント ログが非常に大きくなるため、オフにすることを強くお勧めします。</li>
 </ol>
 

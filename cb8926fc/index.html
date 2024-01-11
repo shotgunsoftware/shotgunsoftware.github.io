@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/site-metadata/apple-touch-icon.png">
@@ -3364,9 +3364,9 @@
                     class="nav-entry-non-expanded"
                 
                 style='margin-left:20px'
-                href="/7584b650/?title=Alias+ShotGrid+Workflows"
+                href="/7584b650/?title=Alias+Flow+Production+Tracking+Workflows"
             >
-                Alias ShotGrid Workflows
+                Alias Flow Production Tracking Workflows
             </a>
             </div>
 
@@ -6658,7 +6658,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Sync Data Between Jira and ShotGrid
+            Sync Data Between Jira and Flow Production Tracking
         </a>
     </div>
 
@@ -9289,9 +9289,9 @@
                     class="nav-entry"
                 
                 
-                href="/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -11655,7 +11655,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -12725,7 +12725,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid Documentation
+            Flow Production Tracking Documentation
         </a>
     </div>
 
@@ -12802,7 +12802,7 @@
 
 <p>This tutorial covers building a simplified, yet typical, pipeline for animation or visual effects production. By following this tutorial you will build a pipeline that provides all of the pieces necessary to push Assets from modeling through look development, and then into and through a production scene.</p>
 
-<p>Much of the workflows covered in this pipeline work out-of-the-box with ShotGrid’s built-in integrations. For the portions of the pipeline where studios are more often building custom solutions the tutorial will walk you through the process of customizing the artists workflow using the Toolkit platform.</p>
+<p>Much of the workflows covered in this pipeline work out-of-the-box with Flow Production Tracking’s built-in integrations. For the portions of the pipeline where studios are more often building custom solutions the tutorial will walk you through the process of customizing the artists workflow using the Toolkit platform.</p>
 
 <p>Here is a high level view of the pipeline you will build in this tutorial:</p>
 
@@ -12820,7 +12820,7 @@
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Note
-:</b> The simple pipeline outlined in this tutorial has not been tested on production and should only be used as an example of how a ShotGrid-based pipeline could be built.
+:</b> The simple pipeline outlined in this tutorial has not been tested on production and should only be used as an example of how a Flow Production Tracking-based pipeline could be built.
 
     </p>
 </div>
@@ -12829,16 +12829,16 @@
 
 <ul>
   <li>
-    <p><strong>A working ShotGrid Project</strong> - This tutorial assumes you have experience using ShotGrid for tracking and managing production data.</p>
+    <p><strong>A working Flow Production Tracking Project</strong> - This tutorial assumes you have experience using Flow Production Tracking for tracking and managing production data.</p>
   </li>
   <li>
-    <p><strong>Understanding of ShotGrid Integrations</strong> - ShotGrid ships with integrations that provide some simple production workflows without requiring any manual configuration. You should understand the features and scope of these workflows before diving into the manual configuration and customizations outlined in this tutorial. More information about ShotGrid Integrations can be found <a href="https://developer.shotgridsoftware.com/d587be80/">here</a>.</p>
+    <p><strong>Understanding of Flow Production Tracking Integrations</strong> - Flow Production Tracking ships with integrations that provide some simple production workflows without requiring any manual configuration. You should understand the features and scope of these workflows before diving into the manual configuration and customizations outlined in this tutorial. More information about Flow Production Tracking Integrations can be found <a href="https://developer.shotgridsoftware.com/d587be80/">here</a>.</p>
   </li>
   <li>
-    <p><strong>Maya &amp; Nuke Experience</strong> - This tutorial is designed to build a simple pipeline using Maya and Nuke. You should have a basic understanding of these packages in order to customize the integrations provided by ShotGrid.</p>
+    <p><strong>Maya &amp; Nuke Experience</strong> - This tutorial is designed to build a simple pipeline using Maya and Nuke. You should have a basic understanding of these packages in order to customize the integrations provided by Flow Production Tracking.</p>
   </li>
   <li>
-    <p><strong>Working knowledge of Python</strong> - The tutorial requires modifying the functionality of ShotGrid integrations via “hooks” that are written in Python.</p>
+    <p><strong>Working knowledge of Python</strong> - The tutorial requires modifying the functionality of Flow Production Tracking integrations via “hooks” that are written in Python.</p>
   </li>
   <li>
     <p><strong>Familiarity with YAML</strong> - Much of the configuration of the pipeline you will be building is handled by modifying YAML files.</p>
@@ -12849,10 +12849,10 @@
 
 <ul>
   <li>
-    <p><a href="https://developer.shotgridsoftware.com">ShotGrid Support Site</a></p>
+    <p><a href="https://developer.shotgridsoftware.com">Flow Production Tracking Support Site</a></p>
   </li>
   <li>
-    <p><a href="https://www.shotgridsoftware.com/integrations/">ShotGrid Integrations</a></p>
+    <p><a href="https://www.shotgridsoftware.com/integrations/">Flow Production Tracking Integrations</a></p>
 
     <ul>
       <li>
@@ -12870,7 +12870,7 @@
 
 <h1 id="project-creation--setup">Project Creation &amp; Setup</h1>
 
-<p>For this Tutorial, you will need to create a new project in ShotGrid and configure it as if you were preparing for production to begin. This includes ensuring all of the necessary ShotGrid entities are in place and linked up properly. For this tutorial, the Asset, Sequence, Shot, and Task entities are required and should be available by default in a new project. You will create:</p>
+<p>For this Tutorial, you will need to create a new project in Flow Production Tracking and configure it as if you were preparing for production to begin. This includes ensuring all of the necessary Flow Production Tracking entities are in place and linked up properly. For this tutorial, the Asset, Sequence, Shot, and Task entities are required and should be available by default in a new project. You will create:</p>
 
 <ul>
   <li>
@@ -12896,7 +12896,7 @@
   </li>
 </ul>
 
-<p>Here are some screenshots of what your configured project entities should look like in ShotGrid:</p>
+<p>Here are some screenshots of what your configured project entities should look like in Flow Production Tracking:</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_1.png" style="" />
@@ -12918,29 +12918,29 @@
 
 <h2 id="software-launchers">Software Launchers</h2>
 
-<p>Next, you’ll need to ensure that Maya and Nuke are available to launch in ShotGrid Desktop. In Desktop, make sure that each of these packages can be launched by clicking on their icon. Be sure that the proper version of each package is launched.</p>
+<p>Next, you’ll need to ensure that Maya and Nuke are available to launch in Flow Production Tracking Toolkit. In Desktop, make sure that each of these packages can be launched by clicking on their icon. Be sure that the proper version of each package is launched.</p>
 
-<p>If either application does not show up in Desktop or the expected version does not launch, you may need to manually configure the launch in ShotGrid via the Software entity.</p>
+<p>If either application does not show up in Desktop or the expected version does not launch, you may need to manually configure the launch in Flow Production Tracking via the Software entity.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_4.png" style="" />
-  <figcaption>The default Software entities defined in ShotGrid
+  <figcaption>The default Software entities defined in Flow Production Tracking
 </figcaption>
 </figure>
 
-<p>The Software entity is used to drive which DCC packages to use on your production. By default, the integrations will search for these packages in standard installation locations and make them launchable via Desktop. If you have more than one version installed or you have them installed in a non-standard location, it is possible you need to update the corresponding Software entity entry in ShotGrid to curate the launch experience for your artists.</p>
+<p>The Software entity is used to drive which DCC packages to use on your production. By default, the integrations will search for these packages in standard installation locations and make them launchable via Desktop. If you have more than one version installed or you have them installed in a non-standard location, it is possible you need to update the corresponding Software entity entry in Flow Production Tracking to curate the launch experience for your artists.</p>
 
 <p>For complete details on the Software entity and how to properly configure it, please see the <a href="https://developer.shotgridsoftware.com/8085533c/">Integrations Admin Guide</a>. Once you have your DCCs launching the way you expect, you can continue to the next section.</p>
 
 <h1 id="configuration">Configuration</h1>
 
-<p>The configuration (config) defines the artist workflow for your project. This includes specifying which ShotGrid integrations to include within the DCCs your artists are launching, how your project’s folder structure is defined, and the naming conventions for files and folders created as artists share data.</p>
+<p>The configuration (config) defines the artist workflow for your project. This includes specifying which Flow Production Tracking integrations to include within the DCCs your artists are launching, how your project’s folder structure is defined, and the naming conventions for files and folders created as artists share data.</p>
 
-<p>By default, all new projects are configured to use the basic <a href="https://developer.shotgridsoftware.com/d587be80/">ShotGrid Integrations</a> which provide a basic workflow for sharing files between artists using many off-the-shelf software packages. The following sections outline how to take over your project’s pipeline configuration (config) and customize it for your studio.</p>
+<p>By default, all new projects are configured to use the basic <a href="https://developer.shotgridsoftware.com/d587be80/">Flow Production Tracking Integrations</a> which provide a basic workflow for sharing files between artists using many off-the-shelf software packages. The following sections outline how to take over your project’s pipeline configuration (config) and customize it for your studio.</p>
 
 <h2 id="taking-over-the-project-config">Taking Over the Project Config</h2>
 
-<p>Use ShotGrid Desktop (Desktop) to take over your project’s configuration. RMB click within Desktop or click the user icon in the bottom right to show the popup menu. Select the <strong>Advanced project setup…</strong> option and follow the wizard to locally install your project configuration. The images below show the required steps. You can also follow the steps outlined in the Integrations Admin Guide for <a href="https://developer.shotgridsoftware.com/8085533c/#taking-over-a-pipeline-configuration">Taking over a Pipeline Configuration</a>.</p>
+<p>Use Flow Production Tracking Toolkit (Desktop) to take over your project’s configuration. RMB click within Desktop or click the user icon in the bottom right to show the popup menu. Select the <strong>Advanced project setup…</strong> option and follow the wizard to locally install your project configuration. The images below show the required steps. You can also follow the steps outlined in the Integrations Admin Guide for <a href="https://developer.shotgridsoftware.com/8085533c/#taking-over-a-pipeline-configuration">Taking over a Pipeline Configuration</a>.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_5.png" style="" />
@@ -12950,11 +12950,11 @@
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/wizard_01.png" style="" />
-  <figcaption>Choose the <strong>ShotGrid Default</strong> configuration type
+  <figcaption>Choose the <strong>Flow Production Tracking Default</strong> configuration type
 </figcaption>
 </figure>
 
-<p>If this is your first time setting up a ShotGrid project, you’ll also be prompted to define a storage location for your project data.  Otherwise, you can select an existing storage location.</p>
+<p>If this is your first time setting up a Flow Production Tracking project, you’ll also be prompted to define a storage location for your project data.  Otherwise, you can select an existing storage location.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/wizard_03.png" style="" />
@@ -12974,7 +12974,7 @@
 </figcaption>
 </figure>
 
-<p>You can view and edit the storages for your ShotGrid site in your <strong>Site Preferences</strong>, under the <strong>File Management</strong> section.  You can learn more about these settings <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_linking_local_files_html">here</a>.</p>
+<p>You can view and edit the storages for your Flow Production Tracking site in your <strong>Site Preferences</strong>, under the <strong>File Management</strong> section.  You can learn more about these settings <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Administrator_ar_data_management_ar_linking_local_files_html">here</a>.</p>
 
 <p>Now that you have a storage location selected, you’ll choose the name of the directory in that location for your new project.</p>
 
@@ -12998,11 +12998,11 @@
 
 <p>When you click <strong>Run Setup</strong> on the above screen, Desktop will begin to download and install all of the required components of your configuration. The installation process could take several minutes to complete. Once complete, you will have a local copy of the entire project configuration that you will modify in the following steps.</p>
 
-<p>The configuration location you specified during the Desktop installation tutorial is recorded in ShotGrid in the Pipeline Configurations page for your project.</p>
+<p>The configuration location you specified during the Desktop installation tutorial is recorded in Flow Production Tracking in the Pipeline Configurations page for your project.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_10.png" style="" />
-  <figcaption>The Pipeline Configuration entity in ShotGrid
+  <figcaption>The Pipeline Configuration entity in Flow Production Tracking
 </figcaption>
 </figure>
 
@@ -13049,9 +13049,9 @@
 
 <h1 id="building-the-pipeline">Building the Pipeline</h1>
 
-<p>At this point you should be ready to begin building a pipeline. You have a project set up in ShotGrid, you can launch Maya &amp; Nuke via Desktop, and you’ve taken control of the project’s configuration. You also have a basic understanding of the structure of the config and are ready to begin fleshing out the artist workflow.</p>
+<p>At this point you should be ready to begin building a pipeline. You have a project set up in Flow Production Tracking, you can launch Maya &amp; Nuke via Desktop, and you’ve taken control of the project’s configuration. You also have a basic understanding of the structure of the config and are ready to begin fleshing out the artist workflow.</p>
 
-<p>The following sections will walk through each step of the pipeline, highlighting the features that are available out-of-the-box and walking you through the process of customizing the ShotGrid integrations. By the end of these sections, you will have a simple, fully functional, end-to-end production pipeline. You will also get a feel for the steps artists will take as they work on production.</p>
+<p>The following sections will walk through each step of the pipeline, highlighting the features that are available out-of-the-box and walking you through the process of customizing the Flow Production Tracking integrations. By the end of these sections, you will have a simple, fully functional, end-to-end production pipeline. You will also get a feel for the steps artists will take as they work on production.</p>
 
 <div class="info-popup">
     <p>
@@ -13066,9 +13066,9 @@
 
 <p>The first step in the simple pipeline is Modeling. In this section you will create the first iteration of the Teapot Asset in your project. You will save it to disk in your project’s folder structure and then publish it.</p>
 
-<p>First, launch Maya from ShotGrid Desktop.</p>
+<p>First, launch Maya from Flow Production Tracking Toolkit.</p>
 
-<p>Once Maya has full loaded, you will see the File Open Dialog appear. This dialog allows you to browse existing Maya files within the project. It also allows you to create new files that the ShotGrid integrations will be aware of.</p>
+<p>Once Maya has full loaded, you will see the File Open Dialog appear. This dialog allows you to browse existing Maya files within the project. It also allows you to create new files that the Flow Production Tracking integrations will be aware of.</p>
 
 <p>Select the Assets tab and drill down into the Teapot’s modeling task. Since there are no artist work files for this task yet, click the <strong>+ New File</strong> button.</p>
 
@@ -13083,7 +13083,7 @@
     <p>
         <i class="fa fa-info-circle"></i>
         <b>Note
-:</b> At any time during this tutorial you can launch the ShotGrid Panel via the ShotGrid menu in Maya or Nuke. This panel provides a view into your project data without leaving your DCC. It will show you your current working context and any recent activity within that context. You can also add notes for feedback directly into the panel. See the <a href="https://developer.shotgridsoftware.com/c0b0ce05/">ShotGrid Panel documentation</a> for more info.
+:</b> At any time during this tutorial you can launch the Flow Production Tracking Panel via the Flow Production Tracking menu in Maya or Nuke. This panel provides a view into your project data without leaving your DCC. It will show you your current working context and any recent activity within that context. You can also add notes for feedback directly into the panel. See the <a href="https://developer.shotgridsoftware.com/c0b0ce05/">Flow Production Tracking Panel documentation</a> for more info.
 
     </p>
 </div>
@@ -13095,7 +13095,7 @@
   
 </figure>
 
-<p>When you’re happy with your Teapot model, select the <strong>ShotGrid &gt; File Save…</strong> menu action. This dialog will prompt you to save the file to a given name, version, and type.</p>
+<p>When you’re happy with your Teapot model, select the <strong>Flow Production Tracking &gt; File Save…</strong> menu action. This dialog will prompt you to save the file to a given name, version, and type.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_15.png" style="" />
@@ -13116,7 +13116,7 @@
 
 <p>Click the <strong>Save</strong> button to save the teapot model.</p>
 
-<p>An important thing to note at this point is that the steps you just completed will be the same steps artists take when opening and saving workfiles throughout the pipeline. The File Open and File Save dialogs are part of Workfiles App. This “multi” app runs in all of the DCCs supported by the ShotGrid integrations and provides a consistent workflow for all artists.</p>
+<p>An important thing to note at this point is that the steps you just completed will be the same steps artists take when opening and saving workfiles throughout the pipeline. The File Open and File Save dialogs are part of Workfiles App. This “multi” app runs in all of the DCCs supported by the Flow Production Tracking integrations and provides a consistent workflow for all artists.</p>
 
 <p>The next step is to make some changes to your teapot. Make sure the lid geometry is separate from the rest of the model so that it can be rigged later on.</p>
 
@@ -13125,7 +13125,7 @@
   
 </figure>
 
-<p>Once you’re satisfied with your work, run the <strong>ShotGrid &gt; File Save…</strong> menu action again. This time the dialog will default your version number to 2. The automatic incrementing of the file version allows artists to maintain a complete history of the work they’ve done. Click the Save button.</p>
+<p>Once you’re satisfied with your work, run the <strong>Flow Production Tracking &gt; File Save…</strong> menu action again. This time the dialog will default your version number to 2. The automatic incrementing of the file version allows artists to maintain a complete history of the work they’ve done. Click the Save button.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_17.png" style="" />
@@ -13134,7 +13134,7 @@
 
 <p>Once you have saved the Teapot model to version 2, you are ready for the last step in this section of the tutorial.</p>
 
-<p>Now that your Teapot model is ready, you need to publish it so that it can be surfaced and rigged. To publish, click the <strong>ShotGrid &gt; Publish…</strong> menu action. You will be presented with the Publish App dialog.</p>
+<p>Now that your Teapot model is ready, you need to publish it so that it can be surfaced and rigged. To publish, click the <strong>Flow Production Tracking &gt; Publish…</strong> menu action. You will be presented with the Publish App dialog.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_18.png" style="" />
@@ -13143,7 +13143,7 @@
 
 <p>The dialog shows a tree of items representing what will be published. The tree includes some entries that represent the items to be published and some entries represent the actions that will be performed during the publish operation.</p>
 
-<p>On the left side of the dialog you will see an item representing the current Maya session. Underneath it, you will see a <strong>Publish to ShotGrid</strong> child action. An additional item representing <strong>All Session Geometry</strong> is shown as a child item of the current session. It also has a <strong>Publish to ShotGrid</strong> child action.</p>
+<p>On the left side of the dialog you will see an item representing the current Maya session. Underneath it, you will see a <strong>Publish to Flow Production Tracking</strong> child action. An additional item representing <strong>All Session Geometry</strong> is shown as a child item of the current session. It also has a <strong>Publish to Flow Production Tracking</strong> child action.</p>
 
 <div class="info-popup">
     <p>
@@ -13156,7 +13156,7 @@
 
 <p>Explore the Publish App by clicking on the items on the left side of the tree. You’ll notice that the items to be acted upon, when selected, allow you to enter a description of what is being published. You can also take a screenshot to be associated with the item by clicking the camera icon on the right.</p>
 
-<p>When you are ready, click the <strong>Publish</strong> button in the bottom right corner to publish the current work file and the teapot geometry. Once complete, you can browse to the Teapot Asset in ShotGrid to verify that the publish completed successfully.</p>
+<p>When you are ready, click the <strong>Publish</strong> button in the bottom right corner to publish the current work file and the teapot geometry. Once complete, you can browse to the Teapot Asset in Flow Production Tracking to verify that the publish completed successfully.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_19.png" style="" />
@@ -13196,21 +13196,21 @@
 
 <p>In this section you will build on what you learned in the modeling section. You will learn how to load the Teapot model you created in the previous section using the Loader app. You will also learn how to customize the Publish app to publish shaders for your Teapot.</p>
 
-<p>Start by launching Maya from Desktop. If you still have Maya open after working through the previous section, you do not need to relaunch. Once Maya is open, use the <strong>ShotGrid &gt; File Open…</strong> menu item to open the Workfiles app. Just like in the Modeling section, use the Assets tab to drill down into the Teapot asset’s tasks. This time, select the surfacing task and click <strong>+ New File</strong>.</p>
+<p>Start by launching Maya from Desktop. If you still have Maya open after working through the previous section, you do not need to relaunch. Once Maya is open, use the <strong>Flow Production Tracking &gt; File Open…</strong> menu item to open the Workfiles app. Just like in the Modeling section, use the Assets tab to drill down into the Teapot asset’s tasks. This time, select the surfacing task and click <strong>+ New File</strong>.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_21.png" style="width: 450px;" />
   
 </figure>
 
-<p>You are now working in the Teapot’s surfacing task. An easy way to verify that you are in the right production context is to check the first entry in the ShotGrid menu.</p>
+<p>You are now working in the Teapot’s surfacing task. An easy way to verify that you are in the right production context is to check the first entry in the Flow Production Tracking menu.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_22.png" style="" />
   
 </figure>
 
-<p>Next you need to load the teapot model into your new surfacing work file. To do this, launch the Loader app via the <strong>ShotGrid &gt; Load…</strong> menu item in Maya.</p>
+<p>Next you need to load the teapot model into your new surfacing work file. To do this, launch the Loader app via the <strong>Flow Production Tracking &gt; Load…</strong> menu item in Maya.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_23.png" style="" />
@@ -13235,7 +13235,7 @@
 
 <p>Shader management can be a time consuming and complex task when building a pipeline. It is often very specific to a studio. It is for these reasons that the shipped Maya integration does not handle shader or texture management out-of-the-box.</p>
 
-<p>Use the <strong>ShotGrid &gt; File Save…</strong> menu action to save the current session before continuing.</p>
+<p>Use the <strong>Flow Production Tracking &gt; File Save…</strong> menu action to save the current session before continuing.</p>
 
 <h3 id="custom-shader-publish">Custom Shader Publish</h3>
 
@@ -13461,9 +13461,9 @@
     </p>
 </div>
 
-<h5 id="reloading-the-shotgrid-integrations">Reloading the ShotGrid Integrations</h5>
+<h5 id="reloading-the-shotgrid-integrations">Reloading the Flow Production Tracking Integrations</h5>
 
-<p>In order to try out your customizations, you’ll need to reload the integrations in your Maya session. To do this, click the <strong>ShotGrid &gt; [Task Name] &gt; Work Area Info…</strong> menu action.</p>
+<p>In order to try out your customizations, you’ll need to reload the integrations in your Maya session. To do this, click the <strong>Flow Production Tracking &gt; [Task Name] &gt; Work Area Info…</strong> menu action.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_30.png" style="" />
@@ -13479,16 +13479,16 @@
 
 <h3 id="publishing-shader-networks">Publishing Shader Networks</h3>
 
-<p>Now it is time to see the results of your changes to the project configuration. Launch the publish app from the ShotGrid menu. You should see the collected teapot mesh item with a <strong>Publish Shaders</strong> plugin attached:</p>
+<p>Now it is time to see the results of your changes to the project configuration. Launch the publish app from the Flow Production Tracking menu. You should see the collected teapot mesh item with a <strong>Publish Shaders</strong> plugin attached:</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_32.png" style="" />
   
 </figure>
 
-<p>Enter a description of your work and capture a thumbnail of your surfaced Teapot to associate with the published files. Finally, click publish to export the Teapot shaders to disk and register the file as a publish in ShotGrid. When finished, notice that the session publish plugin has automatically saved your work file to the next available version. This is the default behavior within all of the DCCs supported by ShotGrid integrations.</p>
+<p>Enter a description of your work and capture a thumbnail of your surfaced Teapot to associate with the published files. Finally, click publish to export the Teapot shaders to disk and register the file as a publish in Flow Production Tracking. When finished, notice that the session publish plugin has automatically saved your work file to the next available version. This is the default behavior within all of the DCCs supported by Flow Production Tracking integrations.</p>
 
-<p>You can now browse to the Teapot asset in ShotGrid to verify that everything worked as expected.</p>
+<p>You can now browse to the Teapot asset in Flow Production Tracking to verify that everything worked as expected.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_33.png" style="" />
@@ -13506,11 +13506,11 @@
 
 <h2 id="rigging-workflow">Rigging Workflow</h2>
 
-<p>At this point, you should feel pretty comfortable opening (or creating), saving, and publishing workfiles using the Workfile and Publish apps provided by ShotGrid. You’ve also had a chance to use the Loader app to load a publish from upstream. Use what you’ve learned to complete the following tasks:</p>
+<p>At this point, you should feel pretty comfortable opening (or creating), saving, and publishing workfiles using the Workfile and Publish apps provided by Flow Production Tracking. You’ve also had a chance to use the Loader app to load a publish from upstream. Use what you’ve learned to complete the following tasks:</p>
 
 <ul>
   <li>
-    <p>Launch Maya from ShotGrid Desktop</p>
+    <p>Launch Maya from Flow Production Tracking Toolkit</p>
   </li>
   <li>
     <p>Create a new workfile in the Teapot asset’s rigging step</p>
@@ -13526,7 +13526,7 @@
   </li>
 </ul>
 
-<p>You should end up with something like this in ShotGrid:</p>
+<p>You should end up with something like this in Flow Production Tracking:</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_35.png" style="" />
@@ -13540,7 +13540,7 @@
   
 </figure>
 
-<p>Open the work file in the Teapot’s rigging step again (via <strong>ShotGrid &gt; File Open…</strong>). Now launch the <strong>ShotGrid &gt; Scene Breakdown…</strong> menu action. This launches the Breakdown app which shows you all of the upstream publishes that you have referenced into your work file. In this case, there is only the upstream Teapot model. You should see something like this:</p>
+<p>Open the work file in the Teapot’s rigging step again (via <strong>Flow Production Tracking &gt; File Open…</strong>). Now launch the <strong>Flow Production Tracking &gt; Scene Breakdown…</strong> menu action. This launches the Breakdown app which shows you all of the upstream publishes that you have referenced into your work file. In this case, there is only the upstream Teapot model. You should see something like this:</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_37.png" style="width: 400px;" />
@@ -13570,7 +13570,7 @@
 
 <ul>
   <li>
-    <p>Launch Maya from ShotGrid Desktop</p>
+    <p>Launch Maya from Flow Production Tracking Toolkit</p>
   </li>
   <li>
     <p>Create a new workfile in your Shot’s layout step (Hint: use the Shots tab in the Loader)</p>
@@ -13590,7 +13590,7 @@
   
 </figure>
 
-<p>Once you are happy with your shot layout, save the file via the <strong>ShotGrid &gt; File Save…</strong> menu action. If you were to go ahead and publish at this point, you would only see the entire maya session as an available item to publish.</p>
+<p>Once you are happy with your shot layout, save the file via the <strong>Flow Production Tracking &gt; File Save…</strong> menu action. If you were to go ahead and publish at this point, you would only see the entire maya session as an available item to publish.</p>
 
 <p>An easy customization to add, and one that provides a lot of flexibility to a pipeline, is the ability to publish stand-alone cameras to a file format that is easy to import into other packages. This makes it possible to generate the camera once, typically in layout, and then have all other pipeline steps, such as animation, lighting, and compositing, consume it directly.</p>
 
@@ -13706,7 +13706,7 @@
   
 </figure>
 
-<p>As you can see in the image, the new camera item is collected and the publish plugin is attached. Go ahead and click <strong>Publish</strong> to write the camera to disk and register it with ShotGrid.</p>
+<p>As you can see in the image, the new camera item is collected and the publish plugin is attached. Go ahead and click <strong>Publish</strong> to write the camera to disk and register it with Flow Production Tracking.</p>
 
 <div class="info-popup">
     <p>
@@ -13717,7 +13717,7 @@
     </p>
 </div>
 
-<p>You should see something like this in ShotGrid:</p>
+<p>You should see something like this in Flow Production Tracking:</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_46.png" style="" />
@@ -13734,7 +13734,7 @@
 
 <ul>
   <li>
-    <p>Launch Maya from ShotGrid Desktop</p>
+    <p>Launch Maya from Flow Production Tracking Toolkit</p>
   </li>
   <li>
     <p>Create a new workfile in your Shot’s animation step</p>
@@ -13763,7 +13763,7 @@
 
 <p><strong><code class="highlighter-rouge">FBX Camera: [reference, import]</code></strong></p>
 
-<p>In the custom camera publish plugin, the <strong><code class="highlighter-rouge">FBXExport</code></strong> mel command in Maya was used to write the camera to disk, and the publish type used to register the file with ShotGrid was <strong><code class="highlighter-rouge">FBX Camera</code></strong>. The line you added to the settings tells the loader to display the <strong><code class="highlighter-rouge">reference</code></strong> and <strong><code class="highlighter-rouge">import</code></strong> actions for any publishes of type <strong><code class="highlighter-rouge">FBX Camera</code></strong>. These actions are defined in the <a href="https://github.com/shotgunsoftware/tk-multi-loader2/blob/master/hooks/tk-maya_actions.py">tk-maya-actions.py</a> hook of the Loader app. These actions are implemented in a way to handle any type of file that Maya can reference or import. The <strong><code class="highlighter-rouge">.fbx</code></strong> files generated by the custom plugin fall into that category so this is the only change needed to be able to load the published cameras.</p>
+<p>In the custom camera publish plugin, the <strong><code class="highlighter-rouge">FBXExport</code></strong> mel command in Maya was used to write the camera to disk, and the publish type used to register the file with Flow Production Tracking was <strong><code class="highlighter-rouge">FBX Camera</code></strong>. The line you added to the settings tells the loader to display the <strong><code class="highlighter-rouge">reference</code></strong> and <strong><code class="highlighter-rouge">import</code></strong> actions for any publishes of type <strong><code class="highlighter-rouge">FBX Camera</code></strong>. These actions are defined in the <a href="https://github.com/shotgunsoftware/tk-multi-loader2/blob/master/hooks/tk-maya_actions.py">tk-maya-actions.py</a> hook of the Loader app. These actions are implemented in a way to handle any type of file that Maya can reference or import. The <strong><code class="highlighter-rouge">.fbx</code></strong> files generated by the custom plugin fall into that category so this is the only change needed to be able to load the published cameras.</p>
 
 <p>Your app settings should now look like this:</p>
 
@@ -13800,7 +13800,7 @@
 
 <ul>
   <li>
-    <p>Launch Maya from ShotGrid Desktop</p>
+    <p>Launch Maya from Flow Production Tracking Toolkit</p>
   </li>
   <li>
     <p>Create a new workfile in your Shot’s lighting step</p>
@@ -13928,14 +13928,14 @@
     </p>
 </div>
 
-<p>The shipped ShotGrid integrations will collect image sequences by looking at the render layers defined in the file. Once your render is complete, launch the publisher. You will see the rendered sequence as an item in the tree.</p>
+<p>The shipped Flow Production Tracking integrations will collect image sequences by looking at the render layers defined in the file. Once your render is complete, launch the publisher. You will see the rendered sequence as an item in the tree.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_55.png" style="" />
   
 </figure>
 
-<p>Go ahead and publish the session and the rendered image file sequence. You should see something like this in ShotGrid:</p>
+<p>Go ahead and publish the session and the rendered image file sequence. You should see something like this in Flow Production Tracking:</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_56.png" style="" />
@@ -13946,16 +13946,16 @@
 
 <h2 id="compositing-workflow">Compositing Workflow</h2>
 
-<p>In this final section of the tutorial, you will be introduced to some of the default integrations provided by Nuke. In addition to the app’s you have seen in previous sections, you will learn about the ShotGrid-aware Write node and an app that allows you to quickly send your renders to others for review.</p>
+<p>In this final section of the tutorial, you will be introduced to some of the default integrations provided by Nuke. In addition to the app’s you have seen in previous sections, you will learn about the Flow Production Tracking-aware Write node and an app that allows you to quickly send your renders to others for review.</p>
 
 <p>Start by following these steps to prepare your work file.</p>
 
 <ul>
   <li>
-    <p>Launch Nuke from ShotGrid Desktop</p>
+    <p>Launch Nuke from Flow Production Tracking Toolkit</p>
   </li>
   <li>
-    <p>Just like in Maya, use the ShotGrid &gt; File Open… menu action to create a new work file in the Shot’s compositing step.</p>
+    <p>Just like in Maya, use the Flow Production Tracking &gt; File Open… menu action to create a new work file in the Shot’s compositing step.</p>
   </li>
 </ul>
 
@@ -13975,61 +13975,61 @@
   
 </figure>
 
-<p>Once you are happy with your comp, use the <strong>ShotGrid &gt; File Save…</strong> menu action to save your work file.</p>
+<p>Once you are happy with your comp, use the <strong>Flow Production Tracking &gt; File Save…</strong> menu action to save your work file.</p>
 
-<p>Next, click the ShotGrid logo in the left hand menu in Nuke. Click on one of the ShotGrid-aware write nodes in that menu:</p>
+<p>Next, click the Flow Production Tracking logo in the left hand menu in Nuke. Click on one of the Flow Production Tracking-aware write nodes in that menu:</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_59.png" style="width: 400px;" />
   
 </figure>
 
-<p>The ShotGrid Write Node app provides a layer on top of the built-in Nuke Write node that automatically evaluates the output path based on your current ShotGrid context.</p>
+<p>The Flow Production Tracking Write Node app provides a layer on top of the built-in Nuke Write node that automatically evaluates the output path based on your current Flow Production Tracking context.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_60.png" style="" />
   
 </figure>
 
-<p>Render the image frames to disk. You can now publish your nuke session to associate the work file with the rendered images. By default, the publisher will collect the rendered frames and attach a plugin to register the frames with ShotGrid. A second plugin will upload the frames for review by way of an integration that runs in the background called review submission. This app uses nuke to generate a quicktime that will be uploaded and made available for review.</p>
+<p>Render the image frames to disk. You can now publish your nuke session to associate the work file with the rendered images. By default, the publisher will collect the rendered frames and attach a plugin to register the frames with Flow Production Tracking. A second plugin will upload the frames for review by way of an integration that runs in the background called review submission. This app uses nuke to generate a quicktime that will be uploaded and made available for review.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_61.png" style="" />
   
 </figure>
 
-<p>Another useful integration is the Quick Review app. This is an output node that will quickly generate and upload a quicktime to ShotGrid for Review. The app can be found in the left hand menu next to the ShotGrid Write Nodes.</p>
+<p>Another useful integration is the Quick Review app. This is an output node that will quickly generate and upload a quicktime to Flow Production Tracking for Review. The app can be found in the left hand menu next to the Flow Production Tracking Write Nodes.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_62.png" style="width: 400px;" />
   
 </figure>
 
-<p>Create a Quick Review node, then click the Upload button to render the input to disk, generate the quicktime, and upload the result to ShotGrid for review. Some standard options are provided before submitting the frames.</p>
+<p>Create a Quick Review node, then click the Upload button to render the input to disk, generate the quicktime, and upload the result to Flow Production Tracking for review. Some standard options are provided before submitting the frames.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_63.png" style="" />
   
 </figure>
 
-<p>Check the media tab in ShotGrid to see both of the uploaded quicktimes.</p>
+<p>Check the media tab in Flow Production Tracking to see both of the uploaded quicktimes.</p>
 
 <figure>
   <img src="/en/guides/pipeline-integrations/workflows/images/tutorial/image_64.png" style="" />
   
 </figure>
 
-<p>For more information on reviewing media in ShotGrid, see the <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Supervisor_Artist_sa_review_approval_html">official documentation</a>.</p>
+<p>For more information on reviewing media in Flow Production Tracking, see the <a href="https://help.autodesk.com/view/SGSUB/ENU/?guid=SG_Supervisor_Artist_sa_review_approval_html">official documentation</a>.</p>
 
 <h1 id="conclusion">Conclusion</h1>
 
-<p>Congratulations, you’re done! Hopefully this tutorial has given you a starting point for building your own custom pipeline using the ShotGrid integrations. You should have an understanding of how to extend the default integrations to meet the specific needs of your studio.</p>
+<p>Congratulations, you’re done! Hopefully this tutorial has given you a starting point for building your own custom pipeline using the Flow Production Tracking integrations. You should have an understanding of how to extend the default integrations to meet the specific needs of your studio.</p>
 
 <p>Ask questions and learn how other studios are using Toolkit over at the <a href="https://groups.google.com/a/shotgunsoftware.com/forum/#!forum/shotgun-dev">shotgun-dev Google Group</a>.  Be sure to subscribe to stay up to date with the latest posts!</p>
 
 <p>If there are features or workflows that you feel are outside of the default integrations, then you can always write your own apps. <a href="https://developer.shotgridsoftware.com/2e5ed7bb/">Here is an excellent document</a> to help you get started writing your first app.</p>
 
-<p>As always, if you have additional questions about this tutorial or about ShotGrid or the Toolkit platform in general, <a href="https://community.shotgridsoftware.com/c/pipeline/6">reach out to the community</a>.</p>
+<p>As always, if you have additional questions about this tutorial or about Flow Production Tracking or the Toolkit platform in general, <a href="https://community.shotgridsoftware.com/c/pipeline/6">reach out to the community</a>.</p>
 
 
             </div>  

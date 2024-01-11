@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/zh_CN/site-metadata/apple-touch-icon.png">
@@ -2948,7 +2948,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            在 Jira 与 ShotGrid 之间同步数据
+            在 Jira 与 Flow Production Tracking 之间同步数据
         </a>
     </div>
 
@@ -5579,9 +5579,9 @@
                     class="nav-entry"
                 
                 
-                href="/zh_CN/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/zh_CN/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -7945,7 +7945,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid 日
+            SIGGRAPH Flow Production Tracking 日
         </a>
     </div>
 
@@ -9015,7 +9015,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 文档
+            Flow Production Tracking 文档
         </a>
     </div>
 
@@ -9110,7 +9110,7 @@
 
 <p>操作系统必须知道如何处理协议。默认情况下，所有当前操作系统都知道“http”应由默认 Web 浏览器处理，“mailto”应由默认邮件客户端处理。有时，安装应用程序时，它们会向操作系统注册并告诉它针对特定协议启动应用程序。</p>
 
-<p>例如，如果您安装 RV，则该应用程序向操作系统注册 <code class="highlighter-rouge">rvlink://</code>，并告知它 RV 将处理所有 <code class="highlighter-rouge">rvlink://</code> 协议请求以在 RV 中显示图像或镜头序列。因此，当用户单击以 <code class="highlighter-rouge">rvlink://</code> 开头的链接时（正如您可以在 ShotGrid 中执行的操作），操作系统将知道对该链接启动 RV，而该应用程序将解析链接并知道如何处理它。</p>
+<p>例如，如果您安装 RV，则该应用程序向操作系统注册 <code class="highlighter-rouge">rvlink://</code>，并告知它 RV 将处理所有 <code class="highlighter-rouge">rvlink://</code> 协议请求以在 RV 中显示图像或镜头序列。因此，当用户单击以 <code class="highlighter-rouge">rvlink://</code> 开头的链接时（正如您可以在 Flow Production Tracking 中执行的操作），操作系统将知道对该链接启动 RV，而该应用程序将解析链接并知道如何处理它。</p>
 
 <p>有关 RV 如何充当 URL 和“rvlink”协议的协议处理程序的详细信息，请参见 <a href="https://help.autodesk.com/view/SGSUB/CHS/?guid=SG_RV_rv_manuals_rv_user_manual_rv_user_manual_chapter_c_html#c-2-installing-the-protocol-handler">RV 用户手册</a>。</p>
 
@@ -9157,7 +9157,7 @@ QSettings fooOpenKey("HKEY_CLASSES_ROOT\\foo\\shell\\open\\command", QSettings::
 mxOpenKey.setValue(".", cmdLine);
 </code></pre></div></div>
 
-<p><strong>通过 ShotGrid AMI 启动 Python 脚本的 Windows 示例</strong></p>
+<p><strong>通过 Flow Production Tracking AMI 启动 Python 脚本的 Windows 示例</strong></p>
 
 <p>在本地运行的许多 AMI 可能选择通过 Python 解释器启动简单的 Python 脚本。这样，您可以使用 GUI（PyQT、PySide 或您选择的 GUI 框架）运行简单脚本甚至应用。让我们看一个实际示例来帮您入门。</p>
 
@@ -9166,7 +9166,7 @@ mxOpenKey.setValue(".", cmdLine);
 <p>使用 Windows 注册表编辑器：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[HKEY_CLASSES_ROOT\ShotGrid]
-@="URL:ShotGrid Protocol"
+@="URL:Flow Production Tracking Protocol"
 "URL Protocol"=""
 [HKEY_CLASSES_ROOT\ShotGrid\shell]
 [HKEY_CLASSES_ROOT\ShotGrid\shell\open]
@@ -9231,9 +9231,9 @@ mxOpenKey.setValue(".", cmdLine);
 
 <p><strong>注意：</strong>此脚本与 Python 3 和 Python 2 兼容。</p>
 
-<p><strong>步骤 3：使用您的自定义协议连接 ShotGrid 界面，并最终连接您的脚本</strong></p>
+<p><strong>步骤 3：使用您的自定义协议连接 Flow Production Tracking 界面，并最终连接您的脚本</strong></p>
 
-<p>最后，在 ShotGrid 中创建其 URL 值为 <code class="highlighter-rouge">shotgrid://processVersion</code> 的 AMI。您可以将此 AMI 指定到您希望的任何实体类型，但此示例使用版本实体。</p>
+<p>最后，在 Flow Production Tracking 中创建其 URL 值为 <code class="highlighter-rouge">shotgrid://processVersion</code> 的 AMI。您可以将此 AMI 指定到您希望的任何实体类型，但此示例使用版本实体。</p>
 
 <p>转到某个版本页面，右键单击一个版本并从菜单中选择您的 AMI。这应使您的浏览器打开 <code class="highlighter-rouge">shotgrid://</code> URL，此 URL 将通过注册的自定义协议重定向到您的脚本。</p>
 
@@ -9365,7 +9365,7 @@ ShotGrid
 
 <p>最后，将您的 <code class="highlighter-rouge">.app</code> 包移到您的 Mac 上的 Applications 文件夹中。然后双击它，这将向操作系统注册您的协议。</p>
 
-<p>数据流如下：在 ShotGrid 中单击 AMI 后，或单击以 <code class="highlighter-rouge">shotgrid://</code> 开头的 URL 后，<code class="highlighter-rouge">.app</code> 包将响应它，并将 URL 传递到您的 Python 脚本。此时，可以使用在 Windows 示例中所用的同一脚本，且所有相同的可能情况均适用。</p>
+<p>数据流如下：在 Flow Production Tracking 中单击 AMI 后，或单击以 <code class="highlighter-rouge">shotgrid://</code> 开头的 URL 后，<code class="highlighter-rouge">.app</code> 包将响应它，并将 URL 传递到您的 Python 脚本。此时，可以使用在 Windows 示例中所用的同一脚本，且所有相同的可能情况均适用。</p>
 
 <div class="info-popup">
     <p>

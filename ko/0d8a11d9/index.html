@@ -15,8 +15,8 @@
 
   <meta property="og:image:height" content="1257">
 <meta property="og:image:width" content="2400">
-<meta property="og:title" content="ShotGrid Developer">
-<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with ShotGrid programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of ShotGrid's integration points.">
+<meta property="og:title" content="Flow Production Tracking Developer">
+<meta property="og:description" content="This site contains detailed technical reference for all of the ways you can interact with Flow Production Tracking programmatically, as well as tutorials, guides, and other educational resources for learning how to make the best use of all of Flow Production Tracking's integration points.">
 <meta property="og:url" content="https://developer.shotgridsoftware.com">
 <meta property="og:image" content="https://developer.shotgridsoftware.com/site-metadata/og-image.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="/ko/site-metadata/apple-touch-icon.png">
@@ -4800,7 +4800,7 @@
     <div>
 
         <a class="nav-entry" href=" https://developer.shotgridsoftware.com/sg-jira-bridge/index.html" >
-            Jira 및 ShotGrid 간 데이터 동기화
+            Jira 및 Flow Production Tracking 간 데이터 동기화
         </a>
     </div>
 
@@ -7431,9 +7431,9 @@
                     class="nav-entry"
                 
                 
-                href="/ko/af35baf6/?title=ShotGrid+in+the+Cloud"
+                href="/ko/af35baf6/?title=Flow+Production+Tracking+in+the+Cloud"
             >
-                ShotGrid in the Cloud
+                Flow Production Tracking in the Cloud
             </a>
             </div>
 
@@ -9797,7 +9797,7 @@
     <div>
 
         <a class="nav-entry" href=" https://www.youtube.com/playlist?list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d" >
-            SIGGRAPH ShotGrid Day
+            SIGGRAPH Flow Production Tracking Day
         </a>
     </div>
 
@@ -10867,7 +10867,7 @@
     <div>
 
         <a class="nav-entry" href=" https://help.autodesk.com/view/SGSUB/ENU/" >
-            ShotGrid 설명서
+            Flow Production Tracking 설명서
         </a>
     </div>
 
@@ -10940,8 +10940,8 @@
 <div class="article-body markdown" data-swiftype-name="body" data-swiftype-type="text">
   
 
-            <h1 id="shotgrid-이벤트-프레임워크">ShotGrid 이벤트 프레임워크</h1>
-<p>이 소프트웨어는 <a href="https://rodeofx.com">Rodeo Fx</a> 및 Oblique의 지원을 받아 <a href="https://www.patrickboucher.com">Patrick Boucher</a>가 처음 개발했습니다. 이제 <a href="https://www.shotgridsoftware.com">ShotGrid 소프트웨어</a>의 <a href="https://github.com/shotgunsoftware">오픈 소스 이니셔티브</a>에 포함되었습니다.</p>
+            <h1 id="shotgrid-이벤트-프레임워크">Flow Production Tracking 이벤트 프레임워크</h1>
+<p>이 소프트웨어는 <a href="https://rodeofx.com">Rodeo Fx</a> 및 Oblique의 지원을 받아 <a href="https://www.patrickboucher.com">Patrick Boucher</a>가 처음 개발했습니다. 이제 <a href="https://www.shotgridsoftware.com">Flow Production Tracking 소프트웨어</a>의 <a href="https://github.com/shotgunsoftware">오픈 소스 이니셔티브</a>에 포함되었습니다.</p>
 
 <p>이 소프트웨어는 라이선스 파일 또는 <a href="https://www.opensource.org/licenses/mit-license.php">오픈 소스 이니셔티브</a> 웹 사이트에서 찾을 수 있는 MIT 라이선스로 제공됩니다.</p>
 
@@ -10963,13 +10963,13 @@
 
 <h2 id="개요">개요</h2>
 
-<p>ShotGrid 이벤트 스트림에 액세스하려면 이벤트 테이블을 모니터링하고 새로운 이벤트를 파악하여 처리하는 작업을 반복하는 것이 좋습니다.</p>
+<p>Flow Production Tracking 이벤트 스트림에 액세스하려면 이벤트 테이블을 모니터링하고 새로운 이벤트를 파악하여 처리하는 작업을 반복하는 것이 좋습니다.</p>
 
 <p>많은 항목이 성공적으로 작동하려면 이 프로세스를 거쳐야 하며, 비즈니스 규칙과 직접적인 관련이 없는 항목은 적용해야 하는지 여부를 결정해야 합니다.</p>
 
 <p>프레임워크의 역할은 비즈니스 로직 구현자를 대신해 따분한 모니터링 작업을 처리해 주는 것입니다.</p>
 
-<p>이 프레임워크는 서버에서 실행되면서 ShotGrid 이벤트 스트림을 모니터링하는 데몬 프로세스입니다. 이벤트가 발견되면 데몬은 이벤트를 일련의 등록된 플러그인으로 전달합니다. 각각의 플러그인은 원하는 대로 이벤트를 처리할 수 있습니다.</p>
+<p>이 프레임워크는 서버에서 실행되면서 Flow Production Tracking 이벤트 스트림을 모니터링하는 데몬 프로세스입니다. 이벤트가 발견되면 데몬은 이벤트를 일련의 등록된 플러그인으로 전달합니다. 각각의 플러그인은 원하는 대로 이벤트를 처리할 수 있습니다.</p>
 
 <p>데몬은 다음을 처리합니다.</p>
 
@@ -10977,12 +10977,12 @@
   <li>지정된 하나 이상의 경로에서 플러그인 등록</li>
   <li>충돌하는 플러그인을 모두 비활성화</li>
   <li>플러그인이 디스크에서 변경된 경우 다시 로드</li>
-  <li>ShotGrid 이벤트 스트림 모니터링</li>
+  <li>Flow Production Tracking 이벤트 스트림 모니터링</li>
   <li>마지막으로 처리된 이벤트 ID와 백로그 기억</li>
   <li>데몬 시작 시 마지막으로 처리된 이벤트 ID부터 시작</li>
   <li>연결 오류 확인</li>
   <li>필요에 따라 stdout, 파일 또는 이메일에 정보 로깅</li>
-  <li>콜백에서 사용되는 ShotGrid에 대한 연결 설정</li>
+  <li>콜백에서 사용되는 Flow Production Tracking에 대한 연결 설정</li>
   <li>등록된 콜백으로 이벤트 전달</li>
 </ul>
 
@@ -11004,9 +11004,9 @@
 
 <p><strong>참고:</strong> 이벤트 구동 트리거에 대한 자세한 내용은 <a href="https://github.com/shotgunsoftware/shotgunEvents">https://github.com/shotgunsoftware/shotgunEvents</a>에 있는 설명서를 참조하십시오.</p>
 
-<p>ShotGrid는 ShotGrid에서 수행된 <a href="https://help.autodesk.com/view/SGSUB/KOR/?guid=SG_Administrator_ar_data_management_ar_event_logs_html">모든 작업</a>에 대해 이벤트 로그 항목을 작성합니다. 이 이벤트는 ShotGrid 사이트와 ShotGrid API를 통해 확인할 수 있습니다.</p>
+<p>ShotGrid는 Flow Production Tracking에서 수행된 <a href="https://help.autodesk.com/view/SGSUB/KOR/?guid=SG_Administrator_ar_data_management_ar_event_logs_html">모든 작업</a>에 대해 이벤트 로그 항목을 작성합니다. 이 이벤트는 Flow Production Tracking 사이트와 Flow Production Tracking API를 통해 확인할 수 있습니다.</p>
 
-<p>ShotGrid에서 이벤트 세부 기록을 확인하는 것뿐 아니라, EventLog를 폴링하고 사용자가 관심을 두고 있는 특정 이벤트에 대해 작동하는 이벤트 리스너 스크립트를 직접 작성할 수도 있습니다. 이 스크립트는 파이프라인 내 다른 내부 스크립트를 실행하거나 ShotGrid API를 사용하여 ShotGrid 내 다른 정보를 업데이트할 수 있으며, 그 둘 모두도 가능합니다.</p>
+<p>ShotGrid에서 이벤트 세부 기록을 확인하는 것뿐 아니라, EventLog를 폴링하고 사용자가 관심을 두고 있는 특정 이벤트에 대해 작동하는 이벤트 리스너 스크립트를 직접 작성할 수도 있습니다. 이 스크립트는 파이프라인 내 다른 내부 스크립트를 실행하거나 Flow Production Tracking API를 사용하여 Flow Production Tracking 내 다른 정보를 업데이트할 수 있으며, 그 둘 모두도 가능합니다.</p>
 
 <h2 id="활용-사례">활용 사례</h2>
 
@@ -11014,7 +11014,7 @@
 
 <ul>
   <li>샷의 ‘레이아웃(Layout)’ 태스크 상태가 ‘최종(final)’으로 지정되면 ‘애니메이션(Animation)’ 태스크 상태가 ‘시작 준비(ready to start)’로 자동 설정되기 때문에 애니메이터가 샷 작업을 시작할 수 있음을 알게 됩니다.</li>
-  <li>새 샷이 ShotGrid에 생성되면 적절한 샷 디렉토리가 파일 시스템에 생성됩니다.</li>
+  <li>새 샷이 Flow Production Tracking에 생성되면 적절한 샷 디렉토리가 파일 시스템에 생성됩니다.</li>
   <li>샷이 ‘대기 중(on hold)’ 상태가 되면 이 샷에 할당된 아티스트에게 알림이 전달됩니다.</li>
   <li>자산이 마무리되면 디렉토리가 읽기 전용으로 설정됩니다.</li>
   <li>ShotGrid에서 버전이 리뷰에 추가되면 해당 버전(또는 테이크) 정보를 데일리 시스템에 복사합니다.</li>
@@ -11023,23 +11023,23 @@
 
 <h2 id="이벤트-구동-트리거의-작동-방식">이벤트 구동 트리거의 작동 방식</h2>
 
-<p>아래는 ShotGrid에서 생성된 EventLogEntries의 간단한 다이어그램입니다. 스크립트는 API를 사용하여 마지막으로 요청한 이후 발생한 이벤트 목록을 가져옵니다. 그런 다음 각 이벤트 유형(예: ShotGrid_Task_Change)을 살펴보고, 관심을 두고 있는 항목이 있는지 확인합니다.</p>
+<p>아래는 Flow Production Tracking에서 생성된 EventLogEntries의 간단한 다이어그램입니다. 스크립트는 API를 사용하여 마지막으로 요청한 이후 발생한 이벤트 목록을 가져옵니다. 그런 다음 각 이벤트 유형(예: Flow Production Tracking_Task_Change)을 살펴보고, 관심을 두고 있는 항목이 있는지 확인합니다.</p>
 
 <p>해당 이벤트를 찾으면 이벤트의 상세 정보(예: 변경된 필드, 변경된 값 등. 이 시점에서 API를 사용하여 필요한 엔티티에 대한 추가 정보를 요청할 수도 있음)를 확인합니다.</p>
 
-<p>이벤트가 유의미한 것으로 증명되면 스크립트가 해당 이벤트에 작동하여 사용자가 실행하도록 결정한 코드(ShotGrid API를 사용하거나 파이프라인 내 항목을 사용하거나, 둘 다 사용할 수 있음)를 실행합니다. 살펴볼 이벤트가 더 이상 없으면 프로세스를 반복하면서 API를 사용하여 마지막으로 요청한 이후 발생한 이벤트 목록을 가져옵니다.</p>
+<p>이벤트가 유의미한 것으로 증명되면 스크립트가 해당 이벤트에 작동하여 사용자가 실행하도록 결정한 코드(Flow Production Tracking API를 사용하거나 파이프라인 내 항목을 사용하거나, 둘 다 사용할 수 있음)를 실행합니다. 살펴볼 이벤트가 더 이상 없으면 프로세스를 반복하면서 API를 사용하여 마지막으로 요청한 이후 발생한 이벤트 목록을 가져옵니다.</p>
 
 <p><img src="/ko/event-daemon/images/dv-writing-event-triggers-event-log-polling-01.png" alt="이벤트 로그 폴링" /></p>
 
 <h2 id="이벤트-로그-폴링과-트리거-비교">이벤트 로그 폴링과 트리거 비교</h2>
 
-<p>ShotGrid 소프트웨어는 지속적인 이벤트 정보 스트림을 제공하며, 사용자는 이를 모두 수신하다가 원하는 이벤트에만 반응하면 됩니다. 이렇게 하면 ShotGrid 소프트웨어가 트리거를 직접 제어하도록 하는 것과 비교해 다음과 같은 이점이 있습니다.</p>
+<p>Flow Production Tracking 소프트웨어는 지속적인 이벤트 정보 스트림을 제공하며, 사용자는 이를 모두 수신하다가 원하는 이벤트에만 반응하면 됩니다. 이렇게 하면 Flow Production Tracking 소프트웨어가 트리거를 직접 제어하도록 하는 것과 비교해 다음과 같은 이점이 있습니다.</p>
 
 <ul>
-  <li><strong>유연성:</strong> 사용자의 트리거 스크립트가 ShotGrid 소프트웨어와 무관하게 실행될 수 있습니다. 덕분에 스크립트가 ShotGrid 및 사용자 파이프라인 모두와 원하는 방식으로 상호 작용할 수 있습니다. 사용자는 어떠한 제약도 없이 원하는 대로 규칙 및 액션을 정의할 수 있습니다. ShotGrid 소프트웨어는 사용자의 이벤트 트리거에 관해 아무것도 알 필요가 없습니다. 수행할 일이라고는 EventLogEntries를 지속적으로 생성하는 것뿐입니다. 그 뒤에 일어나는 다른 모든 일들은 사용자가 제어합니다.</li>
-  <li><strong>원격:</strong> 사용자 스크립트가 네트워크를 통해 ShotGrid 서버에 액세스할 수 있는 모든 위치에서 실행될 수 있습니다. 스크립트 실행에 필요한 것은 API 액세스뿐입니다.</li>
+  <li><strong>유연성:</strong> 사용자의 트리거 스크립트가 Flow Production Tracking 소프트웨어와 무관하게 실행될 수 있습니다. 덕분에 스크립트가 Flow Production Tracking 및 사용자 파이프라인 모두와 원하는 방식으로 상호 작용할 수 있습니다. 사용자는 어떠한 제약도 없이 원하는 대로 규칙 및 액션을 정의할 수 있습니다. Flow Production Tracking 소프트웨어는 사용자의 이벤트 트리거에 관해 아무것도 알 필요가 없습니다. 수행할 일이라고는 EventLogEntries를 지속적으로 생성하는 것뿐입니다. 그 뒤에 일어나는 다른 모든 일들은 사용자가 제어합니다.</li>
+  <li><strong>원격:</strong> 사용자 스크립트가 네트워크를 통해 Flow Production Tracking 서버에 액세스할 수 있는 모든 위치에서 실행될 수 있습니다. 스크립트 실행에 필요한 것은 API 액세스뿐입니다.</li>
   <li><strong>다중성:</strong> 여러 스크립트를 동시에 실행할 수 있습니다. 각 부서마다 요구 사항이 서로 다르기 때문에 서로 다른 이벤트를 수신하는 경우가 있을 수 있습니다. 이런 경우에도 동일한 스크립트를 통해 모든 트리거를 실행하는 데 아무런 제약이 없습니다. 트리거를 개별적인 여러 논리 스크립트로 분할할 수도 있습니다. 폴링 쿼리는 매우 가볍기 때문에 성능에 별다른 영향을 미치지 않습니다.</li>
-  <li><strong>책임성:</strong> 스크립트가 ShotGrid에 어떤 변화를 가져오면 자체 이벤트도 생성하기 때문에 스크립트가 어떤 변화를 일으켰는지 정확하게 확인할 수 있습니다.</li>
+  <li><strong>책임성:</strong> 스크립트가 Flow Production Tracking에 어떤 변화를 가져오면 자체 이벤트도 생성하기 때문에 스크립트가 어떤 변화를 일으켰는지 정확하게 확인할 수 있습니다.</li>
 </ul>
 
 <h2 id="이벤트-유형">이벤트 유형</h2>
@@ -11048,7 +11048,7 @@
 
 <h2 id="트랜잭션-및-잠재적-누락-이벤트">트랜잭션 및 잠재적 누락 이벤트</h2>
 
-<p>ShotGrid 소프트웨어는 트랜잭션에서 파괴적(destructive) 데이터베이스 쿼리를 실행하고, 트랜잭션이 완료된 경우에만 EventLog를 작성합니다. 이 때문에 여기에서 “highest ID” 방식을 사용하는 이벤트를 놓칠 수도 있습니다. 그러나 <a href="https://github.com/shotgunsoftware/shotgunEvents">GitHub 사이트의 이벤트 트리거 프레임워크</a>에 이 상황을 처리해 줄 코드가 있습니다.</p>
+<p>Flow Production Tracking 소프트웨어는 트랜잭션에서 파괴적(destructive) 데이터베이스 쿼리를 실행하고, 트랜잭션이 완료된 경우에만 EventLog를 작성합니다. 이 때문에 여기에서 “highest ID” 방식을 사용하는 이벤트를 놓칠 수도 있습니다. 그러나 <a href="https://github.com/shotgunsoftware/shotgunEvents">GitHub 사이트의 이벤트 트리거 프레임워크</a>에 이 상황을 처리해 줄 코드가 있습니다.</p>
 
 
             </div>  
